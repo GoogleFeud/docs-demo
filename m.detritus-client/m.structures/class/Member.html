@@ -1,0 +1,1753 @@
+<!DOCTYPE html>
+<html data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Member |  Detritus</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/an-old-hope.min.css"
+    integrity="sha512-t47CjkEB5hx4FojnE73dBLwgrgvLBpgsHvB40ycK3cYPkLwEp7qNHyRpRDA3/zVVAAOUPJwbMVJq3uJrBqpHVQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+    <link href="../../../assets/css/index.css" type="text/css" rel="stylesheet">
+    <script src="../../../assets/js/index.js"></script>
+    <script>window.depth="../../../";window.lm="detritus-client"</script>
+    
+</head>
+
+<body>
+  
+      <nav class="container-fluid navi">
+      <div class="row">
+        <div class="col-4">
+          <input class="form-control search" id="search" type="search" placeholder="Search" aria-label="Search">
+        </div>
+        <div class="col-8">
+          <div class="row float-end" style="margin-top:5px">
+            <div class="col clickable-icon" id="theme-icon"></div>
+            <div class="col">
+              <a href=https://github.com/detritusjs/client/tree/master class="clickable-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-github"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                </svg>
+              </a>
+             </div>
+            <div class="col">
+              <span style="font-size: 1.2em">v0.16.1</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-auto sidebar">
+        <h1 class="lib-name text-center">Detritus</h1>
+        
+    <img src="../../../assets/logo.png" alt="Logo" class="img-fluid mx-auto d-block">
+    <p class="current-thing text-center">class <span class="object">Member</span></p>
+    <div class="sidebar-members">
+    
+        <div class="sidebar-member">
+        <div class="collapsible-trigger">
+        <span class="collapsible-arrow open"></span>
+        <span class="sidebar-category">Properties</span>
+        </div>
+        <div class="collapsible-body open"> 
+        <span class="sidebar-category-member"><a href="#._keys">_keys</a></span><br><span class="sidebar-category-member"><a href="#._keysMerge">_keysMerge</a></span><br><span class="sidebar-category-member"><a href="#._keysSkipDifference">_keysSkipDifference</a></span><br><span class="sidebar-category-member"><a href="#._avatar">_avatar</a></span><br><span class="sidebar-category-member"><a href="#._roles">_roles</a></span><br><span class="sidebar-category-member"><a href="#._permissions">_permissions</a></span><br><span class="sidebar-category-member"><a href="#.deaf">deaf</a></span><br><span class="sidebar-category-member"><a href="#.guildId">guildId</a></span><br><span class="sidebar-category-member"><a href="#.hoistedRoleId">hoistedRoleId</a></span><br><span class="sidebar-category-member"><a href="#.isPending">isPending</a></span><br><span class="sidebar-category-member"><a href="#.joinedAtUnix">joinedAtUnix</a></span><br><span class="sidebar-category-member"><a href="#.left">left</a></span><br><span class="sidebar-category-member"><a href="#.mute">mute</a></span><br><span class="sidebar-category-member"><a href="#.nick">nick</a></span><br><span class="sidebar-category-member"><a href="#.pending">pending</a></span><br><span class="sidebar-category-member"><a href="#.premiumSinceUnix">premiumSinceUnix</a></span><br><span class="sidebar-category-member"><a href="#.user">user</a></span><br>
+        </div>
+        </div>
+    
+        <div class="sidebar-member">
+        <div class="collapsible-trigger">
+        <span class="collapsible-arrow open"></span>
+        <span class="sidebar-category">Methods</span>
+        </div>
+        <div class="collapsible-body open"> 
+        <span class="sidebar-category-member"><a href="#.avatar">avatar</a></span><br><span class="sidebar-category-member"><a href="#.canAdministrator">canAdministrator</a></span><br><span class="sidebar-category-member"><a href="#.canBanMembers">canBanMembers</a></span><br><span class="sidebar-category-member"><a href="#.canChangeNickname">canChangeNickname</a></span><br><span class="sidebar-category-member"><a href="#.canChangeNicknames">canChangeNicknames</a></span><br><span class="sidebar-category-member"><a href="#.canCreateInstantInvite">canCreateInstantInvite</a></span><br><span class="sidebar-category-member"><a href="#.canKickMembers">canKickMembers</a></span><br><span class="sidebar-category-member"><a href="#.canManageChannels">canManageChannels</a></span><br><span class="sidebar-category-member"><a href="#.canManageEmojis">canManageEmojis</a></span><br><span class="sidebar-category-member"><a href="#.canManageGuild">canManageGuild</a></span><br><span class="sidebar-category-member"><a href="#.canManageMessages">canManageMessages</a></span><br><span class="sidebar-category-member"><a href="#.canManageRoles">canManageRoles</a></span><br><span class="sidebar-category-member"><a href="#.canManageThreads">canManageThreads</a></span><br><span class="sidebar-category-member"><a href="#.canManageWebhooks">canManageWebhooks</a></span><br><span class="sidebar-category-member"><a href="#.canRequestToSpeak">canRequestToSpeak</a></span><br><span class="sidebar-category-member"><a href="#.canUseApplicationCommands">canUseApplicationCommands</a></span><br><span class="sidebar-category-member"><a href="#.canUsePrivateThreads">canUsePrivateThreads</a></span><br><span class="sidebar-category-member"><a href="#.canUsePublicThreads">canUsePublicThreads</a></span><br><span class="sidebar-category-member"><a href="#.canViewAuditLogs">canViewAuditLogs</a></span><br><span class="sidebar-category-member"><a href="#.color">color</a></span><br><span class="sidebar-category-member"><a href="#.colorRole">colorRole</a></span><br><span class="sidebar-category-member"><a href="#.guild">guild</a></span><br><span class="sidebar-category-member"><a href="#.hasGuildAvatar">hasGuildAvatar</a></span><br><span class="sidebar-category-member"><a href="#.highestRole">highestRole</a></span><br><span class="sidebar-category-member"><a href="#.hoistedRole">hoistedRole</a></span><br><span class="sidebar-category-member"><a href="#.isBoosting">isBoosting</a></span><br><span class="sidebar-category-member"><a href="#.isOffline">isOffline</a></span><br><span class="sidebar-category-member"><a href="#.isOwner">isOwner</a></span><br><span class="sidebar-category-member"><a href="#.isPartial">isPartial</a></span><br><span class="sidebar-category-member"><a href="#.joinedAt">joinedAt</a></span><br><span class="sidebar-category-member"><a href="#.mention">mention</a></span><br><span class="sidebar-category-member"><a href="#.name">name</a></span><br><span class="sidebar-category-member"><a href="#.names">names</a></span><br><span class="sidebar-category-member"><a href="#.permissions">permissions</a></span><br><span class="sidebar-category-member"><a href="#.premiumSince">premiumSince</a></span><br><span class="sidebar-category-member"><a href="#.roles">roles</a></span><br><span class="sidebar-category-member"><a href="#.voiceChannel">voiceChannel</a></span><br><span class="sidebar-category-member"><a href="#.voiceState">voiceState</a></span><br><span class="sidebar-category-member"><a href="#.avatarUrlFormat">avatarUrlFormat</a></span><br><span class="sidebar-category-member"><a href="#.can">can</a></span><br><span class="sidebar-category-member"><a href="#.canEdit">canEdit</a></span><br><span class="sidebar-category-member"><a href="#.permissionsIn">permissionsIn</a></span><br><span class="sidebar-category-member"><a href="#.addRole">addRole</a></span><br><span class="sidebar-category-member"><a href="#.ban">ban</a></span><br><span class="sidebar-category-member"><a href="#.edit">edit</a></span><br><span class="sidebar-category-member"><a href="#.editNick">editNick</a></span><br><span class="sidebar-category-member"><a href="#.editVoiceState">editVoiceState</a></span><br><span class="sidebar-category-member"><a href="#.move">move</a></span><br><span class="sidebar-category-member"><a href="#.remove">remove</a></span><br><span class="sidebar-category-member"><a href="#.removeBan">removeBan</a></span><br><span class="sidebar-category-member"><a href="#.removeRole">removeRole</a></span><br><span class="sidebar-category-member"><a href="#.setDeaf">setDeaf</a></span><br><span class="sidebar-category-member"><a href="#.setMute">setMute</a></span><br><span class="sidebar-category-member"><a href="#.difference">difference</a></span><br><span class="sidebar-category-member"><a href="#.hasDifference">hasDifference</a></span><br><span class="sidebar-category-member"><a href="#.mergeValue">mergeValue</a></span><br><span class="sidebar-category-member"><a href="#.toJSON">toJSON</a></span><br>
+        </div>
+        </div>
+    
+    </div>
+    
+      </div>
+      <div id="content" class="col content">
+        <div class="d-none" id="search-menu">
+            <h1>Search results</h1>
+            <div class="row" style="margin-top: 20px;margin-bottom: 20px">
+                <div class="col-md-4">
+                    <p class="mini-header">Types</p>
+                    <div>
+                        <input type="checkbox" class="c-checkbox" id="search-option-classes" checked>
+                        <span>Classes</span>
+                    </div>
+                    <div>
+                        <input type="checkbox" class="c-checkbox" id="search-option-interfaces" checked>
+                        <span>Interfaces</span>
+                    </div>
+                    <div>
+                        <input type="checkbox" class="c-checkbox" id="search-option-enums" checked>
+                        <span>Enums</span>
+                    </div>
+                    <div>
+                        <input type="checkbox" class="c-checkbox" id="search-option-functions" checked>
+                        <span>Functions</span>
+                    </div>
+                    <div>
+                        <input type="checkbox" class="c-checkbox" id="search-option-types" checked>
+                        <span>Type aliases</span>
+                    </div>
+                    <div>
+                        <input type="checkbox" class="c-checkbox" id="search-option-constants">
+                        <span>Constants</span>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <p class="mini-header">Members</p>
+                    <div>
+                        <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-properties" checked>
+                            <span>Properties</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-methods" checked>
+                            <span>Methods</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-enum-members">
+                            <span>Enum members</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <p class="mini-header">Other</p>
+                    <div>
+                        <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-this-module-only">
+                            <span>In this module only</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div id="search-result-list">
+        
+            </div>
+        </div>        <div id="content-main" class="d-none">
+          <div class="path">
+            <a class="path-member" href="../../../index.html">index</a> / <a class="path-member" href="../../index.html">detritus-client</a> / <a class="path-member" href="../index.html">structures</a> / <a class="path-member" href="">Member</a>
+          </div>
+          
+<div>
+    <h1>Class <span class="referenceLink object">Member</span>
+    <a href=https://github.com/detritusjs/client/tree/master/src/structures/member.ts#L62>
+<span class="float-end sourceCode">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
+</svg>
+</span></a>
+    </h1>
+    <p class="item-name"><span class="keyword">extends</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.structures\class\UserMixin.html">UserMixin</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">UserMixin</span><span style="display:block" class="monospace fw-bold">structures/UserMixin</span></span></span></span></p>
+
+
+    <p>Guild Member Structure</p>
+
+
+    <h2>Constructor</h2>
+    
+<div id="class.constructor" class="item">
+    <p class="item-name"><span class="keyword">constructor</span><span>(<span class="item-name"><span class="param-name">client</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\class\ShardClient.html">ShardClient</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">ShardClient</span><span style="display:block" class="monospace fw-bold">/ShardClient</span></span></span></span></span>, <span class="item-name"><span class="param-name">data</span><span class="symbol">?</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.structures\interface\BaseStructureData.html">BaseStructureData</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">BaseStructureData</span><span style="display:block" class="monospace fw-bold">structures/BaseStructureData</span></span></span></span></span>, <span class="item-name"><span class="param-name">isClone</span><span class="symbol">?</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>)</span></p>
+
+    <div class="docblock">
+    <ul></ul>
+    </div>
+</div>
+    
+    <h2>Properties</h2>
+    <div><div class="item" id="._keys">
+    
+    
+    
+    
+    <span class="modifier">readonly</span>
+    <span class="item-name"><a class="property-name" href="#._keys">_keys</a><span>: keysMember</span></span>
+    <a href=https://github.com/detritusjs/client/tree/master/src/structures/member.ts#L63>
+<span class="float-end sourceCode">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
+</svg>
+</span></a>
+    <div class="docblock">
+        
+    </div>
+</div></div>
+    <div><div class="item" id="._keysMerge">
+    
+    
+    
+    
+    <span class="modifier">readonly</span>
+    <span class="item-name"><a class="property-name" href="#._keysMerge">_keysMerge</a><span>: keysMergeMember</span></span>
+    <a href=https://github.com/detritusjs/client/tree/master/src/structures/member.ts#L64>
+<span class="float-end sourceCode">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
+</svg>
+</span></a>
+    <div class="docblock">
+        
+    </div>
+</div></div>
+    <div><div class="item" id="._keysSkipDifference">
+    
+    
+    
+    
+    <span class="modifier">readonly</span>
+    <span class="item-name"><a class="property-name" href="#._keysSkipDifference">_keysSkipDifference</a><span>: keysSkipDifferenceMember</span></span>
+    <a href=https://github.com/detritusjs/client/tree/master/src/structures/member.ts#L65>
+<span class="float-end sourceCode">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
+</svg>
+</span></a>
+    <div class="docblock">
+        
+    </div>
+</div></div>
+    <div><div class="item" id="._avatar">
+    
+    
+    
+    
+    
+    <span class="item-name"><a class="property-name" href="#._avatar">_avatar</a><span>: 
+<span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span></span></span>
+    <a href=https://github.com/detritusjs/client/tree/master/src/structures/member.ts#L66>
+<span class="float-end sourceCode">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
+</svg>
+</span></a>
+    <div class="docblock">
+        
+    </div>
+</div></div>
+    <div><div class="item" id="._roles">
+    
+    
+    
+    
+    
+    <span class="item-name"><a class="property-name" href="#._roles">_roles</a><span>: 
+<span><span class="reference-link"><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>[]</span></span></span></span>
+    <a href=https://github.com/detritusjs/client/tree/master/src/structures/member.ts#L67>
+<span class="float-end sourceCode">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
+</svg>
+</span></a>
+    <div class="docblock">
+        
+    </div>
+</div></div>
+    <div><div class="item" id="._permissions">
+    
+    
+    
+    
+    
+    <span class="item-name"><a class="property-name" href="#._permissions">_permissions</a><span>: bigint</span></span>
+    <a href=https://github.com/detritusjs/client/tree/master/src/structures/member.ts#L68>
+<span class="float-end sourceCode">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
+</svg>
+</span></a>
+    <div class="docblock">
+        
+    </div>
+</div></div>
+    <div><div class="item" id=".deaf">
+    
+    
+    
+    
+    
+    <span class="item-name"><a class="property-name" href="#.deaf">deaf</a><span>: <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span></span>
+    <a href=https://github.com/detritusjs/client/tree/master/src/structures/member.ts#L70>
+<span class="float-end sourceCode">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
+</svg>
+</span></a>
+    <div class="docblock">
+        
+    </div>
+</div></div>
+    <div><div class="item" id=".guildId">
+    
+    
+    
+    
+    
+    <span class="item-name"><a class="property-name" href="#.guildId">guildId</a><span>: <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span></span>
+    <a href=https://github.com/detritusjs/client/tree/master/src/structures/member.ts#L71>
+<span class="float-end sourceCode">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
+</svg>
+</span></a>
+    <div class="docblock">
+        
+    </div>
+</div></div>
+    <div><div class="item" id=".hoistedRoleId">
+    
+    
+    
+    
+    
+    <span class="item-name"><a class="property-name" href="#.hoistedRoleId">hoistedRoleId</a><span>: 
+<span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span></span></span>
+    <a href=https://github.com/detritusjs/client/tree/master/src/structures/member.ts#L72>
+<span class="float-end sourceCode">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
+</svg>
+</span></a>
+    <div class="docblock">
+        
+    </div>
+</div></div>
+    <div><div class="item" id=".isPending">
+    
+    
+    
+    
+    
+    <span class="item-name"><a class="property-name" href="#.isPending">isPending</a><span>: <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span></span>
+    <a href=https://github.com/detritusjs/client/tree/master/src/structures/member.ts#L73>
+<span class="float-end sourceCode">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
+</svg>
+</span></a>
+    <div class="docblock">
+        
+    </div>
+</div></div>
+    <div><div class="item" id=".joinedAtUnix">
+    
+    
+    
+    
+    
+    <span class="item-name"><a class="property-name" href="#.joinedAtUnix">joinedAtUnix</a><span>: <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span></span>
+    <a href=https://github.com/detritusjs/client/tree/master/src/structures/member.ts#L74>
+<span class="float-end sourceCode">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
+</svg>
+</span></a>
+    <div class="docblock">
+        
+    </div>
+</div></div>
+    <div><div class="item" id=".left">
+    
+    
+    
+    
+    
+    <span class="item-name"><a class="property-name" href="#.left">left</a><span>: <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span></span>
+    <a href=https://github.com/detritusjs/client/tree/master/src/structures/member.ts#L75>
+<span class="float-end sourceCode">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
+</svg>
+</span></a>
+    <div class="docblock">
+        
+    </div>
+</div></div>
+    <div><div class="item" id=".mute">
+    
+    
+    
+    
+    
+    <span class="item-name"><a class="property-name" href="#.mute">mute</a><span>: <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span></span>
+    <a href=https://github.com/detritusjs/client/tree/master/src/structures/member.ts#L76>
+<span class="float-end sourceCode">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
+</svg>
+</span></a>
+    <div class="docblock">
+        
+    </div>
+</div></div>
+    <div><div class="item" id=".nick">
+    
+    
+    
+    
+    
+    <span class="item-name"><a class="property-name" href="#.nick">nick</a><span>: 
+<span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span></span></span>
+    <a href=https://github.com/detritusjs/client/tree/master/src/structures/member.ts#L77>
+<span class="float-end sourceCode">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
+</svg>
+</span></a>
+    <div class="docblock">
+        
+    </div>
+</div></div>
+    <div><div class="item" id=".pending">
+    
+    
+    
+    
+    
+    <span class="item-name"><a class="property-name" href="#.pending">pending</a><span>: <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span></span>
+    <a href=https://github.com/detritusjs/client/tree/master/src/structures/member.ts#L78>
+<span class="float-end sourceCode">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
+</svg>
+</span></a>
+    <div class="docblock">
+        
+    </div>
+</div></div>
+    <div><div class="item" id=".premiumSinceUnix">
+    
+    
+    
+    
+    
+    <span class="item-name"><a class="property-name" href="#.premiumSinceUnix">premiumSinceUnix</a><span>: <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span></span>
+    <a href=https://github.com/detritusjs/client/tree/master/src/structures/member.ts#L79>
+<span class="float-end sourceCode">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
+</svg>
+</span></a>
+    <div class="docblock">
+        
+    </div>
+</div></div>
+    <div><div class="item" id=".user">
+    
+    
+    
+    
+    
+    <span class="item-name"><a class="property-name" href="#.user">user</a><span>: <span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.structures\class\User.html">User</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">User</span><span style="display:block" class="monospace fw-bold">structures/User</span></span></span></span></span></span>
+    <a href=https://github.com/detritusjs/client/tree/master/src/structures/member.ts#L80>
+<span class="float-end sourceCode">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
+</svg>
+</span></a>
+    <div class="docblock">
+        
+    </div>
+</div></div>
+
+    <h2>Methods</h2>
+
+    <div>
+<div id=".avatar" class="item">
+    <p class="monospace">
+    
+    
+    
+    
+    <span class="modifier">get</span>
+    
+    <a href=https://github.com/detritusjs/client/tree/master/src/structures/member.ts#L92>
+<span class="float-end sourceCode">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
+</svg>
+</span></a>
+        <a class="item-name method-name" href="#.avatar">avatar</a><span>()</span><span><span class="symbol">:</span> 
+<span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span></span>
+        <div class="docblock">
+        
+        
+        </div>
+    </p>
+</div></div>
+    <div>
+<div id=".canAdministrator" class="item">
+    <p class="monospace">
+    
+    
+    
+    
+    <span class="modifier">get</span>
+    
+    <a href=https://github.com/detritusjs/client/tree/master/src/structures/member.ts#L96>
+<span class="float-end sourceCode">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
+</svg>
+</span></a>
+        <a class="item-name method-name" href="#.canAdministrator">canAdministrator</a><span>()</span><span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
+        <div class="docblock">
+        
+        
+        </div>
+    </p>
+</div></div>
+    <div>
+<div id=".canBanMembers" class="item">
+    <p class="monospace">
+    
+    
+    
+    
+    <span class="modifier">get</span>
+    
+    <a href=https://github.com/detritusjs/client/tree/master/src/structures/member.ts#L100>
+<span class="float-end sourceCode">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
+</svg>
+</span></a>
+        <a class="item-name method-name" href="#.canBanMembers">canBanMembers</a><span>()</span><span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
+        <div class="docblock">
+        
+        
+        </div>
+    </p>
+</div></div>
+    <div>
+<div id=".canChangeNickname" class="item">
+    <p class="monospace">
+    
+    
+    
+    
+    <span class="modifier">get</span>
+    
+    <a href=https://github.com/detritusjs/client/tree/master/src/structures/member.ts#L104>
+<span class="float-end sourceCode">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
+</svg>
+</span></a>
+        <a class="item-name method-name" href="#.canChangeNickname">canChangeNickname</a><span>()</span><span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
+        <div class="docblock">
+        
+        
+        </div>
+    </p>
+</div></div>
+    <div>
+<div id=".canChangeNicknames" class="item">
+    <p class="monospace">
+    
+    
+    
+    
+    <span class="modifier">get</span>
+    
+    <a href=https://github.com/detritusjs/client/tree/master/src/structures/member.ts#L108>
+<span class="float-end sourceCode">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
+</svg>
+</span></a>
+        <a class="item-name method-name" href="#.canChangeNicknames">canChangeNicknames</a><span>()</span><span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
+        <div class="docblock">
+        
+        
+        </div>
+    </p>
+</div></div>
+    <div>
+<div id=".canCreateInstantInvite" class="item">
+    <p class="monospace">
+    
+    
+    
+    
+    <span class="modifier">get</span>
+    
+    <a href=https://github.com/detritusjs/client/tree/master/src/structures/member.ts#L112>
+<span class="float-end sourceCode">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
+</svg>
+</span></a>
+        <a class="item-name method-name" href="#.canCreateInstantInvite">canCreateInstantInvite</a><span>()</span><span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
+        <div class="docblock">
+        
+        
+        </div>
+    </p>
+</div></div>
+    <div>
+<div id=".canKickMembers" class="item">
+    <p class="monospace">
+    
+    
+    
+    
+    <span class="modifier">get</span>
+    
+    <a href=https://github.com/detritusjs/client/tree/master/src/structures/member.ts#L116>
+<span class="float-end sourceCode">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
+</svg>
+</span></a>
+        <a class="item-name method-name" href="#.canKickMembers">canKickMembers</a><span>()</span><span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
+        <div class="docblock">
+        
+        
+        </div>
+    </p>
+</div></div>
+    <div>
+<div id=".canManageChannels" class="item">
+    <p class="monospace">
+    
+    
+    
+    
+    <span class="modifier">get</span>
+    
+    <a href=https://github.com/detritusjs/client/tree/master/src/structures/member.ts#L120>
+<span class="float-end sourceCode">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
+</svg>
+</span></a>
+        <a class="item-name method-name" href="#.canManageChannels">canManageChannels</a><span>()</span><span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
+        <div class="docblock">
+        
+        
+        </div>
+    </p>
+</div></div>
+    <div>
+<div id=".canManageEmojis" class="item">
+    <p class="monospace">
+    
+    
+    
+    
+    <span class="modifier">get</span>
+    
+    <a href=https://github.com/detritusjs/client/tree/master/src/structures/member.ts#L124>
+<span class="float-end sourceCode">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
+</svg>
+</span></a>
+        <a class="item-name method-name" href="#.canManageEmojis">canManageEmojis</a><span>()</span><span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
+        <div class="docblock">
+        
+        
+        </div>
+    </p>
+</div></div>
+    <div>
+<div id=".canManageGuild" class="item">
+    <p class="monospace">
+    
+    
+    
+    
+    <span class="modifier">get</span>
+    
+    <a href=https://github.com/detritusjs/client/tree/master/src/structures/member.ts#L128>
+<span class="float-end sourceCode">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
+</svg>
+</span></a>
+        <a class="item-name method-name" href="#.canManageGuild">canManageGuild</a><span>()</span><span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
+        <div class="docblock">
+        
+        
+        </div>
+    </p>
+</div></div>
+    <div>
+<div id=".canManageMessages" class="item">
+    <p class="monospace">
+    
+    
+    
+    
+    <span class="modifier">get</span>
+    
+    <a href=https://github.com/detritusjs/client/tree/master/src/structures/member.ts#L132>
+<span class="float-end sourceCode">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
+</svg>
+</span></a>
+        <a class="item-name method-name" href="#.canManageMessages">canManageMessages</a><span>()</span><span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
+        <div class="docblock">
+        
+        
+        </div>
+    </p>
+</div></div>
+    <div>
+<div id=".canManageRoles" class="item">
+    <p class="monospace">
+    
+    
+    
+    
+    <span class="modifier">get</span>
+    
+    <a href=https://github.com/detritusjs/client/tree/master/src/structures/member.ts#L136>
+<span class="float-end sourceCode">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
+</svg>
+</span></a>
+        <a class="item-name method-name" href="#.canManageRoles">canManageRoles</a><span>()</span><span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
+        <div class="docblock">
+        
+        
+        </div>
+    </p>
+</div></div>
+    <div>
+<div id=".canManageThreads" class="item">
+    <p class="monospace">
+    
+    
+    
+    
+    <span class="modifier">get</span>
+    
+    <a href=https://github.com/detritusjs/client/tree/master/src/structures/member.ts#L140>
+<span class="float-end sourceCode">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
+</svg>
+</span></a>
+        <a class="item-name method-name" href="#.canManageThreads">canManageThreads</a><span>()</span><span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
+        <div class="docblock">
+        
+        
+        </div>
+    </p>
+</div></div>
+    <div>
+<div id=".canManageWebhooks" class="item">
+    <p class="monospace">
+    
+    
+    
+    
+    <span class="modifier">get</span>
+    
+    <a href=https://github.com/detritusjs/client/tree/master/src/structures/member.ts#L144>
+<span class="float-end sourceCode">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
+</svg>
+</span></a>
+        <a class="item-name method-name" href="#.canManageWebhooks">canManageWebhooks</a><span>()</span><span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
+        <div class="docblock">
+        
+        
+        </div>
+    </p>
+</div></div>
+    <div>
+<div id=".canRequestToSpeak" class="item">
+    <p class="monospace">
+    
+    
+    
+    
+    <span class="modifier">get</span>
+    
+    <a href=https://github.com/detritusjs/client/tree/master/src/structures/member.ts#L148>
+<span class="float-end sourceCode">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
+</svg>
+</span></a>
+        <a class="item-name method-name" href="#.canRequestToSpeak">canRequestToSpeak</a><span>()</span><span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
+        <div class="docblock">
+        
+        
+        </div>
+    </p>
+</div></div>
+    <div>
+<div id=".canUseApplicationCommands" class="item">
+    <p class="monospace">
+    
+    
+    
+    
+    <span class="modifier">get</span>
+    
+    <a href=https://github.com/detritusjs/client/tree/master/src/structures/member.ts#L152>
+<span class="float-end sourceCode">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
+</svg>
+</span></a>
+        <a class="item-name method-name" href="#.canUseApplicationCommands">canUseApplicationCommands</a><span>()</span><span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
+        <div class="docblock">
+        
+        
+        </div>
+    </p>
+</div></div>
+    <div>
+<div id=".canUsePrivateThreads" class="item">
+    <p class="monospace">
+    
+    
+    
+    
+    <span class="modifier">get</span>
+    
+    <a href=https://github.com/detritusjs/client/tree/master/src/structures/member.ts#L156>
+<span class="float-end sourceCode">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
+</svg>
+</span></a>
+        <a class="item-name method-name" href="#.canUsePrivateThreads">canUsePrivateThreads</a><span>()</span><span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
+        <div class="docblock">
+        
+        
+        </div>
+    </p>
+</div></div>
+    <div>
+<div id=".canUsePublicThreads" class="item">
+    <p class="monospace">
+    
+    
+    
+    
+    <span class="modifier">get</span>
+    
+    <a href=https://github.com/detritusjs/client/tree/master/src/structures/member.ts#L160>
+<span class="float-end sourceCode">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
+</svg>
+</span></a>
+        <a class="item-name method-name" href="#.canUsePublicThreads">canUsePublicThreads</a><span>()</span><span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
+        <div class="docblock">
+        
+        
+        </div>
+    </p>
+</div></div>
+    <div>
+<div id=".canViewAuditLogs" class="item">
+    <p class="monospace">
+    
+    
+    
+    
+    <span class="modifier">get</span>
+    
+    <a href=https://github.com/detritusjs/client/tree/master/src/structures/member.ts#L164>
+<span class="float-end sourceCode">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
+</svg>
+</span></a>
+        <a class="item-name method-name" href="#.canViewAuditLogs">canViewAuditLogs</a><span>()</span><span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
+        <div class="docblock">
+        
+        
+        </div>
+    </p>
+</div></div>
+    <div>
+<div id=".color" class="item">
+    <p class="monospace">
+    
+    
+    
+    
+    <span class="modifier">get</span>
+    
+    <a href=https://github.com/detritusjs/client/tree/master/src/structures/member.ts#L168>
+<span class="float-end sourceCode">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
+</svg>
+</span></a>
+        <a class="item-name method-name" href="#.color">color</a><span>()</span><span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>
+        <div class="docblock">
+        
+        
+        </div>
+    </p>
+</div></div>
+    <div>
+<div id=".colorRole" class="item">
+    <p class="monospace">
+    
+    
+    
+    
+    <span class="modifier">get</span>
+    
+    <a href=https://github.com/detritusjs/client/tree/master/src/structures/member.ts#L173>
+<span class="float-end sourceCode">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
+</svg>
+</span></a>
+        <a class="item-name method-name" href="#.colorRole">colorRole</a><span>()</span><span><span class="symbol">:</span> 
+<span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></span><span class='symbol'> | </span><span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.structures\class\Role.html">Role</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Role</span><span style="display:block" class="monospace fw-bold">structures/Role</span></span></span></span></span></span>
+        <div class="docblock">
+        
+        
+        </div>
+    </p>
+</div></div>
+    <div>
+<div id=".guild" class="item">
+    <p class="monospace">
+    
+    
+    
+    
+    <span class="modifier">get</span>
+    
+    <a href=https://github.com/detritusjs/client/tree/master/src/structures/member.ts#L189>
+<span class="float-end sourceCode">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
+</svg>
+</span></a>
+        <a class="item-name method-name" href="#.guild">guild</a><span>()</span><span><span class="symbol">:</span> 
+<span><span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.structures\class\Guild.html">Guild</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Guild</span><span style="display:block" class="monospace fw-bold">structures/Guild</span></span></span></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></span></span></span>
+        <div class="docblock">
+        
+        
+        </div>
+    </p>
+</div></div>
+    <div>
+<div id=".hasGuildAvatar" class="item">
+    <p class="monospace">
+    
+    
+    
+    
+    <span class="modifier">get</span>
+    
+    <a href=https://github.com/detritusjs/client/tree/master/src/structures/member.ts#L193>
+<span class="float-end sourceCode">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
+</svg>
+</span></a>
+        <a class="item-name method-name" href="#.hasGuildAvatar">hasGuildAvatar</a><span>()</span><span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
+        <div class="docblock">
+        
+        
+        </div>
+    </p>
+</div></div>
+    <div>
+<div id=".highestRole" class="item">
+    <p class="monospace">
+    
+    
+    
+    
+    <span class="modifier">get</span>
+    
+    <a href=https://github.com/detritusjs/client/tree/master/src/structures/member.ts#L197>
+<span class="float-end sourceCode">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
+</svg>
+</span></a>
+        <a class="item-name method-name" href="#.highestRole">highestRole</a><span>()</span><span><span class="symbol">:</span> 
+<span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></span><span class='symbol'> | </span><span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.structures\class\Role.html">Role</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Role</span><span style="display:block" class="monospace fw-bold">structures/Role</span></span></span></span></span></span>
+        <div class="docblock">
+        
+        
+        </div>
+    </p>
+</div></div>
+    <div>
+<div id=".hoistedRole" class="item">
+    <p class="monospace">
+    
+    
+    
+    
+    <span class="modifier">get</span>
+    
+    <a href=https://github.com/detritusjs/client/tree/master/src/structures/member.ts#L213>
+<span class="float-end sourceCode">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
+</svg>
+</span></a>
+        <a class="item-name method-name" href="#.hoistedRole">hoistedRole</a><span>()</span><span><span class="symbol">:</span> 
+<span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></span><span class='symbol'> | </span><span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.structures\class\Role.html">Role</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Role</span><span style="display:block" class="monospace fw-bold">structures/Role</span></span></span></span></span></span>
+        <div class="docblock">
+        
+        
+        </div>
+    </p>
+</div></div>
+    <div>
+<div id=".isBoosting" class="item">
+    <p class="monospace">
+    
+    
+    
+    
+    <span class="modifier">get</span>
+    
+    <a href=https://github.com/detritusjs/client/tree/master/src/structures/member.ts#L220>
+<span class="float-end sourceCode">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
+</svg>
+</span></a>
+        <a class="item-name method-name" href="#.isBoosting">isBoosting</a><span>()</span><span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
+        <div class="docblock">
+        
+        
+        </div>
+    </p>
+</div></div>
+    <div>
+<div id=".isOffline" class="item">
+    <p class="monospace">
+    
+    
+    
+    
+    <span class="modifier">get</span>
+    
+    <a href=https://github.com/detritusjs/client/tree/master/src/structures/member.ts#L224>
+<span class="float-end sourceCode">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
+</svg>
+</span></a>
+        <a class="item-name method-name" href="#.isOffline">isOffline</a><span>()</span><span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
+        <div class="docblock">
+        
+        
+        </div>
+    </p>
+</div></div>
+    <div>
+<div id=".isOwner" class="item">
+    <p class="monospace">
+    
+    
+    
+    
+    <span class="modifier">get</span>
+    
+    <a href=https://github.com/detritusjs/client/tree/master/src/structures/member.ts#L232>
+<span class="float-end sourceCode">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
+</svg>
+</span></a>
+        <a class="item-name method-name" href="#.isOwner">isOwner</a><span>()</span><span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
+        <div class="docblock">
+        
+        
+        </div>
+    </p>
+</div></div>
+    <div>
+<div id=".isPartial" class="item">
+    <p class="monospace">
+    
+    
+    
+    
+    <span class="modifier">get</span>
+    
+    <a href=https://github.com/detritusjs/client/tree/master/src/structures/member.ts#L240>
+<span class="float-end sourceCode">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
+</svg>
+</span></a>
+        <a class="item-name method-name" href="#.isPartial">isPartial</a><span>()</span><span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
+        <div class="docblock">
+        
+        
+        </div>
+    </p>
+</div></div>
+    <div>
+<div id=".joinedAt" class="item">
+    <p class="monospace">
+    
+    
+    
+    
+    <span class="modifier">get</span>
+    
+    <a href=https://github.com/detritusjs/client/tree/master/src/structures/member.ts#L244>
+<span class="float-end sourceCode">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
+</svg>
+</span></a>
+        <a class="item-name method-name" href="#.joinedAt">joinedAt</a><span>()</span><span><span class="symbol">:</span> 
+<span><span><span class="reference-link"><a class='external' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt">Bigint</a></span></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></span></span></span>
+        <div class="docblock">
+        
+        
+        </div>
+    </p>
+</div></div>
+    <div>
+<div id=".mention" class="item">
+    <p class="monospace">
+    
+    
+    
+    
+    <span class="modifier">get</span>
+    
+    <a href=https://github.com/detritusjs/client/tree/master/src/structures/member.ts#L251>
+<span class="float-end sourceCode">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
+</svg>
+</span></a>
+        <a class="item-name method-name" href="#.mention">mention</a><span>()</span><span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>
+        <div class="docblock">
+        
+        
+        </div>
+    </p>
+</div></div>
+    <div>
+<div id=".name" class="item">
+    <p class="monospace">
+    
+    
+    
+    
+    <span class="modifier">get</span>
+    
+    <a href=https://github.com/detritusjs/client/tree/master/src/structures/member.ts#L255>
+<span class="float-end sourceCode">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
+</svg>
+</span></a>
+        <a class="item-name method-name" href="#.name">name</a><span>()</span><span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>
+        <div class="docblock">
+        
+        
+        </div>
+    </p>
+</div></div>
+    <div>
+<div id=".names" class="item">
+    <p class="monospace">
+    
+    
+    
+    
+    <span class="modifier">get</span>
+    
+    <a href=https://github.com/detritusjs/client/tree/master/src/structures/member.ts#L259>
+<span class="float-end sourceCode">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
+</svg>
+</span></a>
+        <a class="item-name method-name" href="#.names">names</a><span>()</span><span><span class="symbol">:</span> 
+<span><span class="reference-link"><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>[]</span></span></span>
+        <div class="docblock">
+        
+        
+        </div>
+    </p>
+</div></div>
+    <div>
+<div id=".permissions" class="item">
+    <p class="monospace">
+    
+    
+    
+    
+    <span class="modifier">get</span>
+    
+    <a href=https://github.com/detritusjs/client/tree/master/src/structures/member.ts#L266>
+<span class="float-end sourceCode">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
+</svg>
+</span></a>
+        <a class="item-name method-name" href="#.permissions">permissions</a><span>()</span><span><span class="symbol">:</span> bigint</span>
+        <div class="docblock">
+        
+        
+        </div>
+    </p>
+</div></div>
+    <div>
+<div id=".premiumSince" class="item">
+    <p class="monospace">
+    
+    
+    
+    
+    <span class="modifier">get</span>
+    
+    <a href=https://github.com/detritusjs/client/tree/master/src/structures/member.ts#L281>
+<span class="float-end sourceCode">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
+</svg>
+</span></a>
+        <a class="item-name method-name" href="#.premiumSince">premiumSince</a><span>()</span><span><span class="symbol">:</span> 
+<span><span><span class="reference-link"><a class='external' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt">Bigint</a></span></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></span></span></span>
+        <div class="docblock">
+        
+        
+        </div>
+    </p>
+</div></div>
+    <div>
+<div id=".roles" class="item">
+    <p class="monospace">
+    
+    
+    
+    
+    <span class="modifier">get</span>
+    
+    <a href=https://github.com/detritusjs/client/tree/master/src/structures/member.ts#L288>
+<span class="float-end sourceCode">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
+</svg>
+</span></a>
+        <a class="item-name method-name" href="#.roles">roles</a><span>()</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-utils\class\BaseCollection.html">BaseCollection</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">BaseCollection</span><span style="display:block" class="monospace fw-bold">detritus-utils/BaseCollection</span></span></span><span>&lt;<span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>, <span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></span><span class='symbol'> | </span><span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.structures\class\Role.html">Role</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Role</span><span style="display:block" class="monospace fw-bold">structures/Role</span></span></span></span></span>&gt;</span></span></span>
+        <div class="docblock">
+        
+        
+        </div>
+    </p>
+</div></div>
+    <div>
+<div id=".voiceChannel" class="item">
+    <p class="monospace">
+    
+    
+    
+    
+    <span class="modifier">get</span>
+    
+    <a href=https://github.com/detritusjs/client/tree/master/src/structures/member.ts#L306>
+<span class="float-end sourceCode">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
+</svg>
+</span></a>
+        <a class="item-name method-name" href="#.voiceChannel">voiceChannel</a><span>()</span><span><span class="symbol">:</span> 
+<span><span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.structures\class\ChannelGuildStageVoice.html">ChannelGuildStageVoice</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">ChannelGuildStageVoice</span><span style="display:block" class="monospace fw-bold">structures/ChannelGuildStageVoice</span></span></span></span><span class='symbol'> | </span><span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.structures\class\ChannelGuildVoice.html">ChannelGuildVoice</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">ChannelGuildVoice</span><span style="display:block" class="monospace fw-bold">structures/ChannelGuildVoice</span></span></span></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></span></span></span>
+        <div class="docblock">
+        
+        
+        </div>
+    </p>
+</div></div>
+    <div>
+<div id=".voiceState" class="item">
+    <p class="monospace">
+    
+    
+    
+    
+    <span class="modifier">get</span>
+    
+    <a href=https://github.com/detritusjs/client/tree/master/src/structures/member.ts#L314>
+<span class="float-end sourceCode">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
+</svg>
+</span></a>
+        <a class="item-name method-name" href="#.voiceState">voiceState</a><span>()</span><span><span class="symbol">:</span> 
+<span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></span><span class='symbol'> | </span><span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.structures\class\VoiceState.html">VoiceState</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">VoiceState</span><span style="display:block" class="monospace fw-bold">structures/VoiceState</span></span></span></span></span></span>
+        <div class="docblock">
+        
+        
+        </div>
+    </p>
+</div></div>
+    <div>
+<div id=".avatarUrlFormat" class="item">
+    <p class="monospace">
+    
+    
+    
+    
+    
+    
+    <a href=https://github.com/detritusjs/client/tree/master/src/structures/member.ts#L318>
+<span class="float-end sourceCode">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
+</svg>
+</span></a>
+        <a class="item-name method-name" href="#.avatarUrlFormat">avatarUrlFormat</a><span>(<span class="item-name"><span class="param-name">format</span><span class="symbol">?</span><span class="symbol">:</span> 
+<span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span></span>, <span class="item-name"><span class="param-name">query</span><span class="symbol">?</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.utils\type\UrlQuery.html">UrlQuery</a><span class="c-tooltip-content"><span class="keyword">type alias</span> <span class="item-name object">UrlQuery</span><span style="display:block" class="monospace fw-bold">utils/UrlQuery</span></span></span></span></span>)</span><span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>
+        <div class="docblock">
+        <ul></ul>
+        
+        </div>
+    </p>
+</div></div>
+    <div>
+<div id=".can" class="item">
+    <p class="monospace">
+    
+    
+    
+    
+    
+    
+    <a href=https://github.com/detritusjs/client/tree/master/src/structures/member.ts#L327>
+<span class="float-end sourceCode">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
+</svg>
+</span></a>
+        <a class="item-name method-name" href="#.can">can</a><span>(<span class="item-name"><span class="param-name">permissions</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.utils\type\PermissionChecks.html">PermissionChecks</a><span class="c-tooltip-content"><span class="keyword">type alias</span> <span class="item-name object">PermissionChecks</span><span style="display:block" class="monospace fw-bold">utils/PermissionChecks</span></span></span></span></span>, <span class="item-name"><span class="param-name">options</span><span class="symbol">:</span> 
+<span>{ <span class="item-name" id=".ignoreAdministrator"><a class="property-name" href="#.ignoreAdministrator">ignoreAdministrator</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>, <span class="item-name" id=".ignoreOwner"><a class="property-name" href="#.ignoreOwner">ignoreOwner</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span> }</span> <span class="symbol">=</span> {}</span>)</span><span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
+        <div class="docblock">
+        <ul></ul>
+        
+        </div>
+    </p>
+</div></div>
+    <div>
+<div id=".canEdit" class="item">
+    <p class="monospace">
+    
+    
+    
+    
+    
+    
+    <a href=https://github.com/detritusjs/client/tree/master/src/structures/member.ts#L339>
+<span class="float-end sourceCode">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
+</svg>
+</span></a>
+        <a class="item-name method-name" href="#.canEdit">canEdit</a><span>(<span class="item-name"><span class="param-name">member</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.structures\class\Member.html">Member</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Member</span><span style="display:block" class="monospace fw-bold">structures/Member</span></span></span></span></span>)</span><span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
+        <div class="docblock">
+        <ul></ul>
+        
+        </div>
+    </p>
+</div></div>
+    <div>
+<div id=".permissionsIn" class="item">
+    <p class="monospace">
+    
+    
+    
+    
+    
+    
+    <a href=https://github.com/detritusjs/client/tree/master/src/structures/member.ts#L357>
+<span class="float-end sourceCode">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
+</svg>
+</span></a>
+        <a class="item-name method-name" href="#.permissionsIn">permissionsIn</a><span>(<span class="item-name"><span class="param-name">channelId</span><span class="symbol">:</span> 
+<span><span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.structures\type\Channel.html">Channel</a><span class="c-tooltip-content"><span class="keyword">type alias</span> <span class="item-name object">Channel</span><span style="display:block" class="monospace fw-bold">structures/Channel</span></span></span></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span></span>)</span><span><span class="symbol">:</span> bigint</span>
+        <div class="docblock">
+        <ul></ul>
+        
+        </div>
+    </p>
+</div></div>
+    <div>
+<div id=".addRole" class="item">
+    <p class="monospace">
+    
+    
+    
+    
+    
+    
+    <a href=https://github.com/detritusjs/client/tree/master/src/structures/member.ts#L394>
+<span class="float-end sourceCode">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
+</svg>
+</span></a>
+        <a class="item-name method-name" href="#.addRole">addRole</a><span>(<span class="item-name"><span class="param-name">roleId</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>, <span class="item-name"><span class="param-name">options</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client-rest\m.RequestTypes\interface\AddGuildMemberRole.html">AddGuildMemberRole</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">AddGuildMemberRole</span><span style="display:block" class="monospace fw-bold">detritus-client-rest/RequestTypesAddGuildMemberRole</span></span></span></span> <span class="symbol">=</span> {}</span>)</span>
+        <div class="docblock">
+        <ul></ul>
+        
+        </div>
+    </p>
+</div></div>
+    <div>
+<div id=".ban" class="item">
+    <p class="monospace">
+    
+    
+    
+    
+    
+    
+    <a href=https://github.com/detritusjs/client/tree/master/src/structures/member.ts#L398>
+<span class="float-end sourceCode">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
+</svg>
+</span></a>
+        <a class="item-name method-name" href="#.ban">ban</a><span>(<span class="item-name"><span class="param-name">options</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client-rest\m.RequestTypes\interface\CreateGuildBan.html">CreateGuildBan</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">CreateGuildBan</span><span style="display:block" class="monospace fw-bold">detritus-client-rest/RequestTypesCreateGuildBan</span></span></span></span> <span class="symbol">=</span> {}</span>)</span>
+        <div class="docblock">
+        <ul></ul>
+        
+        </div>
+    </p>
+</div></div>
+    <div>
+<div id=".edit" class="item">
+    <p class="monospace">
+    
+    
+    
+    
+    
+    
+    <a href=https://github.com/detritusjs/client/tree/master/src/structures/member.ts#L402>
+<span class="float-end sourceCode">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
+</svg>
+</span></a>
+        <a class="item-name method-name" href="#.edit">edit</a><span>(<span class="item-name"><span class="param-name">options</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client-rest\m.RequestTypes\interface\EditGuildMember.html">EditGuildMember</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">EditGuildMember</span><span style="display:block" class="monospace fw-bold">detritus-client-rest/RequestTypesEditGuildMember</span></span></span></span> <span class="symbol">=</span> {}</span>)</span>
+        <div class="docblock">
+        <ul></ul>
+        
+        </div>
+    </p>
+</div></div>
+    <div>
+<div id=".editNick" class="item">
+    <p class="monospace">
+    
+    
+    
+    
+    
+    
+    <a href=https://github.com/detritusjs/client/tree/master/src/structures/member.ts#L406>
+<span class="float-end sourceCode">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
+</svg>
+</span></a>
+        <a class="item-name method-name" href="#.editNick">editNick</a><span>(<span class="item-name"><span class="param-name">nick</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>, <span class="item-name"><span class="param-name">options</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client-rest\m.RequestTypes\interface\EditGuildNick.html">EditGuildNick</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">EditGuildNick</span><span style="display:block" class="monospace fw-bold">detritus-client-rest/RequestTypesEditGuildNick</span></span></span></span> <span class="symbol">=</span> {}</span>)</span>
+        <div class="docblock">
+        <ul></ul>
+        
+        </div>
+    </p>
+</div></div>
+    <div>
+<div id=".editVoiceState" class="item">
+    <p class="monospace">
+    
+    
+    
+    
+    
+    
+    <a href=https://github.com/detritusjs/client/tree/master/src/structures/member.ts#L413>
+<span class="float-end sourceCode">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
+</svg>
+</span></a>
+        <a class="item-name method-name" href="#.editVoiceState">editVoiceState</a><span>(<span class="item-name"><span class="param-name">options</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client-rest\m.RequestTypes\interface\EditGuildVoiceState.html">EditGuildVoiceState</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">EditGuildVoiceState</span><span style="display:block" class="monospace fw-bold">detritus-client-rest/RequestTypesEditGuildVoiceState</span></span></span></span></span>)</span>
+        <div class="docblock">
+        <ul></ul>
+        
+        </div>
+    </p>
+</div></div>
+    <div>
+<div id=".move" class="item">
+    <p class="monospace">
+    
+    
+    
+    
+    
+    
+    <a href=https://github.com/detritusjs/client/tree/master/src/structures/member.ts#L418>
+<span class="float-end sourceCode">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
+</svg>
+</span></a>
+        <a class="item-name method-name" href="#.move">move</a><span>(<span class="item-name"><span class="param-name">channelId</span><span class="symbol">:</span> 
+<span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span></span>, <span class="item-name"><span class="param-name">options</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client-rest\m.RequestTypes\interface\EditGuildMember.html">EditGuildMember</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">EditGuildMember</span><span style="display:block" class="monospace fw-bold">detritus-client-rest/RequestTypesEditGuildMember</span></span></span></span> <span class="symbol">=</span> {}</span>)</span>
+        <div class="docblock">
+        <ul></ul>
+        
+        </div>
+    </p>
+</div></div>
+    <div>
+<div id=".remove" class="item">
+    <p class="monospace">
+    
+    
+    
+    
+    
+    
+    <a href=https://github.com/detritusjs/client/tree/master/src/structures/member.ts#L422>
+<span class="float-end sourceCode">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
+</svg>
+</span></a>
+        <a class="item-name method-name" href="#.remove">remove</a><span>(<span class="item-name"><span class="param-name">options</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client-rest\m.RequestTypes\interface\RemoveGuildMember.html">RemoveGuildMember</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">RemoveGuildMember</span><span style="display:block" class="monospace fw-bold">detritus-client-rest/RequestTypesRemoveGuildMember</span></span></span></span> <span class="symbol">=</span> {}</span>)</span>
+        <div class="docblock">
+        <ul></ul>
+        
+        </div>
+    </p>
+</div></div>
+    <div>
+<div id=".removeBan" class="item">
+    <p class="monospace">
+    
+    
+    
+    
+    
+    
+    <a href=https://github.com/detritusjs/client/tree/master/src/structures/member.ts#L426>
+<span class="float-end sourceCode">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
+</svg>
+</span></a>
+        <a class="item-name method-name" href="#.removeBan">removeBan</a><span>(<span class="item-name"><span class="param-name">options</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client-rest\m.RequestTypes\interface\RemoveGuildBan.html">RemoveGuildBan</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">RemoveGuildBan</span><span style="display:block" class="monospace fw-bold">detritus-client-rest/RequestTypesRemoveGuildBan</span></span></span></span> <span class="symbol">=</span> {}</span>)</span>
+        <div class="docblock">
+        <ul></ul>
+        
+        </div>
+    </p>
+</div></div>
+    <div>
+<div id=".removeRole" class="item">
+    <p class="monospace">
+    
+    
+    
+    
+    
+    
+    <a href=https://github.com/detritusjs/client/tree/master/src/structures/member.ts#L430>
+<span class="float-end sourceCode">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
+</svg>
+</span></a>
+        <a class="item-name method-name" href="#.removeRole">removeRole</a><span>(<span class="item-name"><span class="param-name">roleId</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>, <span class="item-name"><span class="param-name">options</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client-rest\m.RequestTypes\interface\RemoveGuildMemberRole.html">RemoveGuildMemberRole</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">RemoveGuildMemberRole</span><span style="display:block" class="monospace fw-bold">detritus-client-rest/RequestTypesRemoveGuildMemberRole</span></span></span></span> <span class="symbol">=</span> {}</span>)</span>
+        <div class="docblock">
+        <ul></ul>
+        
+        </div>
+    </p>
+</div></div>
+    <div>
+<div id=".setDeaf" class="item">
+    <p class="monospace">
+    
+    
+    
+    
+    
+    
+    <a href=https://github.com/detritusjs/client/tree/master/src/structures/member.ts#L434>
+<span class="float-end sourceCode">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
+</svg>
+</span></a>
+        <a class="item-name method-name" href="#.setDeaf">setDeaf</a><span>(<span class="item-name"><span class="param-name">deaf</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>, <span class="item-name"><span class="param-name">options</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client-rest\m.RequestTypes\interface\EditGuildMember.html">EditGuildMember</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">EditGuildMember</span><span style="display:block" class="monospace fw-bold">detritus-client-rest/RequestTypesEditGuildMember</span></span></span></span> <span class="symbol">=</span> {}</span>)</span>
+        <div class="docblock">
+        <ul></ul>
+        
+        </div>
+    </p>
+</div></div>
+    <div>
+<div id=".setMute" class="item">
+    <p class="monospace">
+    
+    
+    
+    
+    
+    
+    <a href=https://github.com/detritusjs/client/tree/master/src/structures/member.ts#L438>
+<span class="float-end sourceCode">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
+</svg>
+</span></a>
+        <a class="item-name method-name" href="#.setMute">setMute</a><span>(<span class="item-name"><span class="param-name">mute</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>, <span class="item-name"><span class="param-name">options</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client-rest\m.RequestTypes\interface\EditGuildMember.html">EditGuildMember</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">EditGuildMember</span><span style="display:block" class="monospace fw-bold">detritus-client-rest/RequestTypesEditGuildMember</span></span></span></span> <span class="symbol">=</span> {}</span>)</span>
+        <div class="docblock">
+        <ul></ul>
+        
+        </div>
+    </p>
+</div></div>
+    <div>
+<div id=".difference" class="item">
+    <p class="monospace">
+    
+    
+    
+    
+    
+    
+    <a href=https://github.com/detritusjs/client/tree/master/src/structures/member.ts#L442>
+<span class="float-end sourceCode">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
+</svg>
+</span></a>
+        <a class="item-name method-name" href="#.difference">difference</a><span>(<span class="item-name"><span class="param-name">key</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>, <span class="item-name"><span class="param-name">value</span><span class="symbol">:</span> <span class="reference-link"><span class='primitive'>any</span></span></span>)</span><span><span class="symbol">:</span> 
+<span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span><span class='symbol'> | </span><span class="reference-link"><span class='primitive'>any</span></span></span></span>
+        <div class="docblock">
+        <ul></ul>
+        
+        </div>
+    </p>
+</div></div>
+    <div>
+<div id=".hasDifference" class="item">
+    <p class="monospace">
+    
+    
+    
+    
+    
+    
+    <a href=https://github.com/detritusjs/client/tree/master/src/structures/member.ts#L465>
+<span class="float-end sourceCode">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
+</svg>
+</span></a>
+        <a class="item-name method-name" href="#.hasDifference">hasDifference</a><span>(<span class="item-name"><span class="param-name">key</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>, <span class="item-name"><span class="param-name">value</span><span class="symbol">:</span> <span class="reference-link"><span class='primitive'>any</span></span></span>)</span><span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
+        <div class="docblock">
+        <ul></ul>
+        
+        </div>
+    </p>
+</div></div>
+    <div>
+<div id=".mergeValue" class="item">
+    <p class="monospace">
+    
+    
+    
+    
+    
+    
+    <a href=https://github.com/detritusjs/client/tree/master/src/structures/member.ts#L482>
+<span class="float-end sourceCode">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
+</svg>
+</span></a>
+        <a class="item-name method-name" href="#.mergeValue">mergeValue</a><span>(<span class="item-name"><span class="param-name">key</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>, <span class="item-name"><span class="param-name">value</span><span class="symbol">:</span> <span class="reference-link"><span class='primitive'>any</span></span></span>)</span><span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://www.typescriptlang.org/docs/handbook/2/functions.html#void">void</a></span></span>
+        <div class="docblock">
+        <ul></ul>
+        
+        </div>
+    </p>
+</div></div>
+    <div>
+<div id=".toJSON" class="item">
+    <p class="monospace">
+    
+    
+    
+    
+    
+    
+    <a href=https://github.com/detritusjs/client/tree/master/src/structures/member.ts#L537>
+<span class="float-end sourceCode">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
+</svg>
+</span></a>
+        <a class="item-name method-name" href="#.toJSON">toJSON</a><span>(<span class="item-name"><span class="param-name">withRoles</span><span class="symbol">?</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>)</span>
+        <div class="docblock">
+        <ul></ul>
+        
+        </div>
+    </p>
+</div></div>
+
+</div>
+        </div>
+
+      </div>
+
+      </div>
+  </div>
+
+  <div id="to-top" class="btn-to-top">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
+  </svg>
+  </div>
+
+
+</body>
+
+</html>

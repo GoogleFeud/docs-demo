@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>BaseCollection |  Detritus</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/an-old-hope.min.css"
+    integrity="sha512-t47CjkEB5hx4FojnE73dBLwgrgvLBpgsHvB40ycK3cYPkLwEp7qNHyRpRDA3/zVVAAOUPJwbMVJq3uJrBqpHVQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+    <link href="../../assets/css/index.css" type="text/css" rel="stylesheet">
+    <script src="../../assets/js/index.js"></script>
+    <script>window.depth="../../";window.lm="detritus-utils"</script>
+    
+</head>
+
+<body>
+  
+      <nav class="container-fluid navi">
+      <div class="row">
+        <div class="col-4">
+          <input class="form-control search" id="search" type="search" placeholder="Search" aria-label="Search">
+        </div>
+        <div class="col-8">
+          <div class="row float-end" style="margin-top:5px">
+            <div class="col clickable-icon" id="theme-icon"></div>
+            <div class="col">
+              <a href=https://github.com/detritusjs/client/tree/master class="clickable-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-github"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                </svg>
+              </a>
+             </div>
+            <div class="col">
+              <span style="font-size: 1.2em">v0.16.1</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-auto sidebar">
+        <h1 class="lib-name text-center">Detritus</h1>
+        
+    <img src="../../assets/logo.png" alt="Logo" class="img-fluid mx-auto d-block">
+    <p class="current-thing text-center">class <span class="object">BaseCollection</span></p>
+    <div class="sidebar-members">
+    
+        <div class="sidebar-member">
+        <div class="collapsible-trigger">
+        <span class="collapsible-arrow open"></span>
+        <span class="sidebar-category">Properties</span>
+        </div>
+        <div class="collapsible-body open"> 
+        <span class="sidebar-category-member"><a href="#.cache">cache</a></span><br><span class="sidebar-category-member"><a href="#._lastUsed">_lastUsed</a></span><br><span class="sidebar-category-member"><a href="#.expire">expire</a></span><br><span class="sidebar-category-member"><a href="#.interval">interval</a></span><br><span class="sidebar-category-member"><a href="#.intervalTime">intervalTime</a></span><br><span class="sidebar-category-member"><a href="#.limit">limit</a></span><br>
+        </div>
+        </div>
+    
+        <div class="sidebar-member">
+        <div class="collapsible-trigger">
+        <span class="collapsible-arrow open"></span>
+        <span class="sidebar-category">Methods</span>
+        </div>
+        <div class="collapsible-body open"> 
+        <span class="sidebar-category-member"><a href="#.lastUsed">lastUsed</a></span><br><span class="sidebar-category-member"><a href="#.shouldStartInterval">shouldStartInterval</a></span><br><span class="sidebar-category-member"><a href="#.setExpire">setExpire</a></span><br><span class="sidebar-category-member"><a href="#.setIntervalTimeout">setIntervalTimeout</a></span><br><span class="sidebar-category-member"><a href="#.startInterval">startInterval</a></span><br><span class="sidebar-category-member"><a href="#.stopInterval">stopInterval</a></span><br><span class="sidebar-category-member"><a href="#.size">size</a></span><br><span class="sidebar-category-member"><a href="#.clear">clear</a></span><br><span class="sidebar-category-member"><a href="#.clone">clone</a></span><br><span class="sidebar-category-member"><a href="#.delete">delete</a></span><br><span class="sidebar-category-member"><a href="#.forEach">forEach</a></span><br><span class="sidebar-category-member"><a href="#.get">get</a></span><br><span class="sidebar-category-member"><a href="#.has">has</a></span><br><span class="sidebar-category-member"><a href="#.keys">keys</a></span><br><span class="sidebar-category-member"><a href="#.set">set</a></span><br><span class="sidebar-category-member"><a href="#.values">values</a></span><br><span class="sidebar-category-member"><a href="#.[Symbol.iterator]">[Symbol.iterator]</a></span><br><span class="sidebar-category-member"><a href="#.[Symbol.toStringTag]">[Symbol.toStringTag]</a></span><br>
+        </div>
+        </div>
+    
+    </div>
+    
+      </div>
+      <div id="content" class="col content">
+        <div class="d-none" id="search-menu">
+            <h1>Search results</h1>
+            <div class="row" style="margin-top: 20px;margin-bottom: 20px">
+                <div class="col-md-4">
+                    <p class="mini-header">Types</p>
+                    <div>
+                        <input type="checkbox" class="c-checkbox" id="search-option-classes" checked>
+                        <span>Classes</span>
+                    </div>
+                    <div>
+                        <input type="checkbox" class="c-checkbox" id="search-option-interfaces" checked>
+                        <span>Interfaces</span>
+                    </div>
+                    <div>
+                        <input type="checkbox" class="c-checkbox" id="search-option-enums" checked>
+                        <span>Enums</span>
+                    </div>
+                    <div>
+                        <input type="checkbox" class="c-checkbox" id="search-option-functions" checked>
+                        <span>Functions</span>
+                    </div>
+                    <div>
+                        <input type="checkbox" class="c-checkbox" id="search-option-types" checked>
+                        <span>Type aliases</span>
+                    </div>
+                    <div>
+                        <input type="checkbox" class="c-checkbox" id="search-option-constants">
+                        <span>Constants</span>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <p class="mini-header">Members</p>
+                    <div>
+                        <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-properties" checked>
+                            <span>Properties</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-methods" checked>
+                            <span>Methods</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-enum-members">
+                            <span>Enum members</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <p class="mini-header">Other</p>
+                    <div>
+                        <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-this-module-only">
+                            <span>In this module only</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div id="search-result-list">
+        
+            </div>
+        </div>        <div id="content-main" class="d-none">
+          <div class="path">
+            <a class="path-member" href="../../index.html">index</a> / <a class="path-member" href="../index.html">detritus-utils</a> / <a class="path-member" href="">BaseCollection</a>
+          </div>
+          
+<div>
+    <h1>Class <span class="referenceLink object">BaseCollection</span><span>&lt;<span>K</span>, <span>V</span>&gt;</span>
+    <a href=https://github.com/detritusjs/utils/tree/master/src/basecollection.ts#L128>
+<span class="float-end sourceCode">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
+</svg>
+</span></a>
+    </h1>
+    <p class="item-name"><span class="keyword">extends</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\class\BaseCollectionMixin.html">BaseCollectionMixin</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">BaseCollectionMixin</span><span style="display:block" class="monospace fw-bold">/BaseCollectionMixin</span></span></span><span>&lt;<span><span class="c-tooltip"><a class="reference-link object" href="undefined">K</a><span class="c-tooltip-content"><span class="keyword">type parameter</span> <span class="item-name object">K</span><span style="display:block" class="monospace fw-bold"></span></span></span></span>, <span><span class="c-tooltip"><a class="reference-link object" href="undefined">V</a><span class="c-tooltip-content"><span class="keyword">type parameter</span> <span class="item-name object">V</span><span style="display:block" class="monospace fw-bold"></span></span></span></span>&gt;</span></span></p>
+
+
+    
+
+    <h2>Constructor</h2>
+    
+<div id="class.constructor" class="item">
+    <p class="item-name"><span class="keyword">constructor</span><span>(<span class="item-name"><span class="param-name">__namedParameters</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\interface\BaseCollectionOptions.html">BaseCollectionOptions</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">BaseCollectionOptions</span><span style="display:block" class="monospace fw-bold">/BaseCollectionOptions</span></span></span></span> <span class="symbol">=</span> {}</span>)</span></p>
+
+    <div class="docblock">
+    <ul></ul>
+    </div>
+</div>
+    
+    <h2>Properties</h2>
+    <div><div class="item" id=".cache">
+    
+    
+    
+    
+    <span class="modifier">readonly</span>
+    <span class="item-name"><a class="property-name" href="#.cache">cache</a><span>: <span class="reference-link"><span class='primitive'>Map</span></span></span></span>
+    <a href=https://github.com/detritusjs/utils/tree/master/src/basecollection.ts#L129>
+<span class="float-end sourceCode">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
+</svg>
+</span></a>
+    <div class="docblock">
+        
+    </div>
+</div></div>
+    <div><div class="item" id="._lastUsed">
+    
+    
+    
+    
+    
+    <span class="item-name"><a class="property-name" href="#._lastUsed">_lastUsed</a><span>: 
+<span><span class="reference-link"><a class='external' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map">Map</a></span><span>&lt;<span><span class="c-tooltip"><a class="reference-link object" href="undefined">K</a><span class="c-tooltip-content"><span class="keyword">type parameter</span> <span class="item-name object">K</span><span style="display:block" class="monospace fw-bold"></span></span></span></span>, <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span>&gt;</span></span></span></span>
+    <a href=https://github.com/detritusjs/utils/tree/master/src/basecollection.ts#L130>
+<span class="float-end sourceCode">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
+</svg>
+</span></a>
+    <div class="docblock">
+        
+    </div>
+</div></div>
+    <div><div class="item" id=".expire">
+    
+    
+    
+    
+    
+    <span class="item-name"><a class="property-name" href="#.expire">expire</a><span>: <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span></span>
+    <a href=https://github.com/detritusjs/utils/tree/master/src/basecollection.ts#L132>
+<span class="float-end sourceCode">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
+</svg>
+</span></a>
+    <div class="docblock">
+        
+    </div>
+</div></div>
+    <div><div class="item" id=".interval">
+    
+    
+    
+    
+    
+    <span class="item-name"><a class="property-name" href="#.interval">interval</a><span>: <span><span class="c-tooltip"><a class="reference-link object" href="..\class\Interval.html">Interval</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Interval</span><span style="display:block" class="monospace fw-bold">/Interval</span></span></span></span></span></span>
+    <a href=https://github.com/detritusjs/utils/tree/master/src/basecollection.ts#L133>
+<span class="float-end sourceCode">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
+</svg>
+</span></a>
+    <div class="docblock">
+        
+    </div>
+</div></div>
+    <div><div class="item" id=".intervalTime">
+    
+    
+    
+    
+    
+    <span class="item-name"><a class="property-name" href="#.intervalTime">intervalTime</a><span>: <span class="reference-link"><a class="primitive number-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">5000</a></span></span></span>
+    <a href=https://github.com/detritusjs/utils/tree/master/src/basecollection.ts#L134>
+<span class="float-end sourceCode">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
+</svg>
+</span></a>
+    <div class="docblock">
+        
+    </div>
+</div></div>
+    <div><div class="item" id=".limit">
+    
+    
+    
+    
+    
+    <span class="item-name"><a class="property-name" href="#.limit">limit</a><span>: <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span></span>
+    <a href=https://github.com/detritusjs/utils/tree/master/src/basecollection.ts#L135>
+<span class="float-end sourceCode">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
+</svg>
+</span></a>
+    <div class="docblock">
+        
+    </div>
+</div></div>
+
+    <h2>Methods</h2>
+
+    <div>
+<div id=".lastUsed" class="item">
+    <p class="monospace">
+    
+    
+    
+    
+    <span class="modifier">get</span>
+    
+    <a href=https://github.com/detritusjs/utils/tree/master/src/basecollection.ts#L164>
+<span class="float-end sourceCode">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
+</svg>
+</span></a>
+        <a class="item-name method-name" href="#.lastUsed">lastUsed</a><span>()</span><span><span class="symbol">:</span> 
+<span><span class="reference-link"><a class='external' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map">Map</a></span><span>&lt;<span><span class="c-tooltip"><a class="reference-link object" href="undefined">K</a><span class="c-tooltip-content"><span class="keyword">type parameter</span> <span class="item-name object">K</span><span style="display:block" class="monospace fw-bold"></span></span></span></span>, <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span>&gt;</span></span></span>
+        <div class="docblock">
+        
+        
+        </div>
+    </p>
+</div></div>
+    <div>
+<div id=".shouldStartInterval" class="item">
+    <p class="monospace">
+    
+    
+    
+    
+    <span class="modifier">get</span>
+    
+    <a href=https://github.com/detritusjs/utils/tree/master/src/basecollection.ts#L174>
+<span class="float-end sourceCode">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
+</svg>
+</span></a>
+        <a class="item-name method-name" href="#.shouldStartInterval">shouldStartInterval</a><span>()</span><span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
+        <div class="docblock">
+        
+        
+        </div>
+    </p>
+</div></div>
+    <div>
+<div id=".setExpire" class="item">
+    <p class="monospace">
+    
+    
+    
+    
+    
+    
+    <a href=https://github.com/detritusjs/utils/tree/master/src/basecollection.ts#L178>
+<span class="float-end sourceCode">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
+</svg>
+</span></a>
+        <a class="item-name method-name" href="#.setExpire">setExpire</a><span>(<span class="item-name"><span class="param-name">value</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>)</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\class\BaseCollection.html">BaseCollection</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">BaseCollection</span><span style="display:block" class="monospace fw-bold">/BaseCollection</span></span></span></span></span>
+        <div class="docblock">
+        <ul></ul>
+        
+        </div>
+    </p>
+</div></div>
+    <div>
+<div id=".setIntervalTimeout" class="item">
+    <p class="monospace">
+    
+    
+    
+    
+    
+    
+    <a href=https://github.com/detritusjs/utils/tree/master/src/basecollection.ts#L190>
+<span class="float-end sourceCode">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
+</svg>
+</span></a>
+        <a class="item-name method-name" href="#.setIntervalTimeout">setIntervalTimeout</a><span>(<span class="item-name"><span class="param-name">value</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>)</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\class\BaseCollection.html">BaseCollection</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">BaseCollection</span><span style="display:block" class="monospace fw-bold">/BaseCollection</span></span></span></span></span>
+        <div class="docblock">
+        <ul></ul>
+        
+        </div>
+    </p>
+</div></div>
+    <div>
+<div id=".startInterval" class="item">
+    <p class="monospace">
+    
+    
+    
+    
+    
+    
+    <a href=https://github.com/detritusjs/utils/tree/master/src/basecollection.ts#L202>
+<span class="float-end sourceCode">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
+</svg>
+</span></a>
+        <a class="item-name method-name" href="#.startInterval">startInterval</a><span>()</span>
+        <div class="docblock">
+        <ul></ul>
+        
+        </div>
+    </p>
+</div></div>
+    <div>
+<div id=".stopInterval" class="item">
+    <p class="monospace">
+    
+    
+    
+    
+    
+    
+    <a href=https://github.com/detritusjs/utils/tree/master/src/basecollection.ts#L226>
+<span class="float-end sourceCode">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
+</svg>
+</span></a>
+        <a class="item-name method-name" href="#.stopInterval">stopInterval</a><span>()</span>
+        <div class="docblock">
+        <ul></ul>
+        
+        </div>
+    </p>
+</div></div>
+    <div>
+<div id=".size" class="item">
+    <p class="monospace">
+    
+    
+    
+    
+    <span class="modifier">get</span>
+    
+    <a href=https://github.com/detritusjs/utils/tree/master/src/basecollection.ts#L233>
+<span class="float-end sourceCode">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
+</svg>
+</span></a>
+        <a class="item-name method-name" href="#.size">size</a><span>()</span><span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>
+        <div class="docblock">
+        
+        
+        </div>
+    </p>
+</div></div>
+    <div>
+<div id=".clear" class="item">
+    <p class="monospace">
+    
+    
+    
+    
+    
+    
+    <a href=https://github.com/detritusjs/utils/tree/master/src/basecollection.ts#L237>
+<span class="float-end sourceCode">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
+</svg>
+</span></a>
+        <a class="item-name method-name" href="#.clear">clear</a><span>()</span><span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://www.typescriptlang.org/docs/handbook/2/functions.html#void">void</a></span></span>
+        <div class="docblock">
+        <ul></ul>
+        
+        </div>
+    </p>
+</div></div>
+    <div>
+<div id=".clone" class="item">
+    <p class="monospace">
+    
+    
+    
+    
+    
+    
+    <a href=https://github.com/detritusjs/utils/tree/master/src/basecollection.ts#L245>
+<span class="float-end sourceCode">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
+</svg>
+</span></a>
+        <a class="item-name method-name" href="#.clone">clone</a><span>()</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\class\BaseCollection.html">BaseCollection</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">BaseCollection</span><span style="display:block" class="monospace fw-bold">/BaseCollection</span></span></span><span>&lt;<span><span class="c-tooltip"><a class="reference-link object" href="undefined">K</a><span class="c-tooltip-content"><span class="keyword">type parameter</span> <span class="item-name object">K</span><span style="display:block" class="monospace fw-bold"></span></span></span></span>, <span><span class="c-tooltip"><a class="reference-link object" href="undefined">V</a><span class="c-tooltip-content"><span class="keyword">type parameter</span> <span class="item-name object">V</span><span style="display:block" class="monospace fw-bold"></span></span></span></span>&gt;</span></span></span>
+        <div class="docblock">
+        <ul></ul>
+        
+        </div>
+    </p>
+</div></div>
+    <div>
+<div id=".delete" class="item">
+    <p class="monospace">
+    
+    
+    
+    
+    
+    
+    <a href=https://github.com/detritusjs/utils/tree/master/src/basecollection.ts#L253>
+<span class="float-end sourceCode">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
+</svg>
+</span></a>
+        <a class="item-name method-name" href="#.delete">delete</a><span>(<span class="item-name"><span class="param-name">key</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="undefined">K</a><span class="c-tooltip-content"><span class="keyword">type parameter</span> <span class="item-name object">K</span><span style="display:block" class="monospace fw-bold"></span></span></span></span></span>)</span><span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
+        <div class="docblock">
+        <ul></ul>
+        
+        </div>
+    </p>
+</div></div>
+    <div>
+<div id=".forEach" class="item">
+    <p class="monospace">
+    
+    
+    
+    
+    
+    
+    <a href=https://github.com/detritusjs/utils/tree/master/src/basecollection.ts#L264>
+<span class="float-end sourceCode">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
+</svg>
+</span></a>
+        <a class="item-name method-name" href="#.forEach">forEach</a><span>(<span class="item-name"><span class="param-name">func</span><span class="symbol">:</span> <span>(<span class="item-name"><span class="param-name">v</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="undefined">V</a><span class="c-tooltip-content"><span class="keyword">type parameter</span> <span class="item-name object">V</span><span style="display:block" class="monospace fw-bold"></span></span></span></span></span>, <span class="item-name"><span class="param-name">k</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="undefined">K</a><span class="c-tooltip-content"><span class="keyword">type parameter</span> <span class="item-name object">K</span><span style="display:block" class="monospace fw-bold"></span></span></span></span></span>, <span class="item-name"><span class="param-name">map</span><span class="symbol">:</span> 
+<span><span class="reference-link"><a class='external' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map">Map</a></span><span>&lt;<span><span class="c-tooltip"><a class="reference-link object" href="undefined">K</a><span class="c-tooltip-content"><span class="keyword">type parameter</span> <span class="item-name object">K</span><span style="display:block" class="monospace fw-bold"></span></span></span></span>, <span><span class="c-tooltip"><a class="reference-link object" href="undefined">V</a><span class="c-tooltip-content"><span class="keyword">type parameter</span> <span class="item-name object">V</span><span style="display:block" class="monospace fw-bold"></span></span></span></span>&gt;</span></span></span>) <span class="symbol">=></span> <span class="reference-link"><a class='primitive' href="https://www.typescriptlang.org/docs/handbook/2/functions.html#void">void</a></span></span></span>, <span class="item-name"><span class="param-name">thisArg</span><span class="symbol">?</span><span class="symbol">:</span> <span class="reference-link"><span class='primitive'>any</span></span></span>)</span><span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://www.typescriptlang.org/docs/handbook/2/functions.html#void">void</a></span></span>
+        <div class="docblock">
+        <ul></ul>
+        
+        </div>
+    </p>
+</div></div>
+    <div>
+<div id=".get" class="item">
+    <p class="monospace">
+    
+    
+    
+    
+    
+    
+    <a href=https://github.com/detritusjs/utils/tree/master/src/basecollection.ts#L268>
+<span class="float-end sourceCode">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
+</svg>
+</span></a>
+        <a class="item-name method-name" href="#.get">get</a><span>(<span class="item-name"><span class="param-name">key</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="undefined">K</a><span class="c-tooltip-content"><span class="keyword">type parameter</span> <span class="item-name object">K</span><span style="display:block" class="monospace fw-bold"></span></span></span></span></span>)</span><span><span class="symbol">:</span> 
+<span><span><span class="c-tooltip"><a class="reference-link object" href="undefined">V</a><span class="c-tooltip-content"><span class="keyword">type parameter</span> <span class="item-name object">V</span><span style="display:block" class="monospace fw-bold"></span></span></span></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></span></span></span>
+        <div class="docblock">
+        <ul></ul>
+        
+        </div>
+    </p>
+</div></div>
+    <div>
+<div id=".has" class="item">
+    <p class="monospace">
+    
+    
+    
+    
+    
+    
+    <a href=https://github.com/detritusjs/utils/tree/master/src/basecollection.ts#L276>
+<span class="float-end sourceCode">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
+</svg>
+</span></a>
+        <a class="item-name method-name" href="#.has">has</a><span>(<span class="item-name"><span class="param-name">key</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="undefined">K</a><span class="c-tooltip-content"><span class="keyword">type parameter</span> <span class="item-name object">K</span><span style="display:block" class="monospace fw-bold"></span></span></span></span></span>)</span><span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
+        <div class="docblock">
+        <ul></ul>
+        
+        </div>
+    </p>
+</div></div>
+    <div>
+<div id=".keys" class="item">
+    <p class="monospace">
+    
+    
+    
+    
+    
+    
+    <a href=https://github.com/detritusjs/utils/tree/master/src/basecollection.ts#L280>
+<span class="float-end sourceCode">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
+</svg>
+</span></a>
+        <a class="item-name method-name" href="#.keys">keys</a><span>()</span><span><span class="symbol">:</span> 
+<span><span class="reference-link">IterableIterator</span><span>&lt;<span><span class="c-tooltip"><a class="reference-link object" href="undefined">K</a><span class="c-tooltip-content"><span class="keyword">type parameter</span> <span class="item-name object">K</span><span style="display:block" class="monospace fw-bold"></span></span></span></span>&gt;</span></span></span>
+        <div class="docblock">
+        <ul></ul>
+        
+        </div>
+    </p>
+</div></div>
+    <div>
+<div id=".set" class="item">
+    <p class="monospace">
+    
+    
+    
+    
+    
+    
+    <a href=https://github.com/detritusjs/utils/tree/master/src/basecollection.ts#L284>
+<span class="float-end sourceCode">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
+</svg>
+</span></a>
+        <a class="item-name method-name" href="#.set">set</a><span>(<span class="item-name"><span class="param-name">key</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="undefined">K</a><span class="c-tooltip-content"><span class="keyword">type parameter</span> <span class="item-name object">K</span><span style="display:block" class="monospace fw-bold"></span></span></span></span></span>, <span class="item-name"><span class="param-name">value</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="undefined">V</a><span class="c-tooltip-content"><span class="keyword">type parameter</span> <span class="item-name object">V</span><span style="display:block" class="monospace fw-bold"></span></span></span></span></span>)</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\class\BaseCollection.html">BaseCollection</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">BaseCollection</span><span style="display:block" class="monospace fw-bold">/BaseCollection</span></span></span></span></span>
+        <div class="docblock">
+        <ul></ul>
+        
+        </div>
+    </p>
+</div></div>
+    <div>
+<div id=".values" class="item">
+    <p class="monospace">
+    
+    
+    
+    
+    
+    
+    <a href=https://github.com/detritusjs/utils/tree/master/src/basecollection.ts#L303>
+<span class="float-end sourceCode">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
+</svg>
+</span></a>
+        <a class="item-name method-name" href="#.values">values</a><span>()</span><span><span class="symbol">:</span> 
+<span><span class="reference-link">IterableIterator</span><span>&lt;<span><span class="c-tooltip"><a class="reference-link object" href="undefined">V</a><span class="c-tooltip-content"><span class="keyword">type parameter</span> <span class="item-name object">V</span><span style="display:block" class="monospace fw-bold"></span></span></span></span>&gt;</span></span></span>
+        <div class="docblock">
+        <ul></ul>
+        
+        </div>
+    </p>
+</div></div>
+    <div>
+<div id=".[Symbol.iterator]" class="item">
+    <p class="monospace">
+    
+    
+    
+    
+    
+    
+    <a href=https://github.com/detritusjs/utils/tree/master/src/basecollection.ts#L307>
+<span class="float-end sourceCode">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
+</svg>
+</span></a>
+        <a class="item-name method-name" href="#.[Symbol.iterator]">[Symbol.iterator]</a><span>()</span><span><span class="symbol">:</span> 
+<span><span class="reference-link">IterableIterator</span><span>&lt;<span><span><span class="c-tooltip"><a class="reference-link object" href="undefined">K</a><span class="c-tooltip-content"><span class="keyword">type parameter</span> <span class="item-name object">K</span><span style="display:block" class="monospace fw-bold"></span></span></span></span><span class='symbol'> | </span><span><span class="c-tooltip"><a class="reference-link object" href="undefined">V</a><span class="c-tooltip-content"><span class="keyword">type parameter</span> <span class="item-name object">V</span><span style="display:block" class="monospace fw-bold"></span></span></span></span></span>&gt;</span></span></span>
+        <div class="docblock">
+        <ul></ul>
+        
+        </div>
+    </p>
+</div></div>
+    <div>
+<div id=".[Symbol.toStringTag]" class="item">
+    <p class="monospace">
+    
+    
+    
+    
+    <span class="modifier">get</span>
+    
+    <a href=https://github.com/detritusjs/utils/tree/master/src/basecollection.ts#L311>
+<span class="float-end sourceCode">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
+</svg>
+</span></a>
+        <a class="item-name method-name" href="#.[Symbol.toStringTag]">[Symbol.toStringTag]</a><span>()</span><span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>
+        <div class="docblock">
+        
+        
+        </div>
+    </p>
+</div></div>
+
+</div>
+        </div>
+
+      </div>
+
+      </div>
+  </div>
+
+  <div id="to-top" class="btn-to-top">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
+  </svg>
+  </div>
+
+
+</body>
+
+</html>
