@@ -22,7 +22,7 @@
       <nav class="container-fluid navi">
       <div class="row">
         <div class="col-4">
-          <input class="form-control search" id="search" type="search" placeholder="Search" aria-label="Search">
+          <input class="form-control search" id="search" type="search" placeholder="Press '/' to search" aria-label="Search">
         </div>
         <div class="col-8">
           <div class="row float-end" style="margin-top:5px">
@@ -44,7 +44,7 @@
       </div>
     </nav>  <div class="container-fluid">
     <div class="row">
-      <div class="col-lg-auto sidebar">
+      <div class="col-lg-auto sidebar" id="sidebar">
         <h1 class="lib-name text-center">Detritus</h1>
         
     <img src="../../assets/logo.png" alt="Logo" class="img-fluid mx-auto d-block">
@@ -176,22 +176,34 @@
 
     
     
-    <h2>Modules</h2>
+    <h3>Modules</h3>
     <div><a class="module-item module" href="m.InteractionCommandEvents/index.html">InteractionCommandEvents</a></div>
     
     
-    <h2>Classes</h2>
-    <div><a class="module-item object" href="class/InteractionContext.html">InteractionContext</a>Interaction Command Context</div><div><a class="module-item object" href="class/InteractionCommand.html">InteractionCommand</a></div><div><a class="module-item object" href="class/InteractionCommandOption.html">InteractionCommandOption</a></div><div><a class="module-item object" href="class/InteractionCommandOptionChoice.html">InteractionCommandOptionChoice</a></div>
+    <h3>Classes</h3>
+    <table>
+    <tbody>
+    <tr><td><a class="module-item object" href="class/InteractionContext.html">InteractionContext</a></td><td>Interaction Command Context</td></tr><tr><td><a class="module-item object" href="class/InteractionCommand.html">InteractionCommand</a></td><td></td></tr><tr><td><a class="module-item object" href="class/InteractionCommandOption.html">InteractionCommandOption</a></td><td></td></tr><tr><td><a class="module-item object" href="class/InteractionCommandOptionChoice.html">InteractionCommandOptionChoice</a></td><td></td></tr>
+    </tbody>
+    </table>
     
     
-    <h2>Interfaces</h2>
-    <div><a class="module-item object" href="interface/InteractionCommandOptions.html">InteractionCommandOptions</a>Command Options</div><div><a class="module-item object" href="interface/InteractionCommandOptionOptions.html">InteractionCommandOptionOptions</a></div><div><a class="module-item object" href="interface/InteractionCommandOptionChoiceOptions.html">InteractionCommandOptionChoiceOptions</a></div>
+    <h3>Interfaces</h3>
+    <table>
+    <tbody>
+    <tr><td><a class="module-item object" href="interface/InteractionCommandOptions.html">InteractionCommandOptions</a></td><td>Command Options</td></tr><tr><td><a class="module-item object" href="interface/InteractionCommandOptionOptions.html">InteractionCommandOptionOptions</a></td><td></td></tr><tr><td><a class="module-item object" href="interface/InteractionCommandOptionChoiceOptions.html">InteractionCommandOptionChoiceOptions</a></td><td></td></tr>
+    </tbody>
+    </table>
     
     
     
     
-    <h2>Types</h2>
-    <div><a class="module-item object" href="type/ParsedArgs.html">ParsedArgs</a></div><div><a class="module-item object" href="type/CommandRatelimitInfo.html">CommandRatelimitInfo</a></div><div><a class="module-item object" href="type/CommandRatelimitMetadata.html">CommandRatelimitMetadata</a></div><div><a class="module-item object" href="type/FailedPermissions.html">FailedPermissions</a></div><div><a class="module-item object" href="type/CommandCallbackDmBlocked.html">CommandCallbackDmBlocked</a></div><div><a class="module-item object" href="type/CommandCallbackLoadingTrigger.html">CommandCallbackLoadingTrigger</a></div><div><a class="module-item object" href="type/CommandCallbackBefore.html">CommandCallbackBefore</a></div><div><a class="module-item object" href="type/CommandCallbackBeforeRun.html">CommandCallbackBeforeRun</a></div><div><a class="module-item object" href="type/CommandCallbackCancel.html">CommandCallbackCancel</a></div><div><a class="module-item object" href="type/CommandCallbackCancelRun.html">CommandCallbackCancelRun</a></div><div><a class="module-item object" href="type/CommandCallbackError.html">CommandCallbackError</a></div><div><a class="module-item object" href="type/CommandCallbackPermissionsFail.html">CommandCallbackPermissionsFail</a></div><div><a class="module-item object" href="type/CommandCallbackSuccess.html">CommandCallbackSuccess</a></div><div><a class="module-item object" href="type/CommandCallbackRatelimit.html">CommandCallbackRatelimit</a></div><div><a class="module-item object" href="type/CommandCallbackRun.html">CommandCallbackRun</a></div><div><a class="module-item object" href="type/CommandCallbackRunError.html">CommandCallbackRunError</a></div>
+    <h3>Types</h3>
+    <table>
+    <tbody>
+    <tr><td><a class="module-item object" href="type/ParsedArgs.html">ParsedArgs</a></td><td></td></tr><tr><td><a class="module-item object" href="type/CommandRatelimitInfo.html">CommandRatelimitInfo</a></td><td></td></tr><tr><td><a class="module-item object" href="type/CommandRatelimitMetadata.html">CommandRatelimitMetadata</a></td><td></td></tr><tr><td><a class="module-item object" href="type/FailedPermissions.html">FailedPermissions</a></td><td></td></tr><tr><td><a class="module-item object" href="type/CommandCallbackDmBlocked.html">CommandCallbackDmBlocked</a></td><td></td></tr><tr><td><a class="module-item object" href="type/CommandCallbackLoadingTrigger.html">CommandCallbackLoadingTrigger</a></td><td></td></tr><tr><td><a class="module-item object" href="type/CommandCallbackBefore.html">CommandCallbackBefore</a></td><td></td></tr><tr><td><a class="module-item object" href="type/CommandCallbackBeforeRun.html">CommandCallbackBeforeRun</a></td><td></td></tr><tr><td><a class="module-item object" href="type/CommandCallbackCancel.html">CommandCallbackCancel</a></td><td></td></tr><tr><td><a class="module-item object" href="type/CommandCallbackCancelRun.html">CommandCallbackCancelRun</a></td><td></td></tr><tr><td><a class="module-item object" href="type/CommandCallbackError.html">CommandCallbackError</a></td><td></td></tr><tr><td><a class="module-item object" href="type/CommandCallbackPermissionsFail.html">CommandCallbackPermissionsFail</a></td><td></td></tr><tr><td><a class="module-item object" href="type/CommandCallbackSuccess.html">CommandCallbackSuccess</a></td><td></td></tr><tr><td><a class="module-item object" href="type/CommandCallbackRatelimit.html">CommandCallbackRatelimit</a></td><td></td></tr><tr><td><a class="module-item object" href="type/CommandCallbackRun.html">CommandCallbackRun</a></td><td></td></tr><tr><td><a class="module-item object" href="type/CommandCallbackRunError.html">CommandCallbackRunError</a></td><td></td></tr>
+    </tbody>
+    </table>
     
     
     
@@ -207,6 +219,12 @@
   <div id="to-top" class="btn-to-top">
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
   <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
+  </svg>
+  </div>
+
+  <div id="sidebar-arrow" class="sidebar-arrow">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
   </svg>
   </div>
 

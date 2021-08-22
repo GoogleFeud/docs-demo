@@ -22,7 +22,7 @@
       <nav class="container-fluid navi">
       <div class="row">
         <div class="col-4">
-          <input class="form-control search" id="search" type="search" placeholder="Search" aria-label="Search">
+          <input class="form-control search" id="search" type="search" placeholder="Press '/' to search" aria-label="Search">
         </div>
         <div class="col-8">
           <div class="row float-end" style="margin-top:5px">
@@ -44,7 +44,7 @@
       </div>
     </nav>  <div class="container-fluid">
     <div class="row">
-      <div class="col-lg-auto sidebar">
+      <div class="col-lg-auto sidebar" id="sidebar">
         <h1 class="lib-name text-center">Detritus</h1>
         
     <img src="../../assets/logo.png" alt="Logo" class="img-fluid mx-auto d-block">
@@ -157,17 +157,25 @@
     
     
     
-    <h2>Classes</h2>
-    <div><a class="module-item object" href="class/BaseCollectionCache.html">BaseCollectionCache</a></div><div><a class="module-item object" href="class/BaseClientCollection.html">BaseClientCollection</a>Basic Client Collection, the ShardClient instance is attached to this</div><div><a class="module-item object" href="class/BaseClientCollectionCache.html">BaseClientCollectionCache</a>Basic Client Cache Collection, the ShardClient instance is attached to this</div><div><a class="module-item object" href="class/BaseClientGuildReferenceCache.html">BaseClientGuildReferenceCache</a></div><div><a class="module-item object" href="class/EmptyBaseCollection.html">EmptyBaseCollection</a></div><div><a class="module-item object" href="class/Applications.html">Applications</a>Applications Collection</div><div><a class="module-item object" href="class/Channels.html">Channels</a>Channels Collection</div><div><a class="module-item object" href="class/ConnectedAccounts.html">ConnectedAccounts</a>Connected Accounts Collection
-(Bots cannot fill this)</div><div><a class="module-item object" href="class/Emojis.html">Emojis</a>Emojis Reference Collection</div><div><a class="module-item object" href="class/Guilds.html">Guilds</a>Guilds Collection</div><div><a class="module-item object" href="class/Interactions.html">Interactions</a>Interactions Collection</div><div><a class="module-item object" href="class/Members.html">Members</a>Members Collection</div><div><a class="module-item object" href="class/Messages.html">Messages</a>Messages Collection</div><div><a class="module-item object" href="class/Notes.html">Notes</a>Notes Collection
-(Bots cannot fill this)</div><div><a class="module-item object" href="class/Presences.html">Presences</a>Presences Collection</div><div><a class="module-item object" href="class/Relationships.html">Relationships</a>Relationships Collection
-(Bots cannot fill this)</div><div><a class="module-item object" href="class/Roles.html">Roles</a>Roles Reference Collection</div><div><a class="module-item object" href="class/Sessions.html">Sessions</a>Sessions Collection
-(Bots cannot fill this)</div><div><a class="module-item object" href="class/StageInstances.html">StageInstances</a>Stage Instances Reference Collection</div><div><a class="module-item object" href="class/Stickers.html">Stickers</a>Stickers Reference Collection</div><div><a class="module-item object" href="class/TypingCollection.html">TypingCollection</a>Typing Collection, a collection of users currently typing</div><div><a class="module-item object" href="class/Users.html">Users</a>Users Collection</div><div><a class="module-item object" href="class/VoiceCalls.html">VoiceCalls</a>VoiceCalls Collection, DM VoiceCalls
-(Bots cannot fill this)</div><div><a class="module-item object" href="class/VoiceConnections.html">VoiceConnections</a>VoiceConnections Collection</div><div><a class="module-item object" href="class/VoiceStates.html">VoiceStates</a>VoiceState Collection</div>
+    <h3>Classes</h3>
+    <table>
+    <tbody>
+    <tr><td><a class="module-item object" href="class/BaseCollectionCache.html">BaseCollectionCache</a></td><td></td></tr><tr><td><a class="module-item object" href="class/BaseClientCollection.html">BaseClientCollection</a></td><td>Basic Client Collection, the ShardClient instance is attached to this</td></tr><tr><td><a class="module-item object" href="class/BaseClientCollectionCache.html">BaseClientCollectionCache</a></td><td>Basic Client Cache Collection, the ShardClient instance is attached to this</td></tr><tr><td><a class="module-item object" href="class/BaseClientGuildReferenceCache.html">BaseClientGuildReferenceCache</a></td><td></td></tr><tr><td><a class="module-item object" href="class/EmptyBaseCollection.html">EmptyBaseCollection</a></td><td></td></tr><tr><td><a class="module-item object" href="class/Applications.html">Applications</a></td><td>Applications Collection</td></tr><tr><td><a class="module-item object" href="class/Channels.html">Channels</a></td><td>Channels Collection</td></tr><tr><td><a class="module-item object" href="class/ConnectedAccounts.html">ConnectedAccounts</a></td><td>Connected Accounts Collection
+(Bots cannot fill this)</td></tr><tr><td><a class="module-item object" href="class/Emojis.html">Emojis</a></td><td>Emojis Reference Collection</td></tr><tr><td><a class="module-item object" href="class/Guilds.html">Guilds</a></td><td>Guilds Collection</td></tr><tr><td><a class="module-item object" href="class/Interactions.html">Interactions</a></td><td>Interactions Collection</td></tr><tr><td><a class="module-item object" href="class/Members.html">Members</a></td><td>Members Collection</td></tr><tr><td><a class="module-item object" href="class/Messages.html">Messages</a></td><td>Messages Collection</td></tr><tr><td><a class="module-item object" href="class/Notes.html">Notes</a></td><td>Notes Collection
+(Bots cannot fill this)</td></tr><tr><td><a class="module-item object" href="class/Presences.html">Presences</a></td><td>Presences Collection</td></tr><tr><td><a class="module-item object" href="class/Relationships.html">Relationships</a></td><td>Relationships Collection
+(Bots cannot fill this)</td></tr><tr><td><a class="module-item object" href="class/Roles.html">Roles</a></td><td>Roles Reference Collection</td></tr><tr><td><a class="module-item object" href="class/Sessions.html">Sessions</a></td><td>Sessions Collection
+(Bots cannot fill this)</td></tr><tr><td><a class="module-item object" href="class/StageInstances.html">StageInstances</a></td><td>Stage Instances Reference Collection</td></tr><tr><td><a class="module-item object" href="class/Stickers.html">Stickers</a></td><td>Stickers Reference Collection</td></tr><tr><td><a class="module-item object" href="class/TypingCollection.html">TypingCollection</a></td><td>Typing Collection, a collection of users currently typing</td></tr><tr><td><a class="module-item object" href="class/Users.html">Users</a></td><td>Users Collection</td></tr><tr><td><a class="module-item object" href="class/VoiceCalls.html">VoiceCalls</a></td><td>VoiceCalls Collection, DM VoiceCalls
+(Bots cannot fill this)</td></tr><tr><td><a class="module-item object" href="class/VoiceConnections.html">VoiceConnections</a></td><td>VoiceConnections Collection</td></tr><tr><td><a class="module-item object" href="class/VoiceStates.html">VoiceStates</a></td><td>VoiceState Collection</td></tr>
+    </tbody>
+    </table>
     
     
-    <h2>Interfaces</h2>
-    <div><a class="module-item object" href="interface/BaseClientCollectionOptions.html">BaseClientCollectionOptions</a></div><div><a class="module-item object" href="interface/ApplicationsOptions.html">ApplicationsOptions</a></div><div><a class="module-item object" href="interface/ChannelsOptions.html">ChannelsOptions</a></div><div><a class="module-item object" href="interface/ConnectedAccountsOptions.html">ConnectedAccountsOptions</a></div><div><a class="module-item object" href="interface/EmojisOptions.html">EmojisOptions</a></div><div><a class="module-item object" href="interface/GuildsOptions.html">GuildsOptions</a></div><div><a class="module-item object" href="interface/InteractionsOptions.html">InteractionsOptions</a></div><div><a class="module-item object" href="interface/MembersOptions.html">MembersOptions</a></div><div><a class="module-item object" href="interface/MessagesOptions.html">MessagesOptions</a></div><div><a class="module-item object" href="interface/NotesOptions.html">NotesOptions</a></div><div><a class="module-item object" href="interface/PresencesOptions.html">PresencesOptions</a></div><div><a class="module-item object" href="interface/RelationshipsOptions.html">RelationshipsOptions</a></div><div><a class="module-item object" href="interface/RolesOptions.html">RolesOptions</a></div><div><a class="module-item object" href="interface/SessionsOptions.html">SessionsOptions</a></div><div><a class="module-item object" href="interface/StageInstancesOptions.html">StageInstancesOptions</a></div><div><a class="module-item object" href="interface/StickersOptions.html">StickersOptions</a></div><div><a class="module-item object" href="interface/TypingOptions.html">TypingOptions</a></div><div><a class="module-item object" href="interface/UsersOptions.html">UsersOptions</a></div><div><a class="module-item object" href="interface/VoiceCallsOptions.html">VoiceCallsOptions</a></div><div><a class="module-item object" href="interface/VoiceConnectionsOptions.html">VoiceConnectionsOptions</a></div><div><a class="module-item object" href="interface/VoiceStatesOptions.html">VoiceStatesOptions</a></div>
+    <h3>Interfaces</h3>
+    <table>
+    <tbody>
+    <tr><td><a class="module-item object" href="interface/BaseClientCollectionOptions.html">BaseClientCollectionOptions</a></td><td></td></tr><tr><td><a class="module-item object" href="interface/ApplicationsOptions.html">ApplicationsOptions</a></td><td></td></tr><tr><td><a class="module-item object" href="interface/ChannelsOptions.html">ChannelsOptions</a></td><td></td></tr><tr><td><a class="module-item object" href="interface/ConnectedAccountsOptions.html">ConnectedAccountsOptions</a></td><td></td></tr><tr><td><a class="module-item object" href="interface/EmojisOptions.html">EmojisOptions</a></td><td></td></tr><tr><td><a class="module-item object" href="interface/GuildsOptions.html">GuildsOptions</a></td><td></td></tr><tr><td><a class="module-item object" href="interface/InteractionsOptions.html">InteractionsOptions</a></td><td></td></tr><tr><td><a class="module-item object" href="interface/MembersOptions.html">MembersOptions</a></td><td></td></tr><tr><td><a class="module-item object" href="interface/MessagesOptions.html">MessagesOptions</a></td><td></td></tr><tr><td><a class="module-item object" href="interface/NotesOptions.html">NotesOptions</a></td><td></td></tr><tr><td><a class="module-item object" href="interface/PresencesOptions.html">PresencesOptions</a></td><td></td></tr><tr><td><a class="module-item object" href="interface/RelationshipsOptions.html">RelationshipsOptions</a></td><td></td></tr><tr><td><a class="module-item object" href="interface/RolesOptions.html">RolesOptions</a></td><td></td></tr><tr><td><a class="module-item object" href="interface/SessionsOptions.html">SessionsOptions</a></td><td></td></tr><tr><td><a class="module-item object" href="interface/StageInstancesOptions.html">StageInstancesOptions</a></td><td></td></tr><tr><td><a class="module-item object" href="interface/StickersOptions.html">StickersOptions</a></td><td></td></tr><tr><td><a class="module-item object" href="interface/TypingOptions.html">TypingOptions</a></td><td></td></tr><tr><td><a class="module-item object" href="interface/UsersOptions.html">UsersOptions</a></td><td></td></tr><tr><td><a class="module-item object" href="interface/VoiceCallsOptions.html">VoiceCallsOptions</a></td><td></td></tr><tr><td><a class="module-item object" href="interface/VoiceConnectionsOptions.html">VoiceConnectionsOptions</a></td><td></td></tr><tr><td><a class="module-item object" href="interface/VoiceStatesOptions.html">VoiceStatesOptions</a></td><td></td></tr>
+    </tbody>
+    </table>
     
     
     
@@ -186,6 +194,12 @@
   <div id="to-top" class="btn-to-top">
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
   <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
+  </svg>
+  </div>
+
+  <div id="sidebar-arrow" class="sidebar-arrow">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
   </svg>
   </div>
 

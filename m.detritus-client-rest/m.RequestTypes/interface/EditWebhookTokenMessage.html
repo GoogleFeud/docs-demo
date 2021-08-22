@@ -22,7 +22,7 @@
       <nav class="container-fluid navi">
       <div class="row">
         <div class="col-4">
-          <input class="form-control search" id="search" type="search" placeholder="Search" aria-label="Search">
+          <input class="form-control search" id="search" type="search" placeholder="Press '/' to search" aria-label="Search">
         </div>
         <div class="col-8">
           <div class="row float-end" style="margin-top:5px">
@@ -44,7 +44,7 @@
       </div>
     </nav>  <div class="container-fluid">
     <div class="row">
-      <div class="col-lg-auto sidebar">
+      <div class="col-lg-auto sidebar" id="sidebar">
         <h1 class="lib-name text-center">Detritus</h1>
         
     <img src="../../../assets/logo.png" alt="Logo" class="img-fluid mx-auto d-block">
@@ -133,7 +133,6 @@
           <div>
     <h1>
         Interface <span class="referenceLink object">EditWebhookTokenMessage</span>
-        
         <a href=https://github.com/detritusjs/client-rest/tree/master/src/types.ts#L786>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
@@ -202,6 +201,12 @@
   <div id="to-top" class="btn-to-top">
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
   <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
+  </svg>
+  </div>
+
+  <div id="sidebar-arrow" class="sidebar-arrow">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
   </svg>
   </div>
 
