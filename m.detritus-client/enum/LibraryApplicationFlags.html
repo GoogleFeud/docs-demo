@@ -22,7 +22,7 @@
       <nav class="container-fluid navi">
       <div class="row">
         <div class="col-4">
-          <input class="form-control search" id="search" type="search" placeholder="Press '/' to search" aria-label="Search">
+          <input class="form-control search" id="search" type="search" placeholder="Search..." aria-label="Search">
         </div>
         <div class="col-8">
           <div class="row float-end" style="margin-top:5px">
@@ -45,8 +45,8 @@
     </nav>  <div class="container-fluid">
     <div class="row">
       <div class="col-lg-auto sidebar" id="sidebar">
-        <h1 class="lib-name text-center">Detritus</h1>
         
+    <h1 class="lib-name text-center"><a href="../../index.html">Detritus</a></h1>
     <img src="../../assets/logo.png" alt="Logo" class="img-fluid mx-auto d-block">
     <p class="current-thing text-center">enum <span class="object">LibraryApplicationFlags</span></p>
     <div class="sidebar-members">
@@ -57,7 +57,7 @@
         <span class="sidebar-category">Members</span>
         </div>
         <div class="collapsible-body open"> 
-        <span class="sidebar-category-member"><a href="#.HIDDEN">HIDDEN</a></span><br><span class="sidebar-category-member"><a href="#.PRIVATE">PRIVATE</a></span><br><span class="sidebar-category-member"><a href="#.OVERLAY_DISABLED">OVERLAY_DISABLED</a></span><br><span class="sidebar-category-member"><a href="#.ENTITLED">ENTITLED</a></span><br><span class="sidebar-category-member"><a href="#.PREMIUM">PREMIUM</a></span><br>
+        <span class="sidebar-category-member"><a href="#.HIDDEN">HIDDEN</a></span><span class="sidebar-category-member"><a href="#.PRIVATE">PRIVATE</a></span><span class="sidebar-category-member"><a href="#.OVERLAY_DISABLED">OVERLAY_DISABLED</a></span><span class="sidebar-category-member"><a href="#.ENTITLED">ENTITLED</a></span><span class="sidebar-category-member"><a href="#.PREMIUM">PREMIUM</a></span>
         </div>
         </div>
     
@@ -107,8 +107,20 @@
                             <span>Methods</span>
                         </div>
                         <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-getters" checked>
+                            <span>Getters</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-setters" checked>
+                            <span>Setters</span>
+                        </div>
+                        <div>
                             <input type="checkbox" class="c-checkbox" id="search-option-enum-members">
                             <span>Enum members</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-privates">
+                            <span>Show privates</span>
                         </div>
                     </div>
                 </div>
@@ -144,31 +156,31 @@
     
 
     <h2>Members</h2>
-    <div id=".HIDDEN">
+    <div id=".HIDDEN" class="item">
         <a class="item-name" href="#.HIDDEN">HIDDEN</a>
 
         <span>= 1 &lt;&lt; 0</span>
 
     </div>
-    <div id=".PRIVATE">
+    <div id=".PRIVATE" class="item">
         <a class="item-name" href="#.PRIVATE">PRIVATE</a>
 
         <span>= 1 &lt;&lt; 1</span>
 
     </div>
-    <div id=".OVERLAY_DISABLED">
+    <div id=".OVERLAY_DISABLED" class="item">
         <a class="item-name" href="#.OVERLAY_DISABLED">OVERLAY_DISABLED</a>
 
         <span>= 1 &lt;&lt; 2</span>
 
     </div>
-    <div id=".ENTITLED">
+    <div id=".ENTITLED" class="item">
         <a class="item-name" href="#.ENTITLED">ENTITLED</a>
 
         <span>= 1 &lt;&lt; 3</span>
 
     </div>
-    <div id=".PREMIUM">
+    <div id=".PREMIUM" class="item">
         <a class="item-name" href="#.PREMIUM">PREMIUM</a>
 
         <span>= 1 &lt;&lt; 4</span>

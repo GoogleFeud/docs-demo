@@ -22,7 +22,7 @@
       <nav class="container-fluid navi">
       <div class="row">
         <div class="col-4">
-          <input class="form-control search" id="search" type="search" placeholder="Press '/' to search" aria-label="Search">
+          <input class="form-control search" id="search" type="search" placeholder="Search..." aria-label="Search">
         </div>
         <div class="col-8">
           <div class="row float-end" style="margin-top:5px">
@@ -45,8 +45,8 @@
     </nav>  <div class="container-fluid">
     <div class="row">
       <div class="col-lg-auto sidebar" id="sidebar">
-        <h1 class="lib-name text-center">Detritus</h1>
         
+    <h1 class="lib-name text-center"><a href="../../index.html">Detritus</a></h1>
     <img src="../../assets/logo.png" alt="Logo" class="img-fluid mx-auto d-block">
     <p class="current-thing text-center">enum <span class="object">MessageComponentButtonStyles</span></p>
     <div class="sidebar-members">
@@ -57,7 +57,7 @@
         <span class="sidebar-category">Members</span>
         </div>
         <div class="collapsible-body open"> 
-        <span class="sidebar-category-member"><a href="#.PRIMARY">PRIMARY</a></span><br><span class="sidebar-category-member"><a href="#.SECONDARY">SECONDARY</a></span><br><span class="sidebar-category-member"><a href="#.SUCCESS">SUCCESS</a></span><br><span class="sidebar-category-member"><a href="#.DANGER">DANGER</a></span><br><span class="sidebar-category-member"><a href="#.LINK">LINK</a></span><br>
+        <span class="sidebar-category-member"><a href="#.PRIMARY">PRIMARY</a></span><span class="sidebar-category-member"><a href="#.SECONDARY">SECONDARY</a></span><span class="sidebar-category-member"><a href="#.SUCCESS">SUCCESS</a></span><span class="sidebar-category-member"><a href="#.DANGER">DANGER</a></span><span class="sidebar-category-member"><a href="#.LINK">LINK</a></span>
         </div>
         </div>
     
@@ -107,8 +107,20 @@
                             <span>Methods</span>
                         </div>
                         <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-getters" checked>
+                            <span>Getters</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-setters" checked>
+                            <span>Setters</span>
+                        </div>
+                        <div>
                             <input type="checkbox" class="c-checkbox" id="search-option-enum-members">
                             <span>Enum members</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-privates">
+                            <span>Show privates</span>
                         </div>
                     </div>
                 </div>
@@ -144,31 +156,31 @@
     
 
     <h2>Members</h2>
-    <div id=".PRIMARY">
+    <div id=".PRIMARY" class="item">
         <a class="item-name" href="#.PRIMARY">PRIMARY</a>
 
         <span>= <span class="reference-link"><a class="primitive number-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">1</a></span></span>
 
     </div>
-    <div id=".SECONDARY">
+    <div id=".SECONDARY" class="item">
         <a class="item-name" href="#.SECONDARY">SECONDARY</a>
 
         <span>= <span class="reference-link"><a class="primitive number-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">2</a></span></span>
 
     </div>
-    <div id=".SUCCESS">
+    <div id=".SUCCESS" class="item">
         <a class="item-name" href="#.SUCCESS">SUCCESS</a>
 
         <span>= <span class="reference-link"><a class="primitive number-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">3</a></span></span>
 
     </div>
-    <div id=".DANGER">
+    <div id=".DANGER" class="item">
         <a class="item-name" href="#.DANGER">DANGER</a>
 
         <span>= <span class="reference-link"><a class="primitive number-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">4</a></span></span>
 
     </div>
-    <div id=".LINK">
+    <div id=".LINK" class="item">
         <a class="item-name" href="#.LINK">LINK</a>
 
         <span>= <span class="reference-link"><a class="primitive number-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">5</a></span></span>

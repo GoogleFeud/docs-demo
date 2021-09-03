@@ -22,7 +22,7 @@
       <nav class="container-fluid navi">
       <div class="row">
         <div class="col-4">
-          <input class="form-control search" id="search" type="search" placeholder="Press '/' to search" aria-label="Search">
+          <input class="form-control search" id="search" type="search" placeholder="Search..." aria-label="Search">
         </div>
         <div class="col-8">
           <div class="row float-end" style="margin-top:5px">
@@ -45,8 +45,8 @@
     </nav>  <div class="container-fluid">
     <div class="row">
       <div class="col-lg-auto sidebar" id="sidebar">
-        <h1 class="lib-name text-center">Detritus</h1>
         
+    <h1 class="lib-name text-center"><a href="../../index.html">Detritus</a></h1>
     <img src="../../assets/logo.png" alt="Logo" class="img-fluid mx-auto d-block">
     <p class="current-thing text-center">enum <span class="object">GatewayActivityTypes</span></p>
     <div class="sidebar-members">
@@ -57,7 +57,7 @@
         <span class="sidebar-category">Members</span>
         </div>
         <div class="collapsible-body open"> 
-        <span class="sidebar-category-member"><a href="#.PLAYING">PLAYING</a></span><br><span class="sidebar-category-member"><a href="#.STREAMING">STREAMING</a></span><br><span class="sidebar-category-member"><a href="#.LISTENING">LISTENING</a></span><br><span class="sidebar-category-member"><a href="#.WATCHING">WATCHING</a></span><br><span class="sidebar-category-member"><a href="#.CUSTOM_STATUS">CUSTOM_STATUS</a></span><br>
+        <span class="sidebar-category-member"><a href="#.PLAYING">PLAYING</a></span><span class="sidebar-category-member"><a href="#.STREAMING">STREAMING</a></span><span class="sidebar-category-member"><a href="#.LISTENING">LISTENING</a></span><span class="sidebar-category-member"><a href="#.WATCHING">WATCHING</a></span><span class="sidebar-category-member"><a href="#.CUSTOM_STATUS">CUSTOM_STATUS</a></span>
         </div>
         </div>
     
@@ -107,8 +107,20 @@
                             <span>Methods</span>
                         </div>
                         <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-getters" checked>
+                            <span>Getters</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-setters" checked>
+                            <span>Setters</span>
+                        </div>
+                        <div>
                             <input type="checkbox" class="c-checkbox" id="search-option-enum-members">
                             <span>Enum members</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-privates">
+                            <span>Show privates</span>
                         </div>
                     </div>
                 </div>
@@ -144,31 +156,31 @@
     
 
     <h2>Members</h2>
-    <div id=".PLAYING">
+    <div id=".PLAYING" class="item">
         <a class="item-name" href="#.PLAYING">PLAYING</a>
 
         <span>= <span class="reference-link"><a class="primitive number-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">0</a></span></span>
 
     </div>
-    <div id=".STREAMING">
+    <div id=".STREAMING" class="item">
         <a class="item-name" href="#.STREAMING">STREAMING</a>
 
         <span>= <span class="reference-link"><a class="primitive number-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">1</a></span></span>
 
     </div>
-    <div id=".LISTENING">
+    <div id=".LISTENING" class="item">
         <a class="item-name" href="#.LISTENING">LISTENING</a>
 
         <span>= <span class="reference-link"><a class="primitive number-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">2</a></span></span>
 
     </div>
-    <div id=".WATCHING">
+    <div id=".WATCHING" class="item">
         <a class="item-name" href="#.WATCHING">WATCHING</a>
 
         <span>= <span class="reference-link"><a class="primitive number-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">3</a></span></span>
 
     </div>
-    <div id=".CUSTOM_STATUS">
+    <div id=".CUSTOM_STATUS" class="item">
         <a class="item-name" href="#.CUSTOM_STATUS">CUSTOM_STATUS</a>
 
         <span>= <span class="reference-link"><a class="primitive number-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">4</a></span></span>

@@ -22,7 +22,7 @@
       <nav class="container-fluid navi">
       <div class="row">
         <div class="col-4">
-          <input class="form-control search" id="search" type="search" placeholder="Press '/' to search" aria-label="Search">
+          <input class="form-control search" id="search" type="search" placeholder="Search..." aria-label="Search">
         </div>
         <div class="col-8">
           <div class="row float-end" style="margin-top:5px">
@@ -45,8 +45,8 @@
     </nav>  <div class="container-fluid">
     <div class="row">
       <div class="col-lg-auto sidebar" id="sidebar">
-        <h1 class="lib-name text-center">Detritus</h1>
         
+    <h1 class="lib-name text-center"><a href="../../index.html">Detritus</a></h1>
     <img src="../../assets/logo.png" alt="Logo" class="img-fluid mx-auto d-block">
     <p class="current-thing text-center">enum <span class="object">Distributors</span></p>
     <div class="sidebar-members">
@@ -57,7 +57,7 @@
         <span class="sidebar-category">Members</span>
         </div>
         <div class="collapsible-body open"> 
-        <span class="sidebar-category-member"><a href="#.BATTLENET">BATTLENET</a></span><br><span class="sidebar-category-member"><a href="#.DISCORD">DISCORD</a></span><br><span class="sidebar-category-member"><a href="#.EPIC">EPIC</a></span><br><span class="sidebar-category-member"><a href="#.GOG">GOG</a></span><br><span class="sidebar-category-member"><a href="#.ORIGIN">ORIGIN</a></span><br><span class="sidebar-category-member"><a href="#.STEAM">STEAM</a></span><br><span class="sidebar-category-member"><a href="#.TWITCH">TWITCH</a></span><br><span class="sidebar-category-member"><a href="#.UPLAY">UPLAY</a></span><br>
+        <span class="sidebar-category-member"><a href="#.BATTLENET">BATTLENET</a></span><span class="sidebar-category-member"><a href="#.DISCORD">DISCORD</a></span><span class="sidebar-category-member"><a href="#.EPIC">EPIC</a></span><span class="sidebar-category-member"><a href="#.GOG">GOG</a></span><span class="sidebar-category-member"><a href="#.ORIGIN">ORIGIN</a></span><span class="sidebar-category-member"><a href="#.STEAM">STEAM</a></span><span class="sidebar-category-member"><a href="#.TWITCH">TWITCH</a></span><span class="sidebar-category-member"><a href="#.UPLAY">UPLAY</a></span>
         </div>
         </div>
     
@@ -107,8 +107,20 @@
                             <span>Methods</span>
                         </div>
                         <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-getters" checked>
+                            <span>Getters</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-setters" checked>
+                            <span>Setters</span>
+                        </div>
+                        <div>
                             <input type="checkbox" class="c-checkbox" id="search-option-enum-members">
                             <span>Enum members</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-privates">
+                            <span>Show privates</span>
                         </div>
                     </div>
                 </div>
@@ -144,49 +156,49 @@
     
 
     <h2>Members</h2>
-    <div id=".BATTLENET">
+    <div id=".BATTLENET" class="item">
         <a class="item-name" href="#.BATTLENET">BATTLENET</a>
 
         <span>= <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">'battlenet'</a></span></span>
 
     </div>
-    <div id=".DISCORD">
+    <div id=".DISCORD" class="item">
         <a class="item-name" href="#.DISCORD">DISCORD</a>
 
         <span>= <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">'discord'</a></span></span>
 
     </div>
-    <div id=".EPIC">
+    <div id=".EPIC" class="item">
         <a class="item-name" href="#.EPIC">EPIC</a>
 
         <span>= <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">'epic'</a></span></span>
 
     </div>
-    <div id=".GOG">
+    <div id=".GOG" class="item">
         <a class="item-name" href="#.GOG">GOG</a>
 
         <span>= <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">'gog'</a></span></span>
 
     </div>
-    <div id=".ORIGIN">
+    <div id=".ORIGIN" class="item">
         <a class="item-name" href="#.ORIGIN">ORIGIN</a>
 
         <span>= <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">'origin'</a></span></span>
 
     </div>
-    <div id=".STEAM">
+    <div id=".STEAM" class="item">
         <a class="item-name" href="#.STEAM">STEAM</a>
 
         <span>= <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">'steam'</a></span></span>
 
     </div>
-    <div id=".TWITCH">
+    <div id=".TWITCH" class="item">
         <a class="item-name" href="#.TWITCH">TWITCH</a>
 
         <span>= <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">'twitch'</a></span></span>
 
     </div>
-    <div id=".UPLAY">
+    <div id=".UPLAY" class="item">
         <a class="item-name" href="#.UPLAY">UPLAY</a>
 
         <span>= <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">'uplay'</a></span></span>

@@ -22,7 +22,7 @@
       <nav class="container-fluid navi">
       <div class="row">
         <div class="col-4">
-          <input class="form-control search" id="search" type="search" placeholder="Press '/' to search" aria-label="Search">
+          <input class="form-control search" id="search" type="search" placeholder="Search..." aria-label="Search">
         </div>
         <div class="col-8">
           <div class="row float-end" style="margin-top:5px">
@@ -45,8 +45,8 @@
     </nav>  <div class="container-fluid">
     <div class="row">
       <div class="col-lg-auto sidebar" id="sidebar">
-        <h1 class="lib-name text-center">Detritus</h1>
         
+    <h1 class="lib-name text-center"><a href="../../index.html">Detritus</a></h1>
     <img src="../../assets/logo.png" alt="Logo" class="img-fluid mx-auto d-block">
     <p class="current-thing text-center">enum <span class="object">MediaEncryptionModes</span></p>
     <div class="sidebar-members">
@@ -57,7 +57,7 @@
         <span class="sidebar-category">Members</span>
         </div>
         <div class="collapsible-body open"> 
-        <span class="sidebar-category-member"><a href="#.AEAD_AES256_GCM">AEAD_AES256_GCM</a></span><br><span class="sidebar-category-member"><a href="#.AEAD_AES256_GCM_RTPSIZE">AEAD_AES256_GCM_RTPSIZE</a></span><br><span class="sidebar-category-member"><a href="#.XSALSA20_POLY1305">XSALSA20_POLY1305</a></span><br><span class="sidebar-category-member"><a href="#.XSALSA20_POLY1305_LITE">XSALSA20_POLY1305_LITE</a></span><br><span class="sidebar-category-member"><a href="#.XSALSA20_POLY1305_LITE_RTPSIZE">XSALSA20_POLY1305_LITE_RTPSIZE</a></span><br><span class="sidebar-category-member"><a href="#.XSALSA20_POLY1305_SUFFIX">XSALSA20_POLY1305_SUFFIX</a></span><br>
+        <span class="sidebar-category-member"><a href="#.AEAD_AES256_GCM">AEAD_AES256_GCM</a></span><span class="sidebar-category-member"><a href="#.AEAD_AES256_GCM_RTPSIZE">AEAD_AES256_GCM_RTPSIZE</a></span><span class="sidebar-category-member"><a href="#.XSALSA20_POLY1305">XSALSA20_POLY1305</a></span><span class="sidebar-category-member"><a href="#.XSALSA20_POLY1305_LITE">XSALSA20_POLY1305_LITE</a></span><span class="sidebar-category-member"><a href="#.XSALSA20_POLY1305_LITE_RTPSIZE">XSALSA20_POLY1305_LITE_RTPSIZE</a></span><span class="sidebar-category-member"><a href="#.XSALSA20_POLY1305_SUFFIX">XSALSA20_POLY1305_SUFFIX</a></span>
         </div>
         </div>
     
@@ -107,8 +107,20 @@
                             <span>Methods</span>
                         </div>
                         <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-getters" checked>
+                            <span>Getters</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-setters" checked>
+                            <span>Setters</span>
+                        </div>
+                        <div>
                             <input type="checkbox" class="c-checkbox" id="search-option-enum-members">
                             <span>Enum members</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-privates">
+                            <span>Show privates</span>
                         </div>
                     </div>
                 </div>
@@ -144,37 +156,37 @@
     
 
     <h2>Members</h2>
-    <div id=".AEAD_AES256_GCM">
+    <div id=".AEAD_AES256_GCM" class="item">
         <a class="item-name" href="#.AEAD_AES256_GCM">AEAD_AES256_GCM</a>
 
         <span>= <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">'aead_aes256_gcm'</a></span></span>
 
     </div>
-    <div id=".AEAD_AES256_GCM_RTPSIZE">
+    <div id=".AEAD_AES256_GCM_RTPSIZE" class="item">
         <a class="item-name" href="#.AEAD_AES256_GCM_RTPSIZE">AEAD_AES256_GCM_RTPSIZE</a>
 
         <span>= <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">'aead_aes256_gcm_rtpsize'</a></span></span>
 
     </div>
-    <div id=".XSALSA20_POLY1305">
+    <div id=".XSALSA20_POLY1305" class="item">
         <a class="item-name" href="#.XSALSA20_POLY1305">XSALSA20_POLY1305</a>
 
         <span>= <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">'xsalsa20_poly1305'</a></span></span>
 
     </div>
-    <div id=".XSALSA20_POLY1305_LITE">
+    <div id=".XSALSA20_POLY1305_LITE" class="item">
         <a class="item-name" href="#.XSALSA20_POLY1305_LITE">XSALSA20_POLY1305_LITE</a>
 
         <span>= <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">'xsalsa20_poly1305_lite'</a></span></span>
 
     </div>
-    <div id=".XSALSA20_POLY1305_LITE_RTPSIZE">
+    <div id=".XSALSA20_POLY1305_LITE_RTPSIZE" class="item">
         <a class="item-name" href="#.XSALSA20_POLY1305_LITE_RTPSIZE">XSALSA20_POLY1305_LITE_RTPSIZE</a>
 
         <span>= <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">'xsalsa20_poly1305_lite_rtpsize'</a></span></span>
 
     </div>
-    <div id=".XSALSA20_POLY1305_SUFFIX">
+    <div id=".XSALSA20_POLY1305_SUFFIX" class="item">
         <a class="item-name" href="#.XSALSA20_POLY1305_SUFFIX">XSALSA20_POLY1305_SUFFIX</a>
 
         <span>= <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">'xsalsa20_poly1305_suffix'</a></span></span>

@@ -22,7 +22,7 @@
       <nav class="container-fluid navi">
       <div class="row">
         <div class="col-4">
-          <input class="form-control search" id="search" type="search" placeholder="Press '/' to search" aria-label="Search">
+          <input class="form-control search" id="search" type="search" placeholder="Search..." aria-label="Search">
         </div>
         <div class="col-8">
           <div class="row float-end" style="margin-top:5px">
@@ -45,8 +45,8 @@
     </nav>  <div class="container-fluid">
     <div class="row">
       <div class="col-lg-auto sidebar" id="sidebar">
-        <h1 class="lib-name text-center">Detritus</h1>
         
+    <h1 class="lib-name text-center"><a href="../../index.html">Detritus</a></h1>
     <img src="../../assets/logo.png" alt="Logo" class="img-fluid mx-auto d-block">
     <p class="current-thing text-center">enum <span class="object">MediaOpCodes</span></p>
     <div class="sidebar-members">
@@ -57,7 +57,7 @@
         <span class="sidebar-category">Members</span>
         </div>
         <div class="collapsible-body open"> 
-        <span class="sidebar-category-member"><a href="#.IDENTIFY">IDENTIFY</a></span><br><span class="sidebar-category-member"><a href="#.SELECT_PROTOCOL">SELECT_PROTOCOL</a></span><br><span class="sidebar-category-member"><a href="#.READY">READY</a></span><br><span class="sidebar-category-member"><a href="#.HEARTBEAT">HEARTBEAT</a></span><br><span class="sidebar-category-member"><a href="#.SELECT_PROTOCOL_ACK">SELECT_PROTOCOL_ACK</a></span><br><span class="sidebar-category-member"><a href="#.SPEAKING">SPEAKING</a></span><br><span class="sidebar-category-member"><a href="#.HEARTBEAT_ACK">HEARTBEAT_ACK</a></span><br><span class="sidebar-category-member"><a href="#.RESUME">RESUME</a></span><br><span class="sidebar-category-member"><a href="#.HELLO">HELLO</a></span><br><span class="sidebar-category-member"><a href="#.RESUMED">RESUMED</a></span><br><span class="sidebar-category-member"><a href="#.SIGNAL">SIGNAL</a></span><br><span class="sidebar-category-member"><a href="#.CLIENT_CONNECT">CLIENT_CONNECT</a></span><br><span class="sidebar-category-member"><a href="#.CLIENT_DISCONNECT">CLIENT_DISCONNECT</a></span><br><span class="sidebar-category-member"><a href="#.SESSION_UPDATE">SESSION_UPDATE</a></span><br><span class="sidebar-category-member"><a href="#.VIDEO_SINK_WANTS">VIDEO_SINK_WANTS</a></span><br>
+        <span class="sidebar-category-member"><a href="#.IDENTIFY">IDENTIFY</a></span><span class="sidebar-category-member"><a href="#.SELECT_PROTOCOL">SELECT_PROTOCOL</a></span><span class="sidebar-category-member"><a href="#.READY">READY</a></span><span class="sidebar-category-member"><a href="#.HEARTBEAT">HEARTBEAT</a></span><span class="sidebar-category-member"><a href="#.SELECT_PROTOCOL_ACK">SELECT_PROTOCOL_ACK</a></span><span class="sidebar-category-member"><a href="#.SPEAKING">SPEAKING</a></span><span class="sidebar-category-member"><a href="#.HEARTBEAT_ACK">HEARTBEAT_ACK</a></span><span class="sidebar-category-member"><a href="#.RESUME">RESUME</a></span><span class="sidebar-category-member"><a href="#.HELLO">HELLO</a></span><span class="sidebar-category-member"><a href="#.RESUMED">RESUMED</a></span><span class="sidebar-category-member"><a href="#.SIGNAL">SIGNAL</a></span><span class="sidebar-category-member"><a href="#.CLIENT_CONNECT">CLIENT_CONNECT</a></span><span class="sidebar-category-member"><a href="#.CLIENT_DISCONNECT">CLIENT_DISCONNECT</a></span><span class="sidebar-category-member"><a href="#.SESSION_UPDATE">SESSION_UPDATE</a></span><span class="sidebar-category-member"><a href="#.VIDEO_SINK_WANTS">VIDEO_SINK_WANTS</a></span>
         </div>
         </div>
     
@@ -107,8 +107,20 @@
                             <span>Methods</span>
                         </div>
                         <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-getters" checked>
+                            <span>Getters</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-setters" checked>
+                            <span>Setters</span>
+                        </div>
+                        <div>
                             <input type="checkbox" class="c-checkbox" id="search-option-enum-members">
                             <span>Enum members</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-privates">
+                            <span>Show privates</span>
                         </div>
                     </div>
                 </div>
@@ -144,91 +156,91 @@
     
 
     <h2>Members</h2>
-    <div id=".IDENTIFY">
+    <div id=".IDENTIFY" class="item">
         <a class="item-name" href="#.IDENTIFY">IDENTIFY</a>
 
         <span>= <span class="reference-link"><a class="primitive number-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">0</a></span></span>
 
     </div>
-    <div id=".SELECT_PROTOCOL">
+    <div id=".SELECT_PROTOCOL" class="item">
         <a class="item-name" href="#.SELECT_PROTOCOL">SELECT_PROTOCOL</a>
 
         <span>= <span class="reference-link"><a class="primitive number-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">1</a></span></span>
 
     </div>
-    <div id=".READY">
+    <div id=".READY" class="item">
         <a class="item-name" href="#.READY">READY</a>
 
         <span>= <span class="reference-link"><a class="primitive number-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">2</a></span></span>
 
     </div>
-    <div id=".HEARTBEAT">
+    <div id=".HEARTBEAT" class="item">
         <a class="item-name" href="#.HEARTBEAT">HEARTBEAT</a>
 
         <span>= <span class="reference-link"><a class="primitive number-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">3</a></span></span>
 
     </div>
-    <div id=".SELECT_PROTOCOL_ACK">
+    <div id=".SELECT_PROTOCOL_ACK" class="item">
         <a class="item-name" href="#.SELECT_PROTOCOL_ACK">SELECT_PROTOCOL_ACK</a>
 
         <span>= <span class="reference-link"><a class="primitive number-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">4</a></span></span>
 
     </div>
-    <div id=".SPEAKING">
+    <div id=".SPEAKING" class="item">
         <a class="item-name" href="#.SPEAKING">SPEAKING</a>
 
         <span>= <span class="reference-link"><a class="primitive number-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">5</a></span></span>
 
     </div>
-    <div id=".HEARTBEAT_ACK">
+    <div id=".HEARTBEAT_ACK" class="item">
         <a class="item-name" href="#.HEARTBEAT_ACK">HEARTBEAT_ACK</a>
 
         <span>= <span class="reference-link"><a class="primitive number-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">6</a></span></span>
 
     </div>
-    <div id=".RESUME">
+    <div id=".RESUME" class="item">
         <a class="item-name" href="#.RESUME">RESUME</a>
 
         <span>= <span class="reference-link"><a class="primitive number-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">7</a></span></span>
 
     </div>
-    <div id=".HELLO">
+    <div id=".HELLO" class="item">
         <a class="item-name" href="#.HELLO">HELLO</a>
 
         <span>= <span class="reference-link"><a class="primitive number-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">8</a></span></span>
 
     </div>
-    <div id=".RESUMED">
+    <div id=".RESUMED" class="item">
         <a class="item-name" href="#.RESUMED">RESUMED</a>
 
         <span>= <span class="reference-link"><a class="primitive number-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">9</a></span></span>
 
     </div>
-    <div id=".SIGNAL">
+    <div id=".SIGNAL" class="item">
         <a class="item-name" href="#.SIGNAL">SIGNAL</a>
 
         <span>= <span class="reference-link"><a class="primitive number-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">10</a></span></span>
 
     </div>
-    <div id=".CLIENT_CONNECT">
+    <div id=".CLIENT_CONNECT" class="item">
         <a class="item-name" href="#.CLIENT_CONNECT">CLIENT_CONNECT</a>
 
         <span>= <span class="reference-link"><a class="primitive number-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">12</a></span></span>
 
     </div>
-    <div id=".CLIENT_DISCONNECT">
+    <div id=".CLIENT_DISCONNECT" class="item">
         <a class="item-name" href="#.CLIENT_DISCONNECT">CLIENT_DISCONNECT</a>
 
         <span>= <span class="reference-link"><a class="primitive number-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">13</a></span></span>
 
     </div>
-    <div id=".SESSION_UPDATE">
+    <div id=".SESSION_UPDATE" class="item">
         <a class="item-name" href="#.SESSION_UPDATE">SESSION_UPDATE</a>
 
         <span>= <span class="reference-link"><a class="primitive number-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">14</a></span></span>
 
     </div>
-    <div id=".VIDEO_SINK_WANTS">
+    <div id=".VIDEO_SINK_WANTS" class="item">
         <a class="item-name" href="#.VIDEO_SINK_WANTS">VIDEO_SINK_WANTS</a>
 
         <span>= <span class="reference-link"><a class="primitive number-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">15</a></span></span>

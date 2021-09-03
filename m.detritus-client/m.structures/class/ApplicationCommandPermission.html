@@ -22,7 +22,7 @@
       <nav class="container-fluid navi">
       <div class="row">
         <div class="col-4">
-          <input class="form-control search" id="search" type="search" placeholder="Press '/' to search" aria-label="Search">
+          <input class="form-control search" id="search" type="search" placeholder="Search..." aria-label="Search">
         </div>
         <div class="col-8">
           <div class="row float-end" style="margin-top:5px">
@@ -45,8 +45,8 @@
     </nav>  <div class="container-fluid">
     <div class="row">
       <div class="col-lg-auto sidebar" id="sidebar">
-        <h1 class="lib-name text-center">Detritus</h1>
         
+    <h1 class="lib-name text-center"><a href="../../../index.html">Detritus</a></h1>
     <img src="../../../assets/logo.png" alt="Logo" class="img-fluid mx-auto d-block">
     <p class="current-thing text-center">class <span class="object">ApplicationCommandPermission</span></p>
     <div class="sidebar-members">
@@ -57,7 +57,7 @@
         <span class="sidebar-category">Properties</span>
         </div>
         <div class="collapsible-body open"> 
-        <span class="sidebar-category-member"><a href="#._keys">_keys</a></span><br><span class="sidebar-category-member"><a href="#.commandPermissions">commandPermissions</a></span><br><span class="sidebar-category-member"><a href="#.id">id</a></span><br><span class="sidebar-category-member"><a href="#.permission">permission</a></span><br><span class="sidebar-category-member"><a href="#.type">type</a></span><br>
+        <span class="sidebar-category-member"><a href="#._keys">_keys</a></span><span class="sidebar-category-member"><a href="#.commandPermissions">commandPermissions</a></span><span class="sidebar-category-member"><a href="#.id">id</a></span><span class="sidebar-category-member"><a href="#.permission">permission</a></span><span class="sidebar-category-member"><a href="#.type">type</a></span>
         </div>
         </div>
     
@@ -67,7 +67,7 @@
         <span class="sidebar-category">Methods</span>
         </div>
         <div class="collapsible-body open"> 
-        <span class="sidebar-category-member"><a href="#.isRole">isRole</a></span><br><span class="sidebar-category-member"><a href="#.isUser">isUser</a></span><br><span class="sidebar-category-member"><a href="#.user">user</a></span><br>
+        <span class="sidebar-category-member"><a href="#.isRole">isRole</a></span><span class="sidebar-category-member"><a href="#.isUser">isUser</a></span><span class="sidebar-category-member"><a href="#.user">user</a></span>
         </div>
         </div>
     
@@ -117,8 +117,20 @@
                             <span>Methods</span>
                         </div>
                         <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-getters" checked>
+                            <span>Getters</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-setters" checked>
+                            <span>Setters</span>
+                        </div>
+                        <div>
                             <input type="checkbox" class="c-checkbox" id="search-option-enum-members">
                             <span>Enum members</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-privates">
+                            <span>Show privates</span>
                         </div>
                     </div>
                 </div>
@@ -150,7 +162,7 @@
 </svg>
 </span></a>
     </h1>
-    <p class="item-name"><span class="keyword">extends</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.structures\class\BaseStructure.html">BaseStructure</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">BaseStructure</span><span style="display:block" class="monospace fw-bold">structures/BaseStructure</span></span></span></span></p>
+    <p class="item-name"><span class="keyword">extends</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.structures\class\BaseStructure.html">BaseStructure</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">BaseStructure</span><span style="display:block" class="monospace fw-bold">structures/<span class="item-name object">BaseStructure</span></span></span></span></span></p>
 
 
     <p>Application Command Permission Structure</p>
@@ -159,12 +171,13 @@
     <h2>Constructor</h2>
     
 <div id="class.constructor" class="item">
-    <p class="item-name"><span class="keyword">constructor</span><span>(<span class="item-name"><span class="param-name">commandPermissions</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.structures\class\ApplicationCommandPermissions.html">ApplicationCommandPermissions</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">ApplicationCommandPermissions</span><span style="display:block" class="monospace fw-bold">structures/ApplicationCommandPermissions</span></span></span></span></span>, <span class="item-name"><span class="param-name">data</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.structures\interface\BaseStructureData.html">BaseStructureData</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">BaseStructureData</span><span style="display:block" class="monospace fw-bold">structures/BaseStructureData</span></span></span></span></span>, <span class="item-name"><span class="param-name">isClone</span><span class="symbol">?</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>)</span></p>
+    <span class="item-name"><span class="keyword">constructor</span><span>(<div class="left-item"><span class="item-name"><span class="param-name">commandPermissions</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.structures\class\ApplicationCommandPermissions.html">ApplicationCommandPermissions</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">ApplicationCommandPermissions</span><span style="display:block" class="monospace fw-bold">structures/<span class="item-name object">ApplicationCommandPermissions</span></span></span></span></span></span>,<br><span class="item-name"><span class="param-name">data</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.structures\interface\BaseStructureData.html">BaseStructureData</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">BaseStructureData</span><span style="display:block" class="monospace fw-bold">structures/<span class="item-name object">BaseStructureData</span></span></span></span></span></span>,<br><span class="item-name"><span class="param-name">isClone</span><span class="symbol">?</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span></div>)</span></span>
 
     <div class="docblock">
     <ul></ul>
     </div>
 </div>
+
     
     <h2>Properties</h2>
     <div><div class="item" id="._keys">
@@ -173,7 +186,8 @@
     
     
     <span class="modifier">readonly</span>
-    <span class="item-name"><a class="property-name" href="#._keys">_keys</a><span>: keysApplicationCommandPermission</span></span>
+    <span class="item-name"><a class="property-name" href="#._keys">_keys</a>
+    </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/structures/applicationcommand.ts#L263>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
@@ -190,7 +204,8 @@
     
     
     <span class="modifier">readonly</span>
-    <span class="item-name"><a class="property-name" href="#.commandPermissions">commandPermissions</a><span>: <span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.structures\class\ApplicationCommandPermissions.html">ApplicationCommandPermissions</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">ApplicationCommandPermissions</span><span style="display:block" class="monospace fw-bold">structures/ApplicationCommandPermissions</span></span></span></span></span></span>
+    <span class="item-name"><a class="property-name" href="#.commandPermissions">commandPermissions</a><span>: <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.structures\class\ApplicationCommandPermissions.html">ApplicationCommandPermissions</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">ApplicationCommandPermissions</span><span style="display:block" class="monospace fw-bold">structures/<span class="item-name object">ApplicationCommandPermissions</span></span></span></span></span></span>
+    </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/structures/applicationcommand.ts#L264>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
@@ -207,7 +222,8 @@
     
     
     
-    <span class="item-name"><a class="property-name" href="#.id">id</a><span>: <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span></span>
+    <span class="item-name"><a class="property-name" href="#.id">id</a><span>: <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span> <span class="symbol">=</span> <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">''</a></span>
+    </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/structures/applicationcommand.ts#L266>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
@@ -224,7 +240,8 @@
     
     
     
-    <span class="item-name"><a class="property-name" href="#.permission">permission</a><span>: <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span></span>
+    <span class="item-name"><a class="property-name" href="#.permission">permission</a><span>: <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span> <span class="symbol">=</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">false</a></span>
+    </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/structures/applicationcommand.ts#L267>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
@@ -241,7 +258,8 @@
     
     
     
-    <span class="item-name"><a class="property-name" href="#.type">type</a><span>: <span><span class="c-tooltip"><a class="reference-link object" href="..\..\enum\ApplicationCommandPermissionTypes.html">ApplicationCommandPermissionTypes</a><span class="c-tooltip-content"><span class="keyword">enum</span> <span class="item-name object">ApplicationCommandPermissionTypes</span><span style="display:block" class="monospace fw-bold">/ApplicationCommandPermissionTypes</span></span></span></span></span></span>
+    <span class="item-name"><a class="property-name" href="#.type">type</a><span>: <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\enum\ApplicationCommandPermissionTypes.html">ApplicationCommandPermissionTypes</a><span class="c-tooltip-content"><span class="keyword">enum</span> <span class="item-name object">ApplicationCommandPermissionTypes</span><span style="display:block" class="monospace fw-bold"><span class="item-name object">ApplicationCommandPermissionTypes</span></span></span></span></span></span> <span class="symbol">=</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\enum\ApplicationCommandPermissionTypes.html#.ROLE">ApplicationCommandPermissionTypes<span class="symbol">.</span>ROLE</a><span class="c-tooltip-content"><span class="keyword">enum</span> <span class="item-name object">ApplicationCommandPermissionTypes</span><span style="display:block" class="monospace fw-bold"><span class="item-name object">ApplicationCommandPermissionTypes</span><span class="symbol">.</span>ROLE</span></span></span></span>
+    </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/structures/applicationcommand.ts#L268>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
@@ -257,70 +275,70 @@
 
     <div>
 <div id=".isRole" class="item">
-    <p class="monospace">
+    <span class="monospace">
     
     
     
     
     <span class="modifier">get</span>
     
+        <a class="item-name method-name" href="#.isRole">isRole</a><span>()</span><span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
+    </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/structures/applicationcommand.ts#L277>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
   <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
 </svg>
 </span></a>
-        <a class="item-name method-name" href="#.isRole">isRole</a><span>()</span><span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
         <div class="docblock">
         
         
-        </div>
-    </p>
+    </div>
 </div></div>
     <div>
 <div id=".isUser" class="item">
-    <p class="monospace">
+    <span class="monospace">
     
     
     
     
     <span class="modifier">get</span>
     
+        <a class="item-name method-name" href="#.isUser">isUser</a><span>()</span><span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
+    </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/structures/applicationcommand.ts#L281>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
   <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
 </svg>
 </span></a>
-        <a class="item-name method-name" href="#.isUser">isUser</a><span>()</span><span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
         <div class="docblock">
         
         
-        </div>
-    </p>
+    </div>
 </div></div>
     <div>
 <div id=".user" class="item">
-    <p class="monospace">
+    <span class="monospace">
     
     
     
     
     <span class="modifier">get</span>
     
+        <a class="item-name method-name" href="#.user">user</a><span>()</span><span><span class="symbol">:</span> 
+<span><span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.structures\class\User.html">User</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">User</span><span style="display:block" class="monospace fw-bold">structures/<span class="item-name object">User</span></span></span></span></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></span></span></span>
+    </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/structures/applicationcommand.ts#L285>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
   <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
 </svg>
 </span></a>
-        <a class="item-name method-name" href="#.user">user</a><span>()</span><span><span class="symbol">:</span> 
-<span><span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.structures\class\User.html">User</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">User</span><span style="display:block" class="monospace fw-bold">structures/User</span></span></span></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></span></span></span>
         <div class="docblock">
         
         
-        </div>
-    </p>
+    </div>
 </div></div>
 
 </div>

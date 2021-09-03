@@ -22,7 +22,7 @@
       <nav class="container-fluid navi">
       <div class="row">
         <div class="col-4">
-          <input class="form-control search" id="search" type="search" placeholder="Press '/' to search" aria-label="Search">
+          <input class="form-control search" id="search" type="search" placeholder="Search..." aria-label="Search">
         </div>
         <div class="col-8">
           <div class="row float-end" style="margin-top:5px">
@@ -45,8 +45,8 @@
     </nav>  <div class="container-fluid">
     <div class="row">
       <div class="col-lg-auto sidebar" id="sidebar">
-        <h1 class="lib-name text-center">Detritus</h1>
         
+    <h1 class="lib-name text-center"><a href="../../index.html">Detritus</a></h1>
     <img src="../../assets/logo.png" alt="Logo" class="img-fluid mx-auto d-block">
     <p class="current-thing text-center">class <span class="object">EventSpewer</span></p>
     <div class="sidebar-members">
@@ -57,7 +57,7 @@
         <span class="sidebar-category">Properties</span>
         </div>
         <div class="collapsible-body open"> 
-        <span class="sidebar-category-member"><a href="#._events">_events</a></span><br><span class="sidebar-category-member"><a href="#._subscriptions">_subscriptions</a></span><br>
+        <span class="sidebar-category-member"><a href="#._events">_events</a></span><span class="sidebar-category-member"><a href="#._subscriptions">_subscriptions</a></span>
         </div>
         </div>
     
@@ -67,7 +67,7 @@
         <span class="sidebar-category">Methods</span>
         </div>
         <div class="collapsible-body open"> 
-        <span class="sidebar-category-member"><a href="#.hasEventListener">hasEventListener</a></span><br><span class="sidebar-category-member"><a href="#.subscribe">subscribe</a></span><br><span class="sidebar-category-member"><a href="#.removeSubscription">removeSubscription</a></span><br><span class="sidebar-category-member"><a href="#.removeAllListeners">removeAllListeners</a></span><br><span class="sidebar-category-member"><a href="#.removeAllSubscriptions">removeAllSubscriptions</a></span><br>
+        <span class="sidebar-category-member"><a href="#.hasEventListener">hasEventListener</a></span><span class="sidebar-category-member"><a href="#.subscribe">subscribe</a></span><span class="sidebar-category-member"><a href="#.removeSubscription">removeSubscription</a></span><span class="sidebar-category-member"><a href="#.removeAllListeners">removeAllListeners</a></span><span class="sidebar-category-member"><a href="#.removeAllSubscriptions">removeAllSubscriptions</a></span>
         </div>
         </div>
     
@@ -117,8 +117,20 @@
                             <span>Methods</span>
                         </div>
                         <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-getters" checked>
+                            <span>Getters</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-setters" checked>
+                            <span>Setters</span>
+                        </div>
+                        <div>
                             <input type="checkbox" class="c-checkbox" id="search-option-enum-members">
                             <span>Enum members</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-privates">
+                            <span>Show privates</span>
                         </div>
                     </div>
                 </div>
@@ -150,21 +162,22 @@
 </svg>
 </span></a>
     </h1>
-    <p class="item-name"><span class="keyword">extends</span> <span class="reference-link"><span class='primitive'>Emitter</span></span></p>
+    <p class="item-name"><span class="keyword">extends</span> <span><span class="reference-link item-name">Emitter</span></span></p>
 
-    <p class="item-name"><span class="keyword">implements</span> <span class="reference-link"><span class='primitive'>EventEmitter</span></span></p>
+    <p class="item-name"><span class="keyword">implements</span> <span><span class="reference-link item-name">EventEmitter</span></span></p>
 
     
 
     <h2>Constructor</h2>
     
 <div id="class.constructor" class="item">
-    <p class="item-name"><span class="keyword">constructor</span><span>()</span></p>
+    <span class="item-name"><span class="keyword">constructor</span><span>()</span></span>
 
     <div class="docblock">
     <ul></ul>
     </div>
 </div>
+
     
     <h2>Properties</h2>
     <div><div class="item" id="._events">
@@ -174,7 +187,8 @@
     
     
     <span class="item-name"><a class="property-name" href="#._events">_events</a><span>: 
-<span><span>{ <span>[key: <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>]: <span class="reference-link"><span class='primitive'>any</span></span></span> }</span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></span></span></span></span>
+<span><span>{ <span>[key<span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>]<span class="symbol">:</span> <span class="reference-link"><span class='primitive'>any</span></span></span> }</span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></span></span></span>
+    </span>
     <a href=https://github.com/detritusjs/utils/tree/master/src/eventspewer.ts#L13>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
@@ -192,7 +206,8 @@
     
     
     <span class="item-name"><a class="property-name" href="#._subscriptions">_subscriptions</a><span>: 
-<span><span><span class="reference-link"><span><span class="c-tooltip"><a class="reference-link object" href="..\class\EventSubscription.html">EventSubscription</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">EventSubscription</span><span style="display:block" class="monospace fw-bold">/EventSubscription</span></span></span></span>[]</span></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></span></span></span></span>
+<span><span><span class="reference-link"><a class='object' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></span><span>&lt;<span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.detritus-utils\class\EventSubscription.html">EventSubscription</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">EventSubscription</span><span style="display:block" class="monospace fw-bold"><span class="item-name object">EventSubscription</span></span></span></span></span>&gt;</span></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></span></span></span>
+    </span>
     <a href=https://github.com/detritusjs/utils/tree/master/src/eventspewer.ts#L18>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
@@ -208,117 +223,117 @@
 
     <div>
 <div id=".hasEventListener" class="item">
-    <p class="monospace">
+    <span class="monospace">
     
     
     
     
     
     
+        <a class="item-name method-name" href="#.hasEventListener">hasEventListener</a><span>(<span class="item-name"><span class="param-name">name</span><span class="symbol">:</span> 
+<span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol">symbol</a></span></span></span>)</span><span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
+    </span>
     <a href=https://github.com/detritusjs/utils/tree/master/src/eventspewer.ts#L30>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
   <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
 </svg>
 </span></a>
-        <a class="item-name method-name" href="#.hasEventListener">hasEventListener</a><span>(<span class="item-name"><span class="param-name">name</span><span class="symbol">:</span> 
-<span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol">symbol</a></span></span></span>)</span><span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
         <div class="docblock">
         <ul></ul>
         
-        </div>
-    </p>
+    </div>
 </div></div>
     <div>
 <div id=".subscribe" class="item">
-    <p class="monospace">
+    <span class="monospace">
     
     
     
     
     
     
+        <a class="item-name method-name" href="#.subscribe">subscribe</a><span>(<span class="item-name"><span class="param-name">name</span><span class="symbol">:</span> 
+<span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol">symbol</a></span></span></span>, <span class="item-name"><span class="param-name">listener</span><span class="symbol">:</span> <span>(<span class="item-name"><span class="symbol">...</span><span class="param-name">args</span><span class="symbol">:</span> 
+<span><span class="reference-link"><span class='primitive'>any</span></span>[]</span></span>) <span class="symbol">=></span> <span class="reference-link"><a class='primitive' href="https://www.typescriptlang.org/docs/handbook/2/functions.html#void">void</a></span></span></span>)</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.detritus-utils\class\EventSubscription.html">EventSubscription</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">EventSubscription</span><span style="display:block" class="monospace fw-bold"><span class="item-name object">EventSubscription</span></span></span></span></span></span>
+    </span>
     <a href=https://github.com/detritusjs/utils/tree/master/src/eventspewer.ts#L34>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
   <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
 </svg>
 </span></a>
-        <a class="item-name method-name" href="#.subscribe">subscribe</a><span>(<span class="item-name"><span class="param-name">name</span><span class="symbol">:</span> 
-<span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol">symbol</a></span></span></span>, <span class="item-name"><span class="param-name">listener</span><span class="symbol">:</span> <span>(<span class="item-name"><span class="symbol">...</span><span class="param-name">args</span><span class="symbol">:</span> 
-<span><span class="reference-link"><span class='primitive'>any</span></span>[]</span></span>) <span class="symbol">=></span> <span class="reference-link"><a class='primitive' href="https://www.typescriptlang.org/docs/handbook/2/functions.html#void">void</a></span></span></span>)</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\class\EventSubscription.html">EventSubscription</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">EventSubscription</span><span style="display:block" class="monospace fw-bold">/EventSubscription</span></span></span></span></span>
         <div class="docblock">
         <ul></ul>
         
-        </div>
-    </p>
+    </div>
 </div></div>
     <div>
 <div id=".removeSubscription" class="item">
-    <p class="monospace">
+    <span class="monospace">
     
     
     
     
     
     
+        <a class="item-name method-name" href="#.removeSubscription">removeSubscription</a><span>(<span class="item-name"><span class="param-name">subscription</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.detritus-utils\class\EventSubscription.html">EventSubscription</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">EventSubscription</span><span style="display:block" class="monospace fw-bold"><span class="item-name object">EventSubscription</span></span></span></span></span></span>)</span><span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://www.typescriptlang.org/docs/handbook/2/functions.html#void">void</a></span></span>
+    </span>
     <a href=https://github.com/detritusjs/utils/tree/master/src/eventspewer.ts#L45>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
   <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
 </svg>
 </span></a>
-        <a class="item-name method-name" href="#.removeSubscription">removeSubscription</a><span>(<span class="item-name"><span class="param-name">subscription</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\class\EventSubscription.html">EventSubscription</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">EventSubscription</span><span style="display:block" class="monospace fw-bold">/EventSubscription</span></span></span></span></span>)</span><span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://www.typescriptlang.org/docs/handbook/2/functions.html#void">void</a></span></span>
         <div class="docblock">
         <ul></ul>
         
-        </div>
-    </p>
+    </div>
 </div></div>
     <div>
 <div id=".removeAllListeners" class="item">
-    <p class="monospace">
+    <span class="monospace">
     
     
     
     
     
     
+        <a class="item-name method-name" href="#.removeAllListeners">removeAllListeners</a><span>(<span class="item-name"><span class="param-name">name</span><span class="symbol">?</span><span class="symbol">:</span> 
+<span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol">symbol</a></span></span></span>)</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.detritus-utils\class\EventSpewer.html">EventSpewer</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">EventSpewer</span><span style="display:block" class="monospace fw-bold"><span class="item-name object">EventSpewer</span></span></span></span></span></span>
+    </span>
     <a href=https://github.com/detritusjs/utils/tree/master/src/eventspewer.ts#L64>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
   <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
 </svg>
 </span></a>
-        <a class="item-name method-name" href="#.removeAllListeners">removeAllListeners</a><span>(<span class="item-name"><span class="param-name">name</span><span class="symbol">?</span><span class="symbol">:</span> 
-<span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol">symbol</a></span></span></span>)</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\class\EventSpewer.html">EventSpewer</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">EventSpewer</span><span style="display:block" class="monospace fw-bold">/EventSpewer</span></span></span></span></span>
         <div class="docblock">
         <ul></ul>
         
-        </div>
-    </p>
+    </div>
 </div></div>
     <div>
 <div id=".removeAllSubscriptions" class="item">
-    <p class="monospace">
+    <span class="monospace">
     
     
     
     
     
     
+        <a class="item-name method-name" href="#.removeAllSubscriptions">removeAllSubscriptions</a><span>()</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.detritus-utils\class\EventSpewer.html">EventSpewer</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">EventSpewer</span><span style="display:block" class="monospace fw-bold"><span class="item-name object">EventSpewer</span></span></span></span></span></span>
+    </span>
     <a href=https://github.com/detritusjs/utils/tree/master/src/eventspewer.ts#L85>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
   <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
 </svg>
 </span></a>
-        <a class="item-name method-name" href="#.removeAllSubscriptions">removeAllSubscriptions</a><span>()</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\class\EventSpewer.html">EventSpewer</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">EventSpewer</span><span style="display:block" class="monospace fw-bold">/EventSpewer</span></span></span></span></span>
         <div class="docblock">
         <ul></ul>
         
-        </div>
-    </p>
+    </div>
 </div></div>
 
 </div>

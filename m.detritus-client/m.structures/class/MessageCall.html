@@ -22,7 +22,7 @@
       <nav class="container-fluid navi">
       <div class="row">
         <div class="col-4">
-          <input class="form-control search" id="search" type="search" placeholder="Press '/' to search" aria-label="Search">
+          <input class="form-control search" id="search" type="search" placeholder="Search..." aria-label="Search">
         </div>
         <div class="col-8">
           <div class="row float-end" style="margin-top:5px">
@@ -45,8 +45,8 @@
     </nav>  <div class="container-fluid">
     <div class="row">
       <div class="col-lg-auto sidebar" id="sidebar">
-        <h1 class="lib-name text-center">Detritus</h1>
         
+    <h1 class="lib-name text-center"><a href="../../../index.html">Detritus</a></h1>
     <img src="../../../assets/logo.png" alt="Logo" class="img-fluid mx-auto d-block">
     <p class="current-thing text-center">class <span class="object">MessageCall</span></p>
     <div class="sidebar-members">
@@ -57,7 +57,7 @@
         <span class="sidebar-category">Properties</span>
         </div>
         <div class="collapsible-body open"> 
-        <span class="sidebar-category-member"><a href="#._uncloneable">_uncloneable</a></span><br><span class="sidebar-category-member"><a href="#._keys">_keys</a></span><br><span class="sidebar-category-member"><a href="#.message">message</a></span><br><span class="sidebar-category-member"><a href="#.endedTimestamp">endedTimestamp</a></span><br><span class="sidebar-category-member"><a href="#.participants">participants</a></span><br>
+        <span class="sidebar-category-member"><a href="#._uncloneable">_uncloneable</a></span><span class="sidebar-category-member"><a href="#._keys">_keys</a></span><span class="sidebar-category-member"><a href="#.message">message</a></span><span class="sidebar-category-member"><a href="#.endedTimestamp">endedTimestamp</a></span><span class="sidebar-category-member"><a href="#.participants">participants</a></span>
         </div>
         </div>
     
@@ -67,7 +67,7 @@
         <span class="sidebar-category">Methods</span>
         </div>
         <div class="collapsible-body open"> 
-        <span class="sidebar-category-member"><a href="#.duration">duration</a></span><br><span class="sidebar-category-member"><a href="#.isEnded">isEnded</a></span><br><span class="sidebar-category-member"><a href="#.mergeValue">mergeValue</a></span><br>
+        <span class="sidebar-category-member"><a href="#.duration">duration</a></span><span class="sidebar-category-member"><a href="#.isEnded">isEnded</a></span><span class="sidebar-category-member"><a href="#.mergeValue">mergeValue</a></span>
         </div>
         </div>
     
@@ -117,8 +117,20 @@
                             <span>Methods</span>
                         </div>
                         <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-getters" checked>
+                            <span>Getters</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-setters" checked>
+                            <span>Setters</span>
+                        </div>
+                        <div>
                             <input type="checkbox" class="c-checkbox" id="search-option-enum-members">
                             <span>Enum members</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-privates">
+                            <span>Show privates</span>
                         </div>
                     </div>
                 </div>
@@ -150,7 +162,7 @@
 </svg>
 </span></a>
     </h1>
-    <p class="item-name"><span class="keyword">extends</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.structures\class\BaseStructure.html">BaseStructure</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">BaseStructure</span><span style="display:block" class="monospace fw-bold">structures/BaseStructure</span></span></span></span></p>
+    <p class="item-name"><span class="keyword">extends</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.structures\class\BaseStructure.html">BaseStructure</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">BaseStructure</span><span style="display:block" class="monospace fw-bold">structures/<span class="item-name object">BaseStructure</span></span></span></span></span></p>
 
 
     <p>Channel Message Call Structure, used to define the call properties in the DM it&#39;s from
@@ -160,12 +172,13 @@ Used to format the content</p>
     <h2>Constructor</h2>
     
 <div id="class.constructor" class="item">
-    <p class="item-name"><span class="keyword">constructor</span><span>(<span class="item-name"><span class="param-name">message</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.structures\class\Message.html">Message</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Message</span><span style="display:block" class="monospace fw-bold">structures/Message</span></span></span></span></span>, <span class="item-name"><span class="param-name">data</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.structures\interface\BaseStructureData.html">BaseStructureData</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">BaseStructureData</span><span style="display:block" class="monospace fw-bold">structures/BaseStructureData</span></span></span></span></span>)</span></p>
+    <span class="item-name"><span class="keyword">constructor</span><span>(<span class="item-name"><span class="param-name">message</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.structures\class\Message.html">Message</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Message</span><span style="display:block" class="monospace fw-bold">structures/<span class="item-name object">Message</span></span></span></span></span></span>, <span class="item-name"><span class="param-name">data</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.structures\interface\BaseStructureData.html">BaseStructureData</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">BaseStructureData</span><span style="display:block" class="monospace fw-bold">structures/<span class="item-name object">BaseStructureData</span></span></span></span></span></span>)</span></span>
 
     <div class="docblock">
     <ul></ul>
     </div>
 </div>
+
     
     <h2>Properties</h2>
     <div><div class="item" id="._uncloneable">
@@ -174,7 +187,8 @@ Used to format the content</p>
     
     
     <span class="modifier">readonly</span>
-    <span class="item-name"><a class="property-name" href="#._uncloneable">_uncloneable</a><span>: <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a></span></span></span>
+    <span class="item-name"><a class="property-name" href="#._uncloneable">_uncloneable</a> <span class="symbol">=</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a></span>
+    </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/structures/message.ts#L984>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
@@ -191,7 +205,8 @@ Used to format the content</p>
     
     
     <span class="modifier">readonly</span>
-    <span class="item-name"><a class="property-name" href="#._keys">_keys</a><span>: keysMessageCall</span></span>
+    <span class="item-name"><a class="property-name" href="#._keys">_keys</a>
+    </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/structures/message.ts#L985>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
@@ -208,7 +223,8 @@ Used to format the content</p>
     
     
     <span class="modifier">readonly</span>
-    <span class="item-name"><a class="property-name" href="#.message">message</a><span>: <span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.structures\class\Message.html">Message</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Message</span><span style="display:block" class="monospace fw-bold">structures/Message</span></span></span></span></span></span>
+    <span class="item-name"><a class="property-name" href="#.message">message</a><span>: <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.structures\class\Message.html">Message</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Message</span><span style="display:block" class="monospace fw-bold">structures/<span class="item-name object">Message</span></span></span></span></span></span>
+    </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/structures/message.ts#L986>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
@@ -226,7 +242,8 @@ Used to format the content</p>
     
     
     <span class="item-name"><a class="property-name" href="#.endedTimestamp">endedTimestamp</a><span>: 
-<span><span><span class="reference-link"><a class='external' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt">Bigint</a></span></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></span></span></span></span>
+<span><span><span class="reference-link"><a class='object' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt">Bigint</a></span></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></span></span></span> <span class="symbol">=</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></span>
+    </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/structures/message.ts#L988>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
@@ -244,7 +261,8 @@ Used to format the content</p>
     
     
     <span class="item-name"><a class="property-name" href="#.participants">participants</a><span>: 
-<span><span class="reference-link"><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>[]</span></span></span></span>
+<span><span class="reference-link"><a class='object' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></span><span>&lt;<span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>&gt;</span></span></span> <span class="symbol">=</span> []
+    </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/structures/message.ts#L989>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
@@ -260,69 +278,69 @@ Used to format the content</p>
 
     <div>
 <div id=".duration" class="item">
-    <p class="monospace">
+    <span class="monospace">
     
     
     
     
     <span class="modifier">get</span>
     
+        <a class="item-name method-name" href="#.duration">duration</a><span>()</span><span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>
+    </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/structures/message.ts#L998>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
   <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
 </svg>
 </span></a>
-        <a class="item-name method-name" href="#.duration">duration</a><span>()</span><span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>
         <div class="docblock">
         
         
-        </div>
-    </p>
+    </div>
 </div></div>
     <div>
 <div id=".isEnded" class="item">
-    <p class="monospace">
+    <span class="monospace">
     
     
     
     
     <span class="modifier">get</span>
     
+        <a class="item-name method-name" href="#.isEnded">isEnded</a><span>()</span><span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
+    </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/structures/message.ts#L1005>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
   <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
 </svg>
 </span></a>
-        <a class="item-name method-name" href="#.isEnded">isEnded</a><span>()</span><span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
         <div class="docblock">
         
         
-        </div>
-    </p>
+    </div>
 </div></div>
     <div>
 <div id=".mergeValue" class="item">
-    <p class="monospace">
+    <span class="monospace">
     
     
     
     
     
     
+        <a class="item-name method-name" href="#.mergeValue">mergeValue</a><span>(<span class="item-name"><span class="param-name">key</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>, <span class="item-name"><span class="param-name">value</span><span class="symbol">:</span> <span class="reference-link"><span class='primitive'>any</span></span></span>)</span><span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://www.typescriptlang.org/docs/handbook/2/functions.html#void">void</a></span></span>
+    </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/structures/message.ts#L1009>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
   <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
 </svg>
 </span></a>
-        <a class="item-name method-name" href="#.mergeValue">mergeValue</a><span>(<span class="item-name"><span class="param-name">key</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>, <span class="item-name"><span class="param-name">value</span><span class="symbol">:</span> <span class="reference-link"><span class='primitive'>any</span></span></span>)</span><span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://www.typescriptlang.org/docs/handbook/2/functions.html#void">void</a></span></span>
         <div class="docblock">
         <ul></ul>
         
-        </div>
-    </p>
+    </div>
 </div></div>
 
 </div>

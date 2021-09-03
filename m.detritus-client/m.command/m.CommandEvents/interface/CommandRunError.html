@@ -22,7 +22,7 @@
       <nav class="container-fluid navi">
       <div class="row">
         <div class="col-4">
-          <input class="form-control search" id="search" type="search" placeholder="Press '/' to search" aria-label="Search">
+          <input class="form-control search" id="search" type="search" placeholder="Search..." aria-label="Search">
         </div>
         <div class="col-8">
           <div class="row float-end" style="margin-top:5px">
@@ -45,8 +45,8 @@
     </nav>  <div class="container-fluid">
     <div class="row">
       <div class="col-lg-auto sidebar" id="sidebar">
-        <h1 class="lib-name text-center">Detritus</h1>
         
+    <h1 class="lib-name text-center"><a href="../../../../index.html">Detritus</a></h1>
     <img src="../../../../assets/logo.png" alt="Logo" class="img-fluid mx-auto d-block">
     <p class="current-thing">interface <span class="object">CommandRunError</span></p>
     <div class="sidebar-members">
@@ -57,7 +57,7 @@
         <span class="sidebar-category">Properties</span>
         </div>
         <div class="collapsible-body open"> 
-        <span class="sidebar-category-member"><a href="#.args">args</a></span><br><span class="sidebar-category-member"><a href="#.command">command</a></span><br><span class="sidebar-category-member"><a href="#.context">context</a></span><br><span class="sidebar-category-member"><a href="#.error">error</a></span><br><span class="sidebar-category-member"><a href="#.prefix">prefix</a></span><br>
+        <span class="sidebar-category-member"><a href="#.args">args</a></span><span class="sidebar-category-member"><a href="#.command">command</a></span><span class="sidebar-category-member"><a href="#.context">context</a></span><span class="sidebar-category-member"><a href="#.error">error</a></span><span class="sidebar-category-member"><a href="#.prefix">prefix</a></span>
         </div>
         </div>
     
@@ -107,8 +107,20 @@
                             <span>Methods</span>
                         </div>
                         <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-getters" checked>
+                            <span>Getters</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-setters" checked>
+                            <span>Setters</span>
+                        </div>
+                        <div>
                             <input type="checkbox" class="c-checkbox" id="search-option-enum-members">
                             <span>Enum members</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-privates">
+                            <span>Show privates</span>
                         </div>
                     </div>
                 </div>
@@ -149,21 +161,21 @@
     <h2>Properties</h2>
 
     <div>
-        <div>
-<span class="item-name" id=".args"><a class="property-name" href="#.args">args</a><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.command\type\ParsedArgs.html">ParsedArgs</a><span class="c-tooltip-content"><span class="keyword">type alias</span> <span class="item-name object">ParsedArgs</span><span style="display:block" class="monospace fw-bold">command/ParsedArgs</span></span></span></span></span>
+        <div class="item">
+<div class="item-name item" id=".args"><a class="property-name" href="#.args">args</a><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\..\m.detritus-client\m.command\type\ParsedArgs.html">ParsedArgs</a><span class="c-tooltip-content"><span class="keyword">type</span> <span class="item-name object">ParsedArgs</span><span style="display:block" class="monospace fw-bold">command/<span class="item-name object">ParsedArgs</span></span></span></span></span></span>
 </div>
-        <div>
-<span class="item-name" id=".command"><a class="property-name" href="#.command">command</a><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.command\class\Command.html">Command</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Command</span><span style="display:block" class="monospace fw-bold">command/Command</span></span></span></span></span>
+        <div class="item">
+<div class="item-name item" id=".command"><a class="property-name" href="#.command">command</a><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\..\m.detritus-client\m.command\class\Command.html">Command</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Command</span><span style="display:block" class="monospace fw-bold">command/<span class="item-name object">Command</span></span></span></span></span></span>
 </div>
-        <div>
-<span class="item-name" id=".context"><a class="property-name" href="#.context">context</a><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.command\class\Context.html">Context</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Context</span><span style="display:block" class="monospace fw-bold">command/Context</span></span></span></span></span>
+        <div class="item">
+<div class="item-name item" id=".context"><a class="property-name" href="#.context">context</a><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\..\m.detritus-client\m.command\class\Context.html">Context</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Context</span><span style="display:block" class="monospace fw-bold">command/<span class="item-name object">Context</span></span></span></span></span></span>
 </div>
-        <div>
-<span class="item-name" id=".error"><a class="property-name" href="#.error">error</a><span class="symbol">:</span> 
+        <div class="item">
+<div class="item-name item" id=".error"><a class="property-name" href="#.error">error</a><span class="symbol">:</span> 
 <span><span class="reference-link"><a class='external' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error">Error</a></span></span></span>
 </div>
-        <div>
-<span class="item-name" id=".prefix"><a class="property-name" href="#.prefix">prefix</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>
+        <div class="item">
+<div class="item-name item" id=".prefix"><a class="property-name" href="#.prefix">prefix</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>
 </div>
     </div>
 

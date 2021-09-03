@@ -22,7 +22,7 @@
       <nav class="container-fluid navi">
       <div class="row">
         <div class="col-4">
-          <input class="form-control search" id="search" type="search" placeholder="Press '/' to search" aria-label="Search">
+          <input class="form-control search" id="search" type="search" placeholder="Search..." aria-label="Search">
         </div>
         <div class="col-8">
           <div class="row float-end" style="margin-top:5px">
@@ -45,8 +45,8 @@
     </nav>  <div class="container-fluid">
     <div class="row">
       <div class="col-lg-auto sidebar" id="sidebar">
-        <h1 class="lib-name text-center">Detritus</h1>
         
+    <h1 class="lib-name text-center"><a href="../../index.html">Detritus</a></h1>
     <img src="../../assets/logo.png" alt="Logo" class="img-fluid mx-auto d-block">
     <p class="current-thing">interface <span class="object">ShardClientOptions</span></p>
     <div class="sidebar-members">
@@ -57,7 +57,7 @@
         <span class="sidebar-category">Properties</span>
         </div>
         <div class="collapsible-body open"> 
-        <span class="sidebar-category-member"><a href="#.cache">cache</a></span><br><span class="sidebar-category-member"><a href="#.gateway">gateway</a></span><br><span class="sidebar-category-member"><a href="#.imageFormat">imageFormat</a></span><br><span class="sidebar-category-member"><a href="#.isBot">isBot</a></span><br><span class="sidebar-category-member"><a href="#.rest">rest</a></span><br><span class="sidebar-category-member"><a href="#.pass">pass</a></span><br>
+        <span class="sidebar-category-member"><a href="#.cache">cache</a></span><span class="sidebar-category-member"><a href="#.gateway">gateway</a></span><span class="sidebar-category-member"><a href="#.imageFormat">imageFormat</a></span><span class="sidebar-category-member"><a href="#.isBot">isBot</a></span><span class="sidebar-category-member"><a href="#.rest">rest</a></span><span class="sidebar-category-member"><a href="#.pass">pass</a></span>
         </div>
         </div>
     
@@ -107,8 +107,20 @@
                             <span>Methods</span>
                         </div>
                         <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-getters" checked>
+                            <span>Getters</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-setters" checked>
+                            <span>Setters</span>
+                        </div>
+                        <div>
                             <input type="checkbox" class="c-checkbox" id="search-option-enum-members">
                             <span>Enum members</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-privates">
+                            <span>Show privates</span>
                         </div>
                     </div>
                 </div>
@@ -149,25 +161,25 @@
     <h2>Properties</h2>
 
     <div>
-        <div>
-<span class="item-name" id=".cache"><a class="property-name" href="#.cache">cache</a><span class="symbol">:</span> 
-<span><span><span class="c-tooltip"><a class="reference-link object" href="..\interface\ShardClientCacheOptions.html">ShardClientCacheOptions</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">ShardClientCacheOptions</span><span style="display:block" class="monospace fw-bold">/ShardClientCacheOptions</span></span></span></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span></span>
+        <div class="item">
+<div class="item-name item" id=".cache"><a class="property-name" href="#.cache">cache</a><span class="symbol">?</span><span class="symbol">:</span> 
+<span><span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.detritus-client\interface\ShardClientCacheOptions.html">ShardClientCacheOptions</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">ShardClientCacheOptions</span><span style="display:block" class="monospace fw-bold"><span class="item-name object">ShardClientCacheOptions</span></span></span></span></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span></span>
 </div>
-        <div>
-<span class="item-name" id=".gateway"><a class="property-name" href="#.gateway">gateway</a><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\interface\GatewayOptions.html">GatewayOptions</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">GatewayOptions</span><span style="display:block" class="monospace fw-bold">/GatewayOptions</span></span></span></span></span>
+        <div class="item">
+<div class="item-name item" id=".gateway"><a class="property-name" href="#.gateway">gateway</a><span class="symbol">?</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.detritus-client\interface\GatewayOptions.html">GatewayOptions</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">GatewayOptions</span><span style="display:block" class="monospace fw-bold"><span class="item-name object">GatewayOptions</span></span></span></span></span></span>
 </div>
-        <div>
-<span class="item-name" id=".imageFormat"><a class="property-name" href="#.imageFormat">imageFormat</a><span class="symbol">:</span> 
-<span><span><span class="c-tooltip"><a class="reference-link object" href="..\enum\ImageFormats.html">ImageFormats</a><span class="c-tooltip-content"><span class="keyword">enum</span> <span class="item-name object">ImageFormats</span><span style="display:block" class="monospace fw-bold">/ImageFormats</span></span></span></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span></span>
+        <div class="item">
+<div class="item-name item" id=".imageFormat"><a class="property-name" href="#.imageFormat">imageFormat</a><span class="symbol">?</span><span class="symbol">:</span> 
+<span><span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.detritus-client\enum\ImageFormats.html">ImageFormats</a><span class="c-tooltip-content"><span class="keyword">enum</span> <span class="item-name object">ImageFormats</span><span style="display:block" class="monospace fw-bold"><span class="item-name object">ImageFormats</span></span></span></span></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span></span>
 </div>
-        <div>
-<span class="item-name" id=".isBot"><a class="property-name" href="#.isBot">isBot</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
+        <div class="item">
+<div class="item-name item" id=".isBot"><a class="property-name" href="#.isBot">isBot</a><span class="symbol">?</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
 </div>
-        <div>
-<span class="item-name" id=".rest"><a class="property-name" href="#.rest">rest</a><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.detritus-rest\interface\ClientOptions.html">ClientOptions</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">ClientOptions</span><span style="display:block" class="monospace fw-bold">detritus-rest/ClientOptions</span></span></span></span></span>
+        <div class="item">
+<div class="item-name item" id=".rest"><a class="property-name" href="#.rest">rest</a><span class="symbol">?</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.detritus-client-rest\interface\ClientOptions.html">ClientOptions</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">ClientOptions</span><span style="display:block" class="monospace fw-bold">detritus-client-rest/<span class="item-name object">ClientOptions</span></span></span></span></span></span>
 </div>
-        <div>
-<span class="item-name" id=".pass"><a class="property-name" href="#.pass">pass</a><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\interface\ShardClientPassOptions.html">ShardClientPassOptions</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">ShardClientPassOptions</span><span style="display:block" class="monospace fw-bold">/ShardClientPassOptions</span></span></span></span></span>
+        <div class="item">
+<div class="item-name item" id=".pass"><a class="property-name" href="#.pass">pass</a><span class="symbol">?</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.detritus-client\interface\ShardClientPassOptions.html">ShardClientPassOptions</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">ShardClientPassOptions</span><span style="display:block" class="monospace fw-bold"><span class="item-name object">ShardClientPassOptions</span></span></span></span></span></span>
 </div>
     </div>
 

@@ -22,7 +22,7 @@
       <nav class="container-fluid navi">
       <div class="row">
         <div class="col-4">
-          <input class="form-control search" id="search" type="search" placeholder="Press '/' to search" aria-label="Search">
+          <input class="form-control search" id="search" type="search" placeholder="Search..." aria-label="Search">
         </div>
         <div class="col-8">
           <div class="row float-end" style="margin-top:5px">
@@ -45,8 +45,8 @@
     </nav>  <div class="container-fluid">
     <div class="row">
       <div class="col-lg-auto sidebar" id="sidebar">
-        <h1 class="lib-name text-center">Detritus</h1>
         
+    <h1 class="lib-name text-center"><a href="../../index.html">Detritus</a></h1>
     <img src="../../assets/logo.png" alt="Logo" class="img-fluid mx-auto d-block">
     <p class="current-thing">interface <span class="object">RequestOptions</span></p>
     <div class="sidebar-members">
@@ -57,7 +57,7 @@
         <span class="sidebar-category">Properties</span>
         </div>
         <div class="collapsible-body open"> 
-        <span class="sidebar-category-member"><a href="#.agent">agent</a></span><br><span class="sidebar-category-member"><a href="#.body">body</a></span><br><span class="sidebar-category-member"><a href="#.compress">compress</a></span><br><span class="sidebar-category-member"><a href="#.files">files</a></span><br><span class="sidebar-category-member"><a href="#.follow">follow</a></span><br><span class="sidebar-category-member"><a href="#.headers">headers</a></span><br><span class="sidebar-category-member"><a href="#.jsonify">jsonify</a></span><br><span class="sidebar-category-member"><a href="#.method">method</a></span><br><span class="sidebar-category-member"><a href="#.multipart">multipart</a></span><br><span class="sidebar-category-member"><a href="#.path">path</a></span><br><span class="sidebar-category-member"><a href="#.query">query</a></span><br><span class="sidebar-category-member"><a href="#.redirect">redirect</a></span><br><span class="sidebar-category-member"><a href="#.route">route</a></span><br><span class="sidebar-category-member"><a href="#.signal">signal</a></span><br><span class="sidebar-category-member"><a href="#.size">size</a></span><br><span class="sidebar-category-member"><a href="#.timeout">timeout</a></span><br><span class="sidebar-category-member"><a href="#.url">url</a></span><br>
+        <span class="sidebar-category-member"><a href="#.agent">agent</a></span><span class="sidebar-category-member"><a href="#.body">body</a></span><span class="sidebar-category-member"><a href="#.compress">compress</a></span><span class="sidebar-category-member"><a href="#.files">files</a></span><span class="sidebar-category-member"><a href="#.follow">follow</a></span><span class="sidebar-category-member"><a href="#.headers">headers</a></span><span class="sidebar-category-member"><a href="#.jsonify">jsonify</a></span><span class="sidebar-category-member"><a href="#.method">method</a></span><span class="sidebar-category-member"><a href="#.multipart">multipart</a></span><span class="sidebar-category-member"><a href="#.path">path</a></span><span class="sidebar-category-member"><a href="#.query">query</a></span><span class="sidebar-category-member"><a href="#.redirect">redirect</a></span><span class="sidebar-category-member"><a href="#.route">route</a></span><span class="sidebar-category-member"><a href="#.signal">signal</a></span><span class="sidebar-category-member"><a href="#.size">size</a></span><span class="sidebar-category-member"><a href="#.timeout">timeout</a></span><span class="sidebar-category-member"><a href="#.url">url</a></span>
         </div>
         </div>
     
@@ -107,8 +107,20 @@
                             <span>Methods</span>
                         </div>
                         <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-getters" checked>
+                            <span>Getters</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-setters" checked>
+                            <span>Setters</span>
+                        </div>
+                        <div>
                             <input type="checkbox" class="c-checkbox" id="search-option-enum-members">
                             <span>Enum members</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-privates">
+                            <span>Show privates</span>
                         </div>
                     </div>
                 </div>
@@ -149,65 +161,65 @@
     <h2>Properties</h2>
 
     <div>
-        <div>
-<span class="item-name" id=".agent"><a class="property-name" href="#.agent">agent</a><span class="symbol">:</span> 
-<span><span class="reference-link"><span class='primitive'>Agent</span></span><span class='symbol'> | </span><span>(<span class="item-name"><span class="param-name">parsedUrl</span><span class="symbol">:</span> 
-<span><span class="reference-link"><a class='external' href="https://developer.mozilla.org/en-US/docs/Web/API/URL/URL">URL</a></span></span></span>) <span class="symbol">=></span> <span class="reference-link"><span class='primitive'>Agent</span></span></span></span></span>
+        <div class="item">
+<div class="item-name item" id=".agent"><a class="property-name" href="#.agent">agent</a><span class="symbol">?</span><span class="symbol">:</span> 
+<span><span><span class="reference-link item-name">Agent</span></span><span class='symbol'> | </span><span>(<span class="item-name"><span class="param-name">parsedUrl</span><span class="symbol">:</span> 
+<span><span class="reference-link"><a class='external' href="https://developer.mozilla.org/en-US/docs/Web/API/URL/URL">URL</a></span></span></span>) <span class="symbol">=></span> <span><span class="reference-link item-name">Agent</span></span></span></span></span>
 </div>
-        <div>
-<span class="item-name" id=".body"><a class="property-name" href="#.body">body</a><span class="symbol">:</span> 
-<span><span class="reference-link"><span class='primitive'>BodyInit</span></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></span><span class='symbol'> | </span><span class="reference-link"><span class='primitive'>any</span></span></span></span>
+        <div class="item">
+<div class="item-name item" id=".body"><a class="property-name" href="#.body">body</a><span class="symbol">?</span><span class="symbol">:</span> 
+<span><span><span class="reference-link item-name">BodyInit</span></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></span><span class='symbol'> | </span><span class="reference-link"><span class='primitive'>any</span></span></span></span>
 </div>
-        <div>
-<span class="item-name" id=".compress"><a class="property-name" href="#.compress">compress</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
+        <div class="item">
+<div class="item-name item" id=".compress"><a class="property-name" href="#.compress">compress</a><span class="symbol">?</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
 </div>
-        <div>
-<span class="item-name" id=".files"><a class="property-name" href="#.files">files</a><span class="symbol">:</span> 
-<span><span class="reference-link"><span><span class="c-tooltip"><a class="reference-link object" href="..\interface\RequestFile.html">RequestFile</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">RequestFile</span><span style="display:block" class="monospace fw-bold">/RequestFile</span></span></span></span>[]</span></span></span>
+        <div class="item">
+<div class="item-name item" id=".files"><a class="property-name" href="#.files">files</a><span class="symbol">?</span><span class="symbol">:</span> 
+<span><span class="reference-link"><a class='object' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></span><span>&lt;<span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.detritus-rest\interface\RequestFile.html">RequestFile</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">RequestFile</span><span style="display:block" class="monospace fw-bold"><span class="item-name object">RequestFile</span></span></span></span></span>&gt;</span></span></span>
 </div>
-        <div>
-<span class="item-name" id=".follow"><a class="property-name" href="#.follow">follow</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>
+        <div class="item">
+<div class="item-name item" id=".follow"><a class="property-name" href="#.follow">follow</a><span class="symbol">?</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>
 </div>
-        <div>
-<span class="item-name" id=".headers"><a class="property-name" href="#.headers">headers</a><span class="symbol">:</span> 
-<span><span class="reference-link"><span class='primitive'>HeadersInit</span></span><span class='symbol'> | </span><span><span class="reference-link"><a class='external' href="https://www.typescriptlang.org/docs/handbook/utility-types.html#recordkeystype">Record</a></span><span>&lt;<span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>, <span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></span></span>&gt;</span></span></span></span>
+        <div class="item">
+<div class="item-name item" id=".headers"><a class="property-name" href="#.headers">headers</a><span class="symbol">?</span><span class="symbol">:</span> 
+<span><span><span class="reference-link item-name">HeadersInit</span></span><span class='symbol'> | </span><span><span class="reference-link"><a class='external' href="https://www.typescriptlang.org/docs/handbook/utility-types.html#recordkeystype">Record</a></span><span>&lt;<span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>, <span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></span></span>&gt;</span></span></span></span>
 </div>
-        <div>
-<span class="item-name" id=".jsonify"><a class="property-name" href="#.jsonify">jsonify</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
+        <div class="item">
+<div class="item-name item" id=".jsonify"><a class="property-name" href="#.jsonify">jsonify</a><span class="symbol">?</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
 </div>
-        <div>
-<span class="item-name" id=".method"><a class="property-name" href="#.method">method</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>
+        <div class="item">
+<div class="item-name item" id=".method"><a class="property-name" href="#.method">method</a><span class="symbol">?</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>
 </div>
-        <div>
-<span class="item-name" id=".multipart"><a class="property-name" href="#.multipart">multipart</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
+        <div class="item">
+<div class="item-name item" id=".multipart"><a class="property-name" href="#.multipart">multipart</a><span class="symbol">?</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
 </div>
-        <div>
-<span class="item-name" id=".path"><a class="property-name" href="#.path">path</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>
+        <div class="item">
+<div class="item-name item" id=".path"><a class="property-name" href="#.path">path</a><span class="symbol">?</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>
 </div>
-        <div>
-<span class="item-name" id=".query"><a class="property-name" href="#.query">query</a><span class="symbol">:</span> 
+        <div class="item">
+<div class="item-name item" id=".query"><a class="property-name" href="#.query">query</a><span class="symbol">?</span><span class="symbol">:</span> 
 <span><span class="reference-link"><a class='external' href="https://www.typescriptlang.org/docs/handbook/utility-types.html#recordkeystype">Record</a></span><span>&lt;<span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>, <span class="reference-link"><span class='primitive'>any</span></span>&gt;</span></span></span>
 </div>
-        <div>
-<span class="item-name" id=".redirect"><a class="property-name" href="#.redirect">redirect</a><span class="symbol">:</span> <span class="reference-link"><span class='primitive'>RequestRedirect</span></span></span>
+        <div class="item">
+<div class="item-name item" id=".redirect"><a class="property-name" href="#.redirect">redirect</a><span class="symbol">?</span><span class="symbol">:</span> <span><span class="reference-link item-name">RequestRedirect</span></span></span>
 </div>
-        <div>
-<span class="item-name" id=".route"><a class="property-name" href="#.route">route</a><span class="symbol">:</span> 
-<span><span><span class="c-tooltip"><a class="reference-link object" href="..\class\Route.html">Route</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Route</span><span style="display:block" class="monospace fw-bold">/Route</span></span></span></span><span class='symbol'> | </span><span>{ <span class="item-name" id=".method"><a class="property-name" href="#.method">method</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>, <span class="item-name" id=".params"><a class="property-name" href="#.params">params</a><span class="symbol">:</span> 
-<span><span class="reference-link"><a class='external' href="https://www.typescriptlang.org/docs/handbook/utility-types.html#recordkeystype">Record</a></span><span>&lt;<span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>, <span class="reference-link"><span class='primitive'>any</span></span>&gt;</span></span></span>, <span class="item-name" id=".path"><a class="property-name" href="#.path">path</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span> }</span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></span></span></span>
+        <div class="item">
+<div class="item-name item" id=".route"><a class="property-name" href="#.route">route</a><span class="symbol">?</span><span class="symbol">:</span> 
+<span><span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.detritus-rest\class\Route.html">Route</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Route</span><span style="display:block" class="monospace fw-bold"><span class="item-name object">Route</span></span></span></span></span><span class='symbol'> | </span><span>{ <span class="item-name"><a class="property-name" href="#.method">method</a><span class="symbol">?</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>, <span class="item-name"><a class="property-name" href="#.params">params</a><span class="symbol">?</span><span class="symbol">:</span> 
+<span><span class="reference-link"><a class='external' href="https://www.typescriptlang.org/docs/handbook/utility-types.html#recordkeystype">Record</a></span><span>&lt;<span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>, <span class="reference-link"><span class='primitive'>any</span></span>&gt;</span></span></span>, <span class="item-name"><a class="property-name" href="#.path">path</a><span class="symbol">?</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span> }</span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></span></span></span>
 </div>
-        <div>
-<span class="item-name" id=".signal"><a class="property-name" href="#.signal">signal</a><span class="symbol">:</span> 
-<span><span class="reference-link"><span class='primitive'>AbortSignal</span></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></span></span></span>
+        <div class="item">
+<div class="item-name item" id=".signal"><a class="property-name" href="#.signal">signal</a><span class="symbol">?</span><span class="symbol">:</span> 
+<span><span><span class="reference-link item-name">AbortSignal</span></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></span></span></span>
 </div>
-        <div>
-<span class="item-name" id=".size"><a class="property-name" href="#.size">size</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>
+        <div class="item">
+<div class="item-name item" id=".size"><a class="property-name" href="#.size">size</a><span class="symbol">?</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>
 </div>
-        <div>
-<span class="item-name" id=".timeout"><a class="property-name" href="#.timeout">timeout</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>
+        <div class="item">
+<div class="item-name item" id=".timeout"><a class="property-name" href="#.timeout">timeout</a><span class="symbol">?</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>
 </div>
-        <div>
-<span class="item-name" id=".url"><a class="property-name" href="#.url">url</a><span class="symbol">:</span> 
+        <div class="item">
+<div class="item-name item" id=".url"><a class="property-name" href="#.url">url</a><span class="symbol">?</span><span class="symbol">:</span> 
 <span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span><span class='symbol'> | </span><span><span class="reference-link"><a class='external' href="https://developer.mozilla.org/en-US/docs/Web/API/URL/URL">URL</a></span></span></span></span>
 </div>
     </div>

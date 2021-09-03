@@ -22,7 +22,7 @@
       <nav class="container-fluid navi">
       <div class="row">
         <div class="col-4">
-          <input class="form-control search" id="search" type="search" placeholder="Press '/' to search" aria-label="Search">
+          <input class="form-control search" id="search" type="search" placeholder="Search..." aria-label="Search">
         </div>
         <div class="col-8">
           <div class="row float-end" style="margin-top:5px">
@@ -45,8 +45,8 @@
     </nav>  <div class="container-fluid">
     <div class="row">
       <div class="col-lg-auto sidebar" id="sidebar">
-        <h1 class="lib-name text-center">Detritus</h1>
         
+    <h1 class="lib-name text-center"><a href="../../../../index.html">Detritus</a></h1>
     <img src="../../../../assets/logo.png" alt="Logo" class="img-fluid mx-auto d-block">
     <p class="current-thing">interface <span class="object">RawConnectedAccount</span></p>
     <div class="sidebar-members">
@@ -57,7 +57,7 @@
         <span class="sidebar-category">Properties</span>
         </div>
         <div class="collapsible-body open"> 
-        <span class="sidebar-category-member"><a href="#.friend_sync">friend_sync</a></span><br><span class="sidebar-category-member"><a href="#.id">id</a></span><br><span class="sidebar-category-member"><a href="#.integrations">integrations</a></span><br><span class="sidebar-category-member"><a href="#.name">name</a></span><br><span class="sidebar-category-member"><a href="#.revoked">revoked</a></span><br><span class="sidebar-category-member"><a href="#.show_activity">show_activity</a></span><br><span class="sidebar-category-member"><a href="#.type">type</a></span><br><span class="sidebar-category-member"><a href="#.verified">verified</a></span><br><span class="sidebar-category-member"><a href="#.visibility">visibility</a></span><br>
+        <span class="sidebar-category-member"><a href="#.friend_sync">friend_sync</a></span><span class="sidebar-category-member"><a href="#.id">id</a></span><span class="sidebar-category-member"><a href="#.integrations">integrations</a></span><span class="sidebar-category-member"><a href="#.name">name</a></span><span class="sidebar-category-member"><a href="#.revoked">revoked</a></span><span class="sidebar-category-member"><a href="#.show_activity">show_activity</a></span><span class="sidebar-category-member"><a href="#.type">type</a></span><span class="sidebar-category-member"><a href="#.verified">verified</a></span><span class="sidebar-category-member"><a href="#.visibility">visibility</a></span>
         </div>
         </div>
     
@@ -107,8 +107,20 @@
                             <span>Methods</span>
                         </div>
                         <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-getters" checked>
+                            <span>Getters</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-setters" checked>
+                            <span>Setters</span>
+                        </div>
+                        <div>
                             <input type="checkbox" class="c-checkbox" id="search-option-enum-members">
                             <span>Enum members</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-privates">
+                            <span>Show privates</span>
                         </div>
                     </div>
                 </div>
@@ -149,33 +161,33 @@
     <h2>Properties</h2>
 
     <div>
-        <div>
-<span class="item-name" id=".friend_sync"><a class="property-name" href="#.friend_sync">friend_sync</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
+        <div class="item">
+<div class="item-name item" id=".friend_sync"><a class="property-name" href="#.friend_sync">friend_sync</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
 </div>
-        <div>
-<span class="item-name" id=".id"><a class="property-name" href="#.id">id</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>
+        <div class="item">
+<div class="item-name item" id=".id"><a class="property-name" href="#.id">id</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>
 </div>
-        <div>
-<span class="item-name" id=".integrations"><a class="property-name" href="#.integrations">integrations</a><span class="symbol">:</span> 
-<span><span class="reference-link"><span class="reference-link"><span class='primitive'>any</span></span>[]</span></span></span>
+        <div class="item">
+<div class="item-name item" id=".integrations"><a class="property-name" href="#.integrations">integrations</a><span class="symbol">?</span><span class="symbol">:</span> 
+<span><span class="reference-link"><a class='object' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></span><span>&lt;<span class="reference-link"><span class='primitive'>any</span></span>&gt;</span></span></span>
 </div>
-        <div>
-<span class="item-name" id=".name"><a class="property-name" href="#.name">name</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>
+        <div class="item">
+<div class="item-name item" id=".name"><a class="property-name" href="#.name">name</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>
 </div>
-        <div>
-<span class="item-name" id=".revoked"><a class="property-name" href="#.revoked">revoked</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
+        <div class="item">
+<div class="item-name item" id=".revoked"><a class="property-name" href="#.revoked">revoked</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
 </div>
-        <div>
-<span class="item-name" id=".show_activity"><a class="property-name" href="#.show_activity">show_activity</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
+        <div class="item">
+<div class="item-name item" id=".show_activity"><a class="property-name" href="#.show_activity">show_activity</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
 </div>
-        <div>
-<span class="item-name" id=".type"><a class="property-name" href="#.type">type</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>
+        <div class="item">
+<div class="item-name item" id=".type"><a class="property-name" href="#.type">type</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>
 </div>
-        <div>
-<span class="item-name" id=".verified"><a class="property-name" href="#.verified">verified</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
+        <div class="item">
+<div class="item-name item" id=".verified"><a class="property-name" href="#.verified">verified</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
 </div>
-        <div>
-<span class="item-name" id=".visibility"><a class="property-name" href="#.visibility">visibility</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>
+        <div class="item">
+<div class="item-name item" id=".visibility"><a class="property-name" href="#.visibility">visibility</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>
 </div>
     </div>
 

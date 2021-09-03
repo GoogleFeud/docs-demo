@@ -22,7 +22,7 @@
       <nav class="container-fluid navi">
       <div class="row">
         <div class="col-4">
-          <input class="form-control search" id="search" type="search" placeholder="Press '/' to search" aria-label="Search">
+          <input class="form-control search" id="search" type="search" placeholder="Search..." aria-label="Search">
         </div>
         <div class="col-8">
           <div class="row float-end" style="margin-top:5px">
@@ -45,8 +45,8 @@
     </nav>  <div class="container-fluid">
     <div class="row">
       <div class="col-lg-auto sidebar" id="sidebar">
-        <h1 class="lib-name text-center">Detritus</h1>
         
+    <h1 class="lib-name text-center"><a href="../../index.html">Detritus</a></h1>
     <img src="../../assets/logo.png" alt="Logo" class="img-fluid mx-auto d-block">
     <p class="current-thing text-center">enum <span class="object">RTPPayloadTypes</span></p>
     <div class="sidebar-members">
@@ -57,7 +57,7 @@
         <span class="sidebar-category">Members</span>
         </div>
         <div class="collapsible-body open"> 
-        <span class="sidebar-category-member"><a href="#.OPUS">OPUS</a></span><br><span class="sidebar-category-member"><a href="#.VP8">VP8</a></span><br><span class="sidebar-category-member"><a href="#.VP9">VP9</a></span><br><span class="sidebar-category-member"><a href="#.H264">H264</a></span><br>
+        <span class="sidebar-category-member"><a href="#.OPUS">OPUS</a></span><span class="sidebar-category-member"><a href="#.VP8">VP8</a></span><span class="sidebar-category-member"><a href="#.VP9">VP9</a></span><span class="sidebar-category-member"><a href="#.H264">H264</a></span>
         </div>
         </div>
     
@@ -107,8 +107,20 @@
                             <span>Methods</span>
                         </div>
                         <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-getters" checked>
+                            <span>Getters</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-setters" checked>
+                            <span>Setters</span>
+                        </div>
+                        <div>
                             <input type="checkbox" class="c-checkbox" id="search-option-enum-members">
                             <span>Enum members</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-privates">
+                            <span>Show privates</span>
                         </div>
                     </div>
                 </div>
@@ -144,25 +156,25 @@
     
 
     <h2>Members</h2>
-    <div id=".OPUS">
+    <div id=".OPUS" class="item">
         <a class="item-name" href="#.OPUS">OPUS</a>
 
         <span>= <span class="reference-link"><a class="primitive number-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">0x78</a></span></span>
 
     </div>
-    <div id=".VP8">
+    <div id=".VP8" class="item">
         <a class="item-name" href="#.VP8">VP8</a>
 
         <span>= <span class="reference-link"><a class="primitive number-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">0x65</a></span></span>
 
     </div>
-    <div id=".VP9">
+    <div id=".VP9" class="item">
         <a class="item-name" href="#.VP9">VP9</a>
 
         <span>= <span class="reference-link"><a class="primitive number-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">0x67</a></span></span>
 
     </div>
-    <div id=".H264">
+    <div id=".H264" class="item">
         <a class="item-name" href="#.H264">H264</a>
 
         <span>= <span class="reference-link"><a class="primitive number-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">0x69</a></span></span>

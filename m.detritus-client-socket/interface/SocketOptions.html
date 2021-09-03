@@ -22,7 +22,7 @@
       <nav class="container-fluid navi">
       <div class="row">
         <div class="col-4">
-          <input class="form-control search" id="search" type="search" placeholder="Press '/' to search" aria-label="Search">
+          <input class="form-control search" id="search" type="search" placeholder="Search..." aria-label="Search">
         </div>
         <div class="col-8">
           <div class="row float-end" style="margin-top:5px">
@@ -45,8 +45,8 @@
     </nav>  <div class="container-fluid">
     <div class="row">
       <div class="col-lg-auto sidebar" id="sidebar">
-        <h1 class="lib-name text-center">Detritus</h1>
         
+    <h1 class="lib-name text-center"><a href="../../index.html">Detritus</a></h1>
     <img src="../../assets/logo.png" alt="Logo" class="img-fluid mx-auto d-block">
     <p class="current-thing">interface <span class="object">SocketOptions</span></p>
     <div class="sidebar-members">
@@ -57,7 +57,7 @@
         <span class="sidebar-category">Properties</span>
         </div>
         <div class="collapsible-body open"> 
-        <span class="sidebar-category-member"><a href="#.channelId">channelId</a></span><br><span class="sidebar-category-member"><a href="#.forceMode">forceMode</a></span><br><span class="sidebar-category-member"><a href="#.receive">receive</a></span><br><span class="sidebar-category-member"><a href="#.serverId">serverId</a></span><br><span class="sidebar-category-member"><a href="#.userId">userId</a></span><br><span class="sidebar-category-member"><a href="#.video">video</a></span><br><span class="sidebar-category-member"><a href="#.autoReconnect">autoReconnect</a></span><br><span class="sidebar-category-member"><a href="#.compress">compress</a></span><br><span class="sidebar-category-member"><a href="#.disabledEvents">disabledEvents</a></span><br><span class="sidebar-category-member"><a href="#.encoding">encoding</a></span><br><span class="sidebar-category-member"><a href="#.guildSubscriptions">guildSubscriptions</a></span><br><span class="sidebar-category-member"><a href="#.identifyProperties">identifyProperties</a></span><br><span class="sidebar-category-member"><a href="#.intents">intents</a></span><br><span class="sidebar-category-member"><a href="#.largeThreshold">largeThreshold</a></span><br><span class="sidebar-category-member"><a href="#.presence">presence</a></span><br><span class="sidebar-category-member"><a href="#.reconnectDelay">reconnectDelay</a></span><br><span class="sidebar-category-member"><a href="#.reconnectMax">reconnectMax</a></span><br><span class="sidebar-category-member"><a href="#.shardCount">shardCount</a></span><br><span class="sidebar-category-member"><a href="#.shardId">shardId</a></span><br><span class="sidebar-category-member"><a href="#.onIdentifyCheck">onIdentifyCheck</a></span><br>
+        <span class="sidebar-category-member"><a href="#.channelId">channelId</a></span><span class="sidebar-category-member"><a href="#.forceMode">forceMode</a></span><span class="sidebar-category-member"><a href="#.receive">receive</a></span><span class="sidebar-category-member"><a href="#.serverId">serverId</a></span><span class="sidebar-category-member"><a href="#.userId">userId</a></span><span class="sidebar-category-member"><a href="#.video">video</a></span><span class="sidebar-category-member"><a href="#.autoReconnect">autoReconnect</a></span><span class="sidebar-category-member"><a href="#.compress">compress</a></span><span class="sidebar-category-member"><a href="#.disabledEvents">disabledEvents</a></span><span class="sidebar-category-member"><a href="#.encoding">encoding</a></span><span class="sidebar-category-member"><a href="#.guildSubscriptions">guildSubscriptions</a></span><span class="sidebar-category-member"><a href="#.identifyProperties">identifyProperties</a></span><span class="sidebar-category-member"><a href="#.intents">intents</a></span><span class="sidebar-category-member"><a href="#.largeThreshold">largeThreshold</a></span><span class="sidebar-category-member"><a href="#.presence">presence</a></span><span class="sidebar-category-member"><a href="#.reconnectDelay">reconnectDelay</a></span><span class="sidebar-category-member"><a href="#.reconnectMax">reconnectMax</a></span><span class="sidebar-category-member"><a href="#.shardCount">shardCount</a></span><span class="sidebar-category-member"><a href="#.shardId">shardId</a></span><span class="sidebar-category-member"><a href="#.onIdentifyCheck">onIdentifyCheck</a></span>
         </div>
         </div>
     
@@ -107,8 +107,20 @@
                             <span>Methods</span>
                         </div>
                         <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-getters" checked>
+                            <span>Getters</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-setters" checked>
+                            <span>Setters</span>
+                        </div>
+                        <div>
                             <input type="checkbox" class="c-checkbox" id="search-option-enum-members">
                             <span>Enum members</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-privates">
+                            <span>Show privates</span>
                         </div>
                     </div>
                 </div>
@@ -155,69 +167,69 @@
     <h2>Properties</h2>
 
     <div>
-        <div>
-<span class="item-name" id=".channelId"><a class="property-name" href="#.channelId">channelId</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>
+        <div class="item">
+<div class="item-name item" id=".channelId"><a class="property-name" href="#.channelId">channelId</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>
 </div>
-        <div>
-<span class="item-name" id=".forceMode"><a class="property-name" href="#.forceMode">forceMode</a><span class="symbol">:</span> 
-<span><span><span class="c-tooltip"><a class="reference-link object" href="..\enum\MediaEncryptionModes.html">MediaEncryptionModes</a><span class="c-tooltip-content"><span class="keyword">enum</span> <span class="item-name object">MediaEncryptionModes</span><span style="display:block" class="monospace fw-bold">/MediaEncryptionModes</span></span></span></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span></span>
+        <div class="item">
+<div class="item-name item" id=".forceMode"><a class="property-name" href="#.forceMode">forceMode</a><span class="symbol">?</span><span class="symbol">:</span> 
+<span><span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.detritus-client-socket\enum\MediaEncryptionModes.html">MediaEncryptionModes</a><span class="c-tooltip-content"><span class="keyword">enum</span> <span class="item-name object">MediaEncryptionModes</span><span style="display:block" class="monospace fw-bold"><span class="item-name object">MediaEncryptionModes</span></span></span></span></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span></span>
 </div>
-        <div>
-<span class="item-name" id=".receive"><a class="property-name" href="#.receive">receive</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
+        <div class="item">
+<div class="item-name item" id=".receive"><a class="property-name" href="#.receive">receive</a><span class="symbol">?</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
 </div>
-        <div>
-<span class="item-name" id=".serverId"><a class="property-name" href="#.serverId">serverId</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>
+        <div class="item">
+<div class="item-name item" id=".serverId"><a class="property-name" href="#.serverId">serverId</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>
 </div>
-        <div>
-<span class="item-name" id=".userId"><a class="property-name" href="#.userId">userId</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>
+        <div class="item">
+<div class="item-name item" id=".userId"><a class="property-name" href="#.userId">userId</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>
 </div>
-        <div>
-<span class="item-name" id=".video"><a class="property-name" href="#.video">video</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
+        <div class="item">
+<div class="item-name item" id=".video"><a class="property-name" href="#.video">video</a><span class="symbol">?</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
 </div>
-        <div>
-<span class="item-name" id=".autoReconnect"><a class="property-name" href="#.autoReconnect">autoReconnect</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
+        <div class="item">
+<div class="item-name item" id=".autoReconnect"><a class="property-name" href="#.autoReconnect">autoReconnect</a><span class="symbol">?</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
 </div>
-        <div>
-<span class="item-name" id=".compress"><a class="property-name" href="#.compress">compress</a><span class="symbol">:</span> 
+        <div class="item">
+<div class="item-name item" id=".compress"><a class="property-name" href="#.compress">compress</a><span class="symbol">?</span><span class="symbol">:</span> 
 <span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span></span>
 </div>
-        <div>
-<span class="item-name" id=".disabledEvents"><a class="property-name" href="#.disabledEvents">disabledEvents</a><span class="symbol">:</span> 
-<span><span class="reference-link"><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>[]</span></span></span>
+        <div class="item">
+<div class="item-name item" id=".disabledEvents"><a class="property-name" href="#.disabledEvents">disabledEvents</a><span class="symbol">?</span><span class="symbol">:</span> 
+<span><span class="reference-link"><a class='object' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></span><span>&lt;<span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>&gt;</span></span></span>
 </div>
-        <div>
-<span class="item-name" id=".encoding"><a class="property-name" href="#.encoding">encoding</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>
+        <div class="item">
+<div class="item-name item" id=".encoding"><a class="property-name" href="#.encoding">encoding</a><span class="symbol">?</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>
 </div>
-        <div>
-<span class="item-name" id=".guildSubscriptions"><a class="property-name" href="#.guildSubscriptions">guildSubscriptions</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
+        <div class="item">
+<div class="item-name item" id=".guildSubscriptions"><a class="property-name" href="#.guildSubscriptions">guildSubscriptions</a><span class="symbol">?</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
 </div>
-        <div>
-<span class="item-name" id=".identifyProperties"><a class="property-name" href="#.identifyProperties">identifyProperties</a><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\interface\IdentifyDataProperties.html">IdentifyDataProperties</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">IdentifyDataProperties</span><span style="display:block" class="monospace fw-bold">/IdentifyDataProperties</span></span></span></span></span>
+        <div class="item">
+<div class="item-name item" id=".identifyProperties"><a class="property-name" href="#.identifyProperties">identifyProperties</a><span class="symbol">?</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.detritus-client-socket\interface\IdentifyDataProperties.html">IdentifyDataProperties</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">IdentifyDataProperties</span><span style="display:block" class="monospace fw-bold"><span class="item-name object">IdentifyDataProperties</span></span></span></span></span></span>
 </div>
-        <div>
-<span class="item-name" id=".intents"><a class="property-name" href="#.intents">intents</a><span class="symbol">:</span> 
-<span><span><span class="reference-link"><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span>[]</span></span><span class='symbol'> | </span><span><span class="reference-link"><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>[]</span></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span></span>
+        <div class="item">
+<div class="item-name item" id=".intents"><a class="property-name" href="#.intents">intents</a><span class="symbol">?</span><span class="symbol">:</span> 
+<span><span><span class="reference-link"><a class='object' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></span><span>&lt;<span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span>&gt;</span></span><span class='symbol'> | </span><span><span class="reference-link"><a class='object' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></span><span>&lt;<span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>&gt;</span></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span></span>
 </div>
-        <div>
-<span class="item-name" id=".largeThreshold"><a class="property-name" href="#.largeThreshold">largeThreshold</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>
+        <div class="item">
+<div class="item-name item" id=".largeThreshold"><a class="property-name" href="#.largeThreshold">largeThreshold</a><span class="symbol">?</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>
 </div>
-        <div>
-<span class="item-name" id=".presence"><a class="property-name" href="#.presence">presence</a><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\interface\PresenceOptions.html">PresenceOptions</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">PresenceOptions</span><span style="display:block" class="monospace fw-bold">/PresenceOptions</span></span></span></span></span>
+        <div class="item">
+<div class="item-name item" id=".presence"><a class="property-name" href="#.presence">presence</a><span class="symbol">?</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.detritus-client-socket\interface\PresenceOptions.html">PresenceOptions</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">PresenceOptions</span><span style="display:block" class="monospace fw-bold"><span class="item-name object">PresenceOptions</span></span></span></span></span></span>
 </div>
-        <div>
-<span class="item-name" id=".reconnectDelay"><a class="property-name" href="#.reconnectDelay">reconnectDelay</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>
+        <div class="item">
+<div class="item-name item" id=".reconnectDelay"><a class="property-name" href="#.reconnectDelay">reconnectDelay</a><span class="symbol">?</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>
 </div>
-        <div>
-<span class="item-name" id=".reconnectMax"><a class="property-name" href="#.reconnectMax">reconnectMax</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>
+        <div class="item">
+<div class="item-name item" id=".reconnectMax"><a class="property-name" href="#.reconnectMax">reconnectMax</a><span class="symbol">?</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>
 </div>
-        <div>
-<span class="item-name" id=".shardCount"><a class="property-name" href="#.shardCount">shardCount</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>
+        <div class="item">
+<div class="item-name item" id=".shardCount"><a class="property-name" href="#.shardCount">shardCount</a><span class="symbol">?</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>
 </div>
-        <div>
-<span class="item-name" id=".shardId"><a class="property-name" href="#.shardId">shardId</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>
+        <div class="item">
+<div class="item-name item" id=".shardId"><a class="property-name" href="#.shardId">shardId</a><span class="symbol">?</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>
 </div>
-        <div>
-<span class="item-name" id=".onIdentifyCheck"><a class="property-name" href="#.onIdentifyCheck">onIdentifyCheck</a><span class="symbol">:</span> <span>() <span class="symbol">=></span> 
+        <div class="item">
+<div class="item-name item" id=".onIdentifyCheck"><a class="property-name" href="#.onIdentifyCheck">onIdentifyCheck</a><span class="symbol">?</span><span class="symbol">:</span> <span>() <span class="symbol">=></span> 
 <span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span><span class='symbol'> | </span><span><span class="reference-link"><a class='external' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a></span><span>&lt;<span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span>&gt;</span></span></span></span></span>
 </div>
     </div>

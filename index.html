@@ -22,7 +22,7 @@
       <nav class="container-fluid navi">
       <div class="row">
         <div class="col-4">
-          <input class="form-control search" id="search" type="search" placeholder="Press '/' to search" aria-label="Search">
+          <input class="form-control search" id="search" type="search" placeholder="Search..." aria-label="Search">
         </div>
         <div class="col-8">
           <div class="row float-end" style="margin-top:5px">
@@ -45,8 +45,8 @@
     </nav>  <div class="container-fluid">
     <div class="row">
       <div class="col-lg-auto sidebar" id="sidebar">
-        <h1 class="lib-name text-center">Detritus</h1>
         
+    <h1 class="lib-name text-center"><a href="index.html">Detritus</a></h1>
     <img src="assets/logo.png" alt="Logo" class="img-fluid mx-auto d-block">
     
     <div class="sidebar-members">
@@ -57,7 +57,7 @@
         <span class="sidebar-category">Tutorials</span>
         </div>
         <div class="collapsible-body open"> 
-        <span class="sidebar-category-member"><a href="./pages/Tutorials/Ping Pong.html">Ping Pong</a></span><br>
+        <span class="sidebar-category-member"><a href="./pages/Tutorials/Ping Pong.html">Ping Pong</a></span>
         </div>
         </div>
     
@@ -67,7 +67,7 @@
         <span class="sidebar-category">Modules</span>
         </div>
         <div class="collapsible-body open"> 
-        <span class="sidebar-category-member"><a href="./m.detritus-utils/index.html">detritus-utils</a></span><br><span class="sidebar-category-member"><a href="./m.detritus-rest/index.html">detritus-rest</a></span><br><span class="sidebar-category-member"><a href="./m.detritus-client-rest/index.html">detritus-client-rest</a></span><br><span class="sidebar-category-member"><a href="./m.detritus-client-socket/index.html">detritus-client-socket</a></span><br><span class="sidebar-category-member"><a href="./m.detritus-client/index.html">detritus-client</a></span><br>
+        <span class="sidebar-category-member"><a href="./m.detritus-utils/index.html">detritus-utils</a></span><span class="sidebar-category-member"><a href="./m.detritus-rest/index.html">detritus-rest</a></span><span class="sidebar-category-member"><a href="./m.detritus-client-rest/index.html">detritus-client-rest</a></span><span class="sidebar-category-member"><a href="./m.detritus-client-socket/index.html">detritus-client-socket</a></span><span class="sidebar-category-member"><a href="./m.detritus-client/index.html">detritus-client</a></span>
         </div>
         </div>
     
@@ -117,8 +117,20 @@
                             <span>Methods</span>
                         </div>
                         <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-getters" checked>
+                            <span>Getters</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-setters" checked>
+                            <span>Setters</span>
+                        </div>
+                        <div>
                             <input type="checkbox" class="c-checkbox" id="search-option-enum-members">
                             <span>Enum members</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-privates">
+                            <span>Show privates</span>
                         </div>
                     </div>
                 </div>

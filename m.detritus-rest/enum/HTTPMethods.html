@@ -22,7 +22,7 @@
       <nav class="container-fluid navi">
       <div class="row">
         <div class="col-4">
-          <input class="form-control search" id="search" type="search" placeholder="Press '/' to search" aria-label="Search">
+          <input class="form-control search" id="search" type="search" placeholder="Search..." aria-label="Search">
         </div>
         <div class="col-8">
           <div class="row float-end" style="margin-top:5px">
@@ -45,8 +45,8 @@
     </nav>  <div class="container-fluid">
     <div class="row">
       <div class="col-lg-auto sidebar" id="sidebar">
-        <h1 class="lib-name text-center">Detritus</h1>
         
+    <h1 class="lib-name text-center"><a href="../../index.html">Detritus</a></h1>
     <img src="../../assets/logo.png" alt="Logo" class="img-fluid mx-auto d-block">
     <p class="current-thing text-center">enum <span class="object">HTTPMethods</span></p>
     <div class="sidebar-members">
@@ -57,7 +57,7 @@
         <span class="sidebar-category">Members</span>
         </div>
         <div class="collapsible-body open"> 
-        <span class="sidebar-category-member"><a href="#.DELETE">DELETE</a></span><br><span class="sidebar-category-member"><a href="#.GET">GET</a></span><br><span class="sidebar-category-member"><a href="#.HEAD">HEAD</a></span><br><span class="sidebar-category-member"><a href="#.OPTIONS">OPTIONS</a></span><br><span class="sidebar-category-member"><a href="#.PATCH">PATCH</a></span><br><span class="sidebar-category-member"><a href="#.POST">POST</a></span><br><span class="sidebar-category-member"><a href="#.PUT">PUT</a></span><br>
+        <span class="sidebar-category-member"><a href="#.DELETE">DELETE</a></span><span class="sidebar-category-member"><a href="#.GET">GET</a></span><span class="sidebar-category-member"><a href="#.HEAD">HEAD</a></span><span class="sidebar-category-member"><a href="#.OPTIONS">OPTIONS</a></span><span class="sidebar-category-member"><a href="#.PATCH">PATCH</a></span><span class="sidebar-category-member"><a href="#.POST">POST</a></span><span class="sidebar-category-member"><a href="#.PUT">PUT</a></span>
         </div>
         </div>
     
@@ -107,8 +107,20 @@
                             <span>Methods</span>
                         </div>
                         <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-getters" checked>
+                            <span>Getters</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-setters" checked>
+                            <span>Setters</span>
+                        </div>
+                        <div>
                             <input type="checkbox" class="c-checkbox" id="search-option-enum-members">
                             <span>Enum members</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-privates">
+                            <span>Show privates</span>
                         </div>
                     </div>
                 </div>
@@ -144,43 +156,43 @@
     
 
     <h2>Members</h2>
-    <div id=".DELETE">
+    <div id=".DELETE" class="item">
         <a class="item-name" href="#.DELETE">DELETE</a>
 
         <span>= <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">'DELETE'</a></span></span>
 
     </div>
-    <div id=".GET">
+    <div id=".GET" class="item">
         <a class="item-name" href="#.GET">GET</a>
 
         <span>= <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">'GET'</a></span></span>
 
     </div>
-    <div id=".HEAD">
+    <div id=".HEAD" class="item">
         <a class="item-name" href="#.HEAD">HEAD</a>
 
         <span>= <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">'HEAD'</a></span></span>
 
     </div>
-    <div id=".OPTIONS">
+    <div id=".OPTIONS" class="item">
         <a class="item-name" href="#.OPTIONS">OPTIONS</a>
 
         <span>= <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">'OPTIONS'</a></span></span>
 
     </div>
-    <div id=".PATCH">
+    <div id=".PATCH" class="item">
         <a class="item-name" href="#.PATCH">PATCH</a>
 
         <span>= <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">'PATCH'</a></span></span>
 
     </div>
-    <div id=".POST">
+    <div id=".POST" class="item">
         <a class="item-name" href="#.POST">POST</a>
 
         <span>= <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">'POST'</a></span></span>
 
     </div>
-    <div id=".PUT">
+    <div id=".PUT" class="item">
         <a class="item-name" href="#.PUT">PUT</a>
 
         <span>= <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">'PUT'</a></span></span>

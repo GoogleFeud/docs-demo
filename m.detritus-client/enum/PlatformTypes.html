@@ -22,7 +22,7 @@
       <nav class="container-fluid navi">
       <div class="row">
         <div class="col-4">
-          <input class="form-control search" id="search" type="search" placeholder="Press '/' to search" aria-label="Search">
+          <input class="form-control search" id="search" type="search" placeholder="Search..." aria-label="Search">
         </div>
         <div class="col-8">
           <div class="row float-end" style="margin-top:5px">
@@ -45,8 +45,8 @@
     </nav>  <div class="container-fluid">
     <div class="row">
       <div class="col-lg-auto sidebar" id="sidebar">
-        <h1 class="lib-name text-center">Detritus</h1>
         
+    <h1 class="lib-name text-center"><a href="../../index.html">Detritus</a></h1>
     <img src="../../assets/logo.png" alt="Logo" class="img-fluid mx-auto d-block">
     <p class="current-thing text-center">enum <span class="object">PlatformTypes</span></p>
     <div class="sidebar-members">
@@ -57,7 +57,7 @@
         <span class="sidebar-category">Members</span>
         </div>
         <div class="collapsible-body open"> 
-        <span class="sidebar-category-member"><a href="#.BATTLENET">BATTLENET</a></span><br><span class="sidebar-category-member"><a href="#.CONTACTS">CONTACTS</a></span><br><span class="sidebar-category-member"><a href="#.FACEBOOK">FACEBOOK</a></span><br><span class="sidebar-category-member"><a href="#.GITHUB">GITHUB</a></span><br><span class="sidebar-category-member"><a href="#.INSTAGRAM">INSTAGRAM</a></span><br><span class="sidebar-category-member"><a href="#.LEAGUE_OF_LEGENDS">LEAGUE_OF_LEGENDS</a></span><br><span class="sidebar-category-member"><a href="#.REDDIT">REDDIT</a></span><br><span class="sidebar-category-member"><a href="#.SAMSUNG">SAMSUNG</a></span><br><span class="sidebar-category-member"><a href="#.SKYPE">SKYPE</a></span><br><span class="sidebar-category-member"><a href="#.SOUNDCLOUD">SOUNDCLOUD</a></span><br><span class="sidebar-category-member"><a href="#.SPOTIFY">SPOTIFY</a></span><br><span class="sidebar-category-member"><a href="#.STEAM">STEAM</a></span><br><span class="sidebar-category-member"><a href="#.TWITCH">TWITCH</a></span><br><span class="sidebar-category-member"><a href="#.TWITTER">TWITTER</a></span><br><span class="sidebar-category-member"><a href="#.YOUTUBE">YOUTUBE</a></span><br><span class="sidebar-category-member"><a href="#.XBOX">XBOX</a></span><br>
+        <span class="sidebar-category-member"><a href="#.BATTLENET">BATTLENET</a></span><span class="sidebar-category-member"><a href="#.CONTACTS">CONTACTS</a></span><span class="sidebar-category-member"><a href="#.FACEBOOK">FACEBOOK</a></span><span class="sidebar-category-member"><a href="#.GITHUB">GITHUB</a></span><span class="sidebar-category-member"><a href="#.INSTAGRAM">INSTAGRAM</a></span><span class="sidebar-category-member"><a href="#.LEAGUE_OF_LEGENDS">LEAGUE_OF_LEGENDS</a></span><span class="sidebar-category-member"><a href="#.REDDIT">REDDIT</a></span><span class="sidebar-category-member"><a href="#.SAMSUNG">SAMSUNG</a></span><span class="sidebar-category-member"><a href="#.SKYPE">SKYPE</a></span><span class="sidebar-category-member"><a href="#.SOUNDCLOUD">SOUNDCLOUD</a></span><span class="sidebar-category-member"><a href="#.SPOTIFY">SPOTIFY</a></span><span class="sidebar-category-member"><a href="#.STEAM">STEAM</a></span><span class="sidebar-category-member"><a href="#.TWITCH">TWITCH</a></span><span class="sidebar-category-member"><a href="#.TWITTER">TWITTER</a></span><span class="sidebar-category-member"><a href="#.YOUTUBE">YOUTUBE</a></span><span class="sidebar-category-member"><a href="#.XBOX">XBOX</a></span>
         </div>
         </div>
     
@@ -107,8 +107,20 @@
                             <span>Methods</span>
                         </div>
                         <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-getters" checked>
+                            <span>Getters</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-setters" checked>
+                            <span>Setters</span>
+                        </div>
+                        <div>
                             <input type="checkbox" class="c-checkbox" id="search-option-enum-members">
                             <span>Enum members</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-privates">
+                            <span>Show privates</span>
                         </div>
                     </div>
                 </div>
@@ -144,97 +156,97 @@
     
 
     <h2>Members</h2>
-    <div id=".BATTLENET">
+    <div id=".BATTLENET" class="item">
         <a class="item-name" href="#.BATTLENET">BATTLENET</a>
 
         <span>= <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">'battlenet'</a></span></span>
 
     </div>
-    <div id=".CONTACTS">
+    <div id=".CONTACTS" class="item">
         <a class="item-name" href="#.CONTACTS">CONTACTS</a>
 
         <span>= <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">'contacts'</a></span></span>
 
     </div>
-    <div id=".FACEBOOK">
+    <div id=".FACEBOOK" class="item">
         <a class="item-name" href="#.FACEBOOK">FACEBOOK</a>
 
         <span>= <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">'facebook'</a></span></span>
 
     </div>
-    <div id=".GITHUB">
+    <div id=".GITHUB" class="item">
         <a class="item-name" href="#.GITHUB">GITHUB</a>
 
         <span>= <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">'github'</a></span></span>
 
     </div>
-    <div id=".INSTAGRAM">
+    <div id=".INSTAGRAM" class="item">
         <a class="item-name" href="#.INSTAGRAM">INSTAGRAM</a>
 
         <span>= <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">'instagram'</a></span></span>
 
     </div>
-    <div id=".LEAGUE_OF_LEGENDS">
+    <div id=".LEAGUE_OF_LEGENDS" class="item">
         <a class="item-name" href="#.LEAGUE_OF_LEGENDS">LEAGUE_OF_LEGENDS</a>
 
         <span>= <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">'leagueoflegends'</a></span></span>
 
     </div>
-    <div id=".REDDIT">
+    <div id=".REDDIT" class="item">
         <a class="item-name" href="#.REDDIT">REDDIT</a>
 
         <span>= <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">'reddit'</a></span></span>
 
     </div>
-    <div id=".SAMSUNG">
+    <div id=".SAMSUNG" class="item">
         <a class="item-name" href="#.SAMSUNG">SAMSUNG</a>
 
         <span>= <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">'samsung'</a></span></span>
 
     </div>
-    <div id=".SKYPE">
+    <div id=".SKYPE" class="item">
         <a class="item-name" href="#.SKYPE">SKYPE</a>
 
         <span>= <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">'skype'</a></span></span>
 
     </div>
-    <div id=".SOUNDCLOUD">
+    <div id=".SOUNDCLOUD" class="item">
         <a class="item-name" href="#.SOUNDCLOUD">SOUNDCLOUD</a>
 
         <span>= <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">'soundcloud'</a></span></span>
 
     </div>
-    <div id=".SPOTIFY">
+    <div id=".SPOTIFY" class="item">
         <a class="item-name" href="#.SPOTIFY">SPOTIFY</a>
 
         <span>= <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">'spotify'</a></span></span>
 
     </div>
-    <div id=".STEAM">
+    <div id=".STEAM" class="item">
         <a class="item-name" href="#.STEAM">STEAM</a>
 
         <span>= <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">'steam'</a></span></span>
 
     </div>
-    <div id=".TWITCH">
+    <div id=".TWITCH" class="item">
         <a class="item-name" href="#.TWITCH">TWITCH</a>
 
         <span>= <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">'twitch'</a></span></span>
 
     </div>
-    <div id=".TWITTER">
+    <div id=".TWITTER" class="item">
         <a class="item-name" href="#.TWITTER">TWITTER</a>
 
         <span>= <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">'twitter'</a></span></span>
 
     </div>
-    <div id=".YOUTUBE">
+    <div id=".YOUTUBE" class="item">
         <a class="item-name" href="#.YOUTUBE">YOUTUBE</a>
 
         <span>= <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">'youtube'</a></span></span>
 
     </div>
-    <div id=".XBOX">
+    <div id=".XBOX" class="item">
         <a class="item-name" href="#.XBOX">XBOX</a>
 
         <span>= <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">'xbox'</a></span></span>

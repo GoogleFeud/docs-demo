@@ -22,7 +22,7 @@
       <nav class="container-fluid navi">
       <div class="row">
         <div class="col-4">
-          <input class="form-control search" id="search" type="search" placeholder="Press '/' to search" aria-label="Search">
+          <input class="form-control search" id="search" type="search" placeholder="Search..." aria-label="Search">
         </div>
         <div class="col-8">
           <div class="row float-end" style="margin-top:5px">
@@ -45,8 +45,8 @@
     </nav>  <div class="container-fluid">
     <div class="row">
       <div class="col-lg-auto sidebar" id="sidebar">
-        <h1 class="lib-name text-center">Detritus</h1>
         
+    <h1 class="lib-name text-center"><a href="../../../../index.html">Detritus</a></h1>
     <img src="../../../../assets/logo.png" alt="Logo" class="img-fluid mx-auto d-block">
     <p class="current-thing">interface <span class="object">ThreadDelete</span></p>
     <div class="sidebar-members">
@@ -57,7 +57,7 @@
         <span class="sidebar-category">Properties</span>
         </div>
         <div class="collapsible-body open"> 
-        <span class="sidebar-category-member"><a href="#.guildId">guildId</a></span><br><span class="sidebar-category-member"><a href="#.id">id</a></span><br><span class="sidebar-category-member"><a href="#.parentId">parentId</a></span><br><span class="sidebar-category-member"><a href="#.type">type</a></span><br><span class="sidebar-category-member"><a href="#.thread">thread</a></span><br>
+        <span class="sidebar-category-member"><a href="#.guildId">guildId</a></span><span class="sidebar-category-member"><a href="#.id">id</a></span><span class="sidebar-category-member"><a href="#.parentId">parentId</a></span><span class="sidebar-category-member"><a href="#.type">type</a></span><span class="sidebar-category-member"><a href="#.thread">thread</a></span>
         </div>
         </div>
     
@@ -107,8 +107,20 @@
                             <span>Methods</span>
                         </div>
                         <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-getters" checked>
+                            <span>Getters</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-setters" checked>
+                            <span>Setters</span>
+                        </div>
+                        <div>
                             <input type="checkbox" class="c-checkbox" id="search-option-enum-members">
                             <span>Enum members</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-privates">
+                            <span>Show privates</span>
                         </div>
                     </div>
                 </div>
@@ -149,21 +161,21 @@
     <h2>Properties</h2>
 
     <div>
-        <div>
-<span class="item-name" id=".guildId"><a class="property-name" href="#.guildId">guildId</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>
+        <div class="item">
+<div class="item-name item" id=".guildId"><a class="property-name" href="#.guildId">guildId</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>
 </div>
-        <div>
-<span class="item-name" id=".id"><a class="property-name" href="#.id">id</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>
+        <div class="item">
+<div class="item-name item" id=".id"><a class="property-name" href="#.id">id</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>
 </div>
-        <div>
-<span class="item-name" id=".parentId"><a class="property-name" href="#.parentId">parentId</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>
+        <div class="item">
+<div class="item-name item" id=".parentId"><a class="property-name" href="#.parentId">parentId</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>
 </div>
-        <div>
-<span class="item-name" id=".type"><a class="property-name" href="#.type">type</a><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\enum\ChannelTypes.html">ChannelTypes</a><span class="c-tooltip-content"><span class="keyword">enum</span> <span class="item-name object">ChannelTypes</span><span style="display:block" class="monospace fw-bold">/ChannelTypes</span></span></span></span></span>
+        <div class="item">
+<div class="item-name item" id=".type"><a class="property-name" href="#.type">type</a><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\..\m.detritus-client\enum\ChannelTypes.html">ChannelTypes</a><span class="c-tooltip-content"><span class="keyword">enum</span> <span class="item-name object">ChannelTypes</span><span style="display:block" class="monospace fw-bold"><span class="item-name object">ChannelTypes</span></span></span></span></span></span>
 </div>
-        <div>
-<span class="item-name" id=".thread"><a class="property-name" href="#.thread">thread</a><span class="symbol">:</span> 
-<span><span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.structures\type\Channel.html">Channel</a><span class="c-tooltip-content"><span class="keyword">type alias</span> <span class="item-name object">Channel</span><span style="display:block" class="monospace fw-bold">structures/Channel</span></span></span></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></span></span></span>
+        <div class="item">
+<div class="item-name item" id=".thread"><a class="property-name" href="#.thread">thread</a><span class="symbol">:</span> 
+<span><span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\..\m.detritus-client\m.structures\type\Channel.html">Channel</a><span class="c-tooltip-content"><span class="keyword">type</span> <span class="item-name object">Channel</span><span style="display:block" class="monospace fw-bold">structures/<span class="item-name object">Channel</span></span></span></span></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></span></span></span>
 </div>
     </div>
 

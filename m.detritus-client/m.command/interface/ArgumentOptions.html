@@ -22,7 +22,7 @@
       <nav class="container-fluid navi">
       <div class="row">
         <div class="col-4">
-          <input class="form-control search" id="search" type="search" placeholder="Press '/' to search" aria-label="Search">
+          <input class="form-control search" id="search" type="search" placeholder="Search..." aria-label="Search">
         </div>
         <div class="col-8">
           <div class="row float-end" style="margin-top:5px">
@@ -45,8 +45,8 @@
     </nav>  <div class="container-fluid">
     <div class="row">
       <div class="col-lg-auto sidebar" id="sidebar">
-        <h1 class="lib-name text-center">Detritus</h1>
         
+    <h1 class="lib-name text-center"><a href="../../../index.html">Detritus</a></h1>
     <img src="../../../assets/logo.png" alt="Logo" class="img-fluid mx-auto d-block">
     <p class="current-thing">interface <span class="object">ArgumentOptions</span></p>
     <div class="sidebar-members">
@@ -57,7 +57,7 @@
         <span class="sidebar-category">Properties</span>
         </div>
         <div class="collapsible-body open"> 
-        <span class="sidebar-category-member"><a href="#.aliases">aliases</a></span><br><span class="sidebar-category-member"><a href="#.choices">choices</a></span><br><span class="sidebar-category-member"><a href="#.consume">consume</a></span><br><span class="sidebar-category-member"><a href="#.default">default</a></span><br><span class="sidebar-category-member"><a href="#.help">help</a></span><br><span class="sidebar-category-member"><a href="#.label">label</a></span><br><span class="sidebar-category-member"><a href="#.metadata">metadata</a></span><br><span class="sidebar-category-member"><a href="#.name">name</a></span><br><span class="sidebar-category-member"><a href="#.prefix">prefix</a></span><br><span class="sidebar-category-member"><a href="#.prefixes">prefixes</a></span><br><span class="sidebar-category-member"><a href="#.prefixSpace">prefixSpace</a></span><br><span class="sidebar-category-member"><a href="#.required">required</a></span><br><span class="sidebar-category-member"><a href="#.type">type</a></span><br>
+        <span class="sidebar-category-member"><a href="#.aliases">aliases</a></span><span class="sidebar-category-member"><a href="#.choices">choices</a></span><span class="sidebar-category-member"><a href="#.consume">consume</a></span><span class="sidebar-category-member"><a href="#.default">default</a></span><span class="sidebar-category-member"><a href="#.help">help</a></span><span class="sidebar-category-member"><a href="#.label">label</a></span><span class="sidebar-category-member"><a href="#.metadata">metadata</a></span><span class="sidebar-category-member"><a href="#.name">name</a></span><span class="sidebar-category-member"><a href="#.prefix">prefix</a></span><span class="sidebar-category-member"><a href="#.prefixes">prefixes</a></span><span class="sidebar-category-member"><a href="#.prefixSpace">prefixSpace</a></span><span class="sidebar-category-member"><a href="#.required">required</a></span><span class="sidebar-category-member"><a href="#.type">type</a></span>
         </div>
         </div>
     
@@ -107,8 +107,20 @@
                             <span>Methods</span>
                         </div>
                         <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-getters" checked>
+                            <span>Getters</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-setters" checked>
+                            <span>Setters</span>
+                        </div>
+                        <div>
                             <input type="checkbox" class="c-checkbox" id="search-option-enum-members">
                             <span>Enum members</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-privates">
+                            <span>Show privates</span>
                         </div>
                     </div>
                 </div>
@@ -150,48 +162,48 @@
     <h2>Properties</h2>
 
     <div>
-        <div>
-<span class="item-name" id=".aliases"><a class="property-name" href="#.aliases">aliases</a><span class="symbol">:</span> 
-<span><span class="reference-link"><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>[]</span></span></span>
+        <div class="item">
+<div class="item-name item" id=".aliases"><a class="property-name" href="#.aliases">aliases</a><span class="symbol">?</span><span class="symbol">:</span> 
+<span><span class="reference-link"><a class='object' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></span><span>&lt;<span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>&gt;</span></span></span>
 </div>
-        <div>
-<span class="item-name" id=".choices"><a class="property-name" href="#.choices">choices</a><span class="symbol">:</span> 
-<span><span class="reference-link"><span class="reference-link"><span class='primitive'>any</span></span>[]</span></span></span>
+        <div class="item">
+<div class="item-name item" id=".choices"><a class="property-name" href="#.choices">choices</a><span class="symbol">?</span><span class="symbol">:</span> 
+<span><span class="reference-link"><a class='object' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></span><span>&lt;<span class="reference-link"><span class='primitive'>any</span></span>&gt;</span></span></span>
 </div>
-        <div>
-<span class="item-name" id=".consume"><a class="property-name" href="#.consume">consume</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
+        <div class="item">
+<div class="item-name item" id=".consume"><a class="property-name" href="#.consume">consume</a><span class="symbol">?</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
 </div>
-        <div>
-<span class="item-name" id=".default"><a class="property-name" href="#.default">default</a><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.command\type\ArgumentDefault.html">ArgumentDefault</a><span class="c-tooltip-content"><span class="keyword">type alias</span> <span class="item-name object">ArgumentDefault</span><span style="display:block" class="monospace fw-bold">command/ArgumentDefault</span></span></span></span></span>
+        <div class="item">
+<div class="item-name item" id=".default"><a class="property-name" href="#.default">default</a><span class="symbol">?</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.command\type\ArgumentDefault.html">ArgumentDefault</a><span class="c-tooltip-content"><span class="keyword">type</span> <span class="item-name object">ArgumentDefault</span><span style="display:block" class="monospace fw-bold">command/<span class="item-name object">ArgumentDefault</span></span></span></span></span></span>
 </div>
-        <div>
-<span class="item-name" id=".help"><a class="property-name" href="#.help">help</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>
+        <div class="item">
+<div class="item-name item" id=".help"><a class="property-name" href="#.help">help</a><span class="symbol">?</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>
 </div>
-        <div>
-<span class="item-name" id=".label"><a class="property-name" href="#.label">label</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>
+        <div class="item">
+<div class="item-name item" id=".label"><a class="property-name" href="#.label">label</a><span class="symbol">?</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>
 </div>
-        <div>
-<span class="item-name" id=".metadata"><a class="property-name" href="#.metadata">metadata</a><span class="symbol">:</span> 
-<span>{ <span>[key: <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>]: <span class="reference-link"><span class='primitive'>any</span></span></span> }</span></span>
+        <div class="item">
+<div class="item-name item" id=".metadata"><a class="property-name" href="#.metadata">metadata</a><span class="symbol">?</span><span class="symbol">:</span> 
+<span>{ <span>[key<span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>]<span class="symbol">:</span> <span class="reference-link"><span class='primitive'>any</span></span></span> }</span></span>
 </div>
-        <div>
-<span class="item-name" id=".name"><a class="property-name" href="#.name">name</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>
+        <div class="item">
+<div class="item-name item" id=".name"><a class="property-name" href="#.name">name</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>
 </div>
-        <div>
-<span class="item-name" id=".prefix"><a class="property-name" href="#.prefix">prefix</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>
+        <div class="item">
+<div class="item-name item" id=".prefix"><a class="property-name" href="#.prefix">prefix</a><span class="symbol">?</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>
 </div>
-        <div>
-<span class="item-name" id=".prefixes"><a class="property-name" href="#.prefixes">prefixes</a><span class="symbol">:</span> 
-<span><span class="reference-link"><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>[]</span></span></span>
+        <div class="item">
+<div class="item-name item" id=".prefixes"><a class="property-name" href="#.prefixes">prefixes</a><span class="symbol">?</span><span class="symbol">:</span> 
+<span><span class="reference-link"><a class='object' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></span><span>&lt;<span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>&gt;</span></span></span>
 </div>
-        <div>
-<span class="item-name" id=".prefixSpace"><a class="property-name" href="#.prefixSpace">prefixSpace</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
+        <div class="item">
+<div class="item-name item" id=".prefixSpace"><a class="property-name" href="#.prefixSpace">prefixSpace</a><span class="symbol">?</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
 </div>
-        <div>
-<span class="item-name" id=".required"><a class="property-name" href="#.required">required</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
+        <div class="item">
+<div class="item-name item" id=".required"><a class="property-name" href="#.required">required</a><span class="symbol">?</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
 </div>
-        <div>
-<span class="item-name" id=".type"><a class="property-name" href="#.type">type</a><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.command\type\ArgumentType.html">ArgumentType</a><span class="c-tooltip-content"><span class="keyword">type alias</span> <span class="item-name object">ArgumentType</span><span style="display:block" class="monospace fw-bold">command/ArgumentType</span></span></span></span></span>
+        <div class="item">
+<div class="item-name item" id=".type"><a class="property-name" href="#.type">type</a><span class="symbol">?</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.command\type\ArgumentType.html">ArgumentType</a><span class="c-tooltip-content"><span class="keyword">type</span> <span class="item-name object">ArgumentType</span><span style="display:block" class="monospace fw-bold">command/<span class="item-name object">ArgumentType</span></span></span></span></span></span>
 </div>
     </div>
 

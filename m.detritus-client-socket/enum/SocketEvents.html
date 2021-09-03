@@ -22,7 +22,7 @@
       <nav class="container-fluid navi">
       <div class="row">
         <div class="col-4">
-          <input class="form-control search" id="search" type="search" placeholder="Press '/' to search" aria-label="Search">
+          <input class="form-control search" id="search" type="search" placeholder="Search..." aria-label="Search">
         </div>
         <div class="col-8">
           <div class="row float-end" style="margin-top:5px">
@@ -45,8 +45,8 @@
     </nav>  <div class="container-fluid">
     <div class="row">
       <div class="col-lg-auto sidebar" id="sidebar">
-        <h1 class="lib-name text-center">Detritus</h1>
         
+    <h1 class="lib-name text-center"><a href="../../index.html">Detritus</a></h1>
     <img src="../../assets/logo.png" alt="Logo" class="img-fluid mx-auto d-block">
     <p class="current-thing text-center">enum <span class="object">SocketEvents</span></p>
     <div class="sidebar-members">
@@ -57,7 +57,7 @@
         <span class="sidebar-category">Members</span>
         </div>
         <div class="collapsible-body open"> 
-        <span class="sidebar-category-member"><a href="#.CLOSE">CLOSE</a></span><br><span class="sidebar-category-member"><a href="#.KILLED">KILLED</a></span><br><span class="sidebar-category-member"><a href="#.LOG">LOG</a></span><br><span class="sidebar-category-member"><a href="#.OPEN">OPEN</a></span><br><span class="sidebar-category-member"><a href="#.PACKET">PACKET</a></span><br><span class="sidebar-category-member"><a href="#.READY">READY</a></span><br><span class="sidebar-category-member"><a href="#.RECONNECTING">RECONNECTING</a></span><br><span class="sidebar-category-member"><a href="#.SOCKET">SOCKET</a></span><br><span class="sidebar-category-member"><a href="#.STATE">STATE</a></span><br><span class="sidebar-category-member"><a href="#.TRANSPORT">TRANSPORT</a></span><br><span class="sidebar-category-member"><a href="#.TRANSPORT_READY">TRANSPORT_READY</a></span><br><span class="sidebar-category-member"><a href="#.WARN">WARN</a></span><br>
+        <span class="sidebar-category-member"><a href="#.CLOSE">CLOSE</a></span><span class="sidebar-category-member"><a href="#.KILLED">KILLED</a></span><span class="sidebar-category-member"><a href="#.LOG">LOG</a></span><span class="sidebar-category-member"><a href="#.OPEN">OPEN</a></span><span class="sidebar-category-member"><a href="#.PACKET">PACKET</a></span><span class="sidebar-category-member"><a href="#.READY">READY</a></span><span class="sidebar-category-member"><a href="#.RECONNECTING">RECONNECTING</a></span><span class="sidebar-category-member"><a href="#.SOCKET">SOCKET</a></span><span class="sidebar-category-member"><a href="#.STATE">STATE</a></span><span class="sidebar-category-member"><a href="#.TRANSPORT">TRANSPORT</a></span><span class="sidebar-category-member"><a href="#.TRANSPORT_READY">TRANSPORT_READY</a></span><span class="sidebar-category-member"><a href="#.WARN">WARN</a></span>
         </div>
         </div>
     
@@ -107,8 +107,20 @@
                             <span>Methods</span>
                         </div>
                         <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-getters" checked>
+                            <span>Getters</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-setters" checked>
+                            <span>Setters</span>
+                        </div>
+                        <div>
                             <input type="checkbox" class="c-checkbox" id="search-option-enum-members">
                             <span>Enum members</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-privates">
+                            <span>Show privates</span>
                         </div>
                     </div>
                 </div>
@@ -144,73 +156,73 @@
     
 
     <h2>Members</h2>
-    <div id=".CLOSE">
+    <div id=".CLOSE" class="item">
         <a class="item-name" href="#.CLOSE">CLOSE</a>
 
         <span>= <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">'close'</a></span></span>
 
     </div>
-    <div id=".KILLED">
+    <div id=".KILLED" class="item">
         <a class="item-name" href="#.KILLED">KILLED</a>
 
         <span>= <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">'killed'</a></span></span>
 
     </div>
-    <div id=".LOG">
+    <div id=".LOG" class="item">
         <a class="item-name" href="#.LOG">LOG</a>
 
         <span>= <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">'log'</a></span></span>
 
     </div>
-    <div id=".OPEN">
+    <div id=".OPEN" class="item">
         <a class="item-name" href="#.OPEN">OPEN</a>
 
         <span>= <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">'open'</a></span></span>
 
     </div>
-    <div id=".PACKET">
+    <div id=".PACKET" class="item">
         <a class="item-name" href="#.PACKET">PACKET</a>
 
         <span>= <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">'packet'</a></span></span>
 
     </div>
-    <div id=".READY">
+    <div id=".READY" class="item">
         <a class="item-name" href="#.READY">READY</a>
 
         <span>= <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">'ready'</a></span></span>
 
     </div>
-    <div id=".RECONNECTING">
+    <div id=".RECONNECTING" class="item">
         <a class="item-name" href="#.RECONNECTING">RECONNECTING</a>
 
         <span>= <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">'reconnecting'</a></span></span>
 
     </div>
-    <div id=".SOCKET">
+    <div id=".SOCKET" class="item">
         <a class="item-name" href="#.SOCKET">SOCKET</a>
 
         <span>= <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">'socket'</a></span></span>
 
     </div>
-    <div id=".STATE">
+    <div id=".STATE" class="item">
         <a class="item-name" href="#.STATE">STATE</a>
 
         <span>= <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">'state'</a></span></span>
 
     </div>
-    <div id=".TRANSPORT">
+    <div id=".TRANSPORT" class="item">
         <a class="item-name" href="#.TRANSPORT">TRANSPORT</a>
 
         <span>= <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">'transport'</a></span></span>
 
     </div>
-    <div id=".TRANSPORT_READY">
+    <div id=".TRANSPORT_READY" class="item">
         <a class="item-name" href="#.TRANSPORT_READY">TRANSPORT_READY</a>
 
         <span>= <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">'transportReady'</a></span></span>
 
     </div>
-    <div id=".WARN">
+    <div id=".WARN" class="item">
         <a class="item-name" href="#.WARN">WARN</a>
 
         <span>= <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">'warn'</a></span></span>

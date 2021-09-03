@@ -22,7 +22,7 @@
       <nav class="container-fluid navi">
       <div class="row">
         <div class="col-4">
-          <input class="form-control search" id="search" type="search" placeholder="Press '/' to search" aria-label="Search">
+          <input class="form-control search" id="search" type="search" placeholder="Search..." aria-label="Search">
         </div>
         <div class="col-8">
           <div class="row float-end" style="margin-top:5px">
@@ -45,8 +45,8 @@
     </nav>  <div class="container-fluid">
     <div class="row">
       <div class="col-lg-auto sidebar" id="sidebar">
-        <h1 class="lib-name text-center">Detritus</h1>
         
+    <h1 class="lib-name text-center"><a href="../../../index.html">Detritus</a></h1>
     <img src="../../../assets/logo.png" alt="Logo" class="img-fluid mx-auto d-block">
     <p class="current-thing">interface <span class="object">CreateApplicationCommandData</span></p>
     <div class="sidebar-members">
@@ -57,7 +57,7 @@
         <span class="sidebar-category">Properties</span>
         </div>
         <div class="collapsible-body open"> 
-        <span class="sidebar-category-member"><a href="#.default_permission">default_permission</a></span><br><span class="sidebar-category-member"><a href="#.description">description</a></span><br><span class="sidebar-category-member"><a href="#.id">id</a></span><br><span class="sidebar-category-member"><a href="#.name">name</a></span><br><span class="sidebar-category-member"><a href="#.options">options</a></span><br>
+        <span class="sidebar-category-member"><a href="#.default_permission">default_permission</a></span><span class="sidebar-category-member"><a href="#.description">description</a></span><span class="sidebar-category-member"><a href="#.id">id</a></span><span class="sidebar-category-member"><a href="#.name">name</a></span><span class="sidebar-category-member"><a href="#.options">options</a></span>
         </div>
         </div>
     
@@ -107,8 +107,20 @@
                             <span>Methods</span>
                         </div>
                         <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-getters" checked>
+                            <span>Getters</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-setters" checked>
+                            <span>Setters</span>
+                        </div>
+                        <div>
                             <input type="checkbox" class="c-checkbox" id="search-option-enum-members">
                             <span>Enum members</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-privates">
+                            <span>Show privates</span>
                         </div>
                     </div>
                 </div>
@@ -149,22 +161,21 @@
     <h2>Properties</h2>
 
     <div>
-        <div>
-<span class="item-name" id=".default_permission"><a class="property-name" href="#.default_permission">default_permission</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
+        <div class="item">
+<div class="item-name item" id=".default_permission"><a class="property-name" href="#.default_permission">default_permission</a><span class="symbol">?</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
 </div>
-        <div>
-<span class="item-name" id=".description"><a class="property-name" href="#.description">description</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>
+        <div class="item">
+<div class="item-name item" id=".description"><a class="property-name" href="#.description">description</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>
 </div>
-        <div>
-<span class="item-name" id=".id"><a class="property-name" href="#.id">id</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>
+        <div class="item">
+<div class="item-name item" id=".id"><a class="property-name" href="#.id">id</a><span class="symbol">?</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>
 </div>
-        <div>
-<span class="item-name" id=".name"><a class="property-name" href="#.name">name</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>
+        <div class="item">
+<div class="item-name item" id=".name"><a class="property-name" href="#.name">name</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>
 </div>
-        <div>
-<span class="item-name" id=".options"><a class="property-name" href="#.options">options</a><span class="symbol">:</span> 
-<span><span class="reference-link">
-<span><span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.RequestTypes\interface\CreateApplicationCommandOption.html">CreateApplicationCommandOption</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">CreateApplicationCommandOption</span><span style="display:block" class="monospace fw-bold">RequestTypes/CreateApplicationCommandOption</span></span></span></span><span class='symbol'> | </span><span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.RequestTypes\interface\toJSON.html">toJSON</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">toJSON</span><span style="display:block" class="monospace fw-bold">RequestTypes/toJSON</span></span></span><span>&lt;<span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.RequestTypes\interface\CreateApplicationCommandData.html">CreateApplicationCommandData</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">CreateApplicationCommandData</span><span style="display:block" class="monospace fw-bold">RequestTypes/CreateApplicationCommandData</span></span></span></span>&gt;</span></span></span>[]</span></span></span>
+        <div class="item">
+<div class="item-name item" id=".options"><a class="property-name" href="#.options">options</a><span class="symbol">?</span><span class="symbol">:</span> 
+<span><span class="reference-link"><a class='object' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></span><span>&lt;<span><span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client-rest\m.RequestTypes\interface\CreateApplicationCommandOption.html">CreateApplicationCommandOption</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">CreateApplicationCommandOption</span><span style="display:block" class="monospace fw-bold">RequestTypes/<span class="item-name object">CreateApplicationCommandOption</span></span></span></span></span><span class='symbol'> | </span><span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client-rest\m.RequestTypes\interface\toJSON.html">toJSON</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">toJSON</span><span style="display:block" class="monospace fw-bold">RequestTypes/<span class="item-name object">toJSON</span></span></span></span><span>&lt;<span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client-rest\m.RequestTypes\interface\CreateApplicationCommandData.html">CreateApplicationCommandData</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">CreateApplicationCommandData</span><span style="display:block" class="monospace fw-bold">RequestTypes/<span class="item-name object">CreateApplicationCommandData</span></span></span></span></span>&gt;</span></span></span>&gt;</span></span></span>
 </div>
     </div>
 

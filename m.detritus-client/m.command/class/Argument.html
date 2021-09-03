@@ -22,7 +22,7 @@
       <nav class="container-fluid navi">
       <div class="row">
         <div class="col-4">
-          <input class="form-control search" id="search" type="search" placeholder="Press '/' to search" aria-label="Search">
+          <input class="form-control search" id="search" type="search" placeholder="Search..." aria-label="Search">
         </div>
         <div class="col-8">
           <div class="row float-end" style="margin-top:5px">
@@ -45,8 +45,8 @@
     </nav>  <div class="container-fluid">
     <div class="row">
       <div class="col-lg-auto sidebar" id="sidebar">
-        <h1 class="lib-name text-center">Detritus</h1>
         
+    <h1 class="lib-name text-center"><a href="../../../index.html">Detritus</a></h1>
     <img src="../../../assets/logo.png" alt="Logo" class="img-fluid mx-auto d-block">
     <p class="current-thing text-center">class <span class="object">Argument</span></p>
     <div class="sidebar-members">
@@ -57,7 +57,7 @@
         <span class="sidebar-category">Properties</span>
         </div>
         <div class="collapsible-body open"> 
-        <span class="sidebar-category-member"><a href="#._aliases">_aliases</a></span><br><span class="sidebar-category-member"><a href="#._label">_label</a></span><br><span class="sidebar-category-member"><a href="#._name">_name</a></span><br><span class="sidebar-category-member"><a href="#._names">_names</a></span><br><span class="sidebar-category-member"><a href="#._type">_type</a></span><br><span class="sidebar-category-member"><a href="#.positionalArgs">positionalArgs</a></span><br><span class="sidebar-category-member"><a href="#.choices">choices</a></span><br><span class="sidebar-category-member"><a href="#.consume">consume</a></span><br><span class="sidebar-category-member"><a href="#.default">default</a></span><br><span class="sidebar-category-member"><a href="#.help">help</a></span><br><span class="sidebar-category-member"><a href="#.metadata">metadata</a></span><br><span class="sidebar-category-member"><a href="#.prefixes">prefixes</a></span><br><span class="sidebar-category-member"><a href="#.required">required</a></span><br>
+        <span class="sidebar-category-member"><a href="#._aliases">_aliases</a></span><span class="sidebar-category-member"><a href="#._label">_label</a></span><span class="sidebar-category-member"><a href="#._name">_name</a></span><span class="sidebar-category-member"><a href="#._names">_names</a></span><span class="sidebar-category-member"><a href="#._type">_type</a></span><span class="sidebar-category-member"><a href="#.positionalArgs">positionalArgs</a></span><span class="sidebar-category-member"><a href="#.choices">choices</a></span><span class="sidebar-category-member"><a href="#.consume">consume</a></span><span class="sidebar-category-member"><a href="#.default">default</a></span><span class="sidebar-category-member"><a href="#.help">help</a></span><span class="sidebar-category-member"><a href="#.metadata">metadata</a></span><span class="sidebar-category-member"><a href="#.prefixes">prefixes</a></span><span class="sidebar-category-member"><a href="#.required">required</a></span>
         </div>
         </div>
     
@@ -67,7 +67,7 @@
         <span class="sidebar-category">Methods</span>
         </div>
         <div class="collapsible-body open"> 
-        <span class="sidebar-category-member"><a href="#.aliases">aliases</a></span><br><span class="sidebar-category-member"><a href="#.label">label</a></span><br><span class="sidebar-category-member"><a href="#.name">name</a></span><br><span class="sidebar-category-member"><a href="#.names">names</a></span><br><span class="sidebar-category-member"><a href="#.type">type</a></span><br><span class="sidebar-category-member"><a href="#.check">check</a></span><br><span class="sidebar-category-member"><a href="#.getInfo">getInfo</a></span><br><span class="sidebar-category-member"><a href="#.getName">getName</a></span><br><span class="sidebar-category-member"><a href="#.setPrefixes">setPrefixes</a></span><br><span class="sidebar-category-member"><a href="#.parse">parse</a></span><br>
+        <span class="sidebar-category-member"><a href="#.aliases">aliases</a></span><span class="sidebar-category-member"><a href="#.label">label</a></span><span class="sidebar-category-member"><a href="#.name">name</a></span><span class="sidebar-category-member"><a href="#.names">names</a></span><span class="sidebar-category-member"><a href="#.type">type</a></span><span class="sidebar-category-member"><a href="#.check">check</a></span><span class="sidebar-category-member"><a href="#.getInfo">getInfo</a></span><span class="sidebar-category-member"><a href="#.getName">getName</a></span><span class="sidebar-category-member"><a href="#.setPrefixes">setPrefixes</a></span><span class="sidebar-category-member"><a href="#.parse">parse</a></span>
         </div>
         </div>
     
@@ -117,8 +117,20 @@
                             <span>Methods</span>
                         </div>
                         <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-getters" checked>
+                            <span>Getters</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-setters" checked>
+                            <span>Setters</span>
+                        </div>
+                        <div>
                             <input type="checkbox" class="c-checkbox" id="search-option-enum-members">
                             <span>Enum members</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-privates">
+                            <span>Show privates</span>
                         </div>
                     </div>
                 </div>
@@ -158,12 +170,13 @@
     <h2>Constructor</h2>
     
 <div id="class.constructor" class="item">
-    <p class="item-name"><span class="keyword">constructor</span><span>(<span class="item-name"><span class="param-name">options</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.command\interface\ArgumentOptions.html">ArgumentOptions</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">ArgumentOptions</span><span style="display:block" class="monospace fw-bold">command/ArgumentOptions</span></span></span></span></span>)</span></p>
+    <span class="item-name"><span class="keyword">constructor</span><span>(<span class="item-name"><span class="param-name">options</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.command\interface\ArgumentOptions.html">ArgumentOptions</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">ArgumentOptions</span><span style="display:block" class="monospace fw-bold">command/<span class="item-name object">ArgumentOptions</span></span></span></span></span></span>)</span></span>
 
     <div class="docblock">
     <ul></ul>
     </div>
 </div>
+
     
     <h2>Properties</h2>
     <div><div class="item" id="._aliases">
@@ -173,7 +186,8 @@
     <span class="modifier">private</span>
     
     <span class="item-name"><a class="property-name" href="#._aliases">_aliases</a><span>: 
-<span><span class="reference-link"><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>[]</span></span></span></span>
+<span><span class="reference-link"><a class='object' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></span><span>&lt;<span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>&gt;</span></span></span> <span class="symbol">=</span> []
+    </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/command/argument.ts#L41>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
@@ -190,7 +204,8 @@
     
     <span class="modifier">private</span>
     
-    <span class="item-name"><a class="property-name" href="#._label">_label</a><span>: <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span></span>
+    <span class="item-name"><a class="property-name" href="#._label">_label</a><span>: <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span> <span class="symbol">=</span> <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">''</a></span>
+    </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/command/argument.ts#L42>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
@@ -207,7 +222,8 @@
     
     <span class="modifier">private</span>
     
-    <span class="item-name"><a class="property-name" href="#._name">_name</a><span>: <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span></span>
+    <span class="item-name"><a class="property-name" href="#._name">_name</a><span>: <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span> <span class="symbol">=</span> <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">''</a></span>
+    </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/command/argument.ts#L43>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
@@ -225,7 +241,8 @@
     <span class="modifier">private</span>
     
     <span class="item-name"><a class="property-name" href="#._names">_names</a><span>: 
-<span><span class="reference-link"><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>[]</span></span></span></span>
+<span><span class="reference-link"><a class='object' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></span><span>&lt;<span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>&gt;</span></span></span>
+    </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/command/argument.ts#L44>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
@@ -242,7 +259,8 @@
     
     <span class="modifier">private</span>
     
-    <span class="item-name"><a class="property-name" href="#._type">_type</a><span>: <span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.command\type\ArgumentType.html">ArgumentType</a><span class="c-tooltip-content"><span class="keyword">type alias</span> <span class="item-name object">ArgumentType</span><span style="display:block" class="monospace fw-bold">command/ArgumentType</span></span></span></span></span></span>
+    <span class="item-name"><a class="property-name" href="#._type">_type</a><span>: <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.command\type\ArgumentType.html">ArgumentType</a><span class="c-tooltip-content"><span class="keyword">type</span> <span class="item-name object">ArgumentType</span><span style="display:block" class="monospace fw-bold">command/<span class="item-name object">ArgumentType</span></span></span></span></span></span> <span class="symbol">=</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\enum\CommandArgumentTypes.html#.STRING">CommandArgumentTypes<span class="symbol">.</span>STRING</a><span class="c-tooltip-content"><span class="keyword">enum</span> <span class="item-name object">CommandArgumentTypes</span><span style="display:block" class="monospace fw-bold"><span class="item-name object">CommandArgumentTypes</span><span class="symbol">.</span>STRING</span></span></span></span>
+    </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/command/argument.ts#L45>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
@@ -259,7 +277,8 @@
     
     
     
-    <span class="item-name"><a class="property-name" href="#.positionalArgs">positionalArgs</a><span>: <span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.command\class\ArgumentParser.html">ArgumentParser</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">ArgumentParser</span><span style="display:block" class="monospace fw-bold">command/ArgumentParser</span></span></span></span></span></span>
+    <span class="item-name"><a class="property-name" href="#.positionalArgs">positionalArgs</a><span>: <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.command\class\ArgumentParser.html">ArgumentParser</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">ArgumentParser</span><span style="display:block" class="monospace fw-bold">command/<span class="item-name object">ArgumentParser</span></span></span></span></span></span>
+    </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/command/argument.ts#L47>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
@@ -277,7 +296,8 @@
     
     
     <span class="item-name"><a class="property-name" href="#.choices">choices</a><span>: 
-<span><span class="reference-link"><span class="reference-link"><span class='primitive'>any</span></span>[]</span></span></span></span>
+<span><span class="reference-link"><a class='object' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></span><span>&lt;<span class="reference-link"><span class='primitive'>any</span></span>&gt;</span></span></span>
+    </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/command/argument.ts#L48>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
@@ -294,7 +314,8 @@
     
     
     
-    <span class="item-name"><a class="property-name" href="#.consume">consume</a><span>: <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span></span>
+    <span class="item-name"><a class="property-name" href="#.consume">consume</a><span>: <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span> <span class="symbol">=</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">false</a></span>
+    </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/command/argument.ts#L49>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
@@ -311,7 +332,8 @@
     
     
     
-    <span class="item-name"><a class="property-name" href="#.default">default</a><span>: <span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.command\type\ArgumentDefault.html">ArgumentDefault</a><span class="c-tooltip-content"><span class="keyword">type alias</span> <span class="item-name object">ArgumentDefault</span><span style="display:block" class="monospace fw-bold">command/ArgumentDefault</span></span></span></span></span></span>
+    <span class="item-name"><a class="property-name" href="#.default">default</a><span>: <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.command\type\ArgumentDefault.html">ArgumentDefault</a><span class="c-tooltip-content"><span class="keyword">type</span> <span class="item-name object">ArgumentDefault</span><span style="display:block" class="monospace fw-bold">command/<span class="item-name object">ArgumentDefault</span></span></span></span></span></span>
+    </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/command/argument.ts#L50>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
@@ -328,7 +350,8 @@
     
     
     
-    <span class="item-name"><a class="property-name" href="#.help">help</a><span>: <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span></span>
+    <span class="item-name"><a class="property-name" href="#.help">help</a><span>: <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span> <span class="symbol">=</span> <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">''</a></span>
+    </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/command/argument.ts#L51>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
@@ -346,7 +369,8 @@
     
     
     <span class="item-name"><a class="property-name" href="#.metadata">metadata</a><span>: 
-<span>{ <span>[key: <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>]: <span class="reference-link"><span class='primitive'>any</span></span></span> }</span></span></span>
+<span>{ <span>[key<span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>]<span class="symbol">:</span> <span class="reference-link"><span class='primitive'>any</span></span></span> }</span></span>
+    </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/command/argument.ts#L52>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
@@ -364,7 +388,9 @@
     
     
     <span class="item-name"><a class="property-name" href="#.prefixes">prefixes</a><span>: 
-<span><span class="reference-link"><a class='external' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set">Set</a></span><span>&lt;<span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>&gt;</span></span></span></span>
+<span><span class="reference-link"><a class='external' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set">Set</a></span><span>&lt;<span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>&gt;</span></span></span> <span class="symbol">=</span> 
+<span><span class="reference-link"><a class='external' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set">Set</a></span></span>
+    </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/command/argument.ts#L53>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
@@ -381,7 +407,8 @@
     
     
     
-    <span class="item-name"><a class="property-name" href="#.required">required</a><span>: <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span></span>
+    <span class="item-name"><a class="property-name" href="#.required">required</a><span>: <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span> <span class="symbol">=</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">false</a></span>
+    </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/command/argument.ts#L54>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
@@ -397,229 +424,229 @@
 
     <div>
 <div id=".aliases" class="item">
-    <p class="monospace">
+    <span class="monospace">
     
     
     
     
     
     <span class="modifier">set</span>
+        <a class="item-name method-name" href="#.aliases">aliases</a><span>(<span class="item-name"><span class="param-name">value</span><span class="symbol">:</span> 
+<span><span class="reference-link"><a class='object' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></span><span>&lt;<span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>&gt;</span></span></span>)</span>
+    </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/command/argument.ts#L93>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
   <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
 </svg>
 </span></a>
-        <a class="item-name method-name" href="#.aliases">aliases</a><span>(<span class="item-name"><span class="param-name">value</span><span class="symbol">:</span> 
-<span><span class="reference-link"><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>[]</span></span></span>)</span>
         <div class="docblock">
         <ul></ul>
         
-        </div>
-    </p>
+    </div>
 </div></div>
     <div>
 <div id=".label" class="item">
-    <p class="monospace">
+    <span class="monospace">
     
     
     
     
     
     <span class="modifier">set</span>
+        <a class="item-name method-name" href="#.label">label</a><span>(<span class="item-name"><span class="param-name">value</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>)</span>
+    </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/command/argument.ts#L102>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
   <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
 </svg>
 </span></a>
-        <a class="item-name method-name" href="#.label">label</a><span>(<span class="item-name"><span class="param-name">value</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>)</span>
         <div class="docblock">
         <ul></ul>
         
-        </div>
-    </p>
+    </div>
 </div></div>
     <div>
 <div id=".name" class="item">
-    <p class="monospace">
+    <span class="monospace">
     
     
     
     
     
     <span class="modifier">set</span>
+        <a class="item-name method-name" href="#.name">name</a><span>(<span class="item-name"><span class="param-name">value</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>)</span>
+    </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/command/argument.ts#L110>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
   <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
 </svg>
 </span></a>
-        <a class="item-name method-name" href="#.name">name</a><span>(<span class="item-name"><span class="param-name">value</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>)</span>
         <div class="docblock">
         <ul></ul>
         
-        </div>
-    </p>
+    </div>
 </div></div>
     <div>
 <div id=".names" class="item">
-    <p class="monospace">
+    <span class="monospace">
     
     
     
     
     <span class="modifier">get</span>
     
+        <a class="item-name method-name" href="#.names">names</a><span>()</span><span><span class="symbol">:</span> 
+<span><span class="reference-link"><a class='object' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></span><span>&lt;<span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>&gt;</span></span></span>
+    </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/command/argument.ts#L115>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
   <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
 </svg>
 </span></a>
-        <a class="item-name method-name" href="#.names">names</a><span>()</span><span><span class="symbol">:</span> 
-<span><span class="reference-link"><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>[]</span></span></span>
         <div class="docblock">
         
         
-        </div>
-    </p>
+    </div>
 </div></div>
     <div>
 <div id=".type" class="item">
-    <p class="monospace">
+    <span class="monospace">
     
     
     
     
     
     <span class="modifier">set</span>
+        <a class="item-name method-name" href="#.type">type</a><span>(<span class="item-name"><span class="param-name">value</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.command\type\ArgumentType.html">ArgumentType</a><span class="c-tooltip-content"><span class="keyword">type</span> <span class="item-name object">ArgumentType</span><span style="display:block" class="monospace fw-bold">command/<span class="item-name object">ArgumentType</span></span></span></span></span></span>)</span>
+    </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/command/argument.ts#L134>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
   <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
 </svg>
 </span></a>
-        <a class="item-name method-name" href="#.type">type</a><span>(<span class="item-name"><span class="param-name">value</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.command\type\ArgumentType.html">ArgumentType</a><span class="c-tooltip-content"><span class="keyword">type alias</span> <span class="item-name object">ArgumentType</span><span style="display:block" class="monospace fw-bold">command/ArgumentType</span></span></span></span></span>)</span>
         <div class="docblock">
         <ul></ul>
         
-        </div>
-    </p>
+    </div>
 </div></div>
     <div>
 <div id=".check" class="item">
-    <p class="monospace">
+    <span class="monospace">
     
     
     
     
     
     
+        <a class="item-name method-name" href="#.check">check</a><span>(<span class="item-name"><span class="param-name">name</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>)</span><span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
+    </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/command/argument.ts#L163>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
   <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
 </svg>
 </span></a>
-        <a class="item-name method-name" href="#.check">check</a><span>(<span class="item-name"><span class="param-name">name</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>)</span><span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
         <div class="docblock">
         <ul></ul>
         
-        </div>
-    </p>
+    </div>
 </div></div>
     <div>
 <div id=".getInfo" class="item">
-    <p class="monospace">
+    <span class="monospace">
     
     
     
     
     
     
+        <a class="item-name method-name" href="#.getInfo">getInfo</a><span>(<span class="item-name"><span class="param-name">content</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>)</span><span><span class="symbol">:</span> 
+<span>{ <span class="item-name"><a class="property-name" href="#.index">index</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>, <span class="item-name"><a class="property-name" href="#.name">name</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span> }</span></span>
+    </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/command/argument.ts#L167>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
   <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
 </svg>
 </span></a>
-        <a class="item-name method-name" href="#.getInfo">getInfo</a><span>(<span class="item-name"><span class="param-name">content</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>)</span><span><span class="symbol">:</span> 
-<span>{ <span class="item-name" id=".index"><a class="property-name" href="#.index">index</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>, <span class="item-name" id=".name"><a class="property-name" href="#.name">name</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span> }</span></span>
         <div class="docblock">
         <ul></ul>
         
-        </div>
-    </p>
+    </div>
 </div></div>
     <div>
 <div id=".getName" class="item">
-    <p class="monospace">
+    <span class="monospace">
     
     
     
     
     
     
+        <a class="item-name method-name" href="#.getName">getName</a><span>(<span class="item-name"><span class="param-name">content</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>)</span><span><span class="symbol">:</span> 
+<span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span></span>
+    </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/command/argument.ts#L182>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
   <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
 </svg>
 </span></a>
-        <a class="item-name method-name" href="#.getName">getName</a><span>(<span class="item-name"><span class="param-name">content</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>)</span><span><span class="symbol">:</span> 
-<span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span></span>
         <div class="docblock">
         <ul></ul>
         
-        </div>
-    </p>
+    </div>
 </div></div>
     <div>
 <div id=".setPrefixes" class="item">
-    <p class="monospace">
+    <span class="monospace">
     
     
     
     
     
     
+        <a class="item-name method-name" href="#.setPrefixes">setPrefixes</a><span>(<span class="item-name"><span class="param-name">prefixes</span><span class="symbol">:</span> 
+<span><span class="reference-link"><a class='object' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></span><span>&lt;<span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>&gt;</span></span></span>, <span class="item-name"><span class="param-name">prefixSpace</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span> <span class="symbol">=</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">false</a></span></span>)</span><span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://www.typescriptlang.org/docs/handbook/2/functions.html#void">void</a></span></span>
+    </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/command/argument.ts#L231>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
   <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
 </svg>
 </span></a>
-        <a class="item-name method-name" href="#.setPrefixes">setPrefixes</a><span>(<span class="item-name"><span class="param-name">prefixes</span><span class="symbol">:</span> 
-<span><span class="reference-link"><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>[]</span></span></span>, <span class="item-name"><span class="param-name">prefixSpace</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span> <span class="symbol">=</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">false</a></span></span>)</span><span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://www.typescriptlang.org/docs/handbook/2/functions.html#void">void</a></span></span>
         <div class="docblock">
         <ul></ul>
         
-        </div>
-    </p>
+    </div>
 </div></div>
     <div>
 <div id=".parse" class="item">
-    <p class="monospace">
+    <span class="monospace">
     
     
     
     
     
     
+        <a class="item-name method-name" href="#.parse">parse</a><span>(<span class="item-name"><span class="param-name">value</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>, <span class="item-name"><span class="param-name">context</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.command\class\Context.html">Context</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Context</span><span style="display:block" class="monospace fw-bold">command/<span class="item-name object">Context</span></span></span></span></span></span>)</span><span><span class="symbol">:</span> 
+<span><span class="reference-link"><a class='external' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a></span><span>&lt;<span class="reference-link"><span class='primitive'>any</span></span>&gt;</span></span></span>
+    </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/command/argument.ts#L255>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
   <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
 </svg>
 </span></a>
-        <a class="item-name method-name" href="#.parse">parse</a><span>(<span class="item-name"><span class="param-name">value</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>, <span class="item-name"><span class="param-name">context</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.command\class\Context.html">Context</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Context</span><span style="display:block" class="monospace fw-bold">command/Context</span></span></span></span></span>)</span><span><span class="symbol">:</span> 
-<span><span class="reference-link"><a class='external' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a></span><span>&lt;<span class="reference-link"><span class='primitive'>any</span></span>&gt;</span></span></span>
         <div class="docblock">
         <ul></ul>
         
-        </div>
-    </p>
+    </div>
 </div></div>
 
 </div>

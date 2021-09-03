@@ -22,7 +22,7 @@
       <nav class="container-fluid navi">
       <div class="row">
         <div class="col-4">
-          <input class="form-control search" id="search" type="search" placeholder="Press '/' to search" aria-label="Search">
+          <input class="form-control search" id="search" type="search" placeholder="Search..." aria-label="Search">
         </div>
         <div class="col-8">
           <div class="row float-end" style="margin-top:5px">
@@ -45,8 +45,8 @@
     </nav>  <div class="container-fluid">
     <div class="row">
       <div class="col-lg-auto sidebar" id="sidebar">
-        <h1 class="lib-name text-center">Detritus</h1>
         
+    <h1 class="lib-name text-center"><a href="../../../index.html">Detritus</a></h1>
     <img src="../../../assets/logo.png" alt="Logo" class="img-fluid mx-auto d-block">
     <p class="current-thing text-center">class <span class="object">ClusterProcessChild</span></p>
     <div class="sidebar-members">
@@ -57,7 +57,7 @@
         <span class="sidebar-category">Properties</span>
         </div>
         <div class="collapsible-body open"> 
-        <span class="sidebar-category-member"><a href="#._restRequestsWaiting">_restRequestsWaiting</a></span><br><span class="sidebar-category-member"><a href="#._shardsIdentifying">_shardsIdentifying</a></span><br><span class="sidebar-category-member"><a href="#.cluster">cluster</a></span><br><span class="sidebar-category-member"><a href="#.clusterCount">clusterCount</a></span><br><span class="sidebar-category-member"><a href="#.clusterId">clusterId</a></span><br>
+        <span class="sidebar-category-member"><a href="#._restRequestsWaiting">_restRequestsWaiting</a></span><span class="sidebar-category-member"><a href="#._shardsIdentifying">_shardsIdentifying</a></span><span class="sidebar-category-member"><a href="#.cluster">cluster</a></span><span class="sidebar-category-member"><a href="#.clusterCount">clusterCount</a></span><span class="sidebar-category-member"><a href="#.clusterId">clusterId</a></span>
         </div>
         </div>
     
@@ -67,7 +67,7 @@
         <span class="sidebar-category">Methods</span>
         </div>
         <div class="collapsible-body open"> 
-        <span class="sidebar-category-member"><a href="#.hasMultipleClusters">hasMultipleClusters</a></span><br><span class="sidebar-category-member"><a href="#.onMessage">onMessage</a></span><br><span class="sidebar-category-member"><a href="#.send">send</a></span><br><span class="sidebar-category-member"><a href="#.sendIPC">sendIPC</a></span><br><span class="sidebar-category-member"><a href="#.sendIPCOrWarn">sendIPCOrWarn</a></span><br><span class="sidebar-category-member"><a href="#.broadcastEval">broadcastEval</a></span><br><span class="sidebar-category-member"><a href="#.sendRestRequest">sendRestRequest</a></span><br><span class="sidebar-category-member"><a href="#.on">on</a></span><br>
+        <span class="sidebar-category-member"><a href="#.hasMultipleClusters">hasMultipleClusters</a></span><span class="sidebar-category-member"><a href="#.onMessage">onMessage</a></span><span class="sidebar-category-member"><a href="#.send">send</a></span><span class="sidebar-category-member"><a href="#.sendIPC">sendIPC</a></span><span class="sidebar-category-member"><a href="#.sendIPCOrWarn">sendIPCOrWarn</a></span><span class="sidebar-category-member"><a href="#.broadcastEval">broadcastEval</a></span><span class="sidebar-category-member"><a href="#.sendRestRequest">sendRestRequest</a></span><span class="sidebar-category-member"><a href="#.on">on</a></span>
         </div>
         </div>
     
@@ -117,8 +117,20 @@
                             <span>Methods</span>
                         </div>
                         <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-getters" checked>
+                            <span>Getters</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-setters" checked>
+                            <span>Setters</span>
+                        </div>
+                        <div>
                             <input type="checkbox" class="c-checkbox" id="search-option-enum-members">
                             <span>Enum members</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-privates">
+                            <span>Show privates</span>
                         </div>
                     </div>
                 </div>
@@ -150,7 +162,7 @@
 </svg>
 </span></a>
     </h1>
-    <p class="item-name"><span class="keyword">extends</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-utils\class\EventSpewer.html">EventSpewer</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">EventSpewer</span><span style="display:block" class="monospace fw-bold">detritus-utils/EventSpewer</span></span></span></span></p>
+    <p class="item-name"><span class="keyword">extends</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-utils\class\EventSpewer.html">EventSpewer</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">EventSpewer</span><span style="display:block" class="monospace fw-bold">detritus-utils/<span class="item-name object">EventSpewer</span></span></span></span></span></p>
 
 
     
@@ -158,12 +170,13 @@
     <h2>Constructor</h2>
     
 <div id="class.constructor" class="item">
-    <p class="item-name"><span class="keyword">constructor</span><span>(<span class="item-name"><span class="param-name">cluster</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\class\ClusterClient.html">ClusterClient</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">ClusterClient</span><span style="display:block" class="monospace fw-bold">/ClusterClient</span></span></span></span></span>)</span></p>
+    <span class="item-name"><span class="keyword">constructor</span><span>(<span class="item-name"><span class="param-name">cluster</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\class\ClusterClient.html">ClusterClient</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">ClusterClient</span><span style="display:block" class="monospace fw-bold"><span class="item-name object">ClusterClient</span></span></span></span></span></span>)</span></span>
 
     <div class="docblock">
     <ul></ul>
     </div>
 </div>
+
     
     <h2>Properties</h2>
     <div><div class="item" id="._restRequestsWaiting">
@@ -172,10 +185,11 @@
     
     
     <span class="modifier">readonly</span>
-    <span class="item-name"><a class="property-name" href="#._restRequestsWaiting">_restRequestsWaiting</a><span>: <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-utils\class\BaseCollection.html">BaseCollection</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">BaseCollection</span><span style="display:block" class="monospace fw-bold">detritus-utils/BaseCollection</span></span></span><span>&lt;<span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>, <span>{ <span class="item-name" id=".promise"><a class="property-name" href="#.promise">promise</a><span class="symbol">:</span> 
-<span><span class="reference-link"><a class='external' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a></span><span>&lt;<span class="reference-link"><span class='primitive'>any</span></span>&gt;</span></span></span>, <span class="item-name" id=".reject"><a class="property-name" href="#.reject">reject</a><span class="symbol">:</span> 
-<span><span class="reference-link"><a class='external' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function">Function</a></span></span></span>, <span class="item-name" id=".resolve"><a class="property-name" href="#.resolve">resolve</a><span class="symbol">:</span> 
-<span><span class="reference-link"><a class='external' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function">Function</a></span></span></span> }</span>&gt;</span></span></span></span>
+    <span class="item-name"><a class="property-name" href="#._restRequestsWaiting">_restRequestsWaiting</a> <span class="symbol">=</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-utils\class\BaseCollection.html">BaseCollection</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">BaseCollection</span><span style="display:block" class="monospace fw-bold">detritus-utils/<span class="item-name object">BaseCollection</span></span></span></span><span>&lt;<span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>, <span>{ <span class="item-name"><a class="property-name" href="#.promise">promise</a><span class="symbol">:</span> 
+<span><span class="reference-link"><a class='external' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a></span><span>&lt;<span class="reference-link"><span class='primitive'>any</span></span>&gt;</span></span></span>, <span class="item-name"><a class="property-name" href="#.reject">reject</a><span class="symbol">:</span> 
+<span><span class="reference-link"><a class='object' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function">Function</a></span></span></span>, <span class="item-name"><a class="property-name" href="#.resolve">resolve</a><span class="symbol">:</span> 
+<span><span class="reference-link"><a class='object' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function">Function</a></span></span></span> }</span>&gt;</span></span>
+    </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/cluster/processchild.ts#L15>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
@@ -192,7 +206,8 @@
     
     
     <span class="modifier">readonly</span>
-    <span class="item-name"><a class="property-name" href="#._shardsIdentifying">_shardsIdentifying</a><span>: <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-utils\class\BaseSet.html">BaseSet</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">BaseSet</span><span style="display:block" class="monospace fw-bold">detritus-utils/BaseSet</span></span></span><span>&lt;<span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span>&gt;</span></span></span></span>
+    <span class="item-name"><a class="property-name" href="#._shardsIdentifying">_shardsIdentifying</a> <span class="symbol">=</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-utils\class\BaseSet.html">BaseSet</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">BaseSet</span><span style="display:block" class="monospace fw-bold">detritus-utils/<span class="item-name object">BaseSet</span></span></span></span><span>&lt;<span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span>&gt;</span></span>
+    </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/cluster/processchild.ts#L20>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
@@ -209,7 +224,8 @@
     
     
     <span class="modifier">readonly</span>
-    <span class="item-name"><a class="property-name" href="#.cluster">cluster</a><span>: <span><span class="c-tooltip"><a class="reference-link object" href="..\..\class\ClusterClient.html">ClusterClient</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">ClusterClient</span><span style="display:block" class="monospace fw-bold">/ClusterClient</span></span></span></span></span></span>
+    <span class="item-name"><a class="property-name" href="#.cluster">cluster</a><span>: <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\class\ClusterClient.html">ClusterClient</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">ClusterClient</span><span style="display:block" class="monospace fw-bold"><span class="item-name object">ClusterClient</span></span></span></span></span></span>
+    </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/cluster/processchild.ts#L21>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
@@ -226,7 +242,8 @@
     
     
     
-    <span class="item-name"><a class="property-name" href="#.clusterCount">clusterCount</a><span>: <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span></span>
+    <span class="item-name"><a class="property-name" href="#.clusterCount">clusterCount</a><span>: <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span> <span class="symbol">=</span> <span class="reference-link"><a class="primitive number-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">1</a></span>
+    </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/cluster/processchild.ts#L23>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
@@ -243,7 +260,8 @@
     
     
     
-    <span class="item-name"><a class="property-name" href="#.clusterId">clusterId</a><span>: <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span></span>
+    <span class="item-name"><a class="property-name" href="#.clusterId">clusterId</a><span>: <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span> <span class="symbol">=</span> <span class="reference-link"><a class="primitive number-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">0</a></span>
+    </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/cluster/processchild.ts#L24>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
@@ -259,232 +277,232 @@
 
     <div>
 <div id=".hasMultipleClusters" class="item">
-    <p class="monospace">
+    <span class="monospace">
     
     
     
     
     <span class="modifier">get</span>
     
+        <a class="item-name method-name" href="#.hasMultipleClusters">hasMultipleClusters</a><span>()</span><span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
+    </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/cluster/processchild.ts#L68>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
   <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
 </svg>
 </span></a>
-        <a class="item-name method-name" href="#.hasMultipleClusters">hasMultipleClusters</a><span>()</span><span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
         <div class="docblock">
         
         
-        </div>
-    </p>
+    </div>
 </div></div>
     <div>
 <div id=".onMessage" class="item">
-    <p class="monospace">
+    <span class="monospace">
     
     
     
     
     
     
+        <a class="item-name method-name" href="#.onMessage">onMessage</a><span>(<span class="item-name"><span class="param-name">message</span><span class="symbol">:</span> 
+<span><span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.cluster\m.ClusterIPCTypes\interface\IPCMessage.html">IPCMessage</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">IPCMessage</span><span style="display:block" class="monospace fw-bold">cluster/ClusterIPCTypes/<span class="item-name object">IPCMessage</span></span></span></span></span><span class='symbol'> | </span><span class="reference-link"><span class='primitive'>any</span></span></span></span>)</span><span><span class="symbol">:</span> 
+<span><span class="reference-link"><a class='external' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a></span><span>&lt;<span class="reference-link"><a class='primitive' href="https://www.typescriptlang.org/docs/handbook/2/functions.html#void">void</a></span>&gt;</span></span></span>
+    </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/cluster/processchild.ts#L72>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
   <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
 </svg>
 </span></a>
-        <a class="item-name method-name" href="#.onMessage">onMessage</a><span>(<span class="item-name"><span class="param-name">message</span><span class="symbol">:</span> 
-<span><span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.cluster\m.ClusterIPCTypes\interface\IPCMessage.html">IPCMessage</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">IPCMessage</span><span style="display:block" class="monospace fw-bold">cluster/ClusterIPCTypes/IPCMessage</span></span></span></span><span class='symbol'> | </span><span class="reference-link"><span class='primitive'>any</span></span></span></span>)</span><span><span class="symbol">:</span> 
-<span><span class="reference-link"><a class='external' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a></span><span>&lt;<span class="reference-link"><a class='primitive' href="https://www.typescriptlang.org/docs/handbook/2/functions.html#void">void</a></span>&gt;</span></span></span>
         <div class="docblock">
         <ul></ul>
         
-        </div>
-    </p>
+    </div>
 </div></div>
     <div>
 <div id=".send" class="item">
-    <p class="monospace">
+    <span class="monospace">
     
     
     
     
     
     
+        <a class="item-name method-name" href="#.send">send</a><span>(<span class="item-name"><span class="param-name">message</span><span class="symbol">:</span> 
+<span><span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.cluster\m.ClusterIPCTypes\interface\IPCMessage.html">IPCMessage</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">IPCMessage</span><span style="display:block" class="monospace fw-bold">cluster/ClusterIPCTypes/<span class="item-name object">IPCMessage</span></span></span></span></span><span class='symbol'> | </span><span class="reference-link"><span class='primitive'>any</span></span></span></span>)</span><span><span class="symbol">:</span> 
+<span><span class="reference-link"><a class='external' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a></span><span>&lt;<span class="reference-link"><a class='primitive' href="https://www.typescriptlang.org/docs/handbook/2/functions.html#void">void</a></span>&gt;</span></span></span>
+    </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/cluster/processchild.ts#L144>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
   <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
 </svg>
 </span></a>
-        <a class="item-name method-name" href="#.send">send</a><span>(<span class="item-name"><span class="param-name">message</span><span class="symbol">:</span> 
-<span><span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.cluster\m.ClusterIPCTypes\interface\IPCMessage.html">IPCMessage</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">IPCMessage</span><span style="display:block" class="monospace fw-bold">cluster/ClusterIPCTypes/IPCMessage</span></span></span></span><span class='symbol'> | </span><span class="reference-link"><span class='primitive'>any</span></span></span></span>)</span><span><span class="symbol">:</span> 
-<span><span class="reference-link"><a class='external' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a></span><span>&lt;<span class="reference-link"><a class='primitive' href="https://www.typescriptlang.org/docs/handbook/2/functions.html#void">void</a></span>&gt;</span></span></span>
         <div class="docblock">
         <ul></ul>
         
-        </div>
-    </p>
+    </div>
 </div></div>
     <div>
 <div id=".sendIPC" class="item">
-    <p class="monospace">
+    <span class="monospace">
     
     
     
     
     
     
+        <a class="item-name method-name" href="#.sendIPC">sendIPC</a><span>(<div class="left-item"><span class="item-name"><span class="param-name">op</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>,<br><span class="item-name"><span class="param-name">data</span><span class="symbol">:</span> <span class="reference-link"><span class='primitive'>any</span></span> <span class="symbol">=</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></span></span>,<br><span class="item-name"><span class="param-name">request</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span> <span class="symbol">=</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">false</a></span></span>,<br><span class="item-name"><span class="param-name">shard</span><span class="symbol">?</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span></div>)</span><span><span class="symbol">:</span> 
+<span><span class="reference-link"><a class='external' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a></span><span>&lt;<span class="reference-link"><a class='primitive' href="https://www.typescriptlang.org/docs/handbook/2/functions.html#void">void</a></span>&gt;</span></span></span>
+    </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/cluster/processchild.ts#L157>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
   <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
 </svg>
 </span></a>
-        <a class="item-name method-name" href="#.sendIPC">sendIPC</a><span>(<span class="item-name"><span class="param-name">op</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>, <span class="item-name"><span class="param-name">data</span><span class="symbol">:</span> <span class="reference-link"><span class='primitive'>any</span></span> <span class="symbol">=</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></span></span>, <span class="item-name"><span class="param-name">request</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span> <span class="symbol">=</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">false</a></span></span>, <span class="item-name"><span class="param-name">shard</span><span class="symbol">?</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>)</span><span><span class="symbol">:</span> 
-<span><span class="reference-link"><a class='external' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a></span><span>&lt;<span class="reference-link"><a class='primitive' href="https://www.typescriptlang.org/docs/handbook/2/functions.html#void">void</a></span>&gt;</span></span></span>
         <div class="docblock">
         <ul></ul>
         
-        </div>
-    </p>
+    </div>
 </div></div>
     <div>
 <div id=".sendIPCOrWarn" class="item">
-    <p class="monospace">
+    <span class="monospace">
     
     
     
     
     
     
+        <a class="item-name method-name" href="#.sendIPCOrWarn">sendIPCOrWarn</a><span>(<div class="left-item"><span class="item-name"><span class="param-name">op</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>,<br><span class="item-name"><span class="param-name">data</span><span class="symbol">:</span> <span class="reference-link"><span class='primitive'>any</span></span> <span class="symbol">=</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></span></span>,<br><span class="item-name"><span class="param-name">request</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span> <span class="symbol">=</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">false</a></span></span>,<br><span class="item-name"><span class="param-name">shard</span><span class="symbol">?</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span></div>)</span><span><span class="symbol">:</span> 
+<span><span class="reference-link"><a class='external' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a></span><span>&lt;<span class="reference-link"><a class='primitive' href="https://www.typescriptlang.org/docs/handbook/2/functions.html#void">void</a></span>&gt;</span></span></span>
+    </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/cluster/processchild.ts#L166>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
   <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
 </svg>
 </span></a>
-        <a class="item-name method-name" href="#.sendIPCOrWarn">sendIPCOrWarn</a><span>(<span class="item-name"><span class="param-name">op</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>, <span class="item-name"><span class="param-name">data</span><span class="symbol">:</span> <span class="reference-link"><span class='primitive'>any</span></span> <span class="symbol">=</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></span></span>, <span class="item-name"><span class="param-name">request</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span> <span class="symbol">=</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">false</a></span></span>, <span class="item-name"><span class="param-name">shard</span><span class="symbol">?</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>)</span><span><span class="symbol">:</span> 
-<span><span class="reference-link"><a class='external' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a></span><span>&lt;<span class="reference-link"><a class='primitive' href="https://www.typescriptlang.org/docs/handbook/2/functions.html#void">void</a></span>&gt;</span></span></span>
         <div class="docblock">
         <ul></ul>
         
-        </div>
-    </p>
+    </div>
 </div></div>
     <div>
 <div id=".broadcastEval" class="item">
-    <p class="monospace">
+    <span class="monospace">
     
     
     
     
     
     
+        <a class="item-name method-name" href="#.broadcastEval">broadcastEval</a><span>(<span class="item-name"><span class="param-name">code</span><span class="symbol">:</span> 
+<span><span><span class="reference-link"><a class='object' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function">Function</a></span></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span></span>, <span class="item-name"><span class="symbol">...</span><span class="param-name">args</span><span class="symbol">:</span> 
+<span><span class="reference-link"><span class='primitive'>any</span></span>[]</span></span>)</span><span><span class="symbol">:</span> 
+<span><span class="reference-link"><a class='external' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a></span><span>&lt;<span><span class="reference-link"><a class='object' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></span><span>&lt;<span class="reference-link"><span class='primitive'>any</span></span>&gt;</span></span>&gt;</span></span></span>
+    </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/cluster/processchild.ts#L180>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
   <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
 </svg>
 </span></a>
-        <a class="item-name method-name" href="#.broadcastEval">broadcastEval</a><span>(<span class="item-name"><span class="param-name">code</span><span class="symbol">:</span> 
-<span><span><span class="reference-link"><a class='external' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function">Function</a></span></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span></span>, <span class="item-name"><span class="symbol">...</span><span class="param-name">args</span><span class="symbol">:</span> 
-<span><span class="reference-link"><span class='primitive'>any</span></span>[]</span></span>)</span><span><span class="symbol">:</span> 
-<span><span class="reference-link"><a class='external' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a></span><span>&lt;<span><span class="reference-link"><span class="reference-link"><span class='primitive'>any</span></span>[]</span></span>&gt;</span></span></span>
         <div class="docblock">
         <ul></ul>
         
-        </div>
-    </p>
+    </div>
 </div></div>
     <div>
 <div id=".sendRestRequest" class="item">
-    <p class="monospace">
+    <span class="monospace">
     
     
     
     
     
     
+        <a class="item-name method-name" href="#.sendRestRequest">sendRestRequest</a><span>(<span class="item-name"><span class="param-name">name</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>, <span class="item-name"><span class="param-name">args</span><span class="symbol">?</span><span class="symbol">:</span> 
+<span><span class="reference-link"><a class='object' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></span><span>&lt;<span class="reference-link"><span class='primitive'>any</span></span>&gt;</span></span></span>)</span><span><span class="symbol">:</span> 
+<span><span class="reference-link"><a class='external' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a></span><span>&lt;<span class="reference-link"><span class='primitive'>any</span></span>&gt;</span></span></span>
+    </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/cluster/processchild.ts#L239>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
   <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
 </svg>
 </span></a>
-        <a class="item-name method-name" href="#.sendRestRequest">sendRestRequest</a><span>(<span class="item-name"><span class="param-name">name</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>, <span class="item-name"><span class="param-name">args</span><span class="symbol">?</span><span class="symbol">:</span> 
-<span><span class="reference-link"><span class="reference-link"><span class='primitive'>any</span></span>[]</span></span></span>)</span><span><span class="symbol">:</span> 
-<span><span class="reference-link"><a class='external' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a></span><span>&lt;<span class="reference-link"><span class='primitive'>any</span></span>&gt;</span></span></span>
         <div class="docblock">
         <ul></ul>
         
-        </div>
-    </p>
+    </div>
 </div></div>
     <div>
 <div id=".on" class="item">
-    <p class="monospace">
+    <span class="monospace">
     
     
     
     
     
     
-    <a href=https://github.com/detritusjs/client/tree/master/src/cluster/processchild.ts#L255>
-<span class="float-end sourceCode">
-<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
-  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
-</svg>
-</span></a>
         <a class="item-name method-name" href="#.on">on</a><span>(<span class="item-name"><span class="param-name">event</span><span class="symbol">:</span> 
 <span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol">symbol</a></span></span></span>, <span class="item-name"><span class="param-name">listener</span><span class="symbol">:</span> <span>(<span class="item-name"><span class="symbol">...</span><span class="param-name">args</span><span class="symbol">:</span> 
-<span><span class="reference-link"><span class='primitive'>any</span></span>[]</span></span>) <span class="symbol">=></span> <span class="reference-link"><a class='primitive' href="https://www.typescriptlang.org/docs/handbook/2/functions.html#void">void</a></span></span></span>)</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.cluster\class\ClusterProcessChild.html">ClusterProcessChild</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">ClusterProcessChild</span><span style="display:block" class="monospace fw-bold">cluster/ClusterProcessChild</span></span></span></span></span>
-        <div class="docblock">
-        <ul></ul>
-        
-        </div>
-    </p>
-    <p class="monospace">
-    
-    
-    
-    
-    
-    
-    <a href=https://github.com/detritusjs/client/tree/master/src/cluster/processchild.ts#L255>
+<span><span class="reference-link"><span class='primitive'>any</span></span>[]</span></span>) <span class="symbol">=></span> <span class="reference-link"><a class='primitive' href="https://www.typescriptlang.org/docs/handbook/2/functions.html#void">void</a></span></span></span>)</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.cluster\class\ClusterProcessChild.html">ClusterProcessChild</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">ClusterProcessChild</span><span style="display:block" class="monospace fw-bold">cluster/<span class="item-name object">ClusterProcessChild</span></span></span></span></span></span>
+    </span>
+    <a href=https://github.com/detritusjs/client/tree/master/src/cluster/processchild.ts#L257>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
   <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
 </svg>
 </span></a>
-        <a class="item-name method-name" href="#.on">on</a><span>(<span class="item-name"><span class="param-name">event</span><span class="symbol">:</span> <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">'ipc'</a></span></span>, <span class="item-name"><span class="param-name">listener</span><span class="symbol">:</span> <span>(<span class="item-name"><span class="param-name">message</span><span class="symbol">:</span> <span class="reference-link"><span class='primitive'>any</span></span></span>) <span class="symbol">=></span> <span class="reference-link"><span class='primitive'>any</span></span></span></span>)</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.cluster\class\ClusterProcessChild.html">ClusterProcessChild</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">ClusterProcessChild</span><span style="display:block" class="monospace fw-bold">cluster/ClusterProcessChild</span></span></span></span></span>
         <div class="docblock">
         <ul></ul>
         
-        </div>
-    </p>
-    <p class="monospace">
+    </div>
+    <span class="monospace">
     
     
     
     
     
     
-    <a href=https://github.com/detritusjs/client/tree/master/src/cluster/processchild.ts#L255>
+        <a class="item-name method-name" href="#.on">on</a><span>(<span class="item-name"><span class="param-name">event</span><span class="symbol">:</span> <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">'ipc'</a></span></span>, <span class="item-name"><span class="param-name">listener</span><span class="symbol">:</span> <span>(<span class="item-name"><span class="param-name">message</span><span class="symbol">:</span> <span class="reference-link"><span class='primitive'>any</span></span></span>) <span class="symbol">=></span> <span class="reference-link"><span class='primitive'>any</span></span></span></span>)</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.cluster\class\ClusterProcessChild.html">ClusterProcessChild</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">ClusterProcessChild</span><span style="display:block" class="monospace fw-bold">cluster/<span class="item-name object">ClusterProcessChild</span></span></span></span></span></span>
+    </span>
+    <a href=https://github.com/detritusjs/client/tree/master/src/cluster/processchild.ts#L257>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
   <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
 </svg>
 </span></a>
+        <div class="docblock">
+        <ul></ul>
+        
+    </div>
+    <span class="monospace">
+    
+    
+    
+    
+    
+    
         <a class="item-name method-name" href="#.on">on</a><span>(<span class="item-name"><span class="param-name">event</span><span class="symbol">:</span> 
 <span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol">symbol</a></span></span></span>, <span class="item-name"><span class="param-name">listener</span><span class="symbol">:</span> <span>(<span class="item-name"><span class="symbol">...</span><span class="param-name">args</span><span class="symbol">:</span> 
-<span><span class="reference-link"><span class='primitive'>any</span></span>[]</span></span>) <span class="symbol">=></span> <span class="reference-link"><a class='primitive' href="https://www.typescriptlang.org/docs/handbook/2/functions.html#void">void</a></span></span></span>)</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.cluster\class\ClusterProcessChild.html">ClusterProcessChild</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">ClusterProcessChild</span><span style="display:block" class="monospace fw-bold">cluster/ClusterProcessChild</span></span></span></span></span>
+<span><span class="reference-link"><span class='primitive'>any</span></span>[]</span></span>) <span class="symbol">=></span> <span class="reference-link"><a class='primitive' href="https://www.typescriptlang.org/docs/handbook/2/functions.html#void">void</a></span></span></span>)</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.cluster\class\ClusterProcessChild.html">ClusterProcessChild</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">ClusterProcessChild</span><span style="display:block" class="monospace fw-bold">cluster/<span class="item-name object">ClusterProcessChild</span></span></span></span></span></span>
+    </span>
+    <a href=https://github.com/detritusjs/client/tree/master/src/cluster/processchild.ts#L257>
+<span class="float-end sourceCode">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
+</svg>
+</span></a>
         <div class="docblock">
         <ul></ul>
         
-        </div>
-    </p>
+    </div>
 </div></div>
 
 </div>

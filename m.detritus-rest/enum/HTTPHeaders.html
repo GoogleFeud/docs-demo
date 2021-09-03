@@ -22,7 +22,7 @@
       <nav class="container-fluid navi">
       <div class="row">
         <div class="col-4">
-          <input class="form-control search" id="search" type="search" placeholder="Press '/' to search" aria-label="Search">
+          <input class="form-control search" id="search" type="search" placeholder="Search..." aria-label="Search">
         </div>
         <div class="col-8">
           <div class="row float-end" style="margin-top:5px">
@@ -45,8 +45,8 @@
     </nav>  <div class="container-fluid">
     <div class="row">
       <div class="col-lg-auto sidebar" id="sidebar">
-        <h1 class="lib-name text-center">Detritus</h1>
         
+    <h1 class="lib-name text-center"><a href="../../index.html">Detritus</a></h1>
     <img src="../../assets/logo.png" alt="Logo" class="img-fluid mx-auto d-block">
     <p class="current-thing text-center">enum <span class="object">HTTPHeaders</span></p>
     <div class="sidebar-members">
@@ -57,7 +57,7 @@
         <span class="sidebar-category">Members</span>
         </div>
         <div class="collapsible-body open"> 
-        <span class="sidebar-category-member"><a href="#.HTTP2_AUTHORITY">HTTP2_AUTHORITY</a></span><br><span class="sidebar-category-member"><a href="#.HTTP2_METHOD">HTTP2_METHOD</a></span><br><span class="sidebar-category-member"><a href="#.HTTP2_PATH">HTTP2_PATH</a></span><br><span class="sidebar-category-member"><a href="#.HTTP2_PROTOCOL">HTTP2_PROTOCOL</a></span><br><span class="sidebar-category-member"><a href="#.HTTP2_SCHEME">HTTP2_SCHEME</a></span><br><span class="sidebar-category-member"><a href="#.HTTP2_STATUS">HTTP2_STATUS</a></span><br><span class="sidebar-category-member"><a href="#.ACCEPT_ENCODING">ACCEPT_ENCODING</a></span><br><span class="sidebar-category-member"><a href="#.CONTENT_ENCODING">CONTENT_ENCODING</a></span><br><span class="sidebar-category-member"><a href="#.CONTENT_LENGTH">CONTENT_LENGTH</a></span><br><span class="sidebar-category-member"><a href="#.CONTENT_TYPE">CONTENT_TYPE</a></span><br><span class="sidebar-category-member"><a href="#.USER_AGENT">USER_AGENT</a></span><br>
+        <span class="sidebar-category-member"><a href="#.HTTP2_AUTHORITY">HTTP2_AUTHORITY</a></span><span class="sidebar-category-member"><a href="#.HTTP2_METHOD">HTTP2_METHOD</a></span><span class="sidebar-category-member"><a href="#.HTTP2_PATH">HTTP2_PATH</a></span><span class="sidebar-category-member"><a href="#.HTTP2_PROTOCOL">HTTP2_PROTOCOL</a></span><span class="sidebar-category-member"><a href="#.HTTP2_SCHEME">HTTP2_SCHEME</a></span><span class="sidebar-category-member"><a href="#.HTTP2_STATUS">HTTP2_STATUS</a></span><span class="sidebar-category-member"><a href="#.ACCEPT_ENCODING">ACCEPT_ENCODING</a></span><span class="sidebar-category-member"><a href="#.CONTENT_ENCODING">CONTENT_ENCODING</a></span><span class="sidebar-category-member"><a href="#.CONTENT_LENGTH">CONTENT_LENGTH</a></span><span class="sidebar-category-member"><a href="#.CONTENT_TYPE">CONTENT_TYPE</a></span><span class="sidebar-category-member"><a href="#.USER_AGENT">USER_AGENT</a></span>
         </div>
         </div>
     
@@ -107,8 +107,20 @@
                             <span>Methods</span>
                         </div>
                         <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-getters" checked>
+                            <span>Getters</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-setters" checked>
+                            <span>Setters</span>
+                        </div>
+                        <div>
                             <input type="checkbox" class="c-checkbox" id="search-option-enum-members">
                             <span>Enum members</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-privates">
+                            <span>Show privates</span>
                         </div>
                     </div>
                 </div>
@@ -144,67 +156,67 @@
     
 
     <h2>Members</h2>
-    <div id=".HTTP2_AUTHORITY">
+    <div id=".HTTP2_AUTHORITY" class="item">
         <a class="item-name" href="#.HTTP2_AUTHORITY">HTTP2_AUTHORITY</a>
 
         <span>= <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">':authority'</a></span></span>
 
     </div>
-    <div id=".HTTP2_METHOD">
+    <div id=".HTTP2_METHOD" class="item">
         <a class="item-name" href="#.HTTP2_METHOD">HTTP2_METHOD</a>
 
         <span>= <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">':method'</a></span></span>
 
     </div>
-    <div id=".HTTP2_PATH">
+    <div id=".HTTP2_PATH" class="item">
         <a class="item-name" href="#.HTTP2_PATH">HTTP2_PATH</a>
 
         <span>= <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">':path'</a></span></span>
 
     </div>
-    <div id=".HTTP2_PROTOCOL">
+    <div id=".HTTP2_PROTOCOL" class="item">
         <a class="item-name" href="#.HTTP2_PROTOCOL">HTTP2_PROTOCOL</a>
 
         <span>= <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">':protocol'</a></span></span>
 
     </div>
-    <div id=".HTTP2_SCHEME">
+    <div id=".HTTP2_SCHEME" class="item">
         <a class="item-name" href="#.HTTP2_SCHEME">HTTP2_SCHEME</a>
 
         <span>= <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">':scheme'</a></span></span>
 
     </div>
-    <div id=".HTTP2_STATUS">
+    <div id=".HTTP2_STATUS" class="item">
         <a class="item-name" href="#.HTTP2_STATUS">HTTP2_STATUS</a>
 
         <span>= <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">':status'</a></span></span>
 
     </div>
-    <div id=".ACCEPT_ENCODING">
+    <div id=".ACCEPT_ENCODING" class="item">
         <a class="item-name" href="#.ACCEPT_ENCODING">ACCEPT_ENCODING</a>
 
         <span>= <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">'accept-encoding'</a></span></span>
 
     </div>
-    <div id=".CONTENT_ENCODING">
+    <div id=".CONTENT_ENCODING" class="item">
         <a class="item-name" href="#.CONTENT_ENCODING">CONTENT_ENCODING</a>
 
         <span>= <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">'content-encoding'</a></span></span>
 
     </div>
-    <div id=".CONTENT_LENGTH">
+    <div id=".CONTENT_LENGTH" class="item">
         <a class="item-name" href="#.CONTENT_LENGTH">CONTENT_LENGTH</a>
 
         <span>= <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">'content-length'</a></span></span>
 
     </div>
-    <div id=".CONTENT_TYPE">
+    <div id=".CONTENT_TYPE" class="item">
         <a class="item-name" href="#.CONTENT_TYPE">CONTENT_TYPE</a>
 
         <span>= <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">'content-type'</a></span></span>
 
     </div>
-    <div id=".USER_AGENT">
+    <div id=".USER_AGENT" class="item">
         <a class="item-name" href="#.USER_AGENT">USER_AGENT</a>
 
         <span>= <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">'user-agent'</a></span></span>

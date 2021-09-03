@@ -22,7 +22,7 @@
       <nav class="container-fluid navi">
       <div class="row">
         <div class="col-4">
-          <input class="form-control search" id="search" type="search" placeholder="Press '/' to search" aria-label="Search">
+          <input class="form-control search" id="search" type="search" placeholder="Search..." aria-label="Search">
         </div>
         <div class="col-8">
           <div class="row float-end" style="margin-top:5px">
@@ -45,8 +45,8 @@
     </nav>  <div class="container-fluid">
     <div class="row">
       <div class="col-lg-auto sidebar" id="sidebar">
-        <h1 class="lib-name text-center">Detritus</h1>
         
+    <h1 class="lib-name text-center"><a href="../../index.html">Detritus</a></h1>
     <img src="../../assets/logo.png" alt="Logo" class="img-fluid mx-auto d-block">
     <p class="current-thing text-center">class <span class="object">RestRequest</span></p>
     <div class="sidebar-members">
@@ -57,7 +57,7 @@
         <span class="sidebar-category">Properties</span>
         </div>
         <div class="collapsible-body open"> 
-        <span class="sidebar-category-member"><a href="#.bucketPath">bucketPath</a></span><br><span class="sidebar-category-member"><a href="#._bucketHash">_bucketHash</a></span><br><span class="sidebar-category-member"><a href="#._bucketKey">_bucketKey</a></span><br><span class="sidebar-category-member"><a href="#.client">client</a></span><br><span class="sidebar-category-member"><a href="#.errorOnRatelimit">errorOnRatelimit</a></span><br><span class="sidebar-category-member"><a href="#.maxRetries">maxRetries</a></span><br><span class="sidebar-category-member"><a href="#.request">request</a></span><br><span class="sidebar-category-member"><a href="#.retries">retries</a></span><br><span class="sidebar-category-member"><a href="#.retryDelay">retryDelay</a></span><br><span class="sidebar-category-member"><a href="#.skipRatelimitCheck">skipRatelimitCheck</a></span><br>
+        <span class="sidebar-category-member"><a href="#.bucketPath">bucketPath</a></span><span class="sidebar-category-member"><a href="#._bucketHash">_bucketHash</a></span><span class="sidebar-category-member"><a href="#._bucketKey">_bucketKey</a></span><span class="sidebar-category-member"><a href="#.client">client</a></span><span class="sidebar-category-member"><a href="#.errorOnRatelimit">errorOnRatelimit</a></span><span class="sidebar-category-member"><a href="#.maxRetries">maxRetries</a></span><span class="sidebar-category-member"><a href="#.request">request</a></span><span class="sidebar-category-member"><a href="#.retries">retries</a></span><span class="sidebar-category-member"><a href="#.retryDelay">retryDelay</a></span><span class="sidebar-category-member"><a href="#.skipRatelimitCheck">skipRatelimitCheck</a></span>
         </div>
         </div>
     
@@ -67,7 +67,7 @@
         <span class="sidebar-category">Methods</span>
         </div>
         <div class="collapsible-body open"> 
-        <span class="sidebar-category-member"><a href="#.bucket">bucket</a></span><br><span class="sidebar-category-member"><a href="#.bucketHash">bucketHash</a></span><br><span class="sidebar-category-member"><a href="#.bucketKey">bucketKey</a></span><br><span class="sidebar-category-member"><a href="#.shouldRatelimitCheck">shouldRatelimitCheck</a></span><br><span class="sidebar-category-member"><a href="#.sendRequest">sendRequest</a></span><br><span class="sidebar-category-member"><a href="#.send">send</a></span><br>
+        <span class="sidebar-category-member"><a href="#.bucket">bucket</a></span><span class="sidebar-category-member"><a href="#.bucketHash">bucketHash</a></span><span class="sidebar-category-member"><a href="#.bucketKey">bucketKey</a></span><span class="sidebar-category-member"><a href="#.shouldRatelimitCheck">shouldRatelimitCheck</a></span><span class="sidebar-category-member"><a href="#.sendRequest">sendRequest</a></span><span class="sidebar-category-member"><a href="#.send">send</a></span>
         </div>
         </div>
     
@@ -117,8 +117,20 @@
                             <span>Methods</span>
                         </div>
                         <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-getters" checked>
+                            <span>Getters</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-setters" checked>
+                            <span>Setters</span>
+                        </div>
+                        <div>
                             <input type="checkbox" class="c-checkbox" id="search-option-enum-members">
                             <span>Enum members</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-privates">
+                            <span>Show privates</span>
                         </div>
                     </div>
                 </div>
@@ -157,12 +169,13 @@
     <h2>Constructor</h2>
     
 <div id="class.constructor" class="item">
-    <p class="item-name"><span class="keyword">constructor</span><span>(<span class="item-name"><span class="param-name">client</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\class\Client.html">Client</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Client</span><span style="display:block" class="monospace fw-bold">/Client</span></span></span></span></span>, <span class="item-name"><span class="param-name">request</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.detritus-rest\class\Request.html">Request</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Request</span><span style="display:block" class="monospace fw-bold">detritus-rest/Request</span></span></span></span></span>, <span class="item-name"><span class="param-name">options</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\interface\RestRequestOptions.html">RestRequestOptions</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">RestRequestOptions</span><span style="display:block" class="monospace fw-bold">/RestRequestOptions</span></span></span></span> <span class="symbol">=</span> {}</span>)</span></p>
+    <span class="item-name"><span class="keyword">constructor</span><span>(<span class="item-name"><span class="param-name">client</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.detritus-client-rest\class\Client.html">Client</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Client</span><span style="display:block" class="monospace fw-bold"><span class="item-name object">Client</span></span></span></span></span></span>, <span class="item-name"><span class="param-name">request</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.detritus-rest\class\Request.html">Request</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Request</span><span style="display:block" class="monospace fw-bold">detritus-rest/<span class="item-name object">Request</span></span></span></span></span></span>, <span class="item-name"><span class="param-name">options</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.detritus-client-rest\interface\RestRequestOptions.html">RestRequestOptions</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">RestRequestOptions</span><span style="display:block" class="monospace fw-bold"><span class="item-name object">RestRequestOptions</span></span></span></span></span> <span class="symbol">=</span> {}</span>)</span></span>
 
     <div class="docblock">
     <ul></ul>
     </div>
 </div>
+
     
     <h2>Properties</h2>
     <div><div class="item" id=".bucketPath">
@@ -171,7 +184,8 @@
     
     
     <span class="modifier">readonly</span>
-    <span class="item-name"><a class="property-name" href="#.bucketPath">bucketPath</a><span>: <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span></span>
+    <span class="item-name"><a class="property-name" href="#.bucketPath">bucketPath</a><span>: <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>
+    </span>
     <a href=https://github.com/detritusjs/client-rest/tree/master/src/request.ts#L27>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
@@ -188,7 +202,8 @@
     
     
     
-    <span class="item-name"><a class="property-name" href="#._bucketHash">_bucketHash</a><span>: <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span></span>
+    <span class="item-name"><a class="property-name" href="#._bucketHash">_bucketHash</a><span>: <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>
+    </span>
     <a href=https://github.com/detritusjs/client-rest/tree/master/src/request.ts#L29>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
@@ -205,7 +220,8 @@
     
     
     
-    <span class="item-name"><a class="property-name" href="#._bucketKey">_bucketKey</a><span>: <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span></span>
+    <span class="item-name"><a class="property-name" href="#._bucketKey">_bucketKey</a><span>: <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>
+    </span>
     <a href=https://github.com/detritusjs/client-rest/tree/master/src/request.ts#L30>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
@@ -222,7 +238,8 @@
     
     
     
-    <span class="item-name"><a class="property-name" href="#.client">client</a><span>: <span><span class="c-tooltip"><a class="reference-link object" href="..\class\Client.html">Client</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Client</span><span style="display:block" class="monospace fw-bold">/Client</span></span></span></span></span></span>
+    <span class="item-name"><a class="property-name" href="#.client">client</a><span>: <span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.detritus-client-rest\class\Client.html">Client</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Client</span><span style="display:block" class="monospace fw-bold"><span class="item-name object">Client</span></span></span></span></span></span>
+    </span>
     <a href=https://github.com/detritusjs/client-rest/tree/master/src/request.ts#L32>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
@@ -239,7 +256,8 @@
     
     
     
-    <span class="item-name"><a class="property-name" href="#.errorOnRatelimit">errorOnRatelimit</a><span>: <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span></span>
+    <span class="item-name"><a class="property-name" href="#.errorOnRatelimit">errorOnRatelimit</a><span>: <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
+    </span>
     <a href=https://github.com/detritusjs/client-rest/tree/master/src/request.ts#L33>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
@@ -256,7 +274,8 @@
     
     
     
-    <span class="item-name"><a class="property-name" href="#.maxRetries">maxRetries</a><span>: <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span></span>
+    <span class="item-name"><a class="property-name" href="#.maxRetries">maxRetries</a><span>: <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>
+    </span>
     <a href=https://github.com/detritusjs/client-rest/tree/master/src/request.ts#L34>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
@@ -273,7 +292,8 @@
     
     
     
-    <span class="item-name"><a class="property-name" href="#.request">request</a><span>: <span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.detritus-rest\class\Request.html">Request</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Request</span><span style="display:block" class="monospace fw-bold">detritus-rest/Request</span></span></span></span></span></span>
+    <span class="item-name"><a class="property-name" href="#.request">request</a><span>: <span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.detritus-rest\class\Request.html">Request</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Request</span><span style="display:block" class="monospace fw-bold">detritus-rest/<span class="item-name object">Request</span></span></span></span></span></span>
+    </span>
     <a href=https://github.com/detritusjs/client-rest/tree/master/src/request.ts#L35>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
@@ -290,7 +310,8 @@
     
     
     
-    <span class="item-name"><a class="property-name" href="#.retries">retries</a><span>: <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span></span>
+    <span class="item-name"><a class="property-name" href="#.retries">retries</a><span>: <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>
+    </span>
     <a href=https://github.com/detritusjs/client-rest/tree/master/src/request.ts#L36>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
@@ -307,7 +328,8 @@
     
     
     
-    <span class="item-name"><a class="property-name" href="#.retryDelay">retryDelay</a><span>: <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span></span>
+    <span class="item-name"><a class="property-name" href="#.retryDelay">retryDelay</a><span>: <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>
+    </span>
     <a href=https://github.com/detritusjs/client-rest/tree/master/src/request.ts#L37>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
@@ -324,7 +346,8 @@
     
     
     
-    <span class="item-name"><a class="property-name" href="#.skipRatelimitCheck">skipRatelimitCheck</a><span>: <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span></span>
+    <span class="item-name"><a class="property-name" href="#.skipRatelimitCheck">skipRatelimitCheck</a><span>: <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
+    </span>
     <a href=https://github.com/detritusjs/client-rest/tree/master/src/request.ts#L38>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
@@ -340,140 +363,140 @@
 
     <div>
 <div id=".bucket" class="item">
-    <p class="monospace">
+    <span class="monospace">
     
     
     
     
     <span class="modifier">get</span>
     
+        <a class="item-name method-name" href="#.bucket">bucket</a><span>()</span><span><span class="symbol">:</span> 
+<span><span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.detritus-client-rest\class\Bucket.html">Bucket</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Bucket</span><span style="display:block" class="monospace fw-bold"><span class="item-name object">Bucket</span></span></span></span></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></span></span></span>
+    </span>
     <a href=https://github.com/detritusjs/client-rest/tree/master/src/request.ts#L78>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
   <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
 </svg>
 </span></a>
-        <a class="item-name method-name" href="#.bucket">bucket</a><span>()</span><span><span class="symbol">:</span> 
-<span><span><span class="c-tooltip"><a class="reference-link object" href="..\class\Bucket.html">Bucket</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Bucket</span><span style="display:block" class="monospace fw-bold">/Bucket</span></span></span></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></span></span></span>
         <div class="docblock">
         
         
-        </div>
-    </p>
+    </div>
 </div></div>
     <div>
 <div id=".bucketHash" class="item">
-    <p class="monospace">
+    <span class="monospace">
     
     
     
     
     <span class="modifier">get</span>
     
+        <a class="item-name method-name" href="#.bucketHash">bucketHash</a><span>()</span><span><span class="symbol">:</span> 
+<span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span></span>
+    </span>
     <a href=https://github.com/detritusjs/client-rest/tree/master/src/request.ts#L85>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
   <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
 </svg>
 </span></a>
-        <a class="item-name method-name" href="#.bucketHash">bucketHash</a><span>()</span><span><span class="symbol">:</span> 
-<span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span></span>
         <div class="docblock">
         
         
-        </div>
-    </p>
+    </div>
 </div></div>
     <div>
 <div id=".bucketKey" class="item">
-    <p class="monospace">
+    <span class="monospace">
     
     
     
     
     <span class="modifier">get</span>
     
+        <a class="item-name method-name" href="#.bucketKey">bucketKey</a><span>()</span><span><span class="symbol">:</span> 
+<span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span></span>
+    </span>
     <a href=https://github.com/detritusjs/client-rest/tree/master/src/request.ts#L102>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
   <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
 </svg>
 </span></a>
-        <a class="item-name method-name" href="#.bucketKey">bucketKey</a><span>()</span><span><span class="symbol">:</span> 
-<span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span></span>
         <div class="docblock">
         
         
-        </div>
-    </p>
+    </div>
 </div></div>
     <div>
 <div id=".shouldRatelimitCheck" class="item">
-    <p class="monospace">
+    <span class="monospace">
     
     
     
     
     <span class="modifier">get</span>
     
+        <a class="item-name method-name" href="#.shouldRatelimitCheck">shouldRatelimitCheck</a><span>()</span><span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
+    </span>
     <a href=https://github.com/detritusjs/client-rest/tree/master/src/request.ts#L122>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
   <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
 </svg>
 </span></a>
-        <a class="item-name method-name" href="#.shouldRatelimitCheck">shouldRatelimitCheck</a><span>()</span><span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
         <div class="docblock">
         
         
-        </div>
-    </p>
+    </div>
 </div></div>
     <div>
 <div id=".sendRequest" class="item">
-    <p class="monospace">
+    <span class="monospace">
     
     
     
     
     
     
+        <a class="item-name method-name" href="#.sendRequest">sendRequest</a><span>()</span><span><span class="symbol">:</span> 
+<span><span class="reference-link"><a class='external' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a></span><span>&lt;<span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.detritus-rest\class\Response.html">Response</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Response</span><span style="display:block" class="monospace fw-bold">detritus-rest/<span class="item-name object">Response</span></span></span></span></span>&gt;</span></span></span>
+    </span>
     <a href=https://github.com/detritusjs/client-rest/tree/master/src/request.ts#L129>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
   <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
 </svg>
 </span></a>
-        <a class="item-name method-name" href="#.sendRequest">sendRequest</a><span>()</span><span><span class="symbol">:</span> 
-<span><span class="reference-link"><a class='external' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a></span><span>&lt;<span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.detritus-rest\class\Response.html">Response</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Response</span><span style="display:block" class="monospace fw-bold">detritus-rest/Response</span></span></span></span>&gt;</span></span></span>
         <div class="docblock">
         <ul></ul>
         
-        </div>
-    </p>
+    </div>
 </div></div>
     <div>
 <div id=".send" class="item">
-    <p class="monospace">
+    <span class="monospace">
     
     
     
     
     
     
+        <a class="item-name method-name" href="#.send">send</a><span>()</span><span><span class="symbol">:</span> 
+<span><span class="reference-link"><a class='external' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a></span><span>&lt;<span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.detritus-rest\class\Response.html">Response</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Response</span><span style="display:block" class="monospace fw-bold">detritus-rest/<span class="item-name object">Response</span></span></span></span></span>&gt;</span></span></span>
+    </span>
     <a href=https://github.com/detritusjs/client-rest/tree/master/src/request.ts#L154>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
   <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
 </svg>
 </span></a>
-        <a class="item-name method-name" href="#.send">send</a><span>()</span><span><span class="symbol">:</span> 
-<span><span class="reference-link"><a class='external' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a></span><span>&lt;<span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.detritus-rest\class\Response.html">Response</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Response</span><span style="display:block" class="monospace fw-bold">detritus-rest/Response</span></span></span></span>&gt;</span></span></span>
         <div class="docblock">
         <ul></ul>
         
-        </div>
-    </p>
+    </div>
 </div></div>
 
 </div>

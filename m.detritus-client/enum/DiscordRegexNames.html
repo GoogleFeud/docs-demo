@@ -22,7 +22,7 @@
       <nav class="container-fluid navi">
       <div class="row">
         <div class="col-4">
-          <input class="form-control search" id="search" type="search" placeholder="Press '/' to search" aria-label="Search">
+          <input class="form-control search" id="search" type="search" placeholder="Search..." aria-label="Search">
         </div>
         <div class="col-8">
           <div class="row float-end" style="margin-top:5px">
@@ -45,8 +45,8 @@
     </nav>  <div class="container-fluid">
     <div class="row">
       <div class="col-lg-auto sidebar" id="sidebar">
-        <h1 class="lib-name text-center">Detritus</h1>
         
+    <h1 class="lib-name text-center"><a href="../../index.html">Detritus</a></h1>
     <img src="../../assets/logo.png" alt="Logo" class="img-fluid mx-auto d-block">
     <p class="current-thing text-center">enum <span class="object">DiscordRegexNames</span></p>
     <div class="sidebar-members">
@@ -57,7 +57,7 @@
         <span class="sidebar-category">Members</span>
         </div>
         <div class="collapsible-body open"> 
-        <span class="sidebar-category-member"><a href="#.EMOJI">EMOJI</a></span><br><span class="sidebar-category-member"><a href="#.JUMP_CHANNEL">JUMP_CHANNEL</a></span><br><span class="sidebar-category-member"><a href="#.JUMP_CHANNEL_MESSAGE">JUMP_CHANNEL_MESSAGE</a></span><br><span class="sidebar-category-member"><a href="#.MENTION_CHANNEL">MENTION_CHANNEL</a></span><br><span class="sidebar-category-member"><a href="#.MENTION_ROLE">MENTION_ROLE</a></span><br><span class="sidebar-category-member"><a href="#.MENTION_USER">MENTION_USER</a></span><br><span class="sidebar-category-member"><a href="#.TEXT_BOLD">TEXT_BOLD</a></span><br><span class="sidebar-category-member"><a href="#.TEXT_CODEBLOCK">TEXT_CODEBLOCK</a></span><br><span class="sidebar-category-member"><a href="#.TEXT_CODESTRING">TEXT_CODESTRING</a></span><br><span class="sidebar-category-member"><a href="#.TEXT_ITALICS">TEXT_ITALICS</a></span><br><span class="sidebar-category-member"><a href="#.TEXT_SNOWFLAKE">TEXT_SNOWFLAKE</a></span><br><span class="sidebar-category-member"><a href="#.TEXT_SPOILER">TEXT_SPOILER</a></span><br><span class="sidebar-category-member"><a href="#.TEXT_STRIKE">TEXT_STRIKE</a></span><br><span class="sidebar-category-member"><a href="#.TEXT_UNDERLINE">TEXT_UNDERLINE</a></span><br><span class="sidebar-category-member"><a href="#.TEXT_URL">TEXT_URL</a></span><br>
+        <span class="sidebar-category-member"><a href="#.EMOJI">EMOJI</a></span><span class="sidebar-category-member"><a href="#.JUMP_CHANNEL">JUMP_CHANNEL</a></span><span class="sidebar-category-member"><a href="#.JUMP_CHANNEL_MESSAGE">JUMP_CHANNEL_MESSAGE</a></span><span class="sidebar-category-member"><a href="#.MENTION_CHANNEL">MENTION_CHANNEL</a></span><span class="sidebar-category-member"><a href="#.MENTION_ROLE">MENTION_ROLE</a></span><span class="sidebar-category-member"><a href="#.MENTION_USER">MENTION_USER</a></span><span class="sidebar-category-member"><a href="#.TEXT_BOLD">TEXT_BOLD</a></span><span class="sidebar-category-member"><a href="#.TEXT_CODEBLOCK">TEXT_CODEBLOCK</a></span><span class="sidebar-category-member"><a href="#.TEXT_CODESTRING">TEXT_CODESTRING</a></span><span class="sidebar-category-member"><a href="#.TEXT_ITALICS">TEXT_ITALICS</a></span><span class="sidebar-category-member"><a href="#.TEXT_SNOWFLAKE">TEXT_SNOWFLAKE</a></span><span class="sidebar-category-member"><a href="#.TEXT_SPOILER">TEXT_SPOILER</a></span><span class="sidebar-category-member"><a href="#.TEXT_STRIKE">TEXT_STRIKE</a></span><span class="sidebar-category-member"><a href="#.TEXT_UNDERLINE">TEXT_UNDERLINE</a></span><span class="sidebar-category-member"><a href="#.TEXT_URL">TEXT_URL</a></span>
         </div>
         </div>
     
@@ -107,8 +107,20 @@
                             <span>Methods</span>
                         </div>
                         <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-getters" checked>
+                            <span>Getters</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-setters" checked>
+                            <span>Setters</span>
+                        </div>
+                        <div>
                             <input type="checkbox" class="c-checkbox" id="search-option-enum-members">
                             <span>Enum members</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-privates">
+                            <span>Show privates</span>
                         </div>
                     </div>
                 </div>
@@ -144,91 +156,91 @@
     
 
     <h2>Members</h2>
-    <div id=".EMOJI">
+    <div id=".EMOJI" class="item">
         <a class="item-name" href="#.EMOJI">EMOJI</a>
 
         <span>= <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">'EMOJI'</a></span></span>
 
     </div>
-    <div id=".JUMP_CHANNEL">
+    <div id=".JUMP_CHANNEL" class="item">
         <a class="item-name" href="#.JUMP_CHANNEL">JUMP_CHANNEL</a>
 
         <span>= <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">'JUMP_CHANNEL'</a></span></span>
 
     </div>
-    <div id=".JUMP_CHANNEL_MESSAGE">
+    <div id=".JUMP_CHANNEL_MESSAGE" class="item">
         <a class="item-name" href="#.JUMP_CHANNEL_MESSAGE">JUMP_CHANNEL_MESSAGE</a>
 
         <span>= <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">'JUMP_CHANNEL_MESSAGE'</a></span></span>
 
     </div>
-    <div id=".MENTION_CHANNEL">
+    <div id=".MENTION_CHANNEL" class="item">
         <a class="item-name" href="#.MENTION_CHANNEL">MENTION_CHANNEL</a>
 
         <span>= <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">'MENTION_CHANNEL'</a></span></span>
 
     </div>
-    <div id=".MENTION_ROLE">
+    <div id=".MENTION_ROLE" class="item">
         <a class="item-name" href="#.MENTION_ROLE">MENTION_ROLE</a>
 
         <span>= <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">'MENTION_ROLE'</a></span></span>
 
     </div>
-    <div id=".MENTION_USER">
+    <div id=".MENTION_USER" class="item">
         <a class="item-name" href="#.MENTION_USER">MENTION_USER</a>
 
         <span>= <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">'MENTION_USER'</a></span></span>
 
     </div>
-    <div id=".TEXT_BOLD">
+    <div id=".TEXT_BOLD" class="item">
         <a class="item-name" href="#.TEXT_BOLD">TEXT_BOLD</a>
 
         <span>= <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">'TEXT_BOLD'</a></span></span>
 
     </div>
-    <div id=".TEXT_CODEBLOCK">
+    <div id=".TEXT_CODEBLOCK" class="item">
         <a class="item-name" href="#.TEXT_CODEBLOCK">TEXT_CODEBLOCK</a>
 
         <span>= <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">'TEXT_CODEBLOCK'</a></span></span>
 
     </div>
-    <div id=".TEXT_CODESTRING">
+    <div id=".TEXT_CODESTRING" class="item">
         <a class="item-name" href="#.TEXT_CODESTRING">TEXT_CODESTRING</a>
 
         <span>= <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">'TEXT_CODESTRING'</a></span></span>
 
     </div>
-    <div id=".TEXT_ITALICS">
+    <div id=".TEXT_ITALICS" class="item">
         <a class="item-name" href="#.TEXT_ITALICS">TEXT_ITALICS</a>
 
         <span>= <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">'TEXT_ITALICS'</a></span></span>
 
     </div>
-    <div id=".TEXT_SNOWFLAKE">
+    <div id=".TEXT_SNOWFLAKE" class="item">
         <a class="item-name" href="#.TEXT_SNOWFLAKE">TEXT_SNOWFLAKE</a>
 
         <span>= <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">'TEXT_SNOWFLAKE'</a></span></span>
 
     </div>
-    <div id=".TEXT_SPOILER">
+    <div id=".TEXT_SPOILER" class="item">
         <a class="item-name" href="#.TEXT_SPOILER">TEXT_SPOILER</a>
 
         <span>= <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">'TEXT_SPOILER'</a></span></span>
 
     </div>
-    <div id=".TEXT_STRIKE">
+    <div id=".TEXT_STRIKE" class="item">
         <a class="item-name" href="#.TEXT_STRIKE">TEXT_STRIKE</a>
 
         <span>= <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">'TEXT_STRIKE'</a></span></span>
 
     </div>
-    <div id=".TEXT_UNDERLINE">
+    <div id=".TEXT_UNDERLINE" class="item">
         <a class="item-name" href="#.TEXT_UNDERLINE">TEXT_UNDERLINE</a>
 
         <span>= <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">'TEXT_UNDERLINE'</a></span></span>
 
     </div>
-    <div id=".TEXT_URL">
+    <div id=".TEXT_URL" class="item">
         <a class="item-name" href="#.TEXT_URL">TEXT_URL</a>
 
         <span>= <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">'TEXT_URL'</a></span></span>

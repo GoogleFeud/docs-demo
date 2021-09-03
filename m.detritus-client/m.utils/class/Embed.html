@@ -22,7 +22,7 @@
       <nav class="container-fluid navi">
       <div class="row">
         <div class="col-4">
-          <input class="form-control search" id="search" type="search" placeholder="Press '/' to search" aria-label="Search">
+          <input class="form-control search" id="search" type="search" placeholder="Search..." aria-label="Search">
         </div>
         <div class="col-8">
           <div class="row float-end" style="margin-top:5px">
@@ -45,8 +45,8 @@
     </nav>  <div class="container-fluid">
     <div class="row">
       <div class="col-lg-auto sidebar" id="sidebar">
-        <h1 class="lib-name text-center">Detritus</h1>
         
+    <h1 class="lib-name text-center"><a href="../../../index.html">Detritus</a></h1>
     <img src="../../../assets/logo.png" alt="Logo" class="img-fluid mx-auto d-block">
     <p class="current-thing text-center">class <span class="object">Embed</span></p>
     <div class="sidebar-members">
@@ -57,7 +57,7 @@
         <span class="sidebar-category">Properties</span>
         </div>
         <div class="collapsible-body open"> 
-        <span class="sidebar-category-member"><a href="#._keys">_keys</a></span><br><span class="sidebar-category-member"><a href="#.author">author</a></span><br><span class="sidebar-category-member"><a href="#.color">color</a></span><br><span class="sidebar-category-member"><a href="#.description">description</a></span><br><span class="sidebar-category-member"><a href="#.fields">fields</a></span><br><span class="sidebar-category-member"><a href="#.footer">footer</a></span><br><span class="sidebar-category-member"><a href="#.image">image</a></span><br><span class="sidebar-category-member"><a href="#.provider">provider</a></span><br><span class="sidebar-category-member"><a href="#.referenceId">referenceId</a></span><br><span class="sidebar-category-member"><a href="#.thumbnail">thumbnail</a></span><br><span class="sidebar-category-member"><a href="#.timestamp">timestamp</a></span><br><span class="sidebar-category-member"><a href="#.title">title</a></span><br><span class="sidebar-category-member"><a href="#.type">type</a></span><br><span class="sidebar-category-member"><a href="#.url">url</a></span><br><span class="sidebar-category-member"><a href="#.video">video</a></span><br>
+        <span class="sidebar-category-member"><a href="#._keys">_keys</a></span><span class="sidebar-category-member"><a href="#.author">author</a></span><span class="sidebar-category-member"><a href="#.color">color</a></span><span class="sidebar-category-member"><a href="#.description">description</a></span><span class="sidebar-category-member"><a href="#.fields">fields</a></span><span class="sidebar-category-member"><a href="#.footer">footer</a></span><span class="sidebar-category-member"><a href="#.image">image</a></span><span class="sidebar-category-member"><a href="#.provider">provider</a></span><span class="sidebar-category-member"><a href="#.referenceId">referenceId</a></span><span class="sidebar-category-member"><a href="#.thumbnail">thumbnail</a></span><span class="sidebar-category-member"><a href="#.timestamp">timestamp</a></span><span class="sidebar-category-member"><a href="#.title">title</a></span><span class="sidebar-category-member"><a href="#.type">type</a></span><span class="sidebar-category-member"><a href="#.url">url</a></span><span class="sidebar-category-member"><a href="#.video">video</a></span>
         </div>
         </div>
     
@@ -67,7 +67,7 @@
         <span class="sidebar-category">Methods</span>
         </div>
         <div class="collapsible-body open"> 
-        <span class="sidebar-category-member"><a href="#.length">length</a></span><br><span class="sidebar-category-member"><a href="#.size">size</a></span><br><span class="sidebar-category-member"><a href="#.addField">addField</a></span><br><span class="sidebar-category-member"><a href="#.setAuthor">setAuthor</a></span><br><span class="sidebar-category-member"><a href="#.setColor">setColor</a></span><br><span class="sidebar-category-member"><a href="#.setDescription">setDescription</a></span><br><span class="sidebar-category-member"><a href="#.setFooter">setFooter</a></span><br><span class="sidebar-category-member"><a href="#.setImage">setImage</a></span><br><span class="sidebar-category-member"><a href="#.setThumbnail">setThumbnail</a></span><br><span class="sidebar-category-member"><a href="#.setTimestamp">setTimestamp</a></span><br><span class="sidebar-category-member"><a href="#.setTitle">setTitle</a></span><br><span class="sidebar-category-member"><a href="#.setUrl">setUrl</a></span><br><span class="sidebar-category-member"><a href="#.mergeValue">mergeValue</a></span><br><span class="sidebar-category-member"><a href="#.toJSON">toJSON</a></span><br>
+        <span class="sidebar-category-member"><a href="#.length">length</a></span><span class="sidebar-category-member"><a href="#.size">size</a></span><span class="sidebar-category-member"><a href="#.addField">addField</a></span><span class="sidebar-category-member"><a href="#.setAuthor">setAuthor</a></span><span class="sidebar-category-member"><a href="#.setColor">setColor</a></span><span class="sidebar-category-member"><a href="#.setDescription">setDescription</a></span><span class="sidebar-category-member"><a href="#.setFooter">setFooter</a></span><span class="sidebar-category-member"><a href="#.setImage">setImage</a></span><span class="sidebar-category-member"><a href="#.setThumbnail">setThumbnail</a></span><span class="sidebar-category-member"><a href="#.setTimestamp">setTimestamp</a></span><span class="sidebar-category-member"><a href="#.setTitle">setTitle</a></span><span class="sidebar-category-member"><a href="#.setUrl">setUrl</a></span><span class="sidebar-category-member"><a href="#.mergeValue">mergeValue</a></span><span class="sidebar-category-member"><a href="#.toJSON">toJSON</a></span>
         </div>
         </div>
     
@@ -117,8 +117,20 @@
                             <span>Methods</span>
                         </div>
                         <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-getters" checked>
+                            <span>Getters</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-setters" checked>
+                            <span>Setters</span>
+                        </div>
+                        <div>
                             <input type="checkbox" class="c-checkbox" id="search-option-enum-members">
                             <span>Enum members</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-privates">
+                            <span>Show privates</span>
                         </div>
                     </div>
                 </div>
@@ -150,7 +162,7 @@
 </svg>
 </span></a>
     </h1>
-    <p class="item-name"><span class="keyword">extends</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.structures\class\Structure.html">Structure</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Structure</span><span style="display:block" class="monospace fw-bold">structures/Structure</span></span></span></span></p>
+    <p class="item-name"><span class="keyword">extends</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.structures\class\Structure.html">Structure</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Structure</span><span style="display:block" class="monospace fw-bold">structures/<span class="item-name object">Structure</span></span></span></span></span></p>
 
 
     <p>Utils Embed Structure</p>
@@ -159,12 +171,13 @@
     <h2>Constructor</h2>
     
 <div id="class.constructor" class="item">
-    <p class="item-name"><span class="keyword">constructor</span><span>(<span class="item-name"><span class="param-name">data</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.gateway\m.GatewayRawEvents\interface\RawMessageEmbed.html">RawMessageEmbed</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">RawMessageEmbed</span><span style="display:block" class="monospace fw-bold">gateway/GatewayRawEvents/RawMessageEmbed</span></span></span></span> <span class="symbol">=</span> {}</span>)</span></p>
+    <span class="item-name"><span class="keyword">constructor</span><span>(<span class="item-name"><span class="param-name">data</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.gateway\m.GatewayRawEvents\interface\RawMessageEmbed.html">RawMessageEmbed</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">RawMessageEmbed</span><span style="display:block" class="monospace fw-bold">gateway/GatewayRawEvents/<span class="item-name object">RawMessageEmbed</span></span></span></span></span> <span class="symbol">=</span> {}</span>)</span></span>
 
     <div class="docblock">
     <ul></ul>
     </div>
 </div>
+
     
     <h2>Properties</h2>
     <div><div class="item" id="._keys">
@@ -173,7 +186,8 @@
     
     
     <span class="modifier">readonly</span>
-    <span class="item-name"><a class="property-name" href="#._keys">_keys</a><span>: keysEmbed</span></span>
+    <span class="item-name"><a class="property-name" href="#._keys">_keys</a>
+    </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/utils/embed.ts#L30>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
@@ -190,7 +204,8 @@
     
     
     
-    <span class="item-name"><a class="property-name" href="#.author">author</a><span>: <span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.utils\class\EmbedAuthor.html">EmbedAuthor</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">EmbedAuthor</span><span style="display:block" class="monospace fw-bold">utils/EmbedAuthor</span></span></span></span></span></span>
+    <span class="item-name"><a class="property-name" href="#.author">author</a><span>: <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.utils\class\EmbedAuthor.html">EmbedAuthor</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">EmbedAuthor</span><span style="display:block" class="monospace fw-bold">utils/<span class="item-name object">EmbedAuthor</span></span></span></span></span></span>
+    </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/utils/embed.ts#L32>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
@@ -207,7 +222,8 @@
     
     
     
-    <span class="item-name"><a class="property-name" href="#.color">color</a><span>: <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span></span>
+    <span class="item-name"><a class="property-name" href="#.color">color</a><span>: <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>
+    </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/utils/embed.ts#L33>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
@@ -224,7 +240,8 @@
     
     
     
-    <span class="item-name"><a class="property-name" href="#.description">description</a><span>: <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span></span>
+    <span class="item-name"><a class="property-name" href="#.description">description</a><span>: <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>
+    </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/utils/embed.ts#L34>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
@@ -241,7 +258,8 @@
     
     
     
-    <span class="item-name"><a class="property-name" href="#.fields">fields</a><span>: <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-utils\class\BaseCollection.html">BaseCollection</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">BaseCollection</span><span style="display:block" class="monospace fw-bold">detritus-utils/BaseCollection</span></span></span><span>&lt;<span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span>, <span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.utils\class\EmbedField.html">EmbedField</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">EmbedField</span><span style="display:block" class="monospace fw-bold">utils/EmbedField</span></span></span></span>&gt;</span></span></span></span>
+    <span class="item-name"><a class="property-name" href="#.fields">fields</a><span>: <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-utils\class\BaseCollection.html">BaseCollection</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">BaseCollection</span><span style="display:block" class="monospace fw-bold">detritus-utils/<span class="item-name object">BaseCollection</span></span></span></span><span>&lt;<span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span>, <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.utils\class\EmbedField.html">EmbedField</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">EmbedField</span><span style="display:block" class="monospace fw-bold">utils/<span class="item-name object">EmbedField</span></span></span></span></span>&gt;</span></span></span>
+    </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/utils/embed.ts#L35>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
@@ -258,7 +276,8 @@
     
     
     
-    <span class="item-name"><a class="property-name" href="#.footer">footer</a><span>: <span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.utils\class\EmbedFooter.html">EmbedFooter</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">EmbedFooter</span><span style="display:block" class="monospace fw-bold">utils/EmbedFooter</span></span></span></span></span></span>
+    <span class="item-name"><a class="property-name" href="#.footer">footer</a><span>: <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.utils\class\EmbedFooter.html">EmbedFooter</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">EmbedFooter</span><span style="display:block" class="monospace fw-bold">utils/<span class="item-name object">EmbedFooter</span></span></span></span></span></span>
+    </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/utils/embed.ts#L36>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
@@ -275,7 +294,8 @@
     
     
     
-    <span class="item-name"><a class="property-name" href="#.image">image</a><span>: <span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.utils\class\EmbedImage.html">EmbedImage</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">EmbedImage</span><span style="display:block" class="monospace fw-bold">utils/EmbedImage</span></span></span></span></span></span>
+    <span class="item-name"><a class="property-name" href="#.image">image</a><span>: <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.utils\class\EmbedImage.html">EmbedImage</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">EmbedImage</span><span style="display:block" class="monospace fw-bold">utils/<span class="item-name object">EmbedImage</span></span></span></span></span></span>
+    </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/utils/embed.ts#L37>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
@@ -292,7 +312,8 @@
     
     
     
-    <span class="item-name"><a class="property-name" href="#.provider">provider</a><span>: <span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.utils\class\EmbedProvider.html">EmbedProvider</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">EmbedProvider</span><span style="display:block" class="monospace fw-bold">utils/EmbedProvider</span></span></span></span></span></span>
+    <span class="item-name"><a class="property-name" href="#.provider">provider</a><span>: <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.utils\class\EmbedProvider.html">EmbedProvider</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">EmbedProvider</span><span style="display:block" class="monospace fw-bold">utils/<span class="item-name object">EmbedProvider</span></span></span></span></span></span>
+    </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/utils/embed.ts#L38>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
@@ -309,7 +330,8 @@
     
     
     
-    <span class="item-name"><a class="property-name" href="#.referenceId">referenceId</a><span>: <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span></span>
+    <span class="item-name"><a class="property-name" href="#.referenceId">referenceId</a><span>: <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>
+    </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/utils/embed.ts#L39>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
@@ -326,7 +348,8 @@
     
     
     
-    <span class="item-name"><a class="property-name" href="#.thumbnail">thumbnail</a><span>: <span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.utils\class\EmbedThumbnail.html">EmbedThumbnail</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">EmbedThumbnail</span><span style="display:block" class="monospace fw-bold">utils/EmbedThumbnail</span></span></span></span></span></span>
+    <span class="item-name"><a class="property-name" href="#.thumbnail">thumbnail</a><span>: <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.utils\class\EmbedThumbnail.html">EmbedThumbnail</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">EmbedThumbnail</span><span style="display:block" class="monospace fw-bold">utils/<span class="item-name object">EmbedThumbnail</span></span></span></span></span></span>
+    </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/utils/embed.ts#L40>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
@@ -344,7 +367,8 @@
     
     
     <span class="item-name"><a class="property-name" href="#.timestamp">timestamp</a><span>: 
-<span><span class="reference-link"><a class='external' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt">Bigint</a></span></span></span></span>
+<span><span class="reference-link"><a class='object' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt">Bigint</a></span></span></span>
+    </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/utils/embed.ts#L41>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
@@ -361,7 +385,8 @@
     
     
     
-    <span class="item-name"><a class="property-name" href="#.title">title</a><span>: <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span></span>
+    <span class="item-name"><a class="property-name" href="#.title">title</a><span>: <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>
+    </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/utils/embed.ts#L42>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
@@ -378,7 +403,8 @@
     
     
     
-    <span class="item-name"><a class="property-name" href="#.type">type</a><span>: <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span></span>
+    <span class="item-name"><a class="property-name" href="#.type">type</a><span>: <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span> <span class="symbol">=</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\enum\MessageEmbedTypes.html#.RICH">MessageEmbedTypes<span class="symbol">.</span>RICH</a><span class="c-tooltip-content"><span class="keyword">enum</span> <span class="item-name object">MessageEmbedTypes</span><span style="display:block" class="monospace fw-bold"><span class="item-name object">MessageEmbedTypes</span><span class="symbol">.</span>RICH</span></span></span></span>
+    </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/utils/embed.ts#L43>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
@@ -395,7 +421,8 @@
     
     
     
-    <span class="item-name"><a class="property-name" href="#.url">url</a><span>: <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span></span>
+    <span class="item-name"><a class="property-name" href="#.url">url</a><span>: <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>
+    </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/utils/embed.ts#L44>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
@@ -412,7 +439,8 @@
     
     
     
-    <span class="item-name"><a class="property-name" href="#.video">video</a><span>: <span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.utils\class\EmbedVideo.html">EmbedVideo</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">EmbedVideo</span><span style="display:block" class="monospace fw-bold">utils/EmbedVideo</span></span></span></span></span></span>
+    <span class="item-name"><a class="property-name" href="#.video">video</a><span>: <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.utils\class\EmbedVideo.html">EmbedVideo</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">EmbedVideo</span><span style="display:block" class="monospace fw-bold">utils/<span class="item-name object">EmbedVideo</span></span></span></span></span></span>
+    </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/utils/embed.ts#L45>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
@@ -428,317 +456,317 @@
 
     <div>
 <div id=".length" class="item">
-    <p class="monospace">
+    <span class="monospace">
     
     
     
     
     <span class="modifier">get</span>
     
+        <a class="item-name method-name" href="#.length">length</a><span>()</span><span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>
+    </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/utils/embed.ts#L52>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
   <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
 </svg>
 </span></a>
-        <a class="item-name method-name" href="#.length">length</a><span>()</span><span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>
         <div class="docblock">
         
         
-        </div>
-    </p>
+    </div>
 </div></div>
     <div>
 <div id=".size" class="item">
-    <p class="monospace">
+    <span class="monospace">
     
     
     
     
     <span class="modifier">get</span>
     
+        <a class="item-name method-name" href="#.size">size</a><span>()</span><span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>
+    </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/utils/embed.ts#L56>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
   <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
 </svg>
 </span></a>
-        <a class="item-name method-name" href="#.size">size</a><span>()</span><span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>
         <div class="docblock">
         
         
-        </div>
-    </p>
+    </div>
 </div></div>
     <div>
 <div id=".addField" class="item">
-    <p class="monospace">
+    <span class="monospace">
     
     
     
     
     
     
+        <a class="item-name method-name" href="#.addField">addField</a><span>(<span class="item-name"><span class="param-name">name</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>, <span class="item-name"><span class="param-name">value</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>, <span class="item-name"><span class="param-name">inline</span><span class="symbol">?</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>)</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.utils\class\Embed.html">Embed</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Embed</span><span style="display:block" class="monospace fw-bold">utils/<span class="item-name object">Embed</span></span></span></span></span></span>
+    </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/utils/embed.ts#L76>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
   <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
 </svg>
 </span></a>
-        <a class="item-name method-name" href="#.addField">addField</a><span>(<span class="item-name"><span class="param-name">name</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>, <span class="item-name"><span class="param-name">value</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>, <span class="item-name"><span class="param-name">inline</span><span class="symbol">?</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>)</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.utils\class\Embed.html">Embed</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Embed</span><span style="display:block" class="monospace fw-bold">utils/Embed</span></span></span></span></span>
         <div class="docblock">
         <ul></ul>
         
-        </div>
-    </p>
+    </div>
 </div></div>
     <div>
 <div id=".setAuthor" class="item">
-    <p class="monospace">
+    <span class="monospace">
     
     
     
     
     
     
+        <a class="item-name method-name" href="#.setAuthor">setAuthor</a><span>(<span class="item-name"><span class="param-name">name</span><span class="symbol">?</span><span class="symbol">:</span> 
+<span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span></span>, <span class="item-name"><span class="param-name">iconUrl</span><span class="symbol">?</span><span class="symbol">:</span> 
+<span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span></span>, <span class="item-name"><span class="param-name">url</span><span class="symbol">?</span><span class="symbol">:</span> 
+<span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span></span>)</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.utils\class\Embed.html">Embed</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Embed</span><span style="display:block" class="monospace fw-bold">utils/<span class="item-name object">Embed</span></span></span></span></span></span>
+    </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/utils/embed.ts#L85>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
   <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
 </svg>
 </span></a>
-        <a class="item-name method-name" href="#.setAuthor">setAuthor</a><span>(<span class="item-name"><span class="param-name">name</span><span class="symbol">?</span><span class="symbol">:</span> 
-<span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span></span>, <span class="item-name"><span class="param-name">iconUrl</span><span class="symbol">?</span><span class="symbol">:</span> 
-<span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span></span>, <span class="item-name"><span class="param-name">url</span><span class="symbol">?</span><span class="symbol">:</span> 
-<span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span></span>)</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.utils\class\Embed.html">Embed</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Embed</span><span style="display:block" class="monospace fw-bold">utils/Embed</span></span></span></span></span>
         <div class="docblock">
         <ul></ul>
         
-        </div>
-    </p>
+    </div>
 </div></div>
     <div>
 <div id=".setColor" class="item">
-    <p class="monospace">
+    <span class="monospace">
     
     
     
     
     
     
+        <a class="item-name method-name" href="#.setColor">setColor</a><span>(<span class="item-name"><span class="param-name">color</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>)</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.utils\class\Embed.html">Embed</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Embed</span><span style="display:block" class="monospace fw-bold">utils/<span class="item-name object">Embed</span></span></span></span></span></span>
+    </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/utils/embed.ts#L100>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
   <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
 </svg>
 </span></a>
-        <a class="item-name method-name" href="#.setColor">setColor</a><span>(<span class="item-name"><span class="param-name">color</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>)</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.utils\class\Embed.html">Embed</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Embed</span><span style="display:block" class="monospace fw-bold">utils/Embed</span></span></span></span></span>
         <div class="docblock">
         <ul></ul>
         
-        </div>
-    </p>
+    </div>
 </div></div>
     <div>
 <div id=".setDescription" class="item">
-    <p class="monospace">
+    <span class="monospace">
     
     
     
     
     
     
+        <a class="item-name method-name" href="#.setDescription">setDescription</a><span>(<span class="item-name"><span class="param-name">description</span><span class="symbol">:</span> 
+<span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span></span>)</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.utils\class\Embed.html">Embed</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Embed</span><span style="display:block" class="monospace fw-bold">utils/<span class="item-name object">Embed</span></span></span></span></span></span>
+    </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/utils/embed.ts#L105>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
   <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
 </svg>
 </span></a>
-        <a class="item-name method-name" href="#.setDescription">setDescription</a><span>(<span class="item-name"><span class="param-name">description</span><span class="symbol">:</span> 
-<span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span></span>)</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.utils\class\Embed.html">Embed</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Embed</span><span style="display:block" class="monospace fw-bold">utils/Embed</span></span></span></span></span>
         <div class="docblock">
         <ul></ul>
         
-        </div>
-    </p>
+    </div>
 </div></div>
     <div>
 <div id=".setFooter" class="item">
-    <p class="monospace">
+    <span class="monospace">
     
     
     
     
     
     
+        <a class="item-name method-name" href="#.setFooter">setFooter</a><span>(<span class="item-name"><span class="param-name">text</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>, <span class="item-name"><span class="param-name">iconUrl</span><span class="symbol">?</span><span class="symbol">:</span> 
+<span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span></span>)</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.utils\class\Embed.html">Embed</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Embed</span><span style="display:block" class="monospace fw-bold">utils/<span class="item-name object">Embed</span></span></span></span></span></span>
+    </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/utils/embed.ts#L110>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
   <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
 </svg>
 </span></a>
-        <a class="item-name method-name" href="#.setFooter">setFooter</a><span>(<span class="item-name"><span class="param-name">text</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>, <span class="item-name"><span class="param-name">iconUrl</span><span class="symbol">?</span><span class="symbol">:</span> 
-<span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span></span>)</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.utils\class\Embed.html">Embed</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Embed</span><span style="display:block" class="monospace fw-bold">utils/Embed</span></span></span></span></span>
         <div class="docblock">
         <ul></ul>
         
-        </div>
-    </p>
+    </div>
 </div></div>
     <div>
 <div id=".setImage" class="item">
-    <p class="monospace">
+    <span class="monospace">
     
     
     
     
     
     
+        <a class="item-name method-name" href="#.setImage">setImage</a><span>(<span class="item-name"><span class="param-name">url</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>)</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.utils\class\Embed.html">Embed</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Embed</span><span style="display:block" class="monospace fw-bold">utils/<span class="item-name object">Embed</span></span></span></span></span></span>
+    </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/utils/embed.ts#L123>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
   <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
 </svg>
 </span></a>
-        <a class="item-name method-name" href="#.setImage">setImage</a><span>(<span class="item-name"><span class="param-name">url</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>)</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.utils\class\Embed.html">Embed</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Embed</span><span style="display:block" class="monospace fw-bold">utils/Embed</span></span></span></span></span>
         <div class="docblock">
         <ul></ul>
         
-        </div>
-    </p>
+    </div>
 </div></div>
     <div>
 <div id=".setThumbnail" class="item">
-    <p class="monospace">
+    <span class="monospace">
     
     
     
     
     
     
+        <a class="item-name method-name" href="#.setThumbnail">setThumbnail</a><span>(<span class="item-name"><span class="param-name">url</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>)</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.utils\class\Embed.html">Embed</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Embed</span><span style="display:block" class="monospace fw-bold">utils/<span class="item-name object">Embed</span></span></span></span></span></span>
+    </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/utils/embed.ts#L130>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
   <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
 </svg>
 </span></a>
-        <a class="item-name method-name" href="#.setThumbnail">setThumbnail</a><span>(<span class="item-name"><span class="param-name">url</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>)</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.utils\class\Embed.html">Embed</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Embed</span><span style="display:block" class="monospace fw-bold">utils/Embed</span></span></span></span></span>
         <div class="docblock">
         <ul></ul>
         
-        </div>
-    </p>
+    </div>
 </div></div>
     <div>
 <div id=".setTimestamp" class="item">
-    <p class="monospace">
+    <span class="monospace">
     
     
     
     
     
     
+        <a class="item-name method-name" href="#.setTimestamp">setTimestamp</a><span>(<span class="item-name"><span class="param-name">timestamp</span><span class="symbol">:</span> 
+<span><span><span class="reference-link"><a class='object' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt">Bigint</a></span></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span> <span class="symbol">=</span> Date.now()</span>)</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.utils\class\Embed.html">Embed</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Embed</span><span style="display:block" class="monospace fw-bold">utils/<span class="item-name object">Embed</span></span></span></span></span></span>
+    </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/utils/embed.ts#L137>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
   <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
 </svg>
 </span></a>
-        <a class="item-name method-name" href="#.setTimestamp">setTimestamp</a><span>(<span class="item-name"><span class="param-name">timestamp</span><span class="symbol">:</span> 
-<span><span><span class="reference-link"><a class='external' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt">Bigint</a></span></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span> <span class="symbol">=</span> Date.now()</span>)</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.utils\class\Embed.html">Embed</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Embed</span><span style="display:block" class="monospace fw-bold">utils/Embed</span></span></span></span></span>
         <div class="docblock">
         <ul></ul>
         
-        </div>
-    </p>
+    </div>
 </div></div>
     <div>
 <div id=".setTitle" class="item">
-    <p class="monospace">
+    <span class="monospace">
     
     
     
     
     
     
+        <a class="item-name method-name" href="#.setTitle">setTitle</a><span>(<span class="item-name"><span class="param-name">title</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>)</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.utils\class\Embed.html">Embed</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Embed</span><span style="display:block" class="monospace fw-bold">utils/<span class="item-name object">Embed</span></span></span></span></span></span>
+    </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/utils/embed.ts#L148>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
   <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
 </svg>
 </span></a>
-        <a class="item-name method-name" href="#.setTitle">setTitle</a><span>(<span class="item-name"><span class="param-name">title</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>)</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.utils\class\Embed.html">Embed</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Embed</span><span style="display:block" class="monospace fw-bold">utils/Embed</span></span></span></span></span>
         <div class="docblock">
         <ul></ul>
         
-        </div>
-    </p>
+    </div>
 </div></div>
     <div>
 <div id=".setUrl" class="item">
-    <p class="monospace">
+    <span class="monospace">
     
     
     
     
     
     
+        <a class="item-name method-name" href="#.setUrl">setUrl</a><span>(<span class="item-name"><span class="param-name">url</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>)</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.utils\class\Embed.html">Embed</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Embed</span><span style="display:block" class="monospace fw-bold">utils/<span class="item-name object">Embed</span></span></span></span></span></span>
+    </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/utils/embed.ts#L153>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
   <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
 </svg>
 </span></a>
-        <a class="item-name method-name" href="#.setUrl">setUrl</a><span>(<span class="item-name"><span class="param-name">url</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>)</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.utils\class\Embed.html">Embed</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Embed</span><span style="display:block" class="monospace fw-bold">utils/Embed</span></span></span></span></span>
         <div class="docblock">
         <ul></ul>
         
-        </div>
-    </p>
+    </div>
 </div></div>
     <div>
 <div id=".mergeValue" class="item">
-    <p class="monospace">
+    <span class="monospace">
     
     
     
     
     
     
+        <a class="item-name method-name" href="#.mergeValue">mergeValue</a><span>(<span class="item-name"><span class="param-name">key</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>, <span class="item-name"><span class="param-name">value</span><span class="symbol">:</span> <span class="reference-link"><span class='primitive'>any</span></span></span>)</span><span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://www.typescriptlang.org/docs/handbook/2/functions.html#void">void</a></span></span>
+    </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/utils/embed.ts#L158>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
   <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
 </svg>
 </span></a>
-        <a class="item-name method-name" href="#.mergeValue">mergeValue</a><span>(<span class="item-name"><span class="param-name">key</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>, <span class="item-name"><span class="param-name">value</span><span class="symbol">:</span> <span class="reference-link"><span class='primitive'>any</span></span></span>)</span><span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://www.typescriptlang.org/docs/handbook/2/functions.html#void">void</a></span></span>
         <div class="docblock">
         <ul></ul>
         
-        </div>
-    </p>
+    </div>
 </div></div>
     <div>
 <div id=".toJSON" class="item">
-    <p class="monospace">
+    <span class="monospace">
     
     
     
     
     
     
+        <a class="item-name method-name" href="#.toJSON">toJSON</a><span>()</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.gateway\m.GatewayRawEvents\interface\RawMessageEmbed.html">RawMessageEmbed</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">RawMessageEmbed</span><span style="display:block" class="monospace fw-bold">gateway/GatewayRawEvents/<span class="item-name object">RawMessageEmbed</span></span></span></span></span></span>
+    </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/utils/embed.ts#L236>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
   <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
 </svg>
 </span></a>
-        <a class="item-name method-name" href="#.toJSON">toJSON</a><span>()</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.gateway\m.GatewayRawEvents\interface\RawMessageEmbed.html">RawMessageEmbed</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">RawMessageEmbed</span><span style="display:block" class="monospace fw-bold">gateway/GatewayRawEvents/RawMessageEmbed</span></span></span></span></span>
         <div class="docblock">
         <ul></ul>
         
-        </div>
-    </p>
+    </div>
 </div></div>
 
 </div>

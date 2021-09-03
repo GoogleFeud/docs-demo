@@ -22,7 +22,7 @@
       <nav class="container-fluid navi">
       <div class="row">
         <div class="col-4">
-          <input class="form-control search" id="search" type="search" placeholder="Press '/' to search" aria-label="Search">
+          <input class="form-control search" id="search" type="search" placeholder="Search..." aria-label="Search">
         </div>
         <div class="col-8">
           <div class="row float-end" style="margin-top:5px">
@@ -45,8 +45,8 @@
     </nav>  <div class="container-fluid">
     <div class="row">
       <div class="col-lg-auto sidebar" id="sidebar">
-        <h1 class="lib-name text-center">Detritus</h1>
         
+    <h1 class="lib-name text-center"><a href="../../../../index.html">Detritus</a></h1>
     <img src="../../../../assets/logo.png" alt="Logo" class="img-fluid mx-auto d-block">
     <p class="current-thing">interface <span class="object">GuildMembersChunk</span></p>
     <div class="sidebar-members">
@@ -57,7 +57,7 @@
         <span class="sidebar-category">Properties</span>
         </div>
         <div class="collapsible-body open"> 
-        <span class="sidebar-category-member"><a href="#.chunk_count">chunk_count</a></span><br><span class="sidebar-category-member"><a href="#.chunk_index">chunk_index</a></span><br><span class="sidebar-category-member"><a href="#.guild_id">guild_id</a></span><br><span class="sidebar-category-member"><a href="#.members">members</a></span><br><span class="sidebar-category-member"><a href="#.presences">presences</a></span><br><span class="sidebar-category-member"><a href="#.nonce">nonce</a></span><br><span class="sidebar-category-member"><a href="#.not_found">not_found</a></span><br>
+        <span class="sidebar-category-member"><a href="#.chunk_count">chunk_count</a></span><span class="sidebar-category-member"><a href="#.chunk_index">chunk_index</a></span><span class="sidebar-category-member"><a href="#.guild_id">guild_id</a></span><span class="sidebar-category-member"><a href="#.members">members</a></span><span class="sidebar-category-member"><a href="#.presences">presences</a></span><span class="sidebar-category-member"><a href="#.nonce">nonce</a></span><span class="sidebar-category-member"><a href="#.not_found">not_found</a></span>
         </div>
         </div>
     
@@ -107,8 +107,20 @@
                             <span>Methods</span>
                         </div>
                         <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-getters" checked>
+                            <span>Getters</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-setters" checked>
+                            <span>Setters</span>
+                        </div>
+                        <div>
                             <input type="checkbox" class="c-checkbox" id="search-option-enum-members">
                             <span>Enum members</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-privates">
+                            <span>Show privates</span>
                         </div>
                     </div>
                 </div>
@@ -149,29 +161,29 @@
     <h2>Properties</h2>
 
     <div>
-        <div>
-<span class="item-name" id=".chunk_count"><a class="property-name" href="#.chunk_count">chunk_count</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>
+        <div class="item">
+<div class="item-name item" id=".chunk_count"><a class="property-name" href="#.chunk_count">chunk_count</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>
 </div>
-        <div>
-<span class="item-name" id=".chunk_index"><a class="property-name" href="#.chunk_index">chunk_index</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>
+        <div class="item">
+<div class="item-name item" id=".chunk_index"><a class="property-name" href="#.chunk_index">chunk_index</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>
 </div>
-        <div>
-<span class="item-name" id=".guild_id"><a class="property-name" href="#.guild_id">guild_id</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>
+        <div class="item">
+<div class="item-name item" id=".guild_id"><a class="property-name" href="#.guild_id">guild_id</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>
 </div>
-        <div>
-<span class="item-name" id=".members"><a class="property-name" href="#.members">members</a><span class="symbol">:</span> 
-<span><span class="reference-link"><span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.gateway\m.GatewayRawEvents\interface\RawMember.html">RawMember</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">RawMember</span><span style="display:block" class="monospace fw-bold">gateway/GatewayRawEvents/RawMember</span></span></span></span>[]</span></span></span>
+        <div class="item">
+<div class="item-name item" id=".members"><a class="property-name" href="#.members">members</a><span class="symbol">:</span> 
+<span><span class="reference-link"><a class='object' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></span><span>&lt;<span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\..\m.detritus-client\m.gateway\m.GatewayRawEvents\interface\RawMember.html">RawMember</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">RawMember</span><span style="display:block" class="monospace fw-bold">gateway/GatewayRawEvents/<span class="item-name object">RawMember</span></span></span></span></span>&gt;</span></span></span>
 </div>
-        <div>
-<span class="item-name" id=".presences"><a class="property-name" href="#.presences">presences</a><span class="symbol">:</span> 
-<span><span class="reference-link"><span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.gateway\m.GatewayRawEvents\interface\RawPresence.html">RawPresence</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">RawPresence</span><span style="display:block" class="monospace fw-bold">gateway/GatewayRawEvents/RawPresence</span></span></span></span>[]</span></span></span>
+        <div class="item">
+<div class="item-name item" id=".presences"><a class="property-name" href="#.presences">presences</a><span class="symbol">?</span><span class="symbol">:</span> 
+<span><span class="reference-link"><a class='object' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></span><span>&lt;<span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\..\m.detritus-client\m.gateway\m.GatewayRawEvents\interface\RawPresence.html">RawPresence</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">RawPresence</span><span style="display:block" class="monospace fw-bold">gateway/GatewayRawEvents/<span class="item-name object">RawPresence</span></span></span></span></span>&gt;</span></span></span>
 </div>
-        <div>
-<span class="item-name" id=".nonce"><a class="property-name" href="#.nonce">nonce</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>
+        <div class="item">
+<div class="item-name item" id=".nonce"><a class="property-name" href="#.nonce">nonce</a><span class="symbol">?</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>
 </div>
-        <div>
-<span class="item-name" id=".not_found"><a class="property-name" href="#.not_found">not_found</a><span class="symbol">:</span> 
-<span><span class="reference-link"><span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\type\Snowflake.html">Snowflake</a><span class="c-tooltip-content"><span class="keyword">type alias</span> <span class="item-name object">Snowflake</span><span style="display:block" class="monospace fw-bold">/Snowflake</span></span></span></span>[]</span></span></span>
+        <div class="item">
+<div class="item-name item" id=".not_found"><a class="property-name" href="#.not_found">not_found</a><span class="symbol">?</span><span class="symbol">:</span> 
+<span><span class="reference-link"><a class='object' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></span><span>&lt;<span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\..\m.detritus-client\type\Snowflake.html">Snowflake</a><span class="c-tooltip-content"><span class="keyword">type</span> <span class="item-name object">Snowflake</span><span style="display:block" class="monospace fw-bold"><span class="item-name object">Snowflake</span></span></span></span></span>&gt;</span></span></span>
 </div>
     </div>
 

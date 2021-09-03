@@ -22,7 +22,7 @@
       <nav class="container-fluid navi">
       <div class="row">
         <div class="col-4">
-          <input class="form-control search" id="search" type="search" placeholder="Press '/' to search" aria-label="Search">
+          <input class="form-control search" id="search" type="search" placeholder="Search..." aria-label="Search">
         </div>
         <div class="col-8">
           <div class="row float-end" style="margin-top:5px">
@@ -45,8 +45,8 @@
     </nav>  <div class="container-fluid">
     <div class="row">
       <div class="col-lg-auto sidebar" id="sidebar">
-        <h1 class="lib-name text-center">Detritus</h1>
         
+    <h1 class="lib-name text-center"><a href="../../index.html">Detritus</a></h1>
     <img src="../../assets/logo.png" alt="Logo" class="img-fluid mx-auto d-block">
     <p class="current-thing text-center">enum <span class="object">SocketCloseCodes</span></p>
     <div class="sidebar-members">
@@ -57,7 +57,7 @@
         <span class="sidebar-category">Members</span>
         </div>
         <div class="collapsible-body open"> 
-        <span class="sidebar-category-member"><a href="#.NORMAL">NORMAL</a></span><br><span class="sidebar-category-member"><a href="#.GOING_AWAY">GOING_AWAY</a></span><br><span class="sidebar-category-member"><a href="#.PROTOCOL_ERROR">PROTOCOL_ERROR</a></span><br><span class="sidebar-category-member"><a href="#.UNSUPPORTED_DATA">UNSUPPORTED_DATA</a></span><br><span class="sidebar-category-member"><a href="#.ABNORMAL_CLOSURE">ABNORMAL_CLOSURE</a></span><br><span class="sidebar-category-member"><a href="#.INVALID_FRAME">INVALID_FRAME</a></span><br><span class="sidebar-category-member"><a href="#.POLICY_VIOLATION">POLICY_VIOLATION</a></span><br><span class="sidebar-category-member"><a href="#.MESSAGE_TOO_BIG">MESSAGE_TOO_BIG</a></span><br><span class="sidebar-category-member"><a href="#.MISSING_EXTENSION">MISSING_EXTENSION</a></span><br><span class="sidebar-category-member"><a href="#.INTERNAL_ERROR">INTERNAL_ERROR</a></span><br><span class="sidebar-category-member"><a href="#.SERVICE_RESTART">SERVICE_RESTART</a></span><br><span class="sidebar-category-member"><a href="#.TRY_AGAIN_LATER">TRY_AGAIN_LATER</a></span><br><span class="sidebar-category-member"><a href="#.BAD_GATEWAY">BAD_GATEWAY</a></span><br>
+        <span class="sidebar-category-member"><a href="#.NORMAL">NORMAL</a></span><span class="sidebar-category-member"><a href="#.GOING_AWAY">GOING_AWAY</a></span><span class="sidebar-category-member"><a href="#.PROTOCOL_ERROR">PROTOCOL_ERROR</a></span><span class="sidebar-category-member"><a href="#.UNSUPPORTED_DATA">UNSUPPORTED_DATA</a></span><span class="sidebar-category-member"><a href="#.ABNORMAL_CLOSURE">ABNORMAL_CLOSURE</a></span><span class="sidebar-category-member"><a href="#.INVALID_FRAME">INVALID_FRAME</a></span><span class="sidebar-category-member"><a href="#.POLICY_VIOLATION">POLICY_VIOLATION</a></span><span class="sidebar-category-member"><a href="#.MESSAGE_TOO_BIG">MESSAGE_TOO_BIG</a></span><span class="sidebar-category-member"><a href="#.MISSING_EXTENSION">MISSING_EXTENSION</a></span><span class="sidebar-category-member"><a href="#.INTERNAL_ERROR">INTERNAL_ERROR</a></span><span class="sidebar-category-member"><a href="#.SERVICE_RESTART">SERVICE_RESTART</a></span><span class="sidebar-category-member"><a href="#.TRY_AGAIN_LATER">TRY_AGAIN_LATER</a></span><span class="sidebar-category-member"><a href="#.BAD_GATEWAY">BAD_GATEWAY</a></span>
         </div>
         </div>
     
@@ -107,8 +107,20 @@
                             <span>Methods</span>
                         </div>
                         <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-getters" checked>
+                            <span>Getters</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-setters" checked>
+                            <span>Setters</span>
+                        </div>
+                        <div>
                             <input type="checkbox" class="c-checkbox" id="search-option-enum-members">
                             <span>Enum members</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-privates">
+                            <span>Show privates</span>
                         </div>
                     </div>
                 </div>
@@ -144,79 +156,79 @@
     
 
     <h2>Members</h2>
-    <div id=".NORMAL">
+    <div id=".NORMAL" class="item">
         <a class="item-name" href="#.NORMAL">NORMAL</a>
 
         <span>= <span class="reference-link"><a class="primitive number-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">1000</a></span></span>
 
     </div>
-    <div id=".GOING_AWAY">
+    <div id=".GOING_AWAY" class="item">
         <a class="item-name" href="#.GOING_AWAY">GOING_AWAY</a>
 
         <span>= <span class="reference-link"><a class="primitive number-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">1001</a></span></span>
 
     </div>
-    <div id=".PROTOCOL_ERROR">
+    <div id=".PROTOCOL_ERROR" class="item">
         <a class="item-name" href="#.PROTOCOL_ERROR">PROTOCOL_ERROR</a>
 
         <span>= <span class="reference-link"><a class="primitive number-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">1002</a></span></span>
 
     </div>
-    <div id=".UNSUPPORTED_DATA">
+    <div id=".UNSUPPORTED_DATA" class="item">
         <a class="item-name" href="#.UNSUPPORTED_DATA">UNSUPPORTED_DATA</a>
 
         <span>= <span class="reference-link"><a class="primitive number-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">1003</a></span></span>
 
     </div>
-    <div id=".ABNORMAL_CLOSURE">
+    <div id=".ABNORMAL_CLOSURE" class="item">
         <a class="item-name" href="#.ABNORMAL_CLOSURE">ABNORMAL_CLOSURE</a>
 
         <span>= <span class="reference-link"><a class="primitive number-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">1006</a></span></span>
 
     </div>
-    <div id=".INVALID_FRAME">
+    <div id=".INVALID_FRAME" class="item">
         <a class="item-name" href="#.INVALID_FRAME">INVALID_FRAME</a>
 
         <span>= <span class="reference-link"><a class="primitive number-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">1007</a></span></span>
 
     </div>
-    <div id=".POLICY_VIOLATION">
+    <div id=".POLICY_VIOLATION" class="item">
         <a class="item-name" href="#.POLICY_VIOLATION">POLICY_VIOLATION</a>
 
         <span>= <span class="reference-link"><a class="primitive number-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">1008</a></span></span>
 
     </div>
-    <div id=".MESSAGE_TOO_BIG">
+    <div id=".MESSAGE_TOO_BIG" class="item">
         <a class="item-name" href="#.MESSAGE_TOO_BIG">MESSAGE_TOO_BIG</a>
 
         <span>= <span class="reference-link"><a class="primitive number-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">1009</a></span></span>
 
     </div>
-    <div id=".MISSING_EXTENSION">
+    <div id=".MISSING_EXTENSION" class="item">
         <a class="item-name" href="#.MISSING_EXTENSION">MISSING_EXTENSION</a>
 
         <span>= <span class="reference-link"><a class="primitive number-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">1010</a></span></span>
 
     </div>
-    <div id=".INTERNAL_ERROR">
+    <div id=".INTERNAL_ERROR" class="item">
         <a class="item-name" href="#.INTERNAL_ERROR">INTERNAL_ERROR</a>
 
         <span>= <span class="reference-link"><a class="primitive number-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">1011</a></span></span>
 
     </div>
-    <div id=".SERVICE_RESTART">
+    <div id=".SERVICE_RESTART" class="item">
         <a class="item-name" href="#.SERVICE_RESTART">SERVICE_RESTART</a>
 
         <span>= <span class="reference-link"><a class="primitive number-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">1012</a></span></span>
 
     </div>
-    <div id=".TRY_AGAIN_LATER">
+    <div id=".TRY_AGAIN_LATER" class="item">
         <a class="item-name" href="#.TRY_AGAIN_LATER">TRY_AGAIN_LATER</a>
 
         <span>= <span class="reference-link"><a class="primitive number-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">1013</a></span></span>
 
     </div>
-    <div id=".BAD_GATEWAY">
+    <div id=".BAD_GATEWAY" class="item">
         <a class="item-name" href="#.BAD_GATEWAY">BAD_GATEWAY</a>
 
         <span>= <span class="reference-link"><a class="primitive number-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">1014</a></span></span>

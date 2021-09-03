@@ -22,7 +22,7 @@
       <nav class="container-fluid navi">
       <div class="row">
         <div class="col-4">
-          <input class="form-control search" id="search" type="search" placeholder="Press '/' to search" aria-label="Search">
+          <input class="form-control search" id="search" type="search" placeholder="Search..." aria-label="Search">
         </div>
         <div class="col-8">
           <div class="row float-end" style="margin-top:5px">
@@ -45,8 +45,8 @@
     </nav>  <div class="container-fluid">
     <div class="row">
       <div class="col-lg-auto sidebar" id="sidebar">
-        <h1 class="lib-name text-center">Detritus</h1>
         
+    <h1 class="lib-name text-center"><a href="../../../../index.html">Detritus</a></h1>
     <img src="../../../../assets/logo.png" alt="Logo" class="img-fluid mx-auto d-block">
     <p class="current-thing">interface <span class="object">RawUserSettings</span></p>
     <div class="sidebar-members">
@@ -57,7 +57,7 @@
         <span class="sidebar-category">Properties</span>
         </div>
         <div class="collapsible-body open"> 
-        <span class="sidebar-category-member"><a href="#.afk_timeout">afk_timeout</a></span><br><span class="sidebar-category-member"><a href="#.animate_emojis">animate_emojis</a></span><br><span class="sidebar-category-member"><a href="#.convert_emoticons">convert_emoticons</a></span><br><span class="sidebar-category-member"><a href="#.default_guilds_restricted">default_guilds_restricted</a></span><br><span class="sidebar-category-member"><a href="#.detect_platform_accounts">detect_platform_accounts</a></span><br><span class="sidebar-category-member"><a href="#.developer_mode">developer_mode</a></span><br><span class="sidebar-category-member"><a href="#.disable_games_tab">disable_games_tab</a></span><br><span class="sidebar-category-member"><a href="#.enable_tts_command">enable_tts_command</a></span><br><span class="sidebar-category-member"><a href="#.explicit_content_filter">explicit_content_filter</a></span><br><span class="sidebar-category-member"><a href="#.friend_source_flags">friend_source_flags</a></span><br><span class="sidebar-category-member"><a href="#.gif_auto_play">gif_auto_play</a></span><br><span class="sidebar-category-member"><a href="#.guild_folders">guild_folders</a></span><br><span class="sidebar-category-member"><a href="#.guild_positions">guild_positions</a></span><br><span class="sidebar-category-member"><a href="#.inline_attachment_media">inline_attachment_media</a></span><br><span class="sidebar-category-member"><a href="#.inline_embed_media">inline_embed_media</a></span><br><span class="sidebar-category-member"><a href="#.locale">locale</a></span><br><span class="sidebar-category-member"><a href="#.message_display_compact">message_display_compact</a></span><br><span class="sidebar-category-member"><a href="#.render_embeds">render_embeds</a></span><br><span class="sidebar-category-member"><a href="#.render_reactions">render_reactions</a></span><br><span class="sidebar-category-member"><a href="#.restricted_guilds">restricted_guilds</a></span><br><span class="sidebar-category-member"><a href="#.show_current_game">show_current_game</a></span><br><span class="sidebar-category-member"><a href="#.status">status</a></span><br><span class="sidebar-category-member"><a href="#.theme">theme</a></span><br><span class="sidebar-category-member"><a href="#.timezone_offset">timezone_offset</a></span><br>
+        <span class="sidebar-category-member"><a href="#.afk_timeout">afk_timeout</a></span><span class="sidebar-category-member"><a href="#.animate_emojis">animate_emojis</a></span><span class="sidebar-category-member"><a href="#.convert_emoticons">convert_emoticons</a></span><span class="sidebar-category-member"><a href="#.default_guilds_restricted">default_guilds_restricted</a></span><span class="sidebar-category-member"><a href="#.detect_platform_accounts">detect_platform_accounts</a></span><span class="sidebar-category-member"><a href="#.developer_mode">developer_mode</a></span><span class="sidebar-category-member"><a href="#.disable_games_tab">disable_games_tab</a></span><span class="sidebar-category-member"><a href="#.enable_tts_command">enable_tts_command</a></span><span class="sidebar-category-member"><a href="#.explicit_content_filter">explicit_content_filter</a></span><span class="sidebar-category-member"><a href="#.friend_source_flags">friend_source_flags</a></span><span class="sidebar-category-member"><a href="#.gif_auto_play">gif_auto_play</a></span><span class="sidebar-category-member"><a href="#.guild_folders">guild_folders</a></span><span class="sidebar-category-member"><a href="#.guild_positions">guild_positions</a></span><span class="sidebar-category-member"><a href="#.inline_attachment_media">inline_attachment_media</a></span><span class="sidebar-category-member"><a href="#.inline_embed_media">inline_embed_media</a></span><span class="sidebar-category-member"><a href="#.locale">locale</a></span><span class="sidebar-category-member"><a href="#.message_display_compact">message_display_compact</a></span><span class="sidebar-category-member"><a href="#.render_embeds">render_embeds</a></span><span class="sidebar-category-member"><a href="#.render_reactions">render_reactions</a></span><span class="sidebar-category-member"><a href="#.restricted_guilds">restricted_guilds</a></span><span class="sidebar-category-member"><a href="#.show_current_game">show_current_game</a></span><span class="sidebar-category-member"><a href="#.status">status</a></span><span class="sidebar-category-member"><a href="#.theme">theme</a></span><span class="sidebar-category-member"><a href="#.timezone_offset">timezone_offset</a></span>
         </div>
         </div>
     
@@ -107,8 +107,20 @@
                             <span>Methods</span>
                         </div>
                         <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-getters" checked>
+                            <span>Getters</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-setters" checked>
+                            <span>Setters</span>
+                        </div>
+                        <div>
                             <input type="checkbox" class="c-checkbox" id="search-option-enum-members">
                             <span>Enum members</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-privates">
+                            <span>Show privates</span>
                         </div>
                     </div>
                 </div>
@@ -149,81 +161,81 @@
     <h2>Properties</h2>
 
     <div>
-        <div>
-<span class="item-name" id=".afk_timeout"><a class="property-name" href="#.afk_timeout">afk_timeout</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>
+        <div class="item">
+<div class="item-name item" id=".afk_timeout"><a class="property-name" href="#.afk_timeout">afk_timeout</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>
 </div>
-        <div>
-<span class="item-name" id=".animate_emojis"><a class="property-name" href="#.animate_emojis">animate_emojis</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
+        <div class="item">
+<div class="item-name item" id=".animate_emojis"><a class="property-name" href="#.animate_emojis">animate_emojis</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
 </div>
-        <div>
-<span class="item-name" id=".convert_emoticons"><a class="property-name" href="#.convert_emoticons">convert_emoticons</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
+        <div class="item">
+<div class="item-name item" id=".convert_emoticons"><a class="property-name" href="#.convert_emoticons">convert_emoticons</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
 </div>
-        <div>
-<span class="item-name" id=".default_guilds_restricted"><a class="property-name" href="#.default_guilds_restricted">default_guilds_restricted</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
+        <div class="item">
+<div class="item-name item" id=".default_guilds_restricted"><a class="property-name" href="#.default_guilds_restricted">default_guilds_restricted</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
 </div>
-        <div>
-<span class="item-name" id=".detect_platform_accounts"><a class="property-name" href="#.detect_platform_accounts">detect_platform_accounts</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
+        <div class="item">
+<div class="item-name item" id=".detect_platform_accounts"><a class="property-name" href="#.detect_platform_accounts">detect_platform_accounts</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
 </div>
-        <div>
-<span class="item-name" id=".developer_mode"><a class="property-name" href="#.developer_mode">developer_mode</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
+        <div class="item">
+<div class="item-name item" id=".developer_mode"><a class="property-name" href="#.developer_mode">developer_mode</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
 </div>
-        <div>
-<span class="item-name" id=".disable_games_tab"><a class="property-name" href="#.disable_games_tab">disable_games_tab</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
+        <div class="item">
+<div class="item-name item" id=".disable_games_tab"><a class="property-name" href="#.disable_games_tab">disable_games_tab</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
 </div>
-        <div>
-<span class="item-name" id=".enable_tts_command"><a class="property-name" href="#.enable_tts_command">enable_tts_command</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
+        <div class="item">
+<div class="item-name item" id=".enable_tts_command"><a class="property-name" href="#.enable_tts_command">enable_tts_command</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
 </div>
-        <div>
-<span class="item-name" id=".explicit_content_filter"><a class="property-name" href="#.explicit_content_filter">explicit_content_filter</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>
+        <div class="item">
+<div class="item-name item" id=".explicit_content_filter"><a class="property-name" href="#.explicit_content_filter">explicit_content_filter</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>
 </div>
-        <div>
-<span class="item-name" id=".friend_source_flags"><a class="property-name" href="#.friend_source_flags">friend_source_flags</a><span class="symbol">:</span> 
-<span>{ <span class="item-name" id=".all"><a class="property-name" href="#.all">all</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span> }</span></span>
+        <div class="item">
+<div class="item-name item" id=".friend_source_flags"><a class="property-name" href="#.friend_source_flags">friend_source_flags</a><span class="symbol">:</span> 
+<span>{ <span class="item-name"><a class="property-name" href="#.all">all</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span> }</span></span>
 </div>
-        <div>
-<span class="item-name" id=".gif_auto_play"><a class="property-name" href="#.gif_auto_play">gif_auto_play</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
+        <div class="item">
+<div class="item-name item" id=".gif_auto_play"><a class="property-name" href="#.gif_auto_play">gif_auto_play</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
 </div>
-        <div>
-<span class="item-name" id=".guild_folders"><a class="property-name" href="#.guild_folders">guild_folders</a><span class="symbol">:</span> 
-<span><span class="reference-link"><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>[]</span></span></span>
+        <div class="item">
+<div class="item-name item" id=".guild_folders"><a class="property-name" href="#.guild_folders">guild_folders</a><span class="symbol">:</span> 
+<span><span class="reference-link"><a class='object' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></span><span>&lt;<span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>&gt;</span></span></span>
 </div>
-        <div>
-<span class="item-name" id=".guild_positions"><a class="property-name" href="#.guild_positions">guild_positions</a><span class="symbol">:</span> 
-<span><span class="reference-link"><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>[]</span></span></span>
+        <div class="item">
+<div class="item-name item" id=".guild_positions"><a class="property-name" href="#.guild_positions">guild_positions</a><span class="symbol">:</span> 
+<span><span class="reference-link"><a class='object' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></span><span>&lt;<span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>&gt;</span></span></span>
 </div>
-        <div>
-<span class="item-name" id=".inline_attachment_media"><a class="property-name" href="#.inline_attachment_media">inline_attachment_media</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
+        <div class="item">
+<div class="item-name item" id=".inline_attachment_media"><a class="property-name" href="#.inline_attachment_media">inline_attachment_media</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
 </div>
-        <div>
-<span class="item-name" id=".inline_embed_media"><a class="property-name" href="#.inline_embed_media">inline_embed_media</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
+        <div class="item">
+<div class="item-name item" id=".inline_embed_media"><a class="property-name" href="#.inline_embed_media">inline_embed_media</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
 </div>
-        <div>
-<span class="item-name" id=".locale"><a class="property-name" href="#.locale">locale</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>
+        <div class="item">
+<div class="item-name item" id=".locale"><a class="property-name" href="#.locale">locale</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>
 </div>
-        <div>
-<span class="item-name" id=".message_display_compact"><a class="property-name" href="#.message_display_compact">message_display_compact</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
+        <div class="item">
+<div class="item-name item" id=".message_display_compact"><a class="property-name" href="#.message_display_compact">message_display_compact</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
 </div>
-        <div>
-<span class="item-name" id=".render_embeds"><a class="property-name" href="#.render_embeds">render_embeds</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
+        <div class="item">
+<div class="item-name item" id=".render_embeds"><a class="property-name" href="#.render_embeds">render_embeds</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
 </div>
-        <div>
-<span class="item-name" id=".render_reactions"><a class="property-name" href="#.render_reactions">render_reactions</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
+        <div class="item">
+<div class="item-name item" id=".render_reactions"><a class="property-name" href="#.render_reactions">render_reactions</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
 </div>
-        <div>
-<span class="item-name" id=".restricted_guilds"><a class="property-name" href="#.restricted_guilds">restricted_guilds</a><span class="symbol">:</span> 
-<span><span class="reference-link"><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>[]</span></span></span>
+        <div class="item">
+<div class="item-name item" id=".restricted_guilds"><a class="property-name" href="#.restricted_guilds">restricted_guilds</a><span class="symbol">:</span> 
+<span><span class="reference-link"><a class='object' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></span><span>&lt;<span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>&gt;</span></span></span>
 </div>
-        <div>
-<span class="item-name" id=".show_current_game"><a class="property-name" href="#.show_current_game">show_current_game</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
+        <div class="item">
+<div class="item-name item" id=".show_current_game"><a class="property-name" href="#.show_current_game">show_current_game</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
 </div>
-        <div>
-<span class="item-name" id=".status"><a class="property-name" href="#.status">status</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>
+        <div class="item">
+<div class="item-name item" id=".status"><a class="property-name" href="#.status">status</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>
 </div>
-        <div>
-<span class="item-name" id=".theme"><a class="property-name" href="#.theme">theme</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>
+        <div class="item">
+<div class="item-name item" id=".theme"><a class="property-name" href="#.theme">theme</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>
 </div>
-        <div>
-<span class="item-name" id=".timezone_offset"><a class="property-name" href="#.timezone_offset">timezone_offset</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>
+        <div class="item">
+<div class="item-name item" id=".timezone_offset"><a class="property-name" href="#.timezone_offset">timezone_offset</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>
 </div>
     </div>
 

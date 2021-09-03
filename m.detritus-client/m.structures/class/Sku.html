@@ -22,7 +22,7 @@
       <nav class="container-fluid navi">
       <div class="row">
         <div class="col-4">
-          <input class="form-control search" id="search" type="search" placeholder="Press '/' to search" aria-label="Search">
+          <input class="form-control search" id="search" type="search" placeholder="Search..." aria-label="Search">
         </div>
         <div class="col-8">
           <div class="row float-end" style="margin-top:5px">
@@ -45,8 +45,8 @@
     </nav>  <div class="container-fluid">
     <div class="row">
       <div class="col-lg-auto sidebar" id="sidebar">
-        <h1 class="lib-name text-center">Detritus</h1>
         
+    <h1 class="lib-name text-center"><a href="../../../index.html">Detritus</a></h1>
     <img src="../../../assets/logo.png" alt="Logo" class="img-fluid mx-auto d-block">
     <p class="current-thing text-center">class <span class="object">Sku</span></p>
     <div class="sidebar-members">
@@ -57,7 +57,7 @@
         <span class="sidebar-category">Properties</span>
         </div>
         <div class="collapsible-body open"> 
-        <span class="sidebar-category-member"><a href="#._keys">_keys</a></span><br><span class="sidebar-category-member"><a href="#.accessType">accessType</a></span><br><span class="sidebar-category-member"><a href="#.application">application</a></span><br><span class="sidebar-category-member"><a href="#.applicationId">applicationId</a></span><br><span class="sidebar-category-member"><a href="#.contentRating">contentRating</a></span><br><span class="sidebar-category-member"><a href="#.contentRatingAgency">contentRatingAgency</a></span><br><span class="sidebar-category-member"><a href="#.dependentSkuId">dependentSkuId</a></span><br><span class="sidebar-category-member"><a href="#.features">features</a></span><br><span class="sidebar-category-member"><a href="#.flags">flags</a></span><br><span class="sidebar-category-member"><a href="#.genres">genres</a></span><br><span class="sidebar-category-member"><a href="#.id">id</a></span><br><span class="sidebar-category-member"><a href="#.legalNotice">legalNotice</a></span><br><span class="sidebar-category-member"><a href="#.locales">locales</a></span><br><span class="sidebar-category-member"><a href="#.manifestLabels">manifestLabels</a></span><br><span class="sidebar-category-member"><a href="#.name">name</a></span><br><span class="sidebar-category-member"><a href="#.premium">premium</a></span><br><span class="sidebar-category-member"><a href="#.price">price</a></span><br><span class="sidebar-category-member"><a href="#.releaseDate">releaseDate</a></span><br><span class="sidebar-category-member"><a href="#.showAgeGate">showAgeGate</a></span><br><span class="sidebar-category-member"><a href="#.systemRequirements">systemRequirements</a></span><br><span class="sidebar-category-member"><a href="#.slug">slug</a></span><br><span class="sidebar-category-member"><a href="#.type">type</a></span><br>
+        <span class="sidebar-category-member"><a href="#._keys">_keys</a></span><span class="sidebar-category-member"><a href="#.accessType">accessType</a></span><span class="sidebar-category-member"><a href="#.application">application</a></span><span class="sidebar-category-member"><a href="#.applicationId">applicationId</a></span><span class="sidebar-category-member"><a href="#.contentRating">contentRating</a></span><span class="sidebar-category-member"><a href="#.contentRatingAgency">contentRatingAgency</a></span><span class="sidebar-category-member"><a href="#.dependentSkuId">dependentSkuId</a></span><span class="sidebar-category-member"><a href="#.features">features</a></span><span class="sidebar-category-member"><a href="#.flags">flags</a></span><span class="sidebar-category-member"><a href="#.genres">genres</a></span><span class="sidebar-category-member"><a href="#.id">id</a></span><span class="sidebar-category-member"><a href="#.legalNotice">legalNotice</a></span><span class="sidebar-category-member"><a href="#.locales">locales</a></span><span class="sidebar-category-member"><a href="#.manifestLabels">manifestLabels</a></span><span class="sidebar-category-member"><a href="#.name">name</a></span><span class="sidebar-category-member"><a href="#.premium">premium</a></span><span class="sidebar-category-member"><a href="#.price">price</a></span><span class="sidebar-category-member"><a href="#.releaseDate">releaseDate</a></span><span class="sidebar-category-member"><a href="#.showAgeGate">showAgeGate</a></span><span class="sidebar-category-member"><a href="#.systemRequirements">systemRequirements</a></span><span class="sidebar-category-member"><a href="#.slug">slug</a></span><span class="sidebar-category-member"><a href="#.type">type</a></span>
         </div>
         </div>
     
@@ -67,7 +67,7 @@
         <span class="sidebar-category">Methods</span>
         </div>
         <div class="collapsible-body open"> 
-        <span class="sidebar-category-member"><a href="#.url">url</a></span><br><span class="sidebar-category-member"><a href="#.mergeValue">mergeValue</a></span><br>
+        <span class="sidebar-category-member"><a href="#.url">url</a></span><span class="sidebar-category-member"><a href="#.mergeValue">mergeValue</a></span>
         </div>
         </div>
     
@@ -117,8 +117,20 @@
                             <span>Methods</span>
                         </div>
                         <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-getters" checked>
+                            <span>Getters</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-setters" checked>
+                            <span>Setters</span>
+                        </div>
+                        <div>
                             <input type="checkbox" class="c-checkbox" id="search-option-enum-members">
                             <span>Enum members</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-privates">
+                            <span>Show privates</span>
                         </div>
                     </div>
                 </div>
@@ -150,7 +162,7 @@
 </svg>
 </span></a>
     </h1>
-    <p class="item-name"><span class="keyword">extends</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.structures\class\BaseStructure.html">BaseStructure</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">BaseStructure</span><span style="display:block" class="monospace fw-bold">structures/BaseStructure</span></span></span></span></p>
+    <p class="item-name"><span class="keyword">extends</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.structures\class\BaseStructure.html">BaseStructure</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">BaseStructure</span><span style="display:block" class="monospace fw-bold">structures/<span class="item-name object">BaseStructure</span></span></span></span></span></p>
 
 
     <p>Sku Structure, used in [Gift] and [StoreListing]</p>
@@ -159,12 +171,13 @@
     <h2>Constructor</h2>
     
 <div id="class.constructor" class="item">
-    <p class="item-name"><span class="keyword">constructor</span><span>(<span class="item-name"><span class="param-name">client</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\class\ShardClient.html">ShardClient</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">ShardClient</span><span style="display:block" class="monospace fw-bold">/ShardClient</span></span></span></span></span>, <span class="item-name"><span class="param-name">data</span><span class="symbol">?</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.structures\interface\BaseStructureData.html">BaseStructureData</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">BaseStructureData</span><span style="display:block" class="monospace fw-bold">structures/BaseStructureData</span></span></span></span></span>, <span class="item-name"><span class="param-name">isClone</span><span class="symbol">?</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>)</span></p>
+    <span class="item-name"><span class="keyword">constructor</span><span>(<span class="item-name"><span class="param-name">client</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\class\ShardClient.html">ShardClient</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">ShardClient</span><span style="display:block" class="monospace fw-bold"><span class="item-name object">ShardClient</span></span></span></span></span></span>, <span class="item-name"><span class="param-name">data</span><span class="symbol">?</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.structures\interface\BaseStructureData.html">BaseStructureData</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">BaseStructureData</span><span style="display:block" class="monospace fw-bold">structures/<span class="item-name object">BaseStructureData</span></span></span></span></span></span>, <span class="item-name"><span class="param-name">isClone</span><span class="symbol">?</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>)</span></span>
 
     <div class="docblock">
     <ul></ul>
     </div>
 </div>
+
     
     <h2>Properties</h2>
     <div><div class="item" id="._keys">
@@ -173,7 +186,8 @@
     
     
     <span class="modifier">readonly</span>
-    <span class="item-name"><a class="property-name" href="#._keys">_keys</a><span>: keysSku</span></span>
+    <span class="item-name"><a class="property-name" href="#._keys">_keys</a>
+    </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/structures/store.ts#L166>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
@@ -190,7 +204,8 @@
     
     
     
-    <span class="item-name"><a class="property-name" href="#.accessType">accessType</a><span>: <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span></span>
+    <span class="item-name"><a class="property-name" href="#.accessType">accessType</a><span>: <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span> <span class="symbol">=</span> <span class="reference-link"><a class="primitive number-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">0</a></span>
+    </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/structures/store.ts#L168>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
@@ -207,7 +222,8 @@
     
     
     
-    <span class="item-name"><a class="property-name" href="#.application">application</a><span>: <span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.structures\class\Application.html">Application</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Application</span><span style="display:block" class="monospace fw-bold">structures/Application</span></span></span></span></span></span>
+    <span class="item-name"><a class="property-name" href="#.application">application</a><span>: <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.structures\class\Application.html">Application</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Application</span><span style="display:block" class="monospace fw-bold">structures/<span class="item-name object">Application</span></span></span></span></span></span>
+    </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/structures/store.ts#L169>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
@@ -224,7 +240,8 @@
     
     
     
-    <span class="item-name"><a class="property-name" href="#.applicationId">applicationId</a><span>: <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span></span>
+    <span class="item-name"><a class="property-name" href="#.applicationId">applicationId</a><span>: <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span> <span class="symbol">=</span> <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">''</a></span>
+    </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/structures/store.ts#L170>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
@@ -242,8 +259,9 @@
     
     
     <span class="item-name"><a class="property-name" href="#.contentRating">contentRating</a><span>: 
-<span>{ <span class="item-name" id=".descriptors"><a class="property-name" href="#.descriptors">descriptors</a><span class="symbol">:</span> 
-<span><span class="reference-link"><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span>[]</span></span></span>, <span class="item-name" id=".rating"><a class="property-name" href="#.rating">rating</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span> }</span></span></span>
+<span>{ <span class="item-name"><a class="property-name" href="#.descriptors">descriptors</a><span class="symbol">:</span> 
+<span><span class="reference-link"><a class='object' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></span><span>&lt;<span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span>&gt;</span></span></span>, <span class="item-name"><a class="property-name" href="#.rating">rating</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span> }</span></span>
+    </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/structures/store.ts#L171>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
@@ -260,7 +278,8 @@
     
     
     
-    <span class="item-name"><a class="property-name" href="#.contentRatingAgency">contentRatingAgency</a><span>: <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span></span>
+    <span class="item-name"><a class="property-name" href="#.contentRatingAgency">contentRatingAgency</a><span>: <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span> <span class="symbol">=</span> <span class="reference-link"><a class="primitive number-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">0</a></span>
+    </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/structures/store.ts#L172>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
@@ -278,7 +297,8 @@
     
     
     <span class="item-name"><a class="property-name" href="#.dependentSkuId">dependentSkuId</a><span>: 
-<span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span></span></span>
+<span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span></span> <span class="symbol">=</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></span>
+    </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/structures/store.ts#L173>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
@@ -296,7 +316,8 @@
     
     
     <span class="item-name"><a class="property-name" href="#.features">features</a><span>: 
-<span><span class="reference-link"><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span>[]</span></span></span></span>
+<span><span class="reference-link"><a class='object' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></span><span>&lt;<span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span>&gt;</span></span></span>
+    </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/structures/store.ts#L174>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
@@ -313,7 +334,8 @@
     
     
     
-    <span class="item-name"><a class="property-name" href="#.flags">flags</a><span>: <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span></span>
+    <span class="item-name"><a class="property-name" href="#.flags">flags</a><span>: <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span> <span class="symbol">=</span> <span class="reference-link"><a class="primitive number-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">0</a></span>
+    </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/structures/store.ts#L175>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
@@ -331,7 +353,8 @@
     
     
     <span class="item-name"><a class="property-name" href="#.genres">genres</a><span>: 
-<span><span class="reference-link"><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span>[]</span></span></span></span>
+<span><span class="reference-link"><a class='object' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></span><span>&lt;<span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span>&gt;</span></span></span>
+    </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/structures/store.ts#L176>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
@@ -348,7 +371,8 @@
     
     
     
-    <span class="item-name"><a class="property-name" href="#.id">id</a><span>: <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span></span>
+    <span class="item-name"><a class="property-name" href="#.id">id</a><span>: <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span> <span class="symbol">=</span> <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">''</a></span>
+    </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/structures/store.ts#L177>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
@@ -365,7 +389,8 @@
     
     
     
-    <span class="item-name"><a class="property-name" href="#.legalNotice">legalNotice</a><span>: <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span></span>
+    <span class="item-name"><a class="property-name" href="#.legalNotice">legalNotice</a><span>: <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span> <span class="symbol">=</span> <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">''</a></span>
+    </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/structures/store.ts#L178>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
@@ -383,7 +408,8 @@
     
     
     <span class="item-name"><a class="property-name" href="#.locales">locales</a><span>: 
-<span><span class="reference-link"><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>[]</span></span></span></span>
+<span><span class="reference-link"><a class='object' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></span><span>&lt;<span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>&gt;</span></span></span>
+    </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/structures/store.ts#L179>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
@@ -401,7 +427,8 @@
     
     
     <span class="item-name"><a class="property-name" href="#.manifestLabels">manifestLabels</a><span>: 
-<span><span><span class="reference-link"><span class="reference-link"><span class='primitive'>any</span></span>[]</span></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></span></span></span></span>
+<span><span><span class="reference-link"><a class='object' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></span><span>&lt;<span class="reference-link"><span class='primitive'>any</span></span>&gt;</span></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></span></span></span>
+    </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/structures/store.ts#L180>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
@@ -418,7 +445,8 @@
     
     
     
-    <span class="item-name"><a class="property-name" href="#.name">name</a><span>: <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span></span>
+    <span class="item-name"><a class="property-name" href="#.name">name</a><span>: <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span> <span class="symbol">=</span> <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">''</a></span>
+    </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/structures/store.ts#L181>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
@@ -435,7 +463,8 @@
     
     
     
-    <span class="item-name"><a class="property-name" href="#.premium">premium</a><span>: <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></span></span></span>
+    <span class="item-name"><a class="property-name" href="#.premium">premium</a><span>: <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></span></span>
+    </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/structures/store.ts#L182>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
@@ -453,7 +482,8 @@
     
     
     <span class="item-name"><a class="property-name" href="#.price">price</a><span>: 
-<span>{ <span class="item-name" id=".amount"><a class="property-name" href="#.amount">amount</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>, <span class="item-name" id=".currency"><a class="property-name" href="#.currency">currency</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span> }</span></span></span>
+<span>{ <span class="item-name"><a class="property-name" href="#.amount">amount</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>, <span class="item-name"><a class="property-name" href="#.currency">currency</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span> }</span></span>
+    </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/structures/store.ts#L183>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
@@ -471,7 +501,8 @@
     
     
     <span class="item-name"><a class="property-name" href="#.releaseDate">releaseDate</a><span>: 
-<span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span></span></span>
+<span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span></span>
+    </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/structures/store.ts#L184>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
@@ -488,7 +519,8 @@
     
     
     
-    <span class="item-name"><a class="property-name" href="#.showAgeGate">showAgeGate</a><span>: <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span></span>
+    <span class="item-name"><a class="property-name" href="#.showAgeGate">showAgeGate</a><span>: <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span> <span class="symbol">=</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">false</a></span>
+    </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/structures/store.ts#L185>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
@@ -506,8 +538,9 @@
     
     
     <span class="item-name"><a class="property-name" href="#.systemRequirements">systemRequirements</a><span>: 
-<span>{ <span>[key: <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>]: 
-<span>{ <span class="item-name" id=".recommended"><a class="property-name" href="#.recommended">recommended</a><span class="symbol">:</span> <span class="reference-link"><span class='primitive'>any</span></span></span>, <span class="item-name" id=".minimum"><a class="property-name" href="#.minimum">minimum</a><span class="symbol">:</span> <span class="reference-link"><span class='primitive'>any</span></span></span> }</span></span> }</span></span></span>
+<span>{ <span>[key<span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>]<span class="symbol">:</span> 
+<span>{ <span class="item-name"><a class="property-name" href="#.recommended">recommended</a><span class="symbol">:</span> <span class="reference-link"><span class='primitive'>any</span></span></span>, <span class="item-name"><a class="property-name" href="#.minimum">minimum</a><span class="symbol">:</span> <span class="reference-link"><span class='primitive'>any</span></span></span> }</span></span> }</span></span>
+    </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/structures/store.ts#L186>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
@@ -524,7 +557,8 @@
     
     
     
-    <span class="item-name"><a class="property-name" href="#.slug">slug</a><span>: <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span></span>
+    <span class="item-name"><a class="property-name" href="#.slug">slug</a><span>: <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span> <span class="symbol">=</span> <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">''</a></span>
+    </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/structures/store.ts#L187>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
@@ -541,7 +575,8 @@
     
     
     
-    <span class="item-name"><a class="property-name" href="#.type">type</a><span>: <span><span class="c-tooltip"><a class="reference-link object" href="..\..\enum\SkuTypes.html">SkuTypes</a><span class="c-tooltip-content"><span class="keyword">enum</span> <span class="item-name object">SkuTypes</span><span style="display:block" class="monospace fw-bold">/SkuTypes</span></span></span></span></span></span>
+    <span class="item-name"><a class="property-name" href="#.type">type</a><span>: <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\enum\SkuTypes.html">SkuTypes</a><span class="c-tooltip-content"><span class="keyword">enum</span> <span class="item-name object">SkuTypes</span><span style="display:block" class="monospace fw-bold"><span class="item-name object">SkuTypes</span></span></span></span></span></span> <span class="symbol">=</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\enum\SkuTypes.html#.BASE">SkuTypes<span class="symbol">.</span>BASE</a><span class="c-tooltip-content"><span class="keyword">enum</span> <span class="item-name object">SkuTypes</span><span style="display:block" class="monospace fw-bold"><span class="item-name object">SkuTypes</span><span class="symbol">.</span>BASE</span></span></span></span>
+    </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/structures/store.ts#L188>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
@@ -557,47 +592,47 @@
 
     <div>
 <div id=".url" class="item">
-    <p class="monospace">
+    <span class="monospace">
     
     
     
     
     <span class="modifier">get</span>
     
+        <a class="item-name method-name" href="#.url">url</a><span>()</span><span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>
+    </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/structures/store.ts#L199>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
   <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
 </svg>
 </span></a>
-        <a class="item-name method-name" href="#.url">url</a><span>()</span><span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>
         <div class="docblock">
         
         
-        </div>
-    </p>
+    </div>
 </div></div>
     <div>
 <div id=".mergeValue" class="item">
-    <p class="monospace">
+    <span class="monospace">
     
     
     
     
     
     
+        <a class="item-name method-name" href="#.mergeValue">mergeValue</a><span>(<span class="item-name"><span class="param-name">key</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>, <span class="item-name"><span class="param-name">value</span><span class="symbol">:</span> <span class="reference-link"><span class='primitive'>any</span></span></span>)</span><span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://www.typescriptlang.org/docs/handbook/2/functions.html#void">void</a></span></span>
+    </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/structures/store.ts#L203>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
   <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
 </svg>
 </span></a>
-        <a class="item-name method-name" href="#.mergeValue">mergeValue</a><span>(<span class="item-name"><span class="param-name">key</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>, <span class="item-name"><span class="param-name">value</span><span class="symbol">:</span> <span class="reference-link"><span class='primitive'>any</span></span></span>)</span><span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://www.typescriptlang.org/docs/handbook/2/functions.html#void">void</a></span></span>
         <div class="docblock">
         <ul></ul>
         
-        </div>
-    </p>
+    </div>
 </div></div>
 
 </div>

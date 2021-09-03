@@ -22,7 +22,7 @@
       <nav class="container-fluid navi">
       <div class="row">
         <div class="col-4">
-          <input class="form-control search" id="search" type="search" placeholder="Press '/' to search" aria-label="Search">
+          <input class="form-control search" id="search" type="search" placeholder="Search..." aria-label="Search">
         </div>
         <div class="col-8">
           <div class="row float-end" style="margin-top:5px">
@@ -45,8 +45,8 @@
     </nav>  <div class="container-fluid">
     <div class="row">
       <div class="col-lg-auto sidebar" id="sidebar">
-        <h1 class="lib-name text-center">Detritus</h1>
         
+    <h1 class="lib-name text-center"><a href="../../../../index.html">Detritus</a></h1>
     <img src="../../../../assets/logo.png" alt="Logo" class="img-fluid mx-auto d-block">
     <p class="current-thing">interface <span class="object">UserUpdate</span></p>
     <div class="sidebar-members">
@@ -57,7 +57,7 @@
         <span class="sidebar-category">Properties</span>
         </div>
         <div class="collapsible-body open"> 
-        <span class="sidebar-category-member"><a href="#.differences">differences</a></span><br><span class="sidebar-category-member"><a href="#.old">old</a></span><br><span class="sidebar-category-member"><a href="#.user">user</a></span><br>
+        <span class="sidebar-category-member"><a href="#.differences">differences</a></span><span class="sidebar-category-member"><a href="#.old">old</a></span><span class="sidebar-category-member"><a href="#.user">user</a></span>
         </div>
         </div>
     
@@ -107,8 +107,20 @@
                             <span>Methods</span>
                         </div>
                         <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-getters" checked>
+                            <span>Getters</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-setters" checked>
+                            <span>Setters</span>
+                        </div>
+                        <div>
                             <input type="checkbox" class="c-checkbox" id="search-option-enum-members">
                             <span>Enum members</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-privates">
+                            <span>Show privates</span>
                         </div>
                     </div>
                 </div>
@@ -149,15 +161,15 @@
     <h2>Properties</h2>
 
     <div>
-        <div>
-<span class="item-name" id=".differences"><a class="property-name" href="#.differences">differences</a><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.gateway\m.GatewayClientEvents\type\Differences.html">Differences</a><span class="c-tooltip-content"><span class="keyword">type alias</span> <span class="item-name object">Differences</span><span style="display:block" class="monospace fw-bold">gateway/GatewayClientEvents/Differences</span></span></span></span></span>
+        <div class="item">
+<div class="item-name item" id=".differences"><a class="property-name" href="#.differences">differences</a><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\..\m.detritus-client\m.gateway\m.GatewayClientEvents\type\Differences.html">Differences</a><span class="c-tooltip-content"><span class="keyword">type</span> <span class="item-name object">Differences</span><span style="display:block" class="monospace fw-bold">gateway/GatewayClientEvents/<span class="item-name object">Differences</span></span></span></span></span></span>
 </div>
-        <div>
-<span class="item-name" id=".old"><a class="property-name" href="#.old">old</a><span class="symbol">:</span> 
-<span><span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.structures\class\UserMe.html">UserMe</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">UserMe</span><span style="display:block" class="monospace fw-bold">structures/UserMe</span></span></span></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></span></span></span>
+        <div class="item">
+<div class="item-name item" id=".old"><a class="property-name" href="#.old">old</a><span class="symbol">:</span> 
+<span><span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\..\m.detritus-client\m.structures\class\UserMe.html">UserMe</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">UserMe</span><span style="display:block" class="monospace fw-bold">structures/<span class="item-name object">UserMe</span></span></span></span></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></span></span></span>
 </div>
-        <div>
-<span class="item-name" id=".user"><a class="property-name" href="#.user">user</a><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.structures\class\UserMe.html">UserMe</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">UserMe</span><span style="display:block" class="monospace fw-bold">structures/UserMe</span></span></span></span></span>
+        <div class="item">
+<div class="item-name item" id=".user"><a class="property-name" href="#.user">user</a><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\..\m.detritus-client\m.structures\class\UserMe.html">UserMe</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">UserMe</span><span style="display:block" class="monospace fw-bold">structures/<span class="item-name object">UserMe</span></span></span></span></span></span>
 </div>
     </div>
 

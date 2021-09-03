@@ -22,7 +22,7 @@
       <nav class="container-fluid navi">
       <div class="row">
         <div class="col-4">
-          <input class="form-control search" id="search" type="search" placeholder="Press '/' to search" aria-label="Search">
+          <input class="form-control search" id="search" type="search" placeholder="Search..." aria-label="Search">
         </div>
         <div class="col-8">
           <div class="row float-end" style="margin-top:5px">
@@ -45,8 +45,8 @@
     </nav>  <div class="container-fluid">
     <div class="row">
       <div class="col-lg-auto sidebar" id="sidebar">
-        <h1 class="lib-name text-center">Detritus</h1>
         
+    <h1 class="lib-name text-center"><a href="../../index.html">Detritus</a></h1>
     <img src="../../assets/logo.png" alt="Logo" class="img-fluid mx-auto d-block">
     <p class="current-thing text-center">enum <span class="object">MessageFlags</span></p>
     <div class="sidebar-members">
@@ -57,7 +57,7 @@
         <span class="sidebar-category">Members</span>
         </div>
         <div class="collapsible-body open"> 
-        <span class="sidebar-category-member"><a href="#.CROSSPOSTED">CROSSPOSTED</a></span><br><span class="sidebar-category-member"><a href="#.IS_CROSSPOST">IS_CROSSPOST</a></span><br><span class="sidebar-category-member"><a href="#.SUPPRESS_EMBEDS">SUPPRESS_EMBEDS</a></span><br><span class="sidebar-category-member"><a href="#.SOURCE_MESSAGE_DELETED">SOURCE_MESSAGE_DELETED</a></span><br><span class="sidebar-category-member"><a href="#.URGENT">URGENT</a></span><br><span class="sidebar-category-member"><a href="#.HAS_THREAD">HAS_THREAD</a></span><br><span class="sidebar-category-member"><a href="#.EPHEMERAL">EPHEMERAL</a></span><br><span class="sidebar-category-member"><a href="#.LOADING">LOADING</a></span><br>
+        <span class="sidebar-category-member"><a href="#.CROSSPOSTED">CROSSPOSTED</a></span><span class="sidebar-category-member"><a href="#.IS_CROSSPOST">IS_CROSSPOST</a></span><span class="sidebar-category-member"><a href="#.SUPPRESS_EMBEDS">SUPPRESS_EMBEDS</a></span><span class="sidebar-category-member"><a href="#.SOURCE_MESSAGE_DELETED">SOURCE_MESSAGE_DELETED</a></span><span class="sidebar-category-member"><a href="#.URGENT">URGENT</a></span><span class="sidebar-category-member"><a href="#.HAS_THREAD">HAS_THREAD</a></span><span class="sidebar-category-member"><a href="#.EPHEMERAL">EPHEMERAL</a></span><span class="sidebar-category-member"><a href="#.LOADING">LOADING</a></span>
         </div>
         </div>
     
@@ -107,8 +107,20 @@
                             <span>Methods</span>
                         </div>
                         <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-getters" checked>
+                            <span>Getters</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-setters" checked>
+                            <span>Setters</span>
+                        </div>
+                        <div>
                             <input type="checkbox" class="c-checkbox" id="search-option-enum-members">
                             <span>Enum members</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-privates">
+                            <span>Show privates</span>
                         </div>
                     </div>
                 </div>
@@ -144,49 +156,49 @@
     
 
     <h2>Members</h2>
-    <div id=".CROSSPOSTED">
+    <div id=".CROSSPOSTED" class="item">
         <a class="item-name" href="#.CROSSPOSTED">CROSSPOSTED</a>
 
         <span>= 1 &lt;&lt; 0</span>
 
     </div>
-    <div id=".IS_CROSSPOST">
+    <div id=".IS_CROSSPOST" class="item">
         <a class="item-name" href="#.IS_CROSSPOST">IS_CROSSPOST</a>
 
         <span>= 1 &lt;&lt; 1</span>
 
     </div>
-    <div id=".SUPPRESS_EMBEDS">
+    <div id=".SUPPRESS_EMBEDS" class="item">
         <a class="item-name" href="#.SUPPRESS_EMBEDS">SUPPRESS_EMBEDS</a>
 
         <span>= 1 &lt;&lt; 2</span>
 
     </div>
-    <div id=".SOURCE_MESSAGE_DELETED">
+    <div id=".SOURCE_MESSAGE_DELETED" class="item">
         <a class="item-name" href="#.SOURCE_MESSAGE_DELETED">SOURCE_MESSAGE_DELETED</a>
 
         <span>= 1 &lt;&lt; 3</span>
 
     </div>
-    <div id=".URGENT">
+    <div id=".URGENT" class="item">
         <a class="item-name" href="#.URGENT">URGENT</a>
 
         <span>= 1 &lt;&lt; 4</span>
 
     </div>
-    <div id=".HAS_THREAD">
+    <div id=".HAS_THREAD" class="item">
         <a class="item-name" href="#.HAS_THREAD">HAS_THREAD</a>
 
         <span>= 1 &lt;&lt; 5</span>
 
     </div>
-    <div id=".EPHEMERAL">
+    <div id=".EPHEMERAL" class="item">
         <a class="item-name" href="#.EPHEMERAL">EPHEMERAL</a>
 
         <span>= 1 &lt;&lt; 6</span>
 
     </div>
-    <div id=".LOADING">
+    <div id=".LOADING" class="item">
         <a class="item-name" href="#.LOADING">LOADING</a>
 
         <span>= 1 &lt;&lt; 7</span>

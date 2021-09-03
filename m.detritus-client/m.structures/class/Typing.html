@@ -22,7 +22,7 @@
       <nav class="container-fluid navi">
       <div class="row">
         <div class="col-4">
-          <input class="form-control search" id="search" type="search" placeholder="Press '/' to search" aria-label="Search">
+          <input class="form-control search" id="search" type="search" placeholder="Search..." aria-label="Search">
         </div>
         <div class="col-8">
           <div class="row float-end" style="margin-top:5px">
@@ -45,8 +45,8 @@
     </nav>  <div class="container-fluid">
     <div class="row">
       <div class="col-lg-auto sidebar" id="sidebar">
-        <h1 class="lib-name text-center">Detritus</h1>
         
+    <h1 class="lib-name text-center"><a href="../../../index.html">Detritus</a></h1>
     <img src="../../../assets/logo.png" alt="Logo" class="img-fluid mx-auto d-block">
     <p class="current-thing text-center">class <span class="object">Typing</span></p>
     <div class="sidebar-members">
@@ -57,7 +57,7 @@
         <span class="sidebar-category">Properties</span>
         </div>
         <div class="collapsible-body open"> 
-        <span class="sidebar-category-member"><a href="#._keys">_keys</a></span><br><span class="sidebar-category-member"><a href="#._keysMerge">_keysMerge</a></span><br><span class="sidebar-category-member"><a href="#.timeout">timeout</a></span><br><span class="sidebar-category-member"><a href="#.channelId">channelId</a></span><br><span class="sidebar-category-member"><a href="#.guildId">guildId</a></span><br><span class="sidebar-category-member"><a href="#.member">member</a></span><br><span class="sidebar-category-member"><a href="#.started">started</a></span><br><span class="sidebar-category-member"><a href="#.stopped">stopped</a></span><br><span class="sidebar-category-member"><a href="#.timestamp">timestamp</a></span><br><span class="sidebar-category-member"><a href="#.userId">userId</a></span><br>
+        <span class="sidebar-category-member"><a href="#._keys">_keys</a></span><span class="sidebar-category-member"><a href="#._keysMerge">_keysMerge</a></span><span class="sidebar-category-member"><a href="#.timeout">timeout</a></span><span class="sidebar-category-member"><a href="#.channelId">channelId</a></span><span class="sidebar-category-member"><a href="#.guildId">guildId</a></span><span class="sidebar-category-member"><a href="#.member">member</a></span><span class="sidebar-category-member"><a href="#.started">started</a></span><span class="sidebar-category-member"><a href="#.stopped">stopped</a></span><span class="sidebar-category-member"><a href="#.timestamp">timestamp</a></span><span class="sidebar-category-member"><a href="#.userId">userId</a></span>
         </div>
         </div>
     
@@ -67,7 +67,7 @@
         <span class="sidebar-category">Methods</span>
         </div>
         <div class="collapsible-body open"> 
-        <span class="sidebar-category-member"><a href="#.channel">channel</a></span><br><span class="sidebar-category-member"><a href="#.guild">guild</a></span><br><span class="sidebar-category-member"><a href="#.shouldStopAt">shouldStopAt</a></span><br><span class="sidebar-category-member"><a href="#.user">user</a></span><br><span class="sidebar-category-member"><a href="#._stop">_stop</a></span><br><span class="sidebar-category-member"><a href="#.mergeValue">mergeValue</a></span><br>
+        <span class="sidebar-category-member"><a href="#.channel">channel</a></span><span class="sidebar-category-member"><a href="#.guild">guild</a></span><span class="sidebar-category-member"><a href="#.shouldStopAt">shouldStopAt</a></span><span class="sidebar-category-member"><a href="#.user">user</a></span><span class="sidebar-category-member"><a href="#._stop">_stop</a></span><span class="sidebar-category-member"><a href="#.mergeValue">mergeValue</a></span>
         </div>
         </div>
     
@@ -117,8 +117,20 @@
                             <span>Methods</span>
                         </div>
                         <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-getters" checked>
+                            <span>Getters</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-setters" checked>
+                            <span>Setters</span>
+                        </div>
+                        <div>
                             <input type="checkbox" class="c-checkbox" id="search-option-enum-members">
                             <span>Enum members</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-privates">
+                            <span>Show privates</span>
                         </div>
                     </div>
                 </div>
@@ -150,7 +162,7 @@
 </svg>
 </span></a>
     </h1>
-    <p class="item-name"><span class="keyword">extends</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.structures\class\BaseStructure.html">BaseStructure</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">BaseStructure</span><span style="display:block" class="monospace fw-bold">structures/BaseStructure</span></span></span></span></p>
+    <p class="item-name"><span class="keyword">extends</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.structures\class\BaseStructure.html">BaseStructure</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">BaseStructure</span><span style="display:block" class="monospace fw-bold">structures/<span class="item-name object">BaseStructure</span></span></span></span></span></p>
 
 
     <p>Channel Typing Structure
@@ -160,12 +172,13 @@ used to tell you when someone starts typing in a channel</p>
     <h2>Constructor</h2>
     
 <div id="class.constructor" class="item">
-    <p class="item-name"><span class="keyword">constructor</span><span>(<span class="item-name"><span class="param-name">client</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\class\ShardClient.html">ShardClient</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">ShardClient</span><span style="display:block" class="monospace fw-bold">/ShardClient</span></span></span></span></span>, <span class="item-name"><span class="param-name">data</span><span class="symbol">?</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.structures\interface\BaseStructureData.html">BaseStructureData</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">BaseStructureData</span><span style="display:block" class="monospace fw-bold">structures/BaseStructureData</span></span></span></span></span>, <span class="item-name"><span class="param-name">isClone</span><span class="symbol">?</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>)</span></p>
+    <span class="item-name"><span class="keyword">constructor</span><span>(<span class="item-name"><span class="param-name">client</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\class\ShardClient.html">ShardClient</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">ShardClient</span><span style="display:block" class="monospace fw-bold"><span class="item-name object">ShardClient</span></span></span></span></span></span>, <span class="item-name"><span class="param-name">data</span><span class="symbol">?</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.structures\interface\BaseStructureData.html">BaseStructureData</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">BaseStructureData</span><span style="display:block" class="monospace fw-bold">structures/<span class="item-name object">BaseStructureData</span></span></span></span></span></span>, <span class="item-name"><span class="param-name">isClone</span><span class="symbol">?</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>)</span></span>
 
     <div class="docblock">
     <ul></ul>
     </div>
 </div>
+
     
     <h2>Properties</h2>
     <div><div class="item" id="._keys">
@@ -174,7 +187,8 @@ used to tell you when someone starts typing in a channel</p>
     
     
     <span class="modifier">readonly</span>
-    <span class="item-name"><a class="property-name" href="#._keys">_keys</a><span>: keysTyping</span></span>
+    <span class="item-name"><a class="property-name" href="#._keys">_keys</a>
+    </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/structures/typing.ts#L39>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
@@ -191,7 +205,8 @@ used to tell you when someone starts typing in a channel</p>
     
     
     <span class="modifier">readonly</span>
-    <span class="item-name"><a class="property-name" href="#._keysMerge">_keysMerge</a><span>: keysMergeTyping</span></span>
+    <span class="item-name"><a class="property-name" href="#._keysMerge">_keysMerge</a>
+    </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/structures/typing.ts#L40>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
@@ -208,7 +223,8 @@ used to tell you when someone starts typing in a channel</p>
     
     
     <span class="modifier">readonly</span>
-    <span class="item-name"><a class="property-name" href="#.timeout">timeout</a><span>: new Timers.Timeout()</span></span>
+    <span class="item-name"><a class="property-name" href="#.timeout">timeout</a> <span class="symbol">=</span> new Timers.Timeout()
+    </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/structures/typing.ts#L41>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
@@ -225,7 +241,8 @@ used to tell you when someone starts typing in a channel</p>
     
     
     
-    <span class="item-name"><a class="property-name" href="#.channelId">channelId</a><span>: <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span></span>
+    <span class="item-name"><a class="property-name" href="#.channelId">channelId</a><span>: <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span> <span class="symbol">=</span> <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">''</a></span>
+    </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/structures/typing.ts#L43>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
@@ -242,7 +259,8 @@ used to tell you when someone starts typing in a channel</p>
     
     
     
-    <span class="item-name"><a class="property-name" href="#.guildId">guildId</a><span>: <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span></span>
+    <span class="item-name"><a class="property-name" href="#.guildId">guildId</a><span>: <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>
+    </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/structures/typing.ts#L44>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
@@ -259,7 +277,8 @@ used to tell you when someone starts typing in a channel</p>
     
     
     
-    <span class="item-name"><a class="property-name" href="#.member">member</a><span>: <span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.structures\class\Member.html">Member</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Member</span><span style="display:block" class="monospace fw-bold">structures/Member</span></span></span></span></span></span>
+    <span class="item-name"><a class="property-name" href="#.member">member</a><span>: <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.structures\class\Member.html">Member</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Member</span><span style="display:block" class="monospace fw-bold">structures/<span class="item-name object">Member</span></span></span></span></span></span>
+    </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/structures/typing.ts#L45>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
@@ -276,7 +295,8 @@ used to tell you when someone starts typing in a channel</p>
     
     
     
-    <span class="item-name"><a class="property-name" href="#.started">started</a><span>: <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span></span>
+    <span class="item-name"><a class="property-name" href="#.started">started</a><span>: <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span> <span class="symbol">=</span> <span class="reference-link"><a class="primitive number-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">0</a></span>
+    </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/structures/typing.ts#L46>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
@@ -293,7 +313,8 @@ used to tell you when someone starts typing in a channel</p>
     
     
     
-    <span class="item-name"><a class="property-name" href="#.stopped">stopped</a><span>: <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span></span>
+    <span class="item-name"><a class="property-name" href="#.stopped">stopped</a><span>: <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span> <span class="symbol">=</span> <span class="reference-link"><a class="primitive number-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">0</a></span>
+    </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/structures/typing.ts#L47>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
@@ -310,7 +331,8 @@ used to tell you when someone starts typing in a channel</p>
     
     
     
-    <span class="item-name"><a class="property-name" href="#.timestamp">timestamp</a><span>: <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span></span>
+    <span class="item-name"><a class="property-name" href="#.timestamp">timestamp</a><span>: <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span> <span class="symbol">=</span> <span class="reference-link"><a class="primitive number-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">0</a></span>
+    </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/structures/typing.ts#L48>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
@@ -327,7 +349,8 @@ used to tell you when someone starts typing in a channel</p>
     
     
     
-    <span class="item-name"><a class="property-name" href="#.userId">userId</a><span>: <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span></span>
+    <span class="item-name"><a class="property-name" href="#.userId">userId</a><span>: <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span> <span class="symbol">=</span> <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">''</a></span>
+    </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/structures/typing.ts#L49>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
@@ -343,138 +366,138 @@ used to tell you when someone starts typing in a channel</p>
 
     <div>
 <div id=".channel" class="item">
-    <p class="monospace">
+    <span class="monospace">
     
     
     
     
     <span class="modifier">get</span>
     
+        <a class="item-name method-name" href="#.channel">channel</a><span>()</span><span><span class="symbol">:</span> 
+<span><span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.structures\type\Channel.html">Channel</a><span class="c-tooltip-content"><span class="keyword">type</span> <span class="item-name object">Channel</span><span style="display:block" class="monospace fw-bold">structures/<span class="item-name object">Channel</span></span></span></span></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></span></span></span>
+    </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/structures/typing.ts#L62>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
   <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
 </svg>
 </span></a>
-        <a class="item-name method-name" href="#.channel">channel</a><span>()</span><span><span class="symbol">:</span> 
-<span><span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.structures\type\Channel.html">Channel</a><span class="c-tooltip-content"><span class="keyword">type alias</span> <span class="item-name object">Channel</span><span style="display:block" class="monospace fw-bold">structures/Channel</span></span></span></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></span></span></span>
         <div class="docblock">
         
         
-        </div>
-    </p>
+    </div>
 </div></div>
     <div>
 <div id=".guild" class="item">
-    <p class="monospace">
+    <span class="monospace">
     
     
     
     
     <span class="modifier">get</span>
     
+        <a class="item-name method-name" href="#.guild">guild</a><span>()</span><span><span class="symbol">:</span> 
+<span><span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.structures\class\Guild.html">Guild</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Guild</span><span style="display:block" class="monospace fw-bold">structures/<span class="item-name object">Guild</span></span></span></span></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></span></span></span>
+    </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/structures/typing.ts#L66>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
   <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
 </svg>
 </span></a>
-        <a class="item-name method-name" href="#.guild">guild</a><span>()</span><span><span class="symbol">:</span> 
-<span><span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.structures\class\Guild.html">Guild</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Guild</span><span style="display:block" class="monospace fw-bold">structures/Guild</span></span></span></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></span></span></span>
         <div class="docblock">
         
         
-        </div>
-    </p>
+    </div>
 </div></div>
     <div>
 <div id=".shouldStopAt" class="item">
-    <p class="monospace">
+    <span class="monospace">
     
     
     
     
     <span class="modifier">get</span>
     
+        <a class="item-name method-name" href="#.shouldStopAt">shouldStopAt</a><span>()</span><span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>
+    </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/structures/typing.ts#L73>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
   <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
 </svg>
 </span></a>
-        <a class="item-name method-name" href="#.shouldStopAt">shouldStopAt</a><span>()</span><span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>
         <div class="docblock">
         
         
-        </div>
-    </p>
+    </div>
 </div></div>
     <div>
 <div id=".user" class="item">
-    <p class="monospace">
+    <span class="monospace">
     
     
     
     
     <span class="modifier">get</span>
     
+        <a class="item-name method-name" href="#.user">user</a><span>()</span><span><span class="symbol">:</span> 
+<span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></span><span class='symbol'> | </span><span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.structures\class\User.html">User</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">User</span><span style="display:block" class="monospace fw-bold">structures/<span class="item-name object">User</span></span></span></span></span></span></span>
+    </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/structures/typing.ts#L77>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
   <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
 </svg>
 </span></a>
-        <a class="item-name method-name" href="#.user">user</a><span>()</span><span><span class="symbol">:</span> 
-<span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></span><span class='symbol'> | </span><span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.structures\class\User.html">User</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">User</span><span style="display:block" class="monospace fw-bold">structures/User</span></span></span></span></span></span>
         <div class="docblock">
         
         
-        </div>
-    </p>
+    </div>
 </div></div>
     <div>
 <div id="._stop" class="item">
-    <p class="monospace">
+    <span class="monospace">
     
     
     
     
     
     
+        <a class="item-name method-name" href="#._stop">_stop</a><span>(<span class="item-name"><span class="param-name">emit</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span> <span class="symbol">=</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a></span></span>)</span><span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://www.typescriptlang.org/docs/handbook/2/functions.html#void">void</a></span></span>
+    </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/structures/typing.ts#L81>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
   <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
 </svg>
 </span></a>
-        <a class="item-name method-name" href="#._stop">_stop</a><span>(<span class="item-name"><span class="param-name">emit</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span> <span class="symbol">=</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a></span></span>)</span><span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://www.typescriptlang.org/docs/handbook/2/functions.html#void">void</a></span></span>
         <div class="docblock">
         <ul></ul>
         
-        </div>
-    </p>
+    </div>
 </div></div>
     <div>
 <div id=".mergeValue" class="item">
-    <p class="monospace">
+    <span class="monospace">
     
     
     
     
     
     
+        <a class="item-name method-name" href="#.mergeValue">mergeValue</a><span>(<span class="item-name"><span class="param-name">key</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>, <span class="item-name"><span class="param-name">value</span><span class="symbol">:</span> <span class="reference-link"><span class='primitive'>any</span></span></span>)</span><span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://www.typescriptlang.org/docs/handbook/2/functions.html#void">void</a></span></span>
+    </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/structures/typing.ts#L101>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
   <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
 </svg>
 </span></a>
-        <a class="item-name method-name" href="#.mergeValue">mergeValue</a><span>(<span class="item-name"><span class="param-name">key</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>, <span class="item-name"><span class="param-name">value</span><span class="symbol">:</span> <span class="reference-link"><span class='primitive'>any</span></span></span>)</span><span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://www.typescriptlang.org/docs/handbook/2/functions.html#void">void</a></span></span>
         <div class="docblock">
         <ul></ul>
         
-        </div>
-    </p>
+    </div>
 </div></div>
 
 </div>

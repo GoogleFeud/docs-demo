@@ -22,7 +22,7 @@
       <nav class="container-fluid navi">
       <div class="row">
         <div class="col-4">
-          <input class="form-control search" id="search" type="search" placeholder="Press '/' to search" aria-label="Search">
+          <input class="form-control search" id="search" type="search" placeholder="Search..." aria-label="Search">
         </div>
         <div class="col-8">
           <div class="row float-end" style="margin-top:5px">
@@ -45,8 +45,8 @@
     </nav>  <div class="container-fluid">
     <div class="row">
       <div class="col-lg-auto sidebar" id="sidebar">
-        <h1 class="lib-name text-center">Detritus</h1>
         
+    <h1 class="lib-name text-center"><a href="../../../index.html">Detritus</a></h1>
     <img src="../../../assets/logo.png" alt="Logo" class="img-fluid mx-auto d-block">
     <p class="current-thing">interface <span class="object">RawChannelMessageComponent</span></p>
     <div class="sidebar-members">
@@ -57,7 +57,7 @@
         <span class="sidebar-category">Properties</span>
         </div>
         <div class="collapsible-body open"> 
-        <span class="sidebar-category-member"><a href="#.components">components</a></span><br><span class="sidebar-category-member"><a href="#.custom_id">custom_id</a></span><br><span class="sidebar-category-member"><a href="#.disabled">disabled</a></span><br><span class="sidebar-category-member"><a href="#.emoji">emoji</a></span><br><span class="sidebar-category-member"><a href="#.label">label</a></span><br><span class="sidebar-category-member"><a href="#.max_values">max_values</a></span><br><span class="sidebar-category-member"><a href="#.min_values">min_values</a></span><br><span class="sidebar-category-member"><a href="#.options">options</a></span><br><span class="sidebar-category-member"><a href="#.placeholder">placeholder</a></span><br><span class="sidebar-category-member"><a href="#.style">style</a></span><br><span class="sidebar-category-member"><a href="#.type">type</a></span><br><span class="sidebar-category-member"><a href="#.url">url</a></span><br>
+        <span class="sidebar-category-member"><a href="#.components">components</a></span><span class="sidebar-category-member"><a href="#.custom_id">custom_id</a></span><span class="sidebar-category-member"><a href="#.disabled">disabled</a></span><span class="sidebar-category-member"><a href="#.emoji">emoji</a></span><span class="sidebar-category-member"><a href="#.label">label</a></span><span class="sidebar-category-member"><a href="#.max_values">max_values</a></span><span class="sidebar-category-member"><a href="#.min_values">min_values</a></span><span class="sidebar-category-member"><a href="#.options">options</a></span><span class="sidebar-category-member"><a href="#.placeholder">placeholder</a></span><span class="sidebar-category-member"><a href="#.style">style</a></span><span class="sidebar-category-member"><a href="#.type">type</a></span><span class="sidebar-category-member"><a href="#.url">url</a></span>
         </div>
         </div>
     
@@ -107,8 +107,20 @@
                             <span>Methods</span>
                         </div>
                         <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-getters" checked>
+                            <span>Getters</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-setters" checked>
+                            <span>Setters</span>
+                        </div>
+                        <div>
                             <input type="checkbox" class="c-checkbox" id="search-option-enum-members">
                             <span>Enum members</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-privates">
+                            <span>Show privates</span>
                         </div>
                     </div>
                 </div>
@@ -149,44 +161,43 @@
     <h2>Properties</h2>
 
     <div>
-        <div>
-<span class="item-name" id=".components"><a class="property-name" href="#.components">components</a><span class="symbol">:</span> 
-<span><span class="reference-link">
-<span><span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.RequestTypes\interface\RawChannelMessageComponent.html">RawChannelMessageComponent</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">RawChannelMessageComponent</span><span style="display:block" class="monospace fw-bold">RequestTypes/RawChannelMessageComponent</span></span></span></span><span class='symbol'> | </span><span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.RequestTypes\interface\toJSON.html">toJSON</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">toJSON</span><span style="display:block" class="monospace fw-bold">RequestTypes/toJSON</span></span></span><span>&lt;<span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.RequestTypes\interface\RawChannelMessageComponent.html">RawChannelMessageComponent</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">RawChannelMessageComponent</span><span style="display:block" class="monospace fw-bold">RequestTypes/RawChannelMessageComponent</span></span></span></span>&gt;</span></span></span>[]</span></span></span>
+        <div class="item">
+<div class="item-name item" id=".components"><a class="property-name" href="#.components">components</a><span class="symbol">?</span><span class="symbol">:</span> 
+<span><span class="reference-link"><a class='object' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></span><span>&lt;<span><span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client-rest\m.RequestTypes\interface\RawChannelMessageComponent.html">RawChannelMessageComponent</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">RawChannelMessageComponent</span><span style="display:block" class="monospace fw-bold">RequestTypes/<span class="item-name object">RawChannelMessageComponent</span></span></span></span></span><span class='symbol'> | </span><span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client-rest\m.RequestTypes\interface\toJSON.html">toJSON</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">toJSON</span><span style="display:block" class="monospace fw-bold">RequestTypes/<span class="item-name object">toJSON</span></span></span></span><span>&lt;<span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client-rest\m.RequestTypes\interface\RawChannelMessageComponent.html">RawChannelMessageComponent</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">RawChannelMessageComponent</span><span style="display:block" class="monospace fw-bold">RequestTypes/<span class="item-name object">RawChannelMessageComponent</span></span></span></span></span>&gt;</span></span></span>&gt;</span></span></span>
 </div>
-        <div>
-<span class="item-name" id=".custom_id"><a class="property-name" href="#.custom_id">custom_id</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>
+        <div class="item">
+<div class="item-name item" id=".custom_id"><a class="property-name" href="#.custom_id">custom_id</a><span class="symbol">?</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>
 </div>
-        <div>
-<span class="item-name" id=".disabled"><a class="property-name" href="#.disabled">disabled</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
+        <div class="item">
+<div class="item-name item" id=".disabled"><a class="property-name" href="#.disabled">disabled</a><span class="symbol">?</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
 </div>
-        <div>
-<span class="item-name" id=".emoji"><a class="property-name" href="#.emoji">emoji</a><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.RequestTypes\interface\RawEmojiPartial.html">RawEmojiPartial</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">RawEmojiPartial</span><span style="display:block" class="monospace fw-bold">RequestTypes/RawEmojiPartial</span></span></span></span></span>
+        <div class="item">
+<div class="item-name item" id=".emoji"><a class="property-name" href="#.emoji">emoji</a><span class="symbol">?</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client-rest\m.RequestTypes\interface\RawEmojiPartial.html">RawEmojiPartial</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">RawEmojiPartial</span><span style="display:block" class="monospace fw-bold">RequestTypes/<span class="item-name object">RawEmojiPartial</span></span></span></span></span></span>
 </div>
-        <div>
-<span class="item-name" id=".label"><a class="property-name" href="#.label">label</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>
+        <div class="item">
+<div class="item-name item" id=".label"><a class="property-name" href="#.label">label</a><span class="symbol">?</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>
 </div>
-        <div>
-<span class="item-name" id=".max_values"><a class="property-name" href="#.max_values">max_values</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>
+        <div class="item">
+<div class="item-name item" id=".max_values"><a class="property-name" href="#.max_values">max_values</a><span class="symbol">?</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>
 </div>
-        <div>
-<span class="item-name" id=".min_values"><a class="property-name" href="#.min_values">min_values</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>
+        <div class="item">
+<div class="item-name item" id=".min_values"><a class="property-name" href="#.min_values">min_values</a><span class="symbol">?</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>
 </div>
-        <div>
-<span class="item-name" id=".options"><a class="property-name" href="#.options">options</a><span class="symbol">:</span> 
-<span><span class="reference-link"><span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.RequestTypes\interface\RawChannelMessageComponentSelectMenuOption.html">RawChannelMessageComponentSelectMenuOption</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">RawChannelMessageComponentSelectMenuOption</span><span style="display:block" class="monospace fw-bold">RequestTypes/RawChannelMessageComponentSelectMenuOption</span></span></span></span>[]</span></span></span>
+        <div class="item">
+<div class="item-name item" id=".options"><a class="property-name" href="#.options">options</a><span class="symbol">?</span><span class="symbol">:</span> 
+<span><span class="reference-link"><a class='object' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></span><span>&lt;<span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client-rest\m.RequestTypes\interface\RawChannelMessageComponentSelectMenuOption.html">RawChannelMessageComponentSelectMenuOption</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">RawChannelMessageComponentSelectMenuOption</span><span style="display:block" class="monospace fw-bold">RequestTypes/<span class="item-name object">RawChannelMessageComponentSelectMenuOption</span></span></span></span></span>&gt;</span></span></span>
 </div>
-        <div>
-<span class="item-name" id=".placeholder"><a class="property-name" href="#.placeholder">placeholder</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>
+        <div class="item">
+<div class="item-name item" id=".placeholder"><a class="property-name" href="#.placeholder">placeholder</a><span class="symbol">?</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>
 </div>
-        <div>
-<span class="item-name" id=".style"><a class="property-name" href="#.style">style</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>
+        <div class="item">
+<div class="item-name item" id=".style"><a class="property-name" href="#.style">style</a><span class="symbol">?</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>
 </div>
-        <div>
-<span class="item-name" id=".type"><a class="property-name" href="#.type">type</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>
+        <div class="item">
+<div class="item-name item" id=".type"><a class="property-name" href="#.type">type</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>
 </div>
-        <div>
-<span class="item-name" id=".url"><a class="property-name" href="#.url">url</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>
+        <div class="item">
+<div class="item-name item" id=".url"><a class="property-name" href="#.url">url</a><span class="symbol">?</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>
 </div>
     </div>
 

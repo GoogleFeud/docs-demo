@@ -22,7 +22,7 @@
       <nav class="container-fluid navi">
       <div class="row">
         <div class="col-4">
-          <input class="form-control search" id="search" type="search" placeholder="Press '/' to search" aria-label="Search">
+          <input class="form-control search" id="search" type="search" placeholder="Search..." aria-label="Search">
         </div>
         <div class="col-8">
           <div class="row float-end" style="margin-top:5px">
@@ -45,8 +45,8 @@
     </nav>  <div class="container-fluid">
     <div class="row">
       <div class="col-lg-auto sidebar" id="sidebar">
-        <h1 class="lib-name text-center">Detritus</h1>
         
+    <h1 class="lib-name text-center"><a href="../../index.html">Detritus</a></h1>
     <img src="../../assets/logo.png" alt="Logo" class="img-fluid mx-auto d-block">
     <p class="current-thing text-center">enum <span class="object">Urls</span></p>
     <div class="sidebar-members">
@@ -57,7 +57,7 @@
         <span class="sidebar-category">Members</span>
         </div>
         <div class="collapsible-body open"> 
-        <span class="sidebar-category-member"><a href="#.BLOG">BLOG</a></span><br><span class="sidebar-category-member"><a href="#.CANARY">CANARY</a></span><br><span class="sidebar-category-member"><a href="#.CDN">CDN</a></span><br><span class="sidebar-category-member"><a href="#.FEEDBACK">FEEDBACK</a></span><br><span class="sidebar-category-member"><a href="#.GIFT">GIFT</a></span><br><span class="sidebar-category-member"><a href="#.INVITE">INVITE</a></span><br><span class="sidebar-category-member"><a href="#.MEDIA">MEDIA</a></span><br><span class="sidebar-category-member"><a href="#.ROUTER">ROUTER</a></span><br><span class="sidebar-category-member"><a href="#.STABLE">STABLE</a></span><br><span class="sidebar-category-member"><a href="#.STABLE_OLD">STABLE_OLD</a></span><br><span class="sidebar-category-member"><a href="#.STATUS">STATUS</a></span><br><span class="sidebar-category-member"><a href="#.SUPPORT">SUPPORT</a></span><br><span class="sidebar-category-member"><a href="#.SUPPORT_DEV">SUPPORT_DEV</a></span><br><span class="sidebar-category-member"><a href="#.TEMPLATE">TEMPLATE</a></span><br>
+        <span class="sidebar-category-member"><a href="#.BLOG">BLOG</a></span><span class="sidebar-category-member"><a href="#.CANARY">CANARY</a></span><span class="sidebar-category-member"><a href="#.CDN">CDN</a></span><span class="sidebar-category-member"><a href="#.FEEDBACK">FEEDBACK</a></span><span class="sidebar-category-member"><a href="#.GIFT">GIFT</a></span><span class="sidebar-category-member"><a href="#.INVITE">INVITE</a></span><span class="sidebar-category-member"><a href="#.MEDIA">MEDIA</a></span><span class="sidebar-category-member"><a href="#.ROUTER">ROUTER</a></span><span class="sidebar-category-member"><a href="#.STABLE">STABLE</a></span><span class="sidebar-category-member"><a href="#.STABLE_OLD">STABLE_OLD</a></span><span class="sidebar-category-member"><a href="#.STATUS">STATUS</a></span><span class="sidebar-category-member"><a href="#.SUPPORT">SUPPORT</a></span><span class="sidebar-category-member"><a href="#.SUPPORT_DEV">SUPPORT_DEV</a></span><span class="sidebar-category-member"><a href="#.TEMPLATE">TEMPLATE</a></span>
         </div>
         </div>
     
@@ -107,8 +107,20 @@
                             <span>Methods</span>
                         </div>
                         <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-getters" checked>
+                            <span>Getters</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-setters" checked>
+                            <span>Setters</span>
+                        </div>
+                        <div>
                             <input type="checkbox" class="c-checkbox" id="search-option-enum-members">
                             <span>Enum members</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-privates">
+                            <span>Show privates</span>
                         </div>
                     </div>
                 </div>
@@ -144,85 +156,85 @@
     
 
     <h2>Members</h2>
-    <div id=".BLOG">
+    <div id=".BLOG" class="item">
         <a class="item-name" href="#.BLOG">BLOG</a>
 
         <span>= <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">'https://blog.discord.com/'</a></span></span>
 
     </div>
-    <div id=".CANARY">
+    <div id=".CANARY" class="item">
         <a class="item-name" href="#.CANARY">CANARY</a>
 
         <span>= <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">'https://canary.discord.com/'</a></span></span>
 
     </div>
-    <div id=".CDN">
+    <div id=".CDN" class="item">
         <a class="item-name" href="#.CDN">CDN</a>
 
         <span>= <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">'https://cdn.discordapp.com/'</a></span></span>
 
     </div>
-    <div id=".FEEDBACK">
+    <div id=".FEEDBACK" class="item">
         <a class="item-name" href="#.FEEDBACK">FEEDBACK</a>
 
         <span>= <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">'https://feedback.discord.com/'</a></span></span>
 
     </div>
-    <div id=".GIFT">
+    <div id=".GIFT" class="item">
         <a class="item-name" href="#.GIFT">GIFT</a>
 
         <span>= <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">'https://discord.gift/'</a></span></span>
 
     </div>
-    <div id=".INVITE">
+    <div id=".INVITE" class="item">
         <a class="item-name" href="#.INVITE">INVITE</a>
 
         <span>= <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">'https://discord.gg/'</a></span></span>
 
     </div>
-    <div id=".MEDIA">
+    <div id=".MEDIA" class="item">
         <a class="item-name" href="#.MEDIA">MEDIA</a>
 
         <span>= <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">'https://media.discordapp.net/'</a></span></span>
 
     </div>
-    <div id=".ROUTER">
+    <div id=".ROUTER" class="item">
         <a class="item-name" href="#.ROUTER">ROUTER</a>
 
         <span>= <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">'https://router.discordapp.net/'</a></span></span>
 
     </div>
-    <div id=".STABLE">
+    <div id=".STABLE" class="item">
         <a class="item-name" href="#.STABLE">STABLE</a>
 
         <span>= <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">'https://discord.com/'</a></span></span>
 
     </div>
-    <div id=".STABLE_OLD">
+    <div id=".STABLE_OLD" class="item">
         <a class="item-name" href="#.STABLE_OLD">STABLE_OLD</a>
 
         <span>= <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">'https://discordapp.com/'</a></span></span>
 
     </div>
-    <div id=".STATUS">
+    <div id=".STATUS" class="item">
         <a class="item-name" href="#.STATUS">STATUS</a>
 
         <span>= <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">'https://status.discord.com/'</a></span></span>
 
     </div>
-    <div id=".SUPPORT">
+    <div id=".SUPPORT" class="item">
         <a class="item-name" href="#.SUPPORT">SUPPORT</a>
 
         <span>= <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">'https://support.discord.com/'</a></span></span>
 
     </div>
-    <div id=".SUPPORT_DEV">
+    <div id=".SUPPORT_DEV" class="item">
         <a class="item-name" href="#.SUPPORT_DEV">SUPPORT_DEV</a>
 
         <span>= <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">'https://support-dev.discord.com/'</a></span></span>
 
     </div>
-    <div id=".TEMPLATE">
+    <div id=".TEMPLATE" class="item">
         <a class="item-name" href="#.TEMPLATE">TEMPLATE</a>
 
         <span>= <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">'https://discord.new/'</a></span></span>

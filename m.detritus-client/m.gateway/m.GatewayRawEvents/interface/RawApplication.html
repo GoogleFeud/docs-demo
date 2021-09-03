@@ -22,7 +22,7 @@
       <nav class="container-fluid navi">
       <div class="row">
         <div class="col-4">
-          <input class="form-control search" id="search" type="search" placeholder="Press '/' to search" aria-label="Search">
+          <input class="form-control search" id="search" type="search" placeholder="Search..." aria-label="Search">
         </div>
         <div class="col-8">
           <div class="row float-end" style="margin-top:5px">
@@ -45,8 +45,8 @@
     </nav>  <div class="container-fluid">
     <div class="row">
       <div class="col-lg-auto sidebar" id="sidebar">
-        <h1 class="lib-name text-center">Detritus</h1>
         
+    <h1 class="lib-name text-center"><a href="../../../../index.html">Detritus</a></h1>
     <img src="../../../../assets/logo.png" alt="Logo" class="img-fluid mx-auto d-block">
     <p class="current-thing">interface <span class="object">RawApplication</span></p>
     <div class="sidebar-members">
@@ -57,7 +57,7 @@
         <span class="sidebar-category">Properties</span>
         </div>
         <div class="collapsible-body open"> 
-        <span class="sidebar-category-member"><a href="#.bot_public">bot_public</a></span><br><span class="sidebar-category-member"><a href="#.bot_require_code_grant">bot_require_code_grant</a></span><br><span class="sidebar-category-member"><a href="#.description">description</a></span><br><span class="sidebar-category-member"><a href="#.developers">developers</a></span><br><span class="sidebar-category-member"><a href="#.guild_id">guild_id</a></span><br><span class="sidebar-category-member"><a href="#.icon">icon</a></span><br><span class="sidebar-category-member"><a href="#.id">id</a></span><br><span class="sidebar-category-member"><a href="#.name">name</a></span><br><span class="sidebar-category-member"><a href="#.primary_sku_id">primary_sku_id</a></span><br><span class="sidebar-category-member"><a href="#.publishers">publishers</a></span><br><span class="sidebar-category-member"><a href="#.slug">slug</a></span><br><span class="sidebar-category-member"><a href="#.summary">summary</a></span><br><span class="sidebar-category-member"><a href="#.verify_key">verify_key</a></span><br>
+        <span class="sidebar-category-member"><a href="#.bot_public">bot_public</a></span><span class="sidebar-category-member"><a href="#.bot_require_code_grant">bot_require_code_grant</a></span><span class="sidebar-category-member"><a href="#.description">description</a></span><span class="sidebar-category-member"><a href="#.developers">developers</a></span><span class="sidebar-category-member"><a href="#.guild_id">guild_id</a></span><span class="sidebar-category-member"><a href="#.icon">icon</a></span><span class="sidebar-category-member"><a href="#.id">id</a></span><span class="sidebar-category-member"><a href="#.name">name</a></span><span class="sidebar-category-member"><a href="#.primary_sku_id">primary_sku_id</a></span><span class="sidebar-category-member"><a href="#.publishers">publishers</a></span><span class="sidebar-category-member"><a href="#.slug">slug</a></span><span class="sidebar-category-member"><a href="#.summary">summary</a></span><span class="sidebar-category-member"><a href="#.verify_key">verify_key</a></span>
         </div>
         </div>
     
@@ -107,8 +107,20 @@
                             <span>Methods</span>
                         </div>
                         <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-getters" checked>
+                            <span>Getters</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-setters" checked>
+                            <span>Setters</span>
+                        </div>
+                        <div>
                             <input type="checkbox" class="c-checkbox" id="search-option-enum-members">
                             <span>Enum members</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-privates">
+                            <span>Show privates</span>
                         </div>
                     </div>
                 </div>
@@ -149,51 +161,49 @@
     <h2>Properties</h2>
 
     <div>
-        <div>
-<span class="item-name" id=".bot_public"><a class="property-name" href="#.bot_public">bot_public</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
+        <div class="item">
+<div class="item-name item" id=".bot_public"><a class="property-name" href="#.bot_public">bot_public</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
 </div>
-        <div>
-<span class="item-name" id=".bot_require_code_grant"><a class="property-name" href="#.bot_require_code_grant">bot_require_code_grant</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
+        <div class="item">
+<div class="item-name item" id=".bot_require_code_grant"><a class="property-name" href="#.bot_require_code_grant">bot_require_code_grant</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
 </div>
-        <div>
-<span class="item-name" id=".description"><a class="property-name" href="#.description">description</a><span class="symbol">:</span> 
+        <div class="item">
+<div class="item-name item" id=".description"><a class="property-name" href="#.description">description</a><span class="symbol">:</span> 
 <span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span></span>
 </div>
-        <div>
-<span class="item-name" id=".developers"><a class="property-name" href="#.developers">developers</a><span class="symbol">:</span> 
-<span><span class="reference-link">
-<span>{ <span class="item-name" id=".id"><a class="property-name" href="#.id">id</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>, <span class="item-name" id=".name"><a class="property-name" href="#.name">name</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span> }</span>[]</span></span></span>
+        <div class="item">
+<div class="item-name item" id=".developers"><a class="property-name" href="#.developers">developers</a><span class="symbol">:</span> 
+<span><span class="reference-link"><a class='object' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></span><span>&lt;<span>{ <span class="item-name"><a class="property-name" href="#.id">id</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>, <span class="item-name"><a class="property-name" href="#.name">name</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span> }</span>&gt;</span></span></span>
 </div>
-        <div>
-<span class="item-name" id=".guild_id"><a class="property-name" href="#.guild_id">guild_id</a><span class="symbol">:</span> 
+        <div class="item">
+<div class="item-name item" id=".guild_id"><a class="property-name" href="#.guild_id">guild_id</a><span class="symbol">:</span> 
 <span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span></span>
 </div>
-        <div>
-<span class="item-name" id=".icon"><a class="property-name" href="#.icon">icon</a><span class="symbol">:</span> 
+        <div class="item">
+<div class="item-name item" id=".icon"><a class="property-name" href="#.icon">icon</a><span class="symbol">:</span> 
 <span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span></span>
 </div>
-        <div>
-<span class="item-name" id=".id"><a class="property-name" href="#.id">id</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>
+        <div class="item">
+<div class="item-name item" id=".id"><a class="property-name" href="#.id">id</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>
 </div>
-        <div>
-<span class="item-name" id=".name"><a class="property-name" href="#.name">name</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>
+        <div class="item">
+<div class="item-name item" id=".name"><a class="property-name" href="#.name">name</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>
 </div>
-        <div>
-<span class="item-name" id=".primary_sku_id"><a class="property-name" href="#.primary_sku_id">primary_sku_id</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>
+        <div class="item">
+<div class="item-name item" id=".primary_sku_id"><a class="property-name" href="#.primary_sku_id">primary_sku_id</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>
 </div>
-        <div>
-<span class="item-name" id=".publishers"><a class="property-name" href="#.publishers">publishers</a><span class="symbol">:</span> 
-<span><span class="reference-link">
-<span>{ <span class="item-name" id=".id"><a class="property-name" href="#.id">id</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>, <span class="item-name" id=".name"><a class="property-name" href="#.name">name</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span> }</span>[]</span></span></span>
+        <div class="item">
+<div class="item-name item" id=".publishers"><a class="property-name" href="#.publishers">publishers</a><span class="symbol">:</span> 
+<span><span class="reference-link"><a class='object' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></span><span>&lt;<span>{ <span class="item-name"><a class="property-name" href="#.id">id</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>, <span class="item-name"><a class="property-name" href="#.name">name</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span> }</span>&gt;</span></span></span>
 </div>
-        <div>
-<span class="item-name" id=".slug"><a class="property-name" href="#.slug">slug</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>
+        <div class="item">
+<div class="item-name item" id=".slug"><a class="property-name" href="#.slug">slug</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>
 </div>
-        <div>
-<span class="item-name" id=".summary"><a class="property-name" href="#.summary">summary</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>
+        <div class="item">
+<div class="item-name item" id=".summary"><a class="property-name" href="#.summary">summary</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>
 </div>
-        <div>
-<span class="item-name" id=".verify_key"><a class="property-name" href="#.verify_key">verify_key</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>
+        <div class="item">
+<div class="item-name item" id=".verify_key"><a class="property-name" href="#.verify_key">verify_key</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>
 </div>
     </div>
 

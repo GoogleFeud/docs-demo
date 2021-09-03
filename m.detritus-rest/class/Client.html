@@ -22,7 +22,7 @@
       <nav class="container-fluid navi">
       <div class="row">
         <div class="col-4">
-          <input class="form-control search" id="search" type="search" placeholder="Press '/' to search" aria-label="Search">
+          <input class="form-control search" id="search" type="search" placeholder="Search..." aria-label="Search">
         </div>
         <div class="col-8">
           <div class="row float-end" style="margin-top:5px">
@@ -45,8 +45,8 @@
     </nav>  <div class="container-fluid">
     <div class="row">
       <div class="col-lg-auto sidebar" id="sidebar">
-        <h1 class="lib-name text-center">Detritus</h1>
         
+    <h1 class="lib-name text-center"><a href="../../index.html">Detritus</a></h1>
     <img src="../../assets/logo.png" alt="Logo" class="img-fluid mx-auto d-block">
     <p class="current-thing text-center">class <span class="object">Client</span></p>
     <div class="sidebar-members">
@@ -57,7 +57,7 @@
         <span class="sidebar-category">Properties</span>
         </div>
         <div class="collapsible-body open"> 
-        <span class="sidebar-category-member"><a href="#.agent">agent</a></span><br><span class="sidebar-category-member"><a href="#.baseUrl">baseUrl</a></span><br><span class="sidebar-category-member"><a href="#.headers">headers</a></span><br>
+        <span class="sidebar-category-member"><a href="#.agent">agent</a></span><span class="sidebar-category-member"><a href="#.baseUrl">baseUrl</a></span><span class="sidebar-category-member"><a href="#.headers">headers</a></span>
         </div>
         </div>
     
@@ -67,7 +67,7 @@
         <span class="sidebar-category">Methods</span>
         </div>
         <div class="collapsible-body open"> 
-        <span class="sidebar-category-member"><a href="#.createRequest">createRequest</a></span><br><span class="sidebar-category-member"><a href="#.request">request</a></span><br><span class="sidebar-category-member"><a href="#.delete">delete</a></span><br><span class="sidebar-category-member"><a href="#.get">get</a></span><br><span class="sidebar-category-member"><a href="#.head">head</a></span><br><span class="sidebar-category-member"><a href="#.options">options</a></span><br><span class="sidebar-category-member"><a href="#.patch">patch</a></span><br><span class="sidebar-category-member"><a href="#.post">post</a></span><br><span class="sidebar-category-member"><a href="#.put">put</a></span><br>
+        <span class="sidebar-category-member"><a href="#.createRequest">createRequest</a></span><span class="sidebar-category-member"><a href="#.request">request</a></span><span class="sidebar-category-member"><a href="#.delete">delete</a></span><span class="sidebar-category-member"><a href="#.get">get</a></span><span class="sidebar-category-member"><a href="#.head">head</a></span><span class="sidebar-category-member"><a href="#.options">options</a></span><span class="sidebar-category-member"><a href="#.patch">patch</a></span><span class="sidebar-category-member"><a href="#.post">post</a></span><span class="sidebar-category-member"><a href="#.put">put</a></span>
         </div>
         </div>
     
@@ -117,8 +117,20 @@
                             <span>Methods</span>
                         </div>
                         <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-getters" checked>
+                            <span>Getters</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-setters" checked>
+                            <span>Setters</span>
+                        </div>
+                        <div>
                             <input type="checkbox" class="c-checkbox" id="search-option-enum-members">
                             <span>Enum members</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-privates">
+                            <span>Show privates</span>
                         </div>
                     </div>
                 </div>
@@ -157,12 +169,13 @@
     <h2>Constructor</h2>
     
 <div id="class.constructor" class="item">
-    <p class="item-name"><span class="keyword">constructor</span><span>(<span class="item-name"><span class="param-name">options</span><span class="symbol">?</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\interface\ClientOptions.html">ClientOptions</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">ClientOptions</span><span style="display:block" class="monospace fw-bold">/ClientOptions</span></span></span></span></span>)</span></p>
+    <span class="item-name"><span class="keyword">constructor</span><span>(<span class="item-name"><span class="param-name">options</span><span class="symbol">?</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.detritus-rest\interface\ClientOptions.html">ClientOptions</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">ClientOptions</span><span style="display:block" class="monospace fw-bold"><span class="item-name object">ClientOptions</span></span></span></span></span></span>)</span></span>
 
     <div class="docblock">
     <ul></ul>
     </div>
 </div>
+
     
     <h2>Properties</h2>
     <div><div class="item" id=".agent">
@@ -172,8 +185,9 @@
     
     
     <span class="item-name"><a class="property-name" href="#.agent">agent</a><span>: 
-<span><span class="reference-link"><span class='primitive'>Agent</span></span><span class='symbol'> | </span><span>(<span class="item-name"><span class="param-name">parsedUrl</span><span class="symbol">:</span> 
-<span><span class="reference-link"><a class='external' href="https://developer.mozilla.org/en-US/docs/Web/API/URL/URL">URL</a></span></span></span>) <span class="symbol">=></span> <span class="reference-link"><span class='primitive'>Agent</span></span></span></span></span></span>
+<span><span><span class="reference-link item-name">Agent</span></span><span class='symbol'> | </span><span>(<span class="item-name"><span class="param-name">parsedUrl</span><span class="symbol">:</span> 
+<span><span class="reference-link"><a class='external' href="https://developer.mozilla.org/en-US/docs/Web/API/URL/URL">URL</a></span></span></span>) <span class="symbol">=></span> <span><span class="reference-link item-name">Agent</span></span></span></span></span>
+    </span>
     <a href=https://github.com/detritusjs/rest/tree/master/src/client.ts#L28>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
@@ -191,7 +205,8 @@
     
     
     <span class="item-name"><a class="property-name" href="#.baseUrl">baseUrl</a><span>: 
-<span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span><span class='symbol'> | </span><span><span class="reference-link"><a class='external' href="https://developer.mozilla.org/en-US/docs/Web/API/URL/URL">URL</a></span></span></span></span></span>
+<span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span><span class='symbol'> | </span><span><span class="reference-link"><a class='external' href="https://developer.mozilla.org/en-US/docs/Web/API/URL/URL">URL</a></span></span></span></span>
+    </span>
     <a href=https://github.com/detritusjs/rest/tree/master/src/client.ts#L29>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
@@ -208,7 +223,8 @@
     
     
     
-    <span class="item-name"><a class="property-name" href="#.headers">headers</a><span>: <span class="reference-link"><span class='primitive'>Headers</span></span></span></span>
+    <span class="item-name"><a class="property-name" href="#.headers">headers</a><span>: <span><span class="reference-link item-name">Headers</span></span></span>
+    </span>
     <a href=https://github.com/detritusjs/rest/tree/master/src/client.ts#L30>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
@@ -224,218 +240,218 @@
 
     <div>
 <div id=".createRequest" class="item">
-    <p class="monospace">
+    <span class="monospace">
     
     
     
     
     
     
+        <a class="item-name method-name" href="#.createRequest">createRequest</a><span>(<span class="item-name"><span class="param-name">info</span><span class="symbol">:</span> 
+<span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span><span class='symbol'> | </span><span><span class="reference-link"><a class='external' href="https://developer.mozilla.org/en-US/docs/Web/API/URL/URL">URL</a></span></span><span class='symbol'> | </span><span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.detritus-rest\interface\RequestOptions.html">RequestOptions</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">RequestOptions</span><span style="display:block" class="monospace fw-bold"><span class="item-name object">RequestOptions</span></span></span></span></span></span></span>, <span class="item-name"><span class="param-name">init</span><span class="symbol">?</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.detritus-rest\interface\RequestOptions.html">RequestOptions</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">RequestOptions</span><span style="display:block" class="monospace fw-bold"><span class="item-name object">RequestOptions</span></span></span></span></span></span>)</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.detritus-rest\class\Request.html">Request</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Request</span><span style="display:block" class="monospace fw-bold"><span class="item-name object">Request</span></span></span></span></span></span>
+    </span>
     <a href=https://github.com/detritusjs/rest/tree/master/src/client.ts#L55>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
   <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
 </svg>
 </span></a>
-        <a class="item-name method-name" href="#.createRequest">createRequest</a><span>(<span class="item-name"><span class="param-name">info</span><span class="symbol">:</span> 
-<span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span><span class='symbol'> | </span><span><span class="reference-link"><a class='external' href="https://developer.mozilla.org/en-US/docs/Web/API/URL/URL">URL</a></span></span><span class='symbol'> | </span><span><span class="c-tooltip"><a class="reference-link object" href="..\interface\RequestOptions.html">RequestOptions</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">RequestOptions</span><span style="display:block" class="monospace fw-bold">/RequestOptions</span></span></span></span></span></span>, <span class="item-name"><span class="param-name">init</span><span class="symbol">?</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\interface\RequestOptions.html">RequestOptions</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">RequestOptions</span><span style="display:block" class="monospace fw-bold">/RequestOptions</span></span></span></span></span>)</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\class\Request.html">Request</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Request</span><span style="display:block" class="monospace fw-bold">/Request</span></span></span></span></span>
         <div class="docblock">
         <ul></ul>
         
-        </div>
-    </p>
+    </div>
 </div></div>
     <div>
 <div id=".request" class="item">
-    <p class="monospace">
+    <span class="monospace">
     
     
     
     
     
     
+        <a class="item-name method-name" href="#.request">request</a><span>(<span class="item-name"><span class="param-name">info</span><span class="symbol">:</span> 
+<span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span><span class='symbol'> | </span><span><span class="reference-link"><a class='external' href="https://developer.mozilla.org/en-US/docs/Web/API/URL/URL">URL</a></span></span><span class='symbol'> | </span><span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.detritus-rest\interface\RequestOptions.html">RequestOptions</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">RequestOptions</span><span style="display:block" class="monospace fw-bold"><span class="item-name object">RequestOptions</span></span></span></span></span></span></span>, <span class="item-name"><span class="param-name">init</span><span class="symbol">?</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.detritus-rest\interface\RequestOptions.html">RequestOptions</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">RequestOptions</span><span style="display:block" class="monospace fw-bold"><span class="item-name object">RequestOptions</span></span></span></span></span></span>)</span><span><span class="symbol">:</span> 
+<span><span class="reference-link"><a class='external' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a></span><span>&lt;<span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.detritus-rest\class\Response.html">Response</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Response</span><span style="display:block" class="monospace fw-bold"><span class="item-name object">Response</span></span></span></span></span>&gt;</span></span></span>
+    </span>
     <a href=https://github.com/detritusjs/rest/tree/master/src/client.ts#L94>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
   <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
 </svg>
 </span></a>
-        <a class="item-name method-name" href="#.request">request</a><span>(<span class="item-name"><span class="param-name">info</span><span class="symbol">:</span> 
-<span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span><span class='symbol'> | </span><span><span class="reference-link"><a class='external' href="https://developer.mozilla.org/en-US/docs/Web/API/URL/URL">URL</a></span></span><span class='symbol'> | </span><span><span class="c-tooltip"><a class="reference-link object" href="..\interface\RequestOptions.html">RequestOptions</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">RequestOptions</span><span style="display:block" class="monospace fw-bold">/RequestOptions</span></span></span></span></span></span>, <span class="item-name"><span class="param-name">init</span><span class="symbol">?</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\interface\RequestOptions.html">RequestOptions</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">RequestOptions</span><span style="display:block" class="monospace fw-bold">/RequestOptions</span></span></span></span></span>)</span><span><span class="symbol">:</span> 
-<span><span class="reference-link"><a class='external' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a></span><span>&lt;<span><span class="c-tooltip"><a class="reference-link object" href="..\class\Response.html">Response</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Response</span><span style="display:block" class="monospace fw-bold">/Response</span></span></span></span>&gt;</span></span></span>
         <div class="docblock">
         <ul></ul>
         
-        </div>
-    </p>
+    </div>
 </div></div>
     <div>
 <div id=".delete" class="item">
-    <p class="monospace">
+    <span class="monospace">
     
     
     
     
     
     
+        <a class="item-name method-name" href="#.delete">delete</a><span>(<span class="item-name"><span class="param-name">info</span><span class="symbol">:</span> 
+<span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span><span class='symbol'> | </span><span><span class="reference-link"><a class='external' href="https://developer.mozilla.org/en-US/docs/Web/API/URL/URL">URL</a></span></span><span class='symbol'> | </span><span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.detritus-rest\interface\RequestOptions.html">RequestOptions</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">RequestOptions</span><span style="display:block" class="monospace fw-bold"><span class="item-name object">RequestOptions</span></span></span></span></span></span></span>, <span class="item-name"><span class="param-name">init</span><span class="symbol">?</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.detritus-rest\interface\RequestOptions.html">RequestOptions</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">RequestOptions</span><span style="display:block" class="monospace fw-bold"><span class="item-name object">RequestOptions</span></span></span></span></span></span>)</span><span><span class="symbol">:</span> 
+<span><span class="reference-link"><a class='external' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a></span><span>&lt;<span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.detritus-rest\class\Response.html">Response</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Response</span><span style="display:block" class="monospace fw-bold"><span class="item-name object">Response</span></span></span></span></span>&gt;</span></span></span>
+    </span>
     <a href=https://github.com/detritusjs/rest/tree/master/src/client.ts#L102>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
   <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
 </svg>
 </span></a>
-        <a class="item-name method-name" href="#.delete">delete</a><span>(<span class="item-name"><span class="param-name">info</span><span class="symbol">:</span> 
-<span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span><span class='symbol'> | </span><span><span class="reference-link"><a class='external' href="https://developer.mozilla.org/en-US/docs/Web/API/URL/URL">URL</a></span></span><span class='symbol'> | </span><span><span class="c-tooltip"><a class="reference-link object" href="..\interface\RequestOptions.html">RequestOptions</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">RequestOptions</span><span style="display:block" class="monospace fw-bold">/RequestOptions</span></span></span></span></span></span>, <span class="item-name"><span class="param-name">init</span><span class="symbol">?</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\interface\RequestOptions.html">RequestOptions</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">RequestOptions</span><span style="display:block" class="monospace fw-bold">/RequestOptions</span></span></span></span></span>)</span><span><span class="symbol">:</span> 
-<span><span class="reference-link"><a class='external' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a></span><span>&lt;<span><span class="c-tooltip"><a class="reference-link object" href="..\class\Response.html">Response</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Response</span><span style="display:block" class="monospace fw-bold">/Response</span></span></span></span>&gt;</span></span></span>
         <div class="docblock">
         <ul></ul>
         
-        </div>
-    </p>
+    </div>
 </div></div>
     <div>
 <div id=".get" class="item">
-    <p class="monospace">
+    <span class="monospace">
     
     
     
     
     
     
+        <a class="item-name method-name" href="#.get">get</a><span>(<span class="item-name"><span class="param-name">info</span><span class="symbol">:</span> 
+<span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span><span class='symbol'> | </span><span><span class="reference-link"><a class='external' href="https://developer.mozilla.org/en-US/docs/Web/API/URL/URL">URL</a></span></span><span class='symbol'> | </span><span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.detritus-rest\interface\RequestOptions.html">RequestOptions</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">RequestOptions</span><span style="display:block" class="monospace fw-bold"><span class="item-name object">RequestOptions</span></span></span></span></span></span></span>, <span class="item-name"><span class="param-name">init</span><span class="symbol">?</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.detritus-rest\interface\RequestOptions.html">RequestOptions</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">RequestOptions</span><span style="display:block" class="monospace fw-bold"><span class="item-name object">RequestOptions</span></span></span></span></span></span>)</span><span><span class="symbol">:</span> 
+<span><span class="reference-link"><a class='external' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a></span><span>&lt;<span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.detritus-rest\class\Response.html">Response</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Response</span><span style="display:block" class="monospace fw-bold"><span class="item-name object">Response</span></span></span></span></span>&gt;</span></span></span>
+    </span>
     <a href=https://github.com/detritusjs/rest/tree/master/src/client.ts#L110>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
   <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
 </svg>
 </span></a>
-        <a class="item-name method-name" href="#.get">get</a><span>(<span class="item-name"><span class="param-name">info</span><span class="symbol">:</span> 
-<span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span><span class='symbol'> | </span><span><span class="reference-link"><a class='external' href="https://developer.mozilla.org/en-US/docs/Web/API/URL/URL">URL</a></span></span><span class='symbol'> | </span><span><span class="c-tooltip"><a class="reference-link object" href="..\interface\RequestOptions.html">RequestOptions</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">RequestOptions</span><span style="display:block" class="monospace fw-bold">/RequestOptions</span></span></span></span></span></span>, <span class="item-name"><span class="param-name">init</span><span class="symbol">?</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\interface\RequestOptions.html">RequestOptions</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">RequestOptions</span><span style="display:block" class="monospace fw-bold">/RequestOptions</span></span></span></span></span>)</span><span><span class="symbol">:</span> 
-<span><span class="reference-link"><a class='external' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a></span><span>&lt;<span><span class="c-tooltip"><a class="reference-link object" href="..\class\Response.html">Response</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Response</span><span style="display:block" class="monospace fw-bold">/Response</span></span></span></span>&gt;</span></span></span>
         <div class="docblock">
         <ul></ul>
         
-        </div>
-    </p>
+    </div>
 </div></div>
     <div>
 <div id=".head" class="item">
-    <p class="monospace">
+    <span class="monospace">
     
     
     
     
     
     
+        <a class="item-name method-name" href="#.head">head</a><span>(<span class="item-name"><span class="param-name">info</span><span class="symbol">:</span> 
+<span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span><span class='symbol'> | </span><span><span class="reference-link"><a class='external' href="https://developer.mozilla.org/en-US/docs/Web/API/URL/URL">URL</a></span></span><span class='symbol'> | </span><span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.detritus-rest\interface\RequestOptions.html">RequestOptions</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">RequestOptions</span><span style="display:block" class="monospace fw-bold"><span class="item-name object">RequestOptions</span></span></span></span></span></span></span>, <span class="item-name"><span class="param-name">init</span><span class="symbol">?</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.detritus-rest\interface\RequestOptions.html">RequestOptions</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">RequestOptions</span><span style="display:block" class="monospace fw-bold"><span class="item-name object">RequestOptions</span></span></span></span></span></span>)</span><span><span class="symbol">:</span> 
+<span><span class="reference-link"><a class='external' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a></span><span>&lt;<span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.detritus-rest\class\Response.html">Response</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Response</span><span style="display:block" class="monospace fw-bold"><span class="item-name object">Response</span></span></span></span></span>&gt;</span></span></span>
+    </span>
     <a href=https://github.com/detritusjs/rest/tree/master/src/client.ts#L118>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
   <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
 </svg>
 </span></a>
-        <a class="item-name method-name" href="#.head">head</a><span>(<span class="item-name"><span class="param-name">info</span><span class="symbol">:</span> 
-<span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span><span class='symbol'> | </span><span><span class="reference-link"><a class='external' href="https://developer.mozilla.org/en-US/docs/Web/API/URL/URL">URL</a></span></span><span class='symbol'> | </span><span><span class="c-tooltip"><a class="reference-link object" href="..\interface\RequestOptions.html">RequestOptions</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">RequestOptions</span><span style="display:block" class="monospace fw-bold">/RequestOptions</span></span></span></span></span></span>, <span class="item-name"><span class="param-name">init</span><span class="symbol">?</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\interface\RequestOptions.html">RequestOptions</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">RequestOptions</span><span style="display:block" class="monospace fw-bold">/RequestOptions</span></span></span></span></span>)</span><span><span class="symbol">:</span> 
-<span><span class="reference-link"><a class='external' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a></span><span>&lt;<span><span class="c-tooltip"><a class="reference-link object" href="..\class\Response.html">Response</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Response</span><span style="display:block" class="monospace fw-bold">/Response</span></span></span></span>&gt;</span></span></span>
         <div class="docblock">
         <ul></ul>
         
-        </div>
-    </p>
+    </div>
 </div></div>
     <div>
 <div id=".options" class="item">
-    <p class="monospace">
+    <span class="monospace">
     
     
     
     
     
     
+        <a class="item-name method-name" href="#.options">options</a><span>(<span class="item-name"><span class="param-name">info</span><span class="symbol">:</span> 
+<span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span><span class='symbol'> | </span><span><span class="reference-link"><a class='external' href="https://developer.mozilla.org/en-US/docs/Web/API/URL/URL">URL</a></span></span><span class='symbol'> | </span><span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.detritus-rest\interface\RequestOptions.html">RequestOptions</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">RequestOptions</span><span style="display:block" class="monospace fw-bold"><span class="item-name object">RequestOptions</span></span></span></span></span></span></span>, <span class="item-name"><span class="param-name">init</span><span class="symbol">?</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.detritus-rest\interface\RequestOptions.html">RequestOptions</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">RequestOptions</span><span style="display:block" class="monospace fw-bold"><span class="item-name object">RequestOptions</span></span></span></span></span></span>)</span><span><span class="symbol">:</span> 
+<span><span class="reference-link"><a class='external' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a></span><span>&lt;<span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.detritus-rest\class\Response.html">Response</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Response</span><span style="display:block" class="monospace fw-bold"><span class="item-name object">Response</span></span></span></span></span>&gt;</span></span></span>
+    </span>
     <a href=https://github.com/detritusjs/rest/tree/master/src/client.ts#L126>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
   <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
 </svg>
 </span></a>
-        <a class="item-name method-name" href="#.options">options</a><span>(<span class="item-name"><span class="param-name">info</span><span class="symbol">:</span> 
-<span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span><span class='symbol'> | </span><span><span class="reference-link"><a class='external' href="https://developer.mozilla.org/en-US/docs/Web/API/URL/URL">URL</a></span></span><span class='symbol'> | </span><span><span class="c-tooltip"><a class="reference-link object" href="..\interface\RequestOptions.html">RequestOptions</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">RequestOptions</span><span style="display:block" class="monospace fw-bold">/RequestOptions</span></span></span></span></span></span>, <span class="item-name"><span class="param-name">init</span><span class="symbol">?</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\interface\RequestOptions.html">RequestOptions</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">RequestOptions</span><span style="display:block" class="monospace fw-bold">/RequestOptions</span></span></span></span></span>)</span><span><span class="symbol">:</span> 
-<span><span class="reference-link"><a class='external' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a></span><span>&lt;<span><span class="c-tooltip"><a class="reference-link object" href="..\class\Response.html">Response</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Response</span><span style="display:block" class="monospace fw-bold">/Response</span></span></span></span>&gt;</span></span></span>
         <div class="docblock">
         <ul></ul>
         
-        </div>
-    </p>
+    </div>
 </div></div>
     <div>
 <div id=".patch" class="item">
-    <p class="monospace">
+    <span class="monospace">
     
     
     
     
     
     
+        <a class="item-name method-name" href="#.patch">patch</a><span>(<span class="item-name"><span class="param-name">info</span><span class="symbol">:</span> 
+<span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span><span class='symbol'> | </span><span><span class="reference-link"><a class='external' href="https://developer.mozilla.org/en-US/docs/Web/API/URL/URL">URL</a></span></span><span class='symbol'> | </span><span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.detritus-rest\interface\RequestOptions.html">RequestOptions</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">RequestOptions</span><span style="display:block" class="monospace fw-bold"><span class="item-name object">RequestOptions</span></span></span></span></span></span></span>, <span class="item-name"><span class="param-name">init</span><span class="symbol">?</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.detritus-rest\interface\RequestOptions.html">RequestOptions</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">RequestOptions</span><span style="display:block" class="monospace fw-bold"><span class="item-name object">RequestOptions</span></span></span></span></span></span>)</span><span><span class="symbol">:</span> 
+<span><span class="reference-link"><a class='external' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a></span><span>&lt;<span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.detritus-rest\class\Response.html">Response</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Response</span><span style="display:block" class="monospace fw-bold"><span class="item-name object">Response</span></span></span></span></span>&gt;</span></span></span>
+    </span>
     <a href=https://github.com/detritusjs/rest/tree/master/src/client.ts#L134>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
   <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
 </svg>
 </span></a>
-        <a class="item-name method-name" href="#.patch">patch</a><span>(<span class="item-name"><span class="param-name">info</span><span class="symbol">:</span> 
-<span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span><span class='symbol'> | </span><span><span class="reference-link"><a class='external' href="https://developer.mozilla.org/en-US/docs/Web/API/URL/URL">URL</a></span></span><span class='symbol'> | </span><span><span class="c-tooltip"><a class="reference-link object" href="..\interface\RequestOptions.html">RequestOptions</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">RequestOptions</span><span style="display:block" class="monospace fw-bold">/RequestOptions</span></span></span></span></span></span>, <span class="item-name"><span class="param-name">init</span><span class="symbol">?</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\interface\RequestOptions.html">RequestOptions</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">RequestOptions</span><span style="display:block" class="monospace fw-bold">/RequestOptions</span></span></span></span></span>)</span><span><span class="symbol">:</span> 
-<span><span class="reference-link"><a class='external' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a></span><span>&lt;<span><span class="c-tooltip"><a class="reference-link object" href="..\class\Response.html">Response</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Response</span><span style="display:block" class="monospace fw-bold">/Response</span></span></span></span>&gt;</span></span></span>
         <div class="docblock">
         <ul></ul>
         
-        </div>
-    </p>
+    </div>
 </div></div>
     <div>
 <div id=".post" class="item">
-    <p class="monospace">
+    <span class="monospace">
     
     
     
     
     
     
+        <a class="item-name method-name" href="#.post">post</a><span>(<span class="item-name"><span class="param-name">info</span><span class="symbol">:</span> 
+<span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span><span class='symbol'> | </span><span><span class="reference-link"><a class='external' href="https://developer.mozilla.org/en-US/docs/Web/API/URL/URL">URL</a></span></span><span class='symbol'> | </span><span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.detritus-rest\interface\RequestOptions.html">RequestOptions</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">RequestOptions</span><span style="display:block" class="monospace fw-bold"><span class="item-name object">RequestOptions</span></span></span></span></span></span></span>, <span class="item-name"><span class="param-name">init</span><span class="symbol">?</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.detritus-rest\interface\RequestOptions.html">RequestOptions</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">RequestOptions</span><span style="display:block" class="monospace fw-bold"><span class="item-name object">RequestOptions</span></span></span></span></span></span>)</span><span><span class="symbol">:</span> 
+<span><span class="reference-link"><a class='external' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a></span><span>&lt;<span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.detritus-rest\class\Response.html">Response</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Response</span><span style="display:block" class="monospace fw-bold"><span class="item-name object">Response</span></span></span></span></span>&gt;</span></span></span>
+    </span>
     <a href=https://github.com/detritusjs/rest/tree/master/src/client.ts#L142>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
   <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
 </svg>
 </span></a>
-        <a class="item-name method-name" href="#.post">post</a><span>(<span class="item-name"><span class="param-name">info</span><span class="symbol">:</span> 
-<span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span><span class='symbol'> | </span><span><span class="reference-link"><a class='external' href="https://developer.mozilla.org/en-US/docs/Web/API/URL/URL">URL</a></span></span><span class='symbol'> | </span><span><span class="c-tooltip"><a class="reference-link object" href="..\interface\RequestOptions.html">RequestOptions</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">RequestOptions</span><span style="display:block" class="monospace fw-bold">/RequestOptions</span></span></span></span></span></span>, <span class="item-name"><span class="param-name">init</span><span class="symbol">?</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\interface\RequestOptions.html">RequestOptions</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">RequestOptions</span><span style="display:block" class="monospace fw-bold">/RequestOptions</span></span></span></span></span>)</span><span><span class="symbol">:</span> 
-<span><span class="reference-link"><a class='external' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a></span><span>&lt;<span><span class="c-tooltip"><a class="reference-link object" href="..\class\Response.html">Response</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Response</span><span style="display:block" class="monospace fw-bold">/Response</span></span></span></span>&gt;</span></span></span>
         <div class="docblock">
         <ul></ul>
         
-        </div>
-    </p>
+    </div>
 </div></div>
     <div>
 <div id=".put" class="item">
-    <p class="monospace">
+    <span class="monospace">
     
     
     
     
     
     
+        <a class="item-name method-name" href="#.put">put</a><span>(<span class="item-name"><span class="param-name">info</span><span class="symbol">:</span> 
+<span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span><span class='symbol'> | </span><span><span class="reference-link"><a class='external' href="https://developer.mozilla.org/en-US/docs/Web/API/URL/URL">URL</a></span></span><span class='symbol'> | </span><span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.detritus-rest\interface\RequestOptions.html">RequestOptions</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">RequestOptions</span><span style="display:block" class="monospace fw-bold"><span class="item-name object">RequestOptions</span></span></span></span></span></span></span>, <span class="item-name"><span class="param-name">init</span><span class="symbol">?</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.detritus-rest\interface\RequestOptions.html">RequestOptions</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">RequestOptions</span><span style="display:block" class="monospace fw-bold"><span class="item-name object">RequestOptions</span></span></span></span></span></span>)</span><span><span class="symbol">:</span> 
+<span><span class="reference-link"><a class='external' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a></span><span>&lt;<span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.detritus-rest\class\Response.html">Response</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Response</span><span style="display:block" class="monospace fw-bold"><span class="item-name object">Response</span></span></span></span></span>&gt;</span></span></span>
+    </span>
     <a href=https://github.com/detritusjs/rest/tree/master/src/client.ts#L150>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
   <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
 </svg>
 </span></a>
-        <a class="item-name method-name" href="#.put">put</a><span>(<span class="item-name"><span class="param-name">info</span><span class="symbol">:</span> 
-<span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span><span class='symbol'> | </span><span><span class="reference-link"><a class='external' href="https://developer.mozilla.org/en-US/docs/Web/API/URL/URL">URL</a></span></span><span class='symbol'> | </span><span><span class="c-tooltip"><a class="reference-link object" href="..\interface\RequestOptions.html">RequestOptions</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">RequestOptions</span><span style="display:block" class="monospace fw-bold">/RequestOptions</span></span></span></span></span></span>, <span class="item-name"><span class="param-name">init</span><span class="symbol">?</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\interface\RequestOptions.html">RequestOptions</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">RequestOptions</span><span style="display:block" class="monospace fw-bold">/RequestOptions</span></span></span></span></span>)</span><span><span class="symbol">:</span> 
-<span><span class="reference-link"><a class='external' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a></span><span>&lt;<span><span class="c-tooltip"><a class="reference-link object" href="..\class\Response.html">Response</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Response</span><span style="display:block" class="monospace fw-bold">/Response</span></span></span></span>&gt;</span></span></span>
         <div class="docblock">
         <ul></ul>
         
-        </div>
-    </p>
+    </div>
 </div></div>
 
 </div>

@@ -22,7 +22,7 @@
       <nav class="container-fluid navi">
       <div class="row">
         <div class="col-4">
-          <input class="form-control search" id="search" type="search" placeholder="Press '/' to search" aria-label="Search">
+          <input class="form-control search" id="search" type="search" placeholder="Search..." aria-label="Search">
         </div>
         <div class="col-8">
           <div class="row float-end" style="margin-top:5px">
@@ -45,8 +45,8 @@
     </nav>  <div class="container-fluid">
     <div class="row">
       <div class="col-lg-auto sidebar" id="sidebar">
-        <h1 class="lib-name text-center">Detritus</h1>
         
+    <h1 class="lib-name text-center"><a href="../../index.html">Detritus</a></h1>
     <img src="../../assets/logo.png" alt="Logo" class="img-fluid mx-auto d-block">
     <p class="current-thing text-center">enum <span class="object">Types</span></p>
     <div class="sidebar-members">
@@ -57,7 +57,7 @@
         <span class="sidebar-category">Members</span>
         </div>
         <div class="collapsible-body open"> 
-        <span class="sidebar-category-member"><a href="#.ARRAY">ARRAY</a></span><br><span class="sidebar-category-member"><a href="#.BOOLEAN">BOOLEAN</a></span><br><span class="sidebar-category-member"><a href="#.NUMBER">NUMBER</a></span><br><span class="sidebar-category-member"><a href="#.OBJECT">OBJECT</a></span><br><span class="sidebar-category-member"><a href="#.SNOWFLAKE">SNOWFLAKE</a></span><br><span class="sidebar-category-member"><a href="#.STRING">STRING</a></span><br>
+        <span class="sidebar-category-member"><a href="#.ARRAY">ARRAY</a></span><span class="sidebar-category-member"><a href="#.BOOLEAN">BOOLEAN</a></span><span class="sidebar-category-member"><a href="#.NUMBER">NUMBER</a></span><span class="sidebar-category-member"><a href="#.OBJECT">OBJECT</a></span><span class="sidebar-category-member"><a href="#.SNOWFLAKE">SNOWFLAKE</a></span><span class="sidebar-category-member"><a href="#.STRING">STRING</a></span>
         </div>
         </div>
     
@@ -107,8 +107,20 @@
                             <span>Methods</span>
                         </div>
                         <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-getters" checked>
+                            <span>Getters</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-setters" checked>
+                            <span>Setters</span>
+                        </div>
+                        <div>
                             <input type="checkbox" class="c-checkbox" id="search-option-enum-members">
                             <span>Enum members</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-privates">
+                            <span>Show privates</span>
                         </div>
                     </div>
                 </div>
@@ -144,37 +156,37 @@
     
 
     <h2>Members</h2>
-    <div id=".ARRAY">
+    <div id=".ARRAY" class="item">
         <a class="item-name" href="#.ARRAY">ARRAY</a>
 
         <span>= <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">'array'</a></span></span>
 
     </div>
-    <div id=".BOOLEAN">
+    <div id=".BOOLEAN" class="item">
         <a class="item-name" href="#.BOOLEAN">BOOLEAN</a>
 
         <span>= <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">'boolean'</a></span></span>
 
     </div>
-    <div id=".NUMBER">
+    <div id=".NUMBER" class="item">
         <a class="item-name" href="#.NUMBER">NUMBER</a>
 
         <span>= <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">'number'</a></span></span>
 
     </div>
-    <div id=".OBJECT">
+    <div id=".OBJECT" class="item">
         <a class="item-name" href="#.OBJECT">OBJECT</a>
 
         <span>= <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">'object'</a></span></span>
 
     </div>
-    <div id=".SNOWFLAKE">
+    <div id=".SNOWFLAKE" class="item">
         <a class="item-name" href="#.SNOWFLAKE">SNOWFLAKE</a>
 
         <span>= <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">'snowflake'</a></span></span>
 
     </div>
-    <div id=".STRING">
+    <div id=".STRING" class="item">
         <a class="item-name" href="#.STRING">STRING</a>
 
         <span>= <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">'string'</a></span></span>

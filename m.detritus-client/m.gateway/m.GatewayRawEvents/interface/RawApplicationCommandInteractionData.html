@@ -22,7 +22,7 @@
       <nav class="container-fluid navi">
       <div class="row">
         <div class="col-4">
-          <input class="form-control search" id="search" type="search" placeholder="Press '/' to search" aria-label="Search">
+          <input class="form-control search" id="search" type="search" placeholder="Search..." aria-label="Search">
         </div>
         <div class="col-8">
           <div class="row float-end" style="margin-top:5px">
@@ -45,8 +45,8 @@
     </nav>  <div class="container-fluid">
     <div class="row">
       <div class="col-lg-auto sidebar" id="sidebar">
-        <h1 class="lib-name text-center">Detritus</h1>
         
+    <h1 class="lib-name text-center"><a href="../../../../index.html">Detritus</a></h1>
     <img src="../../../../assets/logo.png" alt="Logo" class="img-fluid mx-auto d-block">
     <p class="current-thing">interface <span class="object">RawApplicationCommandInteractionData</span></p>
     <div class="sidebar-members">
@@ -57,7 +57,7 @@
         <span class="sidebar-category">Properties</span>
         </div>
         <div class="collapsible-body open"> 
-        <span class="sidebar-category-member"><a href="#.component_type">component_type</a></span><br><span class="sidebar-category-member"><a href="#.custom_id">custom_id</a></span><br><span class="sidebar-category-member"><a href="#.id">id</a></span><br><span class="sidebar-category-member"><a href="#.name">name</a></span><br><span class="sidebar-category-member"><a href="#.options">options</a></span><br><span class="sidebar-category-member"><a href="#.resolved">resolved</a></span><br>
+        <span class="sidebar-category-member"><a href="#.component_type">component_type</a></span><span class="sidebar-category-member"><a href="#.custom_id">custom_id</a></span><span class="sidebar-category-member"><a href="#.id">id</a></span><span class="sidebar-category-member"><a href="#.name">name</a></span><span class="sidebar-category-member"><a href="#.options">options</a></span><span class="sidebar-category-member"><a href="#.resolved">resolved</a></span>
         </div>
         </div>
     
@@ -107,8 +107,20 @@
                             <span>Methods</span>
                         </div>
                         <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-getters" checked>
+                            <span>Getters</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-setters" checked>
+                            <span>Setters</span>
+                        </div>
+                        <div>
                             <input type="checkbox" class="c-checkbox" id="search-option-enum-members">
                             <span>Enum members</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-privates">
+                            <span>Show privates</span>
                         </div>
                     </div>
                 </div>
@@ -149,29 +161,29 @@
     <h2>Properties</h2>
 
     <div>
-        <div>
-<span class="item-name" id=".component_type"><a class="property-name" href="#.component_type">component_type</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>
+        <div class="item">
+<div class="item-name item" id=".component_type"><a class="property-name" href="#.component_type">component_type</a><span class="symbol">?</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>
 </div>
-        <div>
-<span class="item-name" id=".custom_id"><a class="property-name" href="#.custom_id">custom_id</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>
+        <div class="item">
+<div class="item-name item" id=".custom_id"><a class="property-name" href="#.custom_id">custom_id</a><span class="symbol">?</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>
 </div>
-        <div>
-<span class="item-name" id=".id"><a class="property-name" href="#.id">id</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>
+        <div class="item">
+<div class="item-name item" id=".id"><a class="property-name" href="#.id">id</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>
 </div>
-        <div>
-<span class="item-name" id=".name"><a class="property-name" href="#.name">name</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>
+        <div class="item">
+<div class="item-name item" id=".name"><a class="property-name" href="#.name">name</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>
 </div>
-        <div>
-<span class="item-name" id=".options"><a class="property-name" href="#.options">options</a><span class="symbol">:</span> 
-<span><span class="reference-link"><span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.gateway\m.GatewayRawEvents\interface\RawApplicationCommandInteractionDataOption.html">RawApplicationCommandInteractionDataOption</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">RawApplicationCommandInteractionDataOption</span><span style="display:block" class="monospace fw-bold">gateway/GatewayRawEvents/RawApplicationCommandInteractionDataOption</span></span></span></span>[]</span></span></span>
+        <div class="item">
+<div class="item-name item" id=".options"><a class="property-name" href="#.options">options</a><span class="symbol">?</span><span class="symbol">:</span> 
+<span><span class="reference-link"><a class='object' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></span><span>&lt;<span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\..\m.detritus-client\m.gateway\m.GatewayRawEvents\interface\RawApplicationCommandInteractionDataOption.html">RawApplicationCommandInteractionDataOption</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">RawApplicationCommandInteractionDataOption</span><span style="display:block" class="monospace fw-bold">gateway/GatewayRawEvents/<span class="item-name object">RawApplicationCommandInteractionDataOption</span></span></span></span></span>&gt;</span></span></span>
 </div>
-        <div>
-<span class="item-name" id=".resolved"><a class="property-name" href="#.resolved">resolved</a><span class="symbol">:</span> 
-<span>{ <span class="item-name" id=".channels"><a class="property-name" href="#.channels">channels</a><span class="symbol">:</span> 
-<span><span class="reference-link"><a class='external' href="https://www.typescriptlang.org/docs/handbook/utility-types.html#recordkeystype">Record</a></span><span>&lt;<span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>, <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.gateway\m.GatewayRawEvents\interface\RawChannel.html">RawChannel</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">RawChannel</span><span style="display:block" class="monospace fw-bold">gateway/GatewayRawEvents/RawChannel</span></span></span></span>&gt;</span></span></span>, <span class="item-name" id=".members"><a class="property-name" href="#.members">members</a><span class="symbol">:</span> 
-<span><span class="reference-link"><a class='external' href="https://www.typescriptlang.org/docs/handbook/utility-types.html#recordkeystype">Record</a></span><span>&lt;<span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>, <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.gateway\m.GatewayRawEvents\interface\RawMember.html">RawMember</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">RawMember</span><span style="display:block" class="monospace fw-bold">gateway/GatewayRawEvents/RawMember</span></span></span></span>&gt;</span></span></span>, <span class="item-name" id=".roles"><a class="property-name" href="#.roles">roles</a><span class="symbol">:</span> 
-<span><span class="reference-link"><a class='external' href="https://www.typescriptlang.org/docs/handbook/utility-types.html#recordkeystype">Record</a></span><span>&lt;<span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>, <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.gateway\m.GatewayRawEvents\interface\RawRole.html">RawRole</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">RawRole</span><span style="display:block" class="monospace fw-bold">gateway/GatewayRawEvents/RawRole</span></span></span></span>&gt;</span></span></span>, <span class="item-name" id=".users"><a class="property-name" href="#.users">users</a><span class="symbol">:</span> 
-<span><span class="reference-link"><a class='external' href="https://www.typescriptlang.org/docs/handbook/utility-types.html#recordkeystype">Record</a></span><span>&lt;<span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>, <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.gateway\m.GatewayRawEvents\interface\RawUser.html">RawUser</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">RawUser</span><span style="display:block" class="monospace fw-bold">gateway/GatewayRawEvents/RawUser</span></span></span></span>&gt;</span></span></span> }</span></span>
+        <div class="item">
+<div class="item-name item" id=".resolved"><a class="property-name" href="#.resolved">resolved</a><span class="symbol">?</span><span class="symbol">:</span> 
+<span>{ <div class="left-item"><span class="item-name"><a class="property-name" href="#.channels">channels</a><span class="symbol">?</span><span class="symbol">:</span> 
+<span><span class="reference-link"><a class='external' href="https://www.typescriptlang.org/docs/handbook/utility-types.html#recordkeystype">Record</a></span><span>&lt;<span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>, <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\..\m.detritus-client\m.gateway\m.GatewayRawEvents\interface\RawChannel.html">RawChannel</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">RawChannel</span><span style="display:block" class="monospace fw-bold">gateway/GatewayRawEvents/<span class="item-name object">RawChannel</span></span></span></span></span>&gt;</span></span></span>,<br><span class="item-name"><a class="property-name" href="#.members">members</a><span class="symbol">?</span><span class="symbol">:</span> 
+<span><span class="reference-link"><a class='external' href="https://www.typescriptlang.org/docs/handbook/utility-types.html#recordkeystype">Record</a></span><span>&lt;<span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>, <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\..\m.detritus-client\m.gateway\m.GatewayRawEvents\interface\RawMember.html">RawMember</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">RawMember</span><span style="display:block" class="monospace fw-bold">gateway/GatewayRawEvents/<span class="item-name object">RawMember</span></span></span></span></span>&gt;</span></span></span>,<br><span class="item-name"><a class="property-name" href="#.roles">roles</a><span class="symbol">?</span><span class="symbol">:</span> 
+<span><span class="reference-link"><a class='external' href="https://www.typescriptlang.org/docs/handbook/utility-types.html#recordkeystype">Record</a></span><span>&lt;<span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>, <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\..\m.detritus-client\m.gateway\m.GatewayRawEvents\interface\RawRole.html">RawRole</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">RawRole</span><span style="display:block" class="monospace fw-bold">gateway/GatewayRawEvents/<span class="item-name object">RawRole</span></span></span></span></span>&gt;</span></span></span>,<br><span class="item-name"><a class="property-name" href="#.users">users</a><span class="symbol">?</span><span class="symbol">:</span> 
+<span><span class="reference-link"><a class='external' href="https://www.typescriptlang.org/docs/handbook/utility-types.html#recordkeystype">Record</a></span><span>&lt;<span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>, <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\..\m.detritus-client\m.gateway\m.GatewayRawEvents\interface\RawUser.html">RawUser</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">RawUser</span><span style="display:block" class="monospace fw-bold">gateway/GatewayRawEvents/<span class="item-name object">RawUser</span></span></span></span></span>&gt;</span></span></span></div> }</span></span>
 </div>
     </div>
 

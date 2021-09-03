@@ -22,7 +22,7 @@
       <nav class="container-fluid navi">
       <div class="row">
         <div class="col-4">
-          <input class="form-control search" id="search" type="search" placeholder="Press '/' to search" aria-label="Search">
+          <input class="form-control search" id="search" type="search" placeholder="Search..." aria-label="Search">
         </div>
         <div class="col-8">
           <div class="row float-end" style="margin-top:5px">
@@ -45,8 +45,8 @@
     </nav>  <div class="container-fluid">
     <div class="row">
       <div class="col-lg-auto sidebar" id="sidebar">
-        <h1 class="lib-name text-center">Detritus</h1>
         
+    <h1 class="lib-name text-center"><a href="../../index.html">Detritus</a></h1>
     <img src="../../assets/logo.png" alt="Logo" class="img-fluid mx-auto d-block">
     <p class="current-thing text-center">enum <span class="object">GatewayOpCodes</span></p>
     <div class="sidebar-members">
@@ -57,7 +57,7 @@
         <span class="sidebar-category">Members</span>
         </div>
         <div class="collapsible-body open"> 
-        <span class="sidebar-category-member"><a href="#.DISPATCH">DISPATCH</a></span><br><span class="sidebar-category-member"><a href="#.HEARTBEAT">HEARTBEAT</a></span><br><span class="sidebar-category-member"><a href="#.IDENTIFY">IDENTIFY</a></span><br><span class="sidebar-category-member"><a href="#.PRESENCE_UPDATE">PRESENCE_UPDATE</a></span><br><span class="sidebar-category-member"><a href="#.VOICE_STATE_UPDATE">VOICE_STATE_UPDATE</a></span><br><span class="sidebar-category-member"><a href="#.VOICE_SERVER_PING">VOICE_SERVER_PING</a></span><br><span class="sidebar-category-member"><a href="#.RESUME">RESUME</a></span><br><span class="sidebar-category-member"><a href="#.RECONNECT">RECONNECT</a></span><br><span class="sidebar-category-member"><a href="#.REQUEST_GUILD_MEMBERS">REQUEST_GUILD_MEMBERS</a></span><br><span class="sidebar-category-member"><a href="#.INVALID_SESSION">INVALID_SESSION</a></span><br><span class="sidebar-category-member"><a href="#.HELLO">HELLO</a></span><br><span class="sidebar-category-member"><a href="#.HEARTBEAT_ACK">HEARTBEAT_ACK</a></span><br><span class="sidebar-category-member"><a href="#.SYNC_GUILD">SYNC_GUILD</a></span><br><span class="sidebar-category-member"><a href="#.CALL_CONNECT">CALL_CONNECT</a></span><br><span class="sidebar-category-member"><a href="#.GUILD_SUBSCRIPTIONS">GUILD_SUBSCRIPTIONS</a></span><br><span class="sidebar-category-member"><a href="#.LOBBY_CONNECT">LOBBY_CONNECT</a></span><br><span class="sidebar-category-member"><a href="#.LOBBY_DISCONNECT">LOBBY_DISCONNECT</a></span><br><span class="sidebar-category-member"><a href="#.LOBBY_VOICE_STATES_UPDATE">LOBBY_VOICE_STATES_UPDATE</a></span><br><span class="sidebar-category-member"><a href="#.STREAM_CREATE">STREAM_CREATE</a></span><br><span class="sidebar-category-member"><a href="#.STREAM_DELETE">STREAM_DELETE</a></span><br><span class="sidebar-category-member"><a href="#.STREAM_WATCH">STREAM_WATCH</a></span><br><span class="sidebar-category-member"><a href="#.STREAM_PING">STREAM_PING</a></span><br><span class="sidebar-category-member"><a href="#.STREAM_SET_PAUSED">STREAM_SET_PAUSED</a></span><br><span class="sidebar-category-member"><a href="#.REQUEST_APPLICATION_COMMANDS">REQUEST_APPLICATION_COMMANDS</a></span><br>
+        <span class="sidebar-category-member"><a href="#.DISPATCH">DISPATCH</a></span><span class="sidebar-category-member"><a href="#.HEARTBEAT">HEARTBEAT</a></span><span class="sidebar-category-member"><a href="#.IDENTIFY">IDENTIFY</a></span><span class="sidebar-category-member"><a href="#.PRESENCE_UPDATE">PRESENCE_UPDATE</a></span><span class="sidebar-category-member"><a href="#.VOICE_STATE_UPDATE">VOICE_STATE_UPDATE</a></span><span class="sidebar-category-member"><a href="#.VOICE_SERVER_PING">VOICE_SERVER_PING</a></span><span class="sidebar-category-member"><a href="#.RESUME">RESUME</a></span><span class="sidebar-category-member"><a href="#.RECONNECT">RECONNECT</a></span><span class="sidebar-category-member"><a href="#.REQUEST_GUILD_MEMBERS">REQUEST_GUILD_MEMBERS</a></span><span class="sidebar-category-member"><a href="#.INVALID_SESSION">INVALID_SESSION</a></span><span class="sidebar-category-member"><a href="#.HELLO">HELLO</a></span><span class="sidebar-category-member"><a href="#.HEARTBEAT_ACK">HEARTBEAT_ACK</a></span><span class="sidebar-category-member"><a href="#.SYNC_GUILD">SYNC_GUILD</a></span><span class="sidebar-category-member"><a href="#.CALL_CONNECT">CALL_CONNECT</a></span><span class="sidebar-category-member"><a href="#.GUILD_SUBSCRIPTIONS">GUILD_SUBSCRIPTIONS</a></span><span class="sidebar-category-member"><a href="#.LOBBY_CONNECT">LOBBY_CONNECT</a></span><span class="sidebar-category-member"><a href="#.LOBBY_DISCONNECT">LOBBY_DISCONNECT</a></span><span class="sidebar-category-member"><a href="#.LOBBY_VOICE_STATES_UPDATE">LOBBY_VOICE_STATES_UPDATE</a></span><span class="sidebar-category-member"><a href="#.STREAM_CREATE">STREAM_CREATE</a></span><span class="sidebar-category-member"><a href="#.STREAM_DELETE">STREAM_DELETE</a></span><span class="sidebar-category-member"><a href="#.STREAM_WATCH">STREAM_WATCH</a></span><span class="sidebar-category-member"><a href="#.STREAM_PING">STREAM_PING</a></span><span class="sidebar-category-member"><a href="#.STREAM_SET_PAUSED">STREAM_SET_PAUSED</a></span><span class="sidebar-category-member"><a href="#.REQUEST_APPLICATION_COMMANDS">REQUEST_APPLICATION_COMMANDS</a></span>
         </div>
         </div>
     
@@ -107,8 +107,20 @@
                             <span>Methods</span>
                         </div>
                         <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-getters" checked>
+                            <span>Getters</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-setters" checked>
+                            <span>Setters</span>
+                        </div>
+                        <div>
                             <input type="checkbox" class="c-checkbox" id="search-option-enum-members">
                             <span>Enum members</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-privates">
+                            <span>Show privates</span>
                         </div>
                     </div>
                 </div>
@@ -144,145 +156,145 @@
     
 
     <h2>Members</h2>
-    <div id=".DISPATCH">
+    <div id=".DISPATCH" class="item">
         <a class="item-name" href="#.DISPATCH">DISPATCH</a>
 
         <span>= <span class="reference-link"><a class="primitive number-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">0</a></span></span>
 
     </div>
-    <div id=".HEARTBEAT">
+    <div id=".HEARTBEAT" class="item">
         <a class="item-name" href="#.HEARTBEAT">HEARTBEAT</a>
 
         <span>= <span class="reference-link"><a class="primitive number-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">1</a></span></span>
 
     </div>
-    <div id=".IDENTIFY">
+    <div id=".IDENTIFY" class="item">
         <a class="item-name" href="#.IDENTIFY">IDENTIFY</a>
 
         <span>= <span class="reference-link"><a class="primitive number-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">2</a></span></span>
 
     </div>
-    <div id=".PRESENCE_UPDATE">
+    <div id=".PRESENCE_UPDATE" class="item">
         <a class="item-name" href="#.PRESENCE_UPDATE">PRESENCE_UPDATE</a>
 
         <span>= <span class="reference-link"><a class="primitive number-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">3</a></span></span>
 
     </div>
-    <div id=".VOICE_STATE_UPDATE">
+    <div id=".VOICE_STATE_UPDATE" class="item">
         <a class="item-name" href="#.VOICE_STATE_UPDATE">VOICE_STATE_UPDATE</a>
 
         <span>= <span class="reference-link"><a class="primitive number-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">4</a></span></span>
 
     </div>
-    <div id=".VOICE_SERVER_PING">
+    <div id=".VOICE_SERVER_PING" class="item">
         <a class="item-name" href="#.VOICE_SERVER_PING">VOICE_SERVER_PING</a>
 
         <span>= <span class="reference-link"><a class="primitive number-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">5</a></span></span>
 
     </div>
-    <div id=".RESUME">
+    <div id=".RESUME" class="item">
         <a class="item-name" href="#.RESUME">RESUME</a>
 
         <span>= <span class="reference-link"><a class="primitive number-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">6</a></span></span>
 
     </div>
-    <div id=".RECONNECT">
+    <div id=".RECONNECT" class="item">
         <a class="item-name" href="#.RECONNECT">RECONNECT</a>
 
         <span>= <span class="reference-link"><a class="primitive number-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">7</a></span></span>
 
     </div>
-    <div id=".REQUEST_GUILD_MEMBERS">
+    <div id=".REQUEST_GUILD_MEMBERS" class="item">
         <a class="item-name" href="#.REQUEST_GUILD_MEMBERS">REQUEST_GUILD_MEMBERS</a>
 
         <span>= <span class="reference-link"><a class="primitive number-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">8</a></span></span>
 
     </div>
-    <div id=".INVALID_SESSION">
+    <div id=".INVALID_SESSION" class="item">
         <a class="item-name" href="#.INVALID_SESSION">INVALID_SESSION</a>
 
         <span>= <span class="reference-link"><a class="primitive number-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">9</a></span></span>
 
     </div>
-    <div id=".HELLO">
+    <div id=".HELLO" class="item">
         <a class="item-name" href="#.HELLO">HELLO</a>
 
         <span>= <span class="reference-link"><a class="primitive number-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">10</a></span></span>
 
     </div>
-    <div id=".HEARTBEAT_ACK">
+    <div id=".HEARTBEAT_ACK" class="item">
         <a class="item-name" href="#.HEARTBEAT_ACK">HEARTBEAT_ACK</a>
 
         <span>= <span class="reference-link"><a class="primitive number-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">11</a></span></span>
 
     </div>
-    <div id=".SYNC_GUILD">
+    <div id=".SYNC_GUILD" class="item">
         <a class="item-name" href="#.SYNC_GUILD">SYNC_GUILD</a>
 
         <span>= <span class="reference-link"><a class="primitive number-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">12</a></span></span>
 
     </div>
-    <div id=".CALL_CONNECT">
+    <div id=".CALL_CONNECT" class="item">
         <a class="item-name" href="#.CALL_CONNECT">CALL_CONNECT</a>
 
         <span>= <span class="reference-link"><a class="primitive number-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">13</a></span></span>
 
     </div>
-    <div id=".GUILD_SUBSCRIPTIONS">
+    <div id=".GUILD_SUBSCRIPTIONS" class="item">
         <a class="item-name" href="#.GUILD_SUBSCRIPTIONS">GUILD_SUBSCRIPTIONS</a>
 
         <span>= <span class="reference-link"><a class="primitive number-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">14</a></span></span>
 
     </div>
-    <div id=".LOBBY_CONNECT">
+    <div id=".LOBBY_CONNECT" class="item">
         <a class="item-name" href="#.LOBBY_CONNECT">LOBBY_CONNECT</a>
 
         <span>= <span class="reference-link"><a class="primitive number-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">15</a></span></span>
 
     </div>
-    <div id=".LOBBY_DISCONNECT">
+    <div id=".LOBBY_DISCONNECT" class="item">
         <a class="item-name" href="#.LOBBY_DISCONNECT">LOBBY_DISCONNECT</a>
 
         <span>= <span class="reference-link"><a class="primitive number-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">16</a></span></span>
 
     </div>
-    <div id=".LOBBY_VOICE_STATES_UPDATE">
+    <div id=".LOBBY_VOICE_STATES_UPDATE" class="item">
         <a class="item-name" href="#.LOBBY_VOICE_STATES_UPDATE">LOBBY_VOICE_STATES_UPDATE</a>
 
         <span>= <span class="reference-link"><a class="primitive number-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">17</a></span></span>
 
     </div>
-    <div id=".STREAM_CREATE">
+    <div id=".STREAM_CREATE" class="item">
         <a class="item-name" href="#.STREAM_CREATE">STREAM_CREATE</a>
 
         <span>= <span class="reference-link"><a class="primitive number-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">18</a></span></span>
 
     </div>
-    <div id=".STREAM_DELETE">
+    <div id=".STREAM_DELETE" class="item">
         <a class="item-name" href="#.STREAM_DELETE">STREAM_DELETE</a>
 
         <span>= <span class="reference-link"><a class="primitive number-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">19</a></span></span>
 
     </div>
-    <div id=".STREAM_WATCH">
+    <div id=".STREAM_WATCH" class="item">
         <a class="item-name" href="#.STREAM_WATCH">STREAM_WATCH</a>
 
         <span>= <span class="reference-link"><a class="primitive number-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">20</a></span></span>
 
     </div>
-    <div id=".STREAM_PING">
+    <div id=".STREAM_PING" class="item">
         <a class="item-name" href="#.STREAM_PING">STREAM_PING</a>
 
         <span>= <span class="reference-link"><a class="primitive number-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">21</a></span></span>
 
     </div>
-    <div id=".STREAM_SET_PAUSED">
+    <div id=".STREAM_SET_PAUSED" class="item">
         <a class="item-name" href="#.STREAM_SET_PAUSED">STREAM_SET_PAUSED</a>
 
         <span>= <span class="reference-link"><a class="primitive number-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">22</a></span></span>
 
     </div>
-    <div id=".REQUEST_APPLICATION_COMMANDS">
+    <div id=".REQUEST_APPLICATION_COMMANDS" class="item">
         <a class="item-name" href="#.REQUEST_APPLICATION_COMMANDS">REQUEST_APPLICATION_COMMANDS</a>
 
         <span>= <span class="reference-link"><a class="primitive number-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">24</a></span></span>

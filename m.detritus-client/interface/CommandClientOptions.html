@@ -22,7 +22,7 @@
       <nav class="container-fluid navi">
       <div class="row">
         <div class="col-4">
-          <input class="form-control search" id="search" type="search" placeholder="Press '/' to search" aria-label="Search">
+          <input class="form-control search" id="search" type="search" placeholder="Search..." aria-label="Search">
         </div>
         <div class="col-8">
           <div class="row float-end" style="margin-top:5px">
@@ -45,8 +45,8 @@
     </nav>  <div class="container-fluid">
     <div class="row">
       <div class="col-lg-auto sidebar" id="sidebar">
-        <h1 class="lib-name text-center">Detritus</h1>
         
+    <h1 class="lib-name text-center"><a href="../../index.html">Detritus</a></h1>
     <img src="../../assets/logo.png" alt="Logo" class="img-fluid mx-auto d-block">
     <p class="current-thing">interface <span class="object">CommandClientOptions</span></p>
     <div class="sidebar-members">
@@ -57,7 +57,7 @@
         <span class="sidebar-category">Properties</span>
         </div>
         <div class="collapsible-body open"> 
-        <span class="sidebar-category-member"><a href="#.activateOnEdits">activateOnEdits</a></span><br><span class="sidebar-category-member"><a href="#.ignoreMe">ignoreMe</a></span><br><span class="sidebar-category-member"><a href="#.maxEditDuration">maxEditDuration</a></span><br><span class="sidebar-category-member"><a href="#.mentionsEnabled">mentionsEnabled</a></span><br><span class="sidebar-category-member"><a href="#.prefix">prefix</a></span><br><span class="sidebar-category-member"><a href="#.prefixes">prefixes</a></span><br><span class="sidebar-category-member"><a href="#.prefixSpace">prefixSpace</a></span><br><span class="sidebar-category-member"><a href="#.ratelimit">ratelimit</a></span><br><span class="sidebar-category-member"><a href="#.ratelimits">ratelimits</a></span><br><span class="sidebar-category-member"><a href="#.ratelimiter">ratelimiter</a></span><br><span class="sidebar-category-member"><a href="#.useClusterClient">useClusterClient</a></span><br><span class="sidebar-category-member"><a href="#.onCommandCheck">onCommandCheck</a></span><br><span class="sidebar-category-member"><a href="#.onMessageCheck">onMessageCheck</a></span><br><span class="sidebar-category-member"><a href="#.onPrefixCheck">onPrefixCheck</a></span><br>
+        <span class="sidebar-category-member"><a href="#.activateOnEdits">activateOnEdits</a></span><span class="sidebar-category-member"><a href="#.ignoreMe">ignoreMe</a></span><span class="sidebar-category-member"><a href="#.maxEditDuration">maxEditDuration</a></span><span class="sidebar-category-member"><a href="#.mentionsEnabled">mentionsEnabled</a></span><span class="sidebar-category-member"><a href="#.prefix">prefix</a></span><span class="sidebar-category-member"><a href="#.prefixes">prefixes</a></span><span class="sidebar-category-member"><a href="#.prefixSpace">prefixSpace</a></span><span class="sidebar-category-member"><a href="#.ratelimit">ratelimit</a></span><span class="sidebar-category-member"><a href="#.ratelimits">ratelimits</a></span><span class="sidebar-category-member"><a href="#.ratelimiter">ratelimiter</a></span><span class="sidebar-category-member"><a href="#.useClusterClient">useClusterClient</a></span><span class="sidebar-category-member"><a href="#.onCommandCheck">onCommandCheck</a></span><span class="sidebar-category-member"><a href="#.onMessageCheck">onMessageCheck</a></span><span class="sidebar-category-member"><a href="#.onPrefixCheck">onPrefixCheck</a></span>
         </div>
         </div>
     
@@ -107,8 +107,20 @@
                             <span>Methods</span>
                         </div>
                         <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-getters" checked>
+                            <span>Getters</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-setters" checked>
+                            <span>Setters</span>
+                        </div>
+                        <div>
                             <input type="checkbox" class="c-checkbox" id="search-option-enum-members">
                             <span>Enum members</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-privates">
+                            <span>Show privates</span>
                         </div>
                     </div>
                 </div>
@@ -141,7 +153,7 @@
 </span></a>
     </h1>
 
-    <p class="item-name"><span class="keyword">extends</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\interface\ClusterClientOptions.html">ClusterClientOptions</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">ClusterClientOptions</span><span style="display:block" class="monospace fw-bold">/ClusterClientOptions</span></span></span></span></p>
+    <p class="item-name"><span class="keyword">extends</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.detritus-client\interface\ClusterClientOptions.html">ClusterClientOptions</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">ClusterClientOptions</span><span style="display:block" class="monospace fw-bold"><span class="item-name object">ClusterClientOptions</span></span></span></span></span></p>
 
 
 
@@ -150,49 +162,49 @@
     <h2>Properties</h2>
 
     <div>
-        <div>
-<span class="item-name" id=".activateOnEdits"><a class="property-name" href="#.activateOnEdits">activateOnEdits</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
+        <div class="item">
+<div class="item-name item" id=".activateOnEdits"><a class="property-name" href="#.activateOnEdits">activateOnEdits</a><span class="symbol">?</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
 </div>
-        <div>
-<span class="item-name" id=".ignoreMe"><a class="property-name" href="#.ignoreMe">ignoreMe</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
+        <div class="item">
+<div class="item-name item" id=".ignoreMe"><a class="property-name" href="#.ignoreMe">ignoreMe</a><span class="symbol">?</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
 </div>
-        <div>
-<span class="item-name" id=".maxEditDuration"><a class="property-name" href="#.maxEditDuration">maxEditDuration</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>
+        <div class="item">
+<div class="item-name item" id=".maxEditDuration"><a class="property-name" href="#.maxEditDuration">maxEditDuration</a><span class="symbol">?</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>
 </div>
-        <div>
-<span class="item-name" id=".mentionsEnabled"><a class="property-name" href="#.mentionsEnabled">mentionsEnabled</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
+        <div class="item">
+<div class="item-name item" id=".mentionsEnabled"><a class="property-name" href="#.mentionsEnabled">mentionsEnabled</a><span class="symbol">?</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
 </div>
-        <div>
-<span class="item-name" id=".prefix"><a class="property-name" href="#.prefix">prefix</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>
+        <div class="item">
+<div class="item-name item" id=".prefix"><a class="property-name" href="#.prefix">prefix</a><span class="symbol">?</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>
 </div>
-        <div>
-<span class="item-name" id=".prefixes"><a class="property-name" href="#.prefixes">prefixes</a><span class="symbol">:</span> 
-<span><span class="reference-link"><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>[]</span></span></span>
+        <div class="item">
+<div class="item-name item" id=".prefixes"><a class="property-name" href="#.prefixes">prefixes</a><span class="symbol">?</span><span class="symbol">:</span> 
+<span><span class="reference-link"><a class='object' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></span><span>&lt;<span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>&gt;</span></span></span>
 </div>
-        <div>
-<span class="item-name" id=".prefixSpace"><a class="property-name" href="#.prefixSpace">prefixSpace</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
+        <div class="item">
+<div class="item-name item" id=".prefixSpace"><a class="property-name" href="#.prefixSpace">prefixSpace</a><span class="symbol">?</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
 </div>
-        <div>
-<span class="item-name" id=".ratelimit"><a class="property-name" href="#.ratelimit">ratelimit</a><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\m.commandratelimit\interface\CommandRatelimitOptions.html">CommandRatelimitOptions</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">CommandRatelimitOptions</span><span style="display:block" class="monospace fw-bold">commandratelimit/CommandRatelimitOptions</span></span></span></span></span>
+        <div class="item">
+<div class="item-name item" id=".ratelimit"><a class="property-name" href="#.ratelimit">ratelimit</a><span class="symbol">?</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.detritus-client\m.commandratelimit\interface\CommandRatelimitOptions.html">CommandRatelimitOptions</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">CommandRatelimitOptions</span><span style="display:block" class="monospace fw-bold">commandratelimit/<span class="item-name object">CommandRatelimitOptions</span></span></span></span></span></span>
 </div>
-        <div>
-<span class="item-name" id=".ratelimits"><a class="property-name" href="#.ratelimits">ratelimits</a><span class="symbol">:</span> 
-<span><span class="reference-link"><span><span class="c-tooltip"><a class="reference-link object" href="..\m.commandratelimit\interface\CommandRatelimitOptions.html">CommandRatelimitOptions</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">CommandRatelimitOptions</span><span style="display:block" class="monospace fw-bold">commandratelimit/CommandRatelimitOptions</span></span></span></span>[]</span></span></span>
+        <div class="item">
+<div class="item-name item" id=".ratelimits"><a class="property-name" href="#.ratelimits">ratelimits</a><span class="symbol">?</span><span class="symbol">:</span> 
+<span><span class="reference-link"><a class='object' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></span><span>&lt;<span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.detritus-client\m.commandratelimit\interface\CommandRatelimitOptions.html">CommandRatelimitOptions</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">CommandRatelimitOptions</span><span style="display:block" class="monospace fw-bold">commandratelimit/<span class="item-name object">CommandRatelimitOptions</span></span></span></span></span>&gt;</span></span></span>
 </div>
-        <div>
-<span class="item-name" id=".ratelimiter"><a class="property-name" href="#.ratelimiter">ratelimiter</a><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\m.commandratelimit\class\CommandRatelimiter.html">CommandRatelimiter</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">CommandRatelimiter</span><span style="display:block" class="monospace fw-bold">commandratelimit/CommandRatelimiter</span></span></span></span></span>
+        <div class="item">
+<div class="item-name item" id=".ratelimiter"><a class="property-name" href="#.ratelimiter">ratelimiter</a><span class="symbol">?</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.detritus-client\m.commandratelimit\class\CommandRatelimiter.html">CommandRatelimiter</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">CommandRatelimiter</span><span style="display:block" class="monospace fw-bold">commandratelimit/<span class="item-name object">CommandRatelimiter</span></span></span></span></span></span>
 </div>
-        <div>
-<span class="item-name" id=".useClusterClient"><a class="property-name" href="#.useClusterClient">useClusterClient</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
+        <div class="item">
+<div class="item-name item" id=".useClusterClient"><a class="property-name" href="#.useClusterClient">useClusterClient</a><span class="symbol">?</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
 </div>
-        <div>
-<span class="item-name" id=".onCommandCheck"><a class="property-name" href="#.onCommandCheck">onCommandCheck</a><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\type\CommandClientCommandCheck.html">CommandClientCommandCheck</a><span class="c-tooltip-content"><span class="keyword">type alias</span> <span class="item-name object">CommandClientCommandCheck</span><span style="display:block" class="monospace fw-bold">/CommandClientCommandCheck</span></span></span></span></span>
+        <div class="item">
+<div class="item-name item" id=".onCommandCheck"><a class="property-name" href="#.onCommandCheck">onCommandCheck</a><span class="symbol">?</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.detritus-client\type\CommandClientCommandCheck.html">CommandClientCommandCheck</a><span class="c-tooltip-content"><span class="keyword">type</span> <span class="item-name object">CommandClientCommandCheck</span><span style="display:block" class="monospace fw-bold"><span class="item-name object">CommandClientCommandCheck</span></span></span></span></span></span>
 </div>
-        <div>
-<span class="item-name" id=".onMessageCheck"><a class="property-name" href="#.onMessageCheck">onMessageCheck</a><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\type\CommandClientMessageCheck.html">CommandClientMessageCheck</a><span class="c-tooltip-content"><span class="keyword">type alias</span> <span class="item-name object">CommandClientMessageCheck</span><span style="display:block" class="monospace fw-bold">/CommandClientMessageCheck</span></span></span></span></span>
+        <div class="item">
+<div class="item-name item" id=".onMessageCheck"><a class="property-name" href="#.onMessageCheck">onMessageCheck</a><span class="symbol">?</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.detritus-client\type\CommandClientMessageCheck.html">CommandClientMessageCheck</a><span class="c-tooltip-content"><span class="keyword">type</span> <span class="item-name object">CommandClientMessageCheck</span><span style="display:block" class="monospace fw-bold"><span class="item-name object">CommandClientMessageCheck</span></span></span></span></span></span>
 </div>
-        <div>
-<span class="item-name" id=".onPrefixCheck"><a class="property-name" href="#.onPrefixCheck">onPrefixCheck</a><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\type\CommandClientPrefixCheck.html">CommandClientPrefixCheck</a><span class="c-tooltip-content"><span class="keyword">type alias</span> <span class="item-name object">CommandClientPrefixCheck</span><span style="display:block" class="monospace fw-bold">/CommandClientPrefixCheck</span></span></span></span></span>
+        <div class="item">
+<div class="item-name item" id=".onPrefixCheck"><a class="property-name" href="#.onPrefixCheck">onPrefixCheck</a><span class="symbol">?</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.detritus-client\type\CommandClientPrefixCheck.html">CommandClientPrefixCheck</a><span class="c-tooltip-content"><span class="keyword">type</span> <span class="item-name object">CommandClientPrefixCheck</span><span style="display:block" class="monospace fw-bold"><span class="item-name object">CommandClientPrefixCheck</span></span></span></span></span></span>
 </div>
     </div>
 

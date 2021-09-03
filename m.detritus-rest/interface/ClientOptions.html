@@ -22,7 +22,7 @@
       <nav class="container-fluid navi">
       <div class="row">
         <div class="col-4">
-          <input class="form-control search" id="search" type="search" placeholder="Press '/' to search" aria-label="Search">
+          <input class="form-control search" id="search" type="search" placeholder="Search..." aria-label="Search">
         </div>
         <div class="col-8">
           <div class="row float-end" style="margin-top:5px">
@@ -45,8 +45,8 @@
     </nav>  <div class="container-fluid">
     <div class="row">
       <div class="col-lg-auto sidebar" id="sidebar">
-        <h1 class="lib-name text-center">Detritus</h1>
         
+    <h1 class="lib-name text-center"><a href="../../index.html">Detritus</a></h1>
     <img src="../../assets/logo.png" alt="Logo" class="img-fluid mx-auto d-block">
     <p class="current-thing">interface <span class="object">ClientOptions</span></p>
     <div class="sidebar-members">
@@ -57,7 +57,7 @@
         <span class="sidebar-category">Properties</span>
         </div>
         <div class="collapsible-body open"> 
-        <span class="sidebar-category-member"><a href="#.agent">agent</a></span><br><span class="sidebar-category-member"><a href="#.baseUrl">baseUrl</a></span><br><span class="sidebar-category-member"><a href="#.headers">headers</a></span><br>
+        <span class="sidebar-category-member"><a href="#.agent">agent</a></span><span class="sidebar-category-member"><a href="#.baseUrl">baseUrl</a></span><span class="sidebar-category-member"><a href="#.headers">headers</a></span>
         </div>
         </div>
     
@@ -107,8 +107,20 @@
                             <span>Methods</span>
                         </div>
                         <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-getters" checked>
+                            <span>Getters</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-setters" checked>
+                            <span>Setters</span>
+                        </div>
+                        <div>
                             <input type="checkbox" class="c-checkbox" id="search-option-enum-members">
                             <span>Enum members</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-privates">
+                            <span>Show privates</span>
                         </div>
                     </div>
                 </div>
@@ -149,18 +161,18 @@
     <h2>Properties</h2>
 
     <div>
-        <div>
-<span class="item-name" id=".agent"><a class="property-name" href="#.agent">agent</a><span class="symbol">:</span> 
-<span><span class="reference-link"><span class='primitive'>Agent</span></span><span class='symbol'> | </span><span>(<span class="item-name"><span class="param-name">parsedUrl</span><span class="symbol">:</span> 
-<span><span class="reference-link"><a class='external' href="https://developer.mozilla.org/en-US/docs/Web/API/URL/URL">URL</a></span></span></span>) <span class="symbol">=></span> <span class="reference-link"><span class='primitive'>Agent</span></span></span></span></span>
+        <div class="item">
+<div class="item-name item" id=".agent"><a class="property-name" href="#.agent">agent</a><span class="symbol">?</span><span class="symbol">:</span> 
+<span><span><span class="reference-link item-name">Agent</span></span><span class='symbol'> | </span><span>(<span class="item-name"><span class="param-name">parsedUrl</span><span class="symbol">:</span> 
+<span><span class="reference-link"><a class='external' href="https://developer.mozilla.org/en-US/docs/Web/API/URL/URL">URL</a></span></span></span>) <span class="symbol">=></span> <span><span class="reference-link item-name">Agent</span></span></span></span></span>
 </div>
-        <div>
-<span class="item-name" id=".baseUrl"><a class="property-name" href="#.baseUrl">baseUrl</a><span class="symbol">:</span> 
+        <div class="item">
+<div class="item-name item" id=".baseUrl"><a class="property-name" href="#.baseUrl">baseUrl</a><span class="symbol">?</span><span class="symbol">:</span> 
 <span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span><span class='symbol'> | </span><span><span class="reference-link"><a class='external' href="https://developer.mozilla.org/en-US/docs/Web/API/URL/URL">URL</a></span></span></span></span>
 </div>
-        <div>
-<span class="item-name" id=".headers"><a class="property-name" href="#.headers">headers</a><span class="symbol">:</span> 
-<span><span class="reference-link"><span class='primitive'>HeadersInit</span></span><span class='symbol'> | </span><span><span class="reference-link"><a class='external' href="https://www.typescriptlang.org/docs/handbook/utility-types.html#recordkeystype">Record</a></span><span>&lt;<span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>, <span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></span></span>&gt;</span></span></span></span>
+        <div class="item">
+<div class="item-name item" id=".headers"><a class="property-name" href="#.headers">headers</a><span class="symbol">?</span><span class="symbol">:</span> 
+<span><span><span class="reference-link item-name">HeadersInit</span></span><span class='symbol'> | </span><span><span class="reference-link"><a class='external' href="https://www.typescriptlang.org/docs/handbook/utility-types.html#recordkeystype">Record</a></span><span>&lt;<span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>, <span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></span></span>&gt;</span></span></span></span>
 </div>
     </div>
 

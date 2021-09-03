@@ -22,7 +22,7 @@
       <nav class="container-fluid navi">
       <div class="row">
         <div class="col-4">
-          <input class="form-control search" id="search" type="search" placeholder="Press '/' to search" aria-label="Search">
+          <input class="form-control search" id="search" type="search" placeholder="Search..." aria-label="Search">
         </div>
         <div class="col-8">
           <div class="row float-end" style="margin-top:5px">
@@ -45,8 +45,8 @@
     </nav>  <div class="container-fluid">
     <div class="row">
       <div class="col-lg-auto sidebar" id="sidebar">
-        <h1 class="lib-name text-center">Detritus</h1>
         
+    <h1 class="lib-name text-center"><a href="../../index.html">Detritus</a></h1>
     <img src="../../assets/logo.png" alt="Logo" class="img-fluid mx-auto d-block">
     <p class="current-thing text-center">enum <span class="object">Oauth2Scopes</span></p>
     <div class="sidebar-members">
@@ -57,7 +57,7 @@
         <span class="sidebar-category">Members</span>
         </div>
         <div class="collapsible-body open"> 
-        <span class="sidebar-category-member"><a href="#.ACTIVITIES_READ">ACTIVITIES_READ</a></span><br><span class="sidebar-category-member"><a href="#.ACTIVITIES_WRITE">ACTIVITIES_WRITE</a></span><br><span class="sidebar-category-member"><a href="#.APPLICATIONS_BUILDS_UPLOAD">APPLICATIONS_BUILDS_UPLOAD</a></span><br><span class="sidebar-category-member"><a href="#.APPLICATIONS_BUILDS_READ">APPLICATIONS_BUILDS_READ</a></span><br><span class="sidebar-category-member"><a href="#.APPLICATIONS_ENTITLEMENTS">APPLICATIONS_ENTITLEMENTS</a></span><br><span class="sidebar-category-member"><a href="#.APPLICATIONS_STORE_UPDATE">APPLICATIONS_STORE_UPDATE</a></span><br><span class="sidebar-category-member"><a href="#.BOT">BOT</a></span><br><span class="sidebar-category-member"><a href="#.CONNECTIONS">CONNECTIONS</a></span><br><span class="sidebar-category-member"><a href="#.EMAIL">EMAIL</a></span><br><span class="sidebar-category-member"><a href="#.GDM_JOIN">GDM_JOIN</a></span><br><span class="sidebar-category-member"><a href="#.GUILDS">GUILDS</a></span><br><span class="sidebar-category-member"><a href="#.GUILDS_JOIN">GUILDS_JOIN</a></span><br><span class="sidebar-category-member"><a href="#.IDENTIFY">IDENTIFY</a></span><br><span class="sidebar-category-member"><a href="#.MESSAGES_READ">MESSAGES_READ</a></span><br><span class="sidebar-category-member"><a href="#.RELATIONSHIPS_READ">RELATIONSHIPS_READ</a></span><br><span class="sidebar-category-member"><a href="#.RPC">RPC</a></span><br><span class="sidebar-category-member"><a href="#.RPC_API">RPC_API</a></span><br><span class="sidebar-category-member"><a href="#.RPC_NOTIFICATIONS_READ">RPC_NOTIFICATIONS_READ</a></span><br><span class="sidebar-category-member"><a href="#.WEBHOOK_INCOMING">WEBHOOK_INCOMING</a></span><br>
+        <span class="sidebar-category-member"><a href="#.ACTIVITIES_READ">ACTIVITIES_READ</a></span><span class="sidebar-category-member"><a href="#.ACTIVITIES_WRITE">ACTIVITIES_WRITE</a></span><span class="sidebar-category-member"><a href="#.APPLICATIONS_BUILDS_UPLOAD">APPLICATIONS_BUILDS_UPLOAD</a></span><span class="sidebar-category-member"><a href="#.APPLICATIONS_BUILDS_READ">APPLICATIONS_BUILDS_READ</a></span><span class="sidebar-category-member"><a href="#.APPLICATIONS_ENTITLEMENTS">APPLICATIONS_ENTITLEMENTS</a></span><span class="sidebar-category-member"><a href="#.APPLICATIONS_STORE_UPDATE">APPLICATIONS_STORE_UPDATE</a></span><span class="sidebar-category-member"><a href="#.BOT">BOT</a></span><span class="sidebar-category-member"><a href="#.CONNECTIONS">CONNECTIONS</a></span><span class="sidebar-category-member"><a href="#.EMAIL">EMAIL</a></span><span class="sidebar-category-member"><a href="#.GDM_JOIN">GDM_JOIN</a></span><span class="sidebar-category-member"><a href="#.GUILDS">GUILDS</a></span><span class="sidebar-category-member"><a href="#.GUILDS_JOIN">GUILDS_JOIN</a></span><span class="sidebar-category-member"><a href="#.IDENTIFY">IDENTIFY</a></span><span class="sidebar-category-member"><a href="#.MESSAGES_READ">MESSAGES_READ</a></span><span class="sidebar-category-member"><a href="#.RELATIONSHIPS_READ">RELATIONSHIPS_READ</a></span><span class="sidebar-category-member"><a href="#.RPC">RPC</a></span><span class="sidebar-category-member"><a href="#.RPC_API">RPC_API</a></span><span class="sidebar-category-member"><a href="#.RPC_NOTIFICATIONS_READ">RPC_NOTIFICATIONS_READ</a></span><span class="sidebar-category-member"><a href="#.WEBHOOK_INCOMING">WEBHOOK_INCOMING</a></span>
         </div>
         </div>
     
@@ -107,8 +107,20 @@
                             <span>Methods</span>
                         </div>
                         <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-getters" checked>
+                            <span>Getters</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-setters" checked>
+                            <span>Setters</span>
+                        </div>
+                        <div>
                             <input type="checkbox" class="c-checkbox" id="search-option-enum-members">
                             <span>Enum members</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="c-checkbox" id="search-option-privates">
+                            <span>Show privates</span>
                         </div>
                     </div>
                 </div>
@@ -144,115 +156,115 @@
     
 
     <h2>Members</h2>
-    <div id=".ACTIVITIES_READ">
+    <div id=".ACTIVITIES_READ" class="item">
         <a class="item-name" href="#.ACTIVITIES_READ">ACTIVITIES_READ</a>
 
         <span>= <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">'activities.read'</a></span></span>
 
     </div>
-    <div id=".ACTIVITIES_WRITE">
+    <div id=".ACTIVITIES_WRITE" class="item">
         <a class="item-name" href="#.ACTIVITIES_WRITE">ACTIVITIES_WRITE</a>
 
         <span>= <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">'activities.write'</a></span></span>
 
     </div>
-    <div id=".APPLICATIONS_BUILDS_UPLOAD">
+    <div id=".APPLICATIONS_BUILDS_UPLOAD" class="item">
         <a class="item-name" href="#.APPLICATIONS_BUILDS_UPLOAD">APPLICATIONS_BUILDS_UPLOAD</a>
 
         <span>= <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">'applications.builds.upload'</a></span></span>
 
     </div>
-    <div id=".APPLICATIONS_BUILDS_READ">
+    <div id=".APPLICATIONS_BUILDS_READ" class="item">
         <a class="item-name" href="#.APPLICATIONS_BUILDS_READ">APPLICATIONS_BUILDS_READ</a>
 
         <span>= <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">'applications.builds.read'</a></span></span>
 
     </div>
-    <div id=".APPLICATIONS_ENTITLEMENTS">
+    <div id=".APPLICATIONS_ENTITLEMENTS" class="item">
         <a class="item-name" href="#.APPLICATIONS_ENTITLEMENTS">APPLICATIONS_ENTITLEMENTS</a>
 
         <span>= <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">'applications.entitlements'</a></span></span>
 
     </div>
-    <div id=".APPLICATIONS_STORE_UPDATE">
+    <div id=".APPLICATIONS_STORE_UPDATE" class="item">
         <a class="item-name" href="#.APPLICATIONS_STORE_UPDATE">APPLICATIONS_STORE_UPDATE</a>
 
         <span>= <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">'applications.store.update'</a></span></span>
 
     </div>
-    <div id=".BOT">
+    <div id=".BOT" class="item">
         <a class="item-name" href="#.BOT">BOT</a>
 
         <span>= <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">'bot'</a></span></span>
 
     </div>
-    <div id=".CONNECTIONS">
+    <div id=".CONNECTIONS" class="item">
         <a class="item-name" href="#.CONNECTIONS">CONNECTIONS</a>
 
         <span>= <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">'connections'</a></span></span>
 
     </div>
-    <div id=".EMAIL">
+    <div id=".EMAIL" class="item">
         <a class="item-name" href="#.EMAIL">EMAIL</a>
 
         <span>= <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">'email'</a></span></span>
 
     </div>
-    <div id=".GDM_JOIN">
+    <div id=".GDM_JOIN" class="item">
         <a class="item-name" href="#.GDM_JOIN">GDM_JOIN</a>
 
         <span>= <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">'gdm.join'</a></span></span>
 
     </div>
-    <div id=".GUILDS">
+    <div id=".GUILDS" class="item">
         <a class="item-name" href="#.GUILDS">GUILDS</a>
 
         <span>= <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">'guilds'</a></span></span>
 
     </div>
-    <div id=".GUILDS_JOIN">
+    <div id=".GUILDS_JOIN" class="item">
         <a class="item-name" href="#.GUILDS_JOIN">GUILDS_JOIN</a>
 
         <span>= <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">'guilds.join'</a></span></span>
 
     </div>
-    <div id=".IDENTIFY">
+    <div id=".IDENTIFY" class="item">
         <a class="item-name" href="#.IDENTIFY">IDENTIFY</a>
 
         <span>= <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">'identify'</a></span></span>
 
     </div>
-    <div id=".MESSAGES_READ">
+    <div id=".MESSAGES_READ" class="item">
         <a class="item-name" href="#.MESSAGES_READ">MESSAGES_READ</a>
 
         <span>= <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">'messages.read'</a></span></span>
 
     </div>
-    <div id=".RELATIONSHIPS_READ">
+    <div id=".RELATIONSHIPS_READ" class="item">
         <a class="item-name" href="#.RELATIONSHIPS_READ">RELATIONSHIPS_READ</a>
 
         <span>= <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">'relationships.read'</a></span></span>
 
     </div>
-    <div id=".RPC">
+    <div id=".RPC" class="item">
         <a class="item-name" href="#.RPC">RPC</a>
 
         <span>= <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">'rpc'</a></span></span>
 
     </div>
-    <div id=".RPC_API">
+    <div id=".RPC_API" class="item">
         <a class="item-name" href="#.RPC_API">RPC_API</a>
 
         <span>= <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">'rpc.api'</a></span></span>
 
     </div>
-    <div id=".RPC_NOTIFICATIONS_READ">
+    <div id=".RPC_NOTIFICATIONS_READ" class="item">
         <a class="item-name" href="#.RPC_NOTIFICATIONS_READ">RPC_NOTIFICATIONS_READ</a>
 
         <span>= <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">'rpc.notifications.read'</a></span></span>
 
     </div>
-    <div id=".WEBHOOK_INCOMING">
+    <div id=".WEBHOOK_INCOMING" class="item">
         <a class="item-name" href="#.WEBHOOK_INCOMING">WEBHOOK_INCOMING</a>
 
         <span>= <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">'webhook.incoming'</a></span></span>
