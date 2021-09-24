@@ -7,9 +7,7 @@
   <title>GatewayIntents |  Detritus</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/an-old-hope.min.css"
-    integrity="sha512-t47CjkEB5hx4FojnE73dBLwgrgvLBpgsHvB40ycK3cYPkLwEp7qNHyRpRDA3/zVVAAOUPJwbMVJq3uJrBqpHVQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link id="highlightTheme" rel="stylesheet" crossorigin="anonymous" referrerpolicy="no-referrer" />
   
     <link href="../../assets/css/index.css" type="text/css" rel="stylesheet">
     <script src="../../assets/js/index.js"></script>
@@ -37,7 +35,7 @@
               </a>
              </div>
             <div class="col">
-              <span style="font-size: 1.2em">v0.16.1</span>
+              <span style="font-size: 1.2em">v0.16.3</span>
             </div>
           </div>
         </div>
@@ -47,7 +45,7 @@
       <div class="col-lg-auto sidebar" id="sidebar">
         
     <h1 class="lib-name text-center"><a href="../../index.html">Detritus</a></h1>
-    <img src="../../assets/logo.png" alt="Logo" class="img-fluid mx-auto d-block">
+    
     <p class="current-thing text-center">enum <span class="object">GatewayIntents</span></p>
     <div class="sidebar-members">
     
@@ -143,15 +141,9 @@
             <a class="path-member" href="../../index.html">index</a> / <a class="path-member" href="../index.html">detritus-client-socket</a> / <a class="path-member" href="">GatewayIntents</a>
           </div>
           <div>
-    <h1>Enum <span class="referenceLink object">GatewayIntents</span>
-    
-        <a href=https://github.com/detritusjs/client-socket/tree/master/src/constants.ts#L170>
-<span class="float-end sourceCode">
-<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
-  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
-</svg>
-</span></a>
-    </h1>
+    <h1>Enum <span class="referenceLink object">GatewayIntents</span></h1>
+
+        <p><a class="secondary-text" href=https://github.com/detritusjs/client-socket/tree/master/src/constants.ts#L171>Defined in constants.ts</a></p>
 
     
 
@@ -161,11 +153,13 @@
 
         <span>= 1 &lt;&lt; 0</span>
 
+
     </div>
     <div id=".GUILD_MEMBERS" class="item">
         <a class="item-name" href="#.GUILD_MEMBERS">GUILD_MEMBERS</a>
 
         <span>= 1 &lt;&lt; 1</span>
+
 
     </div>
     <div id=".GUILD_BANS" class="item">
@@ -173,11 +167,13 @@
 
         <span>= 1 &lt;&lt; 2</span>
 
+
     </div>
     <div id=".GUILD_EMOJIS" class="item">
         <a class="item-name" href="#.GUILD_EMOJIS">GUILD_EMOJIS</a>
 
         <span>= 1 &lt;&lt; 3</span>
+
 
     </div>
     <div id=".GUILD_INTEGRATIONS" class="item">
@@ -185,11 +181,13 @@
 
         <span>= 1 &lt;&lt; 4</span>
 
+
     </div>
     <div id=".GUILD_WEBHOOKS" class="item">
         <a class="item-name" href="#.GUILD_WEBHOOKS">GUILD_WEBHOOKS</a>
 
         <span>= 1 &lt;&lt; 5</span>
+
 
     </div>
     <div id=".GUILD_INVITES" class="item">
@@ -197,11 +195,13 @@
 
         <span>= 1 &lt;&lt; 6</span>
 
+
     </div>
     <div id=".GUILD_VOICE_STATES" class="item">
         <a class="item-name" href="#.GUILD_VOICE_STATES">GUILD_VOICE_STATES</a>
 
         <span>= 1 &lt;&lt; 7</span>
+
 
     </div>
     <div id=".GUILD_PRESENCES" class="item">
@@ -209,11 +209,13 @@
 
         <span>= 1 &lt;&lt; 8</span>
 
+
     </div>
     <div id=".GUILD_MESSAGES" class="item">
         <a class="item-name" href="#.GUILD_MESSAGES">GUILD_MESSAGES</a>
 
         <span>= 1 &lt;&lt; 9</span>
+
 
     </div>
     <div id=".GUILD_MESSAGE_REACTIONS" class="item">
@@ -221,11 +223,13 @@
 
         <span>= 1 &lt;&lt; 10</span>
 
+
     </div>
     <div id=".GUILD_MESSAGE_TYPING" class="item">
         <a class="item-name" href="#.GUILD_MESSAGE_TYPING">GUILD_MESSAGE_TYPING</a>
 
         <span>= 1 &lt;&lt; 11</span>
+
 
     </div>
     <div id=".DIRECT_MESSAGES" class="item">
@@ -233,17 +237,20 @@
 
         <span>= 1 &lt;&lt; 12</span>
 
+
     </div>
     <div id=".DIRECT_MESSAGE_REACTIONS" class="item">
         <a class="item-name" href="#.DIRECT_MESSAGE_REACTIONS">DIRECT_MESSAGE_REACTIONS</a>
 
         <span>= 1 &lt;&lt; 13</span>
 
+
     </div>
     <div id=".DIRECT_MESSAGE_TYPING" class="item">
         <a class="item-name" href="#.DIRECT_MESSAGE_TYPING">DIRECT_MESSAGE_TYPING</a>
 
         <span>= 1 &lt;&lt; 14</span>
+
 
     </div>
 

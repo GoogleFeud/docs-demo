@@ -7,9 +7,7 @@
   <title>generate |  Detritus</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/an-old-hope.min.css"
-    integrity="sha512-t47CjkEB5hx4FojnE73dBLwgrgvLBpgsHvB40ycK3cYPkLwEp7qNHyRpRDA3/zVVAAOUPJwbMVJq3uJrBqpHVQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link id="highlightTheme" rel="stylesheet" crossorigin="anonymous" referrerpolicy="no-referrer" />
   
     <link href="../../assets/css/index.css" type="text/css" rel="stylesheet">
     <script src="../../assets/js/index.js"></script>
@@ -37,7 +35,7 @@
               </a>
              </div>
             <div class="col">
-              <span style="font-size: 1.2em">v0.16.1</span>
+              <span style="font-size: 1.2em">v0.16.3</span>
             </div>
           </div>
         </div>
@@ -47,7 +45,7 @@
       <div class="col-lg-auto sidebar" id="sidebar">
         
     <h1 class="lib-name text-center"><a href="../../index.html">Detritus</a></h1>
-    <img src="../../assets/logo.png" alt="Logo" class="img-fluid mx-auto d-block">
+    
     <p class="current-thing text-center">module <span class="module">detritus-utils</span></p>
     <div class="sidebar-members">
     
@@ -57,7 +55,7 @@
         <span class="sidebar-category">Classes</span>
         </div>
         <div class="collapsible-body open"> 
-        <span class="sidebar-category-member"><a href="../class/Interval.html">Interval</a></span><span class="sidebar-category-member"><a href="../class/Timeout.html">Timeout</a></span><span class="sidebar-category-member"><a href="../class/BaseCollectionMixin.html">BaseCollectionMixin</a></span><span class="sidebar-category-member"><a href="../class/BaseCollection.html">BaseCollection</a></span><span class="sidebar-category-member"><a href="../class/BaseSet.html">BaseSet</a></span><span class="sidebar-category-member"><a href="../class/EventSpewer.html">EventSpewer</a></span><span class="sidebar-category-member"><a href="../class/EventSubscription.html">EventSubscription</a></span>
+        <span class="sidebar-category-member"><a href="../class/Interval.html">Interval</a></span><span class="sidebar-category-member"><a href="../class/Timeout.html">Timeout</a></span><span class="sidebar-category-member"><a href="../class/BaseCollectionMixin.html">BaseCollectionMixin</a></span><span class="sidebar-category-member"><a href="../class/BaseCollection.html">BaseCollection</a></span><span class="sidebar-category-member"><a href="../class/BaseSet.html">BaseSet</a></span><span class="sidebar-category-member"><a href="../class/EventSubscription.html">EventSubscription</a></span><span class="sidebar-category-member"><a href="../class/EventSpewer.html">EventSpewer</a></span>
         </div>
         </div>
     
@@ -87,7 +85,7 @@
         <span class="sidebar-category">Types</span>
         </div>
         <div class="collapsible-body open"> 
-        <span class="sidebar-category-member"><a href="../type/URIEncodeWrapFunc.html">URIEncodeWrapFunc</a></span><span class="sidebar-category-member"><a href="../type/URIEncodeWrapped.html">URIEncodeWrapped</a></span>
+        <span class="sidebar-category-member"><a href="../type/URIEncodeWrapped.html">URIEncodeWrapped</a></span><span class="sidebar-category-member"><a href="../type/URIEncodeWrapFunc.html">URIEncodeWrapFunc</a></span>
         </div>
         </div>
     
@@ -97,7 +95,7 @@
         <span class="sidebar-category">Constants</span>
         </div>
         <div class="collapsible-body open"> 
-        <span class="sidebar-category-member"><a href="../constant/Package.html">Package</a></span><span class="sidebar-category-member"><a href="../constant/DISCORD_SNOWFLAKE_EPOCH.html">DISCORD_SNOWFLAKE_EPOCH</a></span><span class="sidebar-category-member"><a href="../constant/DISCORD_TOKEN_EPOCH.html">DISCORD_TOKEN_EPOCH</a></span>
+        <span class="sidebar-category-member"><a href="../constant/Package.html">Package</a></span><span class="sidebar-category-member"><a href="../constant/DISCORD_SNOWFLAKE_EPOCH.html">DISCORD_SNOWFLAKE_EPOCH</a></span><span class="sidebar-category-member"><a href="../constant/DISCORD_TOKEN_EPOCH.html">DISCORD_TOKEN_EPOCH</a></span><span class="sidebar-category-member"><a href="../constant/Emitter.html">Emitter</a></span>
         </div>
         </div>
     
@@ -183,17 +181,12 @@
             <a class="path-member" href="../../index.html">index</a> / <a class="path-member" href="../index.html">detritus-utils</a> / <a class="path-member" href="">generate</a>
           </div>
           <div>
-    <h1>Function <span class="referenceLink method-name">generate</span>
-    <a href=https://github.com/detritusjs/utils/tree/master/src/snowflake.ts#L46>
-<span class="float-end sourceCode">
-<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
-  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
-</svg>
-</span></a>
-    </h1>
+    <h1>Function <span class="referenceLink method-name">generate</span></h1>
+
+    <p><a class="secondary-text" href=https://github.com/detritusjs/utils/tree/master/src/snowflake.ts#L46>Defined in snowflake.ts</a></p>
 
     <div>
-        (<span class="item-name"><span class="param-name">options</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.detritus-utils\interface\SnowflakeGenerateOptions.html">SnowflakeGenerateOptions</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">SnowflakeGenerateOptions</span><span style="display:block" class="monospace fw-bold"><span class="item-name object">SnowflakeGenerateOptions</span></span></span></span></span> <span class="symbol">=</span> {}</span>)<span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.detritus-utils\interface\Snowflake.html">Snowflake</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">Snowflake</span><span style="display:block" class="monospace fw-bold"><span class="item-name object">Snowflake</span></span></span></span></span>
+        (<span class="item-name"><span class="param-name">options</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.detritus-utils\interface\SnowflakeGenerateOptions.html">SnowflakeGenerateOptions</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">SnowflakeGenerateOptions</span><span style="display:block" class="monospace fw-bold">detritus-utils/<span class="item-name object">SnowflakeGenerateOptions</span></span></span></span></span> <span class="symbol">=</span> {}</span>)<span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.detritus-utils\interface\Snowflake.html">Snowflake</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">Snowflake</span><span style="display:block" class="monospace fw-bold">detritus-utils/<span class="item-name object">Snowflake</span></span></span></span></span>
         <div class="docblock">
             <ul></ul>
             

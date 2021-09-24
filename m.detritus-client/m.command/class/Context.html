@@ -7,9 +7,7 @@
   <title>Context |  Detritus</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/an-old-hope.min.css"
-    integrity="sha512-t47CjkEB5hx4FojnE73dBLwgrgvLBpgsHvB40ycK3cYPkLwEp7qNHyRpRDA3/zVVAAOUPJwbMVJq3uJrBqpHVQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link id="highlightTheme" rel="stylesheet" crossorigin="anonymous" referrerpolicy="no-referrer" />
   
     <link href="../../../assets/css/index.css" type="text/css" rel="stylesheet">
     <script src="../../../assets/js/index.js"></script>
@@ -37,7 +35,7 @@
               </a>
              </div>
             <div class="col">
-              <span style="font-size: 1.2em">v0.16.1</span>
+              <span style="font-size: 1.2em">v0.16.3</span>
             </div>
           </div>
         </div>
@@ -47,7 +45,7 @@
       <div class="col-lg-auto sidebar" id="sidebar">
         
     <h1 class="lib-name text-center"><a href="../../../index.html">Detritus</a></h1>
-    <img src="../../../assets/logo.png" alt="Logo" class="img-fluid mx-auto d-block">
+    
     <p class="current-thing text-center">class <span class="object">Context</span></p>
     <div class="sidebar-members">
     
@@ -154,29 +152,15 @@
           </div>
           
 <div>
-    <h1>Class <span class="referenceLink object">Context</span>
-    <a href=https://github.com/detritusjs/client/tree/master/src/command/context.ts#L24>
-<span class="float-end sourceCode">
-<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
-  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
-</svg>
-</span></a>
-    </h1>
+    <h1>Class <span class="referenceLink object">Context</span></h1>
+    
+    <p><a class="secondary-text" href=https://github.com/detritusjs/client/tree/master/src/command/context.ts#L24>Defined in context.ts</a></p>
+
+
 
 
     <p>Command Context</p>
 
-
-    <h2>Constructor</h2>
-    
-<div id="class.constructor" class="item">
-    <span class="item-name"><span class="keyword">constructor</span><span>(<span class="item-name"><span class="param-name">message</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.structures\class\Message.html">Message</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Message</span><span style="display:block" class="monospace fw-bold">structures/<span class="item-name object">Message</span></span></span></span></span></span>, <span class="item-name"><span class="param-name">typing</span><span class="symbol">:</span> 
-<span><span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.structures\class\Typing.html">Typing</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Typing</span><span style="display:block" class="monospace fw-bold">structures/<span class="item-name object">Typing</span></span></span></span></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></span></span></span>, <span class="item-name"><span class="param-name">commandClient</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\class\CommandClient.html">CommandClient</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">CommandClient</span><span style="display:block" class="monospace fw-bold"><span class="item-name object">CommandClient</span></span></span></span></span></span>)</span></span>
-
-    <div class="docblock">
-    <ul></ul>
-    </div>
-</div>
 
     
     <h2>Properties</h2>
@@ -186,7 +170,7 @@
     
     
     <span class="modifier">readonly</span>
-    <span class="item-name"><a class="property-name" href="#.client">client</a><span>: <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\class\ShardClient.html">ShardClient</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">ShardClient</span><span style="display:block" class="monospace fw-bold"><span class="item-name object">ShardClient</span></span></span></span></span></span>
+    <span class="item-name"><a class="property-name" href="#.client">client</a><span>: <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\class\ShardClient.html">ShardClient</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">ShardClient</span><span style="display:block" class="monospace fw-bold">detritus-client/<span class="item-name object">ShardClient</span></span></span></span></span></span>
     </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/command/context.ts#L25>
 <span class="float-end sourceCode">
@@ -204,7 +188,7 @@
     
     
     <span class="modifier">readonly</span>
-    <span class="item-name"><a class="property-name" href="#.commandClient">commandClient</a><span>: <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\class\CommandClient.html">CommandClient</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">CommandClient</span><span style="display:block" class="monospace fw-bold"><span class="item-name object">CommandClient</span></span></span></span></span></span>
+    <span class="item-name"><a class="property-name" href="#.commandClient">commandClient</a><span>: <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\class\CommandClient.html">CommandClient</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">CommandClient</span><span style="display:block" class="monospace fw-bold">detritus-client/<span class="item-name object">CommandClient</span></span></span></span></span></span>
     </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/command/context.ts#L26>
 <span class="float-end sourceCode">
@@ -222,7 +206,7 @@
     
     
     <span class="modifier">readonly</span>
-    <span class="item-name"><a class="property-name" href="#.message">message</a><span>: <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.structures\class\Message.html">Message</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Message</span><span style="display:block" class="monospace fw-bold">structures/<span class="item-name object">Message</span></span></span></span></span></span>
+    <span class="item-name"><a class="property-name" href="#.message">message</a><span>: <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.structures\class\Message.html">Message</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Message</span><span style="display:block" class="monospace fw-bold">detritus-client/structures/<span class="item-name object">Message</span></span></span></span></span></span>
     </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/command/context.ts#L27>
 <span class="float-end sourceCode">
@@ -241,7 +225,7 @@
     
     <span class="modifier">readonly</span>
     <span class="item-name"><a class="property-name" href="#.typing">typing</a><span>: 
-<span><span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.structures\class\Typing.html">Typing</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Typing</span><span style="display:block" class="monospace fw-bold">structures/<span class="item-name object">Typing</span></span></span></span></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></span></span></span>
+<span><span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.structures\class\Typing.html">Typing</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Typing</span><span style="display:block" class="monospace fw-bold">detritus-client/structures/<span class="item-name object">Typing</span></span></span></span></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></span></span></span>
     </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/command/context.ts#L28>
 <span class="float-end sourceCode">
@@ -259,7 +243,7 @@
     
     
     <span class="modifier">readonly</span>
-    <span class="item-name"><a class="property-name" href="#.typingTimeout">typingTimeout</a><span>: <span><span class="reference-link item-name">Timeout</span></span></span>
+    <span class="item-name"><a class="property-name" href="#.typingTimeout">typingTimeout</a><span>: <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-utils\class\Timeout.html">Timeout</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Timeout</span><span style="display:block" class="monospace fw-bold">detritus-utils/<span class="item-name object">Timeout</span></span></span></span></span></span>
     </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/command/context.ts#L29>
 <span class="float-end sourceCode">
@@ -277,7 +261,7 @@
     
     
     
-    <span class="item-name"><a class="property-name" href="#.command">command</a><span>: <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.command\class\Command.html">Command</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Command</span><span style="display:block" class="monospace fw-bold">command/<span class="item-name object">Command</span></span></span></span></span></span>
+    <span class="item-name"><a class="property-name" href="#.command">command</a><span>: <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.command\class\Command.html">Command</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Command</span><span style="display:block" class="monospace fw-bold">detritus-client/command/<span class="item-name object">Command</span></span></span></span></span></span>
     </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/command/context.ts#L31>
 <span class="float-end sourceCode">
@@ -296,7 +280,7 @@
     
     
     <span class="item-name"><a class="property-name" href="#.metadata">metadata</a><span>: 
-<span>{ <span>[key<span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>]<span class="symbol">:</span> <span class="reference-link"><span class='primitive'>any</span></span></span> }</span></span>
+<span>{ <span class="item-name">[key<span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>]<span class="symbol">:</span> <span class="reference-link"><span class='primitive'>any</span></span></span> }</span></span>
     </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/command/context.ts#L32>
 <span class="float-end sourceCode">
@@ -338,7 +322,7 @@
     
     <span class="modifier">get</span>
     
-        <a class="item-name method-name" href="#.application">application</a><span>()</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.structures\class\Oauth2Application.html">Oauth2Application</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Oauth2Application</span><span style="display:block" class="monospace fw-bold">structures/<span class="item-name object">Oauth2Application</span></span></span></span></span></span>
+        <a class="item-name method-name" href="#.application">application</a><span>()</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.structures\class\Oauth2Application.html">Oauth2Application</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Oauth2Application</span><span style="display:block" class="monospace fw-bold">detritus-client/structures/<span class="item-name object">Oauth2Application</span></span></span></span></span></span>
     </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/command/context.ts#L55>
 <span class="float-end sourceCode">
@@ -383,7 +367,7 @@
     <span class="modifier">get</span>
     
         <a class="item-name method-name" href="#.cluster">cluster</a><span>()</span><span><span class="symbol">:</span> 
-<span><span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\class\ClusterClient.html">ClusterClient</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">ClusterClient</span><span style="display:block" class="monospace fw-bold"><span class="item-name object">ClusterClient</span></span></span></span></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></span></span></span>
+<span><span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\class\ClusterClient.html">ClusterClient</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">ClusterClient</span><span style="display:block" class="monospace fw-bold">detritus-client/<span class="item-name object">ClusterClient</span></span></span></span></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></span></span></span>
     </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/command/context.ts#L63>
 <span class="float-end sourceCode">
@@ -405,7 +389,7 @@
     
     <span class="modifier">get</span>
     
-        <a class="item-name method-name" href="#.gateway">gateway</a><span>()</span>
+        <a class="item-name method-name" href="#.gateway">gateway</a><span>()</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client-socket\class\Socket.html">Socket</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Socket</span><span style="display:block" class="monospace fw-bold">detritus-client-socket/<span class="item-name object">Socket</span></span></span></span></span></span>
     </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/command/context.ts#L67>
 <span class="float-end sourceCode">
@@ -428,7 +412,7 @@
     <span class="modifier">get</span>
     
         <a class="item-name method-name" href="#.manager">manager</a><span>()</span><span><span class="symbol">:</span> 
-<span><span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.cluster\class\ClusterProcessChild.html">ClusterProcessChild</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">ClusterProcessChild</span><span style="display:block" class="monospace fw-bold">cluster/<span class="item-name object">ClusterProcessChild</span></span></span></span></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></span></span></span>
+<span><span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.cluster\class\ClusterProcessChild.html">ClusterProcessChild</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">ClusterProcessChild</span><span style="display:block" class="monospace fw-bold">detritus-client/cluster/<span class="item-name object">ClusterProcessChild</span></span></span></span></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></span></span></span>
     </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/command/context.ts#L71>
 <span class="float-end sourceCode">
@@ -450,7 +434,7 @@
     
     <span class="modifier">get</span>
     
-        <a class="item-name method-name" href="#.owners">owners</a><span>()</span>
+        <a class="item-name method-name" href="#.owners">owners</a><span>()</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-utils\class\BaseCollection.html">BaseCollection</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">BaseCollection</span><span style="display:block" class="monospace fw-bold">detritus-utils/<span class="item-name object">BaseCollection</span></span></span></span><span>&lt;<span class="reference-link"><span class='primitive'>any</span></span>, <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.structures\class\User.html">User</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">User</span><span style="display:block" class="monospace fw-bold">detritus-client/structures/<span class="item-name object">User</span></span></span></span></span>&gt;</span></span></span>
     </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/command/context.ts#L75>
 <span class="float-end sourceCode">
@@ -472,7 +456,7 @@
     
     <span class="modifier">get</span>
     
-        <a class="item-name method-name" href="#.rest">rest</a><span>()</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.rest\class\RestClient.html">RestClient</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">RestClient</span><span style="display:block" class="monospace fw-bold">rest/<span class="item-name object">RestClient</span></span></span></span></span></span>
+        <a class="item-name method-name" href="#.rest">rest</a><span>()</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.rest\class\RestClient.html">RestClient</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">RestClient</span><span style="display:block" class="monospace fw-bold">detritus-client/rest/<span class="item-name object">RestClient</span></span></span></span></span></span>
     </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/command/context.ts#L79>
 <span class="float-end sourceCode">
@@ -538,7 +522,7 @@
     
     <span class="modifier">get</span>
     
-        <a class="item-name method-name" href="#.interactionCommandClient">interactionCommandClient</a><span>()</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\class\InteractionCommandClient.html">InteractionCommandClient</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">InteractionCommandClient</span><span style="display:block" class="monospace fw-bold"><span class="item-name object">InteractionCommandClient</span></span></span></span></span></span>
+        <a class="item-name method-name" href="#.interactionCommandClient">interactionCommandClient</a><span>()</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\class\InteractionCommandClient.html">InteractionCommandClient</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">InteractionCommandClient</span><span style="display:block" class="monospace fw-bold">detritus-client/<span class="item-name object">InteractionCommandClient</span></span></span></span></span></span>
     </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/command/context.ts#L91>
 <span class="float-end sourceCode">
@@ -561,7 +545,7 @@
     <span class="modifier">get</span>
     
         <a class="item-name method-name" href="#.response">response</a><span>()</span><span><span class="symbol">:</span> 
-<span><span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.structures\class\Message.html">Message</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Message</span><span style="display:block" class="monospace fw-bold">structures/<span class="item-name object">Message</span></span></span></span></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></span></span></span>
+<span><span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.structures\class\Message.html">Message</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Message</span><span style="display:block" class="monospace fw-bold">detritus-client/structures/<span class="item-name object">Message</span></span></span></span></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></span></span></span>
     </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/command/context.ts#L95>
 <span class="float-end sourceCode">
@@ -583,7 +567,7 @@
     
     <span class="modifier">get</span>
     
-        <a class="item-name method-name" href="#.applications">applications</a><span>()</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.collections\class\Applications.html">Applications</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Applications</span><span style="display:block" class="monospace fw-bold">collections/<span class="item-name object">Applications</span></span></span></span></span></span>
+        <a class="item-name method-name" href="#.applications">applications</a><span>()</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.collections\class\Applications.html">Applications</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Applications</span><span style="display:block" class="monospace fw-bold">detritus-client/collections/<span class="item-name object">Applications</span></span></span></span></span></span>
     </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/command/context.ts#L104>
 <span class="float-end sourceCode">
@@ -605,7 +589,7 @@
     
     <span class="modifier">get</span>
     
-        <a class="item-name method-name" href="#.channels">channels</a><span>()</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.collections\class\Channels.html">Channels</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Channels</span><span style="display:block" class="monospace fw-bold">collections/<span class="item-name object">Channels</span></span></span></span></span></span>
+        <a class="item-name method-name" href="#.channels">channels</a><span>()</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.collections\class\Channels.html">Channels</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Channels</span><span style="display:block" class="monospace fw-bold">detritus-client/collections/<span class="item-name object">Channels</span></span></span></span></span></span>
     </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/command/context.ts#L108>
 <span class="float-end sourceCode">
@@ -627,7 +611,7 @@
     
     <span class="modifier">get</span>
     
-        <a class="item-name method-name" href="#.emojis">emojis</a><span>()</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.collections\class\Emojis.html">Emojis</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Emojis</span><span style="display:block" class="monospace fw-bold">collections/<span class="item-name object">Emojis</span></span></span></span></span></span>
+        <a class="item-name method-name" href="#.emojis">emojis</a><span>()</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.collections\class\Emojis.html">Emojis</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Emojis</span><span style="display:block" class="monospace fw-bold">detritus-client/collections/<span class="item-name object">Emojis</span></span></span></span></span></span>
     </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/command/context.ts#L112>
 <span class="float-end sourceCode">
@@ -649,7 +633,7 @@
     
     <span class="modifier">get</span>
     
-        <a class="item-name method-name" href="#.guilds">guilds</a><span>()</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.collections\class\Guilds.html">Guilds</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Guilds</span><span style="display:block" class="monospace fw-bold">collections/<span class="item-name object">Guilds</span></span></span></span></span></span>
+        <a class="item-name method-name" href="#.guilds">guilds</a><span>()</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.collections\class\Guilds.html">Guilds</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Guilds</span><span style="display:block" class="monospace fw-bold">detritus-client/collections/<span class="item-name object">Guilds</span></span></span></span></span></span>
     </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/command/context.ts#L116>
 <span class="float-end sourceCode">
@@ -671,7 +655,7 @@
     
     <span class="modifier">get</span>
     
-        <a class="item-name method-name" href="#.interactions">interactions</a><span>()</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.collections\class\Interactions.html">Interactions</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Interactions</span><span style="display:block" class="monospace fw-bold">collections/<span class="item-name object">Interactions</span></span></span></span></span></span>
+        <a class="item-name method-name" href="#.interactions">interactions</a><span>()</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.collections\class\Interactions.html">Interactions</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Interactions</span><span style="display:block" class="monospace fw-bold">detritus-client/collections/<span class="item-name object">Interactions</span></span></span></span></span></span>
     </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/command/context.ts#L120>
 <span class="float-end sourceCode">
@@ -693,7 +677,7 @@
     
     <span class="modifier">get</span>
     
-        <a class="item-name method-name" href="#.members">members</a><span>()</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.collections\class\Members.html">Members</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Members</span><span style="display:block" class="monospace fw-bold">collections/<span class="item-name object">Members</span></span></span></span></span></span>
+        <a class="item-name method-name" href="#.members">members</a><span>()</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.collections\class\Members.html">Members</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Members</span><span style="display:block" class="monospace fw-bold">detritus-client/collections/<span class="item-name object">Members</span></span></span></span></span></span>
     </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/command/context.ts#L124>
 <span class="float-end sourceCode">
@@ -715,7 +699,7 @@
     
     <span class="modifier">get</span>
     
-        <a class="item-name method-name" href="#.messages">messages</a><span>()</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.collections\class\Messages.html">Messages</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Messages</span><span style="display:block" class="monospace fw-bold">collections/<span class="item-name object">Messages</span></span></span></span></span></span>
+        <a class="item-name method-name" href="#.messages">messages</a><span>()</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.collections\class\Messages.html">Messages</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Messages</span><span style="display:block" class="monospace fw-bold">detritus-client/collections/<span class="item-name object">Messages</span></span></span></span></span></span>
     </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/command/context.ts#L128>
 <span class="float-end sourceCode">
@@ -737,7 +721,7 @@
     
     <span class="modifier">get</span>
     
-        <a class="item-name method-name" href="#.notes">notes</a><span>()</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.collections\class\Notes.html">Notes</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Notes</span><span style="display:block" class="monospace fw-bold">collections/<span class="item-name object">Notes</span></span></span></span></span></span>
+        <a class="item-name method-name" href="#.notes">notes</a><span>()</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.collections\class\Notes.html">Notes</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Notes</span><span style="display:block" class="monospace fw-bold">detritus-client/collections/<span class="item-name object">Notes</span></span></span></span></span></span>
     </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/command/context.ts#L132>
 <span class="float-end sourceCode">
@@ -759,7 +743,7 @@
     
     <span class="modifier">get</span>
     
-        <a class="item-name method-name" href="#.presences">presences</a><span>()</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.collections\class\Presences.html">Presences</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Presences</span><span style="display:block" class="monospace fw-bold">collections/<span class="item-name object">Presences</span></span></span></span></span></span>
+        <a class="item-name method-name" href="#.presences">presences</a><span>()</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.collections\class\Presences.html">Presences</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Presences</span><span style="display:block" class="monospace fw-bold">detritus-client/collections/<span class="item-name object">Presences</span></span></span></span></span></span>
     </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/command/context.ts#L136>
 <span class="float-end sourceCode">
@@ -781,7 +765,7 @@
     
     <span class="modifier">get</span>
     
-        <a class="item-name method-name" href="#.relationships">relationships</a><span>()</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.collections\class\Relationships.html">Relationships</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Relationships</span><span style="display:block" class="monospace fw-bold">collections/<span class="item-name object">Relationships</span></span></span></span></span></span>
+        <a class="item-name method-name" href="#.relationships">relationships</a><span>()</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.collections\class\Relationships.html">Relationships</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Relationships</span><span style="display:block" class="monospace fw-bold">detritus-client/collections/<span class="item-name object">Relationships</span></span></span></span></span></span>
     </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/command/context.ts#L140>
 <span class="float-end sourceCode">
@@ -803,7 +787,7 @@
     
     <span class="modifier">get</span>
     
-        <a class="item-name method-name" href="#.roles">roles</a><span>()</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.collections\class\Roles.html">Roles</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Roles</span><span style="display:block" class="monospace fw-bold">collections/<span class="item-name object">Roles</span></span></span></span></span></span>
+        <a class="item-name method-name" href="#.roles">roles</a><span>()</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.collections\class\Roles.html">Roles</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Roles</span><span style="display:block" class="monospace fw-bold">detritus-client/collections/<span class="item-name object">Roles</span></span></span></span></span></span>
     </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/command/context.ts#L144>
 <span class="float-end sourceCode">
@@ -825,7 +809,7 @@
     
     <span class="modifier">get</span>
     
-        <a class="item-name method-name" href="#.sessions">sessions</a><span>()</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.collections\class\Sessions.html">Sessions</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Sessions</span><span style="display:block" class="monospace fw-bold">collections/<span class="item-name object">Sessions</span></span></span></span></span></span>
+        <a class="item-name method-name" href="#.sessions">sessions</a><span>()</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.collections\class\Sessions.html">Sessions</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Sessions</span><span style="display:block" class="monospace fw-bold">detritus-client/collections/<span class="item-name object">Sessions</span></span></span></span></span></span>
     </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/command/context.ts#L148>
 <span class="float-end sourceCode">
@@ -847,7 +831,7 @@
     
     <span class="modifier">get</span>
     
-        <a class="item-name method-name" href="#.stageInstances">stageInstances</a><span>()</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.collections\class\StageInstances.html">StageInstances</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">StageInstances</span><span style="display:block" class="monospace fw-bold">collections/<span class="item-name object">StageInstances</span></span></span></span></span></span>
+        <a class="item-name method-name" href="#.stageInstances">stageInstances</a><span>()</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.collections\class\StageInstances.html">StageInstances</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">StageInstances</span><span style="display:block" class="monospace fw-bold">detritus-client/collections/<span class="item-name object">StageInstances</span></span></span></span></span></span>
     </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/command/context.ts#L152>
 <span class="float-end sourceCode">
@@ -869,7 +853,7 @@
     
     <span class="modifier">get</span>
     
-        <a class="item-name method-name" href="#.stickers">stickers</a><span>()</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.collections\class\Stickers.html">Stickers</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Stickers</span><span style="display:block" class="monospace fw-bold">collections/<span class="item-name object">Stickers</span></span></span></span></span></span>
+        <a class="item-name method-name" href="#.stickers">stickers</a><span>()</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.collections\class\Stickers.html">Stickers</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Stickers</span><span style="display:block" class="monospace fw-bold">detritus-client/collections/<span class="item-name object">Stickers</span></span></span></span></span></span>
     </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/command/context.ts#L156>
 <span class="float-end sourceCode">
@@ -891,7 +875,7 @@
     
     <span class="modifier">get</span>
     
-        <a class="item-name method-name" href="#.typings">typings</a><span>()</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.collections\class\TypingCollection.html">TypingCollection</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">TypingCollection</span><span style="display:block" class="monospace fw-bold">collections/<span class="item-name object">TypingCollection</span></span></span></span></span></span>
+        <a class="item-name method-name" href="#.typings">typings</a><span>()</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.collections\class\TypingCollection.html">TypingCollection</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">TypingCollection</span><span style="display:block" class="monospace fw-bold">detritus-client/collections/<span class="item-name object">TypingCollection</span></span></span></span></span></span>
     </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/command/context.ts#L160>
 <span class="float-end sourceCode">
@@ -913,7 +897,7 @@
     
     <span class="modifier">get</span>
     
-        <a class="item-name method-name" href="#.users">users</a><span>()</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.collections\class\Users.html">Users</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Users</span><span style="display:block" class="monospace fw-bold">collections/<span class="item-name object">Users</span></span></span></span></span></span>
+        <a class="item-name method-name" href="#.users">users</a><span>()</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.collections\class\Users.html">Users</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Users</span><span style="display:block" class="monospace fw-bold">detritus-client/collections/<span class="item-name object">Users</span></span></span></span></span></span>
     </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/command/context.ts#L164>
 <span class="float-end sourceCode">
@@ -935,7 +919,7 @@
     
     <span class="modifier">get</span>
     
-        <a class="item-name method-name" href="#.voiceCalls">voiceCalls</a><span>()</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.collections\class\VoiceCalls.html">VoiceCalls</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">VoiceCalls</span><span style="display:block" class="monospace fw-bold">collections/<span class="item-name object">VoiceCalls</span></span></span></span></span></span>
+        <a class="item-name method-name" href="#.voiceCalls">voiceCalls</a><span>()</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.collections\class\VoiceCalls.html">VoiceCalls</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">VoiceCalls</span><span style="display:block" class="monospace fw-bold">detritus-client/collections/<span class="item-name object">VoiceCalls</span></span></span></span></span></span>
     </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/command/context.ts#L168>
 <span class="float-end sourceCode">
@@ -957,7 +941,7 @@
     
     <span class="modifier">get</span>
     
-        <a class="item-name method-name" href="#.voiceConnections">voiceConnections</a><span>()</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.collections\class\VoiceConnections.html">VoiceConnections</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">VoiceConnections</span><span style="display:block" class="monospace fw-bold">collections/<span class="item-name object">VoiceConnections</span></span></span></span></span></span>
+        <a class="item-name method-name" href="#.voiceConnections">voiceConnections</a><span>()</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.collections\class\VoiceConnections.html">VoiceConnections</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">VoiceConnections</span><span style="display:block" class="monospace fw-bold">detritus-client/collections/<span class="item-name object">VoiceConnections</span></span></span></span></span></span>
     </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/command/context.ts#L172>
 <span class="float-end sourceCode">
@@ -979,7 +963,7 @@
     
     <span class="modifier">get</span>
     
-        <a class="item-name method-name" href="#.voiceStates">voiceStates</a><span>()</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.collections\class\VoiceStates.html">VoiceStates</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">VoiceStates</span><span style="display:block" class="monospace fw-bold">collections/<span class="item-name object">VoiceStates</span></span></span></span></span></span>
+        <a class="item-name method-name" href="#.voiceStates">voiceStates</a><span>()</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.collections\class\VoiceStates.html">VoiceStates</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">VoiceStates</span><span style="display:block" class="monospace fw-bold">detritus-client/collections/<span class="item-name object">VoiceStates</span></span></span></span></span></span>
     </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/command/context.ts#L176>
 <span class="float-end sourceCode">
@@ -1243,7 +1227,7 @@
     
     <span class="modifier">get</span>
     
-        <a class="item-name method-name" href="#.guild">guild</a><span>()</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.structures\class\Guild.html">Guild</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Guild</span><span style="display:block" class="monospace fw-bold">structures/<span class="item-name object">Guild</span></span></span></span></span></span>
+        <a class="item-name method-name" href="#.guild">guild</a><span>()</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.structures\class\Guild.html">Guild</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Guild</span><span style="display:block" class="monospace fw-bold">detritus-client/structures/<span class="item-name object">Guild</span></span></span></span></span></span>
     </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/command/context.ts#L225>
 <span class="float-end sourceCode">
@@ -1309,7 +1293,7 @@
     
     <span class="modifier">get</span>
     
-        <a class="item-name method-name" href="#.me">me</a><span>()</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.structures\class\Member.html">Member</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Member</span><span style="display:block" class="monospace fw-bold">structures/<span class="item-name object">Member</span></span></span></span></span></span>
+        <a class="item-name method-name" href="#.me">me</a><span>()</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.structures\class\Member.html">Member</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Member</span><span style="display:block" class="monospace fw-bold">detritus-client/structures/<span class="item-name object">Member</span></span></span></span></span></span>
     </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/command/context.ts#L237>
 <span class="float-end sourceCode">
@@ -1331,7 +1315,7 @@
     
     <span class="modifier">get</span>
     
-        <a class="item-name method-name" href="#.member">member</a><span>()</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.structures\class\Member.html">Member</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Member</span><span style="display:block" class="monospace fw-bold">structures/<span class="item-name object">Member</span></span></span></span></span></span>
+        <a class="item-name method-name" href="#.member">member</a><span>()</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.structures\class\Member.html">Member</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Member</span><span style="display:block" class="monospace fw-bold">detritus-client/structures/<span class="item-name object">Member</span></span></span></span></span></span>
     </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/command/context.ts#L245>
 <span class="float-end sourceCode">
@@ -1397,7 +1381,7 @@
     
     <span class="modifier">get</span>
     
-        <a class="item-name method-name" href="#.user">user</a><span>()</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.structures\class\User.html">User</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">User</span><span style="display:block" class="monospace fw-bold">structures/<span class="item-name object">User</span></span></span></span></span></span>
+        <a class="item-name method-name" href="#.user">user</a><span>()</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.structures\class\User.html">User</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">User</span><span style="display:block" class="monospace fw-bold">detritus-client/structures/<span class="item-name object">User</span></span></span></span></span></span>
     </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/command/context.ts#L257>
 <span class="float-end sourceCode">
@@ -1441,7 +1425,7 @@
     
     <span class="modifier">get</span>
     
-        <a class="item-name method-name" href="#.voiceChannel">voiceChannel</a><span>()</span>
+        <a class="item-name method-name" href="#.voiceChannel">voiceChannel</a><span>()</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.structures\class\ChannelGuildVoice.html">ChannelGuildVoice</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">ChannelGuildVoice</span><span style="display:block" class="monospace fw-bold">detritus-client/structures/<span class="item-name object">ChannelGuildVoice</span></span></span></span></span></span>
     </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/command/context.ts#L265>
 <span class="float-end sourceCode">
@@ -1463,7 +1447,7 @@
     
     <span class="modifier">get</span>
     
-        <a class="item-name method-name" href="#.voiceConnection">voiceConnection</a><span>()</span>
+        <a class="item-name method-name" href="#.voiceConnection">voiceConnection</a><span>()</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.media\class\VoiceConnection.html">VoiceConnection</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">VoiceConnection</span><span style="display:block" class="monospace fw-bold">detritus-client/media/<span class="item-name object">VoiceConnection</span></span></span></span></span></span>
     </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/command/context.ts#L273>
 <span class="float-end sourceCode">
@@ -1485,7 +1469,7 @@
     
     <span class="modifier">get</span>
     
-        <a class="item-name method-name" href="#.voiceState">voiceState</a><span>()</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.structures\class\VoiceState.html">VoiceState</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">VoiceState</span><span style="display:block" class="monospace fw-bold">structures/<span class="item-name object">VoiceState</span></span></span></span></span></span>
+        <a class="item-name method-name" href="#.voiceState">voiceState</a><span>()</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.structures\class\VoiceState.html">VoiceState</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">VoiceState</span><span style="display:block" class="monospace fw-bold">detritus-client/structures/<span class="item-name object">VoiceState</span></span></span></span></span></span>
     </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/command/context.ts#L277>
 <span class="float-end sourceCode">
@@ -1508,8 +1492,7 @@
     
     
         <a class="item-name method-name" href="#.editOrReply">editOrReply</a><span>(<span class="item-name"><span class="param-name">options</span><span class="symbol">:</span> 
-<span><span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.command\interface\EditOrReply.html">EditOrReply</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">EditOrReply</span><span style="display:block" class="monospace fw-bold">command/<span class="item-name object">EditOrReply</span></span></span></span></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span> <span class="symbol">=</span> {}</span>)</span><span><span class="symbol">:</span> 
-<span><span class="reference-link"><a class='external' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a></span><span>&lt;<span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.structures\class\Message.html">Message</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Message</span><span style="display:block" class="monospace fw-bold">structures/<span class="item-name object">Message</span></span></span></span></span>&gt;</span></span></span>
+<span><span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.command\interface\EditOrReply.html">EditOrReply</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">EditOrReply</span><span style="display:block" class="monospace fw-bold">detritus-client/command/<span class="item-name object">EditOrReply</span></span></span></span></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span> <span class="symbol">=</span> {}</span>)</span>
     </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/command/context.ts#L285>
 <span class="float-end sourceCode">
@@ -1532,8 +1515,7 @@
     
     
         <a class="item-name method-name" href="#.reply">reply</a><span>(<span class="item-name"><span class="param-name">options</span><span class="symbol">:</span> 
-<span><span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client-rest\m.RequestTypes\interface\CreateMessage.html">CreateMessage</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">CreateMessage</span><span style="display:block" class="monospace fw-bold">detritus-client-rest/RequestTypes/<span class="item-name object">CreateMessage</span></span></span></span></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span> <span class="symbol">=</span> {}</span>)</span><span><span class="symbol">:</span> 
-<span><span class="reference-link"><a class='external' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a></span><span>&lt;<span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.structures\class\Message.html">Message</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Message</span><span style="display:block" class="monospace fw-bold">structures/<span class="item-name object">Message</span></span></span></span></span>&gt;</span></span></span>
+<span><span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client-rest\m.RequestTypes\interface\CreateMessage.html">CreateMessage</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">CreateMessage</span><span style="display:block" class="monospace fw-bold">detritus-client-rest/RequestTypes/<span class="item-name object">CreateMessage</span></span></span></span></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span> <span class="symbol">=</span> {}</span>)</span>
     </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/command/context.ts#L311>
 <span class="float-end sourceCode">
@@ -1555,8 +1537,7 @@
     
     
     
-        <a class="item-name method-name" href="#.triggerTyping">triggerTyping</a><span>()</span><span><span class="symbol">:</span> 
-<span><span class="reference-link"><a class='external' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a></span><span>&lt;<span class="reference-link"><span class='primitive'>any</span></span>&gt;</span></span></span>
+        <a class="item-name method-name" href="#.triggerTyping">triggerTyping</a><span>()</span>
     </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/command/context.ts#L315>
 <span class="float-end sourceCode">

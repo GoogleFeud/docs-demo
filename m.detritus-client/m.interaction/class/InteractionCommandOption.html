@@ -7,9 +7,7 @@
   <title>InteractionCommandOption |  Detritus</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/an-old-hope.min.css"
-    integrity="sha512-t47CjkEB5hx4FojnE73dBLwgrgvLBpgsHvB40ycK3cYPkLwEp7qNHyRpRDA3/zVVAAOUPJwbMVJq3uJrBqpHVQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link id="highlightTheme" rel="stylesheet" crossorigin="anonymous" referrerpolicy="no-referrer" />
   
     <link href="../../../assets/css/index.css" type="text/css" rel="stylesheet">
     <script src="../../../assets/js/index.js"></script>
@@ -37,7 +35,7 @@
               </a>
              </div>
             <div class="col">
-              <span style="font-size: 1.2em">v0.16.1</span>
+              <span style="font-size: 1.2em">v0.16.3</span>
             </div>
           </div>
         </div>
@@ -47,7 +45,7 @@
       <div class="col-lg-auto sidebar" id="sidebar">
         
     <h1 class="lib-name text-center"><a href="../../../index.html">Detritus</a></h1>
-    <img src="../../../assets/logo.png" alt="Logo" class="img-fluid mx-auto d-block">
+    
     <p class="current-thing text-center">class <span class="object">InteractionCommandOption</span></p>
     <div class="sidebar-members">
     
@@ -57,7 +55,7 @@
         <span class="sidebar-category">Properties</span>
         </div>
         <div class="collapsible-body open"> 
-        <span class="sidebar-category-member"><a href="#.parent">parent</a></span><span class="sidebar-category-member"><a href="#._file">_file</a></span><span class="sidebar-category-member"><a href="#._keys">_keys</a></span><span class="sidebar-category-member"><a href="#._options">_options</a></span><span class="sidebar-category-member"><a href="#.choices">choices</a></span><span class="sidebar-category-member"><a href="#.description">description</a></span><span class="sidebar-category-member"><a href="#.name">name</a></span><span class="sidebar-category-member"><a href="#.required">required</a></span><span class="sidebar-category-member"><a href="#.type">type</a></span><span class="sidebar-category-member"><a href="#.disableDm">disableDm</a></span><span class="sidebar-category-member"><a href="#.metadata">metadata</a></span><span class="sidebar-category-member"><a href="#.permissions">permissions</a></span><span class="sidebar-category-member"><a href="#.permissionsClient">permissionsClient</a></span><span class="sidebar-category-member"><a href="#.permissionsIgnoreClientOwner">permissionsIgnoreClientOwner</a></span><span class="sidebar-category-member"><a href="#.ratelimits">ratelimits</a></span><span class="sidebar-category-member"><a href="#.triggerLoadingAfter">triggerLoadingAfter</a></span><span class="sidebar-category-member"><a href="#.triggerLoadingAsEphemeral">triggerLoadingAsEphemeral</a></span>
+        <span class="sidebar-category-member"><a href="#.parent">parent</a></span><span class="sidebar-category-member"><a href="#._file">_file</a></span><span class="sidebar-category-member"><a href="#._keys">_keys</a></span><span class="sidebar-category-member"><a href="#._options">_options</a></span><span class="sidebar-category-member"><a href="#.choices">choices</a></span><span class="sidebar-category-member"><a href="#.description">description</a></span><span class="sidebar-category-member"><a href="#.name">name</a></span><span class="sidebar-category-member"><a href="#.required">required</a></span><span class="sidebar-category-member"><a href="#.type">type</a></span><span class="sidebar-category-member"><a href="#.default">default</a></span><span class="sidebar-category-member"><a href="#.disableDm">disableDm</a></span><span class="sidebar-category-member"><a href="#.label">label</a></span><span class="sidebar-category-member"><a href="#.metadata">metadata</a></span><span class="sidebar-category-member"><a href="#.permissions">permissions</a></span><span class="sidebar-category-member"><a href="#.permissionsClient">permissionsClient</a></span><span class="sidebar-category-member"><a href="#.permissionsIgnoreClientOwner">permissionsIgnoreClientOwner</a></span><span class="sidebar-category-member"><a href="#.ratelimits">ratelimits</a></span><span class="sidebar-category-member"><a href="#.triggerLoadingAfter">triggerLoadingAfter</a></span><span class="sidebar-category-member"><a href="#.triggerLoadingAsEphemeral">triggerLoadingAsEphemeral</a></span><span class="sidebar-category-member"><a href="#.value">value</a></span>
         </div>
         </div>
     
@@ -67,7 +65,7 @@
         <span class="sidebar-category">Methods</span>
         </div>
         <div class="collapsible-body open"> 
-        <span class="sidebar-category-member"><a href="#.onDmBlocked">onDmBlocked</a></span><span class="sidebar-category-member"><a href="#.onLoadingTrigger">onLoadingTrigger</a></span><span class="sidebar-category-member"><a href="#.onBefore">onBefore</a></span><span class="sidebar-category-member"><a href="#.onBeforeRun">onBeforeRun</a></span><span class="sidebar-category-member"><a href="#.onCancel">onCancel</a></span><span class="sidebar-category-member"><a href="#.onCancelRun">onCancelRun</a></span><span class="sidebar-category-member"><a href="#.onError">onError</a></span><span class="sidebar-category-member"><a href="#.onPermissionsFail">onPermissionsFail</a></span><span class="sidebar-category-member"><a href="#.onPermissionsFailClient">onPermissionsFailClient</a></span><span class="sidebar-category-member"><a href="#.onRatelimit">onRatelimit</a></span><span class="sidebar-category-member"><a href="#.run">run</a></span><span class="sidebar-category-member"><a href="#.onRunError">onRunError</a></span><span class="sidebar-category-member"><a href="#.onSuccess">onSuccess</a></span><span class="sidebar-category-member"><a href="#._choicesKey">_choicesKey</a></span><span class="sidebar-category-member"><a href="#._optionsKey">_optionsKey</a></span><span class="sidebar-category-member"><a href="#.fullName">fullName</a></span><span class="sidebar-category-member"><a href="#.hasRun">hasRun</a></span><span class="sidebar-category-member"><a href="#.isSubCommand">isSubCommand</a></span><span class="sidebar-category-member"><a href="#.isSubCommandGroup">isSubCommandGroup</a></span><span class="sidebar-category-member"><a href="#.key">key</a></span><span class="sidebar-category-member"><a href="#.length">length</a></span><span class="sidebar-category-member"><a href="#.lengthChoices">lengthChoices</a></span><span class="sidebar-category-member"><a href="#.lengthOptions">lengthOptions</a></span><span class="sidebar-category-member"><a href="#.options">options</a></span><span class="sidebar-category-member"><a href="#.getInvoker">getInvoker</a></span><span class="sidebar-category-member"><a href="#.addChoice">addChoice</a></span><span class="sidebar-category-member"><a href="#.addOption">addOption</a></span><span class="sidebar-category-member"><a href="#.setChoices">setChoices</a></span><span class="sidebar-category-member"><a href="#.setDescription">setDescription</a></span><span class="sidebar-category-member"><a href="#.setName">setName</a></span><span class="sidebar-category-member"><a href="#.setOptions">setOptions</a></span><span class="sidebar-category-member"><a href="#.setRequired">setRequired</a></span><span class="sidebar-category-member"><a href="#.setType">setType</a></span><span class="sidebar-category-member"><a href="#._transferValuesToChildren">_transferValuesToChildren</a></span><span class="sidebar-category-member"><a href="#.mergeValue">mergeValue</a></span>
+        <span class="sidebar-category-member"><a href="#.onDmBlocked">onDmBlocked</a></span><span class="sidebar-category-member"><a href="#.onLoadingTrigger">onLoadingTrigger</a></span><span class="sidebar-category-member"><a href="#.onBefore">onBefore</a></span><span class="sidebar-category-member"><a href="#.onBeforeRun">onBeforeRun</a></span><span class="sidebar-category-member"><a href="#.onCancel">onCancel</a></span><span class="sidebar-category-member"><a href="#.onCancelRun">onCancelRun</a></span><span class="sidebar-category-member"><a href="#.onError">onError</a></span><span class="sidebar-category-member"><a href="#.onPermissionsFail">onPermissionsFail</a></span><span class="sidebar-category-member"><a href="#.onPermissionsFailClient">onPermissionsFailClient</a></span><span class="sidebar-category-member"><a href="#.onRatelimit">onRatelimit</a></span><span class="sidebar-category-member"><a href="#.run">run</a></span><span class="sidebar-category-member"><a href="#.onRunError">onRunError</a></span><span class="sidebar-category-member"><a href="#.onSuccess">onSuccess</a></span><span class="sidebar-category-member"><a href="#.onValueError">onValueError</a></span><span class="sidebar-category-member"><a href="#._choicesKey">_choicesKey</a></span><span class="sidebar-category-member"><a href="#._optionsKey">_optionsKey</a></span><span class="sidebar-category-member"><a href="#.fullName">fullName</a></span><span class="sidebar-category-member"><a href="#.hasRun">hasRun</a></span><span class="sidebar-category-member"><a href="#.isSubCommand">isSubCommand</a></span><span class="sidebar-category-member"><a href="#.isSubCommandGroup">isSubCommandGroup</a></span><span class="sidebar-category-member"><a href="#.key">key</a></span><span class="sidebar-category-member"><a href="#.length">length</a></span><span class="sidebar-category-member"><a href="#.lengthChoices">lengthChoices</a></span><span class="sidebar-category-member"><a href="#.lengthOptions">lengthOptions</a></span><span class="sidebar-category-member"><a href="#.options">options</a></span><span class="sidebar-category-member"><a href="#.getInvoker">getInvoker</a></span><span class="sidebar-category-member"><a href="#.addChoice">addChoice</a></span><span class="sidebar-category-member"><a href="#.addOption">addOption</a></span><span class="sidebar-category-member"><a href="#.setChoices">setChoices</a></span><span class="sidebar-category-member"><a href="#.setDescription">setDescription</a></span><span class="sidebar-category-member"><a href="#.setName">setName</a></span><span class="sidebar-category-member"><a href="#.setOptions">setOptions</a></span><span class="sidebar-category-member"><a href="#.setRequired">setRequired</a></span><span class="sidebar-category-member"><a href="#.setType">setType</a></span><span class="sidebar-category-member"><a href="#._transferValuesToChildren">_transferValuesToChildren</a></span><span class="sidebar-category-member"><a href="#.mergeValue">mergeValue</a></span>
         </div>
         </div>
     
@@ -154,28 +152,15 @@
           </div>
           
 <div>
-    <h1>Class <span class="referenceLink object">InteractionCommandOption</span><span>&lt;<span>ParsedArgsFinished<span> = <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.command\type\ParsedArgs.html">ParsedArgs</a><span class="c-tooltip-content"><span class="keyword">type</span> <span class="item-name object">ParsedArgs</span><span style="display:block" class="monospace fw-bold">command/<span class="item-name object">ParsedArgs</span></span></span></span></span></span></span>&gt;</span>
-    <a href=https://github.com/detritusjs/client/tree/master/src/interaction/command.ts#L457>
-<span class="float-end sourceCode">
-<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
-  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
-</svg>
-</span></a>
-    </h1>
-    <p class="item-name"><span class="keyword">extends</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.structures\class\Structure.html">Structure</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Structure</span><span style="display:block" class="monospace fw-bold">structures/<span class="item-name object">Structure</span></span></span></span></span></p>
+    <h1>Class <span class="referenceLink object">InteractionCommandOption</span><span>&lt;<span>ParsedArgsFinished<span> = <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.interaction\type\ParsedArgs.html">ParsedArgs</a><span class="c-tooltip-content"><span class="keyword">type</span> <span class="item-name object">ParsedArgs</span><span style="display:block" class="monospace fw-bold">detritus-client/interaction/<span class="item-name object">ParsedArgs</span></span></span></span></span></span></span>&gt;</span></h1>
+    
+    <p><a class="secondary-text" href=https://github.com/detritusjs/client/tree/master/src/interaction/command.ts#L488>Defined in command.ts</a></p>
+
+
+    <p class="item-name"><span class="keyword">extends</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.structures\class\Structure.html">Structure</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Structure</span><span style="display:block" class="monospace fw-bold">detritus-client/structures/<span class="item-name object">Structure</span></span></span></span></span></p>
 
 
     
-
-    <h2>Constructor</h2>
-    
-<div id="class.constructor" class="item">
-    <span class="item-name"><span class="keyword">constructor</span><span>(<span class="item-name"><span class="param-name">data</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.interaction\interface\InteractionCommandOptionOptions.html">InteractionCommandOptionOptions</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">InteractionCommandOptionOptions</span><span style="display:block" class="monospace fw-bold">interaction/<span class="item-name object">InteractionCommandOptionOptions</span></span></span></span></span> <span class="symbol">=</span> {}</span>)</span></span>
-
-    <div class="docblock">
-    <ul></ul>
-    </div>
-</div>
 
     
     <h2>Properties</h2>
@@ -186,9 +171,9 @@
     
     <span class="modifier">readonly</span>
     <span class="item-name"><a class="property-name" href="#.parent">parent</a><span>: 
-<span><span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.interaction\class\InteractionCommand.html">InteractionCommand</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">InteractionCommand</span><span style="display:block" class="monospace fw-bold">interaction/<span class="item-name object">InteractionCommand</span></span></span></span></span><span class='symbol'> | </span><span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.interaction\class\InteractionCommandOption.html">InteractionCommandOption</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">InteractionCommandOption</span><span style="display:block" class="monospace fw-bold">interaction/<span class="item-name object">InteractionCommandOption</span></span></span></span></span></span></span>
+<span><span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.interaction\class\InteractionCommand.html">InteractionCommand</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">InteractionCommand</span><span style="display:block" class="monospace fw-bold">detritus-client/interaction/<span class="item-name object">InteractionCommand</span></span></span></span></span><span class='symbol'> | </span><span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.interaction\class\InteractionCommandOption.html">InteractionCommandOption</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">InteractionCommandOption</span><span style="display:block" class="monospace fw-bold">detritus-client/interaction/<span class="item-name object">InteractionCommandOption</span></span></span></span></span></span></span>
     </span>
-    <a href=https://github.com/detritusjs/client/tree/master/src/interaction/command.ts#L458>
+    <a href=https://github.com/detritusjs/client/tree/master/src/interaction/command.ts#L489>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
   <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
@@ -206,7 +191,7 @@
     <span class="modifier">readonly</span>
     <span class="item-name"><a class="property-name" href="#._file">_file</a><span>: <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>
     </span>
-    <a href=https://github.com/detritusjs/client/tree/master/src/interaction/command.ts#L460>
+    <a href=https://github.com/detritusjs/client/tree/master/src/interaction/command.ts#L491>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
   <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
@@ -222,9 +207,9 @@
     
     
     <span class="modifier">readonly</span>
-    <span class="item-name"><a class="property-name" href="#._keys">_keys</a>
+    <span class="item-name"><a class="property-name" href="#._keys">_keys</a> <span class="symbol">=</span> <span><span class="c-tooltip"><a class="reference-link constant" href="..\..\..\m.detritus-client\m.interaction\constant\keysInteractionCommandOption.html">keysInteractionCommandOption</a><span class="c-tooltip-content"><span class="keyword">const</span> <span class="item-name constant">keysInteractionCommandOption</span><span style="display:block" class="monospace fw-bold">detritus-client/interaction/<span class="item-name constant">keysInteractionCommandOption</span></span></span></span></span>
     </span>
-    <a href=https://github.com/detritusjs/client/tree/master/src/interaction/command.ts#L461>
+    <a href=https://github.com/detritusjs/client/tree/master/src/interaction/command.ts#L492>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
   <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
@@ -240,9 +225,9 @@
     
     
     
-    <span class="item-name"><a class="property-name" href="#._options">_options</a><span>: <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-utils\class\BaseCollection.html">BaseCollection</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">BaseCollection</span><span style="display:block" class="monospace fw-bold">detritus-utils/<span class="item-name object">BaseCollection</span></span></span></span><span>&lt;<span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>, <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.interaction\class\InteractionCommandOption.html">InteractionCommandOption</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">InteractionCommandOption</span><span style="display:block" class="monospace fw-bold">interaction/<span class="item-name object">InteractionCommandOption</span></span></span></span></span>&gt;</span></span></span>
+    <span class="item-name"><a class="property-name" href="#._options">_options</a><span>: <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-utils\class\BaseCollection.html">BaseCollection</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">BaseCollection</span><span style="display:block" class="monospace fw-bold">detritus-utils/<span class="item-name object">BaseCollection</span></span></span></span><span>&lt;<span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>, <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.interaction\class\InteractionCommandOption.html">InteractionCommandOption</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">InteractionCommandOption</span><span style="display:block" class="monospace fw-bold">detritus-client/interaction/<span class="item-name object">InteractionCommandOption</span></span></span></span></span>&gt;</span></span></span>
     </span>
-    <a href=https://github.com/detritusjs/client/tree/master/src/interaction/command.ts#L462>
+    <a href=https://github.com/detritusjs/client/tree/master/src/interaction/command.ts#L493>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
   <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
@@ -258,10 +243,9 @@
     
     
     
-    <span class="item-name"><a class="property-name" href="#.choices">choices</a><span>: 
-<span><span class="reference-link"><a class='object' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></span><span>&lt;<span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.interaction\class\InteractionCommandOptionChoice.html">InteractionCommandOptionChoice</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">InteractionCommandOptionChoice</span><span style="display:block" class="monospace fw-bold">interaction/<span class="item-name object">InteractionCommandOptionChoice</span></span></span></span></span>&gt;</span></span></span>
+    <span class="item-name"><a class="property-name" href="#.choices">choices</a><span>: Array</span>
     </span>
-    <a href=https://github.com/detritusjs/client/tree/master/src/interaction/command.ts#L464>
+    <a href=https://github.com/detritusjs/client/tree/master/src/interaction/command.ts#L495>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
   <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
@@ -279,7 +263,7 @@
     
     <span class="item-name"><a class="property-name" href="#.description">description</a><span>: <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span> <span class="symbol">=</span> <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">''</a></span>
     </span>
-    <a href=https://github.com/detritusjs/client/tree/master/src/interaction/command.ts#L465>
+    <a href=https://github.com/detritusjs/client/tree/master/src/interaction/command.ts#L496>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
   <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
@@ -297,7 +281,7 @@
     
     <span class="item-name"><a class="property-name" href="#.name">name</a><span>: <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span> <span class="symbol">=</span> <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">''</a></span>
     </span>
-    <a href=https://github.com/detritusjs/client/tree/master/src/interaction/command.ts#L466>
+    <a href=https://github.com/detritusjs/client/tree/master/src/interaction/command.ts#L497>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
   <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
@@ -315,7 +299,7 @@
     
     <span class="item-name"><a class="property-name" href="#.required">required</a><span>: <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
     </span>
-    <a href=https://github.com/detritusjs/client/tree/master/src/interaction/command.ts#L467>
+    <a href=https://github.com/detritusjs/client/tree/master/src/interaction/command.ts#L498>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
   <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
@@ -331,9 +315,27 @@
     
     
     
-    <span class="item-name"><a class="property-name" href="#.type">type</a><span>: <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\enum\ApplicationCommandOptionTypes.html">ApplicationCommandOptionTypes</a><span class="c-tooltip-content"><span class="keyword">enum</span> <span class="item-name object">ApplicationCommandOptionTypes</span><span style="display:block" class="monospace fw-bold"><span class="item-name object">ApplicationCommandOptionTypes</span></span></span></span></span></span> <span class="symbol">=</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\enum\ApplicationCommandOptionTypes.html#.STRING">ApplicationCommandOptionTypes<span class="symbol">.</span>STRING</a><span class="c-tooltip-content"><span class="keyword">enum</span> <span class="item-name object">ApplicationCommandOptionTypes</span><span style="display:block" class="monospace fw-bold"><span class="item-name object">ApplicationCommandOptionTypes</span><span class="symbol">.</span>STRING</span></span></span></span>
+    <span class="item-name"><a class="property-name" href="#.type">type</a><span>: <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\enum\ApplicationCommandOptionTypes.html">ApplicationCommandOptionTypes</a><span class="c-tooltip-content"><span class="keyword">enum</span> <span class="item-name object">ApplicationCommandOptionTypes</span><span style="display:block" class="monospace fw-bold">detritus-client/<span class="item-name object">ApplicationCommandOptionTypes</span></span></span></span></span></span> <span class="symbol">=</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\enum\ApplicationCommandOptionTypes.html#.STRING">ApplicationCommandOptionTypes<span class="symbol">.</span>STRING</a><span class="c-tooltip-content"><span class="keyword">enum</span> <span class="item-name object">ApplicationCommandOptionTypes</span><span style="display:block" class="monospace fw-bold">detritus-client/<span class="item-name object">ApplicationCommandOptionTypes</span><span class="symbol">.</span>STRING</span></span></span></span>
     </span>
-    <a href=https://github.com/detritusjs/client/tree/master/src/interaction/command.ts#L468>
+    <a href=https://github.com/detritusjs/client/tree/master/src/interaction/command.ts#L499>
+<span class="float-end sourceCode">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
+</svg>
+</span></a>
+    <div class="docblock">
+        
+    </div>
+</div></div>
+    <div><div class="item" id=".default">
+    
+    
+    
+    
+    
+    <span class="item-name"><a class="property-name" href="#.default">default</a><span>: <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.interaction\type\ArgumentDefault.html">ArgumentDefault</a><span class="c-tooltip-content"><span class="keyword">type</span> <span class="item-name object">ArgumentDefault</span><span style="display:block" class="monospace fw-bold">detritus-client/interaction/<span class="item-name object">ArgumentDefault</span></span></span></span></span></span>
+    </span>
+    <a href=https://github.com/detritusjs/client/tree/master/src/interaction/command.ts#L501>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
   <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
@@ -351,7 +353,25 @@
     
     <span class="item-name"><a class="property-name" href="#.disableDm">disableDm</a><span>: <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
     </span>
-    <a href=https://github.com/detritusjs/client/tree/master/src/interaction/command.ts#L470>
+    <a href=https://github.com/detritusjs/client/tree/master/src/interaction/command.ts#L502>
+<span class="float-end sourceCode">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
+</svg>
+</span></a>
+    <div class="docblock">
+        
+    </div>
+</div></div>
+    <div><div class="item" id=".label">
+    
+    
+    
+    
+    
+    <span class="item-name"><a class="property-name" href="#.label">label</a><span>: <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>
+    </span>
+    <a href=https://github.com/detritusjs/client/tree/master/src/interaction/command.ts#L503>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
   <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
@@ -367,10 +387,9 @@
     
     
     
-    <span class="item-name"><a class="property-name" href="#.metadata">metadata</a><span>: 
-<span><span class="reference-link"><a class='external' href="https://www.typescriptlang.org/docs/handbook/utility-types.html#recordkeystype">Record</a></span><span>&lt;<span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>, <span class="reference-link"><span class='primitive'>any</span></span>&gt;</span></span></span> <span class="symbol">=</span> {}
+    <span class="item-name"><a class="property-name" href="#.metadata">metadata</a><span>: Record</span> <span class="symbol">=</span> {}
     </span>
-    <a href=https://github.com/detritusjs/client/tree/master/src/interaction/command.ts#L471>
+    <a href=https://github.com/detritusjs/client/tree/master/src/interaction/command.ts#L504>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
   <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
@@ -386,10 +405,9 @@
     
     
     
-    <span class="item-name"><a class="property-name" href="#.permissions">permissions</a><span>: 
-<span><span class="reference-link"><a class='object' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></span><span>&lt;<span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt">bigint</a></span>&gt;</span></span></span>
+    <span class="item-name"><a class="property-name" href="#.permissions">permissions</a><span>: Array</span>
     </span>
-    <a href=https://github.com/detritusjs/client/tree/master/src/interaction/command.ts#L472>
+    <a href=https://github.com/detritusjs/client/tree/master/src/interaction/command.ts#L505>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
   <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
@@ -405,10 +423,9 @@
     
     
     
-    <span class="item-name"><a class="property-name" href="#.permissionsClient">permissionsClient</a><span>: 
-<span><span class="reference-link"><a class='object' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></span><span>&lt;<span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt">bigint</a></span>&gt;</span></span></span>
+    <span class="item-name"><a class="property-name" href="#.permissionsClient">permissionsClient</a><span>: Array</span>
     </span>
-    <a href=https://github.com/detritusjs/client/tree/master/src/interaction/command.ts#L473>
+    <a href=https://github.com/detritusjs/client/tree/master/src/interaction/command.ts#L506>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
   <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
@@ -426,7 +443,7 @@
     
     <span class="item-name"><a class="property-name" href="#.permissionsIgnoreClientOwner">permissionsIgnoreClientOwner</a><span>: <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
     </span>
-    <a href=https://github.com/detritusjs/client/tree/master/src/interaction/command.ts#L474>
+    <a href=https://github.com/detritusjs/client/tree/master/src/interaction/command.ts#L507>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
   <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
@@ -442,10 +459,9 @@
     
     
     
-    <span class="item-name"><a class="property-name" href="#.ratelimits">ratelimits</a><span>: 
-<span><span class="reference-link"><a class='object' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></span><span>&lt;<span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.command\m.CommandEvents\interface\CommandRatelimit.html">CommandRatelimit</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">CommandRatelimit</span><span style="display:block" class="monospace fw-bold">command/CommandEvents/<span class="item-name object">CommandRatelimit</span></span></span></span></span>&gt;</span></span></span>
+    <span class="item-name"><a class="property-name" href="#.ratelimits">ratelimits</a><span>: Array</span>
     </span>
-    <a href=https://github.com/detritusjs/client/tree/master/src/interaction/command.ts#L475>
+    <a href=https://github.com/detritusjs/client/tree/master/src/interaction/command.ts#L508>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
   <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
@@ -463,7 +479,7 @@
     
     <span class="item-name"><a class="property-name" href="#.triggerLoadingAfter">triggerLoadingAfter</a><span>: <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>
     </span>
-    <a href=https://github.com/detritusjs/client/tree/master/src/interaction/command.ts#L476>
+    <a href=https://github.com/detritusjs/client/tree/master/src/interaction/command.ts#L509>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
   <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
@@ -481,7 +497,25 @@
     
     <span class="item-name"><a class="property-name" href="#.triggerLoadingAsEphemeral">triggerLoadingAsEphemeral</a><span>: <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
     </span>
-    <a href=https://github.com/detritusjs/client/tree/master/src/interaction/command.ts#L477>
+    <a href=https://github.com/detritusjs/client/tree/master/src/interaction/command.ts#L510>
+<span class="float-end sourceCode">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
+</svg>
+</span></a>
+    <div class="docblock">
+        
+    </div>
+</div></div>
+    <div><div class="item" id=".value">
+    
+    
+    
+    
+    
+    <span class="item-name"><a class="property-name" href="#.value">value</a><span>: <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.interaction\type\ArgumentConverter.html">ArgumentConverter</a><span class="c-tooltip-content"><span class="keyword">type</span> <span class="item-name object">ArgumentConverter</span><span style="display:block" class="monospace fw-bold">detritus-client/interaction/<span class="item-name object">ArgumentConverter</span></span></span></span></span></span>
+    </span>
+    <a href=https://github.com/detritusjs/client/tree/master/src/interaction/command.ts#L511>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
   <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
@@ -503,10 +537,10 @@
     
     
     
-        <a class="item-name method-name" href="#.onDmBlocked">onDmBlocked</a><span>(<span class="item-name"><span class="param-name">context</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.interaction\class\InteractionContext.html">InteractionContext</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">InteractionContext</span><span style="display:block" class="monospace fw-bold">interaction/<span class="item-name object">InteractionContext</span></span></span></span></span></span>)</span><span><span class="symbol">:</span> 
-<span><span><span class="reference-link"><a class='external' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a></span><span>&lt;<span class="reference-link"><span class='primitive'>any</span></span>&gt;</span></span><span class='symbol'> | </span><span class="reference-link"><span class='primitive'>any</span></span></span></span>
+        <a class="item-name method-name" href="#.onDmBlocked">onDmBlocked</a><span>(<span class="item-name"><span class="param-name">context</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.interaction\class\InteractionContext.html">InteractionContext</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">InteractionContext</span><span style="display:block" class="monospace fw-bold">detritus-client/interaction/<span class="item-name object">InteractionContext</span></span></span></span></span></span>)</span><span><span class="symbol">:</span> 
+<span>Promise<span class='symbol'> | </span><span class="reference-link"><span class='primitive'>any</span></span></span></span>
     </span>
-    <a href=https://github.com/detritusjs/client/tree/master/src/interaction/command.ts#L479>
+    <a href=https://github.com/detritusjs/client/tree/master/src/interaction/command.ts#L513>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
   <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
@@ -526,10 +560,10 @@
     
     
     
-        <a class="item-name method-name" href="#.onLoadingTrigger">onLoadingTrigger</a><span>(<span class="item-name"><span class="param-name">context</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.interaction\class\InteractionContext.html">InteractionContext</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">InteractionContext</span><span style="display:block" class="monospace fw-bold">interaction/<span class="item-name object">InteractionContext</span></span></span></span></span></span>, <span class="item-name"><span class="param-name">args</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.command\type\ParsedArgs.html">ParsedArgs</a><span class="c-tooltip-content"><span class="keyword">type</span> <span class="item-name object">ParsedArgs</span><span style="display:block" class="monospace fw-bold">command/<span class="item-name object">ParsedArgs</span></span></span></span></span></span>)</span><span><span class="symbol">:</span> 
-<span><span><span class="reference-link"><a class='external' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a></span><span>&lt;<span class="reference-link"><span class='primitive'>any</span></span>&gt;</span></span><span class='symbol'> | </span><span class="reference-link"><span class='primitive'>any</span></span></span></span>
+        <a class="item-name method-name" href="#.onLoadingTrigger">onLoadingTrigger</a><span>(<span class="item-name"><span class="param-name">context</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.interaction\class\InteractionContext.html">InteractionContext</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">InteractionContext</span><span style="display:block" class="monospace fw-bold">detritus-client/interaction/<span class="item-name object">InteractionContext</span></span></span></span></span></span>)</span><span><span class="symbol">:</span> 
+<span>Promise<span class='symbol'> | </span><span class="reference-link"><span class='primitive'>any</span></span></span></span>
     </span>
-    <a href=https://github.com/detritusjs/client/tree/master/src/interaction/command.ts#L480>
+    <a href=https://github.com/detritusjs/client/tree/master/src/interaction/command.ts#L514>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
   <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
@@ -549,10 +583,10 @@
     
     
     
-        <a class="item-name method-name" href="#.onBefore">onBefore</a><span>(<span class="item-name"><span class="param-name">context</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.interaction\class\InteractionContext.html">InteractionContext</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">InteractionContext</span><span style="display:block" class="monospace fw-bold">interaction/<span class="item-name object">InteractionContext</span></span></span></span></span></span>)</span><span><span class="symbol">:</span> 
-<span><span><span class="reference-link"><a class='external' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a></span><span>&lt;<span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span>&gt;</span></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span></span>
+        <a class="item-name method-name" href="#.onBefore">onBefore</a><span>(<span class="item-name"><span class="param-name">context</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.interaction\class\InteractionContext.html">InteractionContext</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">InteractionContext</span><span style="display:block" class="monospace fw-bold">detritus-client/interaction/<span class="item-name object">InteractionContext</span></span></span></span></span></span>)</span><span><span class="symbol">:</span> 
+<span>Promise<span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span></span>
     </span>
-    <a href=https://github.com/detritusjs/client/tree/master/src/interaction/command.ts#L481>
+    <a href=https://github.com/detritusjs/client/tree/master/src/interaction/command.ts#L515>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
   <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
@@ -572,10 +606,10 @@
     
     
     
-        <a class="item-name method-name" href="#.onBeforeRun">onBeforeRun</a><span>(<span class="item-name"><span class="param-name">context</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.interaction\class\InteractionContext.html">InteractionContext</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">InteractionContext</span><span style="display:block" class="monospace fw-bold">interaction/<span class="item-name object">InteractionContext</span></span></span></span></span></span>, <span class="item-name"><span class="param-name">args</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.command\type\ParsedArgs.html">ParsedArgs</a><span class="c-tooltip-content"><span class="keyword">type</span> <span class="item-name object">ParsedArgs</span><span style="display:block" class="monospace fw-bold">command/<span class="item-name object">ParsedArgs</span></span></span></span></span></span>)</span><span><span class="symbol">:</span> 
-<span><span><span class="reference-link"><a class='external' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a></span><span>&lt;<span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span>&gt;</span></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span></span>
+        <a class="item-name method-name" href="#.onBeforeRun">onBeforeRun</a><span>(<span class="item-name"><span class="param-name">context</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.interaction\class\InteractionContext.html">InteractionContext</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">InteractionContext</span><span style="display:block" class="monospace fw-bold">detritus-client/interaction/<span class="item-name object">InteractionContext</span></span></span></span></span></span>, <span class="item-name"><span class="param-name">args</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.interaction\type\ParsedArgs.html">ParsedArgs</a><span class="c-tooltip-content"><span class="keyword">type</span> <span class="item-name object">ParsedArgs</span><span style="display:block" class="monospace fw-bold">detritus-client/interaction/<span class="item-name object">ParsedArgs</span></span></span></span></span></span>)</span><span><span class="symbol">:</span> 
+<span>Promise<span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span></span>
     </span>
-    <a href=https://github.com/detritusjs/client/tree/master/src/interaction/command.ts#L482>
+    <a href=https://github.com/detritusjs/client/tree/master/src/interaction/command.ts#L516>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
   <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
@@ -595,10 +629,10 @@
     
     
     
-        <a class="item-name method-name" href="#.onCancel">onCancel</a><span>(<span class="item-name"><span class="param-name">context</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.interaction\class\InteractionContext.html">InteractionContext</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">InteractionContext</span><span style="display:block" class="monospace fw-bold">interaction/<span class="item-name object">InteractionContext</span></span></span></span></span></span>)</span><span><span class="symbol">:</span> 
-<span><span><span class="reference-link"><a class='external' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a></span><span>&lt;<span class="reference-link"><span class='primitive'>any</span></span>&gt;</span></span><span class='symbol'> | </span><span class="reference-link"><span class='primitive'>any</span></span></span></span>
+        <a class="item-name method-name" href="#.onCancel">onCancel</a><span>(<span class="item-name"><span class="param-name">context</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.interaction\class\InteractionContext.html">InteractionContext</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">InteractionContext</span><span style="display:block" class="monospace fw-bold">detritus-client/interaction/<span class="item-name object">InteractionContext</span></span></span></span></span></span>)</span><span><span class="symbol">:</span> 
+<span>Promise<span class='symbol'> | </span><span class="reference-link"><span class='primitive'>any</span></span></span></span>
     </span>
-    <a href=https://github.com/detritusjs/client/tree/master/src/interaction/command.ts#L483>
+    <a href=https://github.com/detritusjs/client/tree/master/src/interaction/command.ts#L517>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
   <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
@@ -618,10 +652,10 @@
     
     
     
-        <a class="item-name method-name" href="#.onCancelRun">onCancelRun</a><span>(<span class="item-name"><span class="param-name">context</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.interaction\class\InteractionContext.html">InteractionContext</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">InteractionContext</span><span style="display:block" class="monospace fw-bold">interaction/<span class="item-name object">InteractionContext</span></span></span></span></span></span>, <span class="item-name"><span class="param-name">args</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.command\type\ParsedArgs.html">ParsedArgs</a><span class="c-tooltip-content"><span class="keyword">type</span> <span class="item-name object">ParsedArgs</span><span style="display:block" class="monospace fw-bold">command/<span class="item-name object">ParsedArgs</span></span></span></span></span></span>)</span><span><span class="symbol">:</span> 
-<span><span><span class="reference-link"><a class='external' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a></span><span>&lt;<span class="reference-link"><span class='primitive'>any</span></span>&gt;</span></span><span class='symbol'> | </span><span class="reference-link"><span class='primitive'>any</span></span></span></span>
+        <a class="item-name method-name" href="#.onCancelRun">onCancelRun</a><span>(<span class="item-name"><span class="param-name">context</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.interaction\class\InteractionContext.html">InteractionContext</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">InteractionContext</span><span style="display:block" class="monospace fw-bold">detritus-client/interaction/<span class="item-name object">InteractionContext</span></span></span></span></span></span>, <span class="item-name"><span class="param-name">args</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.interaction\type\ParsedArgs.html">ParsedArgs</a><span class="c-tooltip-content"><span class="keyword">type</span> <span class="item-name object">ParsedArgs</span><span style="display:block" class="monospace fw-bold">detritus-client/interaction/<span class="item-name object">ParsedArgs</span></span></span></span></span></span>)</span><span><span class="symbol">:</span> 
+<span>Promise<span class='symbol'> | </span><span class="reference-link"><span class='primitive'>any</span></span></span></span>
     </span>
-    <a href=https://github.com/detritusjs/client/tree/master/src/interaction/command.ts#L484>
+    <a href=https://github.com/detritusjs/client/tree/master/src/interaction/command.ts#L518>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
   <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
@@ -641,10 +675,10 @@
     
     
     
-        <a class="item-name method-name" href="#.onError">onError</a><span>(<span class="item-name"><span class="param-name">context</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.interaction\class\InteractionContext.html">InteractionContext</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">InteractionContext</span><span style="display:block" class="monospace fw-bold">interaction/<span class="item-name object">InteractionContext</span></span></span></span></span></span>, <span class="item-name"><span class="param-name">args</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.command\type\ParsedArgs.html">ParsedArgs</a><span class="c-tooltip-content"><span class="keyword">type</span> <span class="item-name object">ParsedArgs</span><span style="display:block" class="monospace fw-bold">command/<span class="item-name object">ParsedArgs</span></span></span></span></span></span>, <span class="item-name"><span class="param-name">error</span><span class="symbol">:</span> <span class="reference-link"><span class='primitive'>any</span></span></span>)</span><span><span class="symbol">:</span> 
-<span><span><span class="reference-link"><a class='external' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a></span><span>&lt;<span class="reference-link"><span class='primitive'>any</span></span>&gt;</span></span><span class='symbol'> | </span><span class="reference-link"><span class='primitive'>any</span></span></span></span>
+        <a class="item-name method-name" href="#.onError">onError</a><span>(<span class="item-name"><span class="param-name">context</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.interaction\class\InteractionContext.html">InteractionContext</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">InteractionContext</span><span style="display:block" class="monospace fw-bold">detritus-client/interaction/<span class="item-name object">InteractionContext</span></span></span></span></span></span>, <span class="item-name"><span class="param-name">args</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.interaction\type\ParsedArgs.html">ParsedArgs</a><span class="c-tooltip-content"><span class="keyword">type</span> <span class="item-name object">ParsedArgs</span><span style="display:block" class="monospace fw-bold">detritus-client/interaction/<span class="item-name object">ParsedArgs</span></span></span></span></span></span>, <span class="item-name"><span class="param-name">error</span><span class="symbol">:</span> <span class="reference-link"><span class='primitive'>any</span></span></span>)</span><span><span class="symbol">:</span> 
+<span>Promise<span class='symbol'> | </span><span class="reference-link"><span class='primitive'>any</span></span></span></span>
     </span>
-    <a href=https://github.com/detritusjs/client/tree/master/src/interaction/command.ts#L485>
+    <a href=https://github.com/detritusjs/client/tree/master/src/interaction/command.ts#L519>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
   <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
@@ -664,10 +698,10 @@
     
     
     
-        <a class="item-name method-name" href="#.onPermissionsFail">onPermissionsFail</a><span>(<span class="item-name"><span class="param-name">context</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.interaction\class\InteractionContext.html">InteractionContext</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">InteractionContext</span><span style="display:block" class="monospace fw-bold">interaction/<span class="item-name object">InteractionContext</span></span></span></span></span></span>, <span class="item-name"><span class="param-name">permissions</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.command\type\FailedPermissions.html">FailedPermissions</a><span class="c-tooltip-content"><span class="keyword">type</span> <span class="item-name object">FailedPermissions</span><span style="display:block" class="monospace fw-bold">command/<span class="item-name object">FailedPermissions</span></span></span></span></span></span>)</span><span><span class="symbol">:</span> 
-<span><span><span class="reference-link"><a class='external' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a></span><span>&lt;<span class="reference-link"><span class='primitive'>any</span></span>&gt;</span></span><span class='symbol'> | </span><span class="reference-link"><span class='primitive'>any</span></span></span></span>
+        <a class="item-name method-name" href="#.onPermissionsFail">onPermissionsFail</a><span>(<span class="item-name"><span class="param-name">context</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.interaction\class\InteractionContext.html">InteractionContext</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">InteractionContext</span><span style="display:block" class="monospace fw-bold">detritus-client/interaction/<span class="item-name object">InteractionContext</span></span></span></span></span></span>, <span class="item-name"><span class="param-name">permissions</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.interaction\type\FailedPermissions.html">FailedPermissions</a><span class="c-tooltip-content"><span class="keyword">type</span> <span class="item-name object">FailedPermissions</span><span style="display:block" class="monospace fw-bold">detritus-client/interaction/<span class="item-name object">FailedPermissions</span></span></span></span></span></span>)</span><span><span class="symbol">:</span> 
+<span>Promise<span class='symbol'> | </span><span class="reference-link"><span class='primitive'>any</span></span></span></span>
     </span>
-    <a href=https://github.com/detritusjs/client/tree/master/src/interaction/command.ts#L486>
+    <a href=https://github.com/detritusjs/client/tree/master/src/interaction/command.ts#L520>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
   <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
@@ -687,10 +721,10 @@
     
     
     
-        <a class="item-name method-name" href="#.onPermissionsFailClient">onPermissionsFailClient</a><span>(<span class="item-name"><span class="param-name">context</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.interaction\class\InteractionContext.html">InteractionContext</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">InteractionContext</span><span style="display:block" class="monospace fw-bold">interaction/<span class="item-name object">InteractionContext</span></span></span></span></span></span>, <span class="item-name"><span class="param-name">permissions</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.command\type\FailedPermissions.html">FailedPermissions</a><span class="c-tooltip-content"><span class="keyword">type</span> <span class="item-name object">FailedPermissions</span><span style="display:block" class="monospace fw-bold">command/<span class="item-name object">FailedPermissions</span></span></span></span></span></span>)</span><span><span class="symbol">:</span> 
-<span><span><span class="reference-link"><a class='external' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a></span><span>&lt;<span class="reference-link"><span class='primitive'>any</span></span>&gt;</span></span><span class='symbol'> | </span><span class="reference-link"><span class='primitive'>any</span></span></span></span>
+        <a class="item-name method-name" href="#.onPermissionsFailClient">onPermissionsFailClient</a><span>(<span class="item-name"><span class="param-name">context</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.interaction\class\InteractionContext.html">InteractionContext</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">InteractionContext</span><span style="display:block" class="monospace fw-bold">detritus-client/interaction/<span class="item-name object">InteractionContext</span></span></span></span></span></span>, <span class="item-name"><span class="param-name">permissions</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.interaction\type\FailedPermissions.html">FailedPermissions</a><span class="c-tooltip-content"><span class="keyword">type</span> <span class="item-name object">FailedPermissions</span><span style="display:block" class="monospace fw-bold">detritus-client/interaction/<span class="item-name object">FailedPermissions</span></span></span></span></span></span>)</span><span><span class="symbol">:</span> 
+<span>Promise<span class='symbol'> | </span><span class="reference-link"><span class='primitive'>any</span></span></span></span>
     </span>
-    <a href=https://github.com/detritusjs/client/tree/master/src/interaction/command.ts#L487>
+    <a href=https://github.com/detritusjs/client/tree/master/src/interaction/command.ts#L521>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
   <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
@@ -710,11 +744,10 @@
     
     
     
-        <a class="item-name method-name" href="#.onRatelimit">onRatelimit</a><span>(<div class="left-item"><span class="item-name"><span class="param-name">context</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.interaction\class\InteractionContext.html">InteractionContext</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">InteractionContext</span><span style="display:block" class="monospace fw-bold">interaction/<span class="item-name object">InteractionContext</span></span></span></span></span></span>,<br><span class="item-name"><span class="param-name">ratelimits</span><span class="symbol">:</span> 
-<span><span class="reference-link"><a class='object' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></span><span>&lt;<span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.command\type\CommandRatelimitInfo.html">CommandRatelimitInfo</a><span class="c-tooltip-content"><span class="keyword">type</span> <span class="item-name object">CommandRatelimitInfo</span><span style="display:block" class="monospace fw-bold">command/<span class="item-name object">CommandRatelimitInfo</span></span></span></span></span>&gt;</span></span></span>,<br><span class="item-name"><span class="param-name">metadata</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.command\type\CommandRatelimitMetadata.html">CommandRatelimitMetadata</a><span class="c-tooltip-content"><span class="keyword">type</span> <span class="item-name object">CommandRatelimitMetadata</span><span style="display:block" class="monospace fw-bold">command/<span class="item-name object">CommandRatelimitMetadata</span></span></span></span></span></span></div>)</span><span><span class="symbol">:</span> 
-<span><span><span class="reference-link"><a class='external' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a></span><span>&lt;<span class="reference-link"><span class='primitive'>any</span></span>&gt;</span></span><span class='symbol'> | </span><span class="reference-link"><span class='primitive'>any</span></span></span></span>
+        <a class="item-name method-name" href="#.onRatelimit">onRatelimit</a><span>(<div class="left-item"><span class="item-name"><span class="param-name">context</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.interaction\class\InteractionContext.html">InteractionContext</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">InteractionContext</span><span style="display:block" class="monospace fw-bold">detritus-client/interaction/<span class="item-name object">InteractionContext</span></span></span></span></span></span>,<br><span class="item-name"><span class="param-name">ratelimits</span><span class="symbol">:</span> Array</span>,<br><span class="item-name"><span class="param-name">metadata</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.interaction\type\CommandRatelimitMetadata.html">CommandRatelimitMetadata</a><span class="c-tooltip-content"><span class="keyword">type</span> <span class="item-name object">CommandRatelimitMetadata</span><span style="display:block" class="monospace fw-bold">detritus-client/interaction/<span class="item-name object">CommandRatelimitMetadata</span></span></span></span></span></span></div>)</span><span><span class="symbol">:</span> 
+<span>Promise<span class='symbol'> | </span><span class="reference-link"><span class='primitive'>any</span></span></span></span>
     </span>
-    <a href=https://github.com/detritusjs/client/tree/master/src/interaction/command.ts#L488>
+    <a href=https://github.com/detritusjs/client/tree/master/src/interaction/command.ts#L522>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
   <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
@@ -734,10 +767,10 @@
     
     
     
-        <a class="item-name method-name" href="#.run">run</a><span>(<span class="item-name"><span class="param-name">context</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.interaction\class\InteractionContext.html">InteractionContext</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">InteractionContext</span><span style="display:block" class="monospace fw-bold">interaction/<span class="item-name object">InteractionContext</span></span></span></span></span></span>, <span class="item-name"><span class="param-name">args</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object">ParsedArgsFinished</a><span class="c-tooltip-content"><span class="keyword">type parameter</span> <span class="item-name object">ParsedArgsFinished</span></span></span></span></span>)</span><span><span class="symbol">:</span> 
-<span><span><span class="reference-link"><a class='external' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a></span><span>&lt;<span class="reference-link"><span class='primitive'>any</span></span>&gt;</span></span><span class='symbol'> | </span><span class="reference-link"><span class='primitive'>any</span></span></span></span>
+        <a class="item-name method-name" href="#.run">run</a><span>(<span class="item-name"><span class="param-name">context</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.interaction\class\InteractionContext.html">InteractionContext</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">InteractionContext</span><span style="display:block" class="monospace fw-bold">detritus-client/interaction/<span class="item-name object">InteractionContext</span></span></span></span></span></span>, <span class="item-name"><span class="param-name">args</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object">ParsedArgsFinished</a><span class="c-tooltip-content"><span class="keyword">type parameter</span> <span class="item-name object">ParsedArgsFinished</span></span></span></span></span>)</span><span><span class="symbol">:</span> 
+<span>Promise<span class='symbol'> | </span><span class="reference-link"><span class='primitive'>any</span></span></span></span>
     </span>
-    <a href=https://github.com/detritusjs/client/tree/master/src/interaction/command.ts#L489>
+    <a href=https://github.com/detritusjs/client/tree/master/src/interaction/command.ts#L523>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
   <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
@@ -757,10 +790,10 @@
     
     
     
-        <a class="item-name method-name" href="#.onRunError">onRunError</a><span>(<span class="item-name"><span class="param-name">context</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.interaction\class\InteractionContext.html">InteractionContext</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">InteractionContext</span><span style="display:block" class="monospace fw-bold">interaction/<span class="item-name object">InteractionContext</span></span></span></span></span></span>, <span class="item-name"><span class="param-name">args</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object">ParsedArgsFinished</a><span class="c-tooltip-content"><span class="keyword">type parameter</span> <span class="item-name object">ParsedArgsFinished</span></span></span></span></span>, <span class="item-name"><span class="param-name">error</span><span class="symbol">:</span> <span class="reference-link"><span class='primitive'>any</span></span></span>)</span><span><span class="symbol">:</span> 
-<span><span><span class="reference-link"><a class='external' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a></span><span>&lt;<span class="reference-link"><span class='primitive'>any</span></span>&gt;</span></span><span class='symbol'> | </span><span class="reference-link"><span class='primitive'>any</span></span></span></span>
+        <a class="item-name method-name" href="#.onRunError">onRunError</a><span>(<span class="item-name"><span class="param-name">context</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.interaction\class\InteractionContext.html">InteractionContext</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">InteractionContext</span><span style="display:block" class="monospace fw-bold">detritus-client/interaction/<span class="item-name object">InteractionContext</span></span></span></span></span></span>, <span class="item-name"><span class="param-name">args</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object">ParsedArgsFinished</a><span class="c-tooltip-content"><span class="keyword">type parameter</span> <span class="item-name object">ParsedArgsFinished</span></span></span></span></span>, <span class="item-name"><span class="param-name">error</span><span class="symbol">:</span> <span class="reference-link"><span class='primitive'>any</span></span></span>)</span><span><span class="symbol">:</span> 
+<span>Promise<span class='symbol'> | </span><span class="reference-link"><span class='primitive'>any</span></span></span></span>
     </span>
-    <a href=https://github.com/detritusjs/client/tree/master/src/interaction/command.ts#L490>
+    <a href=https://github.com/detritusjs/client/tree/master/src/interaction/command.ts#L524>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
   <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
@@ -780,10 +813,33 @@
     
     
     
-        <a class="item-name method-name" href="#.onSuccess">onSuccess</a><span>(<span class="item-name"><span class="param-name">context</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.interaction\class\InteractionContext.html">InteractionContext</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">InteractionContext</span><span style="display:block" class="monospace fw-bold">interaction/<span class="item-name object">InteractionContext</span></span></span></span></span></span>, <span class="item-name"><span class="param-name">args</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object">ParsedArgsFinished</a><span class="c-tooltip-content"><span class="keyword">type parameter</span> <span class="item-name object">ParsedArgsFinished</span></span></span></span></span>)</span><span><span class="symbol">:</span> 
-<span><span><span class="reference-link"><a class='external' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a></span><span>&lt;<span class="reference-link"><span class='primitive'>any</span></span>&gt;</span></span><span class='symbol'> | </span><span class="reference-link"><span class='primitive'>any</span></span></span></span>
+        <a class="item-name method-name" href="#.onSuccess">onSuccess</a><span>(<span class="item-name"><span class="param-name">context</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.interaction\class\InteractionContext.html">InteractionContext</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">InteractionContext</span><span style="display:block" class="monospace fw-bold">detritus-client/interaction/<span class="item-name object">InteractionContext</span></span></span></span></span></span>, <span class="item-name"><span class="param-name">args</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object">ParsedArgsFinished</a><span class="c-tooltip-content"><span class="keyword">type parameter</span> <span class="item-name object">ParsedArgsFinished</span></span></span></span></span>)</span><span><span class="symbol">:</span> 
+<span>Promise<span class='symbol'> | </span><span class="reference-link"><span class='primitive'>any</span></span></span></span>
     </span>
-    <a href=https://github.com/detritusjs/client/tree/master/src/interaction/command.ts#L491>
+    <a href=https://github.com/detritusjs/client/tree/master/src/interaction/command.ts#L525>
+<span class="float-end sourceCode">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
+</svg>
+</span></a>
+        <div class="docblock">
+        <ul></ul>
+        
+    </div>
+</div></div>
+    <div>
+<div id=".onValueError" class="item">
+    <span class="monospace">
+    
+    
+    
+    
+    
+    
+        <a class="item-name method-name" href="#.onValueError">onValueError</a><span>(<span class="item-name"><span class="param-name">context</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.interaction\class\InteractionContext.html">InteractionContext</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">InteractionContext</span><span style="display:block" class="monospace fw-bold">detritus-client/interaction/<span class="item-name object">InteractionContext</span></span></span></span></span></span>, <span class="item-name"><span class="param-name">args</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.interaction\type\ParsedArgs.html">ParsedArgs</a><span class="c-tooltip-content"><span class="keyword">type</span> <span class="item-name object">ParsedArgs</span><span style="display:block" class="monospace fw-bold">detritus-client/interaction/<span class="item-name object">ParsedArgs</span></span></span></span></span></span>, <span class="item-name"><span class="param-name">errors</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.interaction\type\ParsedErrors.html">ParsedErrors</a><span class="c-tooltip-content"><span class="keyword">type</span> <span class="item-name object">ParsedErrors</span><span style="display:block" class="monospace fw-bold">detritus-client/interaction/<span class="item-name object">ParsedErrors</span></span></span></span></span></span>)</span><span><span class="symbol">:</span> 
+<span>Promise<span class='symbol'> | </span><span class="reference-link"><span class='primitive'>any</span></span></span></span>
+    </span>
+    <a href=https://github.com/detritusjs/client/tree/master/src/interaction/command.ts#L526>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
   <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
@@ -805,7 +861,7 @@
     
         <a class="item-name method-name" href="#._choicesKey">_choicesKey</a><span>()</span><span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>
     </span>
-    <a href=https://github.com/detritusjs/client/tree/master/src/interaction/command.ts#L554>
+    <a href=https://github.com/detritusjs/client/tree/master/src/interaction/command.ts#L599>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
   <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
@@ -827,7 +883,7 @@
     
         <a class="item-name method-name" href="#._optionsKey">_optionsKey</a><span>()</span><span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>
     </span>
-    <a href=https://github.com/detritusjs/client/tree/master/src/interaction/command.ts#L558>
+    <a href=https://github.com/detritusjs/client/tree/master/src/interaction/command.ts#L603>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
   <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
@@ -849,7 +905,7 @@
     
         <a class="item-name method-name" href="#.fullName">fullName</a><span>()</span><span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>
     </span>
-    <a href=https://github.com/detritusjs/client/tree/master/src/interaction/command.ts#L562>
+    <a href=https://github.com/detritusjs/client/tree/master/src/interaction/command.ts#L607>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
   <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
@@ -871,7 +927,7 @@
     
         <a class="item-name method-name" href="#.hasRun">hasRun</a><span>()</span><span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
     </span>
-    <a href=https://github.com/detritusjs/client/tree/master/src/interaction/command.ts#L569>
+    <a href=https://github.com/detritusjs/client/tree/master/src/interaction/command.ts#L614>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
   <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
@@ -893,7 +949,7 @@
     
         <a class="item-name method-name" href="#.isSubCommand">isSubCommand</a><span>()</span><span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
     </span>
-    <a href=https://github.com/detritusjs/client/tree/master/src/interaction/command.ts#L581>
+    <a href=https://github.com/detritusjs/client/tree/master/src/interaction/command.ts#L626>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
   <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
@@ -915,7 +971,7 @@
     
         <a class="item-name method-name" href="#.isSubCommandGroup">isSubCommandGroup</a><span>()</span><span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
     </span>
-    <a href=https://github.com/detritusjs/client/tree/master/src/interaction/command.ts#L585>
+    <a href=https://github.com/detritusjs/client/tree/master/src/interaction/command.ts#L630>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
   <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
@@ -937,7 +993,7 @@
     
         <a class="item-name method-name" href="#.key">key</a><span>()</span><span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>
     </span>
-    <a href=https://github.com/detritusjs/client/tree/master/src/interaction/command.ts#L589>
+    <a href=https://github.com/detritusjs/client/tree/master/src/interaction/command.ts#L634>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
   <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
@@ -959,7 +1015,7 @@
     
         <a class="item-name method-name" href="#.length">length</a><span>()</span><span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>
     </span>
-    <a href=https://github.com/detritusjs/client/tree/master/src/interaction/command.ts#L593>
+    <a href=https://github.com/detritusjs/client/tree/master/src/interaction/command.ts#L638>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
   <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
@@ -981,7 +1037,7 @@
     
         <a class="item-name method-name" href="#.lengthChoices">lengthChoices</a><span>()</span><span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>
     </span>
-    <a href=https://github.com/detritusjs/client/tree/master/src/interaction/command.ts#L597>
+    <a href=https://github.com/detritusjs/client/tree/master/src/interaction/command.ts#L642>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
   <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
@@ -1003,7 +1059,7 @@
     
         <a class="item-name method-name" href="#.lengthOptions">lengthOptions</a><span>()</span><span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>
     </span>
-    <a href=https://github.com/detritusjs/client/tree/master/src/interaction/command.ts#L609>
+    <a href=https://github.com/detritusjs/client/tree/master/src/interaction/command.ts#L654>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
   <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
@@ -1024,9 +1080,9 @@
     
     <span class="modifier">set</span>
         <a class="item-name method-name" href="#.options">options</a><span>(<span class="item-name"><span class="param-name">value</span><span class="symbol">:</span> 
-<span><span><span class="reference-link"><a class='object' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></span><span>&lt;<span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.interaction\class\InteractionCommandOption.html">InteractionCommandOption</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">InteractionCommandOption</span><span style="display:block" class="monospace fw-bold">interaction/<span class="item-name object">InteractionCommandOption</span></span></span></span></span>&gt;</span></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></span></span></span>)</span>
+<span>Array<span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></span></span></span>)</span>
     </span>
-    <a href=https://github.com/detritusjs/client/tree/master/src/interaction/command.ts#L622>
+    <a href=https://github.com/detritusjs/client/tree/master/src/interaction/command.ts#L667>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
   <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
@@ -1046,10 +1102,10 @@
     
     
     
-        <a class="item-name method-name" href="#.getInvoker">getInvoker</a><span>(<div class="left-item"><span class="item-name"><span class="param-name">option</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.structures\class\InteractionDataApplicationCommandOption.html">InteractionDataApplicationCommandOption</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">InteractionDataApplicationCommandOption</span><span style="display:block" class="monospace fw-bold">structures/<span class="item-name object">InteractionDataApplicationCommandOption</span></span></span></span></span></span></div>)</span><span><span class="symbol">:</span> 
-<span><span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.interaction\class\InteractionCommandOption.html">InteractionCommandOption</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">InteractionCommandOption</span><span style="display:block" class="monospace fw-bold">interaction/<span class="item-name object">InteractionCommandOption</span></span></span></span></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></span></span></span>
+        <a class="item-name method-name" href="#.getInvoker">getInvoker</a><span>(<div class="left-item"><span class="item-name"><span class="param-name">option</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.structures\class\InteractionDataApplicationCommandOption.html">InteractionDataApplicationCommandOption</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">InteractionDataApplicationCommandOption</span><span style="display:block" class="monospace fw-bold">detritus-client/structures/<span class="item-name object">InteractionDataApplicationCommandOption</span></span></span></span></span></span></div>)</span><span><span class="symbol">:</span> 
+<span><span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.interaction\class\InteractionCommandOption.html">InteractionCommandOption</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">InteractionCommandOption</span><span style="display:block" class="monospace fw-bold">detritus-client/interaction/<span class="item-name object">InteractionCommandOption</span></span></span></span></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></span></span></span>
     </span>
-    <a href=https://github.com/detritusjs/client/tree/master/src/interaction/command.ts#L640>
+    <a href=https://github.com/detritusjs/client/tree/master/src/interaction/command.ts#L685>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
   <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
@@ -1062,7 +1118,9 @@
 </div></div>
     <div>
 <div id=".addChoice" class="item">
-    <span class="monospace">
+
+        <div>
+            <span class="monospace">
     
     
     
@@ -1070,9 +1128,9 @@
     
     
         <a class="item-name method-name" href="#.addChoice">addChoice</a><span>(<div class="left-item"><span class="item-name"><span class="param-name">name</span><span class="symbol">:</span> 
-<span><span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.interaction\class\InteractionCommandOptionChoice.html">InteractionCommandOptionChoice</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">InteractionCommandOptionChoice</span><span style="display:block" class="monospace fw-bold">interaction/<span class="item-name object">InteractionCommandOptionChoice</span></span></span></span></span><span class='symbol'> | </span><span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.interaction\interface\InteractionCommandOptionChoiceOptions.html">InteractionCommandOptionChoiceOptions</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">InteractionCommandOptionChoiceOptions</span><span style="display:block" class="monospace fw-bold">interaction/<span class="item-name object">InteractionCommandOptionChoiceOptions</span></span></span></span></span></span></span></div>)</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.interaction\class\InteractionCommandOptionChoice.html">InteractionCommandOptionChoice</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">InteractionCommandOptionChoice</span><span style="display:block" class="monospace fw-bold">interaction/<span class="item-name object">InteractionCommandOptionChoice</span></span></span></span></span></span>
+<span><span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.interaction\class\InteractionCommandOptionChoice.html">InteractionCommandOptionChoice</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">InteractionCommandOptionChoice</span><span style="display:block" class="monospace fw-bold">detritus-client/interaction/<span class="item-name object">InteractionCommandOptionChoice</span></span></span></span></span><span class='symbol'> | </span><span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.interaction\interface\InteractionCommandOptionChoiceOptions.html">InteractionCommandOptionChoiceOptions</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">InteractionCommandOptionChoiceOptions</span><span style="display:block" class="monospace fw-bold">detritus-client/interaction/<span class="item-name object">InteractionCommandOptionChoiceOptions</span></span></span></span></span></span></span></div>)</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.interaction\class\InteractionCommandOptionChoice.html">InteractionCommandOptionChoice</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">InteractionCommandOptionChoice</span><span style="display:block" class="monospace fw-bold">detritus-client/interaction/<span class="item-name object">InteractionCommandOptionChoice</span></span></span></span></span></span>
     </span>
-    <a href=https://github.com/detritusjs/client/tree/master/src/interaction/command.ts#L662>
+    <a href=https://github.com/detritusjs/client/tree/master/src/interaction/command.ts#L707>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
   <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
@@ -1082,7 +1140,14 @@
         <ul></ul>
         
     </div>
-    <span class="monospace">
+
+        <div style="margin-bottom: 15px">
+        <div class="collapsible-trigger">
+        <span class="collapsible-arrow"></span>
+        <span class="secondary-text">2 more overloads</span>
+        </div>
+        <div class="collapsible-body">
+            <span class="monospace">
     
     
     
@@ -1090,14 +1155,8 @@
     
     
         <a class="item-name method-name" href="#.addChoice">addChoice</a><span>(<span class="item-name"><span class="param-name">name</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>, <span class="item-name"><span class="param-name">value</span><span class="symbol">:</span> 
-<span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span></span>)</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.interaction\class\InteractionCommandOptionChoice.html">InteractionCommandOptionChoice</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">InteractionCommandOptionChoice</span><span style="display:block" class="monospace fw-bold">interaction/<span class="item-name object">InteractionCommandOptionChoice</span></span></span></span></span></span>
+<span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span></span>)</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.interaction\class\InteractionCommandOptionChoice.html">InteractionCommandOptionChoice</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">InteractionCommandOptionChoice</span><span style="display:block" class="monospace fw-bold">detritus-client/interaction/<span class="item-name object">InteractionCommandOptionChoice</span></span></span></span></span></span>
     </span>
-    <a href=https://github.com/detritusjs/client/tree/master/src/interaction/command.ts#L662>
-<span class="float-end sourceCode">
-<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
-  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
-</svg>
-</span></a>
         <div class="docblock">
         <ul></ul>
         
@@ -1110,20 +1169,18 @@
     
     
         <a class="item-name method-name" href="#.addChoice">addChoice</a><span>(<div class="left-item"><span class="item-name"><span class="param-name">name</span><span class="symbol">:</span> 
-<span><span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.interaction\class\InteractionCommandOptionChoice.html">InteractionCommandOptionChoice</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">InteractionCommandOptionChoice</span><span style="display:block" class="monospace fw-bold">interaction/<span class="item-name object">InteractionCommandOptionChoice</span></span></span></span></span><span class='symbol'> | </span><span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.interaction\interface\InteractionCommandOptionChoiceOptions.html">InteractionCommandOptionChoiceOptions</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">InteractionCommandOptionChoiceOptions</span><span style="display:block" class="monospace fw-bold">interaction/<span class="item-name object">InteractionCommandOptionChoiceOptions</span></span></span></span></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span></span>,<br><span class="item-name"><span class="param-name">value</span><span class="symbol">?</span><span class="symbol">:</span> 
-<span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span></span></div>)</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.interaction\class\InteractionCommandOptionChoice.html">InteractionCommandOptionChoice</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">InteractionCommandOptionChoice</span><span style="display:block" class="monospace fw-bold">interaction/<span class="item-name object">InteractionCommandOptionChoice</span></span></span></span></span></span>
+<span><span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.interaction\class\InteractionCommandOptionChoice.html">InteractionCommandOptionChoice</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">InteractionCommandOptionChoice</span><span style="display:block" class="monospace fw-bold">detritus-client/interaction/<span class="item-name object">InteractionCommandOptionChoice</span></span></span></span></span><span class='symbol'> | </span><span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.interaction\interface\InteractionCommandOptionChoiceOptions.html">InteractionCommandOptionChoiceOptions</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">InteractionCommandOptionChoiceOptions</span><span style="display:block" class="monospace fw-bold">detritus-client/interaction/<span class="item-name object">InteractionCommandOptionChoiceOptions</span></span></span></span></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span></span>,<br><span class="item-name"><span class="param-name">value</span><span class="symbol">?</span><span class="symbol">:</span> 
+<span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span></span></div>)</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.interaction\class\InteractionCommandOptionChoice.html">InteractionCommandOptionChoice</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">InteractionCommandOptionChoice</span><span style="display:block" class="monospace fw-bold">detritus-client/interaction/<span class="item-name object">InteractionCommandOptionChoice</span></span></span></span></span></span>
     </span>
-    <a href=https://github.com/detritusjs/client/tree/master/src/interaction/command.ts#L662>
-<span class="float-end sourceCode">
-<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
-  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
-</svg>
-</span></a>
         <div class="docblock">
         <ul></ul>
         
     </div>
-</div></div>
+
+        </div>
+        </div>
+        </div>
+    </div></div>
     <div>
 <div id=".addOption" class="item">
     <span class="monospace">
@@ -1134,9 +1191,9 @@
     
     
         <a class="item-name method-name" href="#.addOption">addOption</a><span>(<div class="left-item"><span class="item-name"><span class="param-name">value</span><span class="symbol">:</span> 
-<span><span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.interaction\class\InteractionCommandOption.html">InteractionCommandOption</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">InteractionCommandOption</span><span style="display:block" class="monospace fw-bold">interaction/<span class="item-name object">InteractionCommandOption</span></span></span></span></span><span class='symbol'> | </span><span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.interaction\interface\InteractionCommandOptionOptions.html">InteractionCommandOptionOptions</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">InteractionCommandOptionOptions</span><span style="display:block" class="monospace fw-bold">interaction/<span class="item-name object">InteractionCommandOptionOptions</span></span></span></span></span><span class='symbol'> | </span><span><span class="keyword">typeof</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.interaction\class\InteractionCommandOption.html">InteractionCommandOption</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">InteractionCommandOption</span><span style="display:block" class="monospace fw-bold">interaction/<span class="item-name object">InteractionCommandOption</span></span></span></span></span></span></span></span></div>)</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.interaction\class\InteractionCommandOption.html">InteractionCommandOption</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">InteractionCommandOption</span><span style="display:block" class="monospace fw-bold">interaction/<span class="item-name object">InteractionCommandOption</span></span></span></span></span></span>
+<span><span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.interaction\class\InteractionCommandOption.html">InteractionCommandOption</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">InteractionCommandOption</span><span style="display:block" class="monospace fw-bold">detritus-client/interaction/<span class="item-name object">InteractionCommandOption</span></span></span></span></span><span class='symbol'> | </span><span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.interaction\interface\InteractionCommandOptionOptions.html">InteractionCommandOptionOptions</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">InteractionCommandOptionOptions</span><span style="display:block" class="monospace fw-bold">detritus-client/interaction/<span class="item-name object">InteractionCommandOptionOptions</span></span></span></span></span><span class='symbol'> | </span><span><span class="keyword">typeof</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.interaction\class\InteractionCommandOption.html">InteractionCommandOption</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">InteractionCommandOption</span><span style="display:block" class="monospace fw-bold">detritus-client/interaction/<span class="item-name object">InteractionCommandOption</span></span></span></span></span></span></span></span></div>)</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.interaction\class\InteractionCommandOption.html">InteractionCommandOption</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">InteractionCommandOption</span><span style="display:block" class="monospace fw-bold">detritus-client/interaction/<span class="item-name object">InteractionCommandOption</span></span></span></span></span></span>
     </span>
-    <a href=https://github.com/detritusjs/client/tree/master/src/interaction/command.ts#L676>
+    <a href=https://github.com/detritusjs/client/tree/master/src/interaction/command.ts#L721>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
   <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
@@ -1156,10 +1213,9 @@
     
     
     
-        <a class="item-name method-name" href="#.setChoices">setChoices</a><span>(<div class="left-item"><span class="item-name"><span class="param-name">value</span><span class="symbol">:</span> 
-<span><span class="reference-link"><a class='object' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></span><span>&lt;<span><span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.interaction\class\InteractionCommandOptionChoice.html">InteractionCommandOptionChoice</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">InteractionCommandOptionChoice</span><span style="display:block" class="monospace fw-bold">interaction/<span class="item-name object">InteractionCommandOptionChoice</span></span></span></span></span><span class='symbol'> | </span><span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.interaction\interface\InteractionCommandOptionChoiceOptions.html">InteractionCommandOptionChoiceOptions</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">InteractionCommandOptionChoiceOptions</span><span style="display:block" class="monospace fw-bold">interaction/<span class="item-name object">InteractionCommandOptionChoiceOptions</span></span></span></span></span></span>&gt;</span></span> <span class="symbol">=</span> []</span></div>)</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.interaction\class\InteractionCommandOption.html">InteractionCommandOption</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">InteractionCommandOption</span><span style="display:block" class="monospace fw-bold">interaction/<span class="item-name object">InteractionCommandOption</span></span></span></span></span></span>
+        <a class="item-name method-name" href="#.setChoices">setChoices</a><span>(<div class="left-item"><span class="item-name"><span class="param-name">value</span><span class="symbol">:</span> Array <span class="symbol">=</span> []</span></div>)</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.interaction\class\InteractionCommandOption.html">InteractionCommandOption</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">InteractionCommandOption</span><span style="display:block" class="monospace fw-bold">detritus-client/interaction/<span class="item-name object">InteractionCommandOption</span></span></span></span></span></span>
     </span>
-    <a href=https://github.com/detritusjs/client/tree/master/src/interaction/command.ts#L692>
+    <a href=https://github.com/detritusjs/client/tree/master/src/interaction/command.ts#L737>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
   <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
@@ -1179,9 +1235,9 @@
     
     
     
-        <a class="item-name method-name" href="#.setDescription">setDescription</a><span>(<span class="item-name"><span class="param-name">value</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>)</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.interaction\class\InteractionCommandOption.html">InteractionCommandOption</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">InteractionCommandOption</span><span style="display:block" class="monospace fw-bold">interaction/<span class="item-name object">InteractionCommandOption</span></span></span></span></span></span>
+        <a class="item-name method-name" href="#.setDescription">setDescription</a><span>(<span class="item-name"><span class="param-name">value</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>)</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.interaction\class\InteractionCommandOption.html">InteractionCommandOption</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">InteractionCommandOption</span><span style="display:block" class="monospace fw-bold">detritus-client/interaction/<span class="item-name object">InteractionCommandOption</span></span></span></span></span></span>
     </span>
-    <a href=https://github.com/detritusjs/client/tree/master/src/interaction/command.ts#L697>
+    <a href=https://github.com/detritusjs/client/tree/master/src/interaction/command.ts#L742>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
   <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
@@ -1201,9 +1257,9 @@
     
     
     
-        <a class="item-name method-name" href="#.setName">setName</a><span>(<span class="item-name"><span class="param-name">value</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>)</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.interaction\class\InteractionCommandOption.html">InteractionCommandOption</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">InteractionCommandOption</span><span style="display:block" class="monospace fw-bold">interaction/<span class="item-name object">InteractionCommandOption</span></span></span></span></span></span>
+        <a class="item-name method-name" href="#.setName">setName</a><span>(<span class="item-name"><span class="param-name">value</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>)</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.interaction\class\InteractionCommandOption.html">InteractionCommandOption</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">InteractionCommandOption</span><span style="display:block" class="monospace fw-bold">detritus-client/interaction/<span class="item-name object">InteractionCommandOption</span></span></span></span></span></span>
     </span>
-    <a href=https://github.com/detritusjs/client/tree/master/src/interaction/command.ts#L702>
+    <a href=https://github.com/detritusjs/client/tree/master/src/interaction/command.ts#L747>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
   <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
@@ -1223,10 +1279,9 @@
     
     
     
-        <a class="item-name method-name" href="#.setOptions">setOptions</a><span>(<div class="left-item"><span class="item-name"><span class="param-name">value</span><span class="symbol">:</span> 
-<span><span class="reference-link"><a class='object' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></span><span>&lt;<span><span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.interaction\class\InteractionCommandOption.html">InteractionCommandOption</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">InteractionCommandOption</span><span style="display:block" class="monospace fw-bold">interaction/<span class="item-name object">InteractionCommandOption</span></span></span></span></span><span class='symbol'> | </span><span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.interaction\interface\InteractionCommandOptionOptions.html">InteractionCommandOptionOptions</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">InteractionCommandOptionOptions</span><span style="display:block" class="monospace fw-bold">interaction/<span class="item-name object">InteractionCommandOptionOptions</span></span></span></span></span></span>&gt;</span></span> <span class="symbol">=</span> []</span></div>)</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.interaction\class\InteractionCommandOption.html">InteractionCommandOption</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">InteractionCommandOption</span><span style="display:block" class="monospace fw-bold">interaction/<span class="item-name object">InteractionCommandOption</span></span></span></span></span></span>
+        <a class="item-name method-name" href="#.setOptions">setOptions</a><span>(<div class="left-item"><span class="item-name"><span class="param-name">value</span><span class="symbol">:</span> Array <span class="symbol">=</span> []</span></div>)</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.interaction\class\InteractionCommandOption.html">InteractionCommandOption</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">InteractionCommandOption</span><span style="display:block" class="monospace fw-bold">detritus-client/interaction/<span class="item-name object">InteractionCommandOption</span></span></span></span></span></span>
     </span>
-    <a href=https://github.com/detritusjs/client/tree/master/src/interaction/command.ts#L707>
+    <a href=https://github.com/detritusjs/client/tree/master/src/interaction/command.ts#L752>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
   <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
@@ -1246,9 +1301,9 @@
     
     
     
-        <a class="item-name method-name" href="#.setRequired">setRequired</a><span>(<span class="item-name"><span class="param-name">value</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>)</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.interaction\class\InteractionCommandOption.html">InteractionCommandOption</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">InteractionCommandOption</span><span style="display:block" class="monospace fw-bold">interaction/<span class="item-name object">InteractionCommandOption</span></span></span></span></span></span>
+        <a class="item-name method-name" href="#.setRequired">setRequired</a><span>(<span class="item-name"><span class="param-name">value</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>)</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.interaction\class\InteractionCommandOption.html">InteractionCommandOption</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">InteractionCommandOption</span><span style="display:block" class="monospace fw-bold">detritus-client/interaction/<span class="item-name object">InteractionCommandOption</span></span></span></span></span></span>
     </span>
-    <a href=https://github.com/detritusjs/client/tree/master/src/interaction/command.ts#L712>
+    <a href=https://github.com/detritusjs/client/tree/master/src/interaction/command.ts#L757>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
   <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
@@ -1268,9 +1323,9 @@
     
     
     
-        <a class="item-name method-name" href="#.setType">setType</a><span>(<span class="item-name"><span class="param-name">value</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\enum\ApplicationCommandOptionTypes.html">ApplicationCommandOptionTypes</a><span class="c-tooltip-content"><span class="keyword">enum</span> <span class="item-name object">ApplicationCommandOptionTypes</span><span style="display:block" class="monospace fw-bold"><span class="item-name object">ApplicationCommandOptionTypes</span></span></span></span></span></span>)</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.interaction\class\InteractionCommandOption.html">InteractionCommandOption</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">InteractionCommandOption</span><span style="display:block" class="monospace fw-bold">interaction/<span class="item-name object">InteractionCommandOption</span></span></span></span></span></span>
+        <a class="item-name method-name" href="#.setType">setType</a><span>(<span class="item-name"><span class="param-name">value</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\enum\ApplicationCommandOptionTypes.html">ApplicationCommandOptionTypes</a><span class="c-tooltip-content"><span class="keyword">enum</span> <span class="item-name object">ApplicationCommandOptionTypes</span><span style="display:block" class="monospace fw-bold">detritus-client/<span class="item-name object">ApplicationCommandOptionTypes</span></span></span></span></span></span>)</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.interaction\class\InteractionCommandOption.html">InteractionCommandOption</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">InteractionCommandOption</span><span style="display:block" class="monospace fw-bold">detritus-client/interaction/<span class="item-name object">InteractionCommandOption</span></span></span></span></span></span>
     </span>
-    <a href=https://github.com/detritusjs/client/tree/master/src/interaction/command.ts#L717>
+    <a href=https://github.com/detritusjs/client/tree/master/src/interaction/command.ts#L762>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
   <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
@@ -1291,9 +1346,9 @@
     
     
         <a class="item-name method-name" href="#._transferValuesToChildren">_transferValuesToChildren</a><span>(<span class="item-name"><span class="param-name">parent</span><span class="symbol">:</span> 
-<span><span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.interaction\class\InteractionCommand.html">InteractionCommand</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">InteractionCommand</span><span style="display:block" class="monospace fw-bold">interaction/<span class="item-name object">InteractionCommand</span></span></span></span></span><span class='symbol'> | </span><span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.interaction\class\InteractionCommandOption.html">InteractionCommandOption</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">InteractionCommandOption</span><span style="display:block" class="monospace fw-bold">interaction/<span class="item-name object">InteractionCommandOption</span></span></span></span></span></span></span>)</span><span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://www.typescriptlang.org/docs/handbook/2/functions.html#void">void</a></span></span>
+<span><span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.interaction\class\InteractionCommand.html">InteractionCommand</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">InteractionCommand</span><span style="display:block" class="monospace fw-bold">detritus-client/interaction/<span class="item-name object">InteractionCommand</span></span></span></span></span><span class='symbol'> | </span><span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.interaction\class\InteractionCommandOption.html">InteractionCommandOption</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">InteractionCommandOption</span><span style="display:block" class="monospace fw-bold">detritus-client/interaction/<span class="item-name object">InteractionCommandOption</span></span></span></span></span></span></span>)</span><span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://www.typescriptlang.org/docs/handbook/2/functions.html#void">void</a></span></span>
     </span>
-    <a href=https://github.com/detritusjs/client/tree/master/src/interaction/command.ts#L722>
+    <a href=https://github.com/detritusjs/client/tree/master/src/interaction/command.ts#L767>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
   <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
@@ -1315,7 +1370,7 @@
     
         <a class="item-name method-name" href="#.mergeValue">mergeValue</a><span>(<span class="item-name"><span class="param-name">key</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>, <span class="item-name"><span class="param-name">value</span><span class="symbol">:</span> <span class="reference-link"><span class='primitive'>any</span></span></span>)</span><span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://www.typescriptlang.org/docs/handbook/2/functions.html#void">void</a></span></span>
     </span>
-    <a href=https://github.com/detritusjs/client/tree/master/src/interaction/command.ts#L755>
+    <a href=https://github.com/detritusjs/client/tree/master/src/interaction/command.ts#L800>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
   <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>

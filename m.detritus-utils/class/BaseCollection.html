@@ -7,9 +7,7 @@
   <title>BaseCollection |  Detritus</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/an-old-hope.min.css"
-    integrity="sha512-t47CjkEB5hx4FojnE73dBLwgrgvLBpgsHvB40ycK3cYPkLwEp7qNHyRpRDA3/zVVAAOUPJwbMVJq3uJrBqpHVQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link id="highlightTheme" rel="stylesheet" crossorigin="anonymous" referrerpolicy="no-referrer" />
   
     <link href="../../assets/css/index.css" type="text/css" rel="stylesheet">
     <script src="../../assets/js/index.js"></script>
@@ -37,7 +35,7 @@
               </a>
              </div>
             <div class="col">
-              <span style="font-size: 1.2em">v0.16.1</span>
+              <span style="font-size: 1.2em">v0.16.3</span>
             </div>
           </div>
         </div>
@@ -47,7 +45,7 @@
       <div class="col-lg-auto sidebar" id="sidebar">
         
     <h1 class="lib-name text-center"><a href="../../index.html">Detritus</a></h1>
-    <img src="../../assets/logo.png" alt="Logo" class="img-fluid mx-auto d-block">
+    
     <p class="current-thing text-center">class <span class="object">BaseCollection</span></p>
     <div class="sidebar-members">
     
@@ -154,28 +152,15 @@
           </div>
           
 <div>
-    <h1>Class <span class="referenceLink object">BaseCollection</span><span>&lt;<span>K</span>, <span>V</span>&gt;</span>
-    <a href=https://github.com/detritusjs/utils/tree/master/src/basecollection.ts#L128>
-<span class="float-end sourceCode">
-<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
-  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
-</svg>
-</span></a>
-    </h1>
-    <p class="item-name"><span class="keyword">extends</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.detritus-utils\class\BaseCollectionMixin.html">BaseCollectionMixin</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">BaseCollectionMixin</span><span style="display:block" class="monospace fw-bold"><span class="item-name object">BaseCollectionMixin</span></span></span></span><span>&lt;<span><span class="c-tooltip"><a class="reference-link object">K</a><span class="c-tooltip-content"><span class="keyword">type parameter</span> <span class="item-name object">K</span></span></span></span>, <span><span class="c-tooltip"><a class="reference-link object">V</a><span class="c-tooltip-content"><span class="keyword">type parameter</span> <span class="item-name object">V</span></span></span></span>&gt;</span></span></p>
+    <h1>Class <span class="referenceLink object">BaseCollection</span><span>&lt;<span>K</span>, <span>V</span>&gt;</span></h1>
+    
+    <p><a class="secondary-text" href=https://github.com/detritusjs/utils/tree/master/src/basecollection.ts#L128>Defined in basecollection.ts</a></p>
+
+
+    <p class="item-name"><span class="keyword">extends</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.detritus-utils\class\BaseCollectionMixin.html">BaseCollectionMixin</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">BaseCollectionMixin</span><span style="display:block" class="monospace fw-bold">detritus-utils/<span class="item-name object">BaseCollectionMixin</span></span></span></span><span>&lt;<span><span class="c-tooltip"><a class="reference-link object">K</a><span class="c-tooltip-content"><span class="keyword">type parameter</span> <span class="item-name object">K</span></span></span></span>, <span><span class="c-tooltip"><a class="reference-link object">V</a><span class="c-tooltip-content"><span class="keyword">type parameter</span> <span class="item-name object">V</span></span></span></span>&gt;</span></span></p>
 
 
     
-
-    <h2>Constructor</h2>
-    
-<div id="class.constructor" class="item">
-    <span class="item-name"><span class="keyword">constructor</span><span>(<span class="item-name"><span class="param-name">__namedParameters</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.detritus-utils\interface\BaseCollectionOptions.html">BaseCollectionOptions</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">BaseCollectionOptions</span><span style="display:block" class="monospace fw-bold"><span class="item-name object">BaseCollectionOptions</span></span></span></span></span> <span class="symbol">=</span> {}</span>)</span></span>
-
-    <div class="docblock">
-    <ul></ul>
-    </div>
-</div>
 
     
     <h2>Properties</h2>
@@ -185,8 +170,7 @@
     
     
     <span class="modifier">readonly</span>
-    <span class="item-name"><a class="property-name" href="#.cache">cache</a> <span class="symbol">=</span> 
-<span><span class="reference-link"><a class='external' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map">Map</a></span><span>&lt;<span><span class="c-tooltip"><a class="reference-link object">K</a><span class="c-tooltip-content"><span class="keyword">type parameter</span> <span class="item-name object">K</span></span></span></span>, <span><span class="c-tooltip"><a class="reference-link object">V</a><span class="c-tooltip-content"><span class="keyword">type parameter</span> <span class="item-name object">V</span></span></span></span>&gt;</span></span>
+    <span class="item-name"><a class="property-name" href="#.cache">cache</a>
     </span>
     <a href=https://github.com/detritusjs/utils/tree/master/src/basecollection.ts#L129>
 <span class="float-end sourceCode">
@@ -204,8 +188,7 @@
     
     
     
-    <span class="item-name"><a class="property-name" href="#._lastUsed">_lastUsed</a><span>: 
-<span><span class="reference-link"><a class='external' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map">Map</a></span><span>&lt;<span><span class="c-tooltip"><a class="reference-link object">K</a><span class="c-tooltip-content"><span class="keyword">type parameter</span> <span class="item-name object">K</span></span></span></span>, <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span>&gt;</span></span></span>
+    <span class="item-name"><a class="property-name" href="#._lastUsed">_lastUsed</a><span>: Map</span>
     </span>
     <a href=https://github.com/detritusjs/utils/tree/master/src/basecollection.ts#L130>
 <span class="float-end sourceCode">
@@ -241,7 +224,7 @@
     
     
     
-    <span class="item-name"><a class="property-name" href="#.interval">interval</a><span>: <span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.detritus-utils\class\Interval.html">Interval</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Interval</span><span style="display:block" class="monospace fw-bold"><span class="item-name object">Interval</span></span></span></span></span></span>
+    <span class="item-name"><a class="property-name" href="#.interval">interval</a><span>: <span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.detritus-utils\class\Interval.html">Interval</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Interval</span><span style="display:block" class="monospace fw-bold">detritus-utils/<span class="item-name object">Interval</span></span></span></span></span></span> <span class="symbol">=</span> <span><span class="reference-link item-name">undefined</span></span>
     </span>
     <a href=https://github.com/detritusjs/utils/tree/master/src/basecollection.ts#L133>
 <span class="float-end sourceCode">
@@ -277,7 +260,7 @@
     
     
     
-    <span class="item-name"><a class="property-name" href="#.limit">limit</a><span>: <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>
+    <span class="item-name"><a class="property-name" href="#.limit">limit</a><span>: <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span> <span class="symbol">=</span> Infinity
     </span>
     <a href=https://github.com/detritusjs/utils/tree/master/src/basecollection.ts#L135>
 <span class="float-end sourceCode">
@@ -301,8 +284,7 @@
     
     <span class="modifier">get</span>
     
-        <a class="item-name method-name" href="#.lastUsed">lastUsed</a><span>()</span><span><span class="symbol">:</span> 
-<span><span class="reference-link"><a class='external' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map">Map</a></span><span>&lt;<span><span class="c-tooltip"><a class="reference-link object">K</a><span class="c-tooltip-content"><span class="keyword">type parameter</span> <span class="item-name object">K</span></span></span></span>, <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span>&gt;</span></span></span>
+        <a class="item-name method-name" href="#.lastUsed">lastUsed</a><span>()</span><span><span class="symbol">:</span> Map</span>
     </span>
     <a href=https://github.com/detritusjs/utils/tree/master/src/basecollection.ts#L164>
 <span class="float-end sourceCode">
@@ -346,7 +328,7 @@
     
     
     
-        <a class="item-name method-name" href="#.setExpire">setExpire</a><span>(<span class="item-name"><span class="param-name">value</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>)</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.detritus-utils\class\BaseCollection.html">BaseCollection</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">BaseCollection</span><span style="display:block" class="monospace fw-bold"><span class="item-name object">BaseCollection</span></span></span></span></span></span>
+        <a class="item-name method-name" href="#.setExpire">setExpire</a><span>(<span class="item-name"><span class="param-name">value</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>)</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.detritus-utils\class\BaseCollection.html">BaseCollection</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">BaseCollection</span><span style="display:block" class="monospace fw-bold">detritus-utils/<span class="item-name object">BaseCollection</span></span></span></span></span></span>
     </span>
     <a href=https://github.com/detritusjs/utils/tree/master/src/basecollection.ts#L178>
 <span class="float-end sourceCode">
@@ -368,7 +350,7 @@
     
     
     
-        <a class="item-name method-name" href="#.setIntervalTimeout">setIntervalTimeout</a><span>(<span class="item-name"><span class="param-name">value</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>)</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.detritus-utils\class\BaseCollection.html">BaseCollection</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">BaseCollection</span><span style="display:block" class="monospace fw-bold"><span class="item-name object">BaseCollection</span></span></span></span></span></span>
+        <a class="item-name method-name" href="#.setIntervalTimeout">setIntervalTimeout</a><span>(<span class="item-name"><span class="param-name">value</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>)</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.detritus-utils\class\BaseCollection.html">BaseCollection</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">BaseCollection</span><span style="display:block" class="monospace fw-bold">detritus-utils/<span class="item-name object">BaseCollection</span></span></span></span></span></span>
     </span>
     <a href=https://github.com/detritusjs/utils/tree/master/src/basecollection.ts#L190>
 <span class="float-end sourceCode">
@@ -478,7 +460,7 @@
     
     
     
-        <a class="item-name method-name" href="#.clone">clone</a><span>()</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.detritus-utils\class\BaseCollection.html">BaseCollection</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">BaseCollection</span><span style="display:block" class="monospace fw-bold"><span class="item-name object">BaseCollection</span></span></span></span><span>&lt;<span><span class="c-tooltip"><a class="reference-link object">K</a><span class="c-tooltip-content"><span class="keyword">type parameter</span> <span class="item-name object">K</span></span></span></span>, <span><span class="c-tooltip"><a class="reference-link object">V</a><span class="c-tooltip-content"><span class="keyword">type parameter</span> <span class="item-name object">V</span></span></span></span>&gt;</span></span></span>
+        <a class="item-name method-name" href="#.clone">clone</a><span>()</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.detritus-utils\class\BaseCollection.html">BaseCollection</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">BaseCollection</span><span style="display:block" class="monospace fw-bold">detritus-utils/<span class="item-name object">BaseCollection</span></span></span></span><span>&lt;<span><span class="c-tooltip"><a class="reference-link object">K</a><span class="c-tooltip-content"><span class="keyword">type parameter</span> <span class="item-name object">K</span></span></span></span>, <span><span class="c-tooltip"><a class="reference-link object">V</a><span class="c-tooltip-content"><span class="keyword">type parameter</span> <span class="item-name object">V</span></span></span></span>&gt;</span></span></span>
     </span>
     <a href=https://github.com/detritusjs/utils/tree/master/src/basecollection.ts#L245>
 <span class="float-end sourceCode">
@@ -522,8 +504,7 @@
     
     
     
-        <a class="item-name method-name" href="#.forEach">forEach</a><span>(<span class="item-name"><span class="param-name">func</span><span class="symbol">:</span> <span>(<span class="item-name"><span class="param-name">v</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object">V</a><span class="c-tooltip-content"><span class="keyword">type parameter</span> <span class="item-name object">V</span></span></span></span></span>, <span class="item-name"><span class="param-name">k</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object">K</a><span class="c-tooltip-content"><span class="keyword">type parameter</span> <span class="item-name object">K</span></span></span></span></span>, <span class="item-name"><span class="param-name">map</span><span class="symbol">:</span> 
-<span><span class="reference-link"><a class='external' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map">Map</a></span><span>&lt;<span><span class="c-tooltip"><a class="reference-link object">K</a><span class="c-tooltip-content"><span class="keyword">type parameter</span> <span class="item-name object">K</span></span></span></span>, <span><span class="c-tooltip"><a class="reference-link object">V</a><span class="c-tooltip-content"><span class="keyword">type parameter</span> <span class="item-name object">V</span></span></span></span>&gt;</span></span></span>) <span class="symbol">=></span> <span class="reference-link"><a class='primitive' href="https://www.typescriptlang.org/docs/handbook/2/functions.html#void">void</a></span></span></span>, <span class="item-name"><span class="param-name">thisArg</span><span class="symbol">?</span><span class="symbol">:</span> <span class="reference-link"><span class='primitive'>any</span></span></span>)</span><span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://www.typescriptlang.org/docs/handbook/2/functions.html#void">void</a></span></span>
+        <a class="item-name method-name" href="#.forEach">forEach</a><span>(<span class="item-name"><span class="param-name">func</span><span class="symbol">:</span> <span>(<span class="item-name"><span class="param-name">v</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object">V</a><span class="c-tooltip-content"><span class="keyword">type parameter</span> <span class="item-name object">V</span></span></span></span></span>, <span class="item-name"><span class="param-name">k</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object">K</a><span class="c-tooltip-content"><span class="keyword">type parameter</span> <span class="item-name object">K</span></span></span></span></span>, <span class="item-name"><span class="param-name">map</span><span class="symbol">:</span> Map</span>) <span class="symbol">=></span> <span class="reference-link"><a class='primitive' href="https://www.typescriptlang.org/docs/handbook/2/functions.html#void">void</a></span></span></span>, <span class="item-name"><span class="param-name">thisArg</span><span class="symbol">?</span><span class="symbol">:</span> <span class="reference-link"><span class='primitive'>any</span></span></span>)</span><span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://www.typescriptlang.org/docs/handbook/2/functions.html#void">void</a></span></span>
     </span>
     <a href=https://github.com/detritusjs/utils/tree/master/src/basecollection.ts#L264>
 <span class="float-end sourceCode">
@@ -590,8 +571,7 @@
     
     
     
-        <a class="item-name method-name" href="#.keys">keys</a><span>()</span><span><span class="symbol">:</span> 
-<span><span class="reference-link"><span class='primitive'>IterableIterator</span></span><span>&lt;<span><span class="c-tooltip"><a class="reference-link object">K</a><span class="c-tooltip-content"><span class="keyword">type parameter</span> <span class="item-name object">K</span></span></span></span>&gt;</span></span></span>
+        <a class="item-name method-name" href="#.keys">keys</a><span>()</span><span><span class="symbol">:</span> IterableIterator</span>
     </span>
     <a href=https://github.com/detritusjs/utils/tree/master/src/basecollection.ts#L280>
 <span class="float-end sourceCode">
@@ -613,7 +593,7 @@
     
     
     
-        <a class="item-name method-name" href="#.set">set</a><span>(<span class="item-name"><span class="param-name">key</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object">K</a><span class="c-tooltip-content"><span class="keyword">type parameter</span> <span class="item-name object">K</span></span></span></span></span>, <span class="item-name"><span class="param-name">value</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object">V</a><span class="c-tooltip-content"><span class="keyword">type parameter</span> <span class="item-name object">V</span></span></span></span></span>)</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.detritus-utils\class\BaseCollection.html">BaseCollection</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">BaseCollection</span><span style="display:block" class="monospace fw-bold"><span class="item-name object">BaseCollection</span></span></span></span></span></span>
+        <a class="item-name method-name" href="#.set">set</a><span>(<span class="item-name"><span class="param-name">key</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object">K</a><span class="c-tooltip-content"><span class="keyword">type parameter</span> <span class="item-name object">K</span></span></span></span></span>, <span class="item-name"><span class="param-name">value</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object">V</a><span class="c-tooltip-content"><span class="keyword">type parameter</span> <span class="item-name object">V</span></span></span></span></span>)</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.detritus-utils\class\BaseCollection.html">BaseCollection</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">BaseCollection</span><span style="display:block" class="monospace fw-bold">detritus-utils/<span class="item-name object">BaseCollection</span></span></span></span></span></span>
     </span>
     <a href=https://github.com/detritusjs/utils/tree/master/src/basecollection.ts#L284>
 <span class="float-end sourceCode">
@@ -635,8 +615,7 @@
     
     
     
-        <a class="item-name method-name" href="#.values">values</a><span>()</span><span><span class="symbol">:</span> 
-<span><span class="reference-link"><span class='primitive'>IterableIterator</span></span><span>&lt;<span><span class="c-tooltip"><a class="reference-link object">V</a><span class="c-tooltip-content"><span class="keyword">type parameter</span> <span class="item-name object">V</span></span></span></span>&gt;</span></span></span>
+        <a class="item-name method-name" href="#.values">values</a><span>()</span><span><span class="symbol">:</span> IterableIterator</span>
     </span>
     <a href=https://github.com/detritusjs/utils/tree/master/src/basecollection.ts#L303>
 <span class="float-end sourceCode">
@@ -658,8 +637,7 @@
     
     
     
-        <a class="item-name method-name" href="#.[Symbol.iterator]">[Symbol.iterator]</a><span>()</span><span><span class="symbol">:</span> 
-<span><span class="reference-link"><span class='primitive'>IterableIterator</span></span><span>&lt;<span><span><span class="c-tooltip"><a class="reference-link object">K</a><span class="c-tooltip-content"><span class="keyword">type parameter</span> <span class="item-name object">K</span></span></span></span><span class='symbol'> | </span><span><span class="c-tooltip"><a class="reference-link object">V</a><span class="c-tooltip-content"><span class="keyword">type parameter</span> <span class="item-name object">V</span></span></span></span></span>&gt;</span></span></span>
+        <a class="item-name method-name" href="#.[Symbol.iterator]">[Symbol.iterator]</a><span>()</span><span><span class="symbol">:</span> IterableIterator</span>
     </span>
     <a href=https://github.com/detritusjs/utils/tree/master/src/basecollection.ts#L307>
 <span class="float-end sourceCode">

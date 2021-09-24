@@ -7,9 +7,7 @@
   <title>Decompressor |  Detritus</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/an-old-hope.min.css"
-    integrity="sha512-t47CjkEB5hx4FojnE73dBLwgrgvLBpgsHvB40ycK3cYPkLwEp7qNHyRpRDA3/zVVAAOUPJwbMVJq3uJrBqpHVQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link id="highlightTheme" rel="stylesheet" crossorigin="anonymous" referrerpolicy="no-referrer" />
   
     <link href="../../assets/css/index.css" type="text/css" rel="stylesheet">
     <script src="../../assets/js/index.js"></script>
@@ -37,7 +35,7 @@
               </a>
              </div>
             <div class="col">
-              <span style="font-size: 1.2em">v0.16.1</span>
+              <span style="font-size: 1.2em">v0.16.3</span>
             </div>
           </div>
         </div>
@@ -47,7 +45,7 @@
       <div class="col-lg-auto sidebar" id="sidebar">
         
     <h1 class="lib-name text-center"><a href="../../index.html">Detritus</a></h1>
-    <img src="../../assets/logo.png" alt="Logo" class="img-fluid mx-auto d-block">
+    
     <p class="current-thing text-center">class <span class="object">Decompressor</span></p>
     <div class="sidebar-members">
     
@@ -154,28 +152,15 @@
           </div>
           
 <div>
-    <h1>Class <span class="referenceLink object">Decompressor</span>
-    <a href=https://github.com/detritusjs/client-socket/tree/master/src/decompressor.ts#L11>
-<span class="float-end sourceCode">
-<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
-  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
-</svg>
-</span></a>
-    </h1>
+    <h1>Class <span class="referenceLink object">Decompressor</span></h1>
+    
+    <p><a class="secondary-text" href=https://github.com/detritusjs/client-socket/tree/master/src/decompressor.ts#L11>Defined in decompressor.ts</a></p>
+
+
     <p class="item-name"><span class="keyword">extends</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.detritus-utils\class\EventSpewer.html">EventSpewer</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">EventSpewer</span><span style="display:block" class="monospace fw-bold">detritus-utils/<span class="item-name object">EventSpewer</span></span></span></span></span></p>
 
 
     
-
-    <h2>Constructor</h2>
-    
-<div id="class.constructor" class="item">
-    <span class="item-name"><span class="keyword">constructor</span><span>(<span class="item-name"><span class="param-name">options</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.detritus-client-socket\interface\DecompresserOptions.html">DecompresserOptions</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">DecompresserOptions</span><span style="display:block" class="monospace fw-bold"><span class="item-name object">DecompresserOptions</span></span></span></span></span></span>)</span></span>
-
-    <div class="docblock">
-    <ul></ul>
-    </div>
-</div>
 
     
     <h2>Properties</h2>
@@ -203,7 +188,7 @@
     
     
     
-    <span class="item-name"><a class="property-name" href="#.decompressor">decompressor</a><span>: <span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.detritus-client-socket\m.decompressors\class\ZlibDecompressor.html">ZlibDecompressor</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">ZlibDecompressor</span><span style="display:block" class="monospace fw-bold">decompressors/<span class="item-name object">ZlibDecompressor</span></span></span></span></span></span>
+    <span class="item-name"><a class="property-name" href="#.decompressor">decompressor</a><span>: <span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.detritus-client-socket\m.decompressors\class\ZlibDecompressor.html">ZlibDecompressor</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">ZlibDecompressor</span><span style="display:block" class="monospace fw-bold">detritus-client-socket/decompressors/<span class="item-name object">ZlibDecompressor</span></span></span></span></span></span>
     </span>
     <a href=https://github.com/detritusjs/client-socket/tree/master/src/decompressor.ts#L13>
 <span class="float-end sourceCode">
@@ -267,8 +252,7 @@
     
     
     
-        <a class="item-name method-name" href="#.feed">feed</a><span>(<span class="item-name"><span class="param-name">data</span><span class="symbol">:</span> 
-<span><span class="reference-link"><a class='external' href="https://nodejs.org/api/buffer.html">Buffer</a></span></span></span>)</span><span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://www.typescriptlang.org/docs/handbook/2/functions.html#void">void</a></span></span>
+        <a class="item-name method-name" href="#.feed">feed</a><span>(<span class="item-name"><span class="param-name">data</span><span class="symbol">:</span> Buffer</span>)</span><span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://www.typescriptlang.org/docs/handbook/2/functions.html#void">void</a></span></span>
     </span>
     <a href=https://github.com/detritusjs/client-socket/tree/master/src/decompressor.ts#L41>
 <span class="float-end sourceCode">
@@ -316,47 +300,7 @@
     
         <a class="item-name method-name" href="#.on">on</a><span>(<span class="item-name"><span class="param-name">event</span><span class="symbol">:</span> 
 <span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol">symbol</a></span></span></span>, <span class="item-name"><span class="param-name">listener</span><span class="symbol">:</span> <span>(<span class="item-name"><span class="symbol">...</span><span class="param-name">args</span><span class="symbol">:</span> 
-<span><span class="reference-link"><span class='primitive'>any</span></span>[]</span></span>) <span class="symbol">=></span> <span class="reference-link"><a class='primitive' href="https://www.typescriptlang.org/docs/handbook/2/functions.html#void">void</a></span></span></span>)</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.detritus-client-socket\class\Decompressor.html">Decompressor</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Decompressor</span><span style="display:block" class="monospace fw-bold"><span class="item-name object">Decompressor</span></span></span></span></span></span>
-    </span>
-    <a href=https://github.com/detritusjs/client-socket/tree/master/src/decompressor.ts#L52>
-<span class="float-end sourceCode">
-<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
-  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
-</svg>
-</span></a>
-        <div class="docblock">
-        <ul></ul>
-        
-    </div>
-    <span class="monospace">
-    
-    
-    
-    
-    
-    
-        <a class="item-name method-name" href="#.on">on</a><span>(<span class="item-name"><span class="param-name">event</span><span class="symbol">:</span> <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">'data'</a></span></span>, <span class="item-name"><span class="param-name">listener</span><span class="symbol">:</span> <span>(<span class="item-name"><span class="param-name">data</span><span class="symbol">:</span> 
-<span><span class="reference-link"><a class='external' href="https://nodejs.org/api/buffer.html">Buffer</a></span></span></span>) <span class="symbol">=></span> <span class="reference-link"><span class='primitive'>any</span></span></span></span>)</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.detritus-client-socket\class\Decompressor.html">Decompressor</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Decompressor</span><span style="display:block" class="monospace fw-bold"><span class="item-name object">Decompressor</span></span></span></span></span></span>
-    </span>
-    <a href=https://github.com/detritusjs/client-socket/tree/master/src/decompressor.ts#L52>
-<span class="float-end sourceCode">
-<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
-  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
-</svg>
-</span></a>
-        <div class="docblock">
-        <ul></ul>
-        
-    </div>
-    <span class="monospace">
-    
-    
-    
-    
-    
-    
-        <a class="item-name method-name" href="#.on">on</a><span>(<span class="item-name"><span class="param-name">event</span><span class="symbol">:</span> <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">'error'</a></span></span>, <span class="item-name"><span class="param-name">listener</span><span class="symbol">:</span> <span>(<span class="item-name"><span class="param-name">error</span><span class="symbol">:</span> 
-<span><span class="reference-link"><a class='external' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error">Error</a></span></span></span>) <span class="symbol">=></span> <span class="reference-link"><span class='primitive'>any</span></span></span></span>)</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.detritus-client-socket\class\Decompressor.html">Decompressor</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Decompressor</span><span style="display:block" class="monospace fw-bold"><span class="item-name object">Decompressor</span></span></span></span></span></span>
+<span><span class="reference-link"><span class='primitive'>any</span></span>[]</span></span>) <span class="symbol">=></span> <span class="reference-link"><a class='primitive' href="https://www.typescriptlang.org/docs/handbook/2/functions.html#void">void</a></span></span></span>)</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.detritus-client-socket\class\Decompressor.html">Decompressor</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Decompressor</span><span style="display:block" class="monospace fw-bold">detritus-client-socket/<span class="item-name object">Decompressor</span></span></span></span></span></span>
     </span>
     <a href=https://github.com/detritusjs/client-socket/tree/master/src/decompressor.ts#L52>
 <span class="float-end sourceCode">
@@ -372,7 +316,7 @@
         <div style="margin-bottom: 15px">
         <div class="collapsible-trigger">
         <span class="collapsible-arrow"></span>
-        <span class="secondary-text">1 more overload</span>
+        <span class="secondary-text">3 more overloads</span>
         </div>
         <div class="collapsible-body">
             <span class="monospace">
@@ -382,9 +326,35 @@
     
     
     
+        <a class="item-name method-name" href="#.on">on</a><span>(<span class="item-name"><span class="param-name">event</span><span class="symbol">:</span> <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">'data'</a></span></span>, <span class="item-name"><span class="param-name">listener</span><span class="symbol">:</span> <span>(<span class="item-name"><span class="param-name">data</span><span class="symbol">:</span> Buffer</span>) <span class="symbol">=></span> <span class="reference-link"><span class='primitive'>any</span></span></span></span>)</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.detritus-client-socket\class\Decompressor.html">Decompressor</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Decompressor</span><span style="display:block" class="monospace fw-bold">detritus-client-socket/<span class="item-name object">Decompressor</span></span></span></span></span></span>
+    </span>
+        <div class="docblock">
+        <ul></ul>
+        
+    </div>
+    <span class="monospace">
+    
+    
+    
+    
+    
+    
+        <a class="item-name method-name" href="#.on">on</a><span>(<span class="item-name"><span class="param-name">event</span><span class="symbol">:</span> <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">'error'</a></span></span>, <span class="item-name"><span class="param-name">listener</span><span class="symbol">:</span> <span>(<span class="item-name"><span class="param-name">error</span><span class="symbol">:</span> Error</span>) <span class="symbol">=></span> <span class="reference-link"><span class='primitive'>any</span></span></span></span>)</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.detritus-client-socket\class\Decompressor.html">Decompressor</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Decompressor</span><span style="display:block" class="monospace fw-bold">detritus-client-socket/<span class="item-name object">Decompressor</span></span></span></span></span></span>
+    </span>
+        <div class="docblock">
+        <ul></ul>
+        
+    </div>
+    <span class="monospace">
+    
+    
+    
+    
+    
+    
         <a class="item-name method-name" href="#.on">on</a><span>(<span class="item-name"><span class="param-name">event</span><span class="symbol">:</span> 
 <span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol">symbol</a></span></span></span>, <span class="item-name"><span class="param-name">listener</span><span class="symbol">:</span> <span>(<span class="item-name"><span class="symbol">...</span><span class="param-name">args</span><span class="symbol">:</span> 
-<span><span class="reference-link"><span class='primitive'>any</span></span>[]</span></span>) <span class="symbol">=></span> <span class="reference-link"><a class='primitive' href="https://www.typescriptlang.org/docs/handbook/2/functions.html#void">void</a></span></span></span>)</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.detritus-client-socket\class\Decompressor.html">Decompressor</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Decompressor</span><span style="display:block" class="monospace fw-bold"><span class="item-name object">Decompressor</span></span></span></span></span></span>
+<span><span class="reference-link"><span class='primitive'>any</span></span>[]</span></span>) <span class="symbol">=></span> <span class="reference-link"><a class='primitive' href="https://www.typescriptlang.org/docs/handbook/2/functions.html#void">void</a></span></span></span>)</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\m.detritus-client-socket\class\Decompressor.html">Decompressor</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Decompressor</span><span style="display:block" class="monospace fw-bold">detritus-client-socket/<span class="item-name object">Decompressor</span></span></span></span></span></span>
     </span>
         <div class="docblock">
         <ul></ul>
@@ -394,7 +364,7 @@
         </div>
         </div>
         </div>
-        </div></div>
+    </div></div>
     <div>
 <div id=".supported" class="item">
     <span class="monospace">
@@ -404,8 +374,7 @@
     
     
     
-        <a class="item-name method-name" href="#.supported">supported</a><span>()</span><span><span class="symbol">:</span> 
-<span><span class="reference-link"><a class='object' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></span><span>&lt;<span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>&gt;</span></span></span>
+        <a class="item-name method-name" href="#.supported">supported</a><span>()</span><span><span class="symbol">:</span> Array</span>
     </span>
     <a href=https://github.com/detritusjs/client-socket/tree/master/src/decompressor.ts#L57>
 <span class="float-end sourceCode">

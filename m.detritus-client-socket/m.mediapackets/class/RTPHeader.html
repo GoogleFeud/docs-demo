@@ -7,9 +7,7 @@
   <title>RTPHeader |  Detritus</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/an-old-hope.min.css"
-    integrity="sha512-t47CjkEB5hx4FojnE73dBLwgrgvLBpgsHvB40ycK3cYPkLwEp7qNHyRpRDA3/zVVAAOUPJwbMVJq3uJrBqpHVQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link id="highlightTheme" rel="stylesheet" crossorigin="anonymous" referrerpolicy="no-referrer" />
   
     <link href="../../../assets/css/index.css" type="text/css" rel="stylesheet">
     <script src="../../../assets/js/index.js"></script>
@@ -37,7 +35,7 @@
               </a>
              </div>
             <div class="col">
-              <span style="font-size: 1.2em">v0.16.1</span>
+              <span style="font-size: 1.2em">v0.16.3</span>
             </div>
           </div>
         </div>
@@ -47,7 +45,7 @@
       <div class="col-lg-auto sidebar" id="sidebar">
         
     <h1 class="lib-name text-center"><a href="../../../index.html">Detritus</a></h1>
-    <img src="../../../assets/logo.png" alt="Logo" class="img-fluid mx-auto d-block">
+    
     <p class="current-thing text-center">class <span class="object">RTPHeader</span></p>
     <div class="sidebar-members">
     
@@ -154,29 +152,14 @@
           </div>
           
 <div>
-    <h1>Class <span class="referenceLink object">RTPHeader</span>
-    <a href=https://github.com/detritusjs/client-socket/tree/master/src/mediapackets/rtp.ts#L10>
-<span class="float-end sourceCode">
-<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
-  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
-</svg>
-</span></a>
-    </h1>
+    <h1>Class <span class="referenceLink object">RTPHeader</span></h1>
+    
+    <p><a class="secondary-text" href=https://github.com/detritusjs/client-socket/tree/master/src/mediapackets/rtp.ts#L10>Defined in rtp.ts</a></p>
+
+
 
 
     
-
-    <h2>Constructor</h2>
-    
-<div id="class.constructor" class="item">
-    <span class="item-name"><span class="keyword">constructor</span><span>(<div class="left-item"><span class="item-name"><span class="param-name">options</span><span class="symbol">:</span> 
-<span>{ <div class="left-item"><span class="item-name"><a class="property-name" href="#.buffer">buffer</a><span class="symbol">?</span><span class="symbol">:</span> 
-<span><span class="reference-link"><a class='external' href="https://nodejs.org/api/buffer.html">Buffer</a></span></span></span>,<br><span class="item-name"><a class="property-name" href="#.marker">marker</a><span class="symbol">?</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>,<br><span class="item-name"><a class="property-name" href="#.payloadType">payloadType</a><span class="symbol">?</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>,<br><span class="item-name"><a class="property-name" href="#.randomize">randomize</a><span class="symbol">?</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>,<br><span class="item-name"><a class="property-name" href="#.ssrc">ssrc</a><span class="symbol">?</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>,<br><span class="item-name"><a class="property-name" href="#.version">version</a><span class="symbol">?</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span></div> }</span> <span class="symbol">=</span> {}</span></div>)</span></span>
-
-    <div class="docblock">
-    <ul></ul>
-    </div>
-</div>
 
     
     <h2>Properties</h2>
@@ -186,8 +169,7 @@
     
     
     
-    <span class="item-name"><a class="property-name" href="#.buffer">buffer</a><span>: 
-<span><span class="reference-link"><a class='external' href="https://nodejs.org/api/buffer.html">Buffer</a></span></span></span>
+    <span class="item-name"><a class="property-name" href="#.buffer">buffer</a><span>: Buffer</span>
     </span>
     <a href=https://github.com/detritusjs/client-socket/tree/master/src/mediapackets/rtp.ts#L11>
 <span class="float-end sourceCode">
@@ -205,8 +187,7 @@
     
     
     
-    <span class="item-name"><a class="property-name" href="#.nonce">nonce</a><span>: 
-<span><span class="reference-link"><a class='external' href="https://nodejs.org/api/buffer.html">Buffer</a></span></span></span>
+    <span class="item-name"><a class="property-name" href="#.nonce">nonce</a><span>: Buffer</span>
     </span>
     <a href=https://github.com/detritusjs/client-socket/tree/master/src/mediapackets/rtp.ts#L12>
 <span class="float-end sourceCode">
@@ -224,8 +205,7 @@
     
     
     
-    <span class="item-name"><a class="property-name" href="#.payload">payload</a><span>: 
-<span><span class="reference-link"><a class='external' href="https://nodejs.org/api/buffer.html">Buffer</a></span></span></span>
+    <span class="item-name"><a class="property-name" href="#.payload">payload</a><span>: Buffer</span>
     </span>
     <a href=https://github.com/detritusjs/client-socket/tree/master/src/mediapackets/rtp.ts#L13>
 <span class="float-end sourceCode">
@@ -824,8 +804,7 @@
     
     
     
-        <a class="item-name method-name" href="#.setPayload">setPayload</a><span>(<span class="item-name"><span class="param-name">payload</span><span class="symbol">:</span> 
-<span><span class="reference-link"><a class='external' href="https://nodejs.org/api/buffer.html">Buffer</a></span></span></span>, <span class="item-name"><span class="param-name">replace</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span> <span class="symbol">=</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">false</a></span></span>)</span><span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://www.typescriptlang.org/docs/handbook/2/functions.html#void">void</a></span></span>
+        <a class="item-name method-name" href="#.setPayload">setPayload</a><span>(<span class="item-name"><span class="param-name">payload</span><span class="symbol">:</span> Buffer</span>, <span class="item-name"><span class="param-name">replace</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span> <span class="symbol">=</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">false</a></span></span>)</span><span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://www.typescriptlang.org/docs/handbook/2/functions.html#void">void</a></span></span>
     </span>
     <a href=https://github.com/detritusjs/client-socket/tree/master/src/mediapackets/rtp.ts#L212>
 <span class="float-end sourceCode">
@@ -848,7 +827,7 @@
     
     
         <a class="item-name method-name" href="#.setNonce">setNonce</a><span>(<span class="item-name"><span class="param-name">nonce</span><span class="symbol">?</span><span class="symbol">:</span> 
-<span><span><span class="reference-link"><a class='external' href="https://nodejs.org/api/buffer.html">Buffer</a></span></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span></span>, <span class="item-name"><span class="param-name">increment</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span> <span class="symbol">=</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">false</a></span></span>)</span><span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://www.typescriptlang.org/docs/handbook/2/functions.html#void">void</a></span></span>
+<span>Buffer<span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span></span>, <span class="item-name"><span class="param-name">increment</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span> <span class="symbol">=</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">false</a></span></span>)</span><span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://www.typescriptlang.org/docs/handbook/2/functions.html#void">void</a></span></span>
     </span>
     <a href=https://github.com/detritusjs/client-socket/tree/master/src/mediapackets/rtp.ts#L227>
 <span class="float-end sourceCode">
@@ -892,8 +871,7 @@
     
     
     
-        <a class="item-name method-name" href="#.copy">copy</a><span>(<div class="left-item"><span class="item-name"><span class="param-name">target</span><span class="symbol">:</span> 
-<span><span class="reference-link"><a class='external' href="https://nodejs.org/api/buffer.html">Buffer</a></span></span></span>,<br><span class="item-name"><span class="param-name">targetStart</span><span class="symbol">?</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>,<br><span class="item-name"><span class="param-name">sourceStart</span><span class="symbol">?</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>,<br><span class="item-name"><span class="param-name">sourceEnd</span><span class="symbol">?</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span></div>)</span><span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>
+        <a class="item-name method-name" href="#.copy">copy</a><span>(<div class="left-item"><span class="item-name"><span class="param-name">target</span><span class="symbol">:</span> Buffer</span>,<br><span class="item-name"><span class="param-name">targetStart</span><span class="symbol">?</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>,<br><span class="item-name"><span class="param-name">sourceStart</span><span class="symbol">?</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>,<br><span class="item-name"><span class="param-name">sourceEnd</span><span class="symbol">?</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span></div>)</span><span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>
     </span>
     <a href=https://github.com/detritusjs/client-socket/tree/master/src/mediapackets/rtp.ts#L271>
 <span class="float-end sourceCode">

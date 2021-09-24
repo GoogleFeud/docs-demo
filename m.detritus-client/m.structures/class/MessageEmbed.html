@@ -7,9 +7,7 @@
   <title>MessageEmbed |  Detritus</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/an-old-hope.min.css"
-    integrity="sha512-t47CjkEB5hx4FojnE73dBLwgrgvLBpgsHvB40ycK3cYPkLwEp7qNHyRpRDA3/zVVAAOUPJwbMVJq3uJrBqpHVQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link id="highlightTheme" rel="stylesheet" crossorigin="anonymous" referrerpolicy="no-referrer" />
   
     <link href="../../../assets/css/index.css" type="text/css" rel="stylesheet">
     <script src="../../../assets/js/index.js"></script>
@@ -37,7 +35,7 @@
               </a>
              </div>
             <div class="col">
-              <span style="font-size: 1.2em">v0.16.1</span>
+              <span style="font-size: 1.2em">v0.16.3</span>
             </div>
           </div>
         </div>
@@ -47,7 +45,7 @@
       <div class="col-lg-auto sidebar" id="sidebar">
         
     <h1 class="lib-name text-center"><a href="../../../index.html">Detritus</a></h1>
-    <img src="../../../assets/logo.png" alt="Logo" class="img-fluid mx-auto d-block">
+    
     <p class="current-thing text-center">class <span class="object">MessageEmbed</span></p>
     <div class="sidebar-members">
     
@@ -154,29 +152,16 @@
           </div>
           
 <div>
-    <h1>Class <span class="referenceLink object">MessageEmbed</span>
-    <a href=https://github.com/detritusjs/client/tree/master/src/structures/messageembed.ts#L33>
-<span class="float-end sourceCode">
-<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
-  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
-</svg>
-</span></a>
-    </h1>
-    <p class="item-name"><span class="keyword">extends</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.structures\class\BaseStructure.html">BaseStructure</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">BaseStructure</span><span style="display:block" class="monospace fw-bold">structures/<span class="item-name object">BaseStructure</span></span></span></span></span></p>
+    <h1>Class <span class="referenceLink object">MessageEmbed</span></h1>
+    
+    <p><a class="secondary-text" href=https://github.com/detritusjs/client/tree/master/src/structures/messageembed.ts#L33>Defined in messageembed.ts</a></p>
+
+
+    <p class="item-name"><span class="keyword">extends</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.structures\class\BaseStructure.html">BaseStructure</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">BaseStructure</span><span style="display:block" class="monospace fw-bold">detritus-client/structures/<span class="item-name object">BaseStructure</span></span></span></span></span></p>
 
 
     <p>Embed Structure, used for [Message] Structures</p>
 
-
-    <h2>Constructor</h2>
-    
-<div id="class.constructor" class="item">
-    <span class="item-name"><span class="keyword">constructor</span><span>(<span class="item-name"><span class="param-name">client</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\class\ShardClient.html">ShardClient</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">ShardClient</span><span style="display:block" class="monospace fw-bold"><span class="item-name object">ShardClient</span></span></span></span></span></span>, <span class="item-name"><span class="param-name">data</span><span class="symbol">?</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.structures\interface\BaseStructureData.html">BaseStructureData</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">BaseStructureData</span><span style="display:block" class="monospace fw-bold">structures/<span class="item-name object">BaseStructureData</span></span></span></span></span></span>, <span class="item-name"><span class="param-name">isClone</span><span class="symbol">?</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>)</span></span>
-
-    <div class="docblock">
-    <ul></ul>
-    </div>
-</div>
 
     
     <h2>Properties</h2>
@@ -186,7 +171,7 @@
     
     
     <span class="modifier">readonly</span>
-    <span class="item-name"><a class="property-name" href="#._keys">_keys</a>
+    <span class="item-name"><a class="property-name" href="#._keys">_keys</a> <span class="symbol">=</span> <span><span class="c-tooltip"><a class="reference-link constant" href="..\..\..\m.detritus-client\m.structures\constant\keysMessageEmbed.html">keysMessageEmbed</a><span class="c-tooltip-content"><span class="keyword">const</span> <span class="item-name constant">keysMessageEmbed</span><span style="display:block" class="monospace fw-bold">detritus-client/structures/<span class="item-name constant">keysMessageEmbed</span></span></span></span></span>
     </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/structures/messageembed.ts#L34>
 <span class="float-end sourceCode">
@@ -204,7 +189,7 @@
     
     
     
-    <span class="item-name"><a class="property-name" href="#.author">author</a><span>: <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.structures\class\MessageEmbedAuthor.html">MessageEmbedAuthor</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">MessageEmbedAuthor</span><span style="display:block" class="monospace fw-bold">structures/<span class="item-name object">MessageEmbedAuthor</span></span></span></span></span></span>
+    <span class="item-name"><a class="property-name" href="#.author">author</a><span>: <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.structures\class\MessageEmbedAuthor.html">MessageEmbedAuthor</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">MessageEmbedAuthor</span><span style="display:block" class="monospace fw-bold">detritus-client/structures/<span class="item-name object">MessageEmbedAuthor</span></span></span></span></span></span>
     </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/structures/messageembed.ts#L36>
 <span class="float-end sourceCode">
@@ -258,7 +243,7 @@
     
     
     
-    <span class="item-name"><a class="property-name" href="#.fields">fields</a><span>: <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-utils\class\BaseCollection.html">BaseCollection</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">BaseCollection</span><span style="display:block" class="monospace fw-bold">detritus-utils/<span class="item-name object">BaseCollection</span></span></span></span><span>&lt;<span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span>, <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.structures\class\MessageEmbedField.html">MessageEmbedField</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">MessageEmbedField</span><span style="display:block" class="monospace fw-bold">structures/<span class="item-name object">MessageEmbedField</span></span></span></span></span>&gt;</span></span></span>
+    <span class="item-name"><a class="property-name" href="#.fields">fields</a><span>: <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-utils\class\BaseCollection.html">BaseCollection</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">BaseCollection</span><span style="display:block" class="monospace fw-bold">detritus-utils/<span class="item-name object">BaseCollection</span></span></span></span><span>&lt;<span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span>, <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.structures\class\MessageEmbedField.html">MessageEmbedField</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">MessageEmbedField</span><span style="display:block" class="monospace fw-bold">detritus-client/structures/<span class="item-name object">MessageEmbedField</span></span></span></span></span>&gt;</span></span></span>
     </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/structures/messageembed.ts#L39>
 <span class="float-end sourceCode">
@@ -276,7 +261,7 @@
     
     
     
-    <span class="item-name"><a class="property-name" href="#.footer">footer</a><span>: <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.structures\class\MessageEmbedFooter.html">MessageEmbedFooter</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">MessageEmbedFooter</span><span style="display:block" class="monospace fw-bold">structures/<span class="item-name object">MessageEmbedFooter</span></span></span></span></span></span>
+    <span class="item-name"><a class="property-name" href="#.footer">footer</a><span>: <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.structures\class\MessageEmbedFooter.html">MessageEmbedFooter</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">MessageEmbedFooter</span><span style="display:block" class="monospace fw-bold">detritus-client/structures/<span class="item-name object">MessageEmbedFooter</span></span></span></span></span></span>
     </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/structures/messageembed.ts#L40>
 <span class="float-end sourceCode">
@@ -294,7 +279,7 @@
     
     
     
-    <span class="item-name"><a class="property-name" href="#.image">image</a><span>: <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.structures\class\MessageEmbedImage.html">MessageEmbedImage</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">MessageEmbedImage</span><span style="display:block" class="monospace fw-bold">structures/<span class="item-name object">MessageEmbedImage</span></span></span></span></span></span>
+    <span class="item-name"><a class="property-name" href="#.image">image</a><span>: <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.structures\class\MessageEmbedImage.html">MessageEmbedImage</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">MessageEmbedImage</span><span style="display:block" class="monospace fw-bold">detritus-client/structures/<span class="item-name object">MessageEmbedImage</span></span></span></span></span></span>
     </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/structures/messageembed.ts#L41>
 <span class="float-end sourceCode">
@@ -312,7 +297,7 @@
     
     
     
-    <span class="item-name"><a class="property-name" href="#.provider">provider</a><span>: <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.structures\class\MessageEmbedProvider.html">MessageEmbedProvider</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">MessageEmbedProvider</span><span style="display:block" class="monospace fw-bold">structures/<span class="item-name object">MessageEmbedProvider</span></span></span></span></span></span>
+    <span class="item-name"><a class="property-name" href="#.provider">provider</a><span>: <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.structures\class\MessageEmbedProvider.html">MessageEmbedProvider</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">MessageEmbedProvider</span><span style="display:block" class="monospace fw-bold">detritus-client/structures/<span class="item-name object">MessageEmbedProvider</span></span></span></span></span></span>
     </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/structures/messageembed.ts#L42>
 <span class="float-end sourceCode">
@@ -348,7 +333,7 @@
     
     
     
-    <span class="item-name"><a class="property-name" href="#.thumbnail">thumbnail</a><span>: <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.structures\class\MessageEmbedThumbnail.html">MessageEmbedThumbnail</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">MessageEmbedThumbnail</span><span style="display:block" class="monospace fw-bold">structures/<span class="item-name object">MessageEmbedThumbnail</span></span></span></span></span></span>
+    <span class="item-name"><a class="property-name" href="#.thumbnail">thumbnail</a><span>: <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.structures\class\MessageEmbedThumbnail.html">MessageEmbedThumbnail</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">MessageEmbedThumbnail</span><span style="display:block" class="monospace fw-bold">detritus-client/structures/<span class="item-name object">MessageEmbedThumbnail</span></span></span></span></span></span>
     </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/structures/messageembed.ts#L44>
 <span class="float-end sourceCode">
@@ -366,8 +351,7 @@
     
     
     
-    <span class="item-name"><a class="property-name" href="#.timestamp">timestamp</a><span>: 
-<span><span class="reference-link"><a class='object' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt">Bigint</a></span></span></span>
+    <span class="item-name"><a class="property-name" href="#.timestamp">timestamp</a><span>: Date</span>
     </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/structures/messageembed.ts#L45>
 <span class="float-end sourceCode">
@@ -403,7 +387,7 @@
     
     
     
-    <span class="item-name"><a class="property-name" href="#.type">type</a><span>: <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\enum\MessageEmbedTypes.html">MessageEmbedTypes</a><span class="c-tooltip-content"><span class="keyword">enum</span> <span class="item-name object">MessageEmbedTypes</span><span style="display:block" class="monospace fw-bold"><span class="item-name object">MessageEmbedTypes</span></span></span></span></span></span> <span class="symbol">=</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\enum\MessageEmbedTypes.html#.RICH">MessageEmbedTypes<span class="symbol">.</span>RICH</a><span class="c-tooltip-content"><span class="keyword">enum</span> <span class="item-name object">MessageEmbedTypes</span><span style="display:block" class="monospace fw-bold"><span class="item-name object">MessageEmbedTypes</span><span class="symbol">.</span>RICH</span></span></span></span>
+    <span class="item-name"><a class="property-name" href="#.type">type</a><span>: <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\enum\MessageEmbedTypes.html">MessageEmbedTypes</a><span class="c-tooltip-content"><span class="keyword">enum</span> <span class="item-name object">MessageEmbedTypes</span><span style="display:block" class="monospace fw-bold">detritus-client/<span class="item-name object">MessageEmbedTypes</span></span></span></span></span></span> <span class="symbol">=</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\enum\MessageEmbedTypes.html#.RICH">MessageEmbedTypes<span class="symbol">.</span>RICH</a><span class="c-tooltip-content"><span class="keyword">enum</span> <span class="item-name object">MessageEmbedTypes</span><span style="display:block" class="monospace fw-bold">detritus-client/<span class="item-name object">MessageEmbedTypes</span><span class="symbol">.</span>RICH</span></span></span></span>
     </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/structures/messageembed.ts#L47>
 <span class="float-end sourceCode">
@@ -439,7 +423,7 @@
     
     
     
-    <span class="item-name"><a class="property-name" href="#.video">video</a><span>: <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.structures\class\MessageEmbedVideo.html">MessageEmbedVideo</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">MessageEmbedVideo</span><span style="display:block" class="monospace fw-bold">structures/<span class="item-name object">MessageEmbedVideo</span></span></span></span></span></span>
+    <span class="item-name"><a class="property-name" href="#.video">video</a><span>: <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.structures\class\MessageEmbedVideo.html">MessageEmbedVideo</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">MessageEmbedVideo</span><span style="display:block" class="monospace fw-bold">detritus-client/structures/<span class="item-name object">MessageEmbedVideo</span></span></span></span></span></span>
     </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/structures/messageembed.ts#L49>
 <span class="float-end sourceCode">
@@ -705,8 +689,7 @@
     
     
     
-        <a class="item-name method-name" href="#.fetchApplicationNews">fetchApplicationNews</a><span>()</span><span><span class="symbol">:</span> 
-<span><span class="reference-link"><a class='external' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a></span><span>&lt;<span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.structures\class\ApplicationNews.html">ApplicationNews</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">ApplicationNews</span><span style="display:block" class="monospace fw-bold">structures/<span class="item-name object">ApplicationNews</span></span></span></span></span>&gt;</span></span></span>
+        <a class="item-name method-name" href="#.fetchApplicationNews">fetchApplicationNews</a><span>()</span>
     </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/structures/messageembed.ts#L124>
 <span class="float-end sourceCode">

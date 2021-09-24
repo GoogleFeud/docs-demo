@@ -7,9 +7,7 @@
   <title>detritus-utils |  Detritus</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/an-old-hope.min.css"
-    integrity="sha512-t47CjkEB5hx4FojnE73dBLwgrgvLBpgsHvB40ycK3cYPkLwEp7qNHyRpRDA3/zVVAAOUPJwbMVJq3uJrBqpHVQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link id="highlightTheme" rel="stylesheet" crossorigin="anonymous" referrerpolicy="no-referrer" />
   
     <link href="../assets/css/index.css" type="text/css" rel="stylesheet">
     <script src="../assets/js/index.js"></script>
@@ -37,7 +35,7 @@
               </a>
              </div>
             <div class="col">
-              <span style="font-size: 1.2em">v0.16.1</span>
+              <span style="font-size: 1.2em">v0.16.3</span>
             </div>
           </div>
         </div>
@@ -47,7 +45,7 @@
       <div class="col-lg-auto sidebar" id="sidebar">
         
     <h1 class="lib-name text-center"><a href="../index.html">Detritus</a></h1>
-    <img src="../assets/logo.png" alt="Logo" class="img-fluid mx-auto d-block">
+    
     <p class="current-thing text-center">module <span class="module">detritus-utils</span></p>
     <div class="sidebar-members">
     
@@ -57,7 +55,7 @@
         <span class="sidebar-category">Classes</span>
         </div>
         <div class="collapsible-body open"> 
-        <span class="sidebar-category-member"><a href="class/Interval.html">Interval</a></span><span class="sidebar-category-member"><a href="class/Timeout.html">Timeout</a></span><span class="sidebar-category-member"><a href="class/BaseCollectionMixin.html">BaseCollectionMixin</a></span><span class="sidebar-category-member"><a href="class/BaseCollection.html">BaseCollection</a></span><span class="sidebar-category-member"><a href="class/BaseSet.html">BaseSet</a></span><span class="sidebar-category-member"><a href="class/EventSpewer.html">EventSpewer</a></span><span class="sidebar-category-member"><a href="class/EventSubscription.html">EventSubscription</a></span>
+        <span class="sidebar-category-member"><a href="class/Interval.html">Interval</a></span><span class="sidebar-category-member"><a href="class/Timeout.html">Timeout</a></span><span class="sidebar-category-member"><a href="class/BaseCollectionMixin.html">BaseCollectionMixin</a></span><span class="sidebar-category-member"><a href="class/BaseCollection.html">BaseCollection</a></span><span class="sidebar-category-member"><a href="class/BaseSet.html">BaseSet</a></span><span class="sidebar-category-member"><a href="class/EventSubscription.html">EventSubscription</a></span><span class="sidebar-category-member"><a href="class/EventSpewer.html">EventSpewer</a></span>
         </div>
         </div>
     
@@ -87,7 +85,7 @@
         <span class="sidebar-category">Types</span>
         </div>
         <div class="collapsible-body open"> 
-        <span class="sidebar-category-member"><a href="type/URIEncodeWrapFunc.html">URIEncodeWrapFunc</a></span><span class="sidebar-category-member"><a href="type/URIEncodeWrapped.html">URIEncodeWrapped</a></span>
+        <span class="sidebar-category-member"><a href="type/URIEncodeWrapped.html">URIEncodeWrapped</a></span><span class="sidebar-category-member"><a href="type/URIEncodeWrapFunc.html">URIEncodeWrapFunc</a></span>
         </div>
         </div>
     
@@ -97,7 +95,7 @@
         <span class="sidebar-category">Constants</span>
         </div>
         <div class="collapsible-body open"> 
-        <span class="sidebar-category-member"><a href="constant/Package.html">Package</a></span><span class="sidebar-category-member"><a href="constant/DISCORD_SNOWFLAKE_EPOCH.html">DISCORD_SNOWFLAKE_EPOCH</a></span><span class="sidebar-category-member"><a href="constant/DISCORD_TOKEN_EPOCH.html">DISCORD_TOKEN_EPOCH</a></span>
+        <span class="sidebar-category-member"><a href="constant/Package.html">Package</a></span><span class="sidebar-category-member"><a href="constant/DISCORD_SNOWFLAKE_EPOCH.html">DISCORD_SNOWFLAKE_EPOCH</a></span><span class="sidebar-category-member"><a href="constant/DISCORD_TOKEN_EPOCH.html">DISCORD_TOKEN_EPOCH</a></span><span class="sidebar-category-member"><a href="constant/Emitter.html">Emitter</a></span>
         </div>
         </div>
     
@@ -188,7 +186,7 @@
     <h1>
     Module
     <span class="referenceLink module">detritus-utils</span>
-    <a href=https://github.com/detritusjs/utils/tree/master/src>
+        <a href=https://github.com/detritusjs/utils/tree/master/src>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
   <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
@@ -196,48 +194,38 @@
 </span></a>
     </h1>
 
+
+
     
     
-    
-    <h3>Classes</h3>
-    <table>
-    <tbody>
-    <tr><td><a class="module-item object" href="class/Interval.html">Interval</a></td><td></td></tr><tr><td><a class="module-item object" href="class/Timeout.html">Timeout</a></td><td></td></tr><tr><td><a class="module-item object" href="class/BaseCollectionMixin.html">BaseCollectionMixin</a></td><td></td></tr><tr><td><a class="module-item object" href="class/BaseCollection.html">BaseCollection</a></td><td></td></tr><tr><td><a class="module-item object" href="class/BaseSet.html">BaseSet</a></td><td></td></tr><tr><td><a class="module-item object" href="class/EventSpewer.html">EventSpewer</a></td><td></td></tr><tr><td><a class="module-item object" href="class/EventSubscription.html">EventSubscription</a></td><td></td></tr>
-    </tbody>
-    </table>
+    <h2>Exports</h2>
+    <div><span><span class="c-tooltip"><a class="reference-link object" href="..\m.detritus-utils\class\BaseCollectionMixin.html">BaseCollectionMixin</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">BaseCollectionMixin</span><span style="display:block" class="monospace fw-bold">detritus-utils/<span class="item-name object">BaseCollectionMixin</span></span></span></span></span><div><span><span class="c-tooltip"><a class="reference-link object" href="..\m.detritus-utils\interface\BaseCollectionOptions.html">BaseCollectionOptions</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">BaseCollectionOptions</span><span style="display:block" class="monospace fw-bold">detritus-utils/<span class="item-name object">BaseCollectionOptions</span></span></span></span></span><div><span><span class="c-tooltip"><a class="reference-link object" href="..\m.detritus-utils\class\BaseCollection.html">BaseCollection</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">BaseCollection</span><span style="display:block" class="monospace fw-bold">detritus-utils/<span class="item-name object">BaseCollection</span></span></span></span></span><div><span><span class="c-tooltip"><a class="reference-link object" href="..\m.detritus-utils\class\BaseSet.html">BaseSet</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">BaseSet</span><span style="display:block" class="monospace fw-bold">detritus-utils/<span class="item-name object">BaseSet</span></span></span></span></span><div><span><span class="c-tooltip"><a class="reference-link object" href="..\m.detritus-utils\class\EventSpewer.html">EventSpewer</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">EventSpewer</span><span style="display:block" class="monospace fw-bold">detritus-utils/<span class="item-name object">EventSpewer</span></span></span></span></span><div><span><span class="c-tooltip"><a class="reference-link object" href="..\m.detritus-utils\class\EventSubscription.html">EventSubscription</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">EventSubscription</span><span style="display:block" class="monospace fw-bold">detritus-utils/<span class="item-name object">EventSubscription</span></span></span></span></span>
     
     
-    <h3>Interfaces</h3>
-    <table>
-    <tbody>
-    <tr><td><a class="module-item object" href="interface/Snowflake.html">Snowflake</a></td><td></td></tr><tr><td><a class="module-item object" href="interface/SnowflakeGenerateOptions.html">SnowflakeGenerateOptions</a></td><td></td></tr><tr><td><a class="module-item object" href="interface/SnowflakeDeconstructOptions.html">SnowflakeDeconstructOptions</a></td><td></td></tr><tr><td><a class="module-item object" href="interface/BaseCollectionOptions.html">BaseCollectionOptions</a></td><td></td></tr>
-    </tbody>
-    </table>
-    
-    
-    
-    <h3>Functions</h3>
-    <table>
-    <tbody>
-    <tr><td><a class="module-item method-name" href="function/generate.html">generate</a></td><td></td></tr><tr><td><a class="module-item method-name" href="function/deconstruct.html">deconstruct</a></td><td></td></tr><tr><td><a class="module-item method-name" href="function/timestamp.html">timestamp</a></td><td></td></tr><tr><td><a class="module-item method-name" href="function/sleep.html">sleep</a></td><td></td></tr><tr><td><a class="module-item method-name" href="function/normalize.html">normalize</a></td><td></td></tr><tr><td><a class="module-item method-name" href="function/guildIdToShardId.html">guildIdToShardId</a></td><td></td></tr><tr><td><a class="module-item method-name" href="function/URIEncodeWrap.html">URIEncodeWrap</a></td><td></td></tr>
-    </tbody>
-    </table>
-    
-    
-    <h3>Types</h3>
-    <table>
-    <tbody>
-    <tr><td><a class="module-item object" href="type/URIEncodeWrapFunc.html">URIEncodeWrapFunc</a></td><td></td></tr><tr><td><a class="module-item object" href="type/URIEncodeWrapped.html">URIEncodeWrapped</a></td><td></td></tr>
-    </tbody>
-    </table>
-    
-    
-    <h3>Constants</h3>
-    <table>
-    <tbody>
-    <tr><td><a class="module-item constant" href="constant/Package.html">Package</a></td><td></td></tr><tr><td><a class="module-item constant" href="constant/DISCORD_SNOWFLAKE_EPOCH.html">DISCORD_SNOWFLAKE_EPOCH</a></td><td></td></tr><tr><td><a class="module-item constant" href="constant/DISCORD_TOKEN_EPOCH.html">DISCORD_TOKEN_EPOCH</a></td><td></td></tr>
-    </tbody>
-    </table>
+    <h2>Re-Exports</h2>
+    <div><span class="keyword">exports</span> <span><span class="c-tooltip"><a class="reference-link constant" href="..\m.detritus-utils\constant\Package.html">Package</a><span class="c-tooltip-content"><span class="keyword">const</span> <span class="item-name constant">Package</span><span style="display:block" class="monospace fw-bold">detritus-utils/<span class="item-name constant">Package</span></span></span></span></span>, <span><span class="c-tooltip"><a class="reference-link constant" href="..\m.detritus-utils\constant\DISCORD_SNOWFLAKE_EPOCH.html">DISCORD_SNOWFLAKE_EPOCH</a><span class="c-tooltip-content"><span class="keyword">const</span> <span class="item-name constant">DISCORD_SNOWFLAKE_EPOCH</span><span style="display:block" class="monospace fw-bold">detritus-utils/<span class="item-name constant">DISCORD_SNOWFLAKE_EPOCH</span></span></span></span></span>, <span><span class="c-tooltip"><a class="reference-link constant" href="..\m.detritus-utils\constant\DISCORD_TOKEN_EPOCH.html">DISCORD_TOKEN_EPOCH</a><span class="c-tooltip-content"><span class="keyword">const</span> <span class="item-name constant">DISCORD_TOKEN_EPOCH</span><span style="display:block" class="monospace fw-bold">detritus-utils/<span class="item-name constant">DISCORD_TOKEN_EPOCH</span></span></span></span></span> <span class="keyword">as</span> <span class="item-name object">Constants</span></div>
+        <div>
+        <span class="keyword">exports</span>
+        <span class="collapsible-trigger">
+        <span class="collapsible-arrow"></span>
+        <span class="keyword">6 things from</span> <span><span class="c-tooltip"><a class="reference-link module" href="..\m.detritus-utils\index.html">detritus-utils</a><span class="c-tooltip-content"><span class="keyword">module</span> <span class="item-name module">detritus-utils</span><span style="display:block" class="monospace fw-bold">detritus-utils</span></span></span></span> <span class="keyword">as</span> <span class="item-name object">Snowflake</span>
+        </span>
+        <div class="collapsible-body"> 
+        <div><span><span class="c-tooltip"><a class="reference-link method-name" href="..\m.detritus-utils\function\generate.html">generate</a><span class="c-tooltip-content"><span class="keyword">function</span> <span class="item-name method-name">generate</span><span style="display:block" class="monospace fw-bold">detritus-utils/<span class="item-name method-name">generate</span></span></span></span></span></div><div><span><span class="c-tooltip"><a class="reference-link method-name" href="..\m.detritus-utils\function\deconstruct.html">deconstruct</a><span class="c-tooltip-content"><span class="keyword">function</span> <span class="item-name method-name">deconstruct</span><span style="display:block" class="monospace fw-bold">detritus-utils/<span class="item-name method-name">deconstruct</span></span></span></span></span></div><div><span><span class="c-tooltip"><a class="reference-link method-name" href="..\m.detritus-utils\function\timestamp.html">timestamp</a><span class="c-tooltip-content"><span class="keyword">function</span> <span class="item-name method-name">timestamp</span><span style="display:block" class="monospace fw-bold">detritus-utils/<span class="item-name method-name">timestamp</span></span></span></span></span></div><div><span><span class="c-tooltip"><a class="reference-link object" href="..\m.detritus-utils\interface\Snowflake.html">Snowflake</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">Snowflake</span><span style="display:block" class="monospace fw-bold">detritus-utils/<span class="item-name object">Snowflake</span></span></span></span></span></div><div><span><span class="c-tooltip"><a class="reference-link object" href="..\m.detritus-utils\interface\SnowflakeGenerateOptions.html">SnowflakeGenerateOptions</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">SnowflakeGenerateOptions</span><span style="display:block" class="monospace fw-bold">detritus-utils/<span class="item-name object">SnowflakeGenerateOptions</span></span></span></span></span></div><div><span><span class="c-tooltip"><a class="reference-link object" href="..\m.detritus-utils\interface\SnowflakeDeconstructOptions.html">SnowflakeDeconstructOptions</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">SnowflakeDeconstructOptions</span><span style="display:block" class="monospace fw-bold">detritus-utils/<span class="item-name object">SnowflakeDeconstructOptions</span></span></span></span></span></div>
+        </div>
+        </div>
+        <div><span class="keyword">exports</span> <span><span class="c-tooltip"><a class="reference-link method-name" href="..\m.detritus-utils\function\sleep.html">sleep</a><span class="c-tooltip-content"><span class="keyword">function</span> <span class="item-name method-name">sleep</span><span style="display:block" class="monospace fw-bold">detritus-utils/<span class="item-name method-name">sleep</span></span></span></span></span>, <span><span class="c-tooltip"><a class="reference-link object" href="..\m.detritus-utils\class\Interval.html">Interval</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Interval</span><span style="display:block" class="monospace fw-bold">detritus-utils/<span class="item-name object">Interval</span></span></span></span></span>, <span><span class="c-tooltip"><a class="reference-link object" href="..\m.detritus-utils\class\Timeout.html">Timeout</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Timeout</span><span style="display:block" class="monospace fw-bold">detritus-utils/<span class="item-name object">Timeout</span></span></span></span></span> <span class="keyword">as</span> <span class="item-name object">Timers</span></div>
+        <div>
+        <span class="keyword">exports</span>
+        <span class="collapsible-trigger">
+        <span class="collapsible-arrow"></span>
+        <span class="keyword">5 things from</span> <span><span class="c-tooltip"><a class="reference-link module" href="..\m.detritus-utils\index.html">detritus-utils</a><span class="c-tooltip-content"><span class="keyword">module</span> <span class="item-name module">detritus-utils</span><span style="display:block" class="monospace fw-bold">detritus-utils</span></span></span></span> <span class="keyword">as</span> <span class="item-name object">Tools</span>
+        </span>
+        <div class="collapsible-body"> 
+        <div><span><span class="c-tooltip"><a class="reference-link method-name" href="..\m.detritus-utils\function\normalize.html">normalize</a><span class="c-tooltip-content"><span class="keyword">function</span> <span class="item-name method-name">normalize</span><span style="display:block" class="monospace fw-bold">detritus-utils/<span class="item-name method-name">normalize</span></span></span></span></span></div><div><span><span class="c-tooltip"><a class="reference-link method-name" href="..\m.detritus-utils\function\guildIdToShardId.html">guildIdToShardId</a><span class="c-tooltip-content"><span class="keyword">function</span> <span class="item-name method-name">guildIdToShardId</span><span style="display:block" class="monospace fw-bold">detritus-utils/<span class="item-name method-name">guildIdToShardId</span></span></span></span></span></div><div><span><span class="c-tooltip"><a class="reference-link method-name" href="..\m.detritus-utils\function\URIEncodeWrap.html">URIEncodeWrap</a><span class="c-tooltip-content"><span class="keyword">function</span> <span class="item-name method-name">URIEncodeWrap</span><span style="display:block" class="monospace fw-bold">detritus-utils/<span class="item-name method-name">URIEncodeWrap</span></span></span></span></span></div><div><span><span class="c-tooltip"><a class="reference-link object" href="..\m.detritus-utils\type\URIEncodeWrapFunc.html">URIEncodeWrapFunc</a><span class="c-tooltip-content"><span class="keyword">type</span> <span class="item-name object">URIEncodeWrapFunc</span><span style="display:block" class="monospace fw-bold">detritus-utils/<span class="item-name object">URIEncodeWrapFunc</span></span></span></span></span></div><div><span><span class="c-tooltip"><a class="reference-link object" href="..\m.detritus-utils\type\URIEncodeWrapped.html">URIEncodeWrapped</a><span class="c-tooltip-content"><span class="keyword">type</span> <span class="item-name object">URIEncodeWrapped</span><span style="display:block" class="monospace fw-bold">detritus-utils/<span class="item-name object">URIEncodeWrapped</span></span></span></span></span></div>
+        </div>
+        </div>
+        
     
     
     

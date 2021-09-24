@@ -7,9 +7,7 @@
   <title>CreateMessage |  Detritus</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/an-old-hope.min.css"
-    integrity="sha512-t47CjkEB5hx4FojnE73dBLwgrgvLBpgsHvB40ycK3cYPkLwEp7qNHyRpRDA3/zVVAAOUPJwbMVJq3uJrBqpHVQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link id="highlightTheme" rel="stylesheet" crossorigin="anonymous" referrerpolicy="no-referrer" />
   
     <link href="../../../assets/css/index.css" type="text/css" rel="stylesheet">
     <script src="../../../assets/js/index.js"></script>
@@ -37,7 +35,7 @@
               </a>
              </div>
             <div class="col">
-              <span style="font-size: 1.2em">v0.16.1</span>
+              <span style="font-size: 1.2em">v0.16.3</span>
             </div>
           </div>
         </div>
@@ -47,7 +45,7 @@
       <div class="col-lg-auto sidebar" id="sidebar">
         
     <h1 class="lib-name text-center"><a href="../../../index.html">Detritus</a></h1>
-    <img src="../../../assets/logo.png" alt="Logo" class="img-fluid mx-auto d-block">
+    
     <p class="current-thing">interface <span class="object">CreateMessage</span></p>
     <div class="sidebar-members">
     
@@ -57,7 +55,7 @@
         <span class="sidebar-category">Properties</span>
         </div>
         <div class="collapsible-body open"> 
-        <span class="sidebar-category-member"><a href="#.activity">activity</a></span><span class="sidebar-category-member"><a href="#.allowedMentions">allowedMentions</a></span><span class="sidebar-category-member"><a href="#.applicationId">applicationId</a></span><span class="sidebar-category-member"><a href="#.components">components</a></span><span class="sidebar-category-member"><a href="#.content">content</a></span><span class="sidebar-category-member"><a href="#.embed">embed</a></span><span class="sidebar-category-member"><a href="#.file">file</a></span><span class="sidebar-category-member"><a href="#.files">files</a></span><span class="sidebar-category-member"><a href="#.hasSpoiler">hasSpoiler</a></span><span class="sidebar-category-member"><a href="#.messageReference">messageReference</a></span><span class="sidebar-category-member"><a href="#.nonce">nonce</a></span><span class="sidebar-category-member"><a href="#.stickerIds">stickerIds</a></span><span class="sidebar-category-member"><a href="#.tts">tts</a></span>
+        <span class="sidebar-category-member"><a href="#.activity">activity</a></span><span class="sidebar-category-member"><a href="#.allowedMentions">allowedMentions</a></span><span class="sidebar-category-member"><a href="#.applicationId">applicationId</a></span><span class="sidebar-category-member"><a href="#.components">components</a></span><span class="sidebar-category-member"><a href="#.content">content</a></span><span class="sidebar-category-member"><a href="#.embed">embed</a></span><span class="sidebar-category-member"><a href="#.embeds">embeds</a></span><span class="sidebar-category-member"><a href="#.file">file</a></span><span class="sidebar-category-member"><a href="#.files">files</a></span><span class="sidebar-category-member"><a href="#.hasSpoiler">hasSpoiler</a></span><span class="sidebar-category-member"><a href="#.messageReference">messageReference</a></span><span class="sidebar-category-member"><a href="#.nonce">nonce</a></span><span class="sidebar-category-member"><a href="#.stickerIds">stickerIds</a></span><span class="sidebar-category-member"><a href="#.tts">tts</a></span>
         </div>
         </div>
     
@@ -143,15 +141,9 @@
             <a class="path-member" href="../../../index.html">index</a> / <a class="path-member" href="../../index.html">detritus-client-rest</a> / <a class="path-member" href="../index.html">RequestTypes</a> / <a class="path-member" href="">CreateMessage</a>
           </div>
           <div>
-    <h1>
-        Interface <span class="referenceLink object">CreateMessage</span>
-        <a href=https://github.com/detritusjs/client-rest/tree/master/src/types.ts#L365>
-<span class="float-end sourceCode">
-<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
-  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
-</svg>
-</span></a>
-    </h1>
+    <h1>Interface <span class="referenceLink object">CreateMessage</span></h1>
+
+        <p><a class="secondary-text" href=>Defined in .ts</a></p>
 
 
 
@@ -161,54 +153,38 @@
     <h2>Properties</h2>
 
     <div>
-        <div class="item">
-<div class="item-name item" id=".activity"><a class="property-name" href="#.activity">activity</a><span class="symbol">?</span><span class="symbol">:</span> 
+            <div class="item"><span class="item-name"><a class="property-name" href="#.activity">activity</a><span class="symbol">?</span><span class="symbol">:</span> 
 <span>{ <span class="item-name"><a class="property-name" href="#.partyId">partyId</a><span class="symbol">?</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>, <span class="item-name"><a class="property-name" href="#.sessionId">sessionId</a><span class="symbol">?</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>, <span class="item-name"><a class="property-name" href="#.type">type</a><span class="symbol">?</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span> }</span></span>
 </div>
-        <div class="item">
-<div class="item-name item" id=".allowedMentions"><a class="property-name" href="#.allowedMentions">allowedMentions</a><span class="symbol">?</span><span class="symbol">:</span> 
-<span>{ <div class="left-item"><span class="item-name"><a class="property-name" href="#.parse">parse</a><span class="symbol">?</span><span class="symbol">:</span> 
-<span><span class="reference-link"><a class='object' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></span><span>&lt;<span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>&gt;</span></span></span>,<br><span class="item-name"><a class="property-name" href="#.repliedUser">repliedUser</a><span class="symbol">?</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>,<br><span class="item-name"><a class="property-name" href="#.roles">roles</a><span class="symbol">?</span><span class="symbol">:</span> 
-<span><span class="reference-link"><a class='object' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></span><span>&lt;<span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>&gt;</span></span></span>,<br><span class="item-name"><a class="property-name" href="#.users">users</a><span class="symbol">?</span><span class="symbol">:</span> 
-<span><span class="reference-link"><a class='object' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></span><span>&lt;<span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>&gt;</span></span></span></div> }</span></span>
+            <div class="item"><span class="item-name"><a class="property-name" href="#.allowedMentions">allowedMentions</a><span class="symbol">?</span><span class="symbol">:</span> 
+<span>{ <div class="left-item"><span class="item-name"><a class="property-name" href="#.parse">parse</a><span class="symbol">?</span><span class="symbol">:</span> Array</span>,<br><span class="item-name"><a class="property-name" href="#.repliedUser">repliedUser</a><span class="symbol">?</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>,<br><span class="item-name"><a class="property-name" href="#.roles">roles</a><span class="symbol">?</span><span class="symbol">:</span> Array</span>,<br><span class="item-name"><a class="property-name" href="#.users">users</a><span class="symbol">?</span><span class="symbol">:</span> Array</span></div> }</span></span>
 </div>
-        <div class="item">
-<div class="item-name item" id=".applicationId"><a class="property-name" href="#.applicationId">applicationId</a><span class="symbol">?</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>
+            <div class="item"><span class="item-name"><a class="property-name" href="#.applicationId">applicationId</a><span class="symbol">?</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>
 </div>
-        <div class="item">
-<div class="item-name item" id=".components"><a class="property-name" href="#.components">components</a><span class="symbol">?</span><span class="symbol">:</span> 
-<span><span class="reference-link"><a class='object' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></span><span>&lt;<span><span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client-rest\m.RequestTypes\interface\CreateChannelMessageComponent.html">CreateChannelMessageComponent</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">CreateChannelMessageComponent</span><span style="display:block" class="monospace fw-bold">RequestTypes/<span class="item-name object">CreateChannelMessageComponent</span></span></span></span></span><span class='symbol'> | </span><span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client-rest\m.RequestTypes\interface\toJSON.html">toJSON</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">toJSON</span><span style="display:block" class="monospace fw-bold">RequestTypes/<span class="item-name object">toJSON</span></span></span></span><span>&lt;<span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client-rest\m.RequestTypes\interface\RawChannelMessageComponent.html">RawChannelMessageComponent</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">RawChannelMessageComponent</span><span style="display:block" class="monospace fw-bold">RequestTypes/<span class="item-name object">RawChannelMessageComponent</span></span></span></span></span>&gt;</span></span></span>&gt;</span></span></span>
+            <div class="item"><span class="item-name"><a class="property-name" href="#.components">components</a><span class="symbol">?</span><span class="symbol">:</span> 
+<span>Array<span class='symbol'> | </span><span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client-rest\m.RequestTypes\interface\toJSON.html">toJSON</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">toJSON</span><span style="display:block" class="monospace fw-bold">detritus-client-rest/RequestTypes/<span class="item-name object">toJSON</span></span></span></span><span>&lt;Array&gt;</span></span></span></span>
 </div>
-        <div class="item">
-<div class="item-name item" id=".content"><a class="property-name" href="#.content">content</a><span class="symbol">?</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>
+            <div class="item"><span class="item-name"><a class="property-name" href="#.content">content</a><span class="symbol">?</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>
 </div>
-        <div class="item">
-<div class="item-name item" id=".embed"><a class="property-name" href="#.embed">embed</a><span class="symbol">?</span><span class="symbol">:</span> 
-<span><span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client-rest\m.RequestTypes\interface\CreateChannelMessageEmbed.html">CreateChannelMessageEmbed</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">CreateChannelMessageEmbed</span><span style="display:block" class="monospace fw-bold">RequestTypes/<span class="item-name object">CreateChannelMessageEmbed</span></span></span></span></span><span class='symbol'> | </span><span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client-rest\m.RequestTypes\interface\toJSON.html">toJSON</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">toJSON</span><span style="display:block" class="monospace fw-bold">RequestTypes/<span class="item-name object">toJSON</span></span></span></span><span>&lt;<span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client-rest\m.RequestTypes\interface\RawChannelMessageEmbed.html">RawChannelMessageEmbed</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">RawChannelMessageEmbed</span><span style="display:block" class="monospace fw-bold">RequestTypes/<span class="item-name object">RawChannelMessageEmbed</span></span></span></span></span>&gt;</span></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></span></span></span>
+            <div class="item"><span class="item-name"><a class="property-name" href="#.embed">embed</a><span class="symbol">?</span><span class="symbol">:</span> 
+<span><span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client-rest\m.RequestTypes\interface\CreateChannelMessageEmbed.html">CreateChannelMessageEmbed</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">CreateChannelMessageEmbed</span><span style="display:block" class="monospace fw-bold">detritus-client-rest/RequestTypes/<span class="item-name object">CreateChannelMessageEmbed</span></span></span></span></span><span class='symbol'> | </span><span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client-rest\m.RequestTypes\interface\toJSON.html">toJSON</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">toJSON</span><span style="display:block" class="monospace fw-bold">detritus-client-rest/RequestTypes/<span class="item-name object">toJSON</span></span></span></span><span>&lt;<span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client-rest\interface\RawChannelMessageEmbed.html">RawChannelMessageEmbed</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">RawChannelMessageEmbed</span><span style="display:block" class="monospace fw-bold">detritus-client-rest/<span class="item-name object">RawChannelMessageEmbed</span></span></span></span></span>&gt;</span></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></span></span></span>
 </div>
-        <div class="item">
-<div class="item-name item" id=".file"><a class="property-name" href="#.file">file</a><span class="symbol">?</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client-rest\m.RequestTypes\interface\File.html">File</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">File</span><span style="display:block" class="monospace fw-bold">RequestTypes/<span class="item-name object">File</span></span></span></span></span></span>
+            <div class="item"><span class="item-name"><a class="property-name" href="#.embeds">embeds</a><span class="symbol">?</span><span class="symbol">:</span> Array</span>
 </div>
-        <div class="item">
-<div class="item-name item" id=".files"><a class="property-name" href="#.files">files</a><span class="symbol">?</span><span class="symbol">:</span> 
-<span><span class="reference-link"><a class='object' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></span><span>&lt;<span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client-rest\m.RequestTypes\interface\File.html">File</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">File</span><span style="display:block" class="monospace fw-bold">RequestTypes/<span class="item-name object">File</span></span></span></span></span>&gt;</span></span></span>
+            <div class="item"><span class="item-name"><a class="property-name" href="#.file">file</a><span class="symbol">?</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client-rest\m.RequestTypes\interface\File.html">File</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">File</span><span style="display:block" class="monospace fw-bold">detritus-client-rest/RequestTypes/<span class="item-name object">File</span></span></span></span></span></span>
 </div>
-        <div class="item">
-<div class="item-name item" id=".hasSpoiler"><a class="property-name" href="#.hasSpoiler">hasSpoiler</a><span class="symbol">?</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
+            <div class="item"><span class="item-name"><a class="property-name" href="#.files">files</a><span class="symbol">?</span><span class="symbol">:</span> Array</span>
 </div>
-        <div class="item">
-<div class="item-name item" id=".messageReference"><a class="property-name" href="#.messageReference">messageReference</a><span class="symbol">?</span><span class="symbol">:</span> 
+            <div class="item"><span class="item-name"><a class="property-name" href="#.hasSpoiler">hasSpoiler</a><span class="symbol">?</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
+</div>
+            <div class="item"><span class="item-name"><a class="property-name" href="#.messageReference">messageReference</a><span class="symbol">?</span><span class="symbol">:</span> 
 <span>{ <div class="left-item"><span class="item-name"><a class="property-name" href="#.channelId">channelId</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>,<br><span class="item-name"><a class="property-name" href="#.failIfNotExists">failIfNotExists</a><span class="symbol">?</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>,<br><span class="item-name"><a class="property-name" href="#.guildId">guildId</a><span class="symbol">?</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>,<br><span class="item-name"><a class="property-name" href="#.messageId">messageId</a><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span></div> }</span></span>
 </div>
-        <div class="item">
-<div class="item-name item" id=".nonce"><a class="property-name" href="#.nonce">nonce</a><span class="symbol">?</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>
+            <div class="item"><span class="item-name"><a class="property-name" href="#.nonce">nonce</a><span class="symbol">?</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>
 </div>
-        <div class="item">
-<div class="item-name item" id=".stickerIds"><a class="property-name" href="#.stickerIds">stickerIds</a><span class="symbol">?</span><span class="symbol">:</span> 
-<span><span class="reference-link"><a class='object' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></span><span>&lt;<span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>&gt;</span></span></span>
+            <div class="item"><span class="item-name"><a class="property-name" href="#.stickerIds">stickerIds</a><span class="symbol">?</span><span class="symbol">:</span> Array</span>
 </div>
-        <div class="item">
-<div class="item-name item" id=".tts"><a class="property-name" href="#.tts">tts</a><span class="symbol">?</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
+            <div class="item"><span class="item-name"><a class="property-name" href="#.tts">tts</a><span class="symbol">?</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
 </div>
     </div>
 

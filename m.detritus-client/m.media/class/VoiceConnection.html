@@ -7,9 +7,7 @@
   <title>VoiceConnection |  Detritus</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/an-old-hope.min.css"
-    integrity="sha512-t47CjkEB5hx4FojnE73dBLwgrgvLBpgsHvB40ycK3cYPkLwEp7qNHyRpRDA3/zVVAAOUPJwbMVJq3uJrBqpHVQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link id="highlightTheme" rel="stylesheet" crossorigin="anonymous" referrerpolicy="no-referrer" />
   
     <link href="../../../assets/css/index.css" type="text/css" rel="stylesheet">
     <script src="../../../assets/js/index.js"></script>
@@ -37,7 +35,7 @@
               </a>
              </div>
             <div class="col">
-              <span style="font-size: 1.2em">v0.16.1</span>
+              <span style="font-size: 1.2em">v0.16.3</span>
             </div>
           </div>
         </div>
@@ -47,7 +45,7 @@
       <div class="col-lg-auto sidebar" id="sidebar">
         
     <h1 class="lib-name text-center"><a href="../../../index.html">Detritus</a></h1>
-    <img src="../../../assets/logo.png" alt="Logo" class="img-fluid mx-auto d-block">
+    
     <p class="current-thing text-center">class <span class="object">VoiceConnection</span></p>
     <div class="sidebar-members">
     
@@ -154,29 +152,16 @@
           </div>
           
 <div>
-    <h1>Class <span class="referenceLink object">VoiceConnection</span>
-    <a href=https://github.com/detritusjs/client/tree/master/src/media/voiceconnection.ts#L94>
-<span class="float-end sourceCode">
-<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
-  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
-</svg>
-</span></a>
-    </h1>
+    <h1>Class <span class="referenceLink object">VoiceConnection</span></h1>
+    
+    <p><a class="secondary-text" href=https://github.com/detritusjs/client/tree/master/src/media/voiceconnection.ts#L94>Defined in voiceconnection.ts</a></p>
+
+
     <p class="item-name"><span class="keyword">extends</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-utils\class\EventSpewer.html">EventSpewer</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">EventSpewer</span><span style="display:block" class="monospace fw-bold">detritus-utils/<span class="item-name object">EventSpewer</span></span></span></span></span></p>
 
 
     <p>Voice Connection</p>
 
-
-    <h2>Constructor</h2>
-    
-<div id="class.constructor" class="item">
-    <span class="item-name"><span class="keyword">constructor</span><span>(<span class="item-name"><span class="param-name">client</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\class\ShardClient.html">ShardClient</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">ShardClient</span><span style="display:block" class="monospace fw-bold"><span class="item-name object">ShardClient</span></span></span></span></span></span>, <span class="item-name"><span class="param-name">gateway</span><span class="symbol">:</span> <span><span class="reference-link item-name">Socket</span></span></span>, <span class="item-name"><span class="param-name">options</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.media\interface\VoiceConnectionOptions.html">VoiceConnectionOptions</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">VoiceConnectionOptions</span><span style="display:block" class="monospace fw-bold">media/<span class="item-name object">VoiceConnectionOptions</span></span></span></span></span> <span class="symbol">=</span> {}</span>)</span></span>
-
-    <div class="docblock">
-    <ul></ul>
-    </div>
-</div>
 
     
     <h2>Properties</h2>
@@ -186,7 +171,7 @@
     
     
     
-    <span class="item-name"><a class="property-name" href="#.client">client</a><span>: <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\class\ShardClient.html">ShardClient</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">ShardClient</span><span style="display:block" class="monospace fw-bold"><span class="item-name object">ShardClient</span></span></span></span></span></span>
+    <span class="item-name"><a class="property-name" href="#.client">client</a><span>: <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\class\ShardClient.html">ShardClient</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">ShardClient</span><span style="display:block" class="monospace fw-bold">detritus-client/<span class="item-name object">ShardClient</span></span></span></span></span></span>
     </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/media/voiceconnection.ts#L95>
 <span class="float-end sourceCode">
@@ -223,7 +208,7 @@
     
     
     <span class="item-name"><a class="property-name" href="#.formats">formats</a><span>: 
-<span>{ <span class="item-name"><a class="property-name" href="#.audio">audio</a><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.utils\class\AudioFormat.html">AudioFormat</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">AudioFormat</span><span style="display:block" class="monospace fw-bold">utils/<span class="item-name object">AudioFormat</span></span></span></span></span></span> }</span></span>
+<span>{ <span class="item-name"><a class="property-name" href="#.audio">audio</a><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.utils\class\AudioFormat.html">AudioFormat</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">AudioFormat</span><span style="display:block" class="monospace fw-bold">detritus-client/utils/<span class="item-name object">AudioFormat</span></span></span></span></span></span> }</span></span>
     </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/media/voiceconnection.ts#L97>
 <span class="float-end sourceCode">
@@ -241,7 +226,7 @@
     
     
     
-    <span class="item-name"><a class="property-name" href="#.gateway">gateway</a><span>: <span><span class="reference-link item-name">Socket</span></span></span>
+    <span class="item-name"><a class="property-name" href="#.gateway">gateway</a><span>: <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client-socket\class\Socket.html">Socket</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Socket</span><span style="display:block" class="monospace fw-bold">detritus-client-socket/<span class="item-name object">Socket</span></span></span></span></span></span>
     </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/media/voiceconnection.ts#L100>
 <span class="float-end sourceCode">
@@ -259,7 +244,7 @@
     
     
     
-    <span class="item-name"><a class="property-name" href="#.handler">handler</a><span>: <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.media\class\MediaHandler.html">MediaHandler</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">MediaHandler</span><span style="display:block" class="monospace fw-bold">media/<span class="item-name object">MediaHandler</span></span></span></span></span></span>
+    <span class="item-name"><a class="property-name" href="#.handler">handler</a><span>: <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.media\class\MediaHandler.html">MediaHandler</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">MediaHandler</span><span style="display:block" class="monospace fw-bold">detritus-client/media/<span class="item-name object">MediaHandler</span></span></span></span></span></span>
     </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/media/voiceconnection.ts#L101>
 <span class="float-end sourceCode">
@@ -278,7 +263,7 @@
     
     
     <span class="item-name"><a class="property-name" href="#.opusDecoder">opusDecoder</a><span>: 
-<span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></span><span class='symbol'> | </span><span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.media\interface\OpusDecoderSettings.html">OpusDecoderSettings</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">OpusDecoderSettings</span><span style="display:block" class="monospace fw-bold">media/<span class="item-name object">OpusDecoderSettings</span></span></span></span></span></span></span>
+<span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></span><span class='symbol'> | </span><span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.media\interface\OpusDecoderSettings.html">OpusDecoderSettings</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">OpusDecoderSettings</span><span style="display:block" class="monospace fw-bold">detritus-client/media/<span class="item-name object">OpusDecoderSettings</span></span></span></span></span></span></span>
     </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/media/voiceconnection.ts#L102>
 <span class="float-end sourceCode">
@@ -296,7 +281,7 @@
     
     
     
-    <span class="item-name"><a class="property-name" href="#.opusDecoders">opusDecoders</a><span>: <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-utils\class\BaseCollection.html">BaseCollection</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">BaseCollection</span><span style="display:block" class="monospace fw-bold">detritus-utils/<span class="item-name object">BaseCollection</span></span></span></span><span>&lt;<span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>, <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.media\m.encoders\class\AudioOpus.html">AudioOpus</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">AudioOpus</span><span style="display:block" class="monospace fw-bold">media/encoders/<span class="item-name object">AudioOpus</span></span></span></span></span>&gt;</span></span></span>
+    <span class="item-name"><a class="property-name" href="#.opusDecoders">opusDecoders</a><span>: <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-utils\class\BaseCollection.html">BaseCollection</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">BaseCollection</span><span style="display:block" class="monospace fw-bold">detritus-utils/<span class="item-name object">BaseCollection</span></span></span></span><span>&lt;<span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>, <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.media\m.encoders\class\AudioOpus.html">AudioOpus</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">AudioOpus</span><span style="display:block" class="monospace fw-bold">detritus-client/media/encoders/<span class="item-name object">AudioOpus</span></span></span></span></span>&gt;</span></span></span>
     </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/media/voiceconnection.ts#L103>
 <span class="float-end sourceCode">
@@ -315,7 +300,7 @@
     
     
     <span class="item-name"><a class="property-name" href="#.opusEncoder">opusEncoder</a><span>: 
-<span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></span><span class='symbol'> | </span><span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.media\m.encoders\class\AudioOpus.html">AudioOpus</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">AudioOpus</span><span style="display:block" class="monospace fw-bold">media/encoders/<span class="item-name object">AudioOpus</span></span></span></span></span></span></span>
+<span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></span><span class='symbol'> | </span><span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.media\m.encoders\class\AudioOpus.html">AudioOpus</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">AudioOpus</span><span style="display:block" class="monospace fw-bold">detritus-client/media/encoders/<span class="item-name object">AudioOpus</span></span></span></span></span></span></span>
     </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/media/voiceconnection.ts#L104>
 <span class="float-end sourceCode">
@@ -340,7 +325,7 @@
     <span class="modifier">get</span>
     
         <a class="item-name method-name" href="#.channel">channel</a><span>()</span><span><span class="symbol">:</span> 
-<span><span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.structures\type\Channel.html">Channel</a><span class="c-tooltip-content"><span class="keyword">type</span> <span class="item-name object">Channel</span><span style="display:block" class="monospace fw-bold">structures/<span class="item-name object">Channel</span></span></span></span></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></span></span></span>
+<span><span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.structures\type\Channel.html">Channel</a><span class="c-tooltip-content"><span class="keyword">type</span> <span class="item-name object">Channel</span><span style="display:block" class="monospace fw-bold">detritus-client/structures/<span class="item-name object">Channel</span></span></span></span></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></span></span></span>
     </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/media/voiceconnection.ts#L150>
 <span class="float-end sourceCode">
@@ -385,7 +370,7 @@
     <span class="modifier">get</span>
     
         <a class="item-name method-name" href="#.guild">guild</a><span>()</span><span><span class="symbol">:</span> 
-<span><span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.structures\class\Guild.html">Guild</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Guild</span><span style="display:block" class="monospace fw-bold">structures/<span class="item-name object">Guild</span></span></span></span></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></span></span></span>
+<span><span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.structures\class\Guild.html">Guild</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Guild</span><span style="display:block" class="monospace fw-bold">detritus-client/structures/<span class="item-name object">Guild</span></span></span></span></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></span></span></span>
     </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/media/voiceconnection.ts#L161>
 <span class="float-end sourceCode">
@@ -453,7 +438,7 @@
     <span class="modifier">get</span>
     
         <a class="item-name method-name" href="#.member">member</a><span>()</span><span><span class="symbol">:</span> 
-<span><span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.structures\class\Member.html">Member</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Member</span><span style="display:block" class="monospace fw-bold">structures/<span class="item-name object">Member</span></span></span></span></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></span></span></span>
+<span><span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.structures\class\Member.html">Member</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">Member</span><span style="display:block" class="monospace fw-bold">detritus-client/structures/<span class="item-name object">Member</span></span></span></span></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></span></span></span>
     </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/media/voiceconnection.ts#L176>
 <span class="float-end sourceCode">
@@ -498,7 +483,7 @@
     <span class="modifier">get</span>
     
         <a class="item-name method-name" href="#.user">user</a><span>()</span><span><span class="symbol">:</span> 
-<span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></span><span class='symbol'> | </span><span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.structures\class\User.html">User</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">User</span><span style="display:block" class="monospace fw-bold">structures/<span class="item-name object">User</span></span></span></span></span></span></span>
+<span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></span><span class='symbol'> | </span><span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.structures\class\User.html">User</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">User</span><span style="display:block" class="monospace fw-bold">detritus-client/structures/<span class="item-name object">User</span></span></span></span></span></span></span>
     </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/media/voiceconnection.ts#L187>
 <span class="float-end sourceCode">
@@ -543,7 +528,7 @@
     <span class="modifier">get</span>
     
         <a class="item-name method-name" href="#.voiceState">voiceState</a><span>()</span><span><span class="symbol">:</span> 
-<span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></span><span class='symbol'> | </span><span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.structures\class\VoiceState.html">VoiceState</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">VoiceState</span><span style="display:block" class="monospace fw-bold">structures/<span class="item-name object">VoiceState</span></span></span></span></span></span></span>
+<span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></span><span class='symbol'> | </span><span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.structures\class\VoiceState.html">VoiceState</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">VoiceState</span><span style="display:block" class="monospace fw-bold">detritus-client/structures/<span class="item-name object">VoiceState</span></span></span></span></span></span></span>
     </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/media/voiceconnection.ts#L195>
 <span class="float-end sourceCode">
@@ -565,9 +550,7 @@
     
     
     
-        <a class="item-name method-name" href="#.decode">decode</a><span>(<span class="item-name"><span class="param-name">userId</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>, <span class="item-name"><span class="param-name">data</span><span class="symbol">:</span> 
-<span><span class="reference-link"><a class='external' href="https://nodejs.org/api/buffer.html">Buffer</a></span></span></span>, <span class="item-name"><span class="param-name">options</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.media\interface\DecodeSettings.html">DecodeSettings</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">DecodeSettings</span><span style="display:block" class="monospace fw-bold">media/<span class="item-name object">DecodeSettings</span></span></span></span></span> <span class="symbol">=</span> {}</span>)</span><span><span class="symbol">:</span> 
-<span><span class="reference-link"><a class='external' href="https://nodejs.org/api/buffer.html">Buffer</a></span></span></span>
+        <a class="item-name method-name" href="#.decode">decode</a><span>(<span class="item-name"><span class="param-name">userId</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>, <span class="item-name"><span class="param-name">data</span><span class="symbol">:</span> Buffer</span>, <span class="item-name"><span class="param-name">options</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.media\interface\DecodeSettings.html">DecodeSettings</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">DecodeSettings</span><span style="display:block" class="monospace fw-bold">detritus-client/media/<span class="item-name object">DecodeSettings</span></span></span></span></span> <span class="symbol">=</span> {}</span>)</span><span><span class="symbol">:</span> Buffer</span>
     </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/media/voiceconnection.ts#L199>
 <span class="float-end sourceCode">
@@ -589,7 +572,7 @@
     
     
     
-        <a class="item-name method-name" href="#.fetchOpusDecoder">fetchOpusDecoder</a><span>(<span class="item-name"><span class="param-name">userId</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>)</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.media\m.encoders\class\AudioOpus.html">AudioOpus</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">AudioOpus</span><span style="display:block" class="monospace fw-bold">media/encoders/<span class="item-name object">AudioOpus</span></span></span></span></span></span>
+        <a class="item-name method-name" href="#.fetchOpusDecoder">fetchOpusDecoder</a><span>(<span class="item-name"><span class="param-name">userId</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>)</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.media\m.encoders\class\AudioOpus.html">AudioOpus</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">AudioOpus</span><span style="display:block" class="monospace fw-bold">detritus-client/media/encoders/<span class="item-name object">AudioOpus</span></span></span></span></span></span>
     </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/media/voiceconnection.ts#L219>
 <span class="float-end sourceCode">
@@ -633,8 +616,7 @@
     
     
     
-        <a class="item-name method-name" href="#.sendAudio">sendAudio</a><span>(<span class="item-name"><span class="param-name">data</span><span class="symbol">:</span> 
-<span><span class="reference-link"><a class='external' href="https://nodejs.org/api/buffer.html">Buffer</a></span></span></span>, <span class="item-name"><span class="param-name">options</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.media\interface\SendAudioSettings.html">SendAudioSettings</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">SendAudioSettings</span><span style="display:block" class="monospace fw-bold">media/<span class="item-name object">SendAudioSettings</span></span></span></span></span> <span class="symbol">=</span> {}</span>)</span><span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://www.typescriptlang.org/docs/handbook/2/functions.html#void">void</a></span></span>
+        <a class="item-name method-name" href="#.sendAudio">sendAudio</a><span>(<span class="item-name"><span class="param-name">data</span><span class="symbol">:</span> Buffer</span>, <span class="item-name"><span class="param-name">options</span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.media\interface\SendAudioSettings.html">SendAudioSettings</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">SendAudioSettings</span><span style="display:block" class="monospace fw-bold">detritus-client/media/<span class="item-name object">SendAudioSettings</span></span></span></span></span> <span class="symbol">=</span> {}</span>)</span><span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://www.typescriptlang.org/docs/handbook/2/functions.html#void">void</a></span></span>
     </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/media/voiceconnection.ts#L247>
 <span class="float-end sourceCode">
@@ -701,7 +683,7 @@
     
     
         <a class="item-name method-name" href="#.setOpusDecoder">setOpusDecoder</a><span>(<span class="item-name"><span class="param-name">options</span><span class="symbol">:</span> 
-<span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span><span class='symbol'> | </span><span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.media\interface\OpusOptions.html">OpusOptions</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">OpusOptions</span><span style="display:block" class="monospace fw-bold">media/<span class="item-name object">OpusOptions</span></span></span></span></span></span> <span class="symbol">=</span> {}</span>)</span><span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://www.typescriptlang.org/docs/handbook/2/functions.html#void">void</a></span></span>
+<span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span><span class='symbol'> | </span><span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.media\interface\OpusOptions.html">OpusOptions</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">OpusOptions</span><span style="display:block" class="monospace fw-bold">detritus-client/media/<span class="item-name object">OpusOptions</span></span></span></span></span></span> <span class="symbol">=</span> {}</span>)</span><span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://www.typescriptlang.org/docs/handbook/2/functions.html#void">void</a></span></span>
     </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/media/voiceconnection.ts#L285>
 <span class="float-end sourceCode">
@@ -724,7 +706,7 @@
     
     
         <a class="item-name method-name" href="#.setOpusEncoder">setOpusEncoder</a><span>(<span class="item-name"><span class="param-name">options</span><span class="symbol">:</span> 
-<span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span><span class='symbol'> | </span><span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.media\interface\OpusOptions.html">OpusOptions</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">OpusOptions</span><span style="display:block" class="monospace fw-bold">media/<span class="item-name object">OpusOptions</span></span></span></span></span></span> <span class="symbol">=</span> {}</span>)</span><span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://www.typescriptlang.org/docs/handbook/2/functions.html#void">void</a></span></span>
+<span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span><span class='symbol'> | </span><span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.media\interface\OpusOptions.html">OpusOptions</a><span class="c-tooltip-content"><span class="keyword">interface</span> <span class="item-name object">OpusOptions</span><span style="display:block" class="monospace fw-bold">detritus-client/media/<span class="item-name object">OpusOptions</span></span></span></span></span></span> <span class="symbol">=</span> {}</span>)</span><span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://www.typescriptlang.org/docs/handbook/2/functions.html#void">void</a></span></span>
     </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/media/voiceconnection.ts#L332>
 <span class="float-end sourceCode">
@@ -747,8 +729,7 @@
     
     
         <a class="item-name method-name" href="#.setSpeaking">setSpeaking</a><span>(<span class="item-name"><span class="param-name">options</span><span class="symbol">:</span> 
-<span>{ <div class="left-item"><span class="item-name"><a class="property-name" href="#.delay">delay</a><span class="symbol">?</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>,<br><span class="item-name"><a class="property-name" href="#.ssrc">ssrc</a><span class="symbol">?</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>,<br><span class="item-name"><a class="property-name" href="#.soundshare">soundshare</a><span class="symbol">?</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>,<br><span class="item-name"><a class="property-name" href="#.voice">voice</a><span class="symbol">?</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span></div> }</span></span>)</span><span><span class="symbol">:</span> 
-<span><span class="reference-link"><a class='external' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a></span><span>&lt;<span class="reference-link"><a class='primitive' href="https://www.typescriptlang.org/docs/handbook/2/functions.html#void">void</a></span>&gt;</span></span></span>
+<span>{ <div class="left-item"><span class="item-name"><a class="property-name" href="#.delay">delay</a><span class="symbol">?</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>,<br><span class="item-name"><a class="property-name" href="#.ssrc">ssrc</a><span class="symbol">?</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>,<br><span class="item-name"><a class="property-name" href="#.soundshare">soundshare</a><span class="symbol">?</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>,<br><span class="item-name"><a class="property-name" href="#.voice">voice</a><span class="symbol">?</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span></div> }</span></span>)</span><span><span class="symbol">:</span> Promise</span>
     </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/media/voiceconnection.ts#L374>
 <span class="float-end sourceCode">
@@ -771,8 +752,7 @@
     
     
         <a class="item-name method-name" href="#.setState">setState</a><span>(<span class="item-name"><span class="param-name">options</span><span class="symbol">:</span> 
-<span>{ <span class="item-name"><a class="property-name" href="#.selfDeaf">selfDeaf</a><span class="symbol">?</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>, <span class="item-name"><a class="property-name" href="#.selfMute">selfMute</a><span class="symbol">?</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>, <span class="item-name"><a class="property-name" href="#.selfVideo">selfVideo</a><span class="symbol">?</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span> }</span></span>)</span><span><span class="symbol">:</span> 
-<span><span class="reference-link"><a class='external' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a></span><span>&lt;<span class="reference-link"><a class='primitive' href="https://www.typescriptlang.org/docs/handbook/2/functions.html#void">void</a></span>&gt;</span></span></span>
+<span>{ <span class="item-name"><a class="property-name" href="#.selfDeaf">selfDeaf</a><span class="symbol">?</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>, <span class="item-name"><a class="property-name" href="#.selfMute">selfMute</a><span class="symbol">?</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>, <span class="item-name"><a class="property-name" href="#.selfVideo">selfVideo</a><span class="symbol">?</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span> }</span></span>)</span><span><span class="symbol">:</span> Promise</span>
     </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/media/voiceconnection.ts#L387>
 <span class="float-end sourceCode">
@@ -794,8 +774,7 @@
     
     
     
-        <a class="item-name method-name" href="#.setDeaf">setDeaf</a><span>(<span class="item-name"><span class="param-name">selfDeaf</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>)</span><span><span class="symbol">:</span> 
-<span><span class="reference-link"><a class='external' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a></span><span>&lt;<span class="reference-link"><a class='primitive' href="https://www.typescriptlang.org/docs/handbook/2/functions.html#void">void</a></span>&gt;</span></span></span>
+        <a class="item-name method-name" href="#.setDeaf">setDeaf</a><span>(<span class="item-name"><span class="param-name">selfDeaf</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>)</span><span><span class="symbol">:</span> Promise</span>
     </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/media/voiceconnection.ts#L399>
 <span class="float-end sourceCode">
@@ -817,8 +796,7 @@
     
     
     
-        <a class="item-name method-name" href="#.setMute">setMute</a><span>(<span class="item-name"><span class="param-name">selfMute</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>)</span><span><span class="symbol">:</span> 
-<span><span class="reference-link"><a class='external' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a></span><span>&lt;<span class="reference-link"><a class='primitive' href="https://www.typescriptlang.org/docs/handbook/2/functions.html#void">void</a></span>&gt;</span></span></span>
+        <a class="item-name method-name" href="#.setMute">setMute</a><span>(<span class="item-name"><span class="param-name">selfMute</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>)</span><span><span class="symbol">:</span> Promise</span>
     </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/media/voiceconnection.ts#L403>
 <span class="float-end sourceCode">
@@ -840,8 +818,7 @@
     
     
     
-        <a class="item-name method-name" href="#.setVideo">setVideo</a><span>(<span class="item-name"><span class="param-name">selfVideo</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>)</span><span><span class="symbol">:</span> 
-<span><span class="reference-link"><a class='external' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a></span><span>&lt;<span class="reference-link"><a class='primitive' href="https://www.typescriptlang.org/docs/handbook/2/functions.html#void">void</a></span>&gt;</span></span></span>
+        <a class="item-name method-name" href="#.setVideo">setVideo</a><span>(<span class="item-name"><span class="param-name">selfVideo</span><span class="symbol">:</span> <span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>)</span><span><span class="symbol">:</span> Promise</span>
     </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/media/voiceconnection.ts#L407>
 <span class="float-end sourceCode">
@@ -867,45 +844,7 @@
     
         <a class="item-name method-name" href="#.on">on</a><span>(<span class="item-name"><span class="param-name">event</span><span class="symbol">:</span> 
 <span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol">symbol</a></span></span></span>, <span class="item-name"><span class="param-name">listener</span><span class="symbol">:</span> <span>(<span class="item-name"><span class="symbol">...</span><span class="param-name">args</span><span class="symbol">:</span> 
-<span><span class="reference-link"><span class='primitive'>any</span></span>[]</span></span>) <span class="symbol">=></span> <span class="reference-link"><a class='primitive' href="https://www.typescriptlang.org/docs/handbook/2/functions.html#void">void</a></span></span></span>)</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.media\class\VoiceConnection.html">VoiceConnection</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">VoiceConnection</span><span style="display:block" class="monospace fw-bold">media/<span class="item-name object">VoiceConnection</span></span></span></span></span></span>
-    </span>
-    <a href=https://github.com/detritusjs/client/tree/master/src/media/voiceconnection.ts#L415>
-<span class="float-end sourceCode">
-<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
-  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
-</svg>
-</span></a>
-        <div class="docblock">
-        <ul></ul>
-        
-    </div>
-    <span class="monospace">
-    
-    
-    
-    
-    
-    
-        <a class="item-name method-name" href="#.on">on</a><span>(<span class="item-name"><span class="param-name">event</span><span class="symbol">:</span> <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">'connect'</a></span></span>, <span class="item-name"><span class="param-name">listener</span><span class="symbol">:</span> <span>(<span class="item-name"><span class="param-name">payload</span><span class="symbol">:</span> <span class="reference-link"><span class='primitive'>any</span></span></span>) <span class="symbol">=></span> <span class="reference-link"><span class='primitive'>any</span></span></span></span>)</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.media\class\VoiceConnection.html">VoiceConnection</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">VoiceConnection</span><span style="display:block" class="monospace fw-bold">media/<span class="item-name object">VoiceConnection</span></span></span></span></span></span>
-    </span>
-    <a href=https://github.com/detritusjs/client/tree/master/src/media/voiceconnection.ts#L415>
-<span class="float-end sourceCode">
-<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
-  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
-</svg>
-</span></a>
-        <div class="docblock">
-        <ul></ul>
-        
-    </div>
-    <span class="monospace">
-    
-    
-    
-    
-    
-    
-        <a class="item-name method-name" href="#.on">on</a><span>(<span class="item-name"><span class="param-name">event</span><span class="symbol">:</span> <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">'disconnect'</a></span></span>, <span class="item-name"><span class="param-name">listener</span><span class="symbol">:</span> <span>(<span class="item-name"><span class="param-name">payload</span><span class="symbol">:</span> <span class="reference-link"><span class='primitive'>any</span></span></span>) <span class="symbol">=></span> <span class="reference-link"><span class='primitive'>any</span></span></span></span>)</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.media\class\VoiceConnection.html">VoiceConnection</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">VoiceConnection</span><span style="display:block" class="monospace fw-bold">media/<span class="item-name object">VoiceConnection</span></span></span></span></span></span>
+<span><span class="reference-link"><span class='primitive'>any</span></span>[]</span></span>) <span class="symbol">=></span> <span class="reference-link"><a class='primitive' href="https://www.typescriptlang.org/docs/handbook/2/functions.html#void">void</a></span></span></span>)</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.media\class\VoiceConnection.html">VoiceConnection</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">VoiceConnection</span><span style="display:block" class="monospace fw-bold">detritus-client/media/<span class="item-name object">VoiceConnection</span></span></span></span></span></span>
     </span>
     <a href=https://github.com/detritusjs/client/tree/master/src/media/voiceconnection.ts#L415>
 <span class="float-end sourceCode">
@@ -921,7 +860,7 @@
         <div style="margin-bottom: 15px">
         <div class="collapsible-trigger">
         <span class="collapsible-arrow"></span>
-        <span class="secondary-text">2 more overloads</span>
+        <span class="secondary-text">4 more overloads</span>
         </div>
         <div class="collapsible-body">
             <span class="monospace">
@@ -931,7 +870,33 @@
     
     
     
-        <a class="item-name method-name" href="#.on">on</a><span>(<span class="item-name"><span class="param-name">event</span><span class="symbol">:</span> <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">'speaking'</a></span></span>, <span class="item-name"><span class="param-name">listener</span><span class="symbol">:</span> <span>(<span class="item-name"><span class="param-name">payload</span><span class="symbol">:</span> <span class="reference-link"><span class='primitive'>any</span></span></span>) <span class="symbol">=></span> <span class="reference-link"><span class='primitive'>any</span></span></span></span>)</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.media\class\VoiceConnection.html">VoiceConnection</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">VoiceConnection</span><span style="display:block" class="monospace fw-bold">media/<span class="item-name object">VoiceConnection</span></span></span></span></span></span>
+        <a class="item-name method-name" href="#.on">on</a><span>(<span class="item-name"><span class="param-name">event</span><span class="symbol">:</span> <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">'connect'</a></span></span>, <span class="item-name"><span class="param-name">listener</span><span class="symbol">:</span> <span>(<span class="item-name"><span class="param-name">payload</span><span class="symbol">:</span> <span class="reference-link"><span class='primitive'>any</span></span></span>) <span class="symbol">=></span> <span class="reference-link"><span class='primitive'>any</span></span></span></span>)</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.media\class\VoiceConnection.html">VoiceConnection</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">VoiceConnection</span><span style="display:block" class="monospace fw-bold">detritus-client/media/<span class="item-name object">VoiceConnection</span></span></span></span></span></span>
+    </span>
+        <div class="docblock">
+        <ul></ul>
+        
+    </div>
+    <span class="monospace">
+    
+    
+    
+    
+    
+    
+        <a class="item-name method-name" href="#.on">on</a><span>(<span class="item-name"><span class="param-name">event</span><span class="symbol">:</span> <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">'disconnect'</a></span></span>, <span class="item-name"><span class="param-name">listener</span><span class="symbol">:</span> <span>(<span class="item-name"><span class="param-name">payload</span><span class="symbol">:</span> <span class="reference-link"><span class='primitive'>any</span></span></span>) <span class="symbol">=></span> <span class="reference-link"><span class='primitive'>any</span></span></span></span>)</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.media\class\VoiceConnection.html">VoiceConnection</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">VoiceConnection</span><span style="display:block" class="monospace fw-bold">detritus-client/media/<span class="item-name object">VoiceConnection</span></span></span></span></span></span>
+    </span>
+        <div class="docblock">
+        <ul></ul>
+        
+    </div>
+    <span class="monospace">
+    
+    
+    
+    
+    
+    
+        <a class="item-name method-name" href="#.on">on</a><span>(<span class="item-name"><span class="param-name">event</span><span class="symbol">:</span> <span class="reference-link"><a class="primitive string-literal" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">'speaking'</a></span></span>, <span class="item-name"><span class="param-name">listener</span><span class="symbol">:</span> <span>(<span class="item-name"><span class="param-name">payload</span><span class="symbol">:</span> <span class="reference-link"><span class='primitive'>any</span></span></span>) <span class="symbol">=></span> <span class="reference-link"><span class='primitive'>any</span></span></span></span>)</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.media\class\VoiceConnection.html">VoiceConnection</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">VoiceConnection</span><span style="display:block" class="monospace fw-bold">detritus-client/media/<span class="item-name object">VoiceConnection</span></span></span></span></span></span>
     </span>
         <div class="docblock">
         <ul></ul>
@@ -946,7 +911,7 @@
     
         <a class="item-name method-name" href="#.on">on</a><span>(<span class="item-name"><span class="param-name">event</span><span class="symbol">:</span> 
 <span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span><span class='symbol'> | </span><span class="reference-link"><a class='primitive' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol">symbol</a></span></span></span>, <span class="item-name"><span class="param-name">listener</span><span class="symbol">:</span> <span>(<span class="item-name"><span class="symbol">...</span><span class="param-name">args</span><span class="symbol">:</span> 
-<span><span class="reference-link"><span class='primitive'>any</span></span>[]</span></span>) <span class="symbol">=></span> <span class="reference-link"><a class='primitive' href="https://www.typescriptlang.org/docs/handbook/2/functions.html#void">void</a></span></span></span>)</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.media\class\VoiceConnection.html">VoiceConnection</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">VoiceConnection</span><span style="display:block" class="monospace fw-bold">media/<span class="item-name object">VoiceConnection</span></span></span></span></span></span>
+<span><span class="reference-link"><span class='primitive'>any</span></span>[]</span></span>) <span class="symbol">=></span> <span class="reference-link"><a class='primitive' href="https://www.typescriptlang.org/docs/handbook/2/functions.html#void">void</a></span></span></span>)</span><span><span class="symbol">:</span> <span><span class="c-tooltip"><a class="reference-link object" href="..\..\..\m.detritus-client\m.media\class\VoiceConnection.html">VoiceConnection</a><span class="c-tooltip-content"><span class="keyword">class</span> <span class="item-name object">VoiceConnection</span><span style="display:block" class="monospace fw-bold">detritus-client/media/<span class="item-name object">VoiceConnection</span></span></span></span></span></span>
     </span>
         <div class="docblock">
         <ul></ul>
@@ -956,7 +921,7 @@
         </div>
         </div>
         </div>
-        </div></div>
+    </div></div>
 
 </div>
         </div>

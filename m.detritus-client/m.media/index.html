@@ -7,9 +7,7 @@
   <title>media |  Detritus</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/an-old-hope.min.css"
-    integrity="sha512-t47CjkEB5hx4FojnE73dBLwgrgvLBpgsHvB40ycK3cYPkLwEp7qNHyRpRDA3/zVVAAOUPJwbMVJq3uJrBqpHVQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link id="highlightTheme" rel="stylesheet" crossorigin="anonymous" referrerpolicy="no-referrer" />
   
     <link href="../../assets/css/index.css" type="text/css" rel="stylesheet">
     <script src="../../assets/js/index.js"></script>
@@ -37,7 +35,7 @@
               </a>
              </div>
             <div class="col">
-              <span style="font-size: 1.2em">v0.16.1</span>
+              <span style="font-size: 1.2em">v0.16.3</span>
             </div>
           </div>
         </div>
@@ -47,7 +45,7 @@
       <div class="col-lg-auto sidebar" id="sidebar">
         
     <h1 class="lib-name text-center"><a href="../../index.html">Detritus</a></h1>
-    <img src="../../assets/logo.png" alt="Logo" class="img-fluid mx-auto d-block">
+    
     <p class="current-thing text-center">module <span class="module">media</span></p>
     <div class="sidebar-members">
     
@@ -57,7 +55,7 @@
         <span class="sidebar-category">Modules</span>
         </div>
         <div class="collapsible-body open"> 
-        <span class="sidebar-category-member"><a href="m.encoders/index.html">encoders</a></span><span class="sidebar-category-member"><a href="m.MediaEvents/index.html">MediaEvents</a></span><span class="sidebar-category-member"><a href="m.MediaRawEvents/index.html">MediaRawEvents</a></span>
+        <span class="sidebar-category-member"><a href="m.encoders/index.html">encoders</a></span><span class="sidebar-category-member"><a href="m.MediaRawEvents/index.html">MediaRawEvents</a></span><span class="sidebar-category-member"><a href="m.MediaEvents/index.html">MediaEvents</a></span>
         </div>
         </div>
     
@@ -67,7 +65,7 @@
         <span class="sidebar-category">Classes</span>
         </div>
         <div class="collapsible-body open"> 
-        <span class="sidebar-category-member"><a href="class/MediaHandler.html">MediaHandler</a></span><span class="sidebar-category-member"><a href="class/MediaGatewayOpHandler.html">MediaGatewayOpHandler</a></span><span class="sidebar-category-member"><a href="class/VoiceConnection.html">VoiceConnection</a></span>
+        <span class="sidebar-category-member"><a href="class/MediaGatewayOpHandler.html">MediaGatewayOpHandler</a></span><span class="sidebar-category-member"><a href="class/MediaHandler.html">MediaHandler</a></span><span class="sidebar-category-member"><a href="class/VoiceConnection.html">VoiceConnection</a></span>
         </div>
         </div>
     
@@ -77,17 +75,7 @@
         <span class="sidebar-category">Interfaces</span>
         </div>
         <div class="collapsible-body open"> 
-        <span class="sidebar-category-member"><a href="interface/DecodeSettings.html">DecodeSettings</a></span><span class="sidebar-category-member"><a href="interface/OpusOptions.html">OpusOptions</a></span><span class="sidebar-category-member"><a href="interface/OpusDecoderSettings.html">OpusDecoderSettings</a></span><span class="sidebar-category-member"><a href="interface/SendAudioSettings.html">SendAudioSettings</a></span><span class="sidebar-category-member"><a href="interface/VoiceConnectionOptions.html">VoiceConnectionOptions</a></span>
-        </div>
-        </div>
-    
-        <div class="sidebar-member">
-        <div class="collapsible-trigger">
-        <span class="collapsible-arrow open"></span>
-        <span class="sidebar-category">Types</span>
-        </div>
-        <div class="collapsible-body open"> 
-        <span class="sidebar-category-member"><a href="type/MediaGatewayOpHandlerFunction.html">MediaGatewayOpHandlerFunction</a></span>
+        <span class="sidebar-category-member"><a href="interface/OpusOptions.html">OpusOptions</a></span><span class="sidebar-category-member"><a href="interface/VoiceConnectionOptions.html">VoiceConnectionOptions</a></span><span class="sidebar-category-member"><a href="interface/OpusDecoderSettings.html">OpusDecoderSettings</a></span><span class="sidebar-category-member"><a href="interface/DecodeSettings.html">DecodeSettings</a></span><span class="sidebar-category-member"><a href="interface/SendAudioSettings.html">SendAudioSettings</a></span>
         </div>
         </div>
     
@@ -178,7 +166,7 @@
     <h1>
     Module
     <span class="referenceLink module">media</span>
-    <a href=https://github.com/detritusjs/client/tree/master/src/media>
+        <a href=https://github.com/detritusjs/client/tree/master/src/media>
 <span class="float-end sourceCode">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
   <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
@@ -186,36 +174,9 @@
 </span></a>
     </h1>
 
+
+
     
-    
-    <h3>Modules</h3>
-    <div><a class="module-item module" href="m.encoders/index.html">encoders</a></div><div><a class="module-item module" href="m.MediaEvents/index.html">MediaEvents</a></div><div><a class="module-item module" href="m.MediaRawEvents/index.html">MediaRawEvents</a></div>
-    
-    
-    <h3>Classes</h3>
-    <table>
-    <tbody>
-    <tr><td><a class="module-item object" href="class/MediaHandler.html">MediaHandler</a></td><td>Voice Connection Handler</td></tr><tr><td><a class="module-item object" href="class/MediaGatewayOpHandler.html">MediaGatewayOpHandler</a></td><td>Media Gateway Op Code Handler</td></tr><tr><td><a class="module-item object" href="class/VoiceConnection.html">VoiceConnection</a></td><td>Voice Connection</td></tr>
-    </tbody>
-    </table>
-    
-    
-    <h3>Interfaces</h3>
-    <table>
-    <tbody>
-    <tr><td><a class="module-item object" href="interface/DecodeSettings.html">DecodeSettings</a></td><td>Voice Connection .decode() Settings</td></tr><tr><td><a class="module-item object" href="interface/OpusOptions.html">OpusOptions</a></td><td>Voice Connection Opus Options</td></tr><tr><td><a class="module-item object" href="interface/OpusDecoderSettings.html">OpusDecoderSettings</a></td><td>Voice Connection Opus Decoder Settings</td></tr><tr><td><a class="module-item object" href="interface/SendAudioSettings.html">SendAudioSettings</a></td><td>Voice Connection .sendAudio() Settings</td></tr><tr><td><a class="module-item object" href="interface/VoiceConnectionOptions.html">VoiceConnectionOptions</a></td><td>Voice Connection Options</td></tr>
-    </tbody>
-    </table>
-    
-    
-    
-    
-    <h3>Types</h3>
-    <table>
-    <tbody>
-    <tr><td><a class="module-item object" href="type/MediaGatewayOpHandlerFunction.html">MediaGatewayOpHandlerFunction</a></td><td>Media Gateway Op Code Handler Function</td></tr>
-    </tbody>
-    </table>
     
     
     
