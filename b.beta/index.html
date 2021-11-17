@@ -1,0 +1,245 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><title>Detritus</title><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous"><link id="highlightTheme" rel="stylesheet" crossorigin="anonymous"><link href="assets/css/index.css" type="text/css" rel="stylesheet"><script src="assets/js/index.js"></script><script>window.depth="";window.ab=true;</script></head><body><nav class="container-fluid navi"><div class="row"><div class="col-4"><input class="form-control search" id="search" type="search" placeholder="Search..." aria-label="Search"></div><div class="col-8"><div class="row float-end row-cols-auto" style="margin-top:5px"><div class="col clickable-icon" id="theme-icon"></div><div class="col"><a href="https://github.com/detritusjs/client/tree/0.16.4" class="clickable-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-github" viewbox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg></a></div><div class="col"><span style="font-size: 1.2em">v0.16.4-beta.6</span></div></div></div></div></nav><div class="container-fluid"><div class="row"><div class="col-lg-auto sidebar" id="sidebar"><h1 class="lib-name text-center"><a href="index.html">Detritus</a></h1><p class="current-thing text-center"></p><div class="sidebar-members"><div class="sidebar-member"><div class="collapsible-trigger"><span class="collapsible-arrow open"></span><span class="sidebar-category">Branches</span></div><div class="collapsible-body open"><span class="sidebar-category-member"><select id="branch-select" class="form-select"><option >main</option><option selected>beta</option></select></span></div></div><div class="sidebar-member"><div class="collapsible-trigger"><span class="collapsible-arrow open"></span><span class="sidebar-category">Modules</span></div><div class="collapsible-body open"><span class="sidebar-category-member"><a href="./m.detritus-utils/index.html">detritus-utils</a></span><span class="sidebar-category-member"><a href="./m.detritus-rest/index.html">detritus-rest</a></span><span class="sidebar-category-member"><a href="./m.detritus-client-rest/index.html">detritus-client-rest</a></span><span class="sidebar-category-member"><a href="./m.detritus-client-socket/index.html">detritus-client-socket</a></span><span class="sidebar-category-member"><a href="./m.detritus-client/index.html">detritus-client</a></span></div></div></div></div><div id="content" class="col content"><div class="d-none" id="search-menu"><h1>Search results</h1><div class="row" style="margin-top: 20px;margin-bottom: 20px"><div class="col-md-4"><p class="mini-header">Types</p><div><input type="checkbox" class="c-checkbox" id="search-option-classes" checked><span>Classes</span></div><div><input type="checkbox" class="c-checkbox" id="search-option-interfaces" checked><span>Interfaces</span></div><div><input type="checkbox" class="c-checkbox" id="search-option-enums" checked><span>Enums</span></div><div><input type="checkbox" class="c-checkbox" id="search-option-functions" checked><span>Functions</span></div><div><input type="checkbox" class="c-checkbox" id="search-option-types" checked><span>Type aliases</span></div><div><input type="checkbox" class="c-checkbox" id="search-option-constants"><span>Constants</span></div></div><div class="col-md-4"><p class="mini-header">Members</p><div><div><input type="checkbox" class="c-checkbox" id="search-option-properties" checked><span>Properties</span></div><div><input type="checkbox" class="c-checkbox" id="search-option-methods" checked><span>Methods</span></div><div><input type="checkbox" class="c-checkbox" id="search-option-getters" checked><span>Getters</span></div><div><input type="checkbox" class="c-checkbox" id="search-option-setters" checked><span>Setters</span></div><div><input type="checkbox" class="c-checkbox" id="search-option-enum-members"><span>Enum members</span></div><div><input type="checkbox" class="c-checkbox" id="search-option-privates"><span>Show privates</span></div></div></div><div class="col-md-4"><p class="mini-header">Other</p><div><div><input type="checkbox" class="c-checkbox" id="search-option-this-module-only"><span>In this module only</span></div></div></div></div><div id="search-result-list"></div></div><div id="content-main" class="d-none"><h1 id="detritus" class="section-header">Detritus</h1><p><img src="https://img.shields.io/npm/v/detritus-client?style=flat-square" title="null" alt="npm" class="img-fluid"></p>
+<p>A wheels-attached, pure-TypeScript library for the Discord API.</p>
+<ul>
+<li><a href="https://detritusjs.com">API Documentation</a></li>
+<li><a href="https://discord.gg/NEq6wws">Discord Help Server</a></li>
+<li><a href="https://www.npmjs.com/package/detritus-client">npm</a></li>
+</ul>
+<h2 id="installation" class="section-header">Installation</h2><p>Detritus is distributed via npm. A high-level wrapper over the Discord API is provided
+in this package, <code>detritus-client</code>. Low-level wrappers over Discord&#39;s REST API and Gateway
+are provided through <a href="https://github.com/detritusjs/client-rest"><code>detritus-client-rest</code></a> and
+<a href="https://github.com/detritusjs/client-socket"><code>detritus-client-socket</code></a>.</p>
+<ul>
+<li><code>$ npm i detritus-client</code></li>
+<li><code>$ yarn add detritus-client</code></li>
+</ul>
+<h2 id="usage" class="section-header">Usage</h2><p>Detritus is operated through the Clients classes:</p>
+<ul>
+<li><code>ShardClient</code> provides a base client for connecting to the Discord API and receiving events.</li>
+<li><code>ClusterClient</code> provides a client that creates <code>ShardClient</code> classes inside of it for easier sharding</li>
+<li><code>CommandClient</code> wraps over the <code>ClusterClient</code> or <code>ShardClient</code> to provide support for bot commands.</li>
+<li><code>InteractionCommandClient</code> wraps over the <code>ClusterClient</code> or <code>ShardClient</code> to provide support for interaction commands.</li>
+<li><code>ClusterManager</code> provides a manager that&#39;ll spawn in multiple <code>ClusterClient</code> processes for big shardings</li>
+</ul>
+<p>More Examples are provided under the <a href="https://github.com/detritusjs/client/tree/master/examples"><code>examples/</code></a>
+directory.</p>
+<h3 id="command-client-sample" class="section-header">Command Client Sample</h3><pre><code class="hljs"><span class="hljs-keyword">const</span> { <span><span class="c-tooltip"><a class="reference-link object" href="m.detritus-client\class\CommandClient.html">CommandClient</a><span class="c-tooltip-content"><span class="keyword">class </span><span class="item-name object">CommandClient</span><span style="display:block" class="monospace fw-bold">detritus-client/<span class="item-name object">CommandClient</span></span></span></span></span> } = <span class="hljs-built_in">require</span>(<span class="hljs-string">&#x27;detritus-client&#x27;</span>);
+
+<span class="hljs-comment">// Note: it is not advised to hard-code your bot token directly into the bot source.</span>
+<span class="hljs-comment">//</span>
+<span class="hljs-comment">// Tokens should be considered secrets and stored in a configuration file that is not</span>
+<span class="hljs-comment">// part of your version control system, or an environment variable.</span>
+<span class="hljs-comment">// By default, the CommandClient will use the ClusterClient</span>
+<span class="hljs-comment">// The ShardClient/ClusterClient will be under CommandClient.client as soon as you create the object</span>
+<span class="hljs-keyword">const</span> token = <span class="hljs-string">&#x27;&#x27;</span>;
+<span class="hljs-keyword">const</span> commandClient = <span class="hljs-keyword">new</span> <span><span class="c-tooltip"><a class="reference-link object" href="m.detritus-client\class\CommandClient.html">CommandClient</a><span class="c-tooltip-content"><span class="keyword">class </span><span class="item-name object">CommandClient</span><span style="display:block" class="monospace fw-bold">detritus-client/<span class="item-name object">CommandClient</span></span></span></span></span>(token, {
+  <span class="hljs-comment">// Prefix `..`, if you want multiple prefixes pass in `prefixes: [&#x27;..&#x27;, &#x27;...&#x27;]`</span>
+  <span class="hljs-attr">prefix</span>: <span class="hljs-string">&#x27;..&#x27;</span>,
+});
+
+<span class="hljs-comment">// Simple ping/pong command</span>
+commandClient.<span class="hljs-title function_">add</span>({
+  <span class="hljs-comment">// name describes the command trigger; in this case, ..ping</span>
+  <span class="hljs-attr">name</span>: <span class="hljs-string">&#x27;ping&#x27;</span>,
+  <span class="hljs-attr">run</span>: <span class="hljs-function">(<span class="hljs-params">context, args</span>) =&gt;</span> {
+    <span class="hljs-comment">// Commands should return a promise to ensure that errors are handled</span>
+    <span class="hljs-keyword">return</span> context.<span class="hljs-title function_">reply</span>(<span class="hljs-string">&#x27;pong!&#x27;</span>);
+  },
+});
+
+<span class="hljs-comment">// Command demonstrating command pipelines</span>
+commandClient.<span class="hljs-title function_">add</span>({
+  <span class="hljs-attr">name</span>: <span class="hljs-string">&#x27;owner&#x27;</span>,
+  <span class="hljs-comment">// onBefore should return a boolean to indicate whether or not the command should proceed</span>
+  <span class="hljs-attr">onBefore</span>: <span class="hljs-function">(<span class="hljs-params">context</span>) =&gt;</span> context.<span class="hljs-property">client</span>.<span class="hljs-title function_">isOwner</span>(context.<span class="hljs-property">userId</span>),
+  <span class="hljs-attr">onCancel</span>: <span class="hljs-function">(<span class="hljs-params">context</span>) =&gt;</span> context.<span class="hljs-title function_">reply</span>(<span class="hljs-string">&#x27;This command is only available to the bot owner.&#x27;</span>),
+  <span class="hljs-attr">run</span>: <span class="hljs-keyword">async</span> (context) =&gt; {
+    <span class="hljs-comment">// Commands may also run asynchronously.</span>
+    <span class="hljs-keyword">await</span> context.<span class="hljs-title function_">reply</span>(<span class="hljs-string">&#x27;You are the owner of the bot!&#x27;</span>);
+  },
+});
+
+<span class="hljs-comment">// Spawn the client in an async context</span>
+<span class="hljs-comment">//</span>
+<span class="hljs-comment">// Note: Due to how Node handles tasks, the script will block until the Detritus client</span>
+<span class="hljs-comment">// is killed.</span>
+(<span class="hljs-keyword">async</span> () =&gt; {
+  <span class="hljs-keyword">const</span> client = <span class="hljs-keyword">await</span> commandClient.<span class="hljs-title function_">run</span>();
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`Client has loaded with a shard count of <span class="hljs-subst">${client.shardCount}</span>`</span>);
+})();</code></pre><h3 id="interactioncommand-client-sample" class="section-header">InteractionCommand Client Sample</h3><pre><code class="hljs"><span class="hljs-keyword">const</span> { Constants, <span><span class="c-tooltip"><a class="reference-link object" href="m.detritus-client\class\InteractionCommandClient.html">InteractionCommandClient</a><span class="c-tooltip-content"><span class="keyword">class </span><span class="item-name object">InteractionCommandClient</span><span style="display:block" class="monospace fw-bold">detritus-client/<span class="item-name object">InteractionCommandClient</span></span></span></span></span> } = <span class="hljs-built_in">require</span>(<span class="hljs-string">&#x27;detritus-client&#x27;</span>);
+<span class="hljs-keyword">const</span> { <span><span class="c-tooltip"><a class="reference-link object" href="m.detritus-client\enum\ApplicationCommandTypes.html">ApplicationCommandTypes</a><span class="c-tooltip-content"><span class="keyword">enum </span><span class="item-name object">ApplicationCommandTypes</span><span style="display:block" class="monospace fw-bold">detritus-client/<span class="item-name object">ApplicationCommandTypes</span></span></span></span></span>, <span><span class="c-tooltip"><a class="reference-link object" href="m.detritus-client\enum\InteractionCallbackTypes.html">InteractionCallbackTypes</a><span class="c-tooltip-content"><span class="keyword">enum </span><span class="item-name object">InteractionCallbackTypes</span><span style="display:block" class="monospace fw-bold">detritus-client/<span class="item-name object">InteractionCallbackTypes</span></span></span></span></span>, <span><span class="c-tooltip"><a class="reference-link object" href="m.detritus-client\enum\MessageFlags.html">MessageFlags</a><span class="c-tooltip-content"><span class="keyword">enum </span><span class="item-name object">MessageFlags</span><span style="display:block" class="monospace fw-bold">detritus-client/<span class="item-name object">MessageFlags</span></span></span></span></span> } = Constants;
+
+<span class="hljs-comment">// Note: it is not advised to hard-code your bot token directly into the bot source.</span>
+<span class="hljs-comment">//</span>
+<span class="hljs-comment">// Tokens should be considered secrets and stored in a configuration file that is not</span>
+<span class="hljs-comment">// part of your version control system, or an environment variable.</span>
+<span class="hljs-comment">// By default, the InteractionCommandClient will use the ClusterClient</span>
+<span class="hljs-comment">// The ShardClient/ClusterClient will be under InteractionCommandClient.client as soon as you create the object</span>
+<span class="hljs-keyword">const</span> token = <span class="hljs-string">&#x27;&#x27;</span>;
+<span class="hljs-keyword">const</span> interactionClient = <span class="hljs-keyword">new</span> <span><span class="c-tooltip"><a class="reference-link object" href="m.detritus-client\class\InteractionCommandClient.html">InteractionCommandClient</a><span class="c-tooltip-content"><span class="keyword">class </span><span class="item-name object">InteractionCommandClient</span><span style="display:block" class="monospace fw-bold">detritus-client/<span class="item-name object">InteractionCommandClient</span></span></span></span></span>(token);
+
+<span class="hljs-comment">// Simple ping/pong command</span>
+interactionClient.<span class="hljs-title function_">add</span>({
+  <span class="hljs-attr">description</span>: <span class="hljs-string">&#x27;Ping!&#x27;</span>,
+  <span class="hljs-attr">name</span>: <span class="hljs-string">&#x27;ping&#x27;</span>,
+  <span class="hljs-attr">run</span>: <span class="hljs-function">(<span class="hljs-params">context, args</span>) =&gt;</span> {
+    <span class="hljs-comment">// Commands should return a promise to ensure that errors are handled</span>
+    <span class="hljs-keyword">return</span> context.<span class="hljs-title function_">respond</span>(<span><span class="c-tooltip"><a class="reference-link object" href="m.detritus-client\enum\InteractionCallbackTypes.html">InteractionCallbackTypes</a><span class="c-tooltip-content"><span class="keyword">enum </span><span class="item-name object">InteractionCallbackTypes</span><span style="display:block" class="monospace fw-bold">detritus-client/<span class="item-name object">InteractionCallbackTypes</span></span></span></span></span>.<span class="hljs-property">CHANNEL_MESSAGE_WITH_SOURCE</span>, <span class="hljs-string">&#x27;pong!&#x27;</span>);
+  },
+});
+
+<span class="hljs-comment">// Command demonstrating command pipelines</span>
+interactionClient.<span class="hljs-title function_">add</span>({
+  <span class="hljs-attr">description</span>: <span class="hljs-string">&#x27;Are you the owner or part of the team for this application?&#x27;</span>,
+  <span class="hljs-attr">name</span>: <span class="hljs-string">&#x27;owner&#x27;</span>,
+  <span class="hljs-comment">// onBefore should return a boolean to indicate whether or not the command should proceed</span>
+  <span class="hljs-attr">onBefore</span>: <span class="hljs-function">(<span class="hljs-params">context</span>) =&gt;</span> context.<span class="hljs-property">client</span>.<span class="hljs-title function_">isOwner</span>(context.<span class="hljs-property">userId</span>),
+  <span class="hljs-comment">// we want the error to only show to the user to not clunk up the chat</span>
+  <span class="hljs-attr">onCancel</span>: <span class="hljs-function">(<span class="hljs-params">context</span>) =&gt;</span> {
+    <span class="hljs-keyword">return</span> context.<span class="hljs-title function_">respond</span>(<span><span class="c-tooltip"><a class="reference-link object" href="m.detritus-client\enum\InteractionCallbackTypes.html">InteractionCallbackTypes</a><span class="c-tooltip-content"><span class="keyword">enum </span><span class="item-name object">InteractionCallbackTypes</span><span style="display:block" class="monospace fw-bold">detritus-client/<span class="item-name object">InteractionCallbackTypes</span></span></span></span></span>.<span class="hljs-property">CHANNEL_MESSAGE_WITH_SOURCE</span>, {
+      <span class="hljs-attr">content</span>: <span class="hljs-string">&#x27;This command is only available to the bot owner.&#x27;</span>,
+      <span class="hljs-attr">flags</span>: <span><span class="c-tooltip"><a class="reference-link object" href="m.detritus-client\enum\MessageFlags.html">MessageFlags</a><span class="c-tooltip-content"><span class="keyword">enum </span><span class="item-name object">MessageFlags</span><span style="display:block" class="monospace fw-bold">detritus-client/<span class="item-name object">MessageFlags</span></span></span></span></span>.<span class="hljs-property">EPHEMERAL</span>,
+    });
+  },
+  <span class="hljs-attr">run</span>: <span class="hljs-keyword">async</span> (context) =&gt; {
+    <span class="hljs-comment">// Commands may also run asynchronously.</span>
+    <span class="hljs-keyword">await</span> context.<span class="hljs-title function_">respond</span>(<span><span class="c-tooltip"><a class="reference-link object" href="m.detritus-client\enum\InteractionCallbackTypes.html">InteractionCallbackTypes</a><span class="c-tooltip-content"><span class="keyword">enum </span><span class="item-name object">InteractionCallbackTypes</span><span style="display:block" class="monospace fw-bold">detritus-client/<span class="item-name object">InteractionCallbackTypes</span></span></span></span></span>.<span class="hljs-property">CHANNEL_MESSAGE_WITH_SOURCE</span>, <span class="hljs-string">&#x27;You are the owner of the bot!&#x27;</span>);
+  },
+});
+
+<span class="hljs-comment">// Context Menu User Command</span>
+interactionClient.<span class="hljs-title function_">add</span>({
+  <span class="hljs-attr">name</span>: <span class="hljs-string">&#x27;Poke&#x27;</span>,
+  <span class="hljs-attr">type</span>: <span><span class="c-tooltip"><a class="reference-link object" href="m.detritus-client\enum\ApplicationCommandTypes.html">ApplicationCommandTypes</a><span class="c-tooltip-content"><span class="keyword">enum </span><span class="item-name object">ApplicationCommandTypes</span><span style="display:block" class="monospace fw-bold">detritus-client/<span class="item-name object">ApplicationCommandTypes</span></span></span></span></span>.<span class="hljs-property">USER</span>,
+  <span class="hljs-attr">run</span>: <span class="hljs-keyword">async</span> (context, args) =&gt; {
+    <span class="hljs-keyword">await</span> context.<span class="hljs-title function_">respond</span>(<span><span class="c-tooltip"><a class="reference-link object" href="m.detritus-client\enum\InteractionCallbackTypes.html">InteractionCallbackTypes</a><span class="c-tooltip-content"><span class="keyword">enum </span><span class="item-name object">InteractionCallbackTypes</span><span style="display:block" class="monospace fw-bold">detritus-client/<span class="item-name object">InteractionCallbackTypes</span></span></span></span></span>.<span class="hljs-property">CHANNEL_MESSAGE_WITH_SOURCE</span>, {
+      <span class="hljs-attr">content</span>: <span class="hljs-string">`You poked <span class="hljs-subst">${args.member || args.user}</span>`</span>,
+      <span class="hljs-attr">flags</span>: <span><span class="c-tooltip"><a class="reference-link object" href="m.detritus-client\enum\MessageFlags.html">MessageFlags</a><span class="c-tooltip-content"><span class="keyword">enum </span><span class="item-name object">MessageFlags</span><span style="display:block" class="monospace fw-bold">detritus-client/<span class="item-name object">MessageFlags</span></span></span></span></span>.<span class="hljs-property">EPHEMERAL</span>,
+    });
+  },
+});
+
+<span class="hljs-comment">// Context Menu Message Command (tells you when the message was created)</span>
+interactionClient.<span class="hljs-title function_">add</span>({
+  <span class="hljs-attr">name</span>: <span class="hljs-string">&#x27;Creation Date&#x27;</span>,
+  <span class="hljs-attr">guildIds</span>: [], <span class="hljs-comment">// you can make it a guild command</span>
+  <span class="hljs-attr">type</span>: <span><span class="c-tooltip"><a class="reference-link object" href="m.detritus-client\enum\ApplicationCommandTypes.html">ApplicationCommandTypes</a><span class="c-tooltip-content"><span class="keyword">enum </span><span class="item-name object">ApplicationCommandTypes</span><span style="display:block" class="monospace fw-bold">detritus-client/<span class="item-name object">ApplicationCommandTypes</span></span></span></span></span>.<span class="hljs-property">MESSAGE</span>,
+  <span class="hljs-attr">run</span>: <span class="hljs-keyword">async</span> (context, args) =&gt; {
+    <span class="hljs-keyword">const</span> { message } = args;
+    <span class="hljs-keyword">await</span> context.<span class="hljs-title function_">respond</span>(<span><span class="c-tooltip"><a class="reference-link object" href="m.detritus-client\enum\InteractionCallbackTypes.html">InteractionCallbackTypes</a><span class="c-tooltip-content"><span class="keyword">enum </span><span class="item-name object">InteractionCallbackTypes</span><span style="display:block" class="monospace fw-bold">detritus-client/<span class="item-name object">InteractionCallbackTypes</span></span></span></span></span>.<span class="hljs-property">CHANNEL_MESSAGE_WITH_SOURCE</span>, {
+      <span class="hljs-attr">content</span>: <span class="hljs-string">`<span class="hljs-subst">${message.id}</span> was made at <span class="hljs-subst">${message.createdAt}</span>`</span>,
+      <span class="hljs-attr">flags</span>: <span><span class="c-tooltip"><a class="reference-link object" href="m.detritus-client\enum\MessageFlags.html">MessageFlags</a><span class="c-tooltip-content"><span class="keyword">enum </span><span class="item-name object">MessageFlags</span><span style="display:block" class="monospace fw-bold">detritus-client/<span class="item-name object">MessageFlags</span></span></span></span></span>.<span class="hljs-property">EPHEMERAL</span>,
+    });
+  },
+});
+
+<span class="hljs-comment">// Spawn the client in an async context</span>
+<span class="hljs-comment">//</span>
+<span class="hljs-comment">// Note: Due to how Node handles tasks, the script will block until the Detritus client</span>
+<span class="hljs-comment">// is killed.</span>
+(<span class="hljs-keyword">async</span> () =&gt; {
+  <span class="hljs-comment">// Interaction Client will compare the local commands w/ commands stored on discord</span>
+  <span class="hljs-comment">// If any of them differ, it will call `.bulkOverwriteApplicationCommands()` with the local commands</span>
+  <span class="hljs-comment">// Guild-specific Interaction commands are not supported right now</span>
+  <span class="hljs-keyword">const</span> client = <span class="hljs-keyword">await</span> interactionClient.<span class="hljs-title function_">run</span>();
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`Client has loaded with a shard count of <span class="hljs-subst">${client.shardCount}</span>`</span>);
+})();</code></pre><h3 id="shard-client-sample" class="section-header">Shard Client Sample</h3><pre><code class="hljs"><span class="hljs-keyword">const</span> { <span><span class="c-tooltip"><a class="reference-link object" href="m.detritus-client\class\ShardClient.html">ShardClient</a><span class="c-tooltip-content"><span class="keyword">class </span><span class="item-name object">ShardClient</span><span style="display:block" class="monospace fw-bold">detritus-client/<span class="item-name object">ShardClient</span></span></span></span></span> } = <span class="hljs-built_in">require</span>(<span class="hljs-string">&#x27;detritus-client&#x27;</span>);
+
+<span class="hljs-comment">// Note: it is not advised to hard-code your bot token directly into the bot source.</span>
+<span class="hljs-comment">//</span>
+<span class="hljs-comment">// Tokens should be considered secrets and stored in a configuration file that is not</span>
+<span class="hljs-comment">// part of your version control system, or an environment variable.</span>
+<span class="hljs-keyword">const</span> token = <span class="hljs-string">&#x27;&#x27;</span>;
+<span class="hljs-keyword">const</span> client = <span class="hljs-keyword">new</span> <span><span class="c-tooltip"><a class="reference-link object" href="m.detritus-client\class\ShardClient.html">ShardClient</a><span class="c-tooltip-content"><span class="keyword">class </span><span class="item-name object">ShardClient</span><span style="display:block" class="monospace fw-bold">detritus-client/<span class="item-name object">ShardClient</span></span></span></span></span>(token, {
+  <span class="hljs-attr">gateway</span>: {
+    <span class="hljs-comment">// This will tell our client to fill our Members cache on any of our guilds that are larger than the large threshold you pass in (default 250)</span>
+    <span class="hljs-attr">loadAllMembers</span>: <span class="hljs-literal">true</span>,
+  },
+});
+
+<span class="hljs-comment">// listen to our client&#x27;s eventemitter</span>
+client.<span class="hljs-title function_">on</span>(<span class="hljs-string">&#x27;guildCreate&#x27;</span>, <span class="hljs-keyword">async</span> ({fromUnavailable, guild}) =&gt; {
+  <span class="hljs-keyword">if</span> (fromUnavailable) {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`Guild <span class="hljs-subst">${guild.name}</span> has just came back from being unavailable`</span>);
+  } <span class="hljs-keyword">else</span> {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`Joined Guild <span class="hljs-subst">${guild.name}</span>, bringing us up to <span class="hljs-subst">${client.guilds.length}</span> guilds.`</span>);
+  }
+});
+
+<span class="hljs-comment">// listen to our client&#x27;s eventemitter</span>
+client.<span class="hljs-title function_">on</span>(<span class="hljs-string">&#x27;messageCreate&#x27;</span>, <span class="hljs-keyword">async</span> ({message}) =&gt; {
+  <span class="hljs-keyword">if</span> (message.<span class="hljs-property">content</span> === <span class="hljs-string">&#x27;!ping&#x27;</span>) {
+    <span class="hljs-keyword">const</span> reply = <span class="hljs-keyword">await</span> message.<span class="hljs-title function_">reply</span>(<span class="hljs-string">&#x27;pong!, deleting message in 5 seconds...&#x27;</span>);
+    <span class="hljs-built_in">setTimeout</span>(<span class="hljs-keyword">async</span> () =&gt; {
+      <span class="hljs-keyword">await</span> reply.<span class="hljs-title function_">delete</span>();
+    }, <span class="hljs-number">5000</span>);
+  }
+});
+
+(<span class="hljs-keyword">async</span> () =&gt; {
+  <span class="hljs-keyword">await</span> client.<span class="hljs-title function_">run</span>();
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">&#x27;Successfully connected to Discord!&#x27;</span>);
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`Currently have <span class="hljs-subst">${client.guilds.length}</span> guilds in cache.`</span>);
+  <span class="hljs-comment">// set our presence, we can pass this into the client&#x27;s options too under `gateway.presence`</span>
+  client.<span class="hljs-property">gateway</span>.<span class="hljs-title function_">setPresence</span>({
+    <span class="hljs-attr">activity</span>: {
+      <span class="hljs-comment">// What comes after our activity type, x.</span>
+      <span class="hljs-attr">name</span>: <span class="hljs-string">&#x27;with Detritus&#x27;</span>,
+      <span class="hljs-comment">// Type 0 sets our message to `Playing x`</span>
+      <span class="hljs-attr">type</span>: <span class="hljs-number">0</span>,
+    },
+    <span class="hljs-comment">// do-not-disturb us</span>
+    <span class="hljs-attr">status</span>: <span class="hljs-string">&#x27;dnd&#x27;</span>,
+  });
+})();</code></pre><h3 id="cluster-client-sample" class="section-header">Cluster Client Sample</h3><pre><code class="hljs"><span class="hljs-keyword">const</span> { <span><span class="c-tooltip"><a class="reference-link object" href="m.detritus-client\class\ClusterClient.html">ClusterClient</a><span class="c-tooltip-content"><span class="keyword">class </span><span class="item-name object">ClusterClient</span><span style="display:block" class="monospace fw-bold">detritus-client/<span class="item-name object">ClusterClient</span></span></span></span></span> } = <span class="hljs-built_in">require</span>(<span class="hljs-string">&#x27;detritus-client&#x27;</span>);
+
+<span class="hljs-comment">// Note: it is not advised to hard-code your bot token directly into the bot source.</span>
+<span class="hljs-comment">//</span>
+<span class="hljs-comment">// Tokens should be considered secrets and stored in a configuration file that is not</span>
+<span class="hljs-comment">// part of your version control system, or an environment variable.</span>
+<span class="hljs-keyword">const</span> token = <span class="hljs-string">&#x27;&#x27;</span>;
+<span class="hljs-keyword">const</span> cluster = <span class="hljs-keyword">new</span> <span><span class="c-tooltip"><a class="reference-link object" href="m.detritus-client\class\ClusterClient.html">ClusterClient</a><span class="c-tooltip-content"><span class="keyword">class </span><span class="item-name object">ClusterClient</span><span style="display:block" class="monospace fw-bold">detritus-client/<span class="item-name object">ClusterClient</span></span></span></span></span>(token, {
+  <span class="hljs-attr">gateway</span>: {
+    <span class="hljs-comment">// Pass in a presence we will send with the identify payload</span>
+    <span class="hljs-attr">presence</span>: {
+      <span class="hljs-attr">activity</span>: {
+        <span class="hljs-comment">// What comes after our activity type, x.</span>
+        <span class="hljs-attr">name</span>: <span class="hljs-string">&#x27;with Detritus ClusterClient&#x27;</span>,
+        <span class="hljs-comment">// Type 0 sets our message to `Playing x`</span>
+        <span class="hljs-attr">type</span>: <span class="hljs-number">0</span>,
+      },
+      <span class="hljs-comment">// do-not-disturb us</span>
+      <span class="hljs-attr">status</span>: <span class="hljs-string">&#x27;dnd&#x27;</span>,
+    },
+  },
+});
+
+<span class="hljs-comment">// listen to our client&#x27;s eventemitter</span>
+<span class="hljs-comment">// `shard` (which is the ShardClient the event originated from) is added onto EVERY event that you listen to on the cluster client</span>
+cluster.<span class="hljs-title function_">on</span>(<span class="hljs-string">&#x27;guildCreate&#x27;</span>, <span class="hljs-keyword">async</span> ({fromUnavailable, guild, shard}) =&gt; {
+  <span class="hljs-keyword">if</span> (fromUnavailable) {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`Shard #<span class="hljs-subst">${shard.shardId}</span>:`</span>, <span class="hljs-string">`Guild <span class="hljs-subst">${guild.name}</span> has just came back from being unavailable`</span>);
+  } <span class="hljs-keyword">else</span> {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`Shard #<span class="hljs-subst">${shard.shardId}</span>:`</span>, <span class="hljs-string">`Joined Guild <span class="hljs-subst">${guild.name}</span>, bringing us up to <span class="hljs-subst">${client.guilds.length}</span> guilds.`</span>);
+  }
+});
+
+<span class="hljs-comment">// listen to our client&#x27;s eventemitter</span>
+<span class="hljs-comment">// `shard` (which is the ShardClient the event originated from) is added onto EVERY event that you listen to on the cluster client</span>
+cluster.<span class="hljs-title function_">on</span>(<span class="hljs-string">&#x27;messageCreate&#x27;</span>, <span class="hljs-keyword">async</span> ({message, shard}) =&gt; {
+  <span class="hljs-keyword">if</span> (message.<span class="hljs-property">content</span> === <span class="hljs-string">&#x27;!ping&#x27;</span>) {
+    <span class="hljs-keyword">const</span> reply = <span class="hljs-keyword">await</span> message.<span class="hljs-title function_">reply</span>(<span class="hljs-string">`pong on shard #<span class="hljs-subst">${shard.shardId}</span>!, deleting message in 5 seconds...`</span>);
+    <span class="hljs-built_in">setTimeout</span>(<span class="hljs-keyword">async</span> () =&gt; {
+      <span class="hljs-keyword">await</span> reply.<span class="hljs-title function_">delete</span>();
+    }, <span class="hljs-number">5000</span>);
+  }
+});
+
+(<span class="hljs-keyword">async</span> () =&gt; {
+  <span class="hljs-comment">// shards are made after the cluster is ran, found in `ClusterClient.shards`.</span>
+  <span class="hljs-keyword">await</span> cluster.<span class="hljs-title function_">run</span>();
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`Successfully launched shards <span class="hljs-subst">${cluster.shardStart}</span> to <span class="hljs-subst">${cluster.shardEnd}</span> with a shardCount of <span class="hljs-subst">${cluster.shardCount}</span>`</span>);
+})();</code></pre><h2 id="contributing" class="section-header">Contributing</h2><p>Detritus is licensed under the BSD-2 license; see the <a href="LICENSE">LICENSE</a>.</p>
+<p>To contribute, please first open an issue describing your requested changes,
+and then open a pull request.</p>
+</div></div></div></div><div id="to-top" class="btn-to-top"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-up" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"></path></svg></div><div id="sidebar-arrow" class="sidebar-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-right" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"></path></svg></div></body></html>
